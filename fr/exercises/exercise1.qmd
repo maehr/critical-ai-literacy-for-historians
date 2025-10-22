@@ -1,0 +1,170 @@
+---
+lang: fr
+title: "Comprendre l'IA comme source historique"
+subtitle: "Évaluation critique du contenu généré par l'IA"
+description: "Cet exercice initie les historien·ne·s à l'évaluation critique du contenu généré par l'IA, explorant comment évaluer les résultats de l'IA comme sources historiques et comprendre leurs limites et leurs biais."
+author:
+  - name: "Équipe Littératie critique de l'IA"
+    affiliation: "Humanités numériques"
+    email: "contact@example.com"
+date: "2024-01-15"
+date-modified: "2024-01-15"
+categories: [Littératie IA, Critique des sources numériques]
+tags: [IA, Histoire, Éthique, Critique des sources]
+difficulty: "Débutant"
+time_estimate: "45 minutes"
+prerequisites:
+  - "Compréhension de base des méthodes de recherche historique"
+  - "Familiarité avec les sources primaires et secondaires"
+objectives:
+  - "Comprendre comment l'IA génère du texte et des informations"
+  - "Appliquer les principes de critique des sources au contenu généré par l'IA"
+  - "Identifier les biais et limites potentiels dans les résultats de l'IA"
+  - "Développer des stratégies pour une utilisation responsable de l'IA dans la recherche historique"
+draft: false
+---
+
+## Introduction
+
+Les grands modèles de langage (LLM) et autres technologies d'IA sont de plus en plus présents dans les workflows de recherche historique. Qu'ils soient utilisés pour l'analyse de texte, la traduction, le résumé ou la recherche d'information, ces outils produisent des résultats qui nécessitent une évaluation critique attentive — tout comme les historien·ne·s évaluent de manière critique les sources primaires et secondaires traditionnelles.
+
+Cet exercice vous guidera à travers le processus d'application de la critique des sources numériques au contenu généré par l'IA, vous aidant à développer les compétences nécessaires pour utiliser l'IA de manière responsable et efficace dans votre recherche historique.
+
+## Contexte : L'IA et les sources historiques
+
+### Qu'est-ce qu'une source générée par l'IA ?
+
+Le contenu généré par l'IA comprend :
+
+- Le texte produit par de grands modèles de langage (par ex. ChatGPT, Claude, Gemini)
+- Les résumés et traductions créés par des outils d'IA
+- Les données extraites ou structurées par des algorithmes d'apprentissage automatique
+- Les visualisations et analyses basées sur le traitement par l'IA
+
+### Pourquoi l'évaluation critique est importante
+
+Les systèmes d'IA :
+
+- Sont entraînés sur des données existantes qui peuvent contenir des biais
+- Peuvent produire des informations plausibles mais factuellement incorrectes (« hallucinations »)
+- Reflètent les perspectives et limitations de leurs données d'entraînement
+- Peuvent ne pas comprendre le contexte, les nuances ou la complexité historique
+
+## Activité 1 : Examen du texte historique généré par l'IA
+
+### Tâche
+
+1. Choisissez un événement, une personne ou une période historique spécifique que vous connaissez
+2. Demandez à un assistant IA (par ex. ChatGPT, Claude) de fournir un résumé ou une explication
+3. Lisez attentivement la réponse générée par l'IA
+
+### Questions critiques
+
+Appliquez ces questions de critique des sources au résultat de l'IA :
+
+**Provenance :**
+- Quelles données d'entraînement ont été utilisées pour générer cette réponse ?
+- Pouvez-vous retracer les sources d'information ?
+- Des citations ou références sont-elles fournies ?
+
+**Autorité :**
+- Quelles qualifications le système d'IA a-t-il pour discuter de ce sujet ?
+- Comment a-t-il été entraîné et par qui ?
+- Quelles sont ses limites connues ?
+
+**Exactitude :**
+- L'information s'aligne-t-elle avec le consensus scientifique ?
+- Pouvez-vous vérifier des affirmations spécifiques par d'autres sources ?
+- Y a-t-il des erreurs factuelles ou des anachronismes ?
+
+**Biais :**
+- Quelles perspectives sont représentées ou absentes ?
+- La réponse reflète-t-elle des biais géographiques, temporels ou culturels particuliers ?
+- Quelles voix ou récits sont privilégiés ou marginalisés ?
+
+**Objectif :**
+- À quoi l'IA a-t-elle été conçue (informer, persuader, divertir) ?
+- Comment ses objectifs de conception pourraient-ils influencer la réponse ?
+
+## Activité 2 : Analyse comparative des sources
+
+### Tâche
+
+1. Sélectionnez une question historique (par ex. « Qu'est-ce qui a causé la chute de l'Empire romain ? »)
+2. Trouvez des réponses provenant de trois sources différentes :
+   - Un article scientifique évalué par les pairs
+   - Une entrée d'encyclopédie générale (par ex. Wikipédia)
+   - Une réponse générée par l'IA
+
+### Cadre de comparaison
+
+Comparez les trois sources en utilisant ce cadre :
+
+| Critère | Article scientifique | Encyclopédie | Réponse IA |
+|---------|---------------------|--------------|------------|
+| **Preuves citées** | | | |
+| **Expertise de l'auteur** | | | |
+| **Date de publication** | | | |
+| **Nuance et complexité** | | | |
+| **Limites reconnues** | | | |
+| **Accessibilité** | | | |
+
+### Questions de réflexion
+
+- Quels sont les forces et limites de chaque type de source ?
+- Dans quels contextes de recherche chaque source serait-elle la plus appropriée ?
+- Comment citeriez-vous chaque type de source dans votre travail ?
+
+## Activité 3 : Identification des hallucinations de l'IA
+
+### Tâche
+
+Interrogez un assistant IA sur un détail historique très spécifique qui :
+- Est quelque peu obscur mais vérifiable
+- A une documentation claire dans les archives historiques
+- Pourrait plausiblement être confondu avec des événements similaires
+
+Exemples :
+- Dates spécifiques de batailles mineures
+- Noms de personnages historiques moins connus
+- Détails sur des événements historiques locaux
+
+### Analyse
+
+1. Comparez la réponse de l'IA avec des sources historiques vérifiées
+2. Identifiez les inexactitudes ou « hallucinations »
+3. Considérez pourquoi l'IA aurait pu générer des informations incorrectes
+
+### Réflexion critique
+
+- À quel point l'IA semblait-elle confiante dans ses déclarations incorrectes ?
+- Y avait-il des signes avant-coureurs que l'information pourrait être peu fiable ?
+- Quelles stratégies peuvent vous aider à vérifier les informations générées par l'IA ?
+
+## Meilleures pratiques pour utiliser l'IA dans la recherche historique
+
+Sur la base de cet exercice, considérez ces directives :
+
+1. **Tout vérifier** : Vérifiez toujours les informations générées par l'IA avec des sources fiables
+2. **Comprendre les limites** : Reconnaissez que l'IA ne peut pas remplacer les connaissances historiques expertes
+3. **Documenter l'utilisation** : Soyez transparent sur quand et comment vous utilisez les outils d'IA
+4. **Considérer l'éthique** : Pensez à la vie privée, au droit d'auteur et à la représentation
+5. **Maintenir une distance critique** : Abordez les résultats de l'IA avec le même scepticisme que toute autre source
+
+## Lectures complémentaires
+
+- Russell, Stuart, et Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4e éd. Pearson, 2020.
+- Milligan, Ian. "History in the Age of Abundance?" *McGill-Queen's University Press*, 2019.
+- Explorez les cadres de critique des sources numériques de The Turing Way
+
+## Conclusion
+
+La littératie critique de l'IA est essentielle pour les historien·ne·s travaillant à l'ère numérique. En appliquant les principes de critique des sources au contenu généré par l'IA, vous pouvez exploiter les avantages de ces outils tout en maintenant la rigueur et l'intégrité qui définissent la recherche historique.
+
+Rappelez-vous : L'IA est un outil qui nécessite un engagement critique, pas un remplacement de l'expertise et du jugement historiques.
+
+## Prochaines étapes
+
+- Passez à l'exercice 2 : « Biais de l'IA dans les ensembles de données historiques »
+- Explorez les exercices intermédiaires sur l'utilisation de l'IA pour l'analyse de textes historiques
+- Discutez de vos conclusions avec des pairs ou en groupes d'étude

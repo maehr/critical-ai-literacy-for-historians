@@ -1,0 +1,55 @@
+---
+title: "Über das Projekt"
+lang: de
+---
+
+## Über dieses Projekt
+
+**Kritische KI-Kompetenz für Historiker:innen** ist eine Bildungsinitiative, die darauf abzielt, Historiker:innen mit dem Wissen und den Fähigkeiten auszustatten, sich kritisch mit künstlicher Intelligenz in ihrer Forschungspraxis auseinanderzusetzen.
+
+### Pädagogischer Rahmen
+
+Das Projekt basiert auf folgenden pädagogischen Prinzipien:
+
+1. **KI als Werkzeug und Methode**: KI nicht nur als technisches Werkzeug verstehen, sondern auch als methodischer Ansatz, der Forschungsfragen und Interpretationen prägt
+2. **Digitale Quellenkritik**: Rigorose kritische Bewertung von KI-generierten Inhalten, Datensätzen und algorithmischen Ausgaben
+3. **Ethisches Bewusstsein**: Förderung eines verantwortungsvollen KI-Einsatzes, der Datenschutz, Bias, Repräsentation und Machtdynamiken berücksichtigt
+4. **Transparenz und Reproduzierbarkeit**: Förderung offener, dokumentierter und nachvollziehbarer Forschungspraktiken
+5. **Disziplinäre Strenge**: Beibehaltung historischer Methoden und kritischen Denkens bei der Integration neuer Technologien
+
+### Lernansatz
+
+Die Übungen folgen einer strukturierten Progression:
+
+- **Anfänger**: Einführung in KI-Konzepte und grundlegende kritische Bewertung
+- **Fortgeschrittene**: Anwendung von KI-Tools in der historischen Forschung mit kritischer Reflexion
+- **Experten**: Gestaltung KI-integrierter Forschungsprojekte mit methodologischer Raffinesse
+
+Jede Übung enthält:
+
+- Klare Lernziele
+- Geschätzter Zeitaufwand
+- Voraussetzungen
+- Praktische Aktivitäten
+- Kritische Reflexionsanregungen
+- Zusätzliche Ressourcen
+
+### FAIR- und CARE-Prinzipien
+
+Dieses Projekt folgt:
+
+- **FAIR**-Prinzipien (Findable, Accessible, Interoperable, Reusable) für Forschungsdaten und Bildungsmaterialien
+- **CARE**-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) für verantwortungsvolle Daten-Governance
+
+### Mitwirken
+
+Wir freuen uns über Beiträge von Historiker:innen, Pädagog:innen und Forscher:innen. Bitte siehe unsere [Beitragsrichtlinien](../CONTRIBUTING.md) für weitere Informationen.
+
+### Lizenz
+
+- Bildungsmaterialien: [CC BY 4.0](../LICENSE-CCBY.md)
+- Code: [AGPL 3.0](../LICENSE-AGPL.md)
+
+### Kontakt
+
+Für Fragen oder Feedback, bitte [öffnen Sie ein Issue](https://github.com/maehr/critical-ai-literacy-for-historians/issues) oder kontaktieren Sie die Maintainer.
