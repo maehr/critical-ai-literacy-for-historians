@@ -1,9 +1,9 @@
 meta:
-  name: REPO_NAME
+  name: Critical AI Literacy for Historians
   link:
-    home: https://USERNAME.github.io/REPO_NAME
-    github: https://github.com/USERNAME
+    home: https://maehr.github.io/critical-ai-literacy-for-historians
+    github: https://github.com/maehr
   description: |
-    SHORT_DESCRIPTION
+    Structured exercises for developing critical AI literacy in historical research
 
 # Go to https://quarto.org/docs/authoring/brand.html to learn more about multiformat branding with brand.yml

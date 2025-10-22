@@ -1,8 +1,8 @@
 [project]
-name = "REPO_NAME"
+name = "critical-ai-literacy-for-historians"
 version = "0.1.0"
-description = "SHORT_DESCRIPTION"
-authors = [{ name = "FULLNAME", email = "[INSERT CONTACT METHOD]" }]
+description = "Structured exercises for developing critical AI literacy in historical research"
+authors = [{ name = "Moritz Mähr", email = "moritz.maehr@unibe.ch" }]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
@@ -34,7 +34,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["REPO_NAME"]
+known-first-party = ["critical_ai_literacy_for_historians"]
 
 [tool.ruff.format]
 quote-style = "double"
