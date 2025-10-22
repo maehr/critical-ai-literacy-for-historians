@@ -1,0 +1,8 @@
+---
+title: Open Research Data
+format:
+  html:
+    embed-resources: true
+---
+
+{{< include README.md >}}
