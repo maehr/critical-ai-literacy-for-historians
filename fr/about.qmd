@@ -11,35 +11,35 @@ lang: fr
 
 Le projet repose sur les principes pédagogiques suivants :
 
-1. **L'IA comme outil et méthode** : Comprendre l'IA non seulement comme un outil technique mais aussi comme une approche méthodologique qui façonne les questions de recherche et les interprétations
-2. **Critique des sources numériques** : Appliquer une évaluation critique rigoureuse aux contenus générés par l'IA, aux jeux de données et aux résultats algorithmiques
-3. **Conscience éthique** : Favoriser une utilisation responsable de l'IA qui prend en compte la vie privée, les biais, la représentation et les dynamiques de pouvoir
-4. **Transparence et reproductibilité** : Promouvoir des pratiques de recherche ouvertes, documentées et réplicables
-5. **Rigueur disciplinaire** : Maintenir les méthodes historiques et la pensée critique tout en intégrant les nouvelles technologies
+1.  **L'IA comme outil et méthode** : Comprendre l'IA non seulement comme un outil technique mais aussi comme une approche méthodologique qui façonne les questions de recherche et les interprétations
+2.  **Critique des sources numériques** : Appliquer une évaluation critique rigoureuse aux contenus générés par l'IA, aux jeux de données et aux résultats algorithmiques
+3.  **Conscience éthique** : Favoriser une utilisation responsable de l'IA qui prend en compte la vie privée, les biais, la représentation et les dynamiques de pouvoir
+4.  **Transparence et reproductibilité** : Promouvoir des pratiques de recherche ouvertes, documentées et réplicables
+5.  **Rigueur disciplinaire** : Maintenir les méthodes historiques et la pensée critique tout en intégrant les nouvelles technologies
 
 ### Approche d'apprentissage
 
 Les exercices suivent une progression structurée :
 
-- **Débutant** : Introduction aux concepts d'IA et évaluation critique de base
-- **Intermédiaire** : Application d'outils d'IA à la recherche historique avec réflexion critique
-- **Avancé** : Conception de projets de recherche intégrant l'IA avec sophistication méthodologique
+-   **Débutant** : Introduction aux concepts d'IA et évaluation critique de base
+-   **Intermédiaire** : Application d'outils d'IA à la recherche historique avec réflexion critique
+-   **Avancé** : Conception de projets de recherche intégrant l'IA avec sophistication méthodologique
 
 Chaque exercice comprend :
 
-- Des objectifs d'apprentissage clairs
-- Une estimation du temps nécessaire
-- Des prérequis
-- Des activités pratiques
-- Des invitations à la réflexion critique
-- Des ressources supplémentaires
+-   Des objectifs d'apprentissage clairs
+-   Une estimation du temps nécessaire
+-   Des prérequis
+-   Des activités pratiques
+-   Des invitations à la réflexion critique
+-   Des ressources supplémentaires
 
 ### Principes FAIR et CARE
 
 Ce projet adhère :
 
-- Aux principes **FAIR** (Findable, Accessible, Interoperable, Reusable) pour les données de recherche et les matériels pédagogiques
-- Aux principes **CARE** (Collective Benefit, Authority to Control, Responsibility, Ethics) pour une gouvernance responsable des données
+-   Aux principes **FAIR** (Findable, Accessible, Interoperable, Reusable) pour les données de recherche et les matériels pédagogiques
+-   Aux principes **CARE** (Collective Benefit, Authority to Control, Responsibility, Ethics) pour une gouvernance responsable des données
 
 ### Contribuer
 
@@ -47,8 +47,8 @@ Nous accueillons les contributions des historien·ne·s, éducateur·rice·s et 
 
 ### Licence
 
-- Matériels pédagogiques : [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
-- Code : [AGPL 3.0](../LICENSE-AGPL.md)
+-   Matériels pédagogiques : [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
+-   Code : [AGPL 3.0](../LICENSE-AGPL.md)
 
 ### Contact
 

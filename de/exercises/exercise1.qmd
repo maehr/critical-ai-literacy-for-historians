@@ -35,126 +35,106 @@ Diese Übung führt Sie durch den Prozess der Anwendung digitaler Quellenkritik 
 
 KI-generierte Inhalte umfassen:
 
-- Text, der von großen Sprachmodellen erstellt wurde (z.B. ChatGPT, Claude, Gemini)
-- Zusammenfassungen und Übersetzungen, die von KI-Tools erstellt wurden
-- Daten, die durch Machine-Learning-Algorithmen extrahiert oder strukturiert wurden
-- Visualisierungen und Analysen basierend auf KI-Verarbeitung
+-   Text, der von großen Sprachmodellen erstellt wurde (z.B. ChatGPT, Claude, Gemini)
+-   Zusammenfassungen und Übersetzungen, die von KI-Tools erstellt wurden
+-   Daten, die durch Machine-Learning-Algorithmen extrahiert oder strukturiert wurden
+-   Visualisierungen und Analysen basierend auf KI-Verarbeitung
 
 ### Warum kritische Bewertung wichtig ist
 
 KI-Systeme:
 
-- Sind auf bestehenden Daten trainiert, die Verzerrungen enthalten können
-- Können plausible, aber faktisch falsche Informationen produzieren ("Halluzinationen")
-- Spiegeln die Perspektiven und Einschränkungen ihrer Trainingsdaten wider
-- Verstehen möglicherweise nicht den Kontext, die Nuancen oder die historische Komplexität
+-   Sind auf bestehenden Daten trainiert, die Verzerrungen enthalten können
+-   Können plausible, aber faktisch falsche Informationen produzieren ("Halluzinationen")
+-   Spiegeln die Perspektiven und Einschränkungen ihrer Trainingsdaten wider
+-   Verstehen möglicherweise nicht den Kontext, die Nuancen oder die historische Komplexität
 
 ## Aktivität 1: Untersuchung KI-generierter historischer Texte
 
 ### Aufgabe
 
-1. Wählen Sie ein bestimmtes historisches Ereignis, eine Person oder Periode, mit der Sie vertraut sind
-2. Bitten Sie einen KI-Assistenten (z.B. ChatGPT, Claude) um eine Zusammenfassung oder Erklärung
-3. Lesen Sie die KI-generierte Antwort sorgfältig
+1.  Wählen Sie ein bestimmtes historisches Ereignis, eine Person oder Periode, mit der Sie vertraut sind
+2.  Bitten Sie einen KI-Assistenten (z.B. ChatGPT, Claude) um eine Zusammenfassung oder Erklärung
+3.  Lesen Sie die KI-generierte Antwort sorgfältig
 
 ### Kritische Fragen
 
 Wenden Sie diese quellenkritischen Fragen auf die KI-Ausgabe an:
 
-**Provenienz:**
-- Welche Trainingsdaten wurden verwendet, um diese Antwort zu generieren?
-- Können Sie die Informationsquellen nachverfolgen?
-- Werden Zitate oder Referenzen bereitgestellt?
+**Provenienz:** - Welche Trainingsdaten wurden verwendet, um diese Antwort zu generieren? - Können Sie die Informationsquellen nachverfolgen? - Werden Zitate oder Referenzen bereitgestellt?
 
-**Autorität:**
-- Welche Qualifikationen hat das KI-System, um dieses Thema zu diskutieren?
-- Wie wurde es trainiert und von wem?
-- Was sind seine bekannten Einschränkungen?
+**Autorität:** - Welche Qualifikationen hat das KI-System, um dieses Thema zu diskutieren? - Wie wurde es trainiert und von wem? - Was sind seine bekannten Einschränkungen?
 
-**Genauigkeit:**
-- Stimmen die Informationen mit dem wissenschaftlichen Konsens überein?
-- Können Sie spezifische Behauptungen durch andere Quellen verifizieren?
-- Gibt es sachliche Fehler oder Anachronismen?
+**Genauigkeit:** - Stimmen die Informationen mit dem wissenschaftlichen Konsens überein? - Können Sie spezifische Behauptungen durch andere Quellen verifizieren? - Gibt es sachliche Fehler oder Anachronismen?
 
-**Verzerrung:**
-- Welche Perspektiven sind vertreten oder fehlen?
-- Spiegelt die Antwort bestimmte geografische, zeitliche oder kulturelle Verzerrungen wider?
-- Welche Stimmen oder Narrative werden privilegiert oder marginalisiert?
+**Verzerrung:** - Welche Perspektiven sind vertreten oder fehlen? - Spiegelt die Antwort bestimmte geografische, zeitliche oder kulturelle Verzerrungen wider? - Welche Stimmen oder Narrative werden privilegiert oder marginalisiert?
 
-**Zweck:**
-- Wofür wurde die KI entwickelt (informieren, überzeugen, unterhalten)?
-- Wie könnten ihre Designziele die Antwort beeinflussen?
+**Zweck:** - Wofür wurde die KI entwickelt (informieren, überzeugen, unterhalten)? - Wie könnten ihre Designziele die Antwort beeinflussen?
 
 ## Aktivität 2: Vergleichende Quellenanalyse
 
 ### Aufgabe
 
-1. Wählen Sie eine historische Frage (z.B. "Was verursachte den Fall des Römischen Reiches?")
-2. Finden Sie Antworten aus drei verschiedenen Quellen:
-   - Ein peer-reviewed wissenschaftlicher Artikel
-   - Ein allgemeiner Enzyklopädie-Eintrag (z.B. Wikipedia)
-   - Eine KI-generierte Antwort
+1.  Wählen Sie eine historische Frage (z.B. "Was verursachte den Fall des Römischen Reiches?")
+2.  Finden Sie Antworten aus drei verschiedenen Quellen:
+    -   Ein peer-reviewed wissenschaftlicher Artikel
+    -   Ein allgemeiner Enzyklopädie-Eintrag (z.B. Wikipedia)
+    -   Eine KI-generierte Antwort
 
 ### Vergleichsrahmen
 
 Vergleichen Sie die drei Quellen anhand dieses Rahmens:
 
 | Kriterium | Wissenschaftlicher Artikel | Enzyklopädie | KI-Antwort |
-|-----------|---------------------------|--------------|-------------|
-| **Zitierte Evidenz** | | | |
-| **Autorenexpertise** | | | |
-| **Veröffentlichungsdatum** | | | |
-| **Nuancen und Komplexität** | | | |
-| **Anerkannte Einschränkungen** | | | |
-| **Zugänglichkeit** | | | |
+|----|----|----|----|
+| **Zitierte Evidenz** |  |  |  |
+| **Autorenexpertise** |  |  |  |
+| **Veröffentlichungsdatum** |  |  |  |
+| **Nuancen und Komplexität** |  |  |  |
+| **Anerkannte Einschränkungen** |  |  |  |
+| **Zugänglichkeit** |  |  |  |
 
 ### Reflexionsfragen
 
-- Was sind die Stärken und Einschränkungen jedes Quellentyps?
-- In welchen Forschungskontexten könnte jede Quelle am geeignetsten sein?
-- Wie würden Sie jeden Quellentyp in Ihrer Arbeit zitieren?
+-   Was sind die Stärken und Einschränkungen jedes Quellentyps?
+-   In welchen Forschungskontexten könnte jede Quelle am geeignetsten sein?
+-   Wie würden Sie jeden Quellentyp in Ihrer Arbeit zitieren?
 
 ## Aktivität 3: KI-Halluzinationen identifizieren
 
 ### Aufgabe
 
-Fragen Sie einen KI-Assistenten nach einem sehr spezifischen historischen Detail, das:
-- Etwas obskur, aber überprüfbar ist
-- Klare Dokumentation in historischen Aufzeichnungen hat
-- Plausibel mit ähnlichen Ereignissen verwechselt werden könnte
+Fragen Sie einen KI-Assistenten nach einem sehr spezifischen historischen Detail, das: - Etwas obskur, aber überprüfbar ist - Klare Dokumentation in historischen Aufzeichnungen hat - Plausibel mit ähnlichen Ereignissen verwechselt werden könnte
 
-Beispiele:
-- Spezifische Daten kleinerer Schlachten
-- Namen weniger bekannter historischer Persönlichkeiten
-- Details über lokale historische Ereignisse
+Beispiele: - Spezifische Daten kleinerer Schlachten - Namen weniger bekannter historischer Persönlichkeiten - Details über lokale historische Ereignisse
 
 ### Analyse
 
-1. Vergleichen Sie die KI-Antwort mit verifizierten historischen Quellen
-2. Identifizieren Sie Ungenauigkeiten oder "Halluzinationen"
-3. Überlegen Sie, warum die KI falsche Informationen generiert haben könnte
+1.  Vergleichen Sie die KI-Antwort mit verifizierten historischen Quellen
+2.  Identifizieren Sie Ungenauigkeiten oder "Halluzinationen"
+3.  Überlegen Sie, warum die KI falsche Informationen generiert haben könnte
 
 ### Kritische Reflexion
 
-- Wie sicher schien die KI in ihren falschen Aussagen?
-- Gab es Warnzeichen, dass die Informationen unzuverlässig sein könnten?
-- Welche Strategien können Ihnen helfen, KI-generierte Informationen zu verifizieren?
+-   Wie sicher schien die KI in ihren falschen Aussagen?
+-   Gab es Warnzeichen, dass die Informationen unzuverlässig sein könnten?
+-   Welche Strategien können Ihnen helfen, KI-generierte Informationen zu verifizieren?
 
 ## Best Practices für den Einsatz von KI in der historischen Forschung
 
 Basierend auf dieser Übung, berücksichtigen Sie diese Richtlinien:
 
-1. **Alles verifizieren**: Überprüfen Sie immer KI-generierte Informationen gegen zuverlässige Quellen
-2. **Einschränkungen verstehen**: Erkennen Sie, dass KI Expertenwissen in Geschichte nicht ersetzen kann
-3. **Verwendung dokumentieren**: Seien Sie transparent darüber, wann und wie Sie KI-Tools verwenden
-4. **Ethik berücksichtigen**: Denken Sie an Datenschutz, Urheberrecht und Repräsentation
-5. **Kritische Distanz wahren**: Nähern Sie sich KI-Ausgaben mit derselben Skepsis wie jeder anderen Quelle
+1.  **Alles verifizieren**: Überprüfen Sie immer KI-generierte Informationen gegen zuverlässige Quellen
+2.  **Einschränkungen verstehen**: Erkennen Sie, dass KI Expertenwissen in Geschichte nicht ersetzen kann
+3.  **Verwendung dokumentieren**: Seien Sie transparent darüber, wann und wie Sie KI-Tools verwenden
+4.  **Ethik berücksichtigen**: Denken Sie an Datenschutz, Urheberrecht und Repräsentation
+5.  **Kritische Distanz wahren**: Nähern Sie sich KI-Ausgaben mit derselben Skepsis wie jeder anderen Quelle
 
 ## Weiterführende Literatur
 
-- Russell, Stuart, und Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4. Aufl. Pearson, 2020.
-- Milligan, Ian. "History in the Age of Abundance?" *McGill-Queen's University Press*, 2019.
-- Erkunden Sie digitale Quellenkritik-Frameworks von The Turing Way
+-   Russell, Stuart, und Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4. Aufl. Pearson, 2020.
+-   Milligan, Ian. "History in the Age of Abundance?" *McGill-Queen's University Press*, 2019.
+-   Erkunden Sie digitale Quellenkritik-Frameworks von The Turing Way
 
 ## Fazit
 
@@ -164,6 +144,5 @@ Denken Sie daran: KI ist ein Werkzeug, das kritisches Engagement erfordert, kein
 
 ## Nächste Schritte
 
-- Gehen Sie zu Übung 2: "KI-Verzerrung in historischen Datensätzen"
-- Erkunden Sie fortgeschrittene Übungen zur Verwendung von KI für historische Textanalyse
-- Diskutieren Sie Ihre Erkenntnisse mit Kolleg:innen oder in Lerngruppen
+-   Erkunden Sie fortgeschrittene Übungen zur Verwendung von KI für historische Textanalyse
+-   Diskutieren Sie Ihre Erkenntnisse mit Kolleg:innen oder in Lerngruppen
