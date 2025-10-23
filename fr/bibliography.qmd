@@ -1,0 +1,8 @@
+---
+title: Bibliographie
+lang: fr
+nocite: |
+  @*
+---
+
+Cette page répertorie toutes les références citées dans le projet Critical AI Literacy pour les Historiens. La bibliographie est automatiquement générée à partir de toutes les citations utilisées dans les exercices et la documentation.

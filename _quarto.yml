@@ -49,6 +49,8 @@ website:
           contents:
             - text: About
               href: en/about.qmd
+            - text: Bibliography
+              href: en/bibliography.qmd
         - section: 'Exercises'
           contents: en/exercises/*
     - id: de
@@ -61,6 +63,8 @@ website:
           contents:
             - text: Über das Projekt
               href: de/about.qmd
+            - text: Bibliographie
+              href: de/bibliography.qmd
         - section: 'Übungen'
           contents: de/exercises/*
     - id: fr
@@ -73,6 +77,8 @@ website:
           contents:
             - text: À propos
               href: fr/about.qmd
+            - text: Bibliographie
+              href: fr/bibliography.qmd
         - section: 'Exercices'
           contents: fr/exercises/*
 
