@@ -39,23 +39,4 @@ elif [ -f "package-lock.json" ]; then
   npm run prepare
 fi
 
-log "Final uv sync (project resolution)"
-if [ -f "uv.lock" ]; then
-  log "Running uv sync"
-  su "${USERNAME}" -c "uv sync"
-else
-  log "No uv.lock file found, skipping uv sync."
-fi
-
-log "Installing R packages"
-if [ -f "renv.lock" ]; then
-  log "Restoring R packages with renv"
-  su "${USERNAME}" -c "Rscript -e 'renv::restore()'"
-elif [ -f "pak.lock" ]; then
-  log "Installing R packages with pak"
-  su "${USERNAME}" -c "Rscript -e 'pak::pkg_install()'"
-else
-  log "No R package manager lock file found, skipping R package installation."
-fi
-
 log "Setup complete."
