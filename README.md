@@ -73,17 +73,15 @@ Visit the live website to explore exercises in your preferred language:
 3. Select the **"Codespaces"** tab and click **"Create codespace on `main`"**.
    GitHub will build a container that includes:
    - ✅ Node.js (via `npm`)
-   - ✅ Python with `uv`
-   - ✅ R with `renv`
    - ✅ Quarto
 
 4. Once the Codespace is ready, open a terminal and preview the documentation:
 
    ```bash
-   uv run quarto preview
+   quarto preview
    ```
 
-> **Note:** All dependencies (Node.js, Python, R, Quarto) are pre-installed in the Codespace.
+> **Note:** All dependencies (Node.js, Quarto) are pre-installed in the Codespace.
 
 <details>
 <summary>👩‍💻 <strong>Advanced</strong> Local Installation</summary>
@@ -91,11 +89,7 @@ Visit the live website to explore exercises in your preferred language:
 #### Prerequisites
 
 - [Node.js](https://nodejs.org/en/download/)
-- [R](https://cran.r-project.org/) and Rtools (on Windows)
-- [uv (Python manager)](https://github.com/astral-sh/uv#installation)
 - [Quarto](https://quarto.org/docs/get-started/)
-
-> _Note: `uv` installs and manages the correct Python version automatically._
 
 #### Local Setup Steps
 
@@ -104,14 +98,8 @@ Visit the live website to explore exercises in your preferred language:
 npm install
 npm run prepare
 
-# 2. Setup Python environment
-uv sync
-
-# 3. Setup R environment
-Rscript -e 'install.packages("renv"); renv::restore()'
-
-# 4. Preview documentation
-uv run quarto preview
+# 2. Preview documentation
+quarto preview
 ```
 
 </details>
@@ -139,7 +127,7 @@ npm run format
 Preview the documentation while editing:
 
 ```bash
-uv run quarto preview
+quarto preview
 ```
 
 Commit your changes using conventional commits:
@@ -165,8 +153,6 @@ This project is maintained by [@maehr](https://github.com/maehr). Please underst
 
 - [ ] Expand exercises to cover advanced AI topics for historians
 - [ ] Add interactive elements and quizzes
-- [ ] Develop case studies from real historical research projects
-- [ ] Create video tutorials and demonstrations
 - [ ] Build a community of practice for AI-literate historians
 
 ## Contributing

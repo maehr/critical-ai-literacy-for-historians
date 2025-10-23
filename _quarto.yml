@@ -3,7 +3,7 @@ project:
 
 website:
   title: 'Critical AI Literacy for Historians'
-  favicon: android-chrome-512x512.png
+  favicon: favicon.png
   open-graph: true
   twitter-card: true
   site-url: https://maehr.github.io/critical-ai-literacy-for-historians/
@@ -17,7 +17,7 @@ website:
     show-item-context: true
     type: overlay
   navbar:
-    logo: android-chrome-512x512.png
+    logo: favicon.svg
     logo-alt: 'Critical AI Literacy for Historians'
     title: 'Critical AI Literacy'
     tools:
@@ -38,7 +38,6 @@ website:
             href: de/about.qmd
           - text: À propos (FR)
             href: fr/about.qmd
-
   sidebar:
     - id: en
       title: 'English'
@@ -52,22 +51,7 @@ website:
               href: en/about.qmd
         - section: 'Exercises'
           contents:
-            - en/exercises/exercise1.qmd
-        - section: 'Project Information'
-          contents:
-            - text: Changelog
-              href: CHANGELOG.md
-            - text: Code of Conduct
-              href: CODE_OF_CONDUCT.md
-            - text: Contributing
-              href: CONTRIBUTING.md
-            - text: License (Data)
-              href: LICENSE-CCBY.md
-            - text: License (Code)
-              href: LICENSE-AGPL.md
-            - text: Security
-              href: SECURITY.md
-
+            - en/exercises/*
     - id: de
       title: 'Deutsch'
       style: 'floating'
@@ -80,22 +64,7 @@ website:
               href: de/about.qmd
         - section: 'Übungen'
           contents:
-            - de/exercises/exercise1.qmd
-        - section: 'Projektinformationen'
-          contents:
-            - text: Changelog
-              href: CHANGELOG.md
-            - text: Verhaltenskodex
-              href: CODE_OF_CONDUCT.md
-            - text: Mitwirken
-              href: CONTRIBUTING.md
-            - text: Lizenz (Daten)
-              href: LICENSE-CCBY.md
-            - text: Lizenz (Code)
-              href: LICENSE-AGPL.md
-            - text: Sicherheit
-              href: SECURITY.md
-
+            - de/exercises/*
     - id: fr
       title: 'Français'
       style: 'floating'
@@ -108,21 +77,7 @@ website:
               href: fr/about.qmd
         - section: 'Exercices'
           contents:
-            - fr/exercises/exercise1.qmd
-        - section: 'Informations sur le projet'
-          contents:
-            - text: Changelog
-              href: CHANGELOG.md
-            - text: Code de conduite
-              href: CODE_OF_CONDUCT.md
-            - text: Contribuer
-              href: CONTRIBUTING.md
-            - text: Licence (Données)
-              href: LICENSE-CCBY.md
-            - text: Licence (Code)
-              href: LICENSE-AGPL.md
-            - text: Sécurité
-              href: SECURITY.md
+            - fr/exercises/*
 
 format:
   html:
