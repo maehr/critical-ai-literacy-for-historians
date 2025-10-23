@@ -5,4 +5,9 @@ nocite: |
   @*
 ---
 
+::: callout-note
 This page lists all references cited throughout the Critical AI Literacy for Historians project. The bibliography is automatically generated from all citations used in the exercises and documentation.
+:::
+
+::: {#refs}
+:::
