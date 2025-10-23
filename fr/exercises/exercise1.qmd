@@ -6,11 +6,10 @@ description: "Cet exercice initie les historien·ne·s à l'évaluation critique
 author:
   - name: "Équipe Littératie critique de l'IA"
     affiliation: "Humanités numériques"
-    email: "contact@example.com"
 date: "2024-01-15"
-date-modified: "2024-01-15"
-categories: [Littératie IA, Critique des sources numériques]
-tags: [IA, Histoire, Éthique, Critique des sources]
+date-modified: "2025-01-23"
+categories: [Critique des sources]
+tags: [IA, LLM, Biais]
 difficulty: "Débutant"
 time_estimate: "45 minutes"
 prerequisites:

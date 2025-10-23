@@ -6,11 +6,10 @@ description: "This exercise introduces historians to the critical evaluation of 
 author:
   - name: "Critical AI Literacy Team"
     affiliation: "Digital Humanities"
-    email: "contact@example.com"
 date: "2024-01-15"
-date-modified: "2024-01-15"
-categories: [AI Literacy, Digital Source Criticism]
-tags: [AI, History, Ethics, Source Criticism]
+date-modified: "2025-01-23"
+categories: [Source Criticism]
+tags: [AI, LLM, Bias]
 difficulty: "Beginner"
 time_estimate: "45 minutes"
 prerequisites:
