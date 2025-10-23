@@ -1,0 +1,13 @@
+---
+title: Bibliographie
+lang: de
+nocite: |
+  @*
+---
+
+::: callout-note
+Diese Seite listet alle Referenzen auf, die im Projekt Critical AI Literacy für Historiker:innen zitiert werden. Die Bibliographie wird automatisch aus allen Zitaten generiert, die in den Übungen und der Dokumentation verwendet werden.
+:::
+
+::: {#refs}
+:::

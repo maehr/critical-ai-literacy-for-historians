@@ -44,38 +44,43 @@ website:
       style: 'floating'
       collapse-level: 2
       contents:
-        - section: 'Home'
+        - text: 'Home'
           href: en/index.qmd
-          contents:
-            - text: About
-              href: en/about.qmd
         - section: 'Exercises'
+          href: en/exercises/index.qmd
           contents: en/exercises/*
+        - text: About
+          href: en/about.qmd
+        - text: Bibliography
+          href: en/bibliography.qmd
     - id: de
       title: 'Deutsch'
       style: 'floating'
       collapse-level: 2
       contents:
-        - section: 'Startseite'
+        - text: 'Startseite'
           href: de/index.qmd
-          contents:
-            - text: Über das Projekt
-              href: de/about.qmd
-        - section: 'Übungen'
+        - text: 'Übungen'
+          href: de/exercises/index.qmd
           contents: de/exercises/*
+        - text: Über das Projekt
+          href: de/about.qmd
+        - text: Bibliographie
+          href: de/bibliography.qmd
     - id: fr
       title: 'Français'
       style: 'floating'
       collapse-level: 2
       contents:
-        - section: 'Accueil'
+        - text: 'Accueil'
           href: fr/index.qmd
-          contents:
-            - text: À propos
-              href: fr/about.qmd
         - section: 'Exercices'
+          href: fr/exercises/index.qmd
           contents: fr/exercises/*
-
+        - text: À propos
+          href: fr/about.qmd
+        - text: Bibliographie
+          href: fr/bibliography.qmd
 format:
   html:
     toc: true

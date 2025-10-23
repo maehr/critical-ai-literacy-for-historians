@@ -7,11 +7,12 @@
 	"scripts": {
 		"check": "prettier --check .",
 		"commit": "cz",
-		"format": "prettier --write .",
+		"format": "prettier --write . && bibtex-tidy bibliography.bib -m --sort --duplicates --no-wrap",
 		"prepare": "husky",
 		"changelog": "npm exec git-cliff -- --config cliff.toml"
 	},
 	"devDependencies": {
+		"bibtex-tidy": "^1.14.0",
 		"commitizen": "^4.3.1",
 		"cz": "^1.8.2",
 		"cz-conventional-changelog": "^3.3.0",

@@ -1,0 +1,166 @@
+name: 📚 Suggest Literature
+description: Suggest scholarly literature or resources to add to the bibliography
+title: '[Literature]: '
+labels: ['documentation', 'enhancement']
+assignees:
+  - maehr
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting literature to add to our bibliography! Quality scholarly references help enrich the educational content of this project.
+
+  - type: dropdown
+    id: resource-type
+    attributes:
+      label: Resource Type
+      description: What type of resource are you suggesting?
+      options:
+        - Journal Article
+        - Book
+        - Book Chapter
+        - Conference Paper
+        - Online Resource
+        - Report/White Paper
+        - Thesis/Dissertation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Full title of the work
+      placeholder: 'e.g., "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"'
+    validations:
+      required: true
+
+  - type: textarea
+    id: authors
+    attributes:
+      label: Author(s)
+      description: Full names of all authors
+      placeholder: |
+        Emily M. Bender
+        Timnit Gebru
+        Angelina McMillan-Major
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      description: Year of publication
+      placeholder: e.g., "2021"
+    validations:
+      required: true
+
+  - type: textarea
+    id: publication-details
+    attributes:
+      label: Publication Details
+      description: Journal/conference name, volume, pages, publisher, etc.
+      placeholder: |
+        Journal: Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency
+        Pages: 610-623
+        Publisher: ACM
+    validations:
+      required: true
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      description: Digital Object Identifier (if available)
+      placeholder: e.g., "10.1145/3442188.3445922"
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Direct link to the resource (if available and not behind paywall)
+      placeholder: https://
+
+  - type: input
+    id: isbn
+    attributes:
+      label: ISBN
+      description: For books (if available)
+      placeholder: e.g., "978-0134610993"
+
+  - type: dropdown
+    id: relevance
+    attributes:
+      label: Relevance
+      description: Which category best describes the relevance to this project?
+      options:
+        - AI/Machine Learning in Historical Research
+        - Critical AI Studies
+        - Digital Source Criticism
+        - AI Ethics and Bias
+        - Digital Humanities Methods
+        - Historical Theory and Method
+        - Data Science and Research
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Brief Summary
+      description: Why is this resource relevant to the project? What key concepts or insights does it provide?
+      placeholder: Describe the main arguments, findings, or contributions of this work and how they relate to critical AI literacy for historians.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      description: Is this resource freely accessible?
+      options:
+        - Open Access
+        - Subscription Required
+        - Mixed (some parts free, some restricted)
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: bibtex
+    attributes:
+      label: BibTeX Entry (Optional)
+      description: If you have a BibTeX entry ready, you can paste it here
+      placeholder: |
+        @article{bender2021dangers,
+          title = {On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?},
+          author = {Bender, Emily M. and Gebru, Timnit and McMillan-Major, Angelina and Shmitchell, Shmargaret},
+          journal = {Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency},
+          year = {2021},
+          pages = {610--623},
+          doi = {10.1145/3442188.3445922}
+        }
+      render: bibtex
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would be helpful
+      placeholder: Related works, language(s) available, awards received, etc.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Contribution Guidelines
+      description: Please confirm the following
+      options:
+        - label: This is a scholarly/academic resource appropriate for an educational bibliography
+          required: true
+        - label: I have verified the publication details are accurate
+          required: true
+        - label: I have checked that this resource is not already in the bibliography
+          required: true

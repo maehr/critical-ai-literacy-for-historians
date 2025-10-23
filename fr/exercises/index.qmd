@@ -1,0 +1,6 @@
+---
+title: "Exercices"
+lang: fr
+listing: default
+citation: false
+---
