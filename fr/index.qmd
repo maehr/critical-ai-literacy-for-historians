@@ -1,6 +1,10 @@
 ---
 title: "Littératie critique de l'IA pour les historien·ne·s"
 lang: fr
+listing:
+  id: exercises
+  contents: exercises
+  type: grid
 ---
 
 ## Bienvenue
@@ -11,23 +15,26 @@ Ce dépôt propose des exercices structurés et pratiques permettant aux histori
 
 Ces ressources visent à aider les apprenant·e·s à :
 
-- Comprendre comment l'IA fonctionne à la fois comme **outil** et comme **méthode** de recherche
-- Réfléchir à la manière dont elle façonne l'interprétation historique et la preuve
-- Appliquer une critique rigoureuse des sources numériques pour évaluer la provenance des données, la représentation et les biais
-- Pratiquer une utilisation responsable, transparente et éthiquement informée de l'IA dans la recherche historique
+-   Comprendre comment l'IA fonctionne à la fois comme **outil** et comme **méthode** de recherche
+-   Réfléchir à la manière dont elle façonne l'interprétation historique et la preuve
+-   Appliquer une critique rigoureuse des sources numériques pour évaluer la provenance des données, la représentation et les biais
+-   Pratiquer une utilisation responsable, transparente et éthiquement informée de l'IA dans la recherche historique
 
 ### Principes
 
 Les exercices encouragent :
 
-- La **reproductibilité** dans les workflows de recherche
-- Le **respect de la vie privée** et la gestion éthique des données
-- La **sensibilisation au droit d'auteur** et l'attribution appropriée
-- La **durabilité** par des approches de calcul minimal
-- La **collaboration interdisciplinaire** et la réflexion critique
+-   La **reproductibilité** dans les workflows de recherche
+-   Le **respect de la vie privée** et la gestion éthique des données
+-   La **sensibilisation au droit d'auteur** et l'attribution appropriée
+-   La **durabilité** par des approches de calcul minimal
+-   La **collaboration interdisciplinaire** et la réflexion critique
 
 En s'engageant avec ces ressources, les historien·ne·s seront mieux équipé·e·s pour concevoir des projets transparents et significatifs qui intègrent l'IA dans leur recherche sans compromettre la rigueur disciplinaire.
 
 ## Pour commencer
 
-Explorez les [exercices](exercises/) pour commencer votre parcours de développement d'une littératie critique de l'IA pour la recherche historique.
+Explorez les exercices pour commencer votre parcours de développement d'une littératie critique de l'IA pour la recherche historique.
+
+::: {#exercises}
+:::

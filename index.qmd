@@ -3,4 +3,6 @@ title: Critical AI Literacy for Historians
 lang: en
 ---
 
-TBD: Add content for the index page.
+::: {.callout-warning}
+DISCLAIMER: This project is currently under active development and in very early stage. The materials provided here are preliminary and may change significantly. Please use them with caution and be aware that they may not yet represent the final quality or scope intended for this resource.
+:::
