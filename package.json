@@ -1,8 +1,8 @@
 {
-	"name": "REPO_NAME",
-	"description": "SHORT_DESCRIPTION",
-	"author": "FULLNAME <[INSERT CONTACT METHOD]>",
-	"url": "https://github.com/USERNAME/REPO_NAME/issues",
+	"name": "critical-ai-literacy-for-historians",
+	"description": "Structured exercises for developing critical AI literacy in historical research",
+	"author": "Moritz Mähr <moritz.maehr@unibe.ch>",
+	"url": "https://github.com/maehr/critical-ai-literacy-for-historians/issues",
 	"license": "AGPL-3.0",
 	"scripts": {
 		"check": "prettier --check .",

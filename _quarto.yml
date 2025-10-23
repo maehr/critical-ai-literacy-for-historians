@@ -2,13 +2,13 @@ project:
   type: website
 
 website:
-  title: REPO_NAME
-  favicon: android-chrome-512x512.png
+  title: 'Critical AI Literacy for Historians'
+  favicon: favicon.png
   open-graph: true
   twitter-card: true
-  site-url: https://USERNAME.github.io/REPO_NAME/
-  repo-url: https://github.com/USERNAME/REPO_NAME/
-  issue-url: https://github.com/USERNAME/REPO_NAME/issues/new/choose
+  site-url: https://maehr.github.io/critical-ai-literacy-for-historians/
+  repo-url: https://github.com/maehr/critical-ai-literacy-for-historians/
+  issue-url: https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
@@ -17,37 +17,64 @@ website:
     show-item-context: true
     type: overlay
   navbar:
-    logo: android-chrome-512x512.png
-    logo-alt: ''
-    title: REPO_NAME
+    logo: favicon.svg
+    logo-alt: 'Critical AI Literacy for Historians'
+    title: 'Critical AI Literacy'
     tools:
       - icon: github
-        url: https://github.com/USERNAME/REPO_NAME/
+        url: https://github.com/maehr/critical-ai-literacy-for-historians/
     left:
-      - text: Readme
-        href: index.qmd
-      - text: Report
-        href: report.md
-
+      - text: English
+        href: en/index.qmd
+      - text: Deutsch
+        href: de/index.qmd
+      - text: Français
+        href: fr/index.qmd
+      - text: ℹ️
+        menu:
+          - text: About (EN)
+            href: en/about.qmd
+          - text: Über das Projekt (DE)
+            href: de/about.qmd
+          - text: À propos (FR)
+            href: fr/about.qmd
   sidebar:
-    contents:
-      - section: REPO_NAME
-        href: index.qmd
-        contents:
-          - text: Changelog
-            href: CHANGELOG.md
-          - text: Code of Conduct
-            href: CODE_OF_CONDUCT.md
-          - text: Contributing
-            href: CONTRIBUTING.md
-          - text: License (Data)
-            href: LICENSE-CCBY.md
-          - text: License (Code)
-            href: LICENSE-AGPL.md
-          - text: Security
-            href: SECURITY.md
-      - href: report.md
-        contents: project-management/*
+    - id: en
+      title: 'English'
+      style: 'floating'
+      collapse-level: 2
+      contents:
+        - section: 'Home'
+          href: en/index.qmd
+          contents:
+            - text: About
+              href: en/about.qmd
+        - section: 'Exercises'
+          contents: en/exercises/*
+    - id: de
+      title: 'Deutsch'
+      style: 'floating'
+      collapse-level: 2
+      contents:
+        - section: 'Startseite'
+          href: de/index.qmd
+          contents:
+            - text: Über das Projekt
+              href: de/about.qmd
+        - section: 'Übungen'
+          contents: de/exercises/*
+    - id: fr
+      title: 'Français'
+      style: 'floating'
+      collapse-level: 2
+      contents:
+        - section: 'Accueil'
+          href: fr/index.qmd
+          contents:
+            - text: À propos
+              href: fr/about.qmd
+        - section: 'Exercices'
+          contents: fr/exercises/*
 
 format:
   html:

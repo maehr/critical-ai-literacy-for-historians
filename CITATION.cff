@@ -1,1 +1,25 @@
 # Go to https://citation-file-format.github.io/ to learn more about the Citation File Format.
+cff-version: 1.2.0
+message: 'If you use these materials in your teaching or research, please cite using the metadata from this file.'
+type: dataset
+title: 'Critical AI Literacy for Historians'
+abstract: 'Structured, hands-on exercises for historians to develop critical AI literacy, digital source criticism, and scholarly practice with large language models.'
+authors:
+  - family-names: 'Mähr'
+    given-names: 'Moritz'
+    orcid: 'https://orcid.org/0000-0002-1367-1618'
+    email: 'moritz.maehr@gmail.com'
+    affiliation: 'University of Bern'
+repository-code: 'https://github.com/maehr/critical-ai-literacy-for-historians'
+url: 'https://maehr.github.io/critical-ai-literacy-for-historians/'
+keywords:
+  - AI literacy
+  - critical thinking
+  - digital humanities
+  - historical research
+  - source criticism
+  - digital pedagogy
+  - LLM
+  - artificial intelligence
+license: CC-BY-NC-SA 4.0
+license-url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'

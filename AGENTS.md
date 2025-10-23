@@ -1,121 +1,157 @@
-# AGENTS Guidelines for This Repository
+# AGENTS Guidelines for Critical AI Literacy for Historians
 
-This repository is a **GitHub template** for FAIR and open research data documentation. These guidelines align with `TODO.md` and apply when interacting with the repo using agents (e.g., Copilot, Cursor, other AI tools).
+This repository provides multilingual educational exercises for developing critical AI literacy in historical research. These guidelines apply when interacting with the repository using AI agents (e.g., Copilot, Cursor, or other AI tools).
 
-> **Two contexts**
->
-> - **Template maintenance**: you are improving this template for reuse.
-> - **Project instances**: a user has created a new repo _from_ this template and is customizing it.
->
-> Rules below state which context they target. When unspecified, they apply to both.
+## 1) Use Preview Mode During Interactive Sessions
 
-## 1) Use Preview Mode During Interactive Sessions (Both)
-
-- **Always run `quarto preview` (or `uv run quarto preview`)** while iterating on docs. Live reload for `.qmd`, `.md`, and assets.
+- **Always run `quarto preview`** while iterating on documentation. Live reload works for `.qmd`, `.md`, and asset files.
 - **Do not run production commands inside agent sessions** unless explicitly requested by the human maintainer:
-  - Avoid: `quarto render`, `quarto publish gh-pages`.
-- Keep the preview server running while editing.
+  - Avoid: `quarto render`, `quarto publish gh-pages`
+- Keep the preview server running while editing to verify changes in real-time.
 
-## 2) Placeholder Policy (Template vs Project)
+## 2) Multilingual Content Management
 
-This template includes placeholders like: `USERNAME`, `REPO_NAME`, `FULLNAME`, `SHORT_DESCRIPTION`, `ZENODO_RECORD`, `[INSERT CONTACT METHOD]`, `GITHUB_REPO_ID`, `DOI`.
+This repository maintains content in three languages: English (en/), German (de/), and French (fr/).
 
-- **Template maintenance**:
-  - Keep placeholders intact across all files so downstream users can replace them.
-  - Update example values only in explanatory comments or docs.
+### Translation Workflow
 
-- **Project instances**:
-  - **Replace placeholders** in:
-    - `.github/ISSUE_TEMPLATE/config.yml`
-    - `_brand.yml`
-    - `CODE_OF_CONDUCT.md`
-    - `package.json`
-    - `pyproject.toml`
-    - `README.template.md` → after replacement, **rename to `README.md`** when finalized
-    - `SECURITY.md`
-  - Leave any non-project template placeholders untouched only if the file explicitly documents template behavior for reuse.
+- **Manual Translations**: All translations should be done manually by qualified translators or native speakers to ensure accuracy and cultural appropriateness.
+- **Keeping Translations in Sync**: When updating content:
+  1. Make changes to the English version first (en/)
+  2. Mark the corresponding German and French files as needing translation
+  3. Create an issue using the label `translation-needed` to track translation work
+  4. Ensure all three language versions have parallel content structure
 
-## 3) Formatting and Linting (Both)
+### Content Parity
 
-- Run **`npm run format`** before commits to enforce Prettier.
-- Use **`npm run check`** to verify formatting without writing changes.
-- For Python code, use **`uv run ruff check`** to lint and **`uv run ruff format`** to format.
-- For Python type checking, use **`uv run ty check`**.
-- For R code, use **`styler::style_dir(".")`** to format and **`lintr::lint_dir(".")`** to lint.
+- Each language directory should have identical file structure
+- Exercise numbering and naming should be consistent across languages
+- When adding new exercises, create placeholder files in all three languages
 
-## 4) Commits and Changelog (Both)
+## 3) Exercise Metadata Standards
 
-- Use **`npm run commit`** to follow Conventional Commits.
-- After committing, generate entries with **`npm run changelog`** and update `CHANGELOG.md`.
+### Categories (Use Only These)
 
-## 5) Repository Structure (Both)
+Exercises must use **exactly one** of these categories:
 
-Aligned with _The Turing Way_ advanced structure:
+- **English**: `AI Literacy`, `Source Criticism`, `Ethics`, `Methods`
+- **German**: `KI-Kompetenz`, `Quellenkritik`, `Ethik`, `Methoden`
+- **French**: `Littératie IA`, `Critique des sources`, `Éthique`, `Méthodes`
 
-- `analysis/` — notebooks and analysis scripts
-- `assets/` — images and media
-- `build/` — data build/processing scripts
-- `data/` — datasets (FAIR-aligned)
-- `documentation/` — extended docs beyond README
-- `project-management/` — planning and minutes
-- `src/` — source code for collection/processing
-- `test/` — tests for code and data validation
+### Tags (Limited Set)
 
-Place new files accordingly.
+Use a narrow, controlled set of tags. Choose **2-4 tags** from:
 
-## 6) Dependency Management (Both)
+- **English**: `AI`, `LLM`, `History`, `Bias`, `Privacy`, `Transparency`, `Research Methods`
+- **German**: `KI`, `LLM`, `Geschichte`, `Bias`, `Datenschutz`, `Transparenz`, `Forschungsmethoden`
+- **French**: `IA`, `LLM`, `Histoire`, `Biais`, `Confidentialité`, `Transparence`, `Méthodes de recherche`
 
-### Node.js (npm)
+### Required YAML Front Matter
 
-1. `npm install <package>`
-2. Commit `package.json` and `package-lock.json`
-3. If needed: `npm run prepare` to reinit Husky hooks
+Every exercise must include:
 
-### Python (uv)
+```yaml
+lang: en # or de, fr
+title: 'Exercise Title'
+description: 'Brief description'
+author:
+  - name: 'Author Name'
+    affiliation: 'Institution'
+date: 'YYYY-MM-DD'
+date-modified: 'YYYY-MM-DD'
+categories: [Category] # ONE category only
+tags: [Tag1, Tag2, Tag3] # 2-4 tags
+difficulty: 'Beginner' # or Intermediate, Advanced
+time_estimate: '45 minutes'
+draft: false
+```
 
-1. Edit `pyproject.toml`
-2. `uv sync` to refresh `uv.lock`
-3. Commit both files
+## 4) Citations and Bibliography
 
-### R (renv)
+### bibliography.bib Standards
 
-1. In R: `install.packages("pkg")`
-2. `renv::snapshot()` to update `renv.lock`
-3. Commit `renv.lock`
+- Use consistent BibTeX formatting
+- Include DOI when available
+- Use descriptive citation keys: `authorYEARkeyword` format (e.g., `russell2020artificial`)
+- Required fields for articles: `author`, `title`, `journal`, `year`, `volume`, `pages`, `doi`
+- Required fields for books: `author`, `title`, `publisher`, `year`, `isbn`
 
-## 7) Documentation Practices (Both)
+### Citing in Exercises
 
-- Prefer `.qmd` for executable, reproducible docs; `.md` for static content.
-- Include valid YAML front matter.
-- Execute and test code chunks. Keep outputs reproducible.
+- Use `[@citationkey]` for inline citations
+- Reference the `bibliography.bib` file in `_metadata.yml` for each language
+- Ensure all cited works are relevant to AI literacy and historical research
 
-## 8) Testing and CI (Both)
+## 5) Repository Structure
 
-- `npm run check` for formatting
-- `uv run ruff check` for Python linting
-- `uv run ty check` for Python type checking
-- `styler::style_dir(".")` for R formatting
-- `lintr::lint_dir(".")` for R linting
-- `quarto preview` to detect rendering issues
-- Run and validate scripts in `src/`, `build/`, and `analysis/`
-- Confirm `.github/workflows/` still pass for changes
+This is an educational content repository with the following structure:
 
-## 9) GitHub Features and Security (Project instances)
+```
+critical-ai-literacy-for-historians/
+├── en/               # English content
+│   ├── index.qmd
+│   ├── about.qmd
+│   └── exercises/
+├── de/               # German content
+│   ├── index.qmd
+│   ├── about.qmd
+│   └── exercises/
+├── fr/               # French content
+│   ├── index.qmd
+│   ├── about.qmd
+│   └── exercises/
+├── assets/           # Shared images and fonts
+└── bibliography.bib  # Shared citations
+```
 
-- **Enable GitHub Security Alerts** and Dependabot updates (Repository → Security).
-- **Protect `main`**: require PR reviews and disallow force pushes.
-- Keep `SECURITY.md` and GitHub security features active.
-- Use provided **issue templates**; modify only to improve the template.
+## 6) Formatting and Linting
 
-## 10) Zenodo Integration and DOI (Project instances)
+- Run **`npm run format`** before commits to enforce Prettier formatting
+- Use **`npm run check`** to verify formatting without writing changes
+- All `.qmd`, `.md`, `.yml`, and `.json` files should be formatted with Prettier
 
-- **Enable Zenodo–GitHub integration** to archive releases and mint DOIs.
-- After first release:
-  - Record your **`ZENODO_RECORD`** and **`DOI`**.
-  - **Zenodo DOI badge**: replace `GITHUB_REPO_ID` with the numeric repo ID from `https://api.github.com/repos/USERNAME/REPO_NAME` (`id` field). Badge will display your DOI after Zenodo links the release.
-- Add the DOI to the README once available.
+## 7) Commits and Changelog
 
-## 11) Website Publishing with GitHub Pages (Project instances)
+- Use **`npm run commit`** to follow Conventional Commits standard
+- After committing, generate entries with **`npm run changelog`** and update `CHANGELOG.md`
+- Use conventional commit types: `feat`, `fix`, `docs`, `chore`, `refactor`
+
+## 8) Documentation Practices
+
+- Use `.qmd` (Quarto Markdown) for all educational content
+- Include valid YAML front matter in all `.qmd` files
+- Write in clear, accessible academic language
+- Include learning objectives, activities, and reflection prompts in exercises
+- Link to relevant resources and further reading
+
+## 9) Content Quality Standards
+
+### Exercise Development
+
+- Each exercise should take 30-90 minutes to complete
+- Include hands-on activities, not just reading
+- Provide critical reflection questions
+- Balance theoretical understanding with practical application
+- Address ethical considerations
+
+### Pedagogical Principles
+
+Exercises should promote:
+
+- Critical thinking about AI as tool and method
+- Digital source criticism skills
+- Ethical awareness (bias, privacy, representation)
+- Transparency and reproducibility in research
+- FAIR and CARE principles
+
+## 10) GitHub Features and Security
+
+- Use **issue templates** for new exercise proposals
+- Enable **GitHub Security Alerts** and Dependabot updates
+- Keep `SECURITY.md` current with reporting procedures
+- Use branch protection on `main` branch
+
+## 11) Website Publishing
 
 - In repo **Settings → Pages**:
   - Source: **Deploy from a branch**
@@ -124,59 +160,59 @@ Place new files accordingly.
   - `quarto render`
   - `quarto publish gh-pages`
 
-## 12) Brand and UX Polish (Project instances)
-
-- Generate favicons (`favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png`, Android icons) and place at repo root.
-- Replace placeholder contact details and short description.
-- Remove or resolve `TODO` comments: `grep -r "TODO" .` then address or delete.
-
-## 13) Commands Recap (Both)
+## 12) Commands Recap
 
 | Command                   | Purpose                                          |
 | ------------------------- | ------------------------------------------------ |
 | `quarto preview`          | Live preview with reload                         |
-| `uv run quarto preview`   | Preview in the pinned Python env                 |
 | `npm run check`           | Verify formatting                                |
 | `npm run format`          | Apply Prettier formatting                        |
-| `uv run ruff check`       | Lint Python code                                 |
-| `uv run ruff format`      | Format Python code                               |
-| `uv run ty check`         | Type check Python code                           |
-| `styler::style_dir(".")`  | Format R code                                    |
-| `lintr::lint_dir(".")`    | Lint R code                                      |
 | `npm run commit`          | Conventional Commits wizard                      |
 | `npm run changelog`       | Generate changelog from commits                  |
 | `npm run prepare`         | Setup Husky git hooks                            |
-| `uv sync`                 | Sync Python dependencies                         |
-| `renv::restore()`         | Restore R environment                            |
 | `quarto render`           | **Production render** (avoid in agent sessions)  |
 | `quarto publish gh-pages` | **Production publish** (avoid in agent sessions) |
 
-## 14) Finalization Workflow Checklist (Project instances)
+## 13) Verification Checklist
 
-Follow `TODO.md`, then:
+Before finalizing changes:
 
-1. Replace placeholders across listed files.
-2. Customize `.qmd` docs and verify with `quarto preview`.
-3. Format files: `npm run format`, `uv run ruff format`, and `styler::style_dir(".")` in R.
-4. Lint Python code: `uv run ruff check`.
-5. Type check Python code: `uv run ty check` (if applicable).
-6. Lint R code: `lintr::lint_dir(".")` in R.
-7. Commit via `npm run commit`.
-8. Generate `CHANGELOG.md` with `npm run changelog`.
-9. When ready, delete the template `README.md` and rename `README.template.md` → `README.md`.
-10. Enable Pages and publish with `quarto publish gh-pages`.
-11. After first release, update `ZENODO_RECORD`, `DOI`, and DOI badge.
-12. Verify security alerts and branch protection.
+- [ ] All files formatted with `npm run check`
+- [ ] `quarto preview` renders without errors
+- [ ] All three languages have parallel content structure
+- [ ] Exercise metadata follows standards (correct categories/tags)
+- [ ] Bibliography entries are properly formatted
+- [ ] All citations are valid and referenced
+- [ ] Links work correctly
+- [ ] Images have alt text
+- [ ] YAML front matter is valid
 
-## 15) Verification Steps (Project instances)
+## 14) Common Tasks
 
-- `npm run check` passes.
-- `uv run ruff check` passes without errors.
-- `uv run ty check` passes (if applicable).
-- `lintr::lint_dir(".")` passes without errors in R.
-- `quarto preview` renders without errors.
-- GitHub Pages site loads as expected.
-- README links work.
-- Security alerts and branch protection are active.
+### Adding a New Exercise
 
-**Principle**: Prefer preview over production during agent sessions. Preserve template placeholders unless customizing a project instance. Keep changes reproducible, FAIR-aligned, and verifiable.
+1. Create exercise file in `en/exercises/exerciseN.qmd`
+2. Create parallel files in `de/exercises/exerciseN.qmd` and `fr/exercises/exerciseN.qmd`
+3. Use standard YAML front matter with approved categories/tags
+4. Add citations to `bibliography.bib` if needed
+5. Preview with `quarto preview`
+6. Format with `npm run format`
+7. Commit with `npm run commit`
+
+### Updating Existing Content
+
+1. Make changes to content
+2. Update `date-modified` in YAML front matter
+3. If translatable content changed, mark translations for update
+4. Preview changes with `quarto preview`
+5. Format and commit
+
+### Maintaining Bibliography
+
+1. Check for duplicate entries
+2. Ensure consistent formatting
+3. Verify DOIs are valid and accessible
+4. Use descriptive citation keys
+5. Keep entries relevant to AI literacy in historical research
+
+**Principle**: Maintain high-quality, accessible, multilingual educational content following FAIR principles. Ensure consistency across languages while respecting cultural and linguistic differences.

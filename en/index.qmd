@@ -1,0 +1,40 @@
+---
+title: "Critical AI Literacy for Historians"
+lang: en
+listing:
+  id: exercises
+  contents: exercises
+  type: grid
+---
+
+## Welcome
+
+This repository provides structured, hands-on exercises for historians to develop **critical AI literacy**, **digital source criticism**, and **scholarly practice** with large language models (LLMs).
+
+### Purpose
+
+These materials aim to help learners:
+
+-   Understand how AI functions as both a research **tool** and a **method**
+-   Reflect on how it shapes historical interpretation and evidence
+-   Apply rigorous digital source criticism to assess data provenance, representation, and bias
+-   Practice responsible, transparent, and ethically informed use of AI in historical research
+
+### Principles
+
+The exercises promote:
+
+-   **Reproducibility** in research workflows
+-   **Privacy** and ethical data handling
+-   **Copyright awareness** and proper attribution
+-   **Sustainability** through minimal computing approaches
+-   **Interdisciplinary collaboration** and critical reflection
+
+By engaging with these materials, historians will be better equipped to design transparent, meaningful projects that integrate AI into their research without compromising disciplinary rigor.
+
+## Getting Started
+
+Explore the exercises to begin your journey in developing critical AI literacy for historical research:
+
+::: {#exercises}
+:::

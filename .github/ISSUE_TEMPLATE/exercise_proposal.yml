@@ -1,0 +1,140 @@
+name: 💡 New Exercise Proposal
+description: Propose a new exercise for the Critical AI Literacy for Historians curriculum
+title: '[Exercise]: '
+labels: ['exercise', 'enhancement']
+assignees:
+  - maehr
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a new exercise! Please provide as much detail as possible to help us understand your proposal.
+
+  - type: input
+    id: exercise-title
+    attributes:
+      label: Exercise Title
+      description: A clear, descriptive title for the exercise
+      placeholder: e.g., "Evaluating AI Bias in Historical Datasets"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Exercise Description
+      description: A brief overview of what the exercise covers and its purpose
+      placeholder: Describe the main focus and goals of this exercise
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      description: What level of learner is this exercise designed for?
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: input
+    id: time-estimate
+    attributes:
+      label: Estimated Time
+      description: How long should this exercise take to complete?
+      placeholder: e.g., "60 minutes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: What knowledge or skills should learners have before starting this exercise?
+      placeholder: |
+        - Basic understanding of historical research methods
+        - Familiarity with primary and secondary sources
+    validations:
+      required: true
+
+  - type: textarea
+    id: learning-objectives
+    attributes:
+      label: Learning Objectives
+      description: What should learners be able to do after completing this exercise?
+      placeholder: |
+        - Understand how AI generates text
+        - Apply source criticism to AI outputs
+        - Identify biases in AI-generated content
+    validations:
+      required: true
+
+  - type: textarea
+    id: activities
+    attributes:
+      label: Proposed Activities
+      description: Outline the main activities or tasks in the exercise
+      placeholder: Describe the hands-on activities learners will engage with
+    validations:
+      required: true
+
+  - type: dropdown
+    id: categories
+    attributes:
+      label: Categories
+      description: Which category best fits this exercise? (Select primary category)
+      options:
+        - AI Literacy
+        - Digital Source Criticism
+        - Ethical AI Use
+        - Research Methods
+        - Data Analysis
+        - Text Analysis
+        - Historical Interpretation
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Additional Resources
+      description: List any readings, tools, or external resources needed
+      placeholder: |
+        - Links to relevant articles
+        - Tools or software required
+        - Background reading materials
+
+  - type: textarea
+    id: languages
+    attributes:
+      label: Language Support
+      description: Which languages can you provide this exercise in? (We support English, German, and French)
+      placeholder: |
+        - [ ] English
+        - [ ] German (Deutsch)
+        - [ ] French (Français)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would be helpful in developing this exercise
+      placeholder: Related exercises, pedagogical approach, etc.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Contribution Guidelines
+      description: By submitting this proposal, you agree to follow our contribution guidelines
+      options:
+        - label: I have read the [CONTRIBUTING.md](../CONTRIBUTING.md) guidelines
+          required: true
+        - label: I agree to license my contribution under CC BY NC SA 4.0 for content and AGPL 3.0 for code
+          required: true
+        - label: I am willing to collaborate on developing this exercise if accepted
+          required: false
