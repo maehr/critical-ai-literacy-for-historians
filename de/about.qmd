@@ -47,7 +47,7 @@ Wir freuen uns über Beiträge von Historiker:innen, Pädagog:innen und Forscher
 
 ### Lizenz
 
-- Bildungsmaterialien: [CC BY 4.0](../LICENSE-CCBY.md)
+- Bildungsmaterialien: [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
 - Code: [AGPL 3.0](../LICENSE-AGPL.md)
 
 ### Kontakt

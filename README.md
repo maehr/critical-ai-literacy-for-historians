@@ -8,7 +8,7 @@ This educational repository provides structured, hands-on exercises for historia
 [![GitHub forks](https://img.shields.io/github/forks/maehr/critical-ai-literacy-for-historians.svg)](https://github.com/maehr/critical-ai-literacy-for-historians/network)
 [![GitHub stars](https://img.shields.io/github/stars/maehr/critical-ai-literacy-for-historians.svg)](https://github.com/maehr/critical-ai-literacy-for-historians/stargazers)
 [![Code license](https://img.shields.io/github/license/maehr/critical-ai-literacy-for-historians.svg)](https://github.com/maehr/critical-ai-literacy-for-historians/blob/main/LICENSE-AGPL.md)
-[![Data license](https://img.shields.io/github/license/maehr/critical-ai-literacy-for-historians.svg)](https://github.com/maehr/critical-ai-literacy-for-historians/blob/main/LICENSE-CCBY.md)
+[![Data license](https://img.shields.io/badge/Data-CC_BY_NC_SA_4.0-green)](https://github.com/maehr/critical-ai-literacy-for-historians/blob/main/LICENSE-CCBYNCSA.md)
 
 <!-- [![DOI](https://zenodo.org/badge/GITHUB_REPO_ID.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD) -->
 
@@ -167,7 +167,7 @@ See also the list of [contributors](https://github.com/maehr/critical-ai-literac
 
 ## License
 
-- **Educational content and exercises**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-CCBY.md) - You are free to share and adapt the materials with appropriate credit
+- **Educational content and exercises**: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSE-CCBYNCSA.md) - You are free to share and adapt the materials for non-commercial purposes with appropriate credit and under the same license
 - **Code and technical infrastructure**: [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE-AGPL.md) - Any modifications must be made available under the same license
 
 ## Citation

@@ -1,5 +1,5 @@
----
 lang: en
 bibliography: ../bibliography.bib
----
-
+citation:
+  type: entry-encyclopedia
+  container-title: 'Critical AI Literacy for Historians'

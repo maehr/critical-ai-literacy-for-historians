@@ -30,7 +30,7 @@ website:
         href: de/index.qmd
       - text: Français
         href: fr/index.qmd
-      - text: About
+      - text: ℹ️
         menu:
           - text: About (EN)
             href: en/about.qmd
@@ -50,8 +50,7 @@ website:
             - text: About
               href: en/about.qmd
         - section: 'Exercises'
-          contents:
-            - en/exercises/*
+          contents: en/exercises/*
     - id: de
       title: 'Deutsch'
       style: 'floating'
@@ -63,8 +62,7 @@ website:
             - text: Über das Projekt
               href: de/about.qmd
         - section: 'Übungen'
-          contents:
-            - de/exercises/*
+          contents: de/exercises/*
     - id: fr
       title: 'Français'
       style: 'floating'
@@ -76,8 +74,7 @@ website:
             - text: À propos
               href: fr/about.qmd
         - section: 'Exercices'
-          contents:
-            - fr/exercises/*
+          contents: fr/exercises/*
 
 format:
   html:

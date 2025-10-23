@@ -47,7 +47,7 @@ Nous accueillons les contributions des historien·ne·s, éducateur·rice·s et 
 
 ### Licence
 
-- Matériels pédagogiques : [CC BY 4.0](../LICENSE-CCBY.md)
+- Matériels pédagogiques : [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
 - Code : [AGPL 3.0](../LICENSE-AGPL.md)
 
 ### Contact

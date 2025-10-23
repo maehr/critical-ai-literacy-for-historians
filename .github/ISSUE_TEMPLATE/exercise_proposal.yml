@@ -134,7 +134,7 @@ body:
       options:
         - label: I have read the [CONTRIBUTING.md](../CONTRIBUTING.md) guidelines
           required: true
-        - label: I agree to license my contribution under CC BY 4.0 for content and AGPL 3.0 for code
+        - label: I agree to license my contribution under CC BY NC SA 4.0 for content and AGPL 3.0 for code
           required: true
         - label: I am willing to collaborate on developing this exercise if accepted
           required: false
