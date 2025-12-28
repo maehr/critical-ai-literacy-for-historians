@@ -1,0 +1,49 @@
+[
+  {
+    "listing": "/en/exercises/index.html",
+    "items": []
+  },
+  {
+    "listing": "/en/index.html",
+    "items": [
+      "/en/exercises/index.html"
+    ]
+  },
+  {
+    "listing": "/de/exercises/index.html",
+    "items": [
+      "/de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html",
+      "/de/exercises/public-history.html",
+      "/de/exercises/literaturrecherche-sozialversicherung-ch.html",
+      "/de/exercises/prompt-engineering.html",
+      "/de/exercises/quellenkritik-bundesrat-europarat-1949.html",
+      "/de/exercises/quellensuche-vorort-europarat-1963.html",
+      "/de/exercises/schreiben.html",
+      "/de/exercises/zitieren.html"
+    ]
+  },
+  {
+    "listing": "/de/index.html",
+    "items": [
+      "/de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html",
+      "/de/exercises/public-history.html",
+      "/de/exercises/literaturrecherche-sozialversicherung-ch.html",
+      "/de/exercises/prompt-engineering.html",
+      "/de/exercises/quellenkritik-bundesrat-europarat-1949.html",
+      "/de/exercises/quellensuche-vorort-europarat-1963.html",
+      "/de/exercises/schreiben.html",
+      "/de/exercises/zitieren.html",
+      "/de/exercises/index.html"
+    ]
+  },
+  {
+    "listing": "/fr/index.html",
+    "items": [
+      "/fr/exercises/index.html"
+    ]
+  },
+  {
+    "listing": "/fr/exercises/index.html",
+    "items": []
+  }
+]

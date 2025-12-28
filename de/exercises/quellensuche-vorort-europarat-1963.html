@@ -1,0 +1,805 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head><meta charset="utf-8"><style>:where(img[jampack-sized]){max-width:100%;height:auto}</style>
+
+
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+<meta name="author" content="Moritz Mähr">
+<meta name="description" content="Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.">
+
+<title>Quellensuche für eine historische Forschungsfrage – Critical AI Literacy for Historians</title>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../de/exercises/schreiben.html" rel="next">
+<link href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" rel="prev">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Quellensuche für eine historische Forschungsfrage – Critical AI Literacy for Historians">
+<meta property="og:description" content="Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.">
+<meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Critical AI Literacy for Historians">
+<meta name="twitter:title" content="Quellensuche für eine historische Forschungsfrage – Critical AI Literacy for Historians">
+<meta name="twitter:description" content="Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.">
+<meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/quellensuche-vorort-europarat-1963.html">
+</head>
+
+<body class="floating nav-fixed nav-sidebar quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="fixed-top headroom">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid navbar-container">
+      <div class="mx-auto navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo light-content" fetchpriority="high" decoding="async">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo dark-content" fetchpriority="high" decoding="async">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Critical AI Literacy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="me-auto navbar-nav navbar-nav-scroll">
+  <li class="nav-item">
+    <a class="nav-link" href="../../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../de/index.html" aria-current="page"> 
+<span class="menu-text">Deutsch</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fr/index.html"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">ℹ️</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="../../en/about.html">
+ <span class="dropdown-text">About (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../de/about.html">
+ <span class="dropdown-text">Über das Projekt (DE)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../fr/about.html">
+ <span class="dropdown-text">À propos (FR)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/maehr/critical-ai-literacy-for-historians/" title="" class="px-1 quarto-navigation-tool" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="d-flex container-fluid">
+      <button type="button" class="btn quarto-btn-toggle" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/quellensuche-vorort-europarat-1963.html">Quellensuche für eine historische Forschungsfrage</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="page-columns page-layout-article page-navbar page-rows-contents quarto-container">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="collapse collapse-horizontal floating overflow-auto quarto-sidebar-collapse-item sidebar sidebar-navigation">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Startseite</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../de/exercises/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übungen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse depth1 list-unstyled show sidebar-section">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulieren einer historischen Forschungsfrage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literaturrecherche und -analyse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/prompt-engineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellenkritik</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Quellensuche für eine historische Forschungsfrage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Über das Projekt</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliographie</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#überblick-und-didaktisches-ziel" id="toc-überblick-und-didaktisches-ziel" class="nav-link active" data-scroll-target="#überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</a></li>
+  <li><a href="#voraussetzungen" id="toc-voraussetzungen" class="nav-link" data-scroll-target="#voraussetzungen">Voraussetzungen</a></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#struktur-der-übung" id="toc-struktur-der-übung" class="nav-link" data-scroll-target="#struktur-der-übung">Struktur der Übung</a></li>
+  <li><a href="#forschungsfrage-operationalisieren" id="toc-forschungsfrage-operationalisieren" class="nav-link" data-scroll-target="#forschungsfrage-operationalisieren">1. Forschungsfrage operationalisieren</a>
+  <ul class="collapse">
+  <li><a href="#ziel" id="toc-ziel" class="nav-link" data-scroll-target="#ziel">Ziel</a></li>
+  <li><a href="#aufgabe-ohne-ki" id="toc-aufgabe-ohne-ki" class="nav-link" data-scroll-target="#aufgabe-ohne-ki">Aufgabe (ohne KI)</a></li>
+  <li><a href="#aufgabe-ki-exploration" id="toc-aufgabe-ki-exploration" class="nav-link" data-scroll-target="#aufgabe-ki-exploration">Aufgabe (KI-Exploration)</a></li>
+  <li><a href="#kritischer-abgleich" id="toc-kritischer-abgleich" class="nav-link" data-scroll-target="#kritischer-abgleich">Kritischer Abgleich</a></li>
+  </ul></li>
+  <li><a href="#quellenarten-und-evidenzlogik" id="toc-quellenarten-und-evidenzlogik" class="nav-link" data-scroll-target="#quellenarten-und-evidenzlogik">2. Quellenarten und Evidenzlogik</a>
+  <ul class="collapse">
+  <li><a href="#ziel-1" id="toc-ziel-1" class="nav-link" data-scroll-target="#ziel-1">Ziel</a></li>
+  <li><a href="#aufgabe-quellentypen-matrix-ohne-ki" id="toc-aufgabe-quellentypen-matrix-ohne-ki" class="nav-link" data-scroll-target="#aufgabe-quellentypen-matrix-ohne-ki">Aufgabe: Quellentypen-Matrix (ohne KI)</a></li>
+  <li><a href="#aufgabe-ki-exploration-1" id="toc-aufgabe-ki-exploration-1" class="nav-link" data-scroll-target="#aufgabe-ki-exploration-1">Aufgabe (KI-Exploration)</a></li>
+  <li><a href="#reflexion" id="toc-reflexion" class="nav-link" data-scroll-target="#reflexion">Reflexion</a></li>
+  </ul></li>
+  <li><a href="#systematische-suche-i-kontextgerüst-über-tertiärquellen" id="toc-systematische-suche-i-kontextgerüst-über-tertiärquellen" class="nav-link" data-scroll-target="#systematische-suche-i-kontextgerüst-über-tertiärquellen">3. Systematische Suche I: Kontextgerüst über Tertiärquellen</a>
+  <ul class="collapse">
+  <li><a href="#ziel-2" id="toc-ziel-2" class="nav-link" data-scroll-target="#ziel-2">Ziel</a></li>
+  <li><a href="#kernressourcen" id="toc-kernressourcen" class="nav-link" data-scroll-target="#kernressourcen">Kernressourcen</a></li>
+  <li><a href="#aufgabe-ki-als-suchassistent-nicht-als-quelle" id="toc-aufgabe-ki-als-suchassistent-nicht-als-quelle" class="nav-link" data-scroll-target="#aufgabe-ki-als-suchassistent-nicht-als-quelle">Aufgabe (KI als Suchassistent, nicht als Quelle)</a></li>
+  <li><a href="#validierung" id="toc-validierung" class="nav-link" data-scroll-target="#validierung">Validierung</a></li>
+  </ul></li>
+  <li><a href="#systematische-suche-ii-kataloge-datenbanken-amtsdruckschriften" id="toc-systematische-suche-ii-kataloge-datenbanken-amtsdruckschriften" class="nav-link" data-scroll-target="#systematische-suche-ii-kataloge-datenbanken-amtsdruckschriften">4. Systematische Suche II: Kataloge, Datenbanken, Amtsdruckschriften</a>
+  <ul class="collapse">
+  <li><a href="#ziel-3" id="toc-ziel-3" class="nav-link" data-scroll-target="#ziel-3">Ziel</a></li>
+  <li><a href="#aufgabe-a-begriffsfelder" id="toc-aufgabe-a-begriffsfelder" class="nav-link" data-scroll-target="#aufgabe-a-begriffsfelder">Aufgabe A: Begriffsfelder</a></li>
+  <li><a href="#aufgabe-b-ki-gestützt-kontrollierte-synonymlisten" id="toc-aufgabe-b-ki-gestützt-kontrollierte-synonymlisten" class="nav-link" data-scroll-target="#aufgabe-b-ki-gestützt-kontrollierte-synonymlisten">Aufgabe B (KI-gestützt): kontrollierte Synonymlisten</a></li>
+  <li><a href="#qualitätscheck" id="toc-qualitätscheck" class="nav-link" data-scroll-target="#qualitätscheck">Qualitätscheck</a></li>
+  </ul></li>
+  <li><a href="#systematische-recherche-sekundärliteratur-und-referenzwerke" id="toc-systematische-recherche-sekundärliteratur-und-referenzwerke" class="nav-link" data-scroll-target="#systematische-recherche-sekundärliteratur-und-referenzwerke">5. Systematische Recherche: Sekundärliteratur und Referenzwerke</a>
+  <ul class="collapse">
+  <li><a href="#ziel-4" id="toc-ziel-4" class="nav-link" data-scroll-target="#ziel-4">Ziel</a></li>
+  <li><a href="#aufgabe-a-katalogstrategie" id="toc-aufgabe-a-katalogstrategie" class="nav-link" data-scroll-target="#aufgabe-a-katalogstrategie">Aufgabe A: Katalogstrategie</a></li>
+  <li><a href="#aufgabe-b-ki-gestützt-suchbegriffe-optimieren" id="toc-aufgabe-b-ki-gestützt-suchbegriffe-optimieren" class="nav-link" data-scroll-target="#aufgabe-b-ki-gestützt-suchbegriffe-optimieren">Aufgabe B (KI-gestützt): Suchbegriffe optimieren</a></li>
+  <li><a href="#deliverable" id="toc-deliverable" class="nav-link" data-scroll-target="#deliverable">Deliverable</a></li>
+  </ul></li>
+  <li><a href="#unsystematische-suche-snowballing" id="toc-unsystematische-suche-snowballing" class="nav-link" data-scroll-target="#unsystematische-suche-snowballing">6. Unsystematische Suche: Snowballing</a>
+  <ul class="collapse">
+  <li><a href="#ziel-5" id="toc-ziel-5" class="nav-link" data-scroll-target="#ziel-5">Ziel</a></li>
+  <li><a href="#aufgabe-startset-definieren" id="toc-aufgabe-startset-definieren" class="nav-link" data-scroll-target="#aufgabe-startset-definieren">Aufgabe: Startset definieren</a></li>
+  <li><a href="#snowball-protokoll" id="toc-snowball-protokoll" class="nav-link" data-scroll-target="#snowball-protokoll">Snowball-Protokoll</a></li>
+  <li><a href="#aufgabe-ki-exploration-2" id="toc-aufgabe-ki-exploration-2" class="nav-link" data-scroll-target="#aufgabe-ki-exploration-2">Aufgabe (KI-Exploration)</a></li>
+  <li><a href="#reflexion-1" id="toc-reflexion-1" class="nav-link" data-scroll-target="#reflexion-1">Reflexion</a></li>
+  </ul></li>
+  <li><a href="#archivrecherche-findmittel-bestände-zugang" id="toc-archivrecherche-findmittel-bestände-zugang" class="nav-link" data-scroll-target="#archivrecherche-findmittel-bestände-zugang">7. Archivrecherche: Findmittel, Bestände, Zugang</a>
+  <ul class="collapse">
+  <li><a href="#ziel-6" id="toc-ziel-6" class="nav-link" data-scroll-target="#ziel-6">Ziel</a></li>
+  <li><a href="#startpunkte-orientierung" id="toc-startpunkte-orientierung" class="nav-link" data-scroll-target="#startpunkte-orientierung">Startpunkte (Orientierung)</a></li>
+  <li><a href="#aufgabe-a-findmittelanalyse" id="toc-aufgabe-a-findmittelanalyse" class="nav-link" data-scroll-target="#aufgabe-a-findmittelanalyse">Aufgabe A: Findmittelanalyse</a></li>
+  <li><a href="#aufgabe-b-dossier-shortlist-19601963" id="toc-aufgabe-b-dossier-shortlist-19601963" class="nav-link" data-scroll-target="#aufgabe-b-dossier-shortlist-19601963">Aufgabe B: Dossier-Shortlist (1960–1963)</a></li>
+  <li><a href="#aufgabe-c-ki-gestützt-suchpfade-planen" id="toc-aufgabe-c-ki-gestützt-suchpfade-planen" class="nav-link" data-scroll-target="#aufgabe-c-ki-gestützt-suchpfade-planen">Aufgabe C (KI-gestützt): Suchpfade planen</a></li>
+  </ul></li>
+  <li><a href="#iteration-reproduzierbarkeit-und-ki-reflexion" id="toc-iteration-reproduzierbarkeit-und-ki-reflexion" class="nav-link" data-scroll-target="#iteration-reproduzierbarkeit-und-ki-reflexion">8. Iteration, Reproduzierbarkeit und KI-Reflexion</a>
+  <ul class="collapse">
+  <li><a href="#rechercheprotokoll-pflicht" id="toc-rechercheprotokoll-pflicht" class="nav-link" data-scroll-target="#rechercheprotokoll-pflicht">Rechercheprotokoll (Pflicht)</a></li>
+  <li><a href="#reflexionsfragen-250400-wörter" id="toc-reflexionsfragen-250400-wörter" class="nav-link" data-scroll-target="#reflexionsfragen-250400-wörter">Reflexionsfragen (250–400 Wörter)</a></li>
+  <li><a href="#ki-protokoll-anhang" id="toc-ki-protokoll-anhang" class="nav-link" data-scroll-target="#ki-protokoll-anhang">KI-Protokoll (Anhang)</a></li>
+  </ul></li>
+  <li><a href="#abgabe" id="toc-abgabe" class="nav-link" data-scroll-target="#abgabe">Abgabe</a></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/quellensuche-vorort-europarat-1963.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/quellensuche-vorort-europarat-1963.html">Quellensuche für eine historische Forschungsfrage</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Quellensuche für eine historische Forschungsfrage</h1>
+<p class="lead subtitle">Der Vorort und der Europaratsbeitritt 1963</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Quellen</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor:in</div>
+  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universität Bern
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">29. Dezember 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Geändert</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">29. Dezember 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="überblick-und-didaktisches-ziel" class="level2">
+<h2 class="anchored" data-anchor-id="überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</h2>
+<p>Diese Übung trainiert <strong>übertragbare Recherchekompetenzen</strong>: von der präzisen Operationalisierung einer Forschungsfrage über <strong>systematische</strong> und <strong>unsystematische (Snowball-)Suchstrategien</strong> bis zur <strong>kritischen Bewertung</strong> von Quellen (Provenienz, Kontext, Bias, Relevanz). Generative KI wird dabei als <strong>heuristisches Hilfsmittel</strong> eingesetzt (Begriffsklärung, Keyword-Expansion, Suchpfade).</p>
+<p>Als Fallbeispiel dient die Forschungsfrage:<br>
+<strong>Welche Rolle spielte der Schweizerische Handels- und Industrie-Verein (Vorort) im Entscheidungsprozess zum Europaratsbeitritt 1963?</strong></p>
+<p>Die Übung folgt einem <strong>zirkulären Forschungsverständnis</strong>: Suchresultate verändern Keywords, Hypothesen und die Eingrenzung des Untersuchungsdesigns.</p>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Hinweis zur Materialität der Quellenlage
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Beachten Sie bei der Archivarbeit <strong>Schutzfristen, Nutzungsbedingungen und digitale Verfügbarkeit</strong> der einzelnen Bestände. Planen Sie den Arbeitsaufwand für Einsichtsgesuche, On-Site-Konsultation und Reproduktionsrechte ein.</p>
+</div>
+</div>
+</section>
+<section id="voraussetzungen" class="level2">
+<h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
+<ul>
+<li>Grundkenntnisse historischer Quellenkritik (Provenienzprinzip, Kontextualisierung)</li>
+<li>Grundkenntnisse in Bibliotheks- und Archivrecherche (Kataloge, Findmittel)</li>
+<li>Grundverständnis des KI-Einsatzes (Prompting)</li>
+</ul>
+</section>
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
+<p>Nach Abschluss der Übung können Sie:</p>
+<ul>
+<li>Quellen <strong>typologisch</strong> unterscheiden (primär/sekundär/tertiär) und ihre <strong>epistemische Funktion</strong> begründen,</li>
+<li>eine Forschungsfrage in <strong>recherchierbare Teilfragen</strong> und <strong>Suchindikatoren</strong> übersetzen,</li>
+<li>systematische und Snowball-Suche <strong>kombiniert</strong> einsetzen und dokumentieren,</li>
+<li><strong>mehrsprachige Suchstrategien</strong> entwickeln (DE/FR/EN; inkl. historischer Terminologie),</li>
+<li>Bibliothekskataloge, bibliografische Datenbanken, Findmittel und Portale <strong>zielgerichtet</strong> nutzen,</li>
+<li>Fundstellen <strong>reproduzierbar</strong> dokumentieren und quellenkritisch bewerten,</li>
+<li>KI-Ausgaben als <strong>heuristische Vorschläge</strong> behandeln, systematisch prüfen und reflektieren.</li>
+</ul>
+</section>
+<section id="struktur-der-übung" class="level2">
+<h2 class="anchored" data-anchor-id="struktur-der-übung">Struktur der Übung</h2>
+<ol type="1">
+<li>Forschungsfrage operationalisieren<br>
+</li>
+<li>Quellenarten und Evidenzlogik<br>
+</li>
+<li>Systematische Suche I: Tertiärquellen und Kontextgerüst<br>
+</li>
+<li>Systematische Suche II: Kataloge, Datenbanken, Amtsdruckschriften<br>
+</li>
+<li>Unsystematische Suche: Snowballing aus Kernliteratur und Dossiers<br>
+</li>
+<li>Archive und Findmittel: Provenienzlogik und Bestandsbildung<br>
+</li>
+<li>Quellenkritik: Bewertungsraster und Minimaldokumentation<br>
+</li>
+<li>KI-Reflexion: kontrollierte Nutzung, Nachweis, Fehlerkultur</li>
+</ol>
+</section>
+<section id="forschungsfrage-operationalisieren" class="level2">
+<h2 class="anchored" data-anchor-id="forschungsfrage-operationalisieren">1. Forschungsfrage operationalisieren</h2>
+<section id="ziel" class="level3">
+<h3 class="anchored" data-anchor-id="ziel">Ziel</h3>
+<p>Die Forschungsfrage wird in <strong>Teilfragen</strong> zerlegt, sodass daraus <strong>konkrete Suchpfade</strong> und <strong>prüfbare Teilhypothesen</strong> entstehen.</p>
+</section>
+<section id="aufgabe-ohne-ki" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-ohne-ki">Aufgabe (ohne KI)</h3>
+<p>Skizzieren Sie in 10 Minuten ein Arbeitsmodell des <em>Entscheidungsprozesses</em> (Akteure, Arenen, Phasen, Dokumenttypen).</p>
+<p><strong>Leitfragen:</strong></p>
+<ul>
+<li>Welche staatlichen Arenen sind relevant (Bundesrat, Departemente, Parlament, Vernehmlassung, Diplomatie)?</li>
+<li>Wo könnte der Vorort interveniert haben (Positionspapiere, Kontakte, Medien, Expertenkommissionen)?</li>
+<li>Welche analytische Bedeutung haben Agenda-Setting, Expertise, Lobbying, Koalitionsbildung, Legitimation, Gatekeeping?</li>
+</ul>
+</section>
+<section id="aufgabe-ki-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-ki-exploration">Aufgabe (KI-Exploration)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Zerlege die Forschungsfrage in 4–6 Teilfragen, die jeweils quellenbasiert überprüfbar sind.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Gib für jede Teilfrage an, welche Dokumenttypen als Evidenz dienen könnten.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="kritischer-abgleich" class="level3">
+<h3 class="anchored" data-anchor-id="kritischer-abgleich">Kritischer Abgleich</h3>
+<p>Markieren Sie in der KI-Ausgabe:</p>
+<ul>
+<li><strong>prüfbare</strong> vs.&nbsp;<strong>vage</strong> Aussagen,</li>
+<li>fehlende Arenen (z. B. Vernehmlassung, EDA/EVD),</li>
+<li>implizite Begriffsannahmen (z. B. „Lobbying“ als potenziell anachronistische Kategorie).</li>
+</ul>
+</section>
+</section>
+<section id="quellenarten-und-evidenzlogik" class="level2">
+<h2 class="anchored" data-anchor-id="quellenarten-und-evidenzlogik">2. Quellenarten und Evidenzlogik</h2>
+<section id="ziel-1" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-1">Ziel</h3>
+<p>Klären, <strong>welche Evidenz</strong> welche Behauptungen stützen kann – und welche systematischen Grenzen bestehen.</p>
+</section>
+<section id="aufgabe-quellentypen-matrix-ohne-ki" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-quellentypen-matrix-ohne-ki">Aufgabe: Quellentypen-Matrix (ohne KI)</h3>
+<p>Erstellen Sie eine Matrix mit:</p>
+<ul>
+<li><strong>Zeilen</strong>: Teilfragen / Teilhypothesen</li>
+<li><strong>Spalten</strong>: Quellentypen</li>
+</ul>
+<p><strong>Quellentypen:</strong></p>
+<ul>
+<li><strong>Primär</strong>: Verbandsprotokolle, Korrespondenz, interne Berichte, Eingaben, Aktennotizen; Regierungsakten; Parlamentsprotokolle; Medienberichte</li>
+<li><strong>Sekundär</strong>: Forschungsliteratur zu Aussen-, Europa- und Verbändepolitik; Organisationsgeschichte Vorort/economiesuisse</li>
+<li><strong>Tertiär</strong>: Kataloge, Bibliografien, Dossiers, Register, Datenbanken, Findmittel</li>
+</ul>
+<p>Für jede Zelle: <em>Was wäre ein überzeugender Beleg?</em> / <em>Welche Verzerrungen sind wahrscheinlich?</em></p>
+</section>
+<section id="aufgabe-ki-exploration-1" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-ki-exploration-1">Aufgabe (KI-Exploration)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Nenne für die Forschungsfrage geeignete Primär-, Sekundär- und Tertiärquellen.</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Ordne jede Quelle einer Arena zu (Bundesrat / Departement / Parlament / Verband / Medien / international).</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="reflexion" class="level3">
+<h3 class="anchored" data-anchor-id="reflexion">Reflexion</h3>
+<p>Wo „erfindet“ KI typischerweise Quellen (z. B. scheinbar konkrete Protokolle oder Briefe ohne Nachweis)? Notieren Sie drei Risikofelder.</p>
+</section>
+</section>
+<section id="systematische-suche-i-kontextgerüst-über-tertiärquellen" class="level2">
+<h2 class="anchored" data-anchor-id="systematische-suche-i-kontextgerüst-über-tertiärquellen">3. Systematische Suche I: Kontextgerüst über Tertiärquellen</h2>
+<section id="ziel-2" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-2">Ziel</h3>
+<p>Ein <strong>orientierendes Referenzgerüst</strong> aufbauen, bevor die Tiefenrecherche beginnt.</p>
+</section>
+<section id="kernressourcen" class="level3">
+<h3 class="anchored" data-anchor-id="kernressourcen">Kernressourcen</h3>
+<ul>
+<li><span class="citation" data-cites="dodis-5020"><a href="#ref-dodis-5020" role="doc-biblioref">Bundesrat / Dodis, <span>„Die Schweiz und der Europarat“</span>, Dodis – Diplomatische Dokumente der Schweiz, zugegriffen 14. Dezember 2025, <span>https://www.dodis.ch/de/die-schweiz-und-der-europarat</span></a></span></li>
+<li><span class="citation" data-cites="dodis-beitritt1963"><a href="#ref-dodis-beitritt1963" role="doc-biblioref">Bundesrat / Dodis, <span>„Beitritt zum Europarat 1963“</span>, Dodis – Diplomatische Dokumente der Schweiz, zugegriffen 14. Dezember 2025, <span>https://www.dodis.ch/de/beitritt-zum-europarat-1963</span></a></span></li>
+<li><span class="citation" data-cites="aps-europarat-2025"><a href="#ref-aps-europarat-2025" role="doc-biblioref">Année Politique Suisse, <span>„Europarat: Nachträge zum Voranschlag 2026“</span>, preprint, Année Politique Suisse / Universität Bern, 12. November 2025, <span>https://anneepolitique.swiss/articles?keywords%5B%5D=99</span></a></span></li>
+<li><span class="citation" data-cites="amtsdruckschriften-bar"><a href="#ref-amtsdruckschriften-bar" role="doc-biblioref">Bundesarchiv Schweiz, <span>„Amtsdruckschriften der Schweiz“</span>, Bundesarchiv Schweiz, zugegriffen 18. Dezember 2025, <span>https://www.amtsdruckschriften.bar.admin.ch/</span></a></span></li>
+<li><span class="citation" data-cites="chgov-bar-admin"><a href="#ref-chgov-bar-admin" role="doc-biblioref">Bundesarchiv Schweiz, <span>„chgov.bar.admin.ch“</span>, Bundesarchiv Schweiz, zugegriffen 18. Dezember 2025, <span>https://www.chgov.bar.admin.ch/</span></a></span></li>
+<li><span class="citation" data-cites="e-newspaperarchives-ch"><a href="#ref-e-newspaperarchives-ch" role="doc-biblioref">ETH-Bibliothek Zürich, <span>„e-newspaperarchives.ch“</span>, ETH-Bibliothek Zürich, zugegriffen 18. Dezember 2025, <span>https://www.e-newspaperarchives.ch/</span></a></span></li>
+<li><span class="citation" data-cites="archives-online-org"><a href="#ref-archives-online-org" role="doc-biblioref">Staatsarchive der Schweiz, <span>„Archives Online“</span>, Staatsarchive der Schweiz, zugegriffen 18. Dezember 2025, <span>https://www.archives-online.org/</span></a></span></li>
+<li><span class="citation" data-cites="e-periodica-ch"><a href="#ref-e-periodica-ch" role="doc-biblioref">ETH-Bibliothek Zürich, <span>„e-periodica.ch“</span>, ETH-Bibliothek Zürich, zugegriffen 18. Dezember 2025, <span>https://www.e-periodica.ch/</span></a></span></li>
+<li><span class="citation" data-cites="impresso-project-ch"><a href="#ref-impresso-project-ch" role="doc-biblioref">IMPRESSO Consortium, <span>„IMPRESSO Project“</span>, IMPRESSO Project, zugegriffen 18. Dezember 2025, <span>https://impresso-project.ch/</span></a></span></li>
+<li><span class="citation" data-cites="memobase-ch"><a href="#ref-memobase-ch" role="doc-biblioref">Memobase Coordination, <span>„Memobase“</span>, Memobase, zugegriffen 18. Dezember 2025, <span>https://memobase.ch/</span></a></span></li>
+<li><span class="citation" data-cites="swisscollections-ch"><a href="#ref-swisscollections-ch" role="doc-biblioref">Bibliothèque nationale suisse, <span>„swisscollections.ch“</span>, swisscollections, zugegriffen 18. Dezember 2025, <span>https://swisscollections.ch/</span></a></span></li>
+</ul>
+</section>
+<section id="aufgabe-ki-als-suchassistent-nicht-als-quelle" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-ki-als-suchassistent-nicht-als-quelle">Aufgabe (KI als Suchassistent, nicht als Quelle)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Erstelle eine Liste von 15 Suchorten (Portale, Kataloge, Editionen, Archive, Datenbanken),</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>die für die Frage nach dem Vorort und dem Europaratsbeitritt 1963 relevant sein könnten.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Gib pro Suchort 1–2 typische Trefferarten an (z. B. Botschaft, Protokoll, Dossier, Zeitungsartikel).</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="validierung" class="level3">
+<h3 class="anchored" data-anchor-id="validierung">Validierung</h3>
+<ul>
+<li>Öffnen Sie mindestens <strong>5</strong> genannte Suchorte und testen Sie je <strong>2</strong> Suchanfragen.</li>
+<li>Dokumentieren Sie <strong>Nullresultate</strong> (falsche Arena, falscher Begriff, falscher Zeitraum, fehlende Digitalisierung).</li>
+</ul>
+</section>
+</section>
+<section id="systematische-suche-ii-kataloge-datenbanken-amtsdruckschriften" class="level2">
+<h2 class="anchored" data-anchor-id="systematische-suche-ii-kataloge-datenbanken-amtsdruckschriften">4. Systematische Suche II: Kataloge, Datenbanken, Amtsdruckschriften</h2>
+<section id="ziel-3" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-3">Ziel</h3>
+<p>Suchbegriffe als <strong>testbare Hypothesen</strong> entwickeln, inkl. historischer Terminologie und Namensvarianten.</p>
+</section>
+<section id="aufgabe-a-begriffsfelder" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-a-begriffsfelder">Aufgabe A: Begriffsfelder</h3>
+<p>Erstellen Sie drei Begriffsfelder (DE/FR/EN):</p>
+<ol type="1">
+<li><strong>Akteur</strong>: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l’industrie; economiesuisse (<em>rückprojizierend kennzeichnen</em>)</li>
+<li><strong>Ereignis/Institution</strong>: Europarat; Council of Europe; Beitritt/Mitgliedschaft/accession; 1963; EMRK/EGMR (als Kontextpfade)</li>
+<li><strong>Prozess/Mechanismen</strong>: Vernehmlassung; Interessenverband; Eingabe; Stellungnahme; Gutachten; wirtschaftliche Interessen; Aussenwirtschaftspolitik</li>
+</ol>
+</section>
+<section id="aufgabe-b-ki-gestützt-kontrollierte-synonymlisten" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-b-ki-gestützt-kontrollierte-synonymlisten">Aufgabe B (KI-gestützt): kontrollierte Synonymlisten</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Erstelle für die drei Begriffsfelder (Akteur / Institution-Ereignis / Prozess) je 12–20 Suchbegriffe.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Bedingungen:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>DE/FR/EN getrennt ausgeben</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>historische Schreibweisen und Abkürzungen berücksichtigen</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pro Begriff angeben, wo er eher vorkommt (Parlamentsprotokoll / interne Akten / Presse)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>keine erfundenen Eigennamen oder Signaturen</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="qualitätscheck" class="level3">
+<h3 class="anchored" data-anchor-id="qualitätscheck">Qualitätscheck</h3>
+<ul>
+<li>Entfernen oder markieren Sie anachronistische Begriffe als <strong>rückblickende Suchanker</strong>.</li>
+<li>Ergänzen Sie <strong>Personen- und Ortsanker</strong> (z. B. Vorort-Präsidium, Delegierte; Bern/Zürich; relevante Departemente).</li>
+</ul>
+</section>
+</section>
+<section id="systematische-recherche-sekundärliteratur-und-referenzwerke" class="level2">
+<h2 class="anchored" data-anchor-id="systematische-recherche-sekundärliteratur-und-referenzwerke">5. Systematische Recherche: Sekundärliteratur und Referenzwerke</h2>
+<section id="ziel-4" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-4">Ziel</h3>
+<p>Eine belastbare Ausgangsbasis an Sekundärliteratur (inkl. Bibliografien) schaffen.</p>
+</section>
+<section id="aufgabe-a-katalogstrategie" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-a-katalogstrategie">Aufgabe A: Katalogstrategie</h3>
+<p>Recherchieren Sie mit Kombinationen wie:</p>
+<ul>
+<li>(Vorort OR SHIV) AND (Europarat OR Council of Europe) AND 196*</li>
+<li>(Verbände OR Interessenpolitik) AND (Aussenpolitik OR Europapolitik) AND Schweiz AND 1950<em>–1960</em></li>
+<li>Schweiz AND Europarat AND (Beitritt OR membership OR accession)</li>
+</ul>
+<p>Dokumentieren Sie:</p>
+<ul>
+<li>Suchbegriffe</li>
+<li>Filter (Jahr, Sprache, Materialtyp)</li>
+<li>Trefferzahlen</li>
+<li>Auswahlkriterien</li>
+</ul>
+</section>
+<section id="aufgabe-b-ki-gestützt-suchbegriffe-optimieren" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-b-ki-gestützt-suchbegriffe-optimieren">Aufgabe B (KI-gestützt): Suchbegriffe optimieren</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="an">Hier sind meine bisherigen Suchbegriffe und Trefferprobleme:</span><span class="co"> [einfügen].</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Optimiere die Suchbegriffe für Kataloge (Boolean, Phrasen, Trunkierung).</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Gib 6 Varianten an und erkläre kurz, welches Problem jede Variante adressiert.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable" class="level3">
+<h3 class="anchored" data-anchor-id="deliverable">Deliverable</h3>
+<ul>
+<li><p><strong>Kurzannotierte Bibliografie</strong> (8–12 Titel) mit:</p>
+<ul>
+<li>Fragerelevanz (1–2 Sätze)</li>
+<li>erwartetem Quellenwert (welche Primärquellen werden zitiert?)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="unsystematische-suche-snowballing" class="level2">
+<h2 class="anchored" data-anchor-id="unsystematische-suche-snowballing">6. Unsystematische Suche: Snowballing</h2>
+<section id="ziel-5" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-5">Ziel</h3>
+<p>Von einem <strong>kleinen Startkorpus</strong> ausgehend Debatten und Quellenverweise rekonstruieren.</p>
+</section>
+<section id="aufgabe-startset-definieren" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-startset-definieren">Aufgabe: Startset definieren</h3>
+<p>Wählen Sie:</p>
+<ul>
+<li>1 Dossier oder Edition (Navigator),</li>
+<li>1 Überblicksdarstellung,</li>
+<li>1 vertiefende Studie (akteurs- oder institutionsnah).</li>
+</ul>
+</section>
+<section id="snowball-protokoll" class="level3">
+<h3 class="anchored" data-anchor-id="snowball-protokoll">Snowball-Protokoll</h3>
+<ul>
+<li>zentrale Referenzen (10–20),</li>
+<li>zitierte Primärquellen (Archive, Signaturen, Dokumenttypen),</li>
+<li>wiederkehrende Akteure und Kommissionen.</li>
+</ul>
+</section>
+<section id="aufgabe-ki-exploration-2" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-ki-exploration-2">Aufgabe (KI-Exploration)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="an">Ich habe folgende 8 Literatur- oder Quellenangaben:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>___</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>___</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>…</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>Ordne sie nach (a) Primär/Sekundär, (b) Arena, (c) potenzieller Erkenntniswert</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>für die Rolle des Vororts.</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>Schlage je eine Anschlussrecherche vor.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="reflexion-1" class="level3">
+<h3 class="anchored" data-anchor-id="reflexion-1">Reflexion</h3>
+<p>Snowballing reproduziert Kanons und Blindstellen. Notieren Sie fehlende Perspektiven (z. B. Gewerkschaften, Parteien, internationale Akteure) und mögliche Gegenstrategien.</p>
+</section>
+</section>
+<section id="archivrecherche-findmittel-bestände-zugang" class="level2">
+<h2 class="anchored" data-anchor-id="archivrecherche-findmittel-bestände-zugang">7. Archivrecherche: Findmittel, Bestände, Zugang</h2>
+<section id="ziel-6" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-6">Ziel</h3>
+<p>Primärquellen so identifizieren, dass sie <strong>bestell- und auswertbar</strong> sind.</p>
+</section>
+<section id="startpunkte-orientierung" class="level3">
+<h3 class="anchored" data-anchor-id="startpunkte-orientierung">Startpunkte (Orientierung)</h3>
+<ul>
+<li>Vorort-/economiesuisse-Bestände im Archiv für Zeitgeschichte (ETH Zürich)</li>
+<li>Nachweise in Katalogen (z. B. SWA/UB Wirtschaft Basel)</li>
+<li>Vorort-bezogene Dokumente in diplomatiegeschichtlichen Kontexten (z. B. Dodis)</li>
+</ul>
+<div class="callout callout-style-default callout-titled callout-warning">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Methodischer Hinweis
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>„Dossier gefunden“ ist nicht gleich „Evidenz gesichert“. Findmittel sind tertiäre Zugangsinstrumente: Sie strukturieren Sichtbarkeit, nicht Wahrheit.</p>
+</div>
+</div>
+</section>
+<section id="aufgabe-a-findmittelanalyse" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-a-findmittelanalyse">Aufgabe A: Findmittelanalyse</h3>
+<p>Rekonstruieren Sie für <strong>ein</strong> Archiv:</p>
+<ul>
+<li>Serien- und Dossierarten,</li>
+<li>Erschliessungslogik,</li>
+<li>Zugangsbeschränkungen.</li>
+</ul>
+</section>
+<section id="aufgabe-b-dossier-shortlist-19601963" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-b-dossier-shortlist-19601963">Aufgabe B: Dossier-Shortlist (1960–1963)</h3>
+<p>Erstellen Sie eine Shortlist von <strong>10 Einheiten</strong> mit:</p>
+<ul>
+<li>Signatur oder Permalink,</li>
+<li>Titel und Laufzeit,</li>
+<li>erwarteter Bezug zur Teilhypothese,</li>
+<li>Zugang (online / Lesesaal / Gesuch).</li>
+</ul>
+</section>
+<section id="aufgabe-c-ki-gestützt-suchpfade-planen" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-c-ki-gestützt-suchpfade-planen">Aufgabe C (KI-gestützt): Suchpfade planen</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="an">Schlage drei Suchpfade vor:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>1) akteurszentriert</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>2) prozessorientiert</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>3) ereigniszentriert</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>Je Pfad: 8–12 Suchbegriffe (DE/FR/EN) inkl. Namensvarianten.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="iteration-reproduzierbarkeit-und-ki-reflexion" class="level2">
+<h2 class="anchored" data-anchor-id="iteration-reproduzierbarkeit-und-ki-reflexion">8. Iteration, Reproduzierbarkeit und KI-Reflexion</h2>
+<section id="rechercheprotokoll-pflicht" class="level3">
+<h3 class="anchored" data-anchor-id="rechercheprotokoll-pflicht">Rechercheprotokoll (Pflicht)</h3>
+<p>Mindestens:</p>
+<ul>
+<li>Datum, Tool/Portal, Query, Filter, Trefferzahl</li>
+<li>Auswahlkriterien</li>
+<li>Bias-Notizen (OCR, Erschliessung, Sprache)</li>
+</ul>
+</section>
+<section id="reflexionsfragen-250400-wörter" class="level3">
+<h3 class="anchored" data-anchor-id="reflexionsfragen-250400-wörter">Reflexionsfragen (250–400 Wörter)</h3>
+<ul>
+<li>Was hat KI konkret <strong>beschleunigt</strong>?</li>
+<li>Wo hat sie <strong>verführt</strong> (Scheinspezifik, Anachronismen)?</li>
+<li>Welche Validierungsschritte haben Sie eingeführt?</li>
+<li>Welche Entscheidungen blieben zwingend menschlich?</li>
+</ul>
+</section>
+<section id="ki-protokoll-anhang" class="level3">
+<h3 class="anchored" data-anchor-id="ki-protokoll-anhang">KI-Protokoll (Anhang)</h3>
+<ul>
+<li>2–3 Prompts,</li>
+<li>gekürzte Outputs,</li>
+<li>begründete Korrekturen oder Rejects.</li>
+</ul>
+</section>
+</section>
+<section id="abgabe" class="level2">
+<h2 class="anchored" data-anchor-id="abgabe">Abgabe</h2>
+<ol type="1">
+<li>Quellen-Matrix (Teilfragen × Quellentypen)</li>
+<li>Rechercheprotokoll (≥ 15 Einträge)</li>
+<li>Shortlist: 10 Primärquellen-Einheiten</li>
+<li>Kurzannotierte Bibliografie (8–12 Titel)</li>
+<li>Reflexion zum KI-Einsatz inkl. KI-Protokoll</li>
+</ol>
+</section>
+<section id="bibliographie" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
+<div id="refs" class="csl-bib-body hanging-indent references" role="list">
+<div id="ref-aps-europarat-2025" class="csl-entry" role="listitem">
+Année Politique Suisse. <span>„Europarat: Nachträge zum Voranschlag 2026“</span>. Preprint, Année Politique Suisse / Universität Bern, 12. November 2025. <a href="https://anneepolitique.swiss/articles?keywords%5B%5D=99">https://anneepolitique.swiss/articles?keywords%5B%5D=99</a>.
+</div>
+<div id="ref-swisscollections-ch" class="csl-entry" role="listitem">
+Bibliothèque nationale suisse. <span>„swisscollections.ch“</span>. Swisscollections. Zugegriffen 18. Dezember 2025. <a href="https://swisscollections.ch/">https://swisscollections.ch/</a>.
+</div>
+<div id="ref-amtsdruckschriften-bar" class="csl-entry" role="listitem">
+Bundesarchiv Schweiz. <span>„Amtsdruckschriften der Schweiz“</span>. Bundesarchiv Schweiz. Zugegriffen 18. Dezember 2025. <a href="https://www.amtsdruckschriften.bar.admin.ch/">https://www.amtsdruckschriften.bar.admin.ch/</a>.
+</div>
+<div id="ref-chgov-bar-admin" class="csl-entry" role="listitem">
+Bundesarchiv Schweiz. <span>„chgov.bar.admin.ch“</span>. Bundesarchiv Schweiz. Zugegriffen 18. Dezember 2025. <a href="https://www.chgov.bar.admin.ch/">https://www.chgov.bar.admin.ch/</a>.
+</div>
+<div id="ref-dodis-beitritt1963" class="csl-entry" role="listitem">
+Bundesrat / Dodis. <span>„Beitritt zum Europarat 1963“</span>. Dodis – Diplomatische Dokumente der Schweiz. Zugegriffen 14. Dezember 2025. <a href="https://www.dodis.ch/de/beitritt-zum-europarat-1963">https://www.dodis.ch/de/beitritt-zum-europarat-1963</a>.
+</div>
+<div id="ref-dodis-5020" class="csl-entry" role="listitem">
+Bundesrat / Dodis. <span>„Die Schweiz und der Europarat“</span>. Dodis – Diplomatische Dokumente der Schweiz. Zugegriffen 14. Dezember 2025. <a href="https://www.dodis.ch/de/die-schweiz-und-der-europarat">https://www.dodis.ch/de/die-schweiz-und-der-europarat</a>.
+</div>
+<div id="ref-e-newspaperarchives-ch" class="csl-entry" role="listitem">
+ETH-Bibliothek Zürich. <span>„e-newspaperarchives.ch“</span>. ETH-Bibliothek Zürich. Zugegriffen 18. Dezember 2025. <a href="https://www.e-newspaperarchives.ch/">https://www.e-newspaperarchives.ch/</a>.
+</div>
+<div id="ref-e-periodica-ch" class="csl-entry" role="listitem">
+ETH-Bibliothek Zürich. <span>„e-periodica.ch“</span>. ETH-Bibliothek Zürich. Zugegriffen 18. Dezember 2025. <a href="https://www.e-periodica.ch/">https://www.e-periodica.ch/</a>.
+</div>
+<div id="ref-impresso-project-ch" class="csl-entry" role="listitem">
+IMPRESSO Consortium. <span>„IMPRESSO Project“</span>. IMPRESSO Project. Zugegriffen 18. Dezember 2025. <a href="https://impresso-project.ch/">https://impresso-project.ch/</a>.
+</div>
+<div id="ref-memobase-ch" class="csl-entry" role="listitem">
+Memobase Coordination. <span>„Memobase“</span>. Memobase. Zugegriffen 18. Dezember 2025. <a href="https://memobase.ch/">https://memobase.ch/</a>.
+</div>
+<div id="ref-archives-online-org" class="csl-entry" role="listitem">
+Staatsarchive der Schweiz. <span>„Archives Online“</span>. Staatsarchive der Schweiz. Zugegriffen 18. Dezember 2025. <a href="https://www.archives-online.org/">https://www.archives-online.org/</a>.
+</div>
+</div>
+
+
+</section>
+
+<a onclick="return window.scrollTo(0,0),!1;
+" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Zitat</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@inreference{mähr2025,
+  author = {Mähr, Moritz},
+  title = {Quellensuche für eine historische Forschungsfrage},
+  booktitle = {Critical AI Literacy für Historiker:innen},
+  date = {2025-12-29},
+  url = {https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/quellensuche-vorort-europarat-1963.html},
+  langid = {de}
+}
+</code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Bitte zitieren Sie diese Arbeit als:</div><div id="ref-mähr2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mähr, Moritz. <span>“Quellensuche für eine historische
+Forschungsfrage.”</span> In <em>Critical AI Literacy für
+Historiker:innen</em>. December 29, 2025. <a href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/quellensuche-vorort-europarat-1963.html">https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/quellensuche-vorort-europarat-1963.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Kopiert");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Kopiert"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},x=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){x();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else x(),e.classList.remove("code-annotation-active")});const C=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:C(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=C(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="pagination-link" aria-label="Quellenkritik">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quellenkritik</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../de/exercises/schreiben.html" class="pagination-link" aria-label="Schreiben mit kritisch-reflektiertem KI-Einsatz">
+        <span class="nav-page-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-md-none d-sm-block"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/quellensuche-vorort-europarat-1963.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div></div></footer></body></html>

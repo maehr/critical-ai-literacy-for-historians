@@ -1,0 +1,801 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head><meta charset="utf-8"><style>:where(img[jampack-sized]){max-width:100%;height:auto}</style>
+
+
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+<meta name="author" content="Moritz Mähr">
+<meta name="description" content="Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.">
+
+<title>Prompt Engineering – Critical AI Literacy for Historians</title>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../de/exercises/public-history.html" rel="next">
+<link href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" rel="prev">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Prompt Engineering – Critical AI Literacy for Historians">
+<meta property="og:description" content="Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.">
+<meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Critical AI Literacy for Historians">
+<meta name="twitter:title" content="Prompt Engineering – Critical AI Literacy for Historians">
+<meta name="twitter:description" content="Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.">
+<meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/prompt-engineering.html">
+</head>
+
+<body class="floating nav-fixed nav-sidebar quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="fixed-top headroom">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid navbar-container">
+      <div class="mx-auto navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo light-content" fetchpriority="high" decoding="async">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo dark-content" fetchpriority="high" decoding="async">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Critical AI Literacy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="me-auto navbar-nav navbar-nav-scroll">
+  <li class="nav-item">
+    <a class="nav-link" href="../../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../de/index.html" aria-current="page"> 
+<span class="menu-text">Deutsch</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fr/index.html"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">ℹ️</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="../../en/about.html">
+ <span class="dropdown-text">About (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../de/about.html">
+ <span class="dropdown-text">Über das Projekt (DE)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../fr/about.html">
+ <span class="dropdown-text">À propos (FR)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/maehr/critical-ai-literacy-for-historians/" title="" class="px-1 quarto-navigation-tool" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="d-flex container-fluid">
+      <button type="button" class="btn quarto-btn-toggle" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/prompt-engineering.html">Prompt Engineering</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="page-columns page-layout-article page-navbar page-rows-contents quarto-container">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="collapse collapse-horizontal floating overflow-auto quarto-sidebar-collapse-item sidebar sidebar-navigation">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Startseite</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../de/exercises/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übungen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse depth1 list-unstyled show sidebar-section">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulieren einer historischen Forschungsfrage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literaturrecherche und -analyse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/prompt-engineering.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellenkritik</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellensuche für eine historische Forschungsfrage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Über das Projekt</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliographie</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#überblick-und-didaktisches-ziel" id="toc-überblick-und-didaktisches-ziel" class="nav-link active" data-scroll-target="#überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</a></li>
+  <li><a href="#voraussetzungen" id="toc-voraussetzungen" class="nav-link" data-scroll-target="#voraussetzungen">Voraussetzungen</a></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#arbeitsmodus-ki-protokoll-und-ab-testing" id="toc-arbeitsmodus-ki-protokoll-und-ab-testing" class="nav-link" data-scroll-target="#arbeitsmodus-ki-protokoll-und-ab-testing">Arbeitsmodus: KI-Protokoll und A/B-Testing</a></li>
+  <li><a href="#fallpaket-für-alle-übungen" id="toc-fallpaket-für-alle-übungen" class="nav-link" data-scroll-target="#fallpaket-für-alle-übungen">Fallpaket für alle Übungen</a></li>
+  <li><a href="#prompt-basics" id="toc-prompt-basics" class="nav-link" data-scroll-target="#prompt-basics">1. Prompt Basics</a>
+  <ul class="collapse">
+  <li><a href="#ziel" id="toc-ziel" class="nav-link" data-scroll-target="#ziel">Ziel</a></li>
+  <li><a href="#übung-1a-von-vage-zu-operationalisiert" id="toc-übung-1a-von-vage-zu-operationalisiert" class="nav-link" data-scroll-target="#übung-1a-von-vage-zu-operationalisiert">Übung 1A: Von «vage» zu «operationalisiert»</a></li>
+  <li><a href="#übung-1b-output-formate-als-prüfwerkzeug" id="toc-übung-1b-output-formate-als-prüfwerkzeug" class="nav-link" data-scroll-target="#übung-1b-output-formate-als-prüfwerkzeug">Übung 1B: Output-Formate als Prüfwerkzeug</a></li>
+  </ul></li>
+  <li><a href="#rollen" id="toc-rollen" class="nav-link" data-scroll-target="#rollen">2. Rollen</a>
+  <ul class="collapse">
+  <li><a href="#ziel-1" id="toc-ziel-1" class="nav-link" data-scroll-target="#ziel-1">Ziel</a></li>
+  <li><a href="#übung-2a-eine-aufgabe-drei-rollen" id="toc-übung-2a-eine-aufgabe-drei-rollen" class="nav-link" data-scroll-target="#übung-2a-eine-aufgabe-drei-rollen">Übung 2A: Eine Aufgabe, drei Rollen</a></li>
+  <li><a href="#übung-2b-rollenwechsel-als-diagnose" id="toc-übung-2b-rollenwechsel-als-diagnose" class="nav-link" data-scroll-target="#übung-2b-rollenwechsel-als-diagnose">Übung 2B: Rollenwechsel als Diagnose</a></li>
+  </ul></li>
+  <li><a href="#zero-shot-prompting" id="toc-zero-shot-prompting" class="nav-link" data-scroll-target="#zero-shot-prompting">3. Zero-shot Prompting</a>
+  <ul class="collapse">
+  <li><a href="#ziel-2" id="toc-ziel-2" class="nav-link" data-scroll-target="#ziel-2">Ziel</a></li>
+  <li><a href="#übung-3a-minimalparaphrase-zero-shot" id="toc-übung-3a-minimalparaphrase-zero-shot" class="nav-link" data-scroll-target="#übung-3a-minimalparaphrase-zero-shot">Übung 3A: Minimalparaphrase (Zero-shot)</a></li>
+  <li><a href="#übung-3b-drei-forschungsfragen-zero-shot" id="toc-übung-3b-drei-forschungsfragen-zero-shot" class="nav-link" data-scroll-target="#übung-3b-drei-forschungsfragen-zero-shot">Übung 3B: Drei Forschungsfragen (Zero-shot)</a></li>
+  </ul></li>
+  <li><a href="#few-shot-prompting" id="toc-few-shot-prompting" class="nav-link" data-scroll-target="#few-shot-prompting">4. Few-shot Prompting</a>
+  <ul class="collapse">
+  <li><a href="#ziel-3" id="toc-ziel-3" class="nav-link" data-scroll-target="#ziel-3">Ziel</a></li>
+  <li><a href="#übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung" id="toc-übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung" class="nav-link" data-scroll-target="#übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung">Übung 4A: Few-shot für Ebenen-Trennung (Dokumenttext/Edition/Schlussfolgerung)</a></li>
+  <li><a href="#übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark" id="toc-übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark" class="nav-link" data-scroll-target="#übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark">Übung 4B: Few-shot für Forschungsfragen (schwach vs.&nbsp;stark)</a></li>
+  </ul></li>
+  <li><a href="#strukturierte-denkspur-chain-of-thought-prompting" id="toc-strukturierte-denkspur-chain-of-thought-prompting" class="nav-link" data-scroll-target="#strukturierte-denkspur-chain-of-thought-prompting">5. Strukturierte Denkspur (Chain-of-Thought Prompting)</a>
+  <ul class="collapse">
+  <li><a href="#ziel-4" id="toc-ziel-4" class="nav-link" data-scroll-target="#ziel-4">Ziel</a></li>
+  <li><a href="#übung-5a-argumentmapping-mit-zwischenschritten" id="toc-übung-5a-argumentmapping-mit-zwischenschritten" class="nav-link" data-scroll-target="#übung-5a-argumentmapping-mit-zwischenschritten">Übung 5A: Argumentmapping mit Zwischenschritten</a></li>
+  <li><a href="#übung-5b-rechercheplan-als-pipeline" id="toc-übung-5b-rechercheplan-als-pipeline" class="nav-link" data-scroll-target="#übung-5b-rechercheplan-als-pipeline">Übung 5B: Rechercheplan als Pipeline</a></li>
+  </ul></li>
+  <li><a href="#iteratives-prompten" id="toc-iteratives-prompten" class="nav-link" data-scroll-target="#iteratives-prompten">6. Iteratives Prompten</a>
+  <ul class="collapse">
+  <li><a href="#ziel-5" id="toc-ziel-5" class="nav-link" data-scroll-target="#ziel-5">Ziel</a></li>
+  <li><a href="#übung-6a-generate-critique-revise-forschungsfrage" id="toc-übung-6a-generate-critique-revise-forschungsfrage" class="nav-link" data-scroll-target="#übung-6a-generate-critique-revise-forschungsfrage">Übung 6A: Generate → Critique → Revise (Forschungsfrage)</a></li>
+  <li><a href="#übung-6b-iteration-über-output-format-zitieren-zusammenfassen" id="toc-übung-6b-iteration-über-output-format-zitieren-zusammenfassen" class="nav-link" data-scroll-target="#übung-6b-iteration-über-output-format-zitieren-zusammenfassen">Übung 6B: Iteration über Output-Format (Zitieren / Zusammenfassen)</a></li>
+  </ul></li>
+  <li><a href="#prompt-optimierung" id="toc-prompt-optimierung" class="nav-link" data-scroll-target="#prompt-optimierung">7. Prompt Optimierung</a>
+  <ul class="collapse">
+  <li><a href="#ziel-6" id="toc-ziel-6" class="nav-link" data-scroll-target="#ziel-6">Ziel</a></li>
+  <li><a href="#qualitätskriterien-rubrik" id="toc-qualitätskriterien-rubrik" class="nav-link" data-scroll-target="#qualitätskriterien-rubrik">Qualitätskriterien (Rubrik)</a></li>
+  <li><a href="#übung-7a-prompt-härten-literaturrecherche" id="toc-übung-7a-prompt-härten-literaturrecherche" class="nav-link" data-scroll-target="#übung-7a-prompt-härten-literaturrecherche">Übung 7A: Prompt «härten» (Literaturrecherche)</a></li>
+  <li><a href="#übung-7b-prompt-optimierung-als-fehlerbudget" id="toc-übung-7b-prompt-optimierung-als-fehlerbudget" class="nav-link" data-scroll-target="#übung-7b-prompt-optimierung-als-fehlerbudget">Übung 7B: Prompt-Optimierung als «Fehlerbudget»</a></li>
+  </ul></li>
+  <li><a href="#kurz-library-wiederverwendbare-prompt-bausteine" id="toc-kurz-library-wiederverwendbare-prompt-bausteine" class="nav-link" data-scroll-target="#kurz-library-wiederverwendbare-prompt-bausteine">Kurz-Library: wiederverwendbare Prompt-Bausteine</a></li>
+  <li><a href="#abgabe" id="toc-abgabe" class="nav-link" data-scroll-target="#abgabe">Abgabe</a></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/prompt-engineering.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/prompt-engineering.html">Prompt Engineering</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Prompt Engineering</h1>
+<p class="lead subtitle">Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">KI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor:in</div>
+  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universität Bern
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">29. Dezember 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Geändert</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">29. Dezember 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="überblick-und-didaktisches-ziel" class="level2">
+<h2 class="anchored" data-anchor-id="überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</h2>
+<p>Diese Übung macht Prompting <strong>als Methode</strong> sichtbar: Prompts sind hier nicht «Tricks», sondern <strong>Operationalisierungen</strong> historischer Arbeitsaufträge. Trainiert wird, wie Sie (a) Aufgaben sauber eingrenzen, (b) Output überprüfbar formatieren, (c) Fehlerquellen kontrollieren und (d) Ergebnisse <strong>reproduzierbar dokumentieren</strong>.</p>
+<p>Im Unterschied zu den thematischen Übungen (Forschungsfrage, Quellenkritik, Quellensuche, Literaturrecherche, Schreiben, Zitieren, Public History) fokussiert diese Einheit die <strong>gemeinsame Infrastruktur</strong>: Prompt-Design, Rollenwahl, Iteration und Optimierung.</p>
+<div class="callout callout-style-default callout-titled callout-important">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Wichtig</span>Grundregel: KI darf nichts «erfinden»
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als <strong>Hypothese</strong> (nicht als Ergebnis). Ihre Arbeit bleibt: <strong>Gegenprobe, Nachweis, Entscheidung</strong>.</p>
+</div>
+</div>
+</section>
+<section id="voraussetzungen" class="level2">
+<h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
+<ul>
+<li>Grundverständnis historischer Forschungsmethoden</li>
+<li>Zugriff auf ein LLM-Interface Ihrer Wahl</li>
+<li>(Empfohlen) Sie kennen bereits mindestens eine der Fallübungen, z. B.<br>
+<strong>Quellenkritik: Bundesrat und Europarat 1949</strong>, <strong>Formulieren einer historischen Forschungsfrage (Schweiz/Europarat)</strong> oder <strong>Literaturrecherche Sozialversicherung CH</strong>.</li>
+</ul>
+</section>
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
+<p>Nach Abschluss der Übung können Sie:</p>
+<ul>
+<li>Prompts <strong>strukturieren</strong> (Kontext, Input-Abgrenzung, Output-Format, Constraints, Prüfmodus),</li>
+<li>Rollen <strong>gezielt</strong> einsetzen (z. B. Quellenkritiker<em>in, Rechercheassistent</em>in, Devil’s Advocate, Lektor*in),</li>
+<li>Zero-shot und Few-shot Prompting <strong>situationsgerecht</strong> wählen,</li>
+<li>eine <strong>strukturierte Denkspur</strong> anfordern (Aufgabendecomposition, Zwischenprodukte, Self-Checks),</li>
+<li>iteratives Prompten als <strong>kontrollierten Workflow</strong> umsetzen (Generate → Critique → Revise → Verify),</li>
+<li>Prompts anhand von <strong>Qualitätskriterien</strong> optimieren (Fehlerreduktion, Formatstabilität, Prüfbarkeit, Reproduzierbarkeit).</li>
+</ul>
+</section>
+<section id="arbeitsmodus-ki-protokoll-und-ab-testing" class="level2">
+<h2 class="anchored" data-anchor-id="arbeitsmodus-ki-protokoll-und-ab-testing">Arbeitsmodus: KI-Protokoll und A/B-Testing</h2>
+<p>Führen Sie ein kurzes Prompt-Protokoll (Audit Trail). Nutzen Sie es auch in den anderen Übungen.</p>
+<p><strong>Minimalvorlage (kopierbar):</strong></p>
+<table class="caption-top" style="width:100%">
+<colgroup>
+<col style="width:14%">
+<col style="width:14%">
+<col style="width:14%">
+<col style="width:14%">
+<col style="width:14%">
+<col style="width:14%">
+<col style="width:14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Schritt</th>
+<th>Ziel</th>
+<th>Input (Material)</th>
+<th>Prompt (Kernausschnitt)</th>
+<th>Output (kurz)</th>
+<th>Prüfschritte</th>
+<th>Entscheidung</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p><strong>A/B-Testing (Minimum):</strong> Für jede Technik mindestens <strong>zwei Prompt-Varianten</strong> laufen lassen, dann vergleichen:<br>
+(1) Formatstabilität, (2) Übergriffigkeit (Spekulationen), (3) Anschlussfähigkeit an Ihre nächsten Arbeitsschritte.</p>
+</section>
+<section id="fallpaket-für-alle-übungen" class="level2">
+<h2 class="anchored" data-anchor-id="fallpaket-für-alle-übungen">Fallpaket für alle Übungen</h2>
+<p>Verwenden Sie – wie in den anderen Übungen – ein <strong>konkretes, kontrollierbares Materialpaket</strong>:</p>
+<ol type="1">
+<li><strong>Primärquelle (empfohlen):</strong> Aktennotiz zu <em>Schweiz und Europarat</em> (Dodis, Bern, 7.7.1949, Petitpierre/Hansen; vgl. Übung <em>Quellenkritik</em>).<br>
+</li>
+<li><strong>Kontextressource (empfohlen):</strong> Dodis-Dossier <em>Die Schweiz und der Europarat</em> bzw. <em>Beitritt 1963</em> (vgl. Übungen <em>Forschungsfrage</em> / <em>Quellensuche</em>).<br>
+</li>
+<li><strong>Optionale Sekundärquelle:</strong> ein Artikel/Monografie aus Ihrer Literaturrecherche (vgl. Übung <em>Literaturrecherche</em> oder <em>Zitieren</em>).</li>
+</ol>
+<div class="callout callout-style-default callout-titled callout-tip">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tipp</span>Reproduzierbare Input-Abgrenzung
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Wenn das Tool keinen stabilen Dokumentzugriff hat: kopieren Sie (a) Textauszug und (b) Metadaten in den Prompt und grenzen beides visuell ab, z. B. mit drei Anführungszeichen.</p>
+<p>Beispiel-Layout:</p>
+<p>““” DOKUMENTTEXT (Auszug/ganzer Text) ““”</p>
+<p>““” METADATEN (Titel, Datum, Ort, Autor, Edition/URL, Archivsignatur, Zugriffsdatum) ““”</p>
+<p>AUFGABE</p>
+</div>
+</div>
+</section>
+<section id="prompt-basics" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-basics">1. Prompt Basics</h2>
+<section id="ziel" class="level3">
+<h3 class="anchored" data-anchor-id="ziel">Ziel</h3>
+<p>Eine unpräzise Anfrage so zu reformulieren, dass Output <strong>prüfbar</strong>, <strong>formatstabil</strong> und <strong>quellen-/inputgebunden</strong> wird.</p>
+</section>
+<section id="übung-1a-von-vage-zu-operationalisiert" class="level3">
+<h3 class="anchored" data-anchor-id="übung-1a-von-vage-zu-operationalisiert">Übung 1A: Von «vage» zu «operationalisiert»</h3>
+<p><strong>Vage Anfrage (absichtlich schlecht):</strong></p>
+<blockquote class="blockquote">
+<p>«Fasse das Dokument zusammen und sag mir, was wichtig ist.»</p>
+</blockquote>
+<p><strong>Aufgabe:</strong> Erstellen Sie daraus zwei saubere Prompts:</p>
+<ul>
+<li><strong>Variante A (minimal):</strong> nur Ziel + Output-Format.</li>
+<li><strong>Variante B (robust):</strong> Ziel + Kontext + Input-Abgrenzung + Constraints + Output-Format + Self-Check.</li>
+</ul>
+<p>Orientieren Sie sich am Setup aus der Übung <em>Quellenkritik</em> (Minimalparaphrase, max. 4 Sätze).</p>
+<p><strong>Prompt-Gerüst (robust, adaptierbar):</strong></p>
+<pre class="text"><code>Aufgabe: [konkret, 1–2 Sätze]
+Kontext: [Seminar/Fragestellung/Zeitraum]
+Material: [Dokumenttext + Metadaten, klar abgegrenzt]
+Regeln:
+- Arbeite nur mit dem Material.
+- Keine Ergänzungen aus Allgemeinwissen.
+- Markiere Unsicherheiten explizit.
+Output-Format:
+1) Minimalparaphrase (max. 4 Sätze)
+2) 5 Schlüsselbegriffe (aus dem Text)
+3) 3 offene Fragen (was bleibt unklar?)
+Self-Check:
+- Liste 3 Stellen, wo du versucht wärst zu spekulieren, und erkläre kurz, warum du es nicht tust.</code></pre>
+</section>
+<section id="übung-1b-output-formate-als-prüfwerkzeug" class="level3">
+<h3 class="anchored" data-anchor-id="übung-1b-output-formate-als-prüfwerkzeug">Übung 1B: Output-Formate als Prüfwerkzeug</h3>
+<p>Nehmen Sie Ihren Prompt aus 1A/1B und erzwingen Sie <strong>zwei alternative Formate</strong>:</p>
+<ul>
+<li><strong>Tabelle</strong> (Feld → Inhalt → Evidenzstelle),</li>
+<li><strong>Claim-Liste</strong> (C1…Cn) mit Evidenzmarkern.</li>
+</ul>
+<p><strong>Reflexion:</strong> Welche Form erleichtert Gegenprüfung, welche erleichtert Weiterarbeit (z. B. Argumentmap, Exzerpt, Schreibplan)?</p>
+</section>
+</section>
+<section id="rollen" class="level2">
+<h2 class="anchored" data-anchor-id="rollen">2. Rollen</h2>
+<section id="ziel-1" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-1">Ziel</h3>
+<p>Rollen nicht als «Theater», sondern als <strong>Methoden-Constraints</strong> nutzen: jede Rolle erzwingt andere Heuristiken, Blindstellen und Prüfmodi.</p>
+</section>
+<section id="übung-2a-eine-aufgabe-drei-rollen" class="level3">
+<h3 class="anchored" data-anchor-id="übung-2a-eine-aufgabe-drei-rollen">Übung 2A: Eine Aufgabe, drei Rollen</h3>
+<p>Wählen Sie <strong>eine</strong> Aufgabe aus den anderen Übungen (z. B. Forschungsfrage entwickeln; externe Quellenkritik; Suchbegriffe für Kataloge; Blog-Briefing).</p>
+<p>Lassen Sie dieselbe Aufgabe in drei Rollen bearbeiten:</p>
+<ol type="1">
+<li>**Quellenkritiker*in** (textnah, Ebenen trennen) – vgl. <em>Quellenkritik</em>.</li>
+<li><strong>Devil’s Advocate</strong> (Stress-Tests, Gegenargumente) – vgl. <em>Schreiben</em>.</li>
+<li>**Strukturierer*in/Outliner** (Arbeitsplan, Zwischenprodukte) – vgl. <em>Public History</em> oder <em>Schreiben</em>.</li>
+</ol>
+<p>**Rollen-Prompt (Beispiel: Quellenkritiker*in, stark begrenzend):**</p>
+<pre class="text"><code>Rolle: Quellenkritiker*in.
+Aufgabe: Analysiere das Material ausschliesslich als Quelle (externe + interne Kritik).
+Wichtig:
+- Trenne strikt: [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
+- Keine historischen Bewertungen.
+- Jede Schlussfolgerung braucht eine Text- oder Metadatenstütze.
+Output:
+1) Ebenen-Tabelle
+2) 5 prüfbare Authentizitäts-/Überlieferungsfragen
+3) 5 Bias-/Sprechpositions-Hypothesen (als Hypothesen markieren)</code></pre>
+<p><strong>Rollen-Prompt (Beispiel: Devil’s Advocate, aus der Schreibübung abgeleitet):</strong></p>
+<pre class="text"><code>Rolle: Devil’s Advocate.
+Input: Meine Arbeitshypothesen (H1–H3) + Materialhinweise.
+Aufgabe:
+- Nenne zu jeder Hypothese die verletzliche Annahme.
+- Formuliere einen Stress-Test (welcher Befund würde kippen?).
+- Gib 1 alternative Deutung (max. 2 Sätze).
+Keine externen Fakten.</code></pre>
+</section>
+<section id="übung-2b-rollenwechsel-als-diagnose" class="level3">
+<h3 class="anchored" data-anchor-id="übung-2b-rollenwechsel-als-diagnose">Übung 2B: Rollenwechsel als Diagnose</h3>
+<p>Nehmen Sie die <strong>beste</strong> Antwort aus 2A und lassen Sie sie durch eine zweite Rolle <strong>prüfen</strong>, nicht neu schreiben:</p>
+<ul>
+<li>Rolle «Logik-Prüfer<em>in» (vgl.</em> Schreiben*): Konsistenz, Sprünge, fehlende Evidenzstellen.</li>
+<li>Rolle «Katalog-Assistent<em>in» (vgl.</em> Literaturrecherche*): übersetzt in Suchstrings/Indikatoren.</li>
+</ul>
+</section>
+</section>
+<section id="zero-shot-prompting" class="level2">
+<h2 class="anchored" data-anchor-id="zero-shot-prompting">3. Zero-shot Prompting</h2>
+<section id="ziel-2" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-2">Ziel</h3>
+<p>Zero-shot als <strong>Baseline</strong> einsetzen: schnell, aber fehleranfällig. Sie lernen, <em>wo</em> Zero-shot reicht und <em>wo</em> er systematisch ausweicht.</p>
+</section>
+<section id="übung-3a-minimalparaphrase-zero-shot" class="level3">
+<h3 class="anchored" data-anchor-id="übung-3a-minimalparaphrase-zero-shot">Übung 3A: Minimalparaphrase (Zero-shot)</h3>
+<p>Nutzen Sie die Aufgabe aus <em>Quellenkritik</em> (Minimalparaphrase, max. 4 Sätze) als Zero-shot.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wer spricht/handelt?</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist der Anlass?</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist die zentrale Aussage/Entscheidung?</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Welche Konsequenz wird angedeutet?</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>Maximal 4 Sätze. Keine Interpretation.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Diagnose:</strong> Markieren Sie im Output: - Stellen, die nicht eindeutig aus dem Text folgen, - implizite Kontextannahmen (wo «weiss» das Modell mehr als Ihr Input?).</p>
+</section>
+<section id="übung-3b-drei-forschungsfragen-zero-shot" class="level3">
+<h3 class="anchored" data-anchor-id="übung-3b-drei-forschungsfragen-zero-shot">Übung 3B: Drei Forschungsfragen (Zero-shot)</h3>
+<p>Nutzen Sie die Vorlage aus der Übung <em>Forschungsfrage</em>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Gib mir drei mögliche historische Forschungsfragen, die sich aus der Aktennotiz ableiten lassen.</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Jede Frage muss (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch sein.</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Reflexion:</strong> Welche Fragen sind (i) wirklich quellengebunden, welche (ii) «generische» Fragen, die auf viele Fälle passen?</p>
+</section>
+</section>
+<section id="few-shot-prompting" class="level2">
+<h2 class="anchored" data-anchor-id="few-shot-prompting">4. Few-shot Prompting</h2>
+<section id="ziel-3" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-3">Ziel</h3>
+<p>Few-shot nutzt Beispiele, um <strong>Kategorien</strong>, <strong>Output-Formate</strong> und <strong>Qualitätsmassstäbe</strong> zu stabilisieren.</p>
+</section>
+<section id="übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung" class="level3">
+<h3 class="anchored" data-anchor-id="übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung">Übung 4A: Few-shot für Ebenen-Trennung (Dokumenttext/Edition/Schlussfolgerung)</h3>
+<p>Erstellen Sie 3–5 kurze Beispielsätze (dürfen <strong>fiktiv</strong>, aber historisch plausibel sein) und labeln Sie sie.</p>
+<p><strong>Beispiel (fiktiv, nur als Trainingsdaten):</strong></p>
+<pre class="text"><code>Beispiele (Input → Label):
+1) "Ort: Bern; Datum: 7.7.1949." → [Edition/Metadaten]
+2) "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → [Dokumenttext]
+3) "Daraus folgt, dass die Schweiz grundsätzlich anti-europäisch war." → [Schlussfolgerung] (zu stark; müsste geprüft/abgeschwächt werden)
+
+Aufgabe:
+Labeln Sie nun die folgenden 10 Sätze aus meinem Material als
+[Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
+Geben Sie bei jedem Label 1 Evidenzhinweis (Zitatfragment/Metadatenfeld) oder 'keine Stütze'.
+Material: ...</code></pre>
+<p><strong>Arbeitsauftrag:</strong> Übernehmen Sie danach den Few-shot-Block in Ihren Prompt aus <em>Quellenkritik</em> («Externe Kritik mittels KI») und prüfen Sie, ob die Labels zuverlässiger werden.</p>
+</section>
+<section id="übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark" class="level3">
+<h3 class="anchored" data-anchor-id="übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark">Übung 4B: Few-shot für Forschungsfragen (schwach vs.&nbsp;stark)</h3>
+<p>Nehmen Sie 2 schwache und 2 starke Fragen (aus Ihrer Übung <em>Forschungsfrage</em> oder aus dem Seminar) und geben Sie sie als Beispiele mit kurzem Kommentar ein.</p>
+<p><strong>Gerüst:</strong></p>
+<pre class="text"><code>Beispiele (Schwach/Stark):
+Schwach: "Warum trat die Schweiz dem Europarat bei?" → zu breit, teleologisch, unklare Evidenzbasis.
+Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argument für/gegen eine institutionelle Annäherung an den Europarat operationalisiert?" → klarer Operator, Zeitraum, Quellennähe.
+
+Aufgabe:
+Formuliere 3 neue Forschungsfragen im Stil der starken Beispiele.
+Zu jeder Frage:
+- Zeitraum
+- zentrale Operatorbegriffe (definieren!)
+- erwartete Quellengattungen
+- 1 Gegenprobe (welche Quelle könnte widersprechen?)</code></pre>
+</section>
+</section>
+<section id="strukturierte-denkspur-chain-of-thought-prompting" class="level2">
+<h2 class="anchored" data-anchor-id="strukturierte-denkspur-chain-of-thought-prompting">5. Strukturierte Denkspur (Chain-of-Thought Prompting)</h2>
+<section id="ziel-4" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-4">Ziel</h3>
+<p>Komplexe Aufgaben in <strong>Zwischenprodukte</strong> zerlegen (Decomposition) und einen <strong>Self-Check</strong> erzwingen. Entscheidend ist nicht «lange Begründung», sondern <strong>prüfbare Zwischenschritte</strong>.</p>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Hinweis zur «Denkspur»
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Formulieren Sie die Denkspur so, dass sie <strong>kurz</strong> und <strong>auditierbar</strong> bleibt (Stichpunkte, Kriterien, Tests). Ziel ist Prüfbarkeit, nicht ein ausführliches «inneres Tagebuch».</p>
+</div>
+</div>
+</section>
+<section id="übung-5a-argumentmapping-mit-zwischenschritten" class="level3">
+<h3 class="anchored" data-anchor-id="übung-5a-argumentmapping-mit-zwischenschritten">Übung 5A: Argumentmapping mit Zwischenschritten</h3>
+<p>Nutzen Sie das Argumentmapping aus der Übung <em>Quellenkritik</em> (Claim/Begründung/Voraussetzung/Implikation), aber erzwingen Sie Schrittlogik:</p>
+<pre class="text"><code>Aufgabe: Erzeuge ein Argumentmapping zu den Passagen, die Neutralität/Vereinbarkeit/Entscheidungsprozess betreffen.
+
+Vorgehen (sichtbar ausgeben):
+1) Extrahiere relevante Textsegmente (max. 5 kurze Zitatfragmente).
+2) Formuliere pro Segment ein Claim/Warrant/Assumption/Implication (stichwortartig).
+3) Self-Check: Nenne 3 Stellen, wo der Sprung von Text → Interpretation heikel ist, und markiere sie als [Spekulation].
+
+Regeln:
+- Nutze nur Dokumenttext.
+- Keine zusätzlichen Fakten.
+Output: Markdown-Liste.
+Material: ...</code></pre>
+</section>
+<section id="übung-5b-rechercheplan-als-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="übung-5b-rechercheplan-als-pipeline">Übung 5B: Rechercheplan als Pipeline</h3>
+<p>Übertragen Sie die Struktur aus <em>Quellensuche vor Ort</em> (Teilfragen → Quellentypen → Suchorte → Suchstrings) in eine explizite Pipeline:</p>
+<pre class="text"><code>Ziel: Erstelle einen Rechercheplan zur Frage: [einfügen].
+
+Schritte:
+1) Zerlege in 4–6 Teilfragen (prüfbar).
+2) Ordne pro Teilfrage 2–3 Quellentypen + Arenen zu.
+3) Leite pro Teilfrage 2 Suchstrings ab (DE/FR/EN; Boolean).
+4) Self-Check: Liste 5 typische Fehler (Anachronismen, erfundene Signaturen, zu breite Begriffe ...) und wie du sie vermeidest.
+
+Output: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).</code></pre>
+</section>
+</section>
+<section id="iteratives-prompten" class="level2">
+<h2 class="anchored" data-anchor-id="iteratives-prompten">6. Iteratives Prompten</h2>
+<section id="ziel-5" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-5">Ziel</h3>
+<p>Iteration als <strong>kontrollierte Revision</strong>: Sie bauen nicht «mehr Text», sondern verbessern Zielpräzision, Evidenzdisziplin und Format.</p>
+</section>
+<section id="übung-6a-generate-critique-revise-forschungsfrage" class="level3">
+<h3 class="anchored" data-anchor-id="übung-6a-generate-critique-revise-forschungsfrage">Übung 6A: Generate → Critique → Revise (Forschungsfrage)</h3>
+<ol type="1">
+<li><strong>Generate (v1):</strong> Zero-shot Forschungsfragen (Übung 3B).<br>
+</li>
+<li><strong>Critique:</strong> Nutzen Sie den kritischen Abgleich aus der Übung <em>Forschungsfrage</em> («Warum fehlt X?» / «Auf welche Quellen stützt sich das?»).<br>
+</li>
+<li><strong>Revise (v2):</strong> Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.</li>
+</ol>
+<p><strong>Critique-Prompt (Vorlage):</strong></p>
+<pre class="text"><code>Hier ist Output v1: [einfügen].
+Aufgabe: Kritisiere claim-by-claim:
+- Was ist zu breit/teleologisch?
+- Wo fehlen Operatorbegriffe/Definitionen?
+- Wo ist die Evidenzbasis unklar?
+Gib danach eine revidierte Version v2 (max. 3 Fragen) + eine Änderungslogik (max. 6 Stichpunkte).
+Keine neuen Fakten.</code></pre>
+</section>
+<section id="übung-6b-iteration-über-output-format-zitieren-zusammenfassen" class="level3">
+<h3 class="anchored" data-anchor-id="übung-6b-iteration-über-output-format-zitieren-zusammenfassen">Übung 6B: Iteration über Output-Format (Zitieren / Zusammenfassen)</h3>
+<p>Nehmen Sie die Übung <em>Zitieren</em> und erzwingen Sie eine zweistufige Ausgabe:</p>
+<ol type="1">
+<li>Extraktion strukturierter Metadaten (Felder),<br>
+</li>
+<li>erst dann Chicago-Zitat + Zotero-Importformat.</li>
+</ol>
+<p><strong>Optimierungsfrage:</strong> Verbessert die Zweistufigkeit Fehlerdiagnose (z. B. fehlende Seitenzahlen, falsche Herausgeber*innen)?</p>
+</section>
+</section>
+<section id="prompt-optimierung" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-optimierung">7. Prompt Optimierung</h2>
+<section id="ziel-6" class="level3">
+<h3 class="anchored" data-anchor-id="ziel-6">Ziel</h3>
+<p>Prompts systematisch verbessern: nicht «schöner», sondern <strong>robuster</strong> (weniger Halluzination, bessere Formatstabilität, klarere Prüfbarkeit).</p>
+</section>
+<section id="qualitätskriterien-rubrik" class="level3">
+<h3 class="anchored" data-anchor-id="qualitätskriterien-rubrik">Qualitätskriterien (Rubrik)</h3>
+<p>Bewerten Sie jede Prompt-Variante (0–2 Punkte pro Kriterium):</p>
+<ol type="1">
+<li><strong>Input-Bindung</strong> (arbeitet wirklich nur mit Material?)</li>
+<li><strong>Ebenen-Trennung</strong> (Text vs.&nbsp;Metadaten vs.&nbsp;Schlussfolgerung)</li>
+<li><strong>Formatstabilität</strong> (liefert, was gefordert ist, ohne Ausweichen)</li>
+<li><strong>Fehlertransparenz</strong> (markiert Unsicherheiten)</li>
+<li><strong>Anschlussfähigkeit</strong> (Output ist direkt weiterverwendbar, z. B. für Exzerpt/Gliederung/Recherchelog)</li>
+</ol>
+</section>
+<section id="übung-7a-prompt-härten-literaturrecherche" class="level3">
+<h3 class="anchored" data-anchor-id="übung-7a-prompt-härten-literaturrecherche">Übung 7A: Prompt «härten» (Literaturrecherche)</h3>
+<p>Nehmen Sie einen naiven Literaturprompt («Nenne zentrale Literatur zu X») und optimieren Sie ihn so, dass er als <strong>Rechercheassistenz</strong> taugt (nicht als Quellenproduzent). Orientierung: Übung <em>Literaturrecherche</em> («Keine erfundenen Titel; keine vorgetäuschte Katalogkenntnis; Unsicherheiten markieren»).</p>
+<p><strong>Optimierter Prompt (Gerüst):</strong></p>
+<pre class="text"><code>Du bist historischer Rechercheassistent.
+Ziel: Startkorpus für [Thema/Zeitraum].
+Regeln:
+- Erfinde keine Titel/Autor:innen.
+- Gib keine Behauptungen über Katalogabdeckung.
+- Liefere stattdessen: Suchstrategien, Suchstrings, erwartbare Literaturtypen, und Hinweise auf Prüfschritte.
+Output:
+1) 8 Suchstrings (DE/FR/EN) mit kurzer Begründung
+2) 5 erwartbare Literaturtypen + wo man sie typischerweise findet
+3) 6 Prüfschritte (wie ich Treffer verifiziere, exportiere, dokumentiere)</code></pre>
+</section>
+<section id="übung-7b-prompt-optimierung-als-fehlerbudget" class="level3">
+<h3 class="anchored" data-anchor-id="übung-7b-prompt-optimierung-als-fehlerbudget">Übung 7B: Prompt-Optimierung als «Fehlerbudget»</h3>
+<p>Definieren Sie ein Fehlerbudget und optimieren Sie darauf:</p>
+<ul>
+<li><strong>Budget A:</strong> «0 erfundene Titel» (Literatur),</li>
+<li><strong>Budget B:</strong> «0 ungestützte Kontextannahmen» (Quellenkritik),</li>
+<li><strong>Budget C:</strong> «0 Formatverstösse» (z. B. max. 4 Sätze, Tabelle, Claim-IDs).</li>
+</ul>
+<p>Führen Sie 3 Iterationen durch (v1–v3) und protokollieren Sie:</p>
+<ul>
+<li>welche Prompt-Änderung welches Fehlerfeld reduziert hat,</li>
+<li>welche Nebenwirkungen entstehen (z. B. Output wird zu vage).</li>
+</ul>
+</section>
+</section>
+<section id="kurz-library-wiederverwendbare-prompt-bausteine" class="level2">
+<h2 class="anchored" data-anchor-id="kurz-library-wiederverwendbare-prompt-bausteine">Kurz-Library: wiederverwendbare Prompt-Bausteine</h2>
+<p><strong>1) Kontext + Materialbindung</strong></p>
+<pre class="text"><code>Arbeite ausschliesslich mit dem untenstehenden Material.
+Wenn dir Informationen fehlen, stelle Rückfragen oder markiere [Unklar].</code></pre>
+<p><strong>2) Ebenen-Trennung (Quelle vs.&nbsp;Edition vs.&nbsp;Schlussfolgerung)</strong></p>
+<pre class="text"><code>Markiere jede Aussage als [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].</code></pre>
+<p><strong>3) Output als Zwischenprodukt (für Weiterarbeit)</strong></p>
+<pre class="text"><code>Gib den Output als Tabelle mit Feldern: Claim | Evidenzstelle | Unsicherheit | Nächster Prüfschritt.</code></pre>
+<p><strong>4) Self-Check / Gegenprobe erzwingen</strong></p>
+<pre class="text"><code>Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.</code></pre>
+</section>
+<section id="abgabe" class="level2">
+<h2 class="anchored" data-anchor-id="abgabe">Abgabe</h2>
+<ol type="1">
+<li>Prompt-Protokoll (mind. 8 Einträge, verteilt über die Techniken)<br>
+</li>
+<li>Pro Technik: 1 kurzer Vergleich (A/B) + 5–8 Sätze Reflexion, was sich methodisch verbessert/verschlechtert hat<br>
+</li>
+<li>Eine «beste Praxis»-Vorlage: Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz</li>
+</ol>
+</section>
+<section id="bibliographie" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
+<div id="refs" role="list">
+
+</div>
+
+
+</section>
+
+<a onclick="return window.scrollTo(0,0),!1;
+" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Zitat</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@inreference{mähr2025,
+  author = {Mähr, Moritz},
+  title = {Prompt Engineering},
+  booktitle = {Critical AI Literacy für Historiker:innen},
+  date = {2025-12-29},
+  url = {https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/prompt-engineering.html},
+  langid = {de}
+}
+</code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Bitte zitieren Sie diese Arbeit als:</div><div id="ref-mähr2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mähr, Moritz. <span>“Prompt Engineering.”</span> In <em>Critical AI
+Literacy für Historiker:innen</em>. December 29, 2025. <a href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/prompt-engineering.html">https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/prompt-engineering.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Kopiert");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Kopiert"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},x=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){x();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else x(),e.classList.remove("code-annotation-active")});const C=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:C(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=C(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="pagination-link" aria-label="Literaturrecherche und -analyse">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Literaturrecherche und -analyse</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../de/exercises/public-history.html" class="pagination-link" aria-label="Kritisch-reflektierter KI-Einsatz in Public History">
+        <span class="nav-page-text">Kritisch-reflektierter KI-Einsatz in Public History</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-md-none d-sm-block"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/prompt-engineering.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div></div></footer></body></html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head><meta charset="utf-8"><style>:where(img[jampack-sized]){max-width:100%;height:auto}</style>
+
+
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+<meta name="author" content="Moritz Mähr">
+<meta name="description" content="Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt.">
+
+<title>Wissenschaftliches Zitieren mit kritischem KI-Einsatz – Critical AI Literacy for Historians</title>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../de/about.html" rel="next">
+<link href="../../de/exercises/schreiben.html" rel="prev">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b3b235ae6ba71d6e5c2a90c00144237d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Wissenschaftliches Zitieren mit kritischem KI-Einsatz – Critical AI Literacy for Historians">
+<meta property="og:description" content="Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt.">
+<meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Critical AI Literacy for Historians">
+<meta name="twitter:title" content="Wissenschaftliches Zitieren mit kritischem KI-Einsatz – Critical AI Literacy for Historians">
+<meta name="twitter:description" content="Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt.">
+<meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/zitieren.html">
+</head>
+
+<body class="floating nav-fixed nav-sidebar quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="fixed-top headroom">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid navbar-container">
+      <div class="mx-auto navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo light-content" fetchpriority="high" decoding="async">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo dark-content" fetchpriority="high" decoding="async">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Critical AI Literacy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="me-auto navbar-nav navbar-nav-scroll">
+  <li class="nav-item">
+    <a class="nav-link" href="../../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../de/index.html" aria-current="page"> 
+<span class="menu-text">Deutsch</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fr/index.html"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">ℹ️</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="../../en/about.html">
+ <span class="dropdown-text">About (EN)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../de/about.html">
+ <span class="dropdown-text">Über das Projekt (DE)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../fr/about.html">
+ <span class="dropdown-text">À propos (FR)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/maehr/critical-ai-literacy-for-historians/" title="" class="px-1 quarto-navigation-tool" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="btn quarto-btn-toggle" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/zitieren.html">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="page-columns page-layout-article page-navbar page-rows-contents quarto-container">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="collapse collapse-horizontal floating overflow-auto quarto-sidebar-collapse-item sidebar sidebar-navigation">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Startseite</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../de/exercises/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übungen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse depth1 list-unstyled show sidebar-section">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formulieren einer historischen Forschungsfrage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literaturrecherche und -analyse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/prompt-engineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellenkritik</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellensuche für eine historische Forschungsfrage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Über das Projekt</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../de/bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliographie</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#überblick-und-didaktisches-ziel" id="toc-überblick-und-didaktisches-ziel" class="nav-link active" data-scroll-target="#überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</a></li>
+  <li><a href="#voraussetzungen" id="toc-voraussetzungen" class="nav-link" data-scroll-target="#voraussetzungen">Voraussetzungen</a></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#was-sind-wissenschaftliche-zitate" id="toc-was-sind-wissenschaftliche-zitate" class="nav-link" data-scroll-target="#was-sind-wissenschaftliche-zitate">Was sind wissenschaftliche Zitate?</a></li>
+  <li><a href="#zwecke-des-zitierens" id="toc-zwecke-des-zitierens" class="nav-link" data-scroll-target="#zwecke-des-zitierens">Zwecke des Zitierens</a>
+  <ul class="collapse">
+  <li><a href="#wissenschaftliche-integrität-und-attribution" id="toc-wissenschaftliche-integrität-und-attribution" class="nav-link" data-scroll-target="#wissenschaftliche-integrität-und-attribution">1) Wissenschaftliche Integrität und Attribution</a></li>
+  <li><a href="#verifizierbarkeit-und-transparenz" id="toc-verifizierbarkeit-und-transparenz" class="nav-link" data-scroll-target="#verifizierbarkeit-und-transparenz">2) Verifizierbarkeit und Transparenz</a></li>
+  <li><a href="#positionierung-im-forschungsstand" id="toc-positionierung-im-forschungsstand" class="nav-link" data-scroll-target="#positionierung-im-forschungsstand">3) Positionierung im Forschungsstand</a></li>
+  <li><a href="#evidenzbasierte-argumentation" id="toc-evidenzbasierte-argumentation" class="nav-link" data-scroll-target="#evidenzbasierte-argumentation">4) Evidenzbasierte Argumentation</a></li>
+  <li><a href="#diskursive-und-technische-funktionen-von-fussnoten" id="toc-diskursive-und-technische-funktionen-von-fussnoten" class="nav-link" data-scroll-target="#diskursive-und-technische-funktionen-von-fussnoten">5) Diskursive und technische Funktionen von Fussnoten</a></li>
+  </ul></li>
+  <li><a href="#wann-muss-ich-zitieren" id="toc-wann-muss-ich-zitieren" class="nav-link" data-scroll-target="#wann-muss-ich-zitieren">Wann muss ich zitieren?</a></li>
+  <li><a href="#wie-zitiere-ich" id="toc-wie-zitiere-ich" class="nav-link" data-scroll-target="#wie-zitiere-ich">Wie zitiere ich?</a></li>
+  <li><a href="#struktur-der-übung" id="toc-struktur-der-übung" class="nav-link" data-scroll-target="#struktur-der-übung">Struktur der Übung</a></li>
+  <li><a href="#übung-1-automatisiertes-zitieren" id="toc-übung-1-automatisiertes-zitieren" class="nav-link" data-scroll-target="#übung-1-automatisiertes-zitieren">Übung 1: Automatisiertes Zitieren</a></li>
+  <li><a href="#übung-2-ki-gestützte-zusammenfassung-mit-originalzitaten" id="toc-übung-2-ki-gestützte-zusammenfassung-mit-originalzitaten" class="nav-link" data-scroll-target="#übung-2-ki-gestützte-zusammenfassung-mit-originalzitaten">Übung 2: KI-gestützte Zusammenfassung mit Originalzitaten</a></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/zitieren.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/zitieren.html">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</h1>
+<p class="lead subtitle">Übung zur Zitierpraxis in der Geschichtswissenschaft</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Methoden</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor:in</div>
+  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universität Bern
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">29. Dezember 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Geändert</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">29. Dezember 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="überblick-und-didaktisches-ziel" class="level2">
+<h2 class="anchored" data-anchor-id="überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</h2>
+<p>Diese Übung vermittelt die <strong>Grundlagen wissenschaftlichen Zitierens</strong> in der Geschichtswissenschaft, mit besonderem Fokus auf den <strong>kritischen Einsatz generativer KI</strong>. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die <strong>Evidenzkette</strong> intakt bleibt.</p>
+</section>
+<section id="voraussetzungen" class="level2">
+<h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
+<ul>
+<li>Grundverständnis historischer Forschungsmethoden</li>
+<li>Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)</li>
+</ul>
+</section>
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
+<p>Nach Abschluss der Übung sind Sie in der Lage:</p>
+<ul>
+<li>die epistemischen und ethischen Funktionen wissenschaftlicher Zitate in der historischen Forschung zu erklären</li>
+<li><strong>Common Knowledge</strong>, <strong>Primärquellen</strong> und <strong>Sekundärliteratur</strong> sauber zu unterscheiden</li>
+<li>konsistent zu entscheiden, <strong>wann</strong> ein Zitat nötig ist (und wann nicht)</li>
+<li>Fussnoten-Zitationspraxis nach etablierten Standards (z.B. Chicago Manual of Style) anzuwenden</li>
+<li>Zitate gezielt zu nutzen, um historische Argumente zu <strong>stützen</strong>, <strong>einzubetten</strong> und <strong>kritisch zu qualifizieren</strong></li>
+<li>generative KI als <strong>heuristisches Werkzeug</strong> einzusetzen, ohne die <strong>Evidenzkette</strong> zu beschädigen</li>
+</ul>
+</section>
+<section id="was-sind-wissenschaftliche-zitate" class="level2">
+<h2 class="anchored" data-anchor-id="was-sind-wissenschaftliche-zitate">Was sind wissenschaftliche Zitate?</h2>
+<p>Wissenschaftliche Zitate sind das formalisierte System zur Referenzierung von Informationen, Ideen, Daten und Interpretationen. In der Geschichtswissenschaft fungieren sie als methodischer <strong>Kontrollmechanismus</strong>: Sie machen Argumente <strong>prüfbar</strong>, rekonstruierbar und kritisierbar, indem sie Leser:innen den Zugriff auf die Evidenzbasis ermöglichen.</p>
+<p>Zitate binden Argumente an:</p>
+<ul>
+<li><strong>Primärquellen</strong> (zeitgenössische Dokumente, Akten, Briefe, Protokolle etc.)</li>
+<li><strong>Sekundärliteratur</strong> (spätere wissenschaftliche Interpretationen)</li>
+</ul>
+<p>Ohne diese Verknüpfung verlieren historische Texte ihren wissenschaftlichen Charakter und werden zu reiner Erzählung.</p>
+</section>
+<section id="zwecke-des-zitierens" class="level2">
+<h2 class="anchored" data-anchor-id="zwecke-des-zitierens">Zwecke des Zitierens</h2>
+<section id="wissenschaftliche-integrität-und-attribution" class="level3">
+<h3 class="anchored" data-anchor-id="wissenschaftliche-integrität-und-attribution">1) Wissenschaftliche Integrität und Attribution</h3>
+<ul>
+<li>Verhindert Plagiat (intellektuelle Schulden werden sichtbar).</li>
+<li>Weist Urheberschaft und Vorarbeiten aus.</li>
+<li>Stabilisiert Glaubwürdigkeit durch verantwortliche Praxis.</li>
+</ul>
+</section>
+<section id="verifizierbarkeit-und-transparenz" class="level3">
+<h3 class="anchored" data-anchor-id="verifizierbarkeit-und-transparenz">2) Verifizierbarkeit und Transparenz</h3>
+<ul>
+<li>Leser:innen können Quellen auffinden und bewerten.</li>
+<li>Zitate dokumentieren die <strong>Evidenzkette</strong> (Quelle → Auswertung → Behauptung).</li>
+<li>Sichtbar wird auch der Arbeitsaufwand (Archiv-/Datenarbeit).</li>
+</ul>
+</section>
+<section id="positionierung-im-forschungsstand" class="level3">
+<h3 class="anchored" data-anchor-id="positionierung-im-forschungsstand">3) Positionierung im Forschungsstand</h3>
+<ul>
+<li>Zitate verorten Aussagen im Diskurs.</li>
+<li>Sie markieren Zustimmung, Abgrenzung, Kontroverse und Anschlussfähigkeit.</li>
+</ul>
+</section>
+<section id="evidenzbasierte-argumentation" class="level3">
+<h3 class="anchored" data-anchor-id="evidenzbasierte-argumentation">4) Evidenzbasierte Argumentation</h3>
+<ul>
+<li>Primärquellen: empirische Fundierung.</li>
+<li>Sekundärliteratur: Kontext, Theorie, Methodik, Debattenstand.</li>
+</ul>
+</section>
+<section id="diskursive-und-technische-funktionen-von-fussnoten" class="level3">
+<h3 class="anchored" data-anchor-id="diskursive-und-technische-funktionen-von-fussnoten">5) Diskursive und technische Funktionen von Fussnoten</h3>
+<ul>
+<li>Kontextualisieren/übersetzen von Zitaten.</li>
+<li>Quellkritische Kommentare.</li>
+<li>Verweise auf Gegenbelege / Alternativdeutungen.</li>
+<li>Leseempfehlungen, ohne den Fliesstext zu überladen.</li>
+</ul>
+<p><strong>Merksatz</strong>: Zitate garantieren nicht “Wahrheit”, sondern <strong>Inspektionsfähigkeit</strong>.</p>
+</section>
+</section>
+<section id="wann-muss-ich-zitieren" class="level2">
+<h2 class="anchored" data-anchor-id="wann-muss-ich-zitieren">Wann muss ich zitieren?</h2>
+<p><strong>Jede Aussage, die über allgemeines Hintergrundwissen hinausgeht, benötigt ein Zitat.</strong></p>
+<p><strong>Immer zitieren:</strong></p>
+<ul>
+<li>Direkte Zitate (Anführungszeichen + Nachweis)</li>
+<li>Paraphrasen (Idee bleibt fremd, auch wenn der Wortlaut neu ist)</li>
+<li>Übernommene Argumente/Deutungsrahmen</li>
+<li>Daten/Statistiken und operationalisierte Messungen</li>
+<li>Indirekte Übernahmen (Primärquelle via Sekundärliteratur → doppelte Attribution)</li>
+</ul>
+<p><strong>Ausnahme: Common Knowledge.</strong> Breit bekannte, unstrittige, triviale Fakten benötigen keinen Nachweis. <strong>Aber</strong>: Sobald Sie qualifizieren, zuspitzen, quantifizieren oder kontroverses Terrain betreten, ist ein Zitat fällig.</p>
+</section>
+<section id="wie-zitiere-ich" class="level2">
+<h2 class="anchored" data-anchor-id="wie-zitiere-ich">Wie zitiere ich?</h2>
+<p>Setzen Sie ein Literaturverwaltungsprogramm (z.B. Zotero) ein und folgen Sie einem etablierten Standard wie dem <a href="https://www.chicagomanualofstyle.org/">Chicago Manual of Style</a> oder den Richtlinien von <a href="https://www.infoclio.ch/de/citation-style">infoclio.ch</a>. Je nach Bildungsinstitution oder Publikationskontext können abweichende Konventionen gelten. Informieren Sie sich vorgängig und achten Sie auf Konsistenz.</p>
+</section>
+<section id="struktur-der-übung" class="level2">
+<h2 class="anchored" data-anchor-id="struktur-der-übung">Struktur der Übung</h2>
+<ul>
+<li>Übung 1: Automatisiertes Zitieren testen und vergleichen.</li>
+<li>Übung 2: KI-Zusammenfassungen auf korrekte Zitation und Belegtreue prüfen.</li>
+</ul>
+</section>
+<section id="übung-1-automatisiertes-zitieren" class="level2">
+<h2 class="anchored" data-anchor-id="übung-1-automatisiertes-zitieren">Übung 1: Automatisiertes Zitieren</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Zitiere den Artikel <span class="ot">&lt;https://doi.org/10.1093/pastj/gtae018&gt;</span> nach Chicago Manual of Style.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Erstelle zusätzlich einen Eintrag in einem Format, das ich direkt in Zotero importieren kann.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tipp
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Falls die KI keinen Zugriff auf den Artikel hat, können Sie den Artikel als PDF hochladen oder kopieren Sie den Inhalt und die Metadaten des Artikels an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch “““. Beispiel:</p>
+<p>““” INHALT DOKUMENT ““”</p>
+<p>““” METADATEN DOKUMENT ““”</p>
+<p>IHR PROMPT</p>
+</div>
+</div>
+<p>Vergleichen Sie die KI-Ausgabe mit Ihrer manuellen Zitation, den offiziellen Zitierempfehlungen auf der Verlagsseite bzw. dem DOI-Import in Zotero. Testen Sie weitere Sekundärliteraturquellen (andere Artikel, Monographien).</p>
+<ul>
+<li>Stimmen alle Angaben überein?</li>
+<li>Gibt es systematische Abweichungen (z.B. bei Seitenzahlen, Herausgebern, Zeitschriftentiteln)?</li>
+</ul>
+</section>
+<section id="übung-2-ki-gestützte-zusammenfassung-mit-originalzitaten" class="level2">
+<h2 class="anchored" data-anchor-id="übung-2-ki-gestützte-zusammenfassung-mit-originalzitaten">Übung 2: KI-gestützte Zusammenfassung mit Originalzitaten</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Fasse den Artikel <span class="ot">&lt;https://doi.org/10.1093/pastj/gtae018&gt;</span> zusammen. </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manual of Style.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Überprüfen Sie die KI-Ausgabe gegen den Originalartikel:</p>
+<ul>
+<li>Stimmen die Zitate mit dem Originaltext überein (Wortlaut, Seitenzahl)?</li>
+<li>Wurde der Sinnzusammenhang der Zitate korrekt wiedergegeben?</li>
+</ul>
+</section>
+<section id="bibliographie" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
+<div id="refs" role="list">
+
+</div>
+
+
+</section>
+
+<a onclick="return window.scrollTo(0,0),!1;
+" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Zitat</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@inreference{mähr2025,
+  author = {Mähr, Moritz},
+  title = {Wissenschaftliches Zitieren mit kritischem KI-Einsatz},
+  booktitle = {Critical AI Literacy für Historiker:innen},
+  date = {2025-12-29},
+  url = {https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/zitieren.html},
+  langid = {de}
+}
+</code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Bitte zitieren Sie diese Arbeit als:</div><div id="ref-mähr2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mähr, Moritz. <span>“Wissenschaftliches Zitieren mit kritischem
+KI-Einsatz.”</span> In <em>Critical AI Literacy für
+Historiker:innen</em>. December 29, 2025. <a href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/zitieren.html">https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/zitieren.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Kopiert");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Kopiert"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},x=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){x();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else x(),e.classList.remove("code-annotation-active")});const C=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:C(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=C(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../de/exercises/schreiben.html" class="pagination-link" aria-label="Schreiben mit kritisch-reflektiertem KI-Einsatz">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../de/about.html" class="pagination-link" aria-label="Über das Projekt">
+        <span class="nav-page-text">Über das Projekt</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-md-none d-sm-block"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/zitieren.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div></div></footer></body></html>
