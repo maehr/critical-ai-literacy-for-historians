@@ -1,0 +1,623 @@
+---
+lang: de
+title: "Quellensuche für eine historische Forschungsfrage"
+subtitle: "Der Vorort und der Europaratsbeitritt 1963"
+description: "Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Universität Bern"
+date: "2025-12-29"
+date-modified: today
+categories: [Quellen]
+tags:
+- Primärquellen
+- Quellensuche
+- Archive
+- Schweiz
+- Europarat
+- "1963"
+- Vorort
+draft: false
+references:
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: "Kompass Geschichtsstudium"
+  subtitle: "Version HS 2025"
+  author:
+    - family: Luther
+      given: Johannes
+    - family: Meier
+      given: Marietta
+    - family: Kaiser
+      given: Rafael
+    - family: Tinner
+      given: Tamara Ann
+  issued:
+    year: 2025
+  publisher: "Historisches Seminar, Universität Zürich"
+  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
+- id: leitfaden_bremen_2025
+  type: book
+  title: "Leitfaden Geschichtswissenschaft"
+  subtitle: "Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage"
+  issued:
+    year: 2025
+  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
+  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
+  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: "Studienleitfaden Fachbereich Geschichte"
+  author:
+    - family: Lösse
+      given: Esther
+    - family: Anders
+      given: Klaas
+    - family: Szadziewski
+      given: Max
+  issued:
+    year: 2021
+  publisher: "Fachbereich Geschichte, Universität Hamburg"
+  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
+  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: "Werkzeugkasten Geschichte"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  issued:
+    year: 2016
+  publisher: "Departement Geschichte, Universität Basel"
+  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
+  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+- id: dodis-5020
+  type: webpage
+  author:
+    - family: Federal Department of Foreign Affairs
+      literal: Bundesrat / Dodis
+  title: "Die Schweiz und der Europarat"
+  URL: "https://www.dodis.ch/de/die-schweiz-und-der-europarat"
+  publisher: "Dodis – Diplomatische Dokumente der Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "E-Dossier zur schweizerischen Aussenpolitik zum Europarat"  
+
+- id: dodis-beitritt1963
+  type: webpage
+  author:
+    - family: Federal Department of Foreign Affairs
+      literal: Bundesrat / Dodis
+  title: "Beitritt zum Europarat 1963"
+  URL: "https://www.dodis.ch/de/beitritt-zum-europarat-1963"
+  publisher: "Dodis – Diplomatische Dokumente der Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "E-Dossier zur Geschichte des Europarat-Beitritts der Schweiz"
+
+- id: aps-europarat-2025
+  type: article
+  author:
+    - literal: "Année Politique Suisse"
+  title: "Europarat: Nachträge zum Voranschlag 2026"
+  URL: "https://anneepolitique.swiss/articles?keywords%5B%5D=99"
+  publisher: "Année Politique Suisse / Universität Bern"
+  issued:
+    year: 2025
+    month: 11
+    day: 12
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "Suchergebnisartikel zu Europarat-Bezug auf anneepolitique.swiss"
+
+- id: wikipedia-europarat-2025
+  type: webpage
+  title: "Europarat"
+  author:
+    - literal: "Wikipedia"
+  URL: "https://de.wikipedia.org/wiki/Europarat"
+  publisher: "Wikimedia Foundation"
+  issued:
+    year: 2025
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "Artikel zur internationalen Organisation Europarat auf der deutschsprachigen Wikipedia"
+- id: altermatt-casasus-2013-europarat
+  type: book
+  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
+  editor:
+    - family: Altermatt
+      given: Bernhard
+    - family: Casasus
+      given: Gilbert
+  publisher: "Rüegger"
+  ISBN: "978-3-7253-1005-0"
+  issued:
+    year: 2013
+  publisher-place: "Schweiz"
+  note: "Sammelband herausgegeben im Auftrag des Centre d’Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft" 
+- id: hls-europarat-2009
+  type: webpage
+  title: "Europarat"
+  author:
+    - family: de Puymège
+      given: Gérard
+  translator:
+    - family: Wildermann
+      given: Ansgar
+  URL: "https://hls-dhs-dss.ch/de/articles/026470/2009-10-29/"
+  publisher: "Historisches Lexikon der Schweiz (HLS)"
+  issued:
+    year: 2009
+    month: 10
+    day: 29
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Artikel zur Geschichte und Funktion des Europarats; Version vom 29.10.2009"  
+
+- id: amtsdruckschriften-bar
+  type: webpage
+  title: "Amtsdruckschriften der Schweiz"
+  author:
+    - literal: "Bundesarchiv Schweiz"
+  URL: "https://www.amtsdruckschriften.bar.admin.ch/"
+  publisher: "Bundesarchiv Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Digitale Sammlung amtlicher Schweizer Druckschriften"
+
+- id: chgov-bar-admin
+  type: webpage
+  title: "chgov.bar.admin.ch"
+  author:
+    - literal: "Bundesarchiv Schweiz"
+  URL: "https://www.chgov.bar.admin.ch/"
+  publisher: "Bundesarchiv Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Rechercheportal der Schweizer Regierungspublikationen"
+
+- id: e-newspaperarchives-ch
+  type: webpage
+  title: "e-newspaperarchives.ch"
+  author:
+    - literal: "ETH-Bibliothek Zürich"
+  URL: "https://www.e-newspaperarchives.ch/"
+  publisher: "ETH-Bibliothek Zürich"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Digitale Zeitungsarchive der Schweiz"
+
+- id: archives-online-org
+  type: webpage
+  title: "Archives Online"
+  author:
+    - literal: "Staatsarchive der Schweiz"
+  URL: "https://www.archives-online.org/"
+  publisher: "Staatsarchive der Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Aggregiertes Recherchesystem schweizerischer Archive"
+
+- id: e-periodica-ch
+  type: webpage
+  title: "e-periodica.ch"
+  author:
+    - literal: "ETH-Bibliothek Zürich"
+  URL: "https://www.e-periodica.ch/"
+  publisher: "ETH-Bibliothek Zürich"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Digitale Plattform für Schweizer Fachperiodika"
+
+- id: impresso-project-ch
+  type: webpage
+  title: "IMPRESSO Project"
+  author:
+    - literal: "IMPRESSO Consortium"
+  URL: "https://impresso-project.ch/"
+  publisher: "IMPRESSO Project"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Projekt zur Zeitungs- und Medienanalyse"
+
+- id: memobase-ch
+  type: webpage
+  title: "Memobase"
+  author:
+    - literal: "Memobase Coordination"
+  URL: "https://memobase.ch/"
+  publisher: "Memobase"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Rechercheplattform für historische Schweizer Quellen"
+
+- id: swisscollections-ch
+  type: webpage
+  title: "swisscollections.ch"
+  author:
+    - literal: "Bibliothèque nationale suisse"
+  URL: "https://swisscollections.ch/"
+  publisher: "swisscollections"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Zentrales Suchportal für Schweizer Bibliotheks- und Archivbestände"
+---
+
+## Überblick und didaktisches Ziel
+
+Diese Übung trainiert **übertragbare Recherchekompetenzen**: von der präzisen Operationalisierung einer Forschungsfrage über **systematische** und **unsystematische (Snowball-)Suchstrategien** bis zur **kritischen Bewertung** von Quellen (Provenienz, Kontext, Bias, Relevanz). Generative KI wird dabei als **heuristisches Hilfsmittel** eingesetzt (Begriffsklärung, Keyword-Expansion, Suchpfade).
+
+Als Fallbeispiel dient die Forschungsfrage:\
+**Welche Rolle spielte der Schweizerische Handels- und Industrie-Verein (Vorort) im Entscheidungsprozess zum Europaratsbeitritt 1963?**
+
+Die Übung folgt einem **zirkulären Forschungsverständnis**: Suchresultate verändern Keywords, Hypothesen und die Eingrenzung des Untersuchungsdesigns.
+
+::: callout-note
+
+## Hinweis zur Materialität der Quellenlage
+
+Beachten Sie bei der Archivarbeit **Schutzfristen, Nutzungsbedingungen und digitale Verfügbarkeit** der einzelnen Bestände. Planen Sie den Arbeitsaufwand für Einsichtsgesuche, On-Site-Konsultation und Reproduktionsrechte ein.
+:::
+
+## Voraussetzungen
+
+- Grundkenntnisse historischer Quellenkritik (Provenienzprinzip, Kontextualisierung)
+- Grundkenntnisse in Bibliotheks- und Archivrecherche (Kataloge, Findmittel)
+- Grundverständnis des KI-Einsatzes (Prompting)
+
+## Lernziele
+
+Nach Abschluss der Übung können Sie:
+
+- Quellen **typologisch** unterscheiden (primär/sekundär/tertiär) und ihre **epistemische Funktion** begründen,
+- eine Forschungsfrage in **recherchierbare Teilfragen** und **Suchindikatoren** übersetzen,
+- systematische und Snowball-Suche **kombiniert** einsetzen und dokumentieren,
+- **mehrsprachige Suchstrategien** entwickeln (DE/FR/EN; inkl. historischer Terminologie),
+- Bibliothekskataloge, bibliografische Datenbanken, Findmittel und Portale **zielgerichtet** nutzen,
+- Fundstellen **reproduzierbar** dokumentieren und quellenkritisch bewerten,
+- KI-Ausgaben als **heuristische Vorschläge** behandeln, systematisch prüfen und reflektieren.
+
+## Struktur der Übung
+
+1. Forschungsfrage operationalisieren\
+2. Quellenarten und Evidenzlogik\
+3. Systematische Suche I: Tertiärquellen und Kontextgerüst\
+4. Systematische Suche II: Kataloge, Datenbanken, Amtsdruckschriften\
+5. Unsystematische Suche: Snowballing aus Kernliteratur und Dossiers\
+6. Archive und Findmittel: Provenienzlogik und Bestandsbildung\
+7. Quellenkritik: Bewertungsraster und Minimaldokumentation\
+8. KI-Reflexion: kontrollierte Nutzung, Nachweis, Fehlerkultur
+
+## 1. Forschungsfrage operationalisieren
+
+### Ziel
+
+Die Forschungsfrage wird in **Teilfragen** zerlegt, sodass daraus **konkrete Suchpfade** und **prüfbare Teilhypothesen** entstehen.
+
+### Aufgabe (ohne KI)
+
+Skizzieren Sie in 10 Minuten ein Arbeitsmodell des *Entscheidungsprozesses* (Akteure, Arenen, Phasen, Dokumenttypen).
+
+**Leitfragen:**
+
+- Welche staatlichen Arenen sind relevant (Bundesrat, Departemente, Parlament, Vernehmlassung, Diplomatie)?
+- Wo könnte der Vorort interveniert haben (Positionspapiere, Kontakte, Medien, Expertenkommissionen)?
+- Welche analytische Bedeutung haben Agenda-Setting, Expertise, Lobbying, Koalitionsbildung, Legitimation, Gatekeeping?
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Zerlege die Forschungsfrage in 4–6 Teilfragen, die jeweils quellenbasiert überprüfbar sind.
+Gib für jede Teilfrage an, welche Dokumenttypen als Evidenz dienen könnten.
+```
+
+### Kritischer Abgleich
+
+Markieren Sie in der KI-Ausgabe:
+
+- **prüfbare** vs. **vage** Aussagen,
+- fehlende Arenen (z. B. Vernehmlassung, EDA/EVD),
+- implizite Begriffsannahmen (z. B. „Lobbying“ als potenziell anachronistische Kategorie).
+
+## 2. Quellenarten und Evidenzlogik
+
+### Ziel
+
+Klären, **welche Evidenz** welche Behauptungen stützen kann – und welche systematischen Grenzen bestehen.
+
+### Aufgabe: Quellentypen-Matrix (ohne KI)
+
+Erstellen Sie eine Matrix mit:
+
+- **Zeilen**: Teilfragen / Teilhypothesen
+- **Spalten**: Quellentypen
+
+**Quellentypen:**
+
+- **Primär**: Verbandsprotokolle, Korrespondenz, interne Berichte, Eingaben, Aktennotizen; Regierungsakten; Parlamentsprotokolle; Medienberichte
+- **Sekundär**: Forschungsliteratur zu Aussen-, Europa- und Verbändepolitik; Organisationsgeschichte Vorort/economiesuisse
+- **Tertiär**: Kataloge, Bibliografien, Dossiers, Register, Datenbanken, Findmittel
+
+Für jede Zelle: *Was wäre ein überzeugender Beleg?* / *Welche Verzerrungen sind wahrscheinlich?*
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Nenne für die Forschungsfrage geeignete Primär-, Sekundär- und Tertiärquellen.
+Ordne jede Quelle einer Arena zu (Bundesrat / Departement / Parlament / Verband / Medien / international).
+```
+
+### Reflexion
+
+Wo „erfindet“ KI typischerweise Quellen (z. B. scheinbar konkrete Protokolle oder Briefe ohne Nachweis)? Notieren Sie drei Risikofelder.
+
+## 3. Systematische Suche I: Kontextgerüst über Tertiärquellen
+
+### Ziel
+
+Ein **orientierendes Referenzgerüst** aufbauen, bevor die Tiefenrecherche beginnt.
+
+### Kernressourcen
+
+- [@dodis-5020]
+- [@dodis-beitritt1963]
+- [@aps-europarat-2025]
+- [@amtsdruckschriften-bar]
+- [@chgov-bar-admin]
+- [@e-newspaperarchives-ch]
+- [@archives-online-org]
+- [@e-periodica-ch]
+- [@impresso-project-ch]
+- [@memobase-ch]
+- [@swisscollections-ch]
+
+### Aufgabe (KI als Suchassistent, nicht als Quelle)
+
+``` markdown
+Erstelle eine Liste von 15 Suchorten (Portale, Kataloge, Editionen, Archive, Datenbanken),
+die für die Frage nach dem Vorort und dem Europaratsbeitritt 1963 relevant sein könnten.
+Gib pro Suchort 1–2 typische Trefferarten an (z. B. Botschaft, Protokoll, Dossier, Zeitungsartikel).
+```
+
+### Validierung
+
+- Öffnen Sie mindestens **5** genannte Suchorte und testen Sie je **2** Suchanfragen.
+- Dokumentieren Sie **Nullresultate** (falsche Arena, falscher Begriff, falscher Zeitraum, fehlende Digitalisierung).
+
+## 4. Systematische Suche II: Kataloge, Datenbanken, Amtsdruckschriften
+
+### Ziel
+
+Suchbegriffe als **testbare Hypothesen** entwickeln, inkl. historischer Terminologie und Namensvarianten.
+
+### Aufgabe A: Begriffsfelder
+
+Erstellen Sie drei Begriffsfelder (DE/FR/EN):
+
+1. **Akteur**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l’industrie; economiesuisse (*rückprojizierend kennzeichnen*)
+2. **Ereignis/Institution**: Europarat; Council of Europe; Beitritt/Mitgliedschaft/accession; 1963; EMRK/EGMR (als Kontextpfade)
+3. **Prozess/Mechanismen**: Vernehmlassung; Interessenverband; Eingabe; Stellungnahme; Gutachten; wirtschaftliche Interessen; Aussenwirtschaftspolitik
+
+### Aufgabe B (KI-gestützt): kontrollierte Synonymlisten
+
+``` markdown
+Erstelle für die drei Begriffsfelder (Akteur / Institution-Ereignis / Prozess) je 12–20 Suchbegriffe.
+Bedingungen:
+- DE/FR/EN getrennt ausgeben
+- historische Schreibweisen und Abkürzungen berücksichtigen
+- pro Begriff angeben, wo er eher vorkommt (Parlamentsprotokoll / interne Akten / Presse)
+- keine erfundenen Eigennamen oder Signaturen
+```
+
+### Qualitätscheck
+
+- Entfernen oder markieren Sie anachronistische Begriffe als **rückblickende Suchanker**.
+- Ergänzen Sie **Personen- und Ortsanker** (z. B. Vorort-Präsidium, Delegierte; Bern/Zürich; relevante Departemente).
+
+## 5. Systematische Recherche: Sekundärliteratur und Referenzwerke
+
+### Ziel
+
+Eine belastbare Ausgangsbasis an Sekundärliteratur (inkl. Bibliografien) schaffen.
+
+### Aufgabe A: Katalogstrategie
+
+Recherchieren Sie mit Kombinationen wie:
+
+- (Vorort OR SHIV) AND (Europarat OR Council of Europe) AND 196\*
+- (Verbände OR Interessenpolitik) AND (Aussenpolitik OR Europapolitik) AND Schweiz AND 1950*–1960*
+- Schweiz AND Europarat AND (Beitritt OR membership OR accession)
+
+Dokumentieren Sie:
+
+- Suchbegriffe
+- Filter (Jahr, Sprache, Materialtyp)
+- Trefferzahlen
+- Auswahlkriterien
+
+### Aufgabe B (KI-gestützt): Suchbegriffe optimieren
+
+``` markdown
+Hier sind meine bisherigen Suchbegriffe und Trefferprobleme: [einfügen].
+Optimiere die Suchbegriffe für Kataloge (Boolean, Phrasen, Trunkierung).
+Gib 6 Varianten an und erkläre kurz, welches Problem jede Variante adressiert.
+```
+
+### Deliverable
+
+- **Kurzannotierte Bibliografie** (8–12 Titel) mit:
+
+  - Fragerelevanz (1–2 Sätze)
+  - erwartetem Quellenwert (welche Primärquellen werden zitiert?)
+
+## 6. Unsystematische Suche: Snowballing
+
+### Ziel
+
+Von einem **kleinen Startkorpus** ausgehend Debatten und Quellenverweise rekonstruieren.
+
+### Aufgabe: Startset definieren
+
+Wählen Sie:
+
+- 1 Dossier oder Edition (Navigator),
+- 1 Überblicksdarstellung,
+- 1 vertiefende Studie (akteurs- oder institutionsnah).
+
+### Snowball-Protokoll
+
+- zentrale Referenzen (10–20),
+- zitierte Primärquellen (Archive, Signaturen, Dokumenttypen),
+- wiederkehrende Akteure und Kommissionen.
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Ich habe folgende 8 Literatur- oder Quellenangaben:
+1. ___
+2. ___
+…
+Ordne sie nach (a) Primär/Sekundär, (b) Arena, (c) potenzieller Erkenntniswert
+für die Rolle des Vororts.
+Schlage je eine Anschlussrecherche vor.
+```
+
+### Reflexion
+
+Snowballing reproduziert Kanons und Blindstellen. Notieren Sie fehlende Perspektiven (z. B. Gewerkschaften, Parteien, internationale Akteure) und mögliche Gegenstrategien.
+
+## 7. Archivrecherche: Findmittel, Bestände, Zugang
+
+### Ziel
+
+Primärquellen so identifizieren, dass sie **bestell- und auswertbar** sind.
+
+### Startpunkte (Orientierung)
+
+- Vorort-/economiesuisse-Bestände im Archiv für Zeitgeschichte (ETH Zürich)
+- Nachweise in Katalogen (z. B. SWA/UB Wirtschaft Basel)
+- Vorort-bezogene Dokumente in diplomatiegeschichtlichen Kontexten (z. B. Dodis)
+
+::: callout-warning
+
+## Methodischer Hinweis
+
+„Dossier gefunden“ ist nicht gleich „Evidenz gesichert“. Findmittel sind tertiäre Zugangsinstrumente: Sie strukturieren Sichtbarkeit, nicht Wahrheit.
+:::
+
+### Aufgabe A: Findmittelanalyse
+
+Rekonstruieren Sie für **ein** Archiv:
+
+- Serien- und Dossierarten,
+- Erschliessungslogik,
+- Zugangsbeschränkungen.
+
+### Aufgabe B: Dossier-Shortlist (1960–1963)
+
+Erstellen Sie eine Shortlist von **10 Einheiten** mit:
+
+- Signatur oder Permalink,
+- Titel und Laufzeit,
+- erwarteter Bezug zur Teilhypothese,
+- Zugang (online / Lesesaal / Gesuch).
+
+### Aufgabe C (KI-gestützt): Suchpfade planen
+
+``` markdown
+Schlage drei Suchpfade vor:
+1) akteurszentriert
+2) prozessorientiert
+3) ereigniszentriert
+Je Pfad: 8–12 Suchbegriffe (DE/FR/EN) inkl. Namensvarianten.
+```
+
+## 8. Iteration, Reproduzierbarkeit und KI-Reflexion
+
+### Rechercheprotokoll (Pflicht)
+
+Mindestens:
+
+- Datum, Tool/Portal, Query, Filter, Trefferzahl
+- Auswahlkriterien
+- Bias-Notizen (OCR, Erschliessung, Sprache)
+
+### Reflexionsfragen (250–400 Wörter)
+
+- Was hat KI konkret **beschleunigt**?
+- Wo hat sie **verführt** (Scheinspezifik, Anachronismen)?
+- Welche Validierungsschritte haben Sie eingeführt?
+- Welche Entscheidungen blieben zwingend menschlich?
+
+### KI-Protokoll (Anhang)
+
+- 2–3 Prompts,
+- gekürzte Outputs,
+- begründete Korrekturen oder Rejects.
+
+## Abgabe
+
+1. Quellen-Matrix (Teilfragen × Quellentypen)
+2. Rechercheprotokoll (≥ 15 Einträge)
+3. Shortlist: 10 Primärquellen-Einheiten
+4. Kurzannotierte Bibliografie (8–12 Titel)
+5. Reflexion zum KI-Einsatz inkl. KI-Protokoll
+
+## Bibliographie
+
+::: {#refs}
+:::

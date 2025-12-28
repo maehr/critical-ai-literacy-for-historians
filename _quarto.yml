@@ -91,6 +91,7 @@ format:
     code-copy: true
     code-overflow: wrap
     canonical-url: true
+    csl: chicago-in-text-full-mm.csl
 
 freeze: true
 

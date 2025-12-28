@@ -5,9 +5,17 @@ nocite: |
   @*
 ---
 
-::: callout-note
-Cette page répertorie toutes les références citées dans le projet Critical AI Literacy pour les Historiens. La bibliographie est automatiquement générée à partir de toutes les citations utilisées dans les exercices et la documentation.
+::: callout-tip
+## Remarque: droits d'auteur
+
+Nous nous efforçons d'utiliser des ouvrages librement accessibles. Si cela n'est pas possible, nous vous prions de vous procurer les ouvrages via la plateforme bibliothécaire [LIBER Libraries](https://libereurope.eu/user-list/). Malgré des arguments valables, nous déconseillons l'utilisation de plateformes telles que [Library Genesis](https://de.wikipedia.org/wiki/Library_Genesis).
+
+Voir @karaganis2018
 :::
 
 ::: {#refs}
+:::
+
+::: callout-note
+Cette page répertorie toutes les références citées dans le projet Critical AI Literacy pour les Historiens. La bibliographie est automatiquement générée à partir de toutes les citations utilisées dans les exercices et la documentation.
 :::

@@ -1,0 +1,602 @@
+---
+lang: de
+title: "Literaturrecherche und -analyse"
+subtitle: "Geschichte der Sozialversicherung in der Schweiz"
+description: "Eine angeleitete Übung zur systematischen Literaturrecherche und problemorientierten Literaturanalyse mit kritisch kontrolliertem Einsatz generativer KI."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Universität Bern"
+date: "2025-12-29"
+date-modified: today
+categories: [Methoden]
+tags:
+- Literaturrecherche
+- Literaturanalyse
+- Sozialversicherung
+- Schweiz
+- Sekundärliteratur
+draft: false
+references:
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+
+- id: historyofsocialsecurity-home
+  type: webpage
+  title: "History of Social Security (Switzerland) — Home"
+  URL: "https://www.historyofsocialsecurity.ch/home"
+  publisher: "History of Social Security"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+  note: "Mehrsprachige Plattform zur Geschichte der sozialen Sicherheit in der Schweiz"
+
+- id: historyofsocialsecurity-synthesis
+  type: webpage
+  title: "History of Social Security — Synthesis"
+  URL: "https://www.historyofsocialsecurity.ch/synthesis"
+  publisher: "History of Social Security"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+  note: "Synthetischer Überblick mit Literaturhinweisen nach Etappen"
+
+- id: historyofsocialsecurity-bibliography
+  type: webpage
+  title: "History of Social Security — Bibliography"
+  URL: "https://www.historyofsocialsecurity.ch/bibliography"
+  publisher: "History of Social Security"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+  note: "Kuratiertes Literaturverzeichnis (mehrsprachig)"
+
+- id: hls-sozialversicherungen
+  type: webpage
+  title: "Sozialversicherungen"
+  URL: "https://hls-dhs-dss.ch/de/articles/016607/"
+  publisher: "Historisches Lexikon der Schweiz (HLS)"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: hls-sozialpolitik
+  type: webpage
+  title: "Sozialpolitik"
+  URL: "https://hls-dhs-dss.ch/articles/016577"
+  publisher: "Historisches Lexikon der Schweiz (HLS)"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: hls-ahv
+  type: webpage
+  title: "Alters- und Hinterlassenenversicherung (AHV)"
+  URL: "https://hls-dhs-dss.ch/de/articles/016611/"
+  publisher: "Historisches Lexikon der Schweiz (HLS)"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: hls-soziale-sicherheit
+  type: webpage
+  title: "Soziale Sicherheit"
+  URL: "https://hls-dhs-dss.ch/articles/016318"
+  publisher: "Historisches Lexikon der Schweiz (HLS)"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: swisscovery
+  type: webpage
+  title: "swisscovery (SLSP) — Research platform"
+  URL: "https://swisscovery.slsp.ch/"
+  publisher: "Swiss Library Service Platform (SLSP)"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: e-periodica
+  type: webpage
+  title: "E-Periodica — Schweizer Zeitschriften online"
+  URL: "https://www.e-periodica.ch/"
+  publisher: "ETH-Bibliothek"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: e-newspaperarchives
+  type: webpage
+  title: "e-newspaperarchives.ch — Digitale Zeitungsarchive"
+  URL: "https://www.e-newspaperarchives.ch/"
+  publisher: "Schweizerische Nationalbibliothek & Partner"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: fedlex
+  type: webpage
+  title: "Fedlex — Das Portal des Bundesrechts"
+  URL: "https://www.fedlex.admin.ch/"
+  publisher: "Bundeskanzlei / Schweizerische Eidgenossenschaft"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: amtliches-bulletin
+  type: webpage
+  title: "Amtliches Bulletin — Parlamentsdebatten"
+  URL: "https://www.parlament.ch/de/ratsbetrieb/amtliches-bulletin"
+  publisher: "Schweizer Parlament"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: bar-amtsdruckschriften
+  type: webpage
+  title: "Amtsdruckschriften und weitere digitalisierte Unterlagen"
+  URL: "https://www.bar.admin.ch/bar/de/home/recherche/suchen/suchmaschinen-portale/amtsdruckschriften.html"
+  publisher: "Schweizerisches Bundesarchiv (BAR)"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: bsv-ahv-chronologie-2025
+  type: report
+  title: "Bisherige Revisionen der schweizerischen Altersvorsorge (Chronologie)"
+  author:
+    - literal: "Bundesamt für Sozialversicherungen (BSV)"
+  issued:
+    year: 2025
+    month: 1
+    day: 6
+  URL: "https://www.bsv.admin.ch/dam/de/sd-web/BjJ4nul1AM2s/chronologie_der_ahv-revisionen.pdf"
+  accessed:
+    year: 2025
+    month: 12
+    day: 27
+
+- id: leimgruber-solidarity-2008
+  type: book
+  title: "Solidarity without the State? Business and the Shaping of the Swiss Welfare State, 1890–2000"
+  author:
+    - family: Leimgruber
+      given: Matthieu
+  issued:
+    year: 2008
+  publisher: "Cambridge University Press"
+  DOI: "10.1017/CBO9780511497094"
+  note: "Publikationsdatum der Ausgabe: 06.03.2008 (online); DOI gemäss Verlag"
+
+- id: obinger-1998
+  type: article-journal
+  title: "Federalism, Direct Democracy, and Welfare State Development in Switzerland"
+  author:
+    - family: Obinger
+      given: Herbert
+  issued:
+    year: 1998
+  container-title: "Journal of Public Policy"
+  volume: "18"
+  issue: "3"
+  page: "241–263"
+  DOI: "10.1017/S0143814X98000129"
+---
+
+## Überblick und didaktisches Ziel
+
+Diese Übung führt in die systematische Literaturrecherche und problemorientierte Literaturanalyse ein – mit dem Ziel, den Forschungsstand zu einem historischen Thema rekonstruieren zu können. Ein Schwerpunkt liegt auf dem kritisch kontrollierten Einsatz generativer KI als heuristisches Werkzeug zur Erweiterung von Suchräumen und Strukturierung von Texten.
+
+**Fallbeispiel: Geschichte der Sozialversicherung in der Schweiz**
+
+Die Übung folgt einem zirkulären Such- und Analyseprozess: Ausgangspunkt ist ein breites Themenfeld (Sozialversicherung), aus dem sukzessive ein klarer Problemfokus, eine präzisierte Forschungsfrage und ein reproduzierbarer Korpus relevanter Sekundärliteratur entwickelt werden. Dabei wechseln sich manuelle Recherche- und Analysephasen mit KI-gestützten Explorationen ab, die jeweils kritisch validiert werden.
+
+## Voraussetzungen
+
+- Grundkenntnisse in historischer Forschungsmethoden
+- Zugang zu wissenschaftlichen Katalogen/Datenbanken (z. B. swisscovery)
+- Grundkenntnisse in der Nutzung generativer KI
+
+## Lernziele
+
+Nach Abschluss dieser Übung können Sie:
+
+- die Funktion von Literaturrecherche und -analyse in historischer Forschung begründen,
+- ein Thema zur Schweizer Sozialversicherung in eine recherchierbare Suchstrategie übersetzen,
+- systematisch (Kataloge/Datenbanken) und unsystematisch (Snowballing) recherchieren und dokumentieren,
+- KI als **heuristische Suchhilfe** nutzen (Keyword-Expansion, Query-Design, Screening),
+- Relevanz, Argumentation, Theorie und Methoden von Sekundärliteratur strukturiert beurteilen,
+- zentrale Debattenlinien und Forschungslücken identifizieren und daraus eine präzisierte Forschungsfrage ableiten,
+- Literaturmanagement reproduzierbar und zitationssicher umsetzen (Zotero/BibTeX, Suchprotokoll, Entscheidungslog).
+
+## Was ist Literaturrecherche und Literaturanalyse?
+
+**Literaturrecherche** ist die systematische Identifikation einschlägiger Sekundärliteratur (und relevanter Tertiärressourcen), um den Forschungsstand zu kartieren.
+
+**Literaturanalyse** ist die problemorientierte, kritische Lektüre dieser Literatur, um Argumente, Theoriebezüge, Methoden, Evidenzbasen und Kontroversen zu rekonstruieren (statt „Fakten“ zu extrahieren).
+
+**Fallbeispiel**: *Geschichte der Sozialversicherung in der Schweiz* (Sozialstaat, AHV/IV/UV/KV/ALV, Föderalismus, Verbände, Geschlechterordnung, transnationale Transfers).
+
+::: callout-note
+
+## Hinweis zur Materialität
+
+Nicht alles ist digital zugänglich. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.
+:::
+
+## Struktur der Übung
+
+Jeder Schritt enthält:
+
+- eine **Zielsetzung**,
+- **konkrete Aufgaben** (inkl. optionaler KI-Prompts),
+- einen **Arbeits- und Reflexionsauftrag**.
+
+1. Problemformulierung und Suchhorizont
+2. Orientierungswissen über Tertiärressourcen (Debatten- und Begriffsgerüst)
+3. Systematische Suche I: Kataloge (Abdeckung und Retrieval-Logik)
+4. Systematische Suche II: Zeitschriften/Medien und Spezialpfade (Kontext, Reviews, Begriffe)
+5. Snowballing: rückwärts/ vorwärts zitieren (Kanons und Blindstellen kontrollieren)
+6. Screening und Qualitätsbewertung: Relevanz, Argument, Methode, Evidenz
+7. Historiografische Debattenkartierung und Forschungsstand-Text (komprimiert, evidenzsensibel)
+8. Forschungslücke und Eingrenzung: vom Forschungsstand zur Forschungsfrage
+9. Reproduzierbarkeit und Nachweis (Pflicht)
+
+## 1. Problemformulierung und Suchhorizont
+
+### Ziel
+
+Vom breiten Themenfeld (Sozialversicherung) zu einem klaren **Problemfokus** und einer ersten Suchhypothese.
+
+### Aufgabe (ohne KI)
+
+Formulieren Sie in 5–8 Sätzen:
+
+- Untersuchungszeitraum (z. B. 1880–1950 / 1938–1948 / 1970–2005)
+- Teilbereich (z. B. Altersvorsorge, Krankenversicherung, Invalidität, Arbeitslosigkeit)
+- vermutete Konflikt- oder Mechanismenlogik (z. B. Föderalismus/Referendum, Verbände, Expertise, Geschlecht, Transfer)
+- erwartete Literaturräume (Geschichte / Politikwissenschaft / Rechtsgeschichte / Sozialpolitik)
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Ich arbeite zum Thema „Geschichte der Sozialversicherung in der Schweiz“.
+Schlage 6 problemorientierte, historisch bearbeitbare Fokusvarianten vor (je: Zeitraum, Akteurs-/Arenenfokus, Mechanismus).
+Gib pro Variante 8 Suchbegriffe (DE/FR/EN; historisch plausible Termini) und 3 erwartete Literaturtypen (Monografie, Aufsatz, Sammelbandkapitel).
+Keine erfundenen Titel.
+```
+
+### Kritischer Check
+
+Markieren Sie in der KI-Ausgabe:
+
+- anachronistische Kategorien (als *rückblickende Suchanker* kennzeichnen),
+- implizite Theorieannahmen (z. B. „Wohlfahrtsregime“),
+- fehlende Perspektiven (z. B. Geschlecht, kantonale Ebene, ILO/Transfer).
+
+## 2. Orientierungswissen über Tertiärressourcen (Debatten- und Begriffsgerüst)
+
+### Ziel
+
+Ein robustes Kontextgerüst (Chronologie, Begriffe, Institutionen) als Grundlage für gezielte Literaturrecherche.
+
+### Kernressourcen
+
+- Plattform:
+  - [@historyofsocialsecurity-home]
+  - [@historyofsocialsecurity-synthesis]
+  - [@historyofsocialsecurity-bibliography]
+- HLS-Einstiege:
+  - [@hls-sozialversicherungen]
+  - [@hls-sozialpolitik]
+  - [@hls-ahv]
+  - [@hls-soziale-sicherheit]
+
+### Aufgabe (ohne KI)
+
+Lesen (skimming):
+
+- eine Synthese-Etappe auf der Plattform,
+- einen HLS-Artikel (oder mehrere kurz).
+
+Extrahieren Sie:
+
+- 8–12 Schlüsselbegriffe (inkl. historischer Termini),
+- 6 „Fixpunkte“ (Ereignisse/Gesetze/Institutionen),
+- 5 „Debattenmarker“ (z. B. Föderalismus als Veto-Punkt, Verhältnis Staat/Privat, Gender, Transfer, Expertenwissen).
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Ausgehend von folgenden Begriffen/ Fixpunkten: [einfügen]
+1) Baue eine Debattenkarte (4–6 Debattenachsen) zur Geschichte der Sozialversicherung in der Schweiz.
+2) Ordne jeder Achse 5–8 Autoren-/Werktypen zu, die man typischerweise erwarten würde (ohne konkrete Titel zu erfinden).
+3) Leite daraus 10 Suchstrings für Kataloge ab (Boolean, Phrasen).
+```
+
+### Kritischer Check
+
+Validieren Sie „Debattenachsen“ mit mindestens 2 unabhängigen Einstiegsquellen (HLS/Plattform/Sammelband-TOCs).
+
+## 3. Systematische Suche I: Kataloge (Abdeckung und Retrieval-Logik)
+
+### Ziel
+
+Reproduzierbare, dokumentierte Suche in grossen Katalogen; Aufbau eines Startkorpus.
+
+### Primärer Suchort
+
+- [@swisscovery]
+
+### Aufgabe (ohne KI)
+
+Führen Sie 6 Suchläufe in swisscovery durch:
+
+- je 2 mit breiten Begriffen,
+- je 2 mit präzisen Phrasen/Filtern,
+- je 2 mit Mehrsprachigkeit (DE/FR/EN) und Namensvarianten.
+
+Dokumentieren Sie pro Lauf:
+
+- Suchanfrage (exakt), Filter, Trefferzahl, Exportdatum,
+- 3 Auswahlkriterien (Relevanz, Zeitraum, Publikationstyp),
+- 3 Ausschlusskriterien.
+
+### Aufgabe (KI-Exploration)
+
+Führen Sie die Suchläufe **heuristisch** mittels KI durch. Geben Sie ausreichend Kontext.
+
+``` markdown
+Du bist ein historischer Rechercheassistent mit Kenntnissen der Schweizer Sozial-,
+Wirtschafts- und Politikgeschichte.
+
+Kontext:
+- Forschungsthema: Geschichte der Sozialversicherung in der Schweiz
+- Zeitraum: [z. B. 1880–1950]
+- Ziel: Aufbau eines ersten, möglichst breiten Startkorpus an Sekundärliteratur
+
+Aufgabe: Suche nach relevanter Sekundärliteratur.
+
+Bedingungen:
+- Keine Erfindung konkreter Titel oder Autor:innen.
+- Keine vorgetäuschte Katalogkenntnis.
+- Unsicherheiten explizit markieren.
+```
+
+### Kritischer Check
+
+- Kein Titel aus KI-Vorschlägen wird übernommen, ohne dass er im Katalog gefunden wurde.
+- Pro aufgenommenem Titel: notieren Sie den „Aufnahmerationale“ in 1 Satz.
+
+## 4. Systematische Suche II: Zeitschriften/Medien und Spezialpfade (Kontext, Reviews, Begriffe)
+
+### Ziel
+
+Debatten und Forschungsstand über Aufsatzliteratur, Rezensionen, Periodika sichtbar machen.
+
+### Suchorte (Beispiele)
+
+- Zeitschriftenplattformen: [@e-periodica]
+- Zeitungen (für Diskurs- und Rezeptionspfade): [@e-newspaperarchives]
+
+### Aufgabe (ohne KI)
+
+Wählen Sie 2 Zeitschriftentitel oder Periodika-Korpora und suchen Sie nach:
+
+- „Sozialversicherung“, „AHV“, „Invalidenversicherung“, „Krankenversicherung“,
+- plus Ihrem Fokusbegriff.
+
+Extrahieren Sie:
+
+- 5 einschlägige Aufsätze oder Rezensionen,
+- wiederkehrende Begriffe/Frames (z. B. „Lasten“, „Solidarität“, „Missbrauch“, „Drei-Säulen“).
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Aus diesen 5 Abstracts/Titeln: [einfügen]
+1) Clustere sie nach Fragelogik (institutionell, akteurszentriert, ideengeschichtlich, politökonomisch, gender).
+2) Schlage 2 Anschluss-Keywords pro Cluster vor (DE/FR/EN) und nenne je 1 typischen „blinden Fleck“.
+```
+
+**Deliverable**: Mini-Cluster (5 Items) + Keyword-Update-Liste.
+
+## 5. Snowballing: rückwärts/ vorwärts zitieren (Kanons und Blindstellen kontrollieren)
+
+### Ziel
+
+Von einem kleinen Kernkorpus aus Fussnoten/Bibliografien in die Tiefe; gleichzeitig Kanon-Bias sichtbar machen.
+
+### Aufgabe (ohne KI)
+
+Wählen Sie 3 „Seed“-Texte (möglichst unterschiedliche Typen: Überblick, Monografie, Aufsatz).
+
+Für jeden Seed:
+
+- 10 relevante Referenzen aus Bibliografie/Fussnoten (backward),
+- 5 neuere Arbeiten via Zitationssuche (forward; z. B. Google Scholar/Verlagsseiten).
+
+Dokumentieren Sie:
+
+- warum jede Referenz aufgenommen wurde (1 Satz),
+- ob Sie eine Debattenachse erweitert oder verengt.
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Hier sind 10 Referenzen aus der Bibliografie eines Seed-Texts: [einfügen]
+Ordne sie nach:
+(a) Debattenachse, (b) Methode, (c) erwarteter Quellenbasis.
+Markiere: welche 3 wären für einen „State of Research“-Abschnitt unverzichtbar – und begründe.
+```
+
+### Kritischer Check
+
+Führen Sie ein *Reject-Log*: mind. 5 abgelehnte, aber „verführerisch plausible“ Treffer inkl. Ablehnungsgrund (falscher Zeitraum, falsche Arena, nur populärwissenschaftlich, etc.).
+
+**Deliverable**: Snowball-Liste (≥ 30 Referenzen insgesamt) + Reject-Log (≥ 5).
+
+## 6. Screening und Qualitätsbewertung: Relevanz, Argument, Methode, Evidenz
+
+### Ziel
+
+Literatur nicht nur sammeln, sondern analytisch auswählen.
+
+### Aufgabe (ohne KI)
+
+Erstellen Sie ein Bewertungsraster (1 Seite), z. B.:
+
+- Forschungsfrage/These
+- Theorie/Begriffe (explizit/implizit)
+- Methode (archivbasiert, diskursanalytisch, vergleichend, quantitativ)
+- Quellenbasis (welche Primärquellen? welche Lücken?)
+- Beitrag (was ist neu? was wird bestritten?)
+- Anschlussfähigkeit an Ihren Fokus
+
+Wenden Sie es auf 6 Titel aus Ihrem Korpus an (Kurz-Exzerpt, 150–250 Wörter je Titel).
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Nutze dieses Raster: [einfügen]
+Erstelle für jeden der folgenden Titel/Abstracts eine strukturierte Kurzannotation (max. 180 Wörter),
+inkl. (1) vermuteter Beitrag, (2) methodischer Zugriff, (3) potenzielle Bias/Limitation.
+Wenn Informationen fehlen: explizit als „unklar“ markieren, nicht ergänzen.
+```
+
+### Kritischer Check
+
+Stichprobe: prüfen Sie bei 2 Titeln anhand Einleitung/Schluss, ob KI-Struktur und Ihre Lektüre konsistent sind.
+
+**Deliverable**: 6 annotierte Einträge + Raster.
+
+## 7. Historiografische Debattenkartierung und Forschungsstand-Text (komprimiert, evidenzsensibel)
+
+### Ziel
+
+Aus dem Korpus eine rekonstruierte „Konversation“ machen: Wer argumentiert wie – und warum?
+
+### Aufgabe (ohne KI)
+
+Schreiben Sie ein 400–600 Wörter Debattenmemo:
+
+- 2–3 Hauptkontroversen,
+- zentrale Positionen,
+- typische Evidenz- oder Methodenstreits,
+- offene Flanken (unbearbeitet, unterbelichtet, umstritten).
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Hier ist mein Debattenmemo: [einfügen]
+1) Identifiziere implizite Annahmen (Agency/Struktur, Staat/Privat, Normativität, Zeitdiagnosen).
+2) Schlage 2 alternative Strukturierungen vor (z. B. nach Arenen statt nach Themen).
+3) Nenne 5 gezielte Rückfragen, die ich an die Literatur stellen sollte, um Forschungslücken präzise zu formulieren.
+```
+
+**Deliverable**: Debattenmemo + 5 Rückfragen.
+
+## 8. Forschungslücke und Eingrenzung: vom Forschungsstand zur Forschungsfrage
+
+### Ziel
+
+Eine bearbeitbare, analytische Forschungsfrage aus dem Literaturstand ableiten (nicht aus „Interesse“ allein).
+
+### Aufgabe (ohne KI)
+
+Formulieren Sie:
+
+- 1 Forschungslückensatz (max. 3 Sätze): *„Die Forschung hat X gezeigt; Y bleibt unklar, weil …“*
+- 2 Forschungsfragen (je 1 Satz), die *quellen- und literaturbasiert* plausibel sind.
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Ausgehend von dieser Forschungslücke: [einfügen]
+Formuliere 4 Varianten einer analytischen historischen Forschungsfrage.
+Für jede Variante:
+- mögliche Fallabgrenzung (Zeit/Raum/Arena),
+- erwarteter Beitrag (welche Debatte wird adressiert?),
+- Risikofeld (z. B. Quellenzugang, Anachronismus, zu breite Kausalität).
+```
+
+**Deliverable**: 1 Forschungslücke + 1 priorisierte Forschungsfrage + 1 Risikoabschnitt (150–200 Wörter).
+
+## 9. Reproduzierbarkeit und Nachweis (Pflicht)
+
+### Ziel
+
+Literaturarbeit als nachvollziehbarer Forschungsprozess (FAIR-orientiert, zitationssicher).
+
+### Mindestanforderungen
+
+- **Suchprotokoll**: Datum, System, Query, Filter, Treffer, Auswahlregeln (≥ 12 Einträge)
+- **Zotero/BibTeX-Export**: Versionierter Stand (Datum), Dubletten-Strategie
+- **Entscheidungslog**: Warum Titel aufgenommen/abgelehnt (stichwortartig)
+- **KI-Protokoll (Anhang)**: 2–4 Prompts, gekürzte Outputs, Ihre Korrekturen/Rejects, Verwendungszweck
+
+::: callout-warning
+
+## KI als Werkzeug, nicht als Quelle
+
+KI darf in dieser Übung helfen, Suchräume zu erweitern und Texte zu strukturieren. Sie ersetzt nicht:
+
+- bibliografische Verifikation (Katalog/DOI),
+- quellenkritische Prüfung der Evidenzbasis,
+- historiografische Urteilsbildung.
+:::
+
+# Abgabe (kompakt)
+
+1. Fokus-Statement + Debattenkarte (1–2 Seiten)
+2. Suchprotokoll (≥ 12 Einträge) + Reject-Log (≥ 5)
+3. Kurzannotierte Bibliografie (10–15 Titel)
+4. Debattenmemo (400–600 Wörter)
+5. Forschungslücke + Forschungsfrage + Risikofeld (ca. 1 Seite)
+6. KI-Protokoll (Anhang)
+
+# Optional: Advanced Track (digital methods)
+
+- Exportieren Sie Metadaten (Titel/Autor/Jahr/Keywords) aus swisscovery/Zotero.
+
+- Bauen Sie eine einfache Bibliografie-Map:
+
+  - Zeitverlauf (Publikationsjahre),
+  - Sprachen/Publikationstypen,
+  - Co-Zitations- oder Schlagwortnetz (vorsichtig: Katalog-Schlagworte sind kuratiert und biasbehaftet).
+
+- Dokumentieren Sie Workflow und Daten (README + Lizenz/Reuse-Hinweise).
+
+## Bibliographie
+
+::: {#refs}
+:::

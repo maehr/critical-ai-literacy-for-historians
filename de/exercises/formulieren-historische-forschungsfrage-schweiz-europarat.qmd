@@ -1,0 +1,561 @@
+---
+lang: de
+title: "Formulieren einer historischen Forschungsfrage"
+subtitle: "Die Schweiz und der Europarat"
+description: "Eine angeleitete Übung zur systematischen Entwicklung einer analytischen historischen Forschungsfrage unter reflektiertem Einsatz generativer KI."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Universität Bern"
+date: "2025-12-29"
+date-modified: today
+categories: [Forschungsdesign]
+tags:
+- Fragestellung
+- Heuristik
+- Schweiz
+- Europarat
+- Zeitgeschichte
+draft: false
+references:
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: "Kompass Geschichtsstudium"
+  subtitle: "Version HS 2025"
+  author:
+    - family: Luther
+      given: Johannes
+    - family: Meier
+      given: Marietta
+    - family: Kaiser
+      given: Rafael
+    - family: Tinner
+      given: Tamara Ann
+  issued:
+    year: 2025
+  publisher: "Historisches Seminar, Universität Zürich"
+  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
+- id: leitfaden_bremen_2025
+  type: book
+  title: "Leitfaden Geschichtswissenschaft"
+  subtitle: "Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage"
+  issued:
+    year: 2025
+  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
+  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
+  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: "Studienleitfaden Fachbereich Geschichte"
+  author:
+    - family: Lösse
+      given: Esther
+    - family: Anders
+      given: Klaas
+    - family: Szadziewski
+      given: Max
+  issued:
+    year: 2021
+  publisher: "Fachbereich Geschichte, Universität Hamburg"
+  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
+  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: "Werkzeugkasten Geschichte"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  issued:
+    year: 2016
+  publisher: "Departement Geschichte, Universität Basel"
+  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
+  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+- id: dodis-5020
+  type: webpage
+  author:
+    - family: Federal Department of Foreign Affairs
+      literal: Bundesrat / Dodis
+  title: "Die Schweiz und der Europarat"
+  URL: "https://www.dodis.ch/de/die-schweiz-und-der-europarat"
+  publisher: "Dodis – Diplomatische Dokumente der Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "E-Dossier zur schweizerischen Aussenpolitik zum Europarat"  
+
+- id: dodis-beitritt1963
+  type: webpage
+  author:
+    - family: Federal Department of Foreign Affairs
+      literal: Bundesrat / Dodis
+  title: "Beitritt zum Europarat 1963"
+  URL: "https://www.dodis.ch/de/beitritt-zum-europarat-1963"
+  publisher: "Dodis – Diplomatische Dokumente der Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "E-Dossier zur Geschichte des Europarat-Beitritts der Schweiz"
+
+- id: aps-europarat-2025
+  type: article
+  author:
+    - literal: "Année Politique Suisse"
+  title: "Europarat: Nachträge zum Voranschlag 2026"
+  URL: "https://anneepolitique.swiss/articles?keywords%5B%5D=99"
+  publisher: "Année Politique Suisse / Universität Bern"
+  issued:
+    year: 2025
+    month: 11
+    day: 12
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "Suchergebnisartikel zu Europarat-Bezug auf anneepolitique.swiss"
+
+- id: wikipedia-europarat-2025
+  type: webpage
+  title: "Europarat"
+  author:
+    - literal: "Wikipedia"
+  URL: "https://de.wikipedia.org/wiki/Europarat"
+  publisher: "Wikimedia Foundation"
+  issued:
+    year: 2025
+  accessed:
+    year: 2025
+    month: 12
+    day: 14
+  note: "Artikel zur internationalen Organisation Europarat auf der deutschsprachigen Wikipedia"
+- id: altermatt-casasus-2013-europarat
+  type: book
+  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
+  editor:
+    - family: Altermatt
+      given: Bernhard
+    - family: Casasus
+      given: Gilbert
+  publisher: "Rüegger"
+  ISBN: "978-3-7253-1005-0"
+  issued:
+    year: 2013
+  publisher-place: "Schweiz"
+  note: "Sammelband herausgegeben im Auftrag des Centre d’Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft" 
+- id: hls-europarat-2009
+  type: webpage
+  title: "Europarat"
+  author:
+    - family: de Puymège
+      given: Gérard
+  translator:
+    - family: Wildermann
+      given: Ansgar
+  URL: "https://hls-dhs-dss.ch/de/articles/026470/2009-10-29/"
+  publisher: "Historisches Lexikon der Schweiz (HLS)"
+  issued:
+    year: 2009
+    month: 10
+    day: 29
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Artikel zur Geschichte und Funktion des Europarats; Version vom 29.10.2009"  
+
+- id: amtsdruckschriften-bar
+  type: webpage
+  title: "Amtsdruckschriften der Schweiz"
+  author:
+    - literal: "Bundesarchiv Schweiz"
+  URL: "https://www.amtsdruckschriften.bar.admin.ch/"
+  publisher: "Bundesarchiv Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Digitale Sammlung amtlicher Schweizer Druckschriften"
+
+- id: chgov-bar-admin
+  type: webpage
+  title: "chgov.bar.admin.ch"
+  author:
+    - literal: "Bundesarchiv Schweiz"
+  URL: "https://www.chgov.bar.admin.ch/"
+  publisher: "Bundesarchiv Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Rechercheportal der Schweizer Regierungspublikationen"
+
+- id: e-newspaperarchives-ch
+  type: webpage
+  title: "e-newspaperarchives.ch"
+  author:
+    - literal: "ETH-Bibliothek Zürich"
+  URL: "https://www.e-newspaperarchives.ch/"
+  publisher: "ETH-Bibliothek Zürich"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Digitale Zeitungsarchive der Schweiz"
+
+- id: archives-online-org
+  type: webpage
+  title: "Archives Online"
+  author:
+    - literal: "Staatsarchive der Schweiz"
+  URL: "https://www.archives-online.org/"
+  publisher: "Staatsarchive der Schweiz"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Aggregiertes Recherchesystem schweizerischer Archive"
+
+- id: e-periodica-ch
+  type: webpage
+  title: "e-periodica.ch"
+  author:
+    - literal: "ETH-Bibliothek Zürich"
+  URL: "https://www.e-periodica.ch/"
+  publisher: "ETH-Bibliothek Zürich"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Digitale Plattform für Schweizer Fachperiodika"
+
+- id: impresso-project-ch
+  type: webpage
+  title: "IMPRESSO Project"
+  author:
+    - literal: "IMPRESSO Consortium"
+  URL: "https://impresso-project.ch/"
+  publisher: "IMPRESSO Project"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Projekt zur Zeitungs- und Medienanalyse"
+
+- id: memobase-ch
+  type: webpage
+  title: "Memobase"
+  author:
+    - literal: "Memobase Coordination"
+  URL: "https://memobase.ch/"
+  publisher: "Memobase"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Rechercheplattform für historische Schweizer Quellen"
+
+- id: swisscollections-ch
+  type: webpage
+  title: "swisscollections.ch"
+  author:
+    - literal: "Bibliothèque nationale suisse"
+  URL: "https://swisscollections.ch/"
+  publisher: "swisscollections"
+  accessed:
+    year: 2025
+    month: 12
+    day: 18
+  note: "Zentrales Suchportal für Schweizer Bibliotheks- und Archivbestände"
+---
+
+## Überblick und didaktisches Ziel
+
+Diese Übung vermittelt **übertragbare methodische Kompetenzen** zur Entwicklung historischer Forschungsfragen. Ziel ist nicht die Generierung einer „richtigen“ Frage, sondern das **kontrollierte, reflektierte Zusammenspiel zwischen eigenständigem historischen Denken und KI-gestützter Exploration**.
+
+Im Zentrum steht ein gemeinsames Fallbeispiel: **Die Schweiz und der Europarat**.
+
+Die Übung folgt einem **zirkulären Forschungsverständnis**: Ergebnisse einzelner Schritte können – und sollen – revidiert werden.
+
+::: callout-note
+## Hinweis zur offline Recherche
+
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven.
+:::
+
+## Voraussetzungen
+
+Für die Bearbeitung der Übung werden folgende Kenntnisse vorausgesetzt:
+
+-   Grundverständnis historischer Forschungsmethoden
+-   Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+## Lernziele
+
+Nach Abschluss der Übung sind Sie in der Lage:
+
+-   zwischen **Thema**, **Fragestellung** und **analytischer historischer Forschungsfrage** zu unterscheiden,
+-   eine **präzise und bearbeitbare historische Forschungsfrage** zu formulieren,
+-   KI-Systeme **kritisch und methodisch kontrolliert** zur Literatur- und Kontexterschliessung einzusetzen,
+-   die **Quellenlage und Machbarkeit** eines historischen Forschungsvorhabens reflektiert einzuschätzen.
+
+## Struktur der Übung
+
+Die Übung ist modular aufgebaut. Jeder Schritt enthält:
+
+-   eine **klare Zielsetzung**,
+-   eine oder mehrere **konkrete Aufgaben (Prompts)**,
+-   einen **Arbeits- und Reflexionsauftrag**.
+
+1.  Begriffsklärung: Was ist eine historische Forschungsfrage?
+2.  Themenfestlegung und historischer Überblick
+3.  Forschungsstand und Forschungslücken
+4.  Quellenlage und Machbarkeit
+5.  Eingrenzung und Formulierung der Forschungsfrage
+6.  Iterative Revision und Reflexion des KI-Einsatzes
+
+## 1. Begriffsklärung: Historische Forschungsfrage
+
+### Ziel
+
+Verständnis der Unterschiede zwischen **Thema**, **Fragestellung** und **analytischer historischer Forschungsfrage**.
+
+### Aufgabe (KI-Exploration)
+
+``` markdown
+Was ist eine historische Forschungsfrage?
+Welche Elemente sind in einer historischen Forschungsfrage enthalten?
+```
+
+Falls keine Prozessbeschreibung enthalten ist:
+
+``` markdown
+Welche Schritte sind notwendig, um eine historische Forschungsfrage zu entwickeln?
+```
+
+### Arbeitsauftrag (kritischer Abgleich)
+
+Vergleichen Sie die KI-Antwort systematisch mit:
+
+-   [@werkszeugkasten_basel_2016]
+-   [@kompass_geschichtsstudium_2025]
+-   [@leitfaden_bremen_2025]
+-   [@studienleitfaden_hamburg_2021]
+
+Identifizieren Sie:
+
+-   Übereinstimmungen,
+-   Auslassungen,
+-   Begriffsverschiebungen oder Vereinfachungen.
+
+Gezielte Rückfragen an die KI:
+
+``` markdown
+Warum fehlt das Element X?
+```
+
+``` markdown
+Auf welche wissenschaftlichen oder didaktischen Quellen stützt sich deine Definition?
+```
+
+## 2. Themenfestlegung und historischer Überblick
+
+### Ziel
+
+Trennung von **Thema** und **analytischer Fragestellung** sowie Aufbau eines soliden historischen Grundwissens.
+
+### Themenrahmen (vorgegeben)
+
+**Die Schweiz und der Europarat**
+
+(Optional: Dialogische Themenfindung)
+
+``` markdown
+Du bist Historiker und hilfst mir im Dialog, ein historisches Thema für eine studentische Arbeit zu finden.
+```
+
+::: callout-tip
+## Reflexionsfrage
+
+Worin unterscheidet sich dieser KI-Dialog von einem Gespräch mit einer Dozierenden oder einer Kommilitonin?
+:::
+
+### Aufgabe (historischer Überblick)
+
+``` markdown
+Gib mir einen historischen Überblick über die Beziehung zwischen der Schweiz und dem Europarat.
+```
+
+### Abgleich und Kritik
+
+Vergleichen Sie den Überblick mit:
+
+-   [@dodis-5020]
+-   [@dodis-beitritt1963]
+-   [@wikipedia-europarat-2025] (mit Vorsicht nutzen, schauen Sie die [Diskussionsseite](https://de.wikipedia.org/wiki/Diskussion:Europarat) an)
+
+Gezielte Nachfragen:
+
+``` markdown
+Warum fehlt der Aspekt X (z. B. Neutralität, EMRK, EGMR)?
+```
+
+``` markdown
+Auf welche Quellen stützt sich diese Darstellung?
+```
+
+## 3. Forschungsstand und Forschungslücken
+
+### Ziel
+
+Unterscheidung zwischen **deskriptivem Überblick** und **analytischem Forschungsstand**.
+
+### Aufgabe (Sekundärliteratur)
+
+``` markdown
+Nenne zentrale historische Sekundärliteratur zur Beziehung zwischen der Schweiz und dem Europarat.
+```
+
+### Aufgabe (Forschungslücken)
+
+``` markdown
+Welche offenen Fragen oder Forschungslücken bestehen in der bisherigen Forschung?
+```
+
+### Arbeitsauftrag
+
+1.  Überprüfen Sie die genannten Titel via <https://swisscovery.slsp.ch>.
+
+2.  Gleichen Sie die Ergebnisse ab mit:
+
+    -   [@altermatt-casasus-2013-europarat]
+    -   [@hls-europarat-2009]
+
+Gezielte Rückfragen:
+
+``` markdown
+Warum fehlt das Werk X?
+```
+
+``` markdown
+Warum wird Frage Y als Forschungslücke bezeichnet, obwohl sie in Werk Z behandelt wird?
+```
+
+## 4. Quellenlage und Machbarkeit
+
+### Ziel
+
+Einschätzung, ob eine Forschungsfrage **quellenbasiert bearbeitbar** ist.
+
+### Aufgabe (Primärquellen)
+
+``` markdown
+Welche Primärquellen eignen sich zur Untersuchung der Forschungsfrage X?
+```
+
+Falls nötig:
+
+``` markdown
+Nenne konkrete Archive, Sammlungen und Dokumenttypen zur Schweiz und dem Europarat.
+```
+
+### Abgleich mit realen Ressourcen
+
+Vergleichen Sie die Antwort mit u. a.:
+
+-   [@dodis-5020]
+-   [@dodis-beitritt1963]
+-   [@aps-europarat-2025]
+-   [@amtsdruckschriften-bar]
+-   [@chgov-bar-admin]
+-   [@e-newspaperarchives-ch]
+-   [@archives-online-org]
+-   [@e-periodica-ch]
+-   [@impresso-project-ch]
+-   [@memobase-ch]
+-   [@swisscollections-ch]
+
+## 5. Eingrenzung und Formulierung der Forschungsfrage
+
+### Ziel
+
+Transformation einer offenen Fragestellung in eine **präzise analytische historische Forschungsfrage**.
+
+### Mögliche Dimensionen der Eingrenzung
+
+-   **Zeitlich:** z. B. 1949–1963, Kalter Krieg, Post-1971
+-   **Räumlich:** Schweiz im transnational-europäischen Kontext
+-   **Thematisch:** Neutralität, Menschenrechte, Rechtsprechung, Aussenpolitik, Parlamentarismus
+
+### Aufgabe (Eingrenzung)
+
+``` markdown
+Schlage mögliche zeitliche, räumliche und thematische Eingrenzungen für die Forschungsfrage X vor.
+```
+
+### Aufgabe (Formulierung)
+
+``` markdown
+Formuliere auf dieser Basis eine analytische historische Forschungsfrage.
+```
+
+### Qualitätscheck
+
+Die Forschungsfrage sollte:
+
+-   offen und analytisch sein („Wie“, „Warum“, „Inwiefern“),
+-   historisch kontextualisiert sein,
+-   mit verfügbaren Quellen bearbeitbar erscheinen.
+
+## 6. Iterative Revision und Reflexion
+
+### Ziel
+
+Bewusste Trennung zwischen **KI-Unterstützung** und **eigener Forschungsentscheidung**.
+
+### Abschlussaufgabe
+
+Notieren Sie kurz:
+
+-   Was hat die KI erleichtert?
+-   Wo war sie irreführend, unpräzise oder verkürzend?
+-   Welche Entscheidungen konnten nur Sie selbst treffen?
+
+## Lernergebnis
+
+Am Ende der Übung verfügen Sie über:
+
+-   eine **klar formulierte analytische historische Forschungsfrage**,
+-   ein reflektiertes Verständnis der **Potenziale und Grenzen von KI** im Forschungsdesign,
+-   eine methodisch begründete Einschätzung der **Machbarkeit** Ihres Projekts.
+
+## Bibliographie
+
+::: {#refs}
+:::

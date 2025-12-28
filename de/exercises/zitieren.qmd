@@ -1,0 +1,225 @@
+---
+lang: de
+title: "Wissenschaftliches Zitieren mit kritischem KI-Einsatz"
+subtitle: "Übung zur Zitierpraxis in der Geschichtswissenschaft"
+description: "Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Universität Bern"
+date: "2025-12-29"
+date-modified: today
+categories: [Methoden]
+tags:
+- Zitierpraxis
+- Referenzmanagement
+- Wissenschaftliche Integrität
+- Quellenangaben
+- Nachvollziehbarkeit
+draft: false
+references:
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: "Kompass Geschichtsstudium"
+  subtitle: "Version HS 2025"
+  author:
+    - family: Luther
+      given: Johannes
+    - family: Meier
+      given: Marietta
+    - family: Kaiser
+      given: Rafael
+    - family: Tinner
+      given: Tamara Ann
+  issued:
+    year: 2025
+  publisher: "Historisches Seminar, Universität Zürich"
+  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
+- id: leitfaden_bremen_2025
+  type: book
+  title: "Leitfaden Geschichtswissenschaft"
+  subtitle: "Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage"
+  issued:
+    year: 2025
+  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
+  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
+  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: "Studienleitfaden Fachbereich Geschichte"
+  author:
+    - family: Lösse
+      given: Esther
+    - family: Anders
+      given: Klaas
+    - family: Szadziewski
+      given: Max
+  issued:
+    year: 2021
+  publisher: "Fachbereich Geschichte, Universität Hamburg"
+  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
+  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: "Werkzeugkasten Geschichte"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  issued:
+    year: 2016
+  publisher: "Departement Geschichte, Universität Basel"
+  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
+  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+---
+
+## Überblick und didaktisches Ziel
+
+Diese Übung vermittelt die **Grundlagen wissenschaftlichen Zitierens** in der Geschichtswissenschaft, mit besonderem Fokus auf den **kritischen Einsatz generativer KI**. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die **Evidenzkette** intakt bleibt.
+
+## Voraussetzungen
+
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+## Lernziele
+
+Nach Abschluss der Übung sind Sie in der Lage:
+
+- die epistemischen und ethischen Funktionen wissenschaftlicher Zitate in der historischen Forschung zu erklären
+- **Common Knowledge**, **Primärquellen** und **Sekundärliteratur** sauber zu unterscheiden
+- konsistent zu entscheiden, **wann** ein Zitat nötig ist (und wann nicht)
+- Fussnoten-Zitationspraxis nach etablierten Standards (z.B. Chicago Manual of Style) anzuwenden
+- Zitate gezielt zu nutzen, um historische Argumente zu **stützen**, **einzubetten** und **kritisch zu qualifizieren**
+- generative KI als **heuristisches Werkzeug** einzusetzen, ohne die **Evidenzkette** zu beschädigen
+
+## Was sind wissenschaftliche Zitate?
+
+Wissenschaftliche Zitate sind das formalisierte System zur Referenzierung von Informationen, Ideen, Daten und Interpretationen. In der Geschichtswissenschaft fungieren sie als methodischer **Kontrollmechanismus**: Sie machen Argumente **prüfbar**, rekonstruierbar und kritisierbar, indem sie Leser:innen den Zugriff auf die Evidenzbasis ermöglichen.
+
+Zitate binden Argumente an:
+
+- **Primärquellen** (zeitgenössische Dokumente, Akten, Briefe, Protokolle etc.)
+- **Sekundärliteratur** (spätere wissenschaftliche Interpretationen)
+
+Ohne diese Verknüpfung verlieren historische Texte ihren wissenschaftlichen Charakter und werden zu reiner Erzählung.
+
+## Zwecke des Zitierens
+
+### 1) Wissenschaftliche Integrität und Attribution
+
+- Verhindert Plagiat (intellektuelle Schulden werden sichtbar).
+- Weist Urheberschaft und Vorarbeiten aus.
+- Stabilisiert Glaubwürdigkeit durch verantwortliche Praxis.
+
+### 2) Verifizierbarkeit und Transparenz
+
+- Leser:innen können Quellen auffinden und bewerten.
+- Zitate dokumentieren die **Evidenzkette** (Quelle → Auswertung → Behauptung).
+- Sichtbar wird auch der Arbeitsaufwand (Archiv-/Datenarbeit).
+
+### 3) Positionierung im Forschungsstand
+
+- Zitate verorten Aussagen im Diskurs.
+- Sie markieren Zustimmung, Abgrenzung, Kontroverse und Anschlussfähigkeit.
+
+### 4) Evidenzbasierte Argumentation
+
+- Primärquellen: empirische Fundierung.
+- Sekundärliteratur: Kontext, Theorie, Methodik, Debattenstand.
+
+### 5) Diskursive und technische Funktionen von Fussnoten
+
+- Kontextualisieren/übersetzen von Zitaten.
+- Quellkritische Kommentare.
+- Verweise auf Gegenbelege / Alternativdeutungen.
+- Leseempfehlungen, ohne den Fliesstext zu überladen.
+
+**Merksatz**: Zitate garantieren nicht “Wahrheit”, sondern **Inspektionsfähigkeit**.
+
+## Wann muss ich zitieren?
+
+**Jede Aussage, die über allgemeines Hintergrundwissen hinausgeht, benötigt ein Zitat.**
+
+**Immer zitieren:**
+
+- Direkte Zitate (Anführungszeichen + Nachweis)
+- Paraphrasen (Idee bleibt fremd, auch wenn der Wortlaut neu ist)
+- Übernommene Argumente/Deutungsrahmen
+- Daten/Statistiken und operationalisierte Messungen
+- Indirekte Übernahmen (Primärquelle via Sekundärliteratur → doppelte Attribution)
+
+**Ausnahme: Common Knowledge.** Breit bekannte, unstrittige, triviale Fakten benötigen keinen Nachweis. **Aber**: Sobald Sie qualifizieren, zuspitzen, quantifizieren oder kontroverses Terrain betreten, ist ein Zitat fällig.
+
+## Wie zitiere ich?
+
+Setzen Sie ein Literaturverwaltungsprogramm (z.B. Zotero) ein und folgen Sie einem etablierten Standard wie dem [Chicago Manual of Style](https://www.chicagomanualofstyle.org/) oder den Richtlinien von [infoclio.ch](https://www.infoclio.ch/de/citation-style). Je nach Bildungsinstitution oder Publikationskontext können abweichende Konventionen gelten. Informieren Sie sich vorgängig und achten Sie auf Konsistenz.
+
+## Struktur der Übung
+
+- Übung 1: Automatisiertes Zitieren testen und vergleichen.
+- Übung 2: KI-Zusammenfassungen auf korrekte Zitation und Belegtreue prüfen.
+
+## Übung 1: Automatisiertes Zitieren
+
+``` markdown
+Zitiere den Artikel <https://doi.org/10.1093/pastj/gtae018> nach Chicago Manual of Style.
+Erstelle zusätzlich einen Eintrag in einem Format, das ich direkt in Zotero importieren kann.
+```
+
+::: callout-tip
+Falls die KI keinen Zugriff auf den Artikel hat, können Sie den Artikel als PDF hochladen oder kopieren Sie den Inhalt und die Metadaten des Artikels an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Beispiel:
+
+""" INHALT DOKUMENT """
+
+""" METADATEN DOKUMENT """
+
+IHR PROMPT
+:::
+
+Vergleichen Sie die KI-Ausgabe mit Ihrer manuellen Zitation, den offiziellen Zitierempfehlungen auf der Verlagsseite bzw. dem DOI-Import in Zotero. Testen Sie weitere Sekundärliteraturquellen (andere Artikel, Monographien).
+
+- Stimmen alle Angaben überein?
+- Gibt es systematische Abweichungen (z.B. bei Seitenzahlen, Herausgebern, Zeitschriftentiteln)?
+
+## Übung 2: KI-gestützte Zusammenfassung mit Originalzitaten
+
+``` markdown
+Fasse den Artikel <https://doi.org/10.1093/pastj/gtae018> zusammen. 
+Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manual of Style.
+```
+
+Überprüfen Sie die KI-Ausgabe gegen den Originalartikel:
+
+- Stimmen die Zitate mit dem Originaltext überein (Wortlaut, Seitenzahl)?
+- Wurde der Sinnzusammenhang der Zitate korrekt wiedergegeben?
+
+## Bibliographie
+
+::: {#refs}
+:::

@@ -3,11 +3,226 @@ title: Bibliographie
 lang: de
 nocite: |
   @*
+
+references:
+- id: bender2021dangers
+  type: article-journal
+  title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"
+  author:
+    - family: Bender
+      given: Emily M.
+    - family: Gebru
+      given: Timnit
+    - family: McMillan-Major
+      given: Angelina
+    - family: Shmitchell
+      given: Shmargaret
+  issued:
+    year: 2021
+  container-title: "Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency"
+  page: "610-623"
+  DOI: "10.1145/3442188.3445922"
+
+- id: berkeley_history101_2002
+  type: book
+  title: "History 101: A Handbook for Students"
+  author:
+    - family: Shields
+      given: Paula
+    - family: Barth
+      given: Gunther
+    - family: Carson
+      given: Cathryn
+  issued:
+    year: 2002
+  publisher: "Department of History, University of California, Berkeley"
+  note: "Preface with contributions by Victor Rotenberg and the CHUM Committee"
+  URL: "https://history.berkeley.edu/sites/default/files/101_student_manual.pdf"
+  abstract: "Handbook guiding History 101 students through topic selection, research, use of sources, structuring, drafting, revising, and historiographical argumentation."
+
+- id: digitalsourcecriticism2022
+  type: article-journal
+  title: "Digital Source Criticism: The Case of the Historian's Craft in the Digital Age"
+  author:
+    - family: Fickers
+      given: Andreas
+    - family: Tatarinov
+      given: Juliane
+  issued:
+    year: 2022
+  container-title: "Journal of Digital History"
+  volume: "2"
+  issue: "1"
+  page: "1-20"
+  DOI: "10.1515/jdh-2022-0001"
+
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
+
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: "Kompass Geschichtsstudium"
+  subtitle: "Version HS 2025"
+  author:
+    - family: Luther
+      given: Johannes
+    - family: Meier
+      given: Marietta
+    - family: Kaiser
+      given: Rafael
+    - family: Tinner
+      given: Tamara Ann
+  issued:
+    year: 2025
+  publisher: "Historisches Seminar, Universität Zürich"
+  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
+
+- id: leitfaden_bremen_2025
+  type: book
+  title: "Leitfaden Geschichtswissenschaft"
+  subtitle: "Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage"
+  issued:
+    year: 2025
+  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
+  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
+  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
+
+- id: milligan2019history
+  type: book
+  title: "History in the Age of Abundance? How the Web Is Transforming Historical Research"
+  author:
+    - family: Milligan
+      given: Ian
+  issued:
+    year: 2019
+  publisher: "McGill-Queen's University Press"
+  publisher-place: "Montreal; Kingston"
+  ISBN: "978-0773557468"
+  DOI: "10.2307/j.ctvggx2kh"
+
+- id: noble2018algorithms
+  type: book
+  title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
+  author:
+    - family: Noble
+      given: Safiya Umoja
+  issued:
+    year: 2018
+  publisher: "NYU Press"
+  publisher-place: "New York"
+  ISBN: "978-1479837243"
+
+- id: russell2020artificial
+  type: book
+  title: "Artificial Intelligence: A Modern Approach"
+  author:
+    - family: Russell
+      given: Stuart J.
+    - family: Norvig
+      given: Peter
+  issued:
+    year: 2020
+  edition: "4"
+  publisher: "Pearson"
+  publisher-place: "Hoboken, NJ"
+  ISBN: "978-0134610993"
+
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: "Studienleitfaden Fachbereich Geschichte"
+  author:
+    - family: Lösse
+      given: Esther
+    - family: Anders
+      given: Klaas
+    - family: Szadziewski
+      given: Max
+  issued:
+    year: 2021
+  publisher: "Fachbereich Geschichte, Universität Hamburg"
+  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
+  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
+
+- id: turingway2022
+  type: book
+  title: "The Turing Way: A Handbook for Reproducible, Ethical and Collaborative Research"
+  author:
+    - literal: "The Turing Way Community"
+  issued:
+    year: 2022
+  publisher: "Zenodo"
+  DOI: "10.5281/zenodo.3233853"
+  URL: "https://the-turing-way.netlify.app/"
+
+- id: uofcalgary_handbook_2024
+  type: book
+  title: "The History Student's Handbook: A Short Guide to Writing History Essays"
+  issued:
+    year: 2024
+  publisher: "Department of History, University of Calgary"
+  note: "Guide covering topic selection, research, writing, citation, plagiarism, and the use of AI"
+  URL: "https://arts.ucalgary.ca/sites/default/files/teams/29/Handbook%20(2024).pdf"
+  abstract: "Structured guide to planning and writing history essays, including evaluation of digital sources and AI tools."
+
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: "Werkzeugkasten Geschichte"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  issued:
+    year: 2016
+  publisher: "Departement Geschichte, Universität Basel"
+  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
+  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+
+- id: wewers_brief_guide_2007
+  type: book
+  title: "A Brief Guide to Writing the History Paper"
+  author:
+    - family: Wewers
+      given: Dan
+  issued:
+    year: 2007
+  publisher: "Writing Center, Harvard College"
+  note: "Part of the Harvard Writing Project Brief Guides series"
+  URL: "https://hwpi.harvard.edu/files/hwp/files/bg_writing_history.pdf"
+  abstract: "Concise methodological guide outlining types of history papers, argumentation strategies, and citation practices."
 ---
 
-::: callout-note
-Diese Seite listet alle Referenzen auf, die im Projekt Critical AI Literacy für Historiker:innen zitiert werden. Die Bibliographie wird automatisch aus allen Zitaten generiert, die in den Übungen und der Dokumentation verwendet werden.
+::: callout-tip
+## Hinweis: Urheberrecht
+
+Wir bemühen uns, frei zugängliche Literatur zu verwenden. Sollte dies nicht möglich sein, bitten wir Sie, die Literatur über die Bibliotheksplattform [LIBER Libraries](https://libereurope.eu/user-list/) zu beziehen. Von der Verwendung von Plattformen wie [Library Genesis](https://de.wikipedia.org/wiki/Library_Genesis) raten wir trotz stichhaltiger Argumente ab.
+
+Siehe @karaganis2018
 :::
 
 ::: {#refs}
+:::
+
+::: callout-note
+Diese Seite listet alle Referenzen auf, die im Projekt Critical AI Literacy für Historiker:innen zitiert werden. Die Bibliographie wird automatisch aus allen Zitaten generiert, die in den Übungen und der Dokumentation verwendet werden.
 :::
