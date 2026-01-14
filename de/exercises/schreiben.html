@@ -8,8 +8,8 @@
 <meta name="author" content="Moritz Mähr">
 <meta name="description" content="Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche Präzision.">
 
-<title>Schreiben mit kritisch-reflektiertem KI-Einsatz – Critical AI Literacy for Historians</title>
-<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}div.csl-entry{clear:both}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+<title>Wissenschaftliches Schreiben – Critical AI Literacy for Historians</title>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -67,11 +67,11 @@
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Schreiben mit kritisch-reflektiertem KI-Einsatz – Critical AI Literacy for Historians">
+<meta property="og:title" content="Wissenschaftliches Schreiben – Critical AI Literacy for Historians">
 <meta property="og:description" content="Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche Präzision.">
 <meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="Critical AI Literacy for Historians">
-<meta name="twitter:title" content="Schreiben mit kritisch-reflektiertem KI-Einsatz – Critical AI Literacy for Historians">
+<meta name="twitter:title" content="Wissenschaftliches Schreiben – Critical AI Literacy for Historians">
 <meta name="twitter:description" content="Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche Präzision.">
 <meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta name="twitter:card" content="summary_large_image">
@@ -144,7 +144,7 @@
 ">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/schreiben.html">Schreiben mit kritisch-reflektiertem KI-Einsatz</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/schreiben.html">Wissenschaftliches Schreiben</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
 ">      
         </a>
@@ -193,7 +193,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+ <span class="menu-text">Public History und Geschichtsvermittlung</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -211,13 +211,13 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Schreiben</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Zitieren</span></a>
   </div>
 </li>
       </ul>
@@ -311,9 +311,9 @@
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/schreiben.html">Schreiben mit kritisch-reflektiertem KI-Einsatz</a></li></ol></nav>
+<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../de/exercises/index.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../de/exercises/schreiben.html">Wissenschaftliches Schreiben</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Schreiben mit kritisch-reflektiertem KI-Einsatz</h1>
+<h1 class="title">Wissenschaftliches Schreiben</h1>
 <p class="lead subtitle">Rollenbasiertes Übungsset entlang des Schreibprozesses</p>
   <div class="quarto-categories">
     <div class="quarto-category">Methoden</div>
@@ -353,7 +353,7 @@
     <div>
     <div class="quarto-title-meta-heading">Geändert</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">29. Dezember 2025</p>
+      <p class="date-modified">14. Januar 2026</p>
     </div>
   </div>
     
@@ -367,19 +367,45 @@
 <section id="überblick-und-didaktisches-ziel" class="level2">
 <h2 class="anchored" data-anchor-id="überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</h2>
 <p>Diese Übung trainiert den <strong>kritischen Einsatz generativer KI als Schreibassistent</strong> in mehreren klar abgegrenzten Rollen. Die Rollen sind so angeordnet, dass sie einem typischen wissenschaftlichen Schreibprozess entsprechen: <strong>Problem klären → Ideen entwickeln → strukturieren → entwerfen → revidieren → finalisieren</strong>.</p>
-<p>Ziel ist nicht, Textproduktion zu «automatisieren», sondern <strong>Entscheidungsqualität</strong> zu erhöhen: bessere Fragestellungen, konsistentere Argumente, präzisere Sprache – bei gleichzeitiger <strong>Nachvollziehbarkeit</strong> der Autor*innenschaft und der verwendeten Evidenz.</p>
+<p>Ziel ist nicht, Textproduktion zu «automatisieren», sondern <strong>Entscheidungsqualität</strong> zu erhöhen: bessere Fragestellungen, konsistentere Argumente, präzisere Sprache – bei gleichzeitiger <strong>Nachvollziehbarkeit</strong> der Autor:innenschaft und der verwendeten Evidenz.</p>
 </section>
 <section id="voraussetzungen" class="level2">
 <h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
 <ul>
 <li>Grundverständnis historischer Forschungsmethoden</li>
-<li>Basiskenntnisse im Umgang mit generativer KI (Prompting)</li>
+<li>Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)</li>
 </ul>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Prompt Engineering
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung <a href="../../de/exercises/prompt-engineering.html">Prompt Engineering</a> zuerst zu durchlaufen.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>LLM
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.</p>
+</div>
+</div>
 </section>
 <section id="lernziele" class="level2">
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
 <ul>
-<li>KI-Ausgaben als Hypothesen/Entwürfe behandeln und systematisch prüfen.</li>
+<li>Antworten als Hypothesen/Entwürfe behandeln und systematisch prüfen.</li>
 <li>Prompts so gestalten, dass KI nicht ‘erfindet’, sondern mit bereitgestelltem Material arbeitet.</li>
 <li>Eine Argumentationsstruktur (These–Belege–Schluss) entwerfen und auf Konsistenz testen.</li>
 <li>Absätze aus eigenen Stichpunkten generieren und anschliessend fachlich/terminologisch revidieren.</li>
@@ -391,11 +417,11 @@
 <h2 class="anchored" data-anchor-id="methodischer-rahmen-ki-als-schreibinfrastruktur">Methodischer Rahmen: KI als Schreibinfrastruktur</h2>
 <p>In dieser Übung wird KI als <strong>heuristisches Schreibwerkzeug</strong> verstanden: Sie unterstützt bei <em>Formulierungen, Strukturierung und Prüfung</em>, ersetzt aber weder <strong>Quellenarbeit</strong> noch <strong>interpretative Entscheidungen</strong>. Methodisch hilfreich ist eine klare Arbeitsteilung:</p>
 <ul>
-<li><strong>Geschichtswissenschaftliche Autor*innenschaft:</strong> Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.</li>
+<li><strong>Geschichtswissenschaftliche Autor:innenschaft:</strong> Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.</li>
 <li><strong>KI-Beitrag (instrumentell):</strong> Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.</li>
 <li><strong>Prüfverfahren (obligatorisch):</strong> Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein.</li>
 </ul>
-<p>Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. <strong>Eingrenzung des Arbeitsraums</strong> («arbeite nur mit meinen Stichpunkten; markiere Unsicherheiten»). 2. <strong>Formatierte Outputs</strong> (Listen/Argumentmaps), damit Sie systematisch prüfen und selektiv übernehmen können.</p>
+<p>Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. <strong>Eingrenzung des Arbeitsraums</strong> («arbeite nur mit meinen Stichpunkten; markiere Unsicherheiten»). 2. <strong>Formatierte Antworten</strong> (Listen/Argumentmaps), damit Sie systematisch prüfen und selektiv übernehmen können.</p>
 <div class="callout callout-style-default callout-titled callout-important">
 <div class="d-flex align-content-center callout-header">
 <div class="callout-icon-container">
@@ -420,7 +446,7 @@
 </div>
 <div class="callout-body callout-body-container">
 <p>Führen Sie während der Übung ein kurzes <strong>KI-Protokoll</strong>. Das ist Teil der wissenschaftlichen Nachvollziehbarkeit (und erleichtert spätere Offenlegung/Methodenteil).</p>
-<p><strong>Minimalvorlage</strong> | Feld | Inhalt | |—|—| | Rolle / Übung | | | Ziel (1 Satz) | | | Input (welches Material?) | | | Prompt (Kernausschnitt) | | | Output (kurz) | | | Prüfschritte (wie verifiziert?) | | | Entscheidung (übernommen/angepasst/verworfen + Begründung) | |</p>
+<p><strong>Minimalvorlage</strong> | Feld | Inhalt | |—|—| | Rolle / Übung | | | Ziel (1 Satz) | | | Input (welches Material?) | | | Prompt (Kernausschnitt) | | | Antwort (kurz) | | | Prüfschritte (wie verifiziert?) | | | Entscheidung (übernommen/angepasst/verworfen + Begründung) | |</p>
 </div>
 </div>
 </section>
@@ -472,17 +498,17 @@
 <li>Lassen Sie KI <strong>Rückfragen</strong> stellen und Unsicherheiten markieren.</li>
 </ol>
 <p><strong>Prompt-Gerüst</strong></p>
-<pre class="text"><code>Du bist Verständnischecker. Stelle mir 8–12 präzise Rückfragen, um Schreibauftrag und Argumentationsziel zu klären.
-Markiere:
-(1) fehlende Informationen,
-(2) implizite Annahmen,
-(3) Begriffe, die operativ definiert werden müssen.
-Keine Vorschläge für Inhalte, nur Fragen und Diagnose.
-
-Kontext: …
-Thema/These (vorläufig): …
-Genre/Umfang: …
-Zielpublikum: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Du bist Verständnischecker. Stelle mir 8–12 präzise Rückfragen, um Schreibauftrag und Argumentationsziel zu klären.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Markiere:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>(1) fehlende Informationen,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>(2) implizite Annahmen,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>(3) Begriffe, die operativ definiert werden müssen.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Keine Vorschläge für Inhalte, nur Fragen und Diagnose.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Kontext: …</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Thema/These (vorläufig): …</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Genre/Umfang: …</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Zielpublikum: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="kritischer-abgleich" class="level3">
 <h3 class="anchored" data-anchor-id="kritischer-abgleich">Kritischer Abgleich</h3>
@@ -491,7 +517,7 @@ Zielpublikum: …</code></pre>
 </li>
 <li>Welche Fragen würden Sie <strong>anders</strong> priorisieren – und warum?</li>
 </ul>
-<p><strong>Output</strong> - 1 revidierter Auftrag (3–5 Sätze) + 3 definierte Kernbegriffe</p>
+<p><strong>Ergebnis</strong> - 1 revidierter Auftrag (3–5 Sätze) + 3 definierte Kernbegriffe</p>
 </section>
 </section>
 <section id="brainstorming-partner-devils-advocate" class="level2">
@@ -502,24 +528,24 @@ Zielpublikum: …</code></pre>
 </section>
 <section id="aufgabe-a-brainstorming-ideenorientiert-evidenzneutral" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-a-brainstorming-ideenorientiert-evidenzneutral">Aufgabe A: Brainstorming (ideenorientiert, evidenzneutral)</h3>
-<pre class="text"><code>Rolle: Brainstorming-Partner. Generiere 12 mögliche Argumentlinien/Hypothesen zu meinem Thema.
-Bedingungen:
-- Formuliere jede Linie als überprüfbare Behauptung (keine Facts).
-- Gib zu jeder Linie: welche Art von Evidenz ich bräuchte (Quellentypen/Literaturtypen).
-- Vermeide konkrete Literaturtitel oder Archivsignaturen; wenn nötig, formuliere als Suchheuristik.
-
-Mein Thema: …
-Mein Material (nur Typen, keine sensiblen Inhalte): …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Brainstorming-Partner. Generiere 12 mögliche Argumentlinien/Hypothesen zu meinem Thema.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">Bedingungen:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Formuliere jede Linie als überprüfbare Behauptung (keine Facts).</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gib zu jeder Linie: welche Art von Evidenz ich bräuchte (Quellentypen/Literaturtypen).</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Vermeide konkrete Literaturtitel oder Archivsignaturen; wenn nötig, formuliere als Suchheuristik.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>Mein Thema: …</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Mein Material (nur Typen, keine sensiblen Inhalte): …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="aufgabe-b-devils-advocate-konfrontativ-aber-produktiv" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-b-devils-advocate-konfrontativ-aber-produktiv">Aufgabe B: Devil’s Advocate (konfrontativ, aber produktiv)</h3>
-<pre class="text"><code>Rolle: Devil’s Advocate. Wähle die 3 plausibelsten meiner Hypothesen und argumentiere jeweils dagegen.
-Für jedes Gegenargument:
-- Benenne die verletzliche Annahme.
-- Schlage einen «Stress-Test» vor (welcher Befund würde mein Argument kippen?).
-- Formuliere eine alternative Deutung (max. 2 Sätze).
-Nutze keine externen Fakten.
-Hypothesen: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Devil’s Advocate. Wähle die 3 plausibelsten meiner Hypothesen und argumentiere jeweils dagegen.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">Für jedes Gegenargument:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Benenne die verletzliche Annahme.</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Schlage einen «Stress-Test» vor (welcher Befund würde mein Argument kippen?).</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Formuliere eine alternative Deutung (max. 2 Sätze).</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>Nutze keine externen Fakten.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Hypothesen: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="kritischer-abgleich-1" class="level3">
 <h3 class="anchored" data-anchor-id="kritischer-abgleich-1">Kritischer Abgleich</h3>
@@ -528,7 +554,7 @@ Hypothesen: …</code></pre>
 </li>
 <li>Wo droht <strong>Presentismus</strong> (Gegenwartskategorien in die Vergangenheit projizieren)?</li>
 </ul>
-<p><strong>Output</strong> - 1 priorisierte Hypothese/These + 2 zentrale Gegenargumente + 1 geplanter Stress-Test</p>
+<p><strong>Ergebnis</strong> - 1 priorisierte Hypothese/These + 2 zentrale Gegenargumente + 1 geplanter Stress-Test</p>
 </section>
 </section>
 <section id="strukturierer-outliner" class="level2">
@@ -539,19 +565,19 @@ Hypothesen: …</code></pre>
 </section>
 <section id="aufgabe-1" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-1">Aufgabe</h3>
-<pre class="text"><code>Rolle: Strukturierer &amp; Outliner.
-Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. X Wörtern.
-Für jeden Punkt:
-- Ziel des Abschnitts (1 Satz)
-- zentrale Behauptung (1 Satz)
-- benötigte Evidenz (Stichworte; «aus meinen Notizen/Quellen»)
-- Übergang zum nächsten Punkt (1 Satz)
-
-Constraints:
-- Keine neuen Fakten.
-- Wenn Evidenz fehlt: markiere als [EVIDENZLÜCKE] statt zu ergänzen.
-
-Material (Stichpunkte/Notizen): …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Strukturierer &amp; Outliner.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. X Wörtern.</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Für jeden Punkt:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ziel des Abschnitts (1 Satz)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>zentrale Behauptung (1 Satz)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>benötigte Evidenz (Stichworte; «aus meinen Notizen/Quellen»)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Übergang zum nächsten Punkt (1 Satz)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>Constraints:</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keine neuen Fakten.</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wenn Evidenz fehlt: markiere als <span class="co">[</span><span class="ot">EVIDENZLÜCKE</span><span class="co">]</span> statt zu ergänzen.</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>Material (Stichpunkte/Notizen): …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="qualitätscheck" class="level3">
 <h3 class="anchored" data-anchor-id="qualitätscheck">Qualitätscheck</h3>
@@ -560,7 +586,7 @@ Material (Stichpunkte/Notizen): …</code></pre>
 </li>
 <li>Gibt es Abschnitte, die nur «Überblick» liefern, aber keine argumentative Funktion haben?</li>
 </ul>
-<p><strong>Output</strong> - Gliederung + Markierung von 2–3 Evidenzlücken</p>
+<p><strong>Ergebnis</strong> - Gliederung + Markierung von 2–3 Evidenzlücken</p>
 </section>
 </section>
 <section id="text-aus-stichpunkten" class="level2">
@@ -572,15 +598,15 @@ Material (Stichpunkte/Notizen): …</code></pre>
 <section id="aufgabe-2" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-2">Aufgabe</h3>
 <p>Wählen Sie <strong>einen</strong> Gliederungspunkt (z.B. «Hauptargument 1») und liefern Sie 8–12 Bullet Points (Belege, Beobachtungen, Zitate/Paraphrasen, Begriffe).</p>
-<pre class="text"><code>Rolle: Textgenerator aus Stichpunkten.
-Schreibe einen Absatz (120–180 Wörter) in akademischem Deutsch.
-Bedingungen:
-- Verwende ausschliesslich Informationen aus meinen Stichpunkten.
-- Keine neuen Beispiele, Daten, Namen, Quellen.
-- Wenn ein Satz zusätzliche Information bräuchte: [UNSICHER] markieren.
-- Behalte meine Terminologie; frage nach, wenn unklar.
-
-Stichpunkte: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Textgenerator aus Stichpunkten.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Schreibe einen Absatz (120–180 Wörter) in akademischem Deutsch.</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Bedingungen:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Verwende ausschliesslich Informationen aus meinen Stichpunkten.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keine neuen Beispiele, Daten, Namen, Quellen.</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wenn ein Satz zusätzliche Information bräuchte: <span class="co">[</span><span class="ot">UNSICHER</span><span class="co">]</span> markieren.</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Behalte meine Terminologie; frage nach, wenn unklar.</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>Stichpunkte: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="kritischer-abgleich-2" class="level3">
 <h3 class="anchored" data-anchor-id="kritischer-abgleich-2">Kritischer Abgleich</h3>
@@ -589,7 +615,7 @@ Stichpunkte: …</code></pre>
 </li>
 <li>Prüfen Sie Terminologie: Wo glättet KI Begriffe (z.B. «Staat», «Gesellschaft», «Akteur») unzulässig?</li>
 </ul>
-<p><strong>Output</strong> - 1 Absatz + eine Version, in der Sie 3–5 Sätze eigenständig präzisiert haben</p>
+<p><strong>Ergebnis</strong> - 1 Absatz + eine Version, in der Sie 3–5 Sätze eigenständig präzisiert haben</p>
 </section>
 </section>
 <section id="blockaden-löser" class="level2">
@@ -601,26 +627,26 @@ Stichpunkte: …</code></pre>
 <section id="mikro-übungen-wählen-sie-2" class="level3">
 <h3 class="anchored" data-anchor-id="mikro-übungen-wählen-sie-2">Mikro-Übungen (wählen Sie 2)</h3>
 <p><strong>A) Übergang bauen</strong></p>
-<pre class="text"><code>Rolle: Blockaden-Löser.
-Formuliere 5 Varianten für einen Übergangssatz zwischen Absatz A und B.
-Variante 1 neutral, 2 stärker argumentativ, 3 stärker erklärend, 4 knapper, 5 mit Kontrastmarker.
-Absatz A: …
-Absatz B: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Blockaden-Löser.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Formuliere 5 Varianten für einen Übergangssatz zwischen Absatz A und B.</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Variante 1 neutral, 2 stärker argumentativ, 3 stärker erklärend, 4 knapper, 5 mit Kontrastmarker.</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Absatz A: …</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>Absatz B: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>B) Definition operationalisieren</strong></p>
-<pre class="text"><code>Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «X» im Kontext meines Themas.
-Für jede Definition:
-- Abgrenzung zu 1 Nachbarbegriff
-- 1 beobachtbares Indiz (woran erkenne ich X in Quellen?)
-Keine externen Fakten.
-Kontext: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «X» im Kontext meines Themas.</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Für jede Definition:</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Abgrenzung zu 1 Nachbarbegriff</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1 beobachtbares Indiz (woran erkenne ich X in Quellen?)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>Keine externen Fakten.</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>Kontext: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>C) Satzdiagnose</strong></p>
-<pre class="text"><code>Markiere in meinem Absatz:
-- den zentralen Satz (topic sentence),
-- Sätze mit unklarem Referent («dies», «dabei», «man»),
-- Sätze, die eigentlich zwei Behauptungen enthalten.
-Schlage minimale Umstellungen vor (keine Umschreibung des Inhalts).
-Text: …</code></pre>
-<p><strong>Output</strong> - 1 überarbeiteter Übergang/Definition + kurze Begründung, warum diese Variante</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="an">Markiere in meinem Absatz:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>den zentralen Satz (topic sentence),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sätze mit unklarem Referent («dies», «dabei», «man»),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sätze, die eigentlich zwei Behauptungen enthalten.</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Schlage minimale Umstellungen vor (keine Umschreibung des Inhalts).</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>Text: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Ergebnis</strong> - 1 überarbeiteter Übergang/Definition + kurze Begründung, warum diese Variante</p>
 </section>
 </section>
 <section id="logik-prüfer" class="level2">
@@ -631,15 +657,15 @@ Text: …</code></pre>
 </section>
 <section id="aufgabe-3" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-3">Aufgabe</h3>
-<pre class="text"><code>Rolle: Logik-Prüfer.
-Analysiere meinen Text (max. 300 Wörter) als Argumentmap:
-1) Hauptthese
-2) Unterthesen
-3) explizite Belege (aus dem Text)
-4) implizite Prämissen (die ich offenbar voraussetze)
-5) mögliche logische Sprünge oder Widersprüche
-Gib dann 5 konkrete Revisionsempfehlungen, priorisiert nach Wirkung.
-Text: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Logik-Prüfer.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Analysiere meinen Text (max. 300 Wörter) als Argumentmap:</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>1) Hauptthese</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>2) Unterthesen</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>3) explizite Belege (aus dem Text)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>4) implizite Prämissen (die ich offenbar voraussetze)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>5) mögliche logische Sprünge oder Widersprüche</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>Gib dann 5 konkrete Revisionsempfehlungen, priorisiert nach Wirkung.</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>Text: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="kritischer-abgleich-3" class="level3">
 <h3 class="anchored" data-anchor-id="kritischer-abgleich-3">Kritischer Abgleich</h3>
@@ -648,7 +674,7 @@ Text: …</code></pre>
 </li>
 <li>Wo sind Kausalbehauptungen eigentlich nur <strong>zeitliche Abfolge</strong>?</li>
 </ul>
-<p><strong>Output</strong> - Argumentmap + 2 gezielte Revisionen im Text (mit Markierung, was sich logisch verbessert)</p>
+<p><strong>Ergebnis</strong> - Argumentmap + 2 gezielte Revisionen im Text (mit Markierung, was sich logisch verbessert)</p>
 </section>
 </section>
 <section id="korrektorat-übersetzer" class="level2">
@@ -659,25 +685,25 @@ Text: …</code></pre>
 </section>
 <section id="aufgabe-a-korrektorat-minimal-invasiv" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-a-korrektorat-minimal-invasiv">Aufgabe A: Korrektorat (minimal-invasiv)</h3>
-<pre class="text"><code>Rolle: Korrektorat.
-Verbessere Grammatik, Stil und Präzision, aber ändere keine inhaltlichen Aussagen.
-Arbeite minimal-invasiv:
-- Ersetze vage Wörter (z.B. «wichtig», «zeigt») nur, wenn eindeutig.
-- Erhalte Fachtermini; wenn unsicher: [TERM?] markieren.
-Gib am Ende eine Liste der 5 häufigsten Musterfehler, die du korrigiert hast.
-Text: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Korrektorat.</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Verbessere Grammatik, Stil und Präzision, aber ändere keine inhaltlichen Aussagen.</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>Arbeite minimal-invasiv:</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ersetze vage Wörter (z.B. «wichtig», «zeigt») nur, wenn eindeutig.</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Erhalte Fachtermini; wenn unsicher: <span class="co">[</span><span class="ot">TERM?</span><span class="co">]</span> markieren.</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>Gib am Ende eine Liste der 5 häufigsten Musterfehler, die du korrigiert hast.</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>Text: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="aufgabe-b-übersetzen-optional" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-b-übersetzen-optional">Aufgabe B: Übersetzen (optional)</h3>
-<pre class="text"><code>Rolle: Übersetzer.
-Übersetze den Text ins Englische (oder Französische/Spanische).
-Bedingungen:
-- Bewahre Register (akademisch) und Hedge-Marker (z.B. «könnte», «legt nahe»).
-- Erhalte Eigennamen und Zitate unverändert.
-- Gib eine Mini-Glossar-Tabelle (5–10 Termpaare) für Schlüsselbegriffe.
-Text: …
-Zielsprache: …</code></pre>
-<p><strong>Output</strong> - Korrigierte Version + (optional) Übersetzung + Glossar</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Übersetzer.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Übersetze den Text ins Englische (oder Französische/Spanische).</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>Bedingungen:</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bewahre Register (akademisch) und Hedge-Marker (z.B. «könnte», «legt nahe»).</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Erhalte Eigennamen und Zitate unverändert.</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gib eine Mini-Glossar-Tabelle (5–10 Termpaare) für Schlüsselbegriffe.</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>Text: …</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>Zielsprache: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Ergebnis</strong> - Korrigierte Version + (optional) Übersetzung + Glossar</p>
 </section>
 </section>
 <section id="abstract-schreiber" class="level2">
@@ -688,15 +714,15 @@ Zielsprache: …</code></pre>
 </section>
 <section id="aufgabe-4" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-4">Aufgabe</h3>
-<pre class="text"><code>Rolle: Abstract-Schreiber.
-Schreibe ein Abstract mit 120–160 Wörtern.
-Muss enthalten:
-- Forschungsproblem (1 Satz)
-- Ansatz/Material (1 Satz)
-- Kernargument/Befund (2–3 Sätze)
-- Beitrag/Relevanz («so what?») (1 Satz)
-Keine neuen Fakten; wenn unklar: [UNKLAR] markieren.
-Textbasis: …</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Abstract-Schreiber.</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Schreibe ein Abstract mit 120–160 Wörtern.</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>Muss enthalten:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Forschungsproblem (1 Satz)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ansatz/Material (1 Satz)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kernargument/Befund (2–3 Sätze)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Beitrag/Relevanz («so what?») (1 Satz)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>Keine neuen Fakten; wenn unklar: <span class="co">[</span><span class="ot">UNKLAR</span><span class="co">]</span> markieren.</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>Textbasis: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="qualitätscheck-1" class="level3">
 <h3 class="anchored" data-anchor-id="qualitätscheck-1">Qualitätscheck</h3>
@@ -705,7 +731,7 @@ Textbasis: …</code></pre>
 </li>
 <li>Entspricht die behauptete Methode dem, was Sie wirklich tun (Quellenarbeit vs.&nbsp;Literaturdiskussion)?</li>
 </ul>
-<p><strong>Output</strong> - Abstract + 2-Satz-Meta-Kommentar: Was hat KI fälschlich betont/ausgelassen?</p>
+<p><strong>Ergebnis</strong> - Abstract + 2-Satz-Meta-Kommentar: Was hat KI fälschlich betont/ausgelassen?</p>
 </section>
 </section>
 <section id="verständnischecker-re-run" class="level2">
@@ -716,14 +742,14 @@ Textbasis: …</code></pre>
 </section>
 <section id="aufgabe-5" class="level3">
 <h3 class="anchored" data-anchor-id="aufgabe-5">Aufgabe</h3>
-<pre class="text"><code>Rolle: Verständnischecker.
-Lies meinen Text als kritische*r Leser*in im Seminar.
-1) Was ist die These in einem Satz?
-2) Welche 3 Punkte sind unklar oder missverständlich (jeweils mit Zitatstelle)?
-3) Welche Stelle wirkt unbelegt?
-4) Welche zwei Fragen würdest du mir im Feedback stellen?
-Text: …</code></pre>
-<p><strong>Output</strong> - 3 präzisierte Stellen im Text (je 1–2 Sätze überarbeitet)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Verständnischecker.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Lies meinen Text als kritische*r Leser:in im Seminar.</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>1) Was ist die These in einem Satz?</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>2) Welche 3 Punkte sind unklar oder missverständlich (jeweils mit Zitatstelle)?</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>3) Welche Stelle wirkt unbelegt?</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>4) Welche zwei Fragen würdest du mir im Feedback stellen?</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>Text: …</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Ergebnis</strong> - 3 präzisierte Stellen im Text (je 1–2 Sätze überarbeitet)</p>
 </section>
 </section>
 <section id="lernergebnis" class="level2">
@@ -753,16 +779,16 @@ Text: …</code></pre>
 <a onclick="return window.scrollTo(0,0),!1;
 " role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Zitat</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@inreference{mähr2025,
   author = {Mähr, Moritz},
-  title = {Schreiben mit kritisch-reflektiertem KI-Einsatz},
+  title = {Wissenschaftliches Schreiben},
   booktitle = {Critical AI Literacy für Historiker:innen},
   date = {2025-12-24},
   url = {https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/schreiben.html},
   langid = {de}
 }
 </code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Bitte zitieren Sie diese Arbeit als:</div><div id="ref-mähr2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Mähr, Moritz. <span>“Schreiben mit kritisch-reflektiertem
-KI-Einsatz.”</span> In <em>Critical AI Literacy für
-Historiker:innen</em>. December 24, 2025. <a href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/schreiben.html">https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/schreiben.html</a>.
+Mähr, Moritz. <span>“Wissenschaftliches Schreiben.”</span> In
+<em>Critical AI Literacy für Historiker:innen</em>. December 24, 2025.
+<a href="https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/schreiben.html">https://maehr.github.io/critical-ai-literacy-for-historians/de/exercises/schreiben.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Kopiert");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Kopiert"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},x=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){x();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else x(),e.classList.remove("code-annotation-active")});const C=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:C(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=C(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
 </script>
@@ -773,8 +799,8 @@ Historiker:innen</em>. December 24, 2025. <a href="https://maehr.github.io/criti
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../de/exercises/zitieren.html" class="pagination-link" aria-label="Wissenschaftliches Zitieren mit kritischem KI-Einsatz">
-        <span class="nav-page-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../de/exercises/zitieren.html" class="pagination-link" aria-label="Wissenschaftliches Zitieren">
+        <span class="nav-page-text">Wissenschaftliches Zitieren</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

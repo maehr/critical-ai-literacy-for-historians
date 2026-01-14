@@ -63,7 +63,7 @@
     "search-label": "Suchen"
   }
 }</script>
-<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-exercises .list"))return;const i={valueNames:["listing-title","listing-author","listing-date","listing-image","listing-description",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-file-modified-sort"]}],searchColumns:["listing-title","listing-author","listing-date","listing-image","listing-description"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-exercises"]=new List("listing-exercises",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
+<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-exercises .list"))return;const i={valueNames:["listing-title","listing-subtitle","listing-description","listing-categories",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-file-modified-sort"]}],searchColumns:["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-exercises"]=new List("listing-exercises",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -197,7 +197,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+ <span class="menu-text">Public History und Geschichtsvermittlung</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -215,13 +215,13 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Schreiben</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Zitieren</span></a>
   </div>
 </li>
       </ul>
@@ -256,7 +256,7 @@
   <li><a href="#erste-schritte" id="toc-erste-schritte" class="nav-link" data-scroll-target="#erste-schritte">Erste Schritte</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/index.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Kategorien</h5><div class="category-default quarto-listing-category"><div class="category" data-category="">alle <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Rm9yc2NodW5nc2Rlc2lnbg==">Forschungsdesign <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S0klMjAlMjYlMjBEaWdpdGFsZSUyME1ldGhvZGVu">KI &amp; Digitale Methoden <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWV0aG9kZW4=">Methoden <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHVibGljJTIwSGlzdG9yeQ==">Public History <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVlbGxlbg==">Quellen <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -286,10 +286,10 @@
 <h3 class="anchored" data-anchor-id="zweck">Zweck</h3>
 <p>Diese Materialien zielen darauf ab, Lernenden zu helfen:</p>
 <ul>
-<li>Zu verstehen, wie KI sowohl als Forschungs<strong>werkzeug</strong> als auch als <strong>Methode</strong> fungiert</li>
-<li>Darüber nachzudenken, wie sie historische Interpretation und Evidenz prägt</li>
-<li>Rigorose digitale Quellenkritik anzuwenden, um Datenprovenienz, Repräsentation und Bias zu bewerten</li>
-<li>Verantwortungsvollen, transparenten und ethisch informierten Einsatz von KI in der historischen Forschung zu praktizieren</li>
+<li>zu verstehen, wie KI sowohl als <strong>Forschungswerkzeug</strong> als auch als <strong>Methode</strong> fungiert,</li>
+<li>darüber nachzudenken, wie sie historische Interpretation und Evidenz prägt,</li>
+<li>rigorose digitale Quellenkritik anzuwenden, um Datenprovenienz, Repräsentation und Bias zu bewerten und</li>
+<li>verantwortungsvollen, transparenten und ethisch informierten Einsatz von KI in der historischen Forschung zu praktizieren.</li>
 </ul>
 </section>
 <section id="prinzipien" class="level3">
@@ -299,7 +299,6 @@
 <li><strong>Reproduzierbarkeit</strong> in Forschungsabläufen</li>
 <li><strong>Datenschutz</strong> und ethischen Datenumgang</li>
 <li><strong>Urheberrechtsbewusstsein</strong> und korrekte Zuordnung</li>
-<li><strong>Nachhaltigkeit</strong> durch Minimal-Computing-Ansätze</li>
 <li><strong>Interdisziplinäre Zusammenarbeit</strong> und kritische Reflexion</li>
 </ul>
 <p>Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.</p>
@@ -310,197 +309,178 @@
 <p>Erkunden Sie die Übungen, um Ihre Reise zur Entwicklung kritischer KI-Kompetenz für die historische Forschung zu beginnen.</p>
 <div id="listing-exercises" class="quarto-listing quarto-listing-container-grid">
 <div class="grid list quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Rm9yc2NodW5nc2Rlc2lnbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766960472433" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="4" data-listing-word-count-sort="769">
+<div class="g-col-1" data-index="0" data-categories="Rm9yc2NodW5nc2Rlc2lnbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768160124219" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="732">
 <a href="../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Formulieren einer historischen Forschungsfrage
 </h5>
+<div class="card-subtitle listing-subtitle">
+Die Schweiz und der Europarat
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("Rm9yc2NodW5nc2Rlc2lnbg=="),!1;
+'>Forschungsdesign</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Eine angeleitete Übung zur systematischen Entwicklung einer analytischen historischen Forschungsfrage unter reflektiertem Einsatz generativer KI.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UHVibGljJTIwSGlzdG9yeQ==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963126086" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1157">
-<a href="../de/exercises/public-history.html" class="quarto-grid-link">
-<div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="card-title listing-title no-anchor">
-Kritisch-reflektierter KI-Einsatz in Public History
-</h5>
-<div class="card-text delink listing-description">
-<p>Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963164181" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1409">
+<div class="g-col-1" data-index="1" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768160124829" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1472">
 <a href="../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Literaturrecherche und -analyse
 </h5>
+<div class="card-subtitle listing-subtitle">
+Geschichte der Sozialversicherung in der Schweiz
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("TWV0aG9kZW4="),!1;
+'>Methoden</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Eine angeleitete Übung zur systematischen Literaturrecherche und problemorientierten Literaturanalyse mit kritisch kontrolliertem Einsatz generativer KI.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="S0k=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963300378" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1710">
+<div class="g-col-1" data-index="2" data-categories="S0klMjAlMjYlMjBEaWdpdGFsZSUyME1ldGhvZGVu" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159626737" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1812">
 <a href="../de/exercises/prompt-engineering.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Prompt Engineering
 </h5>
+<div class="card-subtitle listing-subtitle">
+Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("S0klMjAlMjYlMjBEaWdpdGFsZSUyME1ldGhvZGVu"),!1;
+'>KI &amp; Digitale Methoden</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963188300" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1992">
+<div class="g-col-1" data-index="3" data-categories="UHVibGljJTIwSGlzdG9yeQ==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159668030" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1207">
+<a href="../de/exercises/public-history.html" class="quarto-grid-link">
+<div class="card card-left h-100 quarto-grid-item">
+<div class="card-body post-contents">
+<h5 class="card-title listing-title no-anchor">
+Public History und Geschichtsvermittlung
+</h5>
+<div class="card-subtitle listing-subtitle">
+Wissenskommunikation entlang des Schreib- und Produktionsprozesses
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("UHVibGljJTIwSGlzdG9yeQ=="),!1;
+'>Public History</div>
+
+</div>
+<div class="card-text delink listing-description">
+<p>Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159616239" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="11" data-listing-word-count-sort="2045">
 <a href="../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Quellenkritik
 </h5>
+<div class="card-subtitle listing-subtitle">
+Bundesrat und Europarat 1949
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("UXVlbGxlbg=="),!1;
+'>Quellen</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Eine angeleitete Übung zur systematischen externen und internen Quellenkritik an einer diplomatischen Aktennotiz (Dodis).</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963201186" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1047">
+<div class="g-col-1" data-index="5" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159600558" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090">
 <a href="../de/exercises/quellensuche-vorort-europarat-1963.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Quellensuche für eine historische Forschungsfrage
 </h5>
+<div class="card-subtitle listing-subtitle">
+Der Vorort und der Europaratsbeitritt 1963
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("UXVlbGxlbg=="),!1;
+'>Quellen</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766530800000" data-listing-file-modified-sort="1766963138887" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1410">
+<div class="g-col-1" data-index="6" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766530800000" data-listing-file-modified-sort="1768159641124" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1460">
 <a href="../de/exercises/schreiben.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
-Schreiben mit kritisch-reflektiertem KI-Einsatz
+Wissenschaftliches Schreiben
 </h5>
+<div class="card-subtitle listing-subtitle">
+Rollenbasiertes Übungsset entlang des Schreibprozesses
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("TWV0aG9kZW4="),!1;
+'>Methoden</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche…</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-24.12.2025
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963149886" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="3" data-listing-word-count-sort="599">
+<div class="g-col-1" data-index="7" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159651702" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="644">
 <a href="../de/exercises/zitieren.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
-Wissenschaftliches Zitieren mit kritischem KI-Einsatz
+Wissenschaftliches Zitieren
 </h5>
-<div class="card-text delink listing-description">
-<p>Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen…</p>
+<div class="card-subtitle listing-subtitle">
+Übung zur Zitierpraxis in der Geschichtswissenschaft
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29.12.2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1766962691996" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../de/exercises/index.html" class="quarto-grid-link">
-<div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="card-title listing-title no-anchor">
-Übungen
-</h5>
-<div class="card-text delink listing-description">
-Eine angeleitete Übung zur systematischen Entwicklung einer analytischen historischen Forschungsfrage unter reflektiertem Einsatz generativer KI.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("TWV0aG9kZW4="),!1;
+'>Methoden</div>
 
 </div>
+<div class="card-text delink listing-description">
+<p>Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen…</p>
 </div>
 </div>
 </div></a>

@@ -64,7 +64,7 @@
     "search-label": "Suchen"
   }
 }</script>
-<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-listing .list"))return;const i={valueNames:["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-file-modified-sort"]}],searchColumns:["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-listing"]=new List("listing-listing",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
+<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-exercises .list"))return;const i={valueNames:["listing-title","listing-subtitle","listing-description","listing-categories",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-title-sort"]}],searchColumns:["listing-date","listing-title","listing-author"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-exercises"]=new List("listing-exercises",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -196,7 +196,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+ <span class="menu-text">Public History und Geschichtsvermittlung</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -214,13 +214,13 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Schreiben</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Zitieren</span></a>
   </div>
 </li>
       </ul>
@@ -242,9 +242,9 @@
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Kategorien</h5><div class="category-default quarto-listing-category"><div class="category" data-category="">alle <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Rm9yc2NodW5nc2Rlc2lnbg==">Forschungsdesign <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S0klMjAlMjYlMjBEaWdpdGFsZSUyME1ldGhvZGVu">KI &amp; Digitale Methoden <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWV0aG9kZW4=">Methoden <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHVibGljJTIwSGlzdG9yeQ==">Public History <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVlbGxlbg==">Quellen <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -267,239 +267,186 @@
 </header>
 
 
+<div id="listing-exercises" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-exercises-sort" class="form-select" aria-label="Sortieren nach" onchange='window["quarto-listings"]["listing-exercises"].sort(this.options[this.selectedIndex].value,{order:this.options[this.selectedIndex].getAttribute("data-direction")});
+'>
+      <option value="" disabled="" selected="" hidden="">Sortieren nach</option>
+      <option value="index" data-direction="asc">Voreinstellung</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Titel
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="form-control search" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
 
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick='return this.classList.contains("sort-asc")?(this.classList.add("sort-desc"),this.classList.remove("sort-asc")):(this.classList.add("sort-asc"),this.classList.remove("sort-desc")),!1;
+'>Titel</a>
+</th>
 
+<th>
+Untertitel
+</th>
 
+<th>
+Beschreibung
+</th>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="image-right quarto-post" data-index="0" data-categories="Rm9yc2NodW5nc2Rlc2lnbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766960472433" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="4" data-listing-word-count-sort="769">
-<div class="thumbnail"><a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="no-external">
+<th>
+Kategorien
+</th>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
+</thead>
+<tbody class="list">
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="no-external">Formulieren einer historischen Forschungsfrage</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="no-external">Die Schweiz und der Europarat</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="no-external">
-<p>Eine angeleitete Übung zur systematischen Entwicklung einer analytischen historischen Forschungsfrage unter reflektiertem Einsatz generativer KI.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="1" data-categories="UHVibGljJTIwSGlzdG9yeQ==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963126086" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1157">
-<div class="thumbnail"><a href="../../de/exercises/public-history.html" class="no-external">
+<tr data-index="0" data-categories="Rm9yc2NodW5nc2Rlc2lnbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768160124219" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="732" data-listing-title-sort="Formulieren einer historischen Forschungsfrage" data-listing-filename-sort="formulieren-historische-forschungsfrage-schweiz-europarat.qmd">
+<td>
+<a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html" class="title listing-title">Formulieren einer historischen Forschungsfrage</a>
+</td>
+<td>
+<span class="listing-subtitle">Die Schweiz und der Europarat</span>
+</td>
+<td>
+<span class="listing-description">Eine angeleitete Übung zur systematischen Entwicklung einer analytischen historischen Forschungsfrage unter reflektiertem Einsatz generativer KI.</span>
+</td>
+<td>
+<span class="listing-categories">Forschungsdesign</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/public-history.html" class="no-external">Kritisch-reflektierter KI-Einsatz in Public History</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/public-history.html" class="no-external">Wissenskommunikation entlang des Schreib- und Produktionsprozesses</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/public-history.html" class="no-external">
-<p>Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail, Quellen-Veto und methodischer Transparenz.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/public-history.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="2" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963164181" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1409">
-<div class="thumbnail"><a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="no-external">
+<tr data-index="1" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768160124829" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1472" data-listing-title-sort="Literaturrecherche und -analyse" data-listing-filename-sort="literaturrecherche-sozialversicherung-ch.qmd">
+<td>
+<a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="title listing-title">Literaturrecherche und -analyse</a>
+</td>
+<td>
+<span class="listing-subtitle">Geschichte der Sozialversicherung in der Schweiz</span>
+</td>
+<td>
+<span class="listing-description">Eine angeleitete Übung zur systematischen Literaturrecherche und problemorientierten Literaturanalyse mit kritisch kontrolliertem Einsatz generativer KI.</span>
+</td>
+<td>
+<span class="listing-categories">Methoden</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="no-external">Literaturrecherche und -analyse</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="no-external">Geschichte der Sozialversicherung in der Schweiz</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="no-external">
-<p>Eine angeleitete Übung zur systematischen Literaturrecherche und problemorientierten Literaturanalyse mit kritisch kontrolliertem Einsatz generativer KI.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="3" data-categories="S0k=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963300378" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1710">
-<div class="thumbnail"><a href="../../de/exercises/prompt-engineering.html" class="no-external">
+<tr data-index="2" data-categories="S0klMjAlMjYlMjBEaWdpdGFsZSUyME1ldGhvZGVu" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159626737" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1812" data-listing-title-sort="Prompt Engineering" data-listing-filename-sort="prompt-engineering.qmd">
+<td>
+<a href="../../de/exercises/prompt-engineering.html" class="title listing-title">Prompt Engineering</a>
+</td>
+<td>
+<span class="listing-subtitle">Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin</span>
+</td>
+<td>
+<span class="listing-description">Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.</span>
+</td>
+<td>
+<span class="listing-categories">KI &amp; Digitale Methoden</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/prompt-engineering.html" class="no-external">Prompt Engineering</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/prompt-engineering.html" class="no-external">Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/prompt-engineering.html" class="no-external">
-<p>Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/prompt-engineering.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="4" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963188300" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1992">
-<div class="thumbnail"><a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="no-external">
+<tr data-index="3" data-categories="UHVibGljJTIwSGlzdG9yeQ==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159668030" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1207" data-listing-title-sort="Public History und Geschichtsvermittlung" data-listing-filename-sort="public-history.qmd">
+<td>
+<a href="../../de/exercises/public-history.html" class="title listing-title">Public History und Geschichtsvermittlung</a>
+</td>
+<td>
+<span class="listing-subtitle">Wissenskommunikation entlang des Schreib- und Produktionsprozesses</span>
+</td>
+<td>
+<span class="listing-description">Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail, Quellen-Veto und methodischer Transparenz.</span>
+</td>
+<td>
+<span class="listing-categories">Public History</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="no-external">Quellenkritik</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="no-external">Bundesrat und Europarat 1949</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="no-external">
-<p>Eine angeleitete Übung zur systematischen externen und internen Quellenkritik an einer diplomatischen Aktennotiz (Dodis).</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="5" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963201186" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1047">
-<div class="thumbnail"><a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="no-external">
+<tr data-index="4" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159616239" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="11" data-listing-word-count-sort="2045" data-listing-title-sort="Quellenkritik" data-listing-filename-sort="quellenkritik-bundesrat-europarat-1949.qmd">
+<td>
+<a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html" class="title listing-title">Quellenkritik</a>
+</td>
+<td>
+<span class="listing-subtitle">Bundesrat und Europarat 1949</span>
+</td>
+<td>
+<span class="listing-description">Eine angeleitete Übung zur systematischen externen und internen Quellenkritik an einer diplomatischen Aktennotiz (Dodis).</span>
+</td>
+<td>
+<span class="listing-categories">Quellen</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="no-external">Quellensuche für eine historische Forschungsfrage</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="no-external">Der Vorort und der Europaratsbeitritt 1963</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="no-external">
-<p>Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="6" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766530800000" data-listing-file-modified-sort="1766963138887" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1410">
-<div class="thumbnail"><a href="../../de/exercises/schreiben.html" class="no-external">
+<tr data-index="5" data-categories="UXVlbGxlbg==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159600558" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090" data-listing-title-sort="Quellensuche für eine historische Forschungsfrage" data-listing-filename-sort="quellensuche-vorort-europarat-1963.qmd">
+<td>
+<a href="../../de/exercises/quellensuche-vorort-europarat-1963.html" class="title listing-title">Quellensuche für eine historische Forschungsfrage</a>
+</td>
+<td>
+<span class="listing-subtitle">Der Vorort und der Europaratsbeitritt 1963</span>
+</td>
+<td>
+<span class="listing-description">Eine angeleitete Übung zur systematischen Quellensuche (primär/sekundär/tertiär) mit reflektiertem Einsatz generativer KI.</span>
+</td>
+<td>
+<span class="listing-categories">Quellen</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/schreiben.html" class="no-external">Schreiben mit kritisch-reflektiertem KI-Einsatz</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/schreiben.html" class="no-external">Rollenbasiertes Übungsset entlang des Schreibprozesses</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/schreiben.html" class="no-external">
-<p>Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche Präzision.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/schreiben.html" class="no-external">
-<div class="listing-date">
-24.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-<div class="image-right quarto-post" data-index="7" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1766963149886" data-listing-date-modified-sort="1766962800000" data-listing-reading-time-sort="3" data-listing-word-count-sort="599">
-<div class="thumbnail"><a href="../../de/exercises/zitieren.html" class="no-external">
+<tr data-index="6" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766530800000" data-listing-file-modified-sort="1768159641124" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1460" data-listing-title-sort="Wissenschaftliches Schreiben" data-listing-filename-sort="schreiben.qmd">
+<td>
+<a href="../../de/exercises/schreiben.html" class="title listing-title">Wissenschaftliches Schreiben</a>
+</td>
+<td>
+<span class="listing-subtitle">Rollenbasiertes Übungsset entlang des Schreibprozesses</span>
+</td>
+<td>
+<span class="listing-description">Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche Präzision.</span>
+</td>
+<td>
+<span class="listing-categories">Methoden</span>
+</td>
 
-<div class="card-img-top listing-item-img-placeholder">&nbsp;</div>
+</tr>
 
-</a></div>
-<div class="body">
-<h3 class="listing-title no-anchor">
-<a href="../../de/exercises/zitieren.html" class="no-external">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../de/exercises/zitieren.html" class="no-external">Übung zur Zitierpraxis in der Geschichtswissenschaft</a>
-</div>
-<div class="delink listing-description"><a href="../../de/exercises/zitieren.html" class="no-external">
-<p>Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../de/exercises/zitieren.html" class="no-external">
-<div class="listing-date">
-29.12.2025
-</div>
-<div class="listing-author">
-Moritz Mähr
-</div>
-</a>
-</div>
-</div>
-</div>
+<tr data-index="7" data-categories="TWV0aG9kZW4=" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768159651702" data-listing-date-modified-sort="1768345200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="644" data-listing-title-sort="Wissenschaftliches Zitieren" data-listing-filename-sort="zitieren.qmd">
+<td>
+<a href="../../de/exercises/zitieren.html" class="title listing-title">Wissenschaftliches Zitieren</a>
+</td>
+<td>
+<span class="listing-subtitle">Übung zur Zitierpraxis in der Geschichtswissenschaft</span>
+</td>
+<td>
+<span class="listing-description">Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt.</span>
+</td>
+<td>
+<span class="listing-categories">Methoden</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="d-none listing-no-matching">Keine Treffer</div>
-</div><a onclick="return window.scrollTo(0,0),!1;
+</div>
+
+
+
+
+<a onclick="return window.scrollTo(0,0),!1;
 " role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Kopiert");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Kopiert"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},x=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){x();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else x(),e.classList.remove("code-annotation-active")});const C=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:C(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=C(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
 </script>

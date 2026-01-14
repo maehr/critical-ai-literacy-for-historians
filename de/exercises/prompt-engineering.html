@@ -193,7 +193,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/public-history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Kritisch-reflektierter KI-Einsatz in Public History</span></a>
+ <span class="menu-text">Public History und Geschichtsvermittlung</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -211,13 +211,13 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/schreiben.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schreiben mit kritisch-reflektiertem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Schreiben</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../de/exercises/zitieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wissenschaftliches Zitieren mit kritischem KI-Einsatz</span></a>
+ <span class="menu-text">Wissenschaftliches Zitieren</span></a>
   </div>
 </li>
       </ul>
@@ -249,11 +249,11 @@
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
   <li><a href="#arbeitsmodus-ki-protokoll-und-ab-testing" id="toc-arbeitsmodus-ki-protokoll-und-ab-testing" class="nav-link" data-scroll-target="#arbeitsmodus-ki-protokoll-und-ab-testing">Arbeitsmodus: KI-Protokoll und A/B-Testing</a></li>
   <li><a href="#fallpaket-für-alle-übungen" id="toc-fallpaket-für-alle-übungen" class="nav-link" data-scroll-target="#fallpaket-für-alle-übungen">Fallpaket für alle Übungen</a></li>
+  <li><a href="#session-neustart-als-kontrollinstrument" id="toc-session-neustart-als-kontrollinstrument" class="nav-link" data-scroll-target="#session-neustart-als-kontrollinstrument">Session-Neustart als Kontrollinstrument</a></li>
   <li><a href="#prompt-basics" id="toc-prompt-basics" class="nav-link" data-scroll-target="#prompt-basics">1. Prompt Basics</a>
   <ul class="collapse">
   <li><a href="#ziel" id="toc-ziel" class="nav-link" data-scroll-target="#ziel">Ziel</a></li>
-  <li><a href="#übung-1a-von-vage-zu-operationalisiert" id="toc-übung-1a-von-vage-zu-operationalisiert" class="nav-link" data-scroll-target="#übung-1a-von-vage-zu-operationalisiert">Übung 1A: Von «vage» zu «operationalisiert»</a></li>
-  <li><a href="#übung-1b-output-formate-als-prüfwerkzeug" id="toc-übung-1b-output-formate-als-prüfwerkzeug" class="nav-link" data-scroll-target="#übung-1b-output-formate-als-prüfwerkzeug">Übung 1B: Output-Formate als Prüfwerkzeug</a></li>
+  <li><a href="#übung-von-vage-zu-operationalisiert" id="toc-übung-von-vage-zu-operationalisiert" class="nav-link" data-scroll-target="#übung-von-vage-zu-operationalisiert">Übung: Von «vage» zu «operationalisiert»</a></li>
   </ul></li>
   <li><a href="#rollen" id="toc-rollen" class="nav-link" data-scroll-target="#rollen">2. Rollen</a>
   <ul class="collapse">
@@ -261,30 +261,27 @@
   <li><a href="#übung-2a-eine-aufgabe-drei-rollen" id="toc-übung-2a-eine-aufgabe-drei-rollen" class="nav-link" data-scroll-target="#übung-2a-eine-aufgabe-drei-rollen">Übung 2A: Eine Aufgabe, drei Rollen</a></li>
   <li><a href="#übung-2b-rollenwechsel-als-diagnose" id="toc-übung-2b-rollenwechsel-als-diagnose" class="nav-link" data-scroll-target="#übung-2b-rollenwechsel-als-diagnose">Übung 2B: Rollenwechsel als Diagnose</a></li>
   </ul></li>
-  <li><a href="#zero-shot-prompting" id="toc-zero-shot-prompting" class="nav-link" data-scroll-target="#zero-shot-prompting">3. Zero-shot Prompting</a>
-  <ul class="collapse">
+  <li><a href="#zero-shot-prompting" id="toc-zero-shot-prompting" class="nav-link" data-scroll-target="#zero-shot-prompting">3. Zero-shot Prompting</a></li>
+  <li><a href="#zero-shot-prompting-1" id="toc-zero-shot-prompting-1" class="nav-link" data-scroll-target="#zero-shot-prompting-1">Zero-shot Prompting</a></li>
   <li><a href="#ziel-2" id="toc-ziel-2" class="nav-link" data-scroll-target="#ziel-2">Ziel</a></li>
   <li><a href="#übung-3a-minimalparaphrase-zero-shot" id="toc-übung-3a-minimalparaphrase-zero-shot" class="nav-link" data-scroll-target="#übung-3a-minimalparaphrase-zero-shot">Übung 3A: Minimalparaphrase (Zero-shot)</a></li>
+  <li><a href="#hochladen-der-quelle" id="toc-hochladen-der-quelle" class="nav-link" data-scroll-target="#hochladen-der-quelle">Hochladen der Quelle</a></li>
   <li><a href="#übung-3b-drei-forschungsfragen-zero-shot" id="toc-übung-3b-drei-forschungsfragen-zero-shot" class="nav-link" data-scroll-target="#übung-3b-drei-forschungsfragen-zero-shot">Übung 3B: Drei Forschungsfragen (Zero-shot)</a></li>
-  </ul></li>
-  <li><a href="#few-shot-prompting" id="toc-few-shot-prompting" class="nav-link" data-scroll-target="#few-shot-prompting">4. Few-shot Prompting</a>
-  <ul class="collapse">
+  <li><a href="#few-shot-prompting" id="toc-few-shot-prompting" class="nav-link" data-scroll-target="#few-shot-prompting">4. Few-shot Prompting</a></li>
+  <li><a href="#few-shot-prompting-1" id="toc-few-shot-prompting-1" class="nav-link" data-scroll-target="#few-shot-prompting-1">Few-shot Prompting</a></li>
   <li><a href="#ziel-3" id="toc-ziel-3" class="nav-link" data-scroll-target="#ziel-3">Ziel</a></li>
   <li><a href="#übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung" id="toc-übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung" class="nav-link" data-scroll-target="#übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung">Übung 4A: Few-shot für Ebenen-Trennung (Dokumenttext/Edition/Schlussfolgerung)</a></li>
   <li><a href="#übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark" id="toc-übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark" class="nav-link" data-scroll-target="#übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark">Übung 4B: Few-shot für Forschungsfragen (schwach vs.&nbsp;stark)</a></li>
-  </ul></li>
-  <li><a href="#strukturierte-denkspur-chain-of-thought-prompting" id="toc-strukturierte-denkspur-chain-of-thought-prompting" class="nav-link" data-scroll-target="#strukturierte-denkspur-chain-of-thought-prompting">5. Strukturierte Denkspur (Chain-of-Thought Prompting)</a>
-  <ul class="collapse">
+  <li><a href="#strukturierte-denkspur-chain-of-thought-prompting" id="toc-strukturierte-denkspur-chain-of-thought-prompting" class="nav-link" data-scroll-target="#strukturierte-denkspur-chain-of-thought-prompting">5. Strukturierte Denkspur (Chain-of-Thought Prompting)</a></li>
+  <li><a href="#chain-of-thought-prompting" id="toc-chain-of-thought-prompting" class="nav-link" data-scroll-target="#chain-of-thought-prompting">Chain-of-Thought Prompting</a></li>
   <li><a href="#ziel-4" id="toc-ziel-4" class="nav-link" data-scroll-target="#ziel-4">Ziel</a></li>
   <li><a href="#übung-5a-argumentmapping-mit-zwischenschritten" id="toc-übung-5a-argumentmapping-mit-zwischenschritten" class="nav-link" data-scroll-target="#übung-5a-argumentmapping-mit-zwischenschritten">Übung 5A: Argumentmapping mit Zwischenschritten</a></li>
   <li><a href="#übung-5b-rechercheplan-als-pipeline" id="toc-übung-5b-rechercheplan-als-pipeline" class="nav-link" data-scroll-target="#übung-5b-rechercheplan-als-pipeline">Übung 5B: Rechercheplan als Pipeline</a></li>
-  </ul></li>
-  <li><a href="#iteratives-prompten" id="toc-iteratives-prompten" class="nav-link" data-scroll-target="#iteratives-prompten">6. Iteratives Prompten</a>
-  <ul class="collapse">
+  <li><a href="#iteratives-prompting" id="toc-iteratives-prompting" class="nav-link" data-scroll-target="#iteratives-prompting">6. Iteratives Prompting</a></li>
+  <li><a href="#iteratives-prompting-1" id="toc-iteratives-prompting-1" class="nav-link" data-scroll-target="#iteratives-prompting-1">Iteratives Prompting</a></li>
   <li><a href="#ziel-5" id="toc-ziel-5" class="nav-link" data-scroll-target="#ziel-5">Ziel</a></li>
   <li><a href="#übung-6a-generate-critique-revise-forschungsfrage" id="toc-übung-6a-generate-critique-revise-forschungsfrage" class="nav-link" data-scroll-target="#übung-6a-generate-critique-revise-forschungsfrage">Übung 6A: Generate → Critique → Revise (Forschungsfrage)</a></li>
-  <li><a href="#übung-6b-iteration-über-output-format-zitieren-zusammenfassen" id="toc-übung-6b-iteration-über-output-format-zitieren-zusammenfassen" class="nav-link" data-scroll-target="#übung-6b-iteration-über-output-format-zitieren-zusammenfassen">Übung 6B: Iteration über Output-Format (Zitieren / Zusammenfassen)</a></li>
-  </ul></li>
+  <li><a href="#übung-6b-iteration-über-antwort-format-zitieren-zusammenfassen" id="toc-übung-6b-iteration-über-antwort-format-zitieren-zusammenfassen" class="nav-link" data-scroll-target="#übung-6b-iteration-über-antwort-format-zitieren-zusammenfassen">Übung 6B: Iteration über Antwort-Format (Zitieren / Zusammenfassen)</a></li>
   <li><a href="#prompt-optimierung" id="toc-prompt-optimierung" class="nav-link" data-scroll-target="#prompt-optimierung">7. Prompt Optimierung</a>
   <ul class="collapse">
   <li><a href="#ziel-6" id="toc-ziel-6" class="nav-link" data-scroll-target="#ziel-6">Ziel</a></li>
@@ -306,7 +303,7 @@
 <h1 class="title">Prompt Engineering</h1>
 <p class="lead subtitle">Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin</p>
   <div class="quarto-categories">
-    <div class="quarto-category">KI</div>
+    <div class="quarto-category">KI &amp; Digitale Methoden</div>
   </div>
   </div>
 
@@ -343,7 +340,7 @@
     <div>
     <div class="quarto-title-meta-heading">Geändert</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">29. Dezember 2025</p>
+      <p class="date-modified">14. Januar 2026</p>
     </div>
   </div>
     
@@ -356,15 +353,22 @@
 
 <section id="überblick-und-didaktisches-ziel" class="level2">
 <h2 class="anchored" data-anchor-id="überblick-und-didaktisches-ziel">Überblick und didaktisches Ziel</h2>
-<p>Diese Übung macht Prompting <strong>als Methode</strong> sichtbar: Prompts sind hier nicht «Tricks», sondern <strong>Operationalisierungen</strong> historischer Arbeitsaufträge. Trainiert wird, wie Sie (a) Aufgaben sauber eingrenzen, (b) Output überprüfbar formatieren, (c) Fehlerquellen kontrollieren und (d) Ergebnisse <strong>reproduzierbar dokumentieren</strong>.</p>
-<p>Im Unterschied zu den thematischen Übungen (Forschungsfrage, Quellenkritik, Quellensuche, Literaturrecherche, Schreiben, Zitieren, Public History) fokussiert diese Einheit die <strong>gemeinsame Infrastruktur</strong>: Prompt-Design, Rollenwahl, Iteration und Optimierung.</p>
+<p>Diese Übung macht Prompting <strong>als Methode</strong> sichtbar: Prompts sind hier nicht «Tricks», sondern <strong>Operationalisierungen</strong> historischer Arbeitsaufträge.</p>
+<p>Trainiert wird, wie Sie</p>
+<ul>
+<li>Aufgaben sauber eingrenzen,</li>
+<li>Antwort überprüfbar formatieren,</li>
+<li>Fehlerquellen kontrollieren und</li>
+<li>Ergebnisse <strong>reproduzierbar dokumentieren</strong>.</li>
+</ul>
+<p>Im Unterschied zu den thematischen Übungen (<a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html">Forschungsfrage</a>, <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html">Literaturrecherche</a>, <a href="../../de/exercises/quellensuche-vorort-europarat-1963.html">Quellensuche</a>, <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a>, <a href="../../de/exercises/schreiben.html">Schreiben</a>, <a href="../../de/exercises/zitieren.html">Zitieren</a>, <a href="../../de/exercises/public-history.html">Public History</a>) fokussiert diese Einheit die <strong>gemeinsame Infrastruktur</strong>: Prompt-Design, Rollenwahl, Iteration und Optimierung.</p>
 <div class="callout callout-style-default callout-titled callout-important">
 <div class="d-flex align-content-center callout-header">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Wichtig</span>Grundregel: KI darf nichts «erfinden»
+<span class="screen-reader-only">Wichtig</span>Grundregel: KI als Hypothese
 </div>
 </div>
 <div class="callout-body callout-body-container">
@@ -376,63 +380,47 @@
 <h2 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h2>
 <ul>
 <li>Grundverständnis historischer Forschungsmethoden</li>
-<li>Zugriff auf ein LLM-Interface Ihrer Wahl</li>
-<li>(Empfohlen) Sie kennen bereits mindestens eine der Fallübungen, z. B.<br>
-<strong>Quellenkritik: Bundesrat und Europarat 1949</strong>, <strong>Formulieren einer historischen Forschungsfrage (Schweiz/Europarat)</strong> oder <strong>Literaturrecherche Sozialversicherung CH</strong>.</li>
 </ul>
 </section>
 <section id="lernziele" class="level2">
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
 <p>Nach Abschluss der Übung können Sie:</p>
 <ul>
-<li>Prompts <strong>strukturieren</strong> (Kontext, Input-Abgrenzung, Output-Format, Constraints, Prüfmodus),</li>
-<li>Rollen <strong>gezielt</strong> einsetzen (z. B. Quellenkritiker<em>in, Rechercheassistent</em>in, Devil’s Advocate, Lektor*in),</li>
+<li>Prompts <strong>strukturieren</strong> (strukturierter Kontext, Antwort-Format, Constraints, Prüfmodus),</li>
+<li>Rollen <strong>gezielt</strong> einsetzen (z. B. Quellenkritiker:in, Rechercheassistent:in, Devil’s Advocate, Lektor:in),</li>
 <li>Zero-shot und Few-shot Prompting <strong>situationsgerecht</strong> wählen,</li>
 <li>eine <strong>strukturierte Denkspur</strong> anfordern (Aufgabendecomposition, Zwischenprodukte, Self-Checks),</li>
-<li>iteratives Prompten als <strong>kontrollierten Workflow</strong> umsetzen (Generate → Critique → Revise → Verify),</li>
+<li>iteratives Prompting als <strong>kontrollierten Workflow</strong> umsetzen (Generate → Critique → Revise → Verify),</li>
 <li>Prompts anhand von <strong>Qualitätskriterien</strong> optimieren (Fehlerreduktion, Formatstabilität, Prüfbarkeit, Reproduzierbarkeit).</li>
 </ul>
 </section>
 <section id="arbeitsmodus-ki-protokoll-und-ab-testing" class="level2">
 <h2 class="anchored" data-anchor-id="arbeitsmodus-ki-protokoll-und-ab-testing">Arbeitsmodus: KI-Protokoll und A/B-Testing</h2>
 <p>Führen Sie ein kurzes Prompt-Protokoll (Audit Trail). Nutzen Sie es auch in den anderen Übungen.</p>
-<p><strong>Minimalvorlage (kopierbar):</strong></p>
-<table class="caption-top" style="width:100%">
-<colgroup>
-<col style="width:14%">
-<col style="width:14%">
-<col style="width:14%">
-<col style="width:14%">
-<col style="width:14%">
-<col style="width:14%">
-<col style="width:14%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Schritt</th>
-<th>Ziel</th>
-<th>Input (Material)</th>
-<th>Prompt (Kernausschnitt)</th>
-<th>Output (kurz)</th>
-<th>Prüfschritte</th>
-<th>Entscheidung</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-<p><strong>A/B-Testing (Minimum):</strong> Für jede Technik mindestens <strong>zwei Prompt-Varianten</strong> laufen lassen, dann vergleichen:<br>
-(1) Formatstabilität, (2) Übergriffigkeit (Spekulationen), (3) Anschlussfähigkeit an Ihre nächsten Arbeitsschritte.</p>
+<p><strong>Minimalvorlage:</strong></p>
+<ul>
+<li>Schritt</li>
+<li>Ziel</li>
+<li>Input (Material)</li>
+<li>Prompt (Kernausschnitt)</li>
+<li>Antwort (kurz)</li>
+<li>Prüfschritte</li>
+<li>Entscheidung</li>
+</ul>
+<p><strong>A/B-Testing (Minimum):</strong> Für jede Technik mindestens <strong>zwei Prompt-Varianten</strong> laufen lassen, dann vergleichen:</p>
+<ol type="1">
+<li>Formatstabilität,</li>
+<li>Übergriffigkeit (Spekulationen)</li>
+<li>Anschlussfähigkeit an Ihre nächsten Arbeitsschritte.</li>
+</ol>
 </section>
 <section id="fallpaket-für-alle-übungen" class="level2">
 <h2 class="anchored" data-anchor-id="fallpaket-für-alle-übungen">Fallpaket für alle Übungen</h2>
 <p>Verwenden Sie – wie in den anderen Übungen – ein <strong>konkretes, kontrollierbares Materialpaket</strong>:</p>
 <ol type="1">
-<li><strong>Primärquelle (empfohlen):</strong> Aktennotiz zu <em>Schweiz und Europarat</em> (Dodis, Bern, 7.7.1949, Petitpierre/Hansen; vgl. Übung <em>Quellenkritik</em>).<br>
-</li>
-<li><strong>Kontextressource (empfohlen):</strong> Dodis-Dossier <em>Die Schweiz und der Europarat</em> bzw. <em>Beitritt 1963</em> (vgl. Übungen <em>Forschungsfrage</em> / <em>Quellensuche</em>).<br>
-</li>
-<li><strong>Optionale Sekundärquelle:</strong> ein Artikel/Monografie aus Ihrer Literaturrecherche (vgl. Übung <em>Literaturrecherche</em> oder <em>Zitieren</em>).</li>
+<li><strong>Primärquelle</strong> siehe Übung <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a></li>
+<li><strong>Kontextressource</strong> siehe Übung <a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html">Forschungsfrage</a> oder <a href="../../de/exercises/quellensuche-vorort-europarat-1963.html">Quellensuche</a>.</li>
+<li><strong>Optionale Sekundärquelle</strong> siehe Übung <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html">Literaturrecherche</a> oder <a href="../../de/exercises/zitieren.html">Zitieren</a>.</li>
 </ol>
 <div class="callout callout-style-default callout-titled callout-tip">
 <div class="d-flex align-content-center callout-header">
@@ -440,172 +428,212 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Reproduzierbare Input-Abgrenzung
+<span class="screen-reader-only">Tipp</span>Reproduzierbare Strukturierung
 </div>
 </div>
 <div class="callout-body callout-body-container">
 <p>Wenn das Tool keinen stabilen Dokumentzugriff hat: kopieren Sie (a) Textauszug und (b) Metadaten in den Prompt und grenzen beides visuell ab, z. B. mit drei Anführungszeichen.</p>
 <p>Beispiel-Layout:</p>
-<p>““” DOKUMENTTEXT (Auszug/ganzer Text) ““”</p>
-<p>““” METADATEN (Titel, Datum, Ort, Autor, Edition/URL, Archivsignatur, Zugriffsdatum) ““”</p>
-<p>AUFGABE</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>DOKUMENTTEXT (Auszug/ganzer Text)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>METADATEN (Titel, Datum, Ort, Autor, Edition/URL, Archivsignatur, Zugriffsdatum)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>AUFGABE</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
+</section>
+<section id="session-neustart-als-kontrollinstrument" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="session-neustart-als-kontrollinstrument">Session-Neustart als Kontrollinstrument</h2>
+<p>Für jede neue Aufgabe empfiehlt sich eine <strong>neue Session</strong>.</p>
+<p>Ein Session-Neustart reduziert implizite Kontextverschleppung:<br>
+Das Modell greift dann <strong>nicht mehr auf frühere Aufgaben, Beispiele oder Rollenannahmen</strong> zurück, sondern arbeitet ausschliesslich mit dem aktuellen Material und Auftrag.</p>
+<p>Nutzen Sie einen Neustart insbesondere, wenn:</p>
+<ul>
+<li>Antworten wiederholt falsche Bezüge herstellen,</li>
+<li>frühere Rollen oder Beispiele «durchsickern»,</li>
+<li>unklare Annahmen aus vorherigen Schritten fortgeschrieben werden.</li>
+</ul>
+<p><strong>Merksatz:</strong><br>
+Eine neue Session erzwingt erneute Materialbindung und erhöht die Prüfbarkeit.</p>
 </section>
 <section id="prompt-basics" class="level2">
 <h2 class="anchored" data-anchor-id="prompt-basics">1. Prompt Basics</h2>
 <section id="ziel" class="level3">
 <h3 class="anchored" data-anchor-id="ziel">Ziel</h3>
-<p>Eine unpräzise Anfrage so zu reformulieren, dass Output <strong>prüfbar</strong>, <strong>formatstabil</strong> und <strong>quellen-/inputgebunden</strong> wird.</p>
+<p>Eine unpräzise Anfrage so zu reformulieren, dass Antwort <strong>prüfbar</strong>, <strong>formatstabil</strong> und <strong>quellen-/inputgebunden</strong> wird.</p>
 </section>
-<section id="übung-1a-von-vage-zu-operationalisiert" class="level3">
-<h3 class="anchored" data-anchor-id="übung-1a-von-vage-zu-operationalisiert">Übung 1A: Von «vage» zu «operationalisiert»</h3>
+<section id="übung-von-vage-zu-operationalisiert" class="level3">
+<h3 class="anchored" data-anchor-id="übung-von-vage-zu-operationalisiert">Übung: Von «vage» zu «operationalisiert»</h3>
 <p><strong>Vage Anfrage (absichtlich schlecht):</strong></p>
-<blockquote class="blockquote">
-<p>«Fasse das Dokument zusammen und sag mir, was wichtig ist.»</p>
-</blockquote>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Fasse das Dokument zusammen und sag mir, was wichtig ist.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Aufgabe:</strong> Erstellen Sie daraus zwei saubere Prompts:</p>
 <ul>
-<li><strong>Variante A (minimal):</strong> nur Ziel + Output-Format.</li>
-<li><strong>Variante B (robust):</strong> Ziel + Kontext + Input-Abgrenzung + Constraints + Output-Format + Self-Check.</li>
+<li><strong>Variante A (minimal):</strong> nur Ziel + Antwort-Format.</li>
+<li><strong>Variante B (robust):</strong> Ziel + strukturierter Kontext + Constraints + Antwort-Format + Self-Check.</li>
 </ul>
-<p>Orientieren Sie sich am Setup aus der Übung <em>Quellenkritik</em> (Minimalparaphrase, max. 4 Sätze).</p>
+<p>Orientieren Sie sich am Setup aus der Übung <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a> (Minimalparaphrase, max. 4 Sätze).</p>
 <p><strong>Prompt-Gerüst (robust, adaptierbar):</strong></p>
-<pre class="text"><code>Aufgabe: [konkret, 1–2 Sätze]
-Kontext: [Seminar/Fragestellung/Zeitraum]
-Material: [Dokumenttext + Metadaten, klar abgegrenzt]
-Regeln:
-- Arbeite nur mit dem Material.
-- Keine Ergänzungen aus Allgemeinwissen.
-- Markiere Unsicherheiten explizit.
-Output-Format:
-1) Minimalparaphrase (max. 4 Sätze)
-2) 5 Schlüsselbegriffe (aus dem Text)
-3) 3 offene Fragen (was bleibt unklar?)
-Self-Check:
-- Liste 3 Stellen, wo du versucht wärst zu spekulieren, und erkläre kurz, warum du es nicht tust.</code></pre>
-</section>
-<section id="übung-1b-output-formate-als-prüfwerkzeug" class="level3">
-<h3 class="anchored" data-anchor-id="übung-1b-output-formate-als-prüfwerkzeug">Übung 1B: Output-Formate als Prüfwerkzeug</h3>
-<p>Nehmen Sie Ihren Prompt aus 1A/1B und erzwingen Sie <strong>zwei alternative Formate</strong>:</p>
-<ul>
-<li><strong>Tabelle</strong> (Feld → Inhalt → Evidenzstelle),</li>
-<li><strong>Claim-Liste</strong> (C1…Cn) mit Evidenzmarkern.</li>
-</ul>
-<p><strong>Reflexion:</strong> Welche Form erleichtert Gegenprüfung, welche erleichtert Weiterarbeit (z. B. Argumentmap, Exzerpt, Schreibplan)?</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="an">Aufgabe:</span><span class="co"> [konkret, 1–2 Sätze]</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">Kontext:</span><span class="co"> [Seminar/Fragestellung/Zeitraum]</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">Material:</span><span class="co"> [Dokumenttext + Metadaten, klar abgegrenzt]</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">Regeln:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Arbeite nur mit dem Material.</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keine Ergänzungen aus Allgemeinwissen.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Markiere Unsicherheiten explizit.</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>Ausgabe-Format:</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>1) Minimalparaphrase (max. 4 Sätze)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>2) 5 Schlüsselbegriffe (aus dem Text)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>3) 3 offene Fragen (was bleibt unklar?)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>Self-Check:</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Liste 3 Stellen, wo du versucht wärst zu spekulieren, und erkläre kurz, warum du es nicht tust.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="rollen" class="level2">
 <h2 class="anchored" data-anchor-id="rollen">2. Rollen</h2>
 <section id="ziel-1" class="level3">
 <h3 class="anchored" data-anchor-id="ziel-1">Ziel</h3>
-<p>Rollen nicht als «Theater», sondern als <strong>Methoden-Constraints</strong> nutzen: jede Rolle erzwingt andere Heuristiken, Blindstellen und Prüfmodi.</p>
+<p>Rollen als <strong>Methoden-Constraints</strong> nutzen: jede Rolle erzwingt andere Heuristiken, Blindstellen und Prüfmodi.</p>
 </section>
 <section id="übung-2a-eine-aufgabe-drei-rollen" class="level3">
 <h3 class="anchored" data-anchor-id="übung-2a-eine-aufgabe-drei-rollen">Übung 2A: Eine Aufgabe, drei Rollen</h3>
 <p>Wählen Sie <strong>eine</strong> Aufgabe aus den anderen Übungen (z. B. Forschungsfrage entwickeln; externe Quellenkritik; Suchbegriffe für Kataloge; Blog-Briefing).</p>
 <p>Lassen Sie dieselbe Aufgabe in drei Rollen bearbeiten:</p>
 <ol type="1">
-<li>**Quellenkritiker*in** (textnah, Ebenen trennen) – vgl. <em>Quellenkritik</em>.</li>
-<li><strong>Devil’s Advocate</strong> (Stress-Tests, Gegenargumente) – vgl. <em>Schreiben</em>.</li>
-<li>**Strukturierer*in/Outliner** (Arbeitsplan, Zwischenprodukte) – vgl. <em>Public History</em> oder <em>Schreiben</em>.</li>
+<li><strong>Quellenkritiker:in</strong> (textnah, Ebenen trennen) – siehe <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a>.</li>
+<li><strong>Devil’s Advocate</strong> (Stress-Tests, Gegenargumente) – siehe <a href="../../de/exercises/schreiben.html">Schreiben</a>.</li>
+<li><strong>Strukturierer:in/Outliner</strong> (Arbeitsplan, Zwischenprodukte) – siehe <a href="../../de/exercises/public-history.html">Public History</a> oder <a href="../../de/exercises/schreiben.html">Schreiben</a>.</li>
 </ol>
-<p>**Rollen-Prompt (Beispiel: Quellenkritiker*in, stark begrenzend):**</p>
-<pre class="text"><code>Rolle: Quellenkritiker*in.
-Aufgabe: Analysiere das Material ausschliesslich als Quelle (externe + interne Kritik).
-Wichtig:
-- Trenne strikt: [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
-- Keine historischen Bewertungen.
-- Jede Schlussfolgerung braucht eine Text- oder Metadatenstütze.
-Output:
-1) Ebenen-Tabelle
-2) 5 prüfbare Authentizitäts-/Überlieferungsfragen
-3) 5 Bias-/Sprechpositions-Hypothesen (als Hypothesen markieren)</code></pre>
+<p><strong>Rollen-Prompt (Beispiel: Quellenkritiker:in, stark begrenzend):</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Quellenkritiker:in.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">Aufgabe:</span><span class="co"> Analysiere das Material ausschliesslich als Quelle (externe + interne Kritik).</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">Wichtig:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Trenne strikt: <span class="co">[</span><span class="ot">Dokumenttext</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Edition/Metadaten</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Schlussfolgerung</span><span class="co">]</span>.</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keine historischen Bewertungen.</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Jede Schlussfolgerung braucht eine Text- oder Metadatenstütze.</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>Ausgabe:</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>1) Ebenen-Tabelle</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>2) 5 prüfbare Authentizitäts-/Überlieferungsfragen</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>3) 5 Bias-/Sprechpositions-Hypothesen (als Hypothesen markieren)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Rollen-Prompt (Beispiel: Devil’s Advocate, aus der Schreibübung abgeleitet):</strong></p>
-<pre class="text"><code>Rolle: Devil’s Advocate.
-Input: Meine Arbeitshypothesen (H1–H3) + Materialhinweise.
-Aufgabe:
-- Nenne zu jeder Hypothese die verletzliche Annahme.
-- Formuliere einen Stress-Test (welcher Befund würde kippen?).
-- Gib 1 alternative Deutung (max. 2 Sätze).
-Keine externen Fakten.</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rolle:</span><span class="co"> Devil’s Advocate.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">Input:</span><span class="co"> Meine Arbeitshypothesen (H1–H3) + Materialhinweise.</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">Aufgabe:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nenne zu jeder Hypothese die diskutierbare Annahme.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Formuliere einen Stress-Test (welcher Befund würde kippen?).</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gib 1 alternative Deutung (max. 2 Sätze).</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>Keine externen Fakten.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="übung-2b-rollenwechsel-als-diagnose" class="level3">
 <h3 class="anchored" data-anchor-id="übung-2b-rollenwechsel-als-diagnose">Übung 2B: Rollenwechsel als Diagnose</h3>
 <p>Nehmen Sie die <strong>beste</strong> Antwort aus 2A und lassen Sie sie durch eine zweite Rolle <strong>prüfen</strong>, nicht neu schreiben:</p>
 <ul>
-<li>Rolle «Logik-Prüfer<em>in» (vgl.</em> Schreiben*): Konsistenz, Sprünge, fehlende Evidenzstellen.</li>
-<li>Rolle «Katalog-Assistent<em>in» (vgl.</em> Literaturrecherche*): übersetzt in Suchstrings/Indikatoren.</li>
+<li>Rolle «Logik-Prüfer:in» (vgl.* Schreiben*): Konsistenz, Sprünge, fehlende Evidenzstellen.</li>
+<li>Rolle «Katalog-Assistent:in» (vgl.* Literaturrecherche*): übersetzt in Suchstrings/Indikatoren.</li>
 </ul>
 </section>
 </section>
 <section id="zero-shot-prompting" class="level2">
 <h2 class="anchored" data-anchor-id="zero-shot-prompting">3. Zero-shot Prompting</h2>
+</section>
+<section id="zero-shot-prompting-1" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="zero-shot-prompting-1">Zero-shot Prompting</h2>
+<p>Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur Auftrag, Material und Constraints.</p>
+</section>
 <section id="ziel-2" class="level3">
 <h3 class="anchored" data-anchor-id="ziel-2">Ziel</h3>
 <p>Zero-shot als <strong>Baseline</strong> einsetzen: schnell, aber fehleranfällig. Sie lernen, <em>wo</em> Zero-shot reicht und <em>wo</em> er systematisch ausweicht.</p>
 </section>
 <section id="übung-3a-minimalparaphrase-zero-shot" class="level3">
 <h3 class="anchored" data-anchor-id="übung-3a-minimalparaphrase-zero-shot">Übung 3A: Minimalparaphrase (Zero-shot)</h3>
-<p>Nutzen Sie die Aufgabe aus <em>Quellenkritik</em> (Minimalparaphrase, max. 4 Sätze) als Zero-shot.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wer spricht/handelt?</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist der Anlass?</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist die zentrale Aussage/Entscheidung?</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Welche Konsequenz wird angedeutet?</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>Maximal 4 Sätze. Keine Interpretation.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Diagnose:</strong> Markieren Sie im Output: - Stellen, die nicht eindeutig aus dem Text folgen, - implizite Kontextannahmen (wo «weiss» das Modell mehr als Ihr Input?).</p>
+<p>Nutzen Sie die Aufgabe aus <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a> (Minimalparaphrase, max. 4 Sätze) als Zero-shot.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wer spricht/handelt?</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist der Anlass?</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist die zentrale Aussage/Entscheidung?</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Welche Konsequenz wird angedeutet?</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>Maximal 4 Sätze. Keine Interpretation.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
+<section id="hochladen-der-quelle" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="hochladen-der-quelle">Hochladen der Quelle</h2>
+<p>Laden Sie das Dokument als PDF Datei hoch zusammen mit dem Prompt. Falls das nicht möglich ist, kopieren sie den Inhalt des Dokuments an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch “““. Stellen Sie darüber hinaus sicher, dass die KI Zugriff auf die Metadaten hat (entweder durch Online-Zugriff oder indem Sie die Metadaten zur Verfügung stellen). Beispiel:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>INHALT DOKUMENT</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>METADATEN DOKUMENT (inkl. URL)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>IHR PROMPT</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<p><strong>Diagnose:</strong></p>
+<p>Markieren Sie in der Antwort:</p>
+<ul>
+<li>Stellen, die nicht eindeutig aus dem Text folgen,</li>
+<li>implizite Kontextannahmen (wo «weiss» das Modell mehr als Ihr Input?).</li>
+</ul>
 <section id="übung-3b-drei-forschungsfragen-zero-shot" class="level3">
 <h3 class="anchored" data-anchor-id="übung-3b-drei-forschungsfragen-zero-shot">Übung 3B: Drei Forschungsfragen (Zero-shot)</h3>
-<p>Nutzen Sie die Vorlage aus der Übung <em>Forschungsfrage</em>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Gib mir drei mögliche historische Forschungsfragen, die sich aus der Aktennotiz ableiten lassen.</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Jede Frage muss (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch sein.</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Nutzen Sie die Vorlage aus der Übung <a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html">Forschungsfrage</a>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Gib mir drei mögliche historische Forschungsfragen, die sich aus der Aktennotiz ableiten lassen.</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Jede Frage muss (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch sein.</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Reflexion:</strong> Welche Fragen sind (i) wirklich quellengebunden, welche (ii) «generische» Fragen, die auf viele Fälle passen?</p>
-</section>
 </section>
 <section id="few-shot-prompting" class="level2">
 <h2 class="anchored" data-anchor-id="few-shot-prompting">4. Few-shot Prompting</h2>
+</section>
+<section id="few-shot-prompting-1" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="few-shot-prompting-1">Few-shot Prompting</h2>
+<p>Few-shot Prompting heisst, dass das Modell explizite Beispiele erhält, was oft zu besseren Antworten führt.</p>
+</section>
 <section id="ziel-3" class="level3">
 <h3 class="anchored" data-anchor-id="ziel-3">Ziel</h3>
-<p>Few-shot nutzt Beispiele, um <strong>Kategorien</strong>, <strong>Output-Formate</strong> und <strong>Qualitätsmassstäbe</strong> zu stabilisieren.</p>
+<p>Few-shot nutzt Beispiele, um <strong>Kategorien</strong>, <strong>Antwort-Formate</strong> und <strong>Qualitätsmassstäbe</strong> zu stabilisieren.</p>
 </section>
 <section id="übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung" class="level3">
 <h3 class="anchored" data-anchor-id="übung-4a-few-shot-für-ebenen-trennung-dokumenttexteditionschlussfolgerung">Übung 4A: Few-shot für Ebenen-Trennung (Dokumenttext/Edition/Schlussfolgerung)</h3>
 <p>Erstellen Sie 3–5 kurze Beispielsätze (dürfen <strong>fiktiv</strong>, aber historisch plausibel sein) und labeln Sie sie.</p>
-<p><strong>Beispiel (fiktiv, nur als Trainingsdaten):</strong></p>
-<pre class="text"><code>Beispiele (Input → Label):
-1) "Ort: Bern; Datum: 7.7.1949." → [Edition/Metadaten]
-2) "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → [Dokumenttext]
-3) "Daraus folgt, dass die Schweiz grundsätzlich anti-europäisch war." → [Schlussfolgerung] (zu stark; müsste geprüft/abgeschwächt werden)
-
-Aufgabe:
-Labeln Sie nun die folgenden 10 Sätze aus meinem Material als
-[Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
-Geben Sie bei jedem Label 1 Evidenzhinweis (Zitatfragment/Metadatenfeld) oder 'keine Stütze'.
-Material: ...</code></pre>
-<p><strong>Arbeitsauftrag:</strong> Übernehmen Sie danach den Few-shot-Block in Ihren Prompt aus <em>Quellenkritik</em> («Externe Kritik mittels KI») und prüfen Sie, ob die Labels zuverlässiger werden.</p>
+<p><strong>Beispiel:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Beispiele (Input → Label):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>1) "Ort: Bern; Datum: 7.7.1949." → <span class="co">[</span><span class="ot">Edition/Metadaten</span><span class="co">]</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>2) "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → <span class="co">[</span><span class="ot">Dokumenttext</span><span class="co">]</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>3) "Daraus folgt, dass die Schweiz grundsätzlich anti-europäisch war." → <span class="co">[</span><span class="ot">Schlussfolgerung</span><span class="co">]</span> (zu stark; müsste geprüft/abgeschwächt werden)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>Aufgabe:</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>Labeln Sie nun die folgenden 10 Sätze aus meinem Material als</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Dokumenttext</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Edition/Metadaten</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Schlussfolgerung</span><span class="co">]</span>.</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>Geben Sie bei jedem Label 1 Evidenzhinweis (Zitatfragment/Metadatenfeld) oder 'keine Stütze'.</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>Material: ...</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Arbeitsauftrag:</strong> Übernehmen Sie danach den Few-shot-Block in Ihren Prompt aus der Übung <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a> und prüfen Sie, ob die Labels zuverlässiger werden.</p>
 </section>
 <section id="übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark" class="level3">
 <h3 class="anchored" data-anchor-id="übung-4b-few-shot-für-forschungsfragen-schwach-vs.-stark">Übung 4B: Few-shot für Forschungsfragen (schwach vs.&nbsp;stark)</h3>
-<p>Nehmen Sie 2 schwache und 2 starke Fragen (aus Ihrer Übung <em>Forschungsfrage</em> oder aus dem Seminar) und geben Sie sie als Beispiele mit kurzem Kommentar ein.</p>
+<p>Nehmen Sie 2 schwache und 2 starke Fragen (aus Ihrer Übung <a href="../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.html">Forschungsfrage</a> oder aus dem Seminar) und geben Sie sie als Beispiele mit kurzem Kommentar ein.</p>
 <p><strong>Gerüst:</strong></p>
-<pre class="text"><code>Beispiele (Schwach/Stark):
-Schwach: "Warum trat die Schweiz dem Europarat bei?" → zu breit, teleologisch, unklare Evidenzbasis.
-Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argument für/gegen eine institutionelle Annäherung an den Europarat operationalisiert?" → klarer Operator, Zeitraum, Quellennähe.
-
-Aufgabe:
-Formuliere 3 neue Forschungsfragen im Stil der starken Beispiele.
-Zu jeder Frage:
-- Zeitraum
-- zentrale Operatorbegriffe (definieren!)
-- erwartete Quellengattungen
-- 1 Gegenprobe (welche Quelle könnte widersprechen?)</code></pre>
-</section>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Beispiele (Schwach/Stark):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Schwach: "Warum trat die Schweiz dem Europarat bei?" → zu breit, teleologisch, unklare Evidenzbasis.</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argument für/gegen eine institutionelle Annäherung an den Europarat operationalisiert?" → klarer Operator, Zeitraum, Quellennähe.</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>Aufgabe:</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>Formuliere 3 neue Forschungsfragen im Stil der starken Beispiele.</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>Zu jeder Frage:</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Zeitraum</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>zentrale Operatorbegriffe (definieren!)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>erwartete Quellengattungen</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1 Gegenprobe (welche Quelle könnte widersprechen?)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="strukturierte-denkspur-chain-of-thought-prompting" class="level2">
 <h2 class="anchored" data-anchor-id="strukturierte-denkspur-chain-of-thought-prompting">5. Strukturierte Denkspur (Chain-of-Thought Prompting)</h2>
+</section>
+<section id="chain-of-thought-prompting" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="chain-of-thought-prompting">Chain-of-Thought Prompting</h2>
+<p>Chain-of-Thought Prompting bezeichnet ein Vorgehen, bei dem das Modell eine <strong>komplexe Aufgabe in explizite Zwischenschritte zerlegt</strong> (z. B. Extraktion → Ordnung → Bewertung → Ergebnis) und diese Schritte <strong>sichtbar ausgibt</strong>.</p>
+</section>
 <section id="ziel-4" class="level3">
 <h3 class="anchored" data-anchor-id="ziel-4">Ziel</h3>
 <p>Komplexe Aufgaben in <strong>Zwischenprodukte</strong> zerlegen (Decomposition) und einen <strong>Self-Check</strong> erzwingen. Entscheidend ist nicht «lange Begründung», sondern <strong>prüfbare Zwischenschritte</strong>.</p>
@@ -625,36 +653,40 @@ Zu jeder Frage:
 </section>
 <section id="übung-5a-argumentmapping-mit-zwischenschritten" class="level3">
 <h3 class="anchored" data-anchor-id="übung-5a-argumentmapping-mit-zwischenschritten">Übung 5A: Argumentmapping mit Zwischenschritten</h3>
-<p>Nutzen Sie das Argumentmapping aus der Übung <em>Quellenkritik</em> (Claim/Begründung/Voraussetzung/Implikation), aber erzwingen Sie Schrittlogik:</p>
-<pre class="text"><code>Aufgabe: Erzeuge ein Argumentmapping zu den Passagen, die Neutralität/Vereinbarkeit/Entscheidungsprozess betreffen.
-
-Vorgehen (sichtbar ausgeben):
-1) Extrahiere relevante Textsegmente (max. 5 kurze Zitatfragmente).
-2) Formuliere pro Segment ein Claim/Warrant/Assumption/Implication (stichwortartig).
-3) Self-Check: Nenne 3 Stellen, wo der Sprung von Text → Interpretation heikel ist, und markiere sie als [Spekulation].
-
-Regeln:
-- Nutze nur Dokumenttext.
-- Keine zusätzlichen Fakten.
-Output: Markdown-Liste.
-Material: ...</code></pre>
+<p>Nutzen Sie das Argumentmapping aus der Übung <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">Quellenkritik</a> (Claim/Begründung/Voraussetzung/Implikation), aber erzwingen Sie Schrittlogik:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="an">Aufgabe:</span><span class="co"> Erzeuge ein Argumentmapping zu den Passagen, die Neutralität/Vereinbarkeit/Entscheidungsprozess betreffen.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>Vorgehen (sichtbar ausgeben):</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>1) Extrahiere relevante Textsegmente (max. 5 kurze Zitatfragmente).</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>2) Formuliere pro Segment ein Claim/Warrant/Assumption/Implication (stichwortartig).</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>3) Self-Check: Nenne 3 Stellen, wo der Sprung von Text → Interpretation heikel ist, und markiere sie als <span class="co">[</span><span class="ot">Spekulation</span><span class="co">]</span>.</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>Regeln:</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nutze nur Dokumenttext.</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keine zusätzlichen Fakten.</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>Antwort: Markdown-Liste.</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>Material: ...</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="übung-5b-rechercheplan-als-pipeline" class="level3">
 <h3 class="anchored" data-anchor-id="übung-5b-rechercheplan-als-pipeline">Übung 5B: Rechercheplan als Pipeline</h3>
-<p>Übertragen Sie die Struktur aus <em>Quellensuche vor Ort</em> (Teilfragen → Quellentypen → Suchorte → Suchstrings) in eine explizite Pipeline:</p>
-<pre class="text"><code>Ziel: Erstelle einen Rechercheplan zur Frage: [einfügen].
-
-Schritte:
-1) Zerlege in 4–6 Teilfragen (prüfbar).
-2) Ordne pro Teilfrage 2–3 Quellentypen + Arenen zu.
-3) Leite pro Teilfrage 2 Suchstrings ab (DE/FR/EN; Boolean).
-4) Self-Check: Liste 5 typische Fehler (Anachronismen, erfundene Signaturen, zu breite Begriffe ...) und wie du sie vermeidest.
-
-Output: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).</code></pre>
+<p>Übertragen Sie die Struktur aus <a href="../../de/exercises/quellensuche-vorort-europarat-1963.html">Quellensuche</a> (Teilfragen → Quellentypen → Suchorte → Suchstrings) in eine explizite Pipeline:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="an">Ziel:</span><span class="co"> Erstelle einen Rechercheplan zur Frage: [einfügen].</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>Schritte:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>1) Zerlege in 4–6 Teilfragen (prüfbar).</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>2) Ordne pro Teilfrage 2–3 Quellentypen + Arenen zu.</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>3) Leite pro Teilfrage 2 Suchstrings ab (DE/FR/EN; Boolean).</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>4) Self-Check: Liste 5 typische Fehler (Anachronismen, erfundene Signaturen, zu breite Begriffe ...) und wie du sie vermeidest.</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>Antwort: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
+<section id="iteratives-prompting" class="level2">
+<h2 class="anchored" data-anchor-id="iteratives-prompting">6. Iteratives Prompting</h2>
 </section>
-<section id="iteratives-prompten" class="level2">
-<h2 class="anchored" data-anchor-id="iteratives-prompten">6. Iteratives Prompten</h2>
+<section id="iteratives-prompting-1" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="iteratives-prompting-1">Iteratives Prompting</h2>
+<p>Iteratives Prompting bezeichnet einen <strong>kontrollierten Arbeitszyklus</strong>, bei dem KI-Antworten schrittweise verbessert werden, indem jede Ausgabe <strong>gezielt kritisiert und revidiert</strong> wird.</p>
+</section>
 <section id="ziel-5" class="level3">
 <h3 class="anchored" data-anchor-id="ziel-5">Ziel</h3>
 <p>Iteration als <strong>kontrollierte Revision</strong>: Sie bauen nicht «mehr Text», sondern verbessern Zielpräzision, Evidenzdisziplin und Format.</p>
@@ -669,24 +701,23 @@ Output: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).</code></p
 <li><strong>Revise (v2):</strong> Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.</li>
 </ol>
 <p><strong>Critique-Prompt (Vorlage):</strong></p>
-<pre class="text"><code>Hier ist Output v1: [einfügen].
-Aufgabe: Kritisiere claim-by-claim:
-- Was ist zu breit/teleologisch?
-- Wo fehlen Operatorbegriffe/Definitionen?
-- Wo ist die Evidenzbasis unklar?
-Gib danach eine revidierte Version v2 (max. 3 Fragen) + eine Änderungslogik (max. 6 Stichpunkte).
-Keine neuen Fakten.</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="an">Hier ist Antwort v1:</span><span class="co"> [einfügen].</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="an">Aufgabe:</span><span class="co"> Kritisiere claim-by-claim:</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Was ist zu breit/teleologisch?</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wo fehlen Operatorbegriffe/Definitionen?</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wo ist die Evidenzbasis unklar?</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>Gib danach eine revidierte Version v2 (max. 3 Fragen) + eine Änderungslogik (max. 6 Stichpunkte).</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>Keine neuen Fakten.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="übung-6b-iteration-über-output-format-zitieren-zusammenfassen" class="level3">
-<h3 class="anchored" data-anchor-id="übung-6b-iteration-über-output-format-zitieren-zusammenfassen">Übung 6B: Iteration über Output-Format (Zitieren / Zusammenfassen)</h3>
+<section id="übung-6b-iteration-über-antwort-format-zitieren-zusammenfassen" class="level3">
+<h3 class="anchored" data-anchor-id="übung-6b-iteration-über-antwort-format-zitieren-zusammenfassen">Übung 6B: Iteration über Antwort-Format (Zitieren / Zusammenfassen)</h3>
 <p>Nehmen Sie die Übung <em>Zitieren</em> und erzwingen Sie eine zweistufige Ausgabe:</p>
 <ol type="1">
 <li>Extraktion strukturierter Metadaten (Felder),<br>
 </li>
 <li>erst dann Chicago-Zitat + Zotero-Importformat.</li>
 </ol>
-<p><strong>Optimierungsfrage:</strong> Verbessert die Zweistufigkeit Fehlerdiagnose (z. B. fehlende Seitenzahlen, falsche Herausgeber*innen)?</p>
-</section>
+<p><strong>Optimierungsfrage:</strong> Verbessert die Zweistufigkeit Fehlerdiagnose (z. B. fehlende Seitenzahlen, falsche Herausgeber:innen)?</p>
 </section>
 <section id="prompt-optimierung" class="level2">
 <h2 class="anchored" data-anchor-id="prompt-optimierung">7. Prompt Optimierung</h2>
@@ -702,23 +733,23 @@ Keine neuen Fakten.</code></pre>
 <li><strong>Ebenen-Trennung</strong> (Text vs.&nbsp;Metadaten vs.&nbsp;Schlussfolgerung)</li>
 <li><strong>Formatstabilität</strong> (liefert, was gefordert ist, ohne Ausweichen)</li>
 <li><strong>Fehlertransparenz</strong> (markiert Unsicherheiten)</li>
-<li><strong>Anschlussfähigkeit</strong> (Output ist direkt weiterverwendbar, z. B. für Exzerpt/Gliederung/Recherchelog)</li>
+<li><strong>Anschlussfähigkeit</strong> (Antwort ist direkt weiterverwendbar, z. B. für Exzerpt/Gliederung/Recherchelog)</li>
 </ol>
 </section>
 <section id="übung-7a-prompt-härten-literaturrecherche" class="level3">
 <h3 class="anchored" data-anchor-id="übung-7a-prompt-härten-literaturrecherche">Übung 7A: Prompt «härten» (Literaturrecherche)</h3>
-<p>Nehmen Sie einen naiven Literaturprompt («Nenne zentrale Literatur zu X») und optimieren Sie ihn so, dass er als <strong>Rechercheassistenz</strong> taugt (nicht als Quellenproduzent). Orientierung: Übung <em>Literaturrecherche</em> («Keine erfundenen Titel; keine vorgetäuschte Katalogkenntnis; Unsicherheiten markieren»).</p>
+<p>Nehmen Sie einen naiven Literaturprompt («Nenne zentrale Literatur zu X») und optimieren Sie ihn so, dass er als <strong>Rechercheassistenz</strong> taugt (nicht als Quellenproduzent). Orientierung: Übung <a href="../../de/exercises/literaturrecherche-sozialversicherung-ch.html">Literaturrecherche</a> («Keine erfundenen Titel; keine vorgetäuschte Katalogkenntnis; Unsicherheiten markieren»).</p>
 <p><strong>Optimierter Prompt (Gerüst):</strong></p>
-<pre class="text"><code>Du bist historischer Rechercheassistent.
-Ziel: Startkorpus für [Thema/Zeitraum].
-Regeln:
-- Erfinde keine Titel/Autor:innen.
-- Gib keine Behauptungen über Katalogabdeckung.
-- Liefere stattdessen: Suchstrategien, Suchstrings, erwartbare Literaturtypen, und Hinweise auf Prüfschritte.
-Output:
-1) 8 Suchstrings (DE/FR/EN) mit kurzer Begründung
-2) 5 erwartbare Literaturtypen + wo man sie typischerweise findet
-3) 6 Prüfschritte (wie ich Treffer verifiziere, exportiere, dokumentiere)</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>Du bist historischer Rechercheassistent.</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>Ziel: Startkorpus für <span class="co">[</span><span class="ot">Thema/Zeitraum</span><span class="co">]</span>.</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>Regeln:</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Erfinde keine Titel/Autor:innen.</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gib keine Behauptungen über Katalogabdeckung.</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Liefere stattdessen: Suchstrategien, Suchstrings, erwartbare Literaturtypen, und Hinweise auf Prüfschritte.</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>Antwort:</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>1) 8 Suchstrings (DE/FR/EN) mit kurzer Begründung</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>2) 5 erwartbare Literaturtypen + wo man sie typischerweise findet</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>3) 6 Prüfschritte (wie ich Treffer verifiziere, exportiere, dokumentiere)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="übung-7b-prompt-optimierung-als-fehlerbudget" class="level3">
 <h3 class="anchored" data-anchor-id="übung-7b-prompt-optimierung-als-fehlerbudget">Übung 7B: Prompt-Optimierung als «Fehlerbudget»</h3>
@@ -731,21 +762,21 @@ Output:
 <p>Führen Sie 3 Iterationen durch (v1–v3) und protokollieren Sie:</p>
 <ul>
 <li>welche Prompt-Änderung welches Fehlerfeld reduziert hat,</li>
-<li>welche Nebenwirkungen entstehen (z. B. Output wird zu vage).</li>
+<li>welche Nebenwirkungen entstehen (z. B. Antwort wird zu vage).</li>
 </ul>
 </section>
 </section>
 <section id="kurz-library-wiederverwendbare-prompt-bausteine" class="level2">
 <h2 class="anchored" data-anchor-id="kurz-library-wiederverwendbare-prompt-bausteine">Kurz-Library: wiederverwendbare Prompt-Bausteine</h2>
 <p><strong>1) Kontext + Materialbindung</strong></p>
-<pre class="text"><code>Arbeite ausschliesslich mit dem untenstehenden Material.
-Wenn dir Informationen fehlen, stelle Rückfragen oder markiere [Unklar].</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>Arbeite ausschliesslich mit dem untenstehenden Material.</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>Wenn dir Informationen fehlen, stelle Rückfragen oder markiere <span class="co">[</span><span class="ot">Unklar</span><span class="co">]</span>.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>2) Ebenen-Trennung (Quelle vs.&nbsp;Edition vs.&nbsp;Schlussfolgerung)</strong></p>
-<pre class="text"><code>Markiere jede Aussage als [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].</code></pre>
-<p><strong>3) Output als Zwischenprodukt (für Weiterarbeit)</strong></p>
-<pre class="text"><code>Gib den Output als Tabelle mit Feldern: Claim | Evidenzstelle | Unsicherheit | Nächster Prüfschritt.</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>Markiere jede Aussage als <span class="co">[</span><span class="ot">Dokumenttext</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Edition/Metadaten</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Schlussfolgerung</span><span class="co">]</span>.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>3) Antwort als Zwischenprodukt (für Weiterarbeit)</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="an">Gib die Antwort als Tabelle mit Feldern:</span><span class="co"> Claim | Evidenzstelle | Unsicherheit | Nächster Prüfschritt.</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>4) Self-Check / Gegenprobe erzwingen</strong></p>
-<pre class="text"><code>Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="an">Self-Check:</span><span class="co"> Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="abgabe" class="level2">
 <h2 class="anchored" data-anchor-id="abgabe">Abgabe</h2>
@@ -759,8 +790,22 @@ Wenn dir Informationen fehlen, stelle Rückfragen oder markiere [Unklar].</code>
 </section>
 <section id="bibliographie" class="level2">
 <h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
-<div id="refs" role="list">
-
+<div id="refs" class="csl-bib-body hanging-indent references" role="list">
+<div id="ref-anthropic-claude-prompt-engineering" class="csl-entry" role="listitem">
+Anthropic. <span>„Prompt engineering overview“</span>. Claude Documentation. <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview">https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview</a>.
+</div>
+<div id="ref-google-vertex-ai-prompt-design" class="csl-entry" role="listitem">
+Google Cloud. <span>„Prompt design strategies“</span>. Generative AI on Vertex AI Documentation. <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies">https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies</a>.
+</div>
+<div id="ref-meta-llama-prompting" class="csl-entry" role="listitem">
+Meta. <span>„Prompt engineering“</span>. LLaMA Documentation. <a href="https://www.llama.com/docs/how-to-guides/prompting/">https://www.llama.com/docs/how-to-guides/prompting/</a>.
+</div>
+<div id="ref-openai-prompt-engineering" class="csl-entry" role="listitem">
+OpenAI. <span>„Prompt engineering“</span>. OpenAI API Documentation. <a href="https://platform.openai.com/docs/guides/prompt-engineering">https://platform.openai.com/docs/guides/prompt-engineering</a>.
+</div>
+<div id="ref-promptingguide-ai" class="csl-entry" role="listitem">
+PromptingGuide.ai. <span>„Prompt Engineering Guide“</span>. <a href="https://www.promptingguide.ai">https://www.promptingguide.ai</a>.
+</div>
 </div>
 
 
@@ -788,8 +833,8 @@ Literacy für Historiker:innen</em>. December 29, 2025. <a href="https://maehr.g
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../de/exercises/public-history.html" class="pagination-link" aria-label="Kritisch-reflektierter KI-Einsatz in Public History">
-        <span class="nav-page-text">Kritisch-reflektierter KI-Einsatz in Public History</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../de/exercises/public-history.html" class="pagination-link" aria-label="Public History und Geschichtsvermittlung">
+        <span class="nav-page-text">Public History und Geschichtsvermittlung</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
