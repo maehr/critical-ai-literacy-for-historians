@@ -11,6 +11,10 @@ listing:
 
 Ce dépôt propose des exercices structurés et pratiques permettant aux historien·ne·s de développer une **littératie critique de l'IA**, une **critique des sources numériques** et des **pratiques savantes** avec les grands modèles de langage (LLM).
 
+::: {.callout-warning title="DISCLAIMER"}
+Ce projet est actuellement en développement actif et dans une phase très précoce. Les matériels fournis ici sont provisoires et peuvent subir des changements significatifs. Utilisez-les avec prudence et soyez conscients que les ressources actuelles peuvent ne pas représenter la qualité finale ou l'étendue voulue pour cette ressource.
+:::
+
 ### Objectif
 
 Ces ressources visent à aider les apprenant·e·s à :
@@ -38,3 +42,63 @@ Explorez les exercices pour commencer votre parcours de développement d'une lit
 
 ::: {#exercises}
 :::
+
+## À propos de l’auteur
+
+Moritz Mähr (Dr. sc. ETH Zurich) est chercheur associé en humanités numériques à l’Université de Berne et spécialiste des sciences de l’information et des bibliothèques au sein des Research Analytics Services de l’ETH Zurich. Ses travaux articulent histoire numérique, science and technology studies et infrastructures de recherche ouvertes. Ses domaines d’intérêt incluent la critique des sources numériques à l’ère de l’IA, l’histoire de la numérisation dans l’administration publique, les approches de minimal computing en histoire publique, ainsi que la durabilité numérique fondée sur les principes FAIR et CARE.
+
+- E-mail : [moritz.maehr@gmail.com](mailto:moritz.maehr@gmail.com)
+- Site web : <https://moritzmaehr.ch/>
+- ORCID : <https://orcid.org/0000-0002-1367-1618>
+- GitHub : <https://github.com/maehr>
+
+## À propos de ce projet
+
+**Littératie critique de l'IA pour les historien·ne·s** est une initiative éducative conçue pour doter les historien·ne·s des connaissances et des compétences nécessaires pour s'engager de manière critique avec les technologies d'intelligence artificielle dans leur pratique de recherche.
+
+### Cadre pédagogique
+
+Le projet repose sur les principes pédagogiques suivants :
+
+1.  **L'IA comme outil et méthode** : Comprendre l'IA non seulement comme un outil technique mais aussi comme une approche méthodologique qui façonne les questions de recherche et les interprétations
+2.  **Critique des sources numériques** : Appliquer une évaluation critique rigoureuse aux contenus générés par l'IA, aux jeux de données et aux résultats algorithmiques
+3.  **Conscience éthique** : Favoriser une utilisation responsable de l'IA qui prend en compte la vie privée, les biais, la représentation et les dynamiques de pouvoir
+4.  **Transparence et reproductibilité** : Promouvoir des pratiques de recherche ouvertes, documentées et réplicables
+5.  **Rigueur disciplinaire** : Maintenir les méthodes historiques et la pensée critique tout en intégrant les nouvelles technologies
+
+### Approche d'apprentissage
+
+Les exercices suivent une progression structurée :
+
+-   **Débutant** : Introduction aux concepts d'IA et évaluation critique de base
+-   **Intermédiaire** : Application d'outils d'IA à la recherche historique avec réflexion critique
+-   **Avancé** : Conception de projets de recherche intégrant l'IA avec sophistication méthodologique
+
+Chaque exercice comprend :
+
+-   Des objectifs d'apprentissage clairs
+-   Une estimation du temps nécessaire
+-   Des prérequis
+-   Des activités pratiques
+-   Des invitations à la réflexion critique
+-   Des ressources supplémentaires
+
+### Principes FAIR et CARE
+
+Ce projet adhère :
+
+-   Aux principes **FAIR** (Findable, Accessible, Interoperable, Reusable) pour les données de recherche et les matériels pédagogiques
+-   Aux principes **CARE** (Collective Benefit, Authority to Control, Responsibility, Ethics) pour une gouvernance responsable des données
+
+### Contribuer
+
+Nous accueillons les contributions des historien·ne·s, éducateur·rice·s et chercheur·euse·s. Veuillez consulter nos [directives de contribution](../CONTRIBUTING.md) pour plus d'informations.
+
+### Licence
+
+-   Matériels pédagogiques : [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
+-   Code : [AGPL 3.0](../LICENSE-AGPL.md)
+
+### Contact
+
+Pour toute question ou retour, veuillez [ouvrir un issue](https://github.com/maehr/critical-ai-literacy-for-historians/issues) ou contacter les mainteneurs.

@@ -13,7 +13,11 @@ listing:
 
 ## Willkommen
 
-Dieses Repository bietet strukturierte, praxisorientierte Übungen für Historiker:innen zur Entwicklung von **kritischer KI-Kompetenz**, **digitaler Quellenkritik** und **wissenschaftlicher Praxis** mit großen Sprachmodellen (LLMs).
+Dieses Repository bietet strukturierte, praxisorientierte Übungen für Historiker:innen zur Entwicklung von **kritischer KI-Kompetenz**, **digitaler Quellenkritik** und **wissenschaftlicher Praxis** mit grossen Sprachmodellen (LLMs).
+
+::: {.callout-warning title="DISCLAIMER"}
+Dieses Projekt ist derzeit noch in einer sehr frühen Phase und wird aktiv entwickelt. Die Materialien, die hier zur Verfügung gestellt werden, sind vorläufig und können sich erheblich verändern. Bitte verwenden Sie sie mit Vorsicht und achten Sie darauf, dass sie möglicherweise noch nicht die endgültige Qualität oder den gewünschten Umfang repräsentieren, die für diese Ressource vorgesehen waren.
+:::
 
 ### Zweck
 
@@ -41,3 +45,63 @@ Erkunden Sie die Übungen, um Ihre Reise zur Entwicklung kritischer KI-Kompetenz
 
 ::: {#exercises}
 :::
+
+## Über den Autor
+
+Moritz Mähr (Dr. sc. ETH Zürich) ist assoziierter Forscher im Bereich Digital Humanities an der Universität Bern und Spezialist für Informations- und Bibliothekswissenschaft bei den Research Analytics Services der ETH Zürich. Seine Arbeit verbindet Digital History, Science and Technology Studies sowie offene Forschungsinfrastrukturen. Schwerpunkte sind digitale Quellenkritik im Zeitalter von KI, die Geschichte der Digitalisierung in der öffentlichen Verwaltung, Minimal-Computing-Ansätze in der Public History sowie digitale Nachhaltigkeit auf Basis der FAIR- und CARE-Prinzipien.
+
+- E-Mail: [moritz.maehr@gmail.com](mailto:moritz.maehr@gmail.com)
+- Website: <https://moritzmaehr.ch/>
+- ORCID: <https://orcid.org/0000-0002-1367-1618>
+- GitHub: <https://github.com/maehr>
+
+## Über dieses Projekt
+
+**Kritische KI-Kompetenz für Historiker:innen** ist eine Bildungsinitiative, die darauf abzielt, Historiker:innen mit dem Wissen und den Fähigkeiten auszustatten, sich kritisch mit künstlicher Intelligenz in ihrer Forschungspraxis auseinanderzusetzen.
+
+### Pädagogischer Rahmen
+
+Das Projekt basiert auf folgenden pädagogischen Prinzipien:
+
+1.  **KI als Werkzeug und Methode**: KI nicht nur als technisches Werkzeug verstehen, sondern auch als methodischer Ansatz, der Forschungsfragen und Interpretationen prägt
+2.  **Digitale Quellenkritik**: Rigorose kritische Bewertung von KI-generierten Inhalten, Datensätzen und algorithmischen Ausgaben
+3.  **Ethisches Bewusstsein**: Förderung eines verantwortungsvollen KI-Einsatzes, der Datenschutz, Bias, Repräsentation und Machtdynamiken berücksichtigt
+4.  **Transparenz und Reproduzierbarkeit**: Förderung offener, dokumentierter und nachvollziehbarer Forschungspraktiken
+5.  **Disziplinäre Strenge**: Beibehaltung historischer Methoden und kritischen Denkens bei der Integration neuer Technologien
+
+### Lernansatz
+
+Die Übungen folgen einer strukturierten Progression:
+
+-   **Anfänger**: Einführung in KI-Konzepte und grundlegende kritische Bewertung
+-   **Fortgeschrittene**: Anwendung von KI-Tools in der historischen Forschung mit kritischer Reflexion
+-   **Experten**: Gestaltung KI-integrierter Forschungsprojekte mit methodologischer Raffinesse
+
+Jede Übung enthält:
+
+-   Klare Lernziele
+-   Geschätzter Zeitaufwand
+-   Voraussetzungen
+-   Praktische Aktivitäten
+-   Kritische Reflexionsanregungen
+-   Zusätzliche Ressourcen
+
+### FAIR- und CARE-Prinzipien
+
+Dieses Projekt folgt:
+
+-   **FAIR**-Prinzipien (Findable, Accessible, Interoperable, Reusable) für Forschungsdaten und Bildungsmaterialien
+-   **CARE**-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) für verantwortungsvolle Daten-Governance
+
+### Mitwirken
+
+Wir freuen uns über Beiträge von Historiker:innen, Pädagog:innen und Forscher:innen. Bitte siehe unsere [Beitragsrichtlinien](../CONTRIBUTING.md) für weitere Informationen.
+
+### Lizenz
+
+-   Bildungsmaterialien: [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
+-   Code: [AGPL 3.0](../LICENSE-AGPL.md)
+
+### Kontakt
+
+Für Fragen oder Feedback, bitte [öffnen Sie ein Issue](https://github.com/maehr/critical-ai-literacy-for-historians/issues) oder kontaktieren Sie die Maintainer.
