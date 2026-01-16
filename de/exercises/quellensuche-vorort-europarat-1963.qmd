@@ -13,13 +13,13 @@ date: "2025-12-29"
 date-modified: today
 categories: [Quellen]
 tags:
-- Primärquellen
-- Quellensuche
-- Archive
-- Schweiz
-- Europarat
-- "1963"
-- Vorort
+  - Quellensuche
+  - Archive
+  - Europarat
+  - Schweiz
+  - Zeitgeschichte
+  - Nachvollziehbarkeit
+  - KI-gestützt
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -106,10 +106,6 @@ references:
   title: "Die Schweiz und der Europarat"
   URL: "https://www.dodis.ch/de/die-schweiz-und-der-europarat"
   publisher: "Dodis – Diplomatische Dokumente der Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "E-Dossier zur schweizerischen Aussenpolitik zum Europarat"  
 
 - id: dodis-beitritt1963
@@ -120,10 +116,6 @@ references:
   title: "Beitritt zum Europarat 1963"
   URL: "https://www.dodis.ch/de/beitritt-zum-europarat-1963"
   publisher: "Dodis – Diplomatische Dokumente der Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "E-Dossier zur Geschichte des Europarat-Beitritts der Schweiz"
 
 - id: aps-europarat-2025
@@ -137,10 +129,6 @@ references:
     year: 2025
     month: 11
     day: 12
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "Suchergebnisartikel zu Europarat-Bezug auf anneepolitique.swiss"
 
 - id: wikipedia-europarat-2025
@@ -152,10 +140,6 @@ references:
   publisher: "Wikimedia Foundation"
   issued:
     year: 2025
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "Artikel zur internationalen Organisation Europarat auf der deutschsprachigen Wikipedia"
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -186,10 +170,6 @@ references:
     year: 2009
     month: 10
     day: 29
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Artikel zur Geschichte und Funktion des Europarats; Version vom 29.10.2009"  
 
 - id: amtsdruckschriften-bar
@@ -199,10 +179,6 @@ references:
     - literal: "Bundesarchiv Schweiz"
   URL: "https://www.amtsdruckschriften.bar.admin.ch/"
   publisher: "Bundesarchiv Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Digitale Sammlung amtlicher Schweizer Druckschriften"
 
 - id: chgov-bar-admin
@@ -212,10 +188,6 @@ references:
     - literal: "Bundesarchiv Schweiz"
   URL: "https://www.chgov.bar.admin.ch/"
   publisher: "Bundesarchiv Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Rechercheportal der Schweizer Regierungspublikationen"
 
 - id: e-newspaperarchives-ch
@@ -225,10 +197,6 @@ references:
     - literal: "ETH-Bibliothek Zürich"
   URL: "https://www.e-newspaperarchives.ch/"
   publisher: "ETH-Bibliothek Zürich"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Digitale Zeitungsarchive der Schweiz"
 
 - id: archives-online-org
@@ -238,10 +206,6 @@ references:
     - literal: "Staatsarchive der Schweiz"
   URL: "https://www.archives-online.org/"
   publisher: "Staatsarchive der Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Aggregiertes Recherchesystem schweizerischer Archive"
 
 - id: e-periodica-ch
@@ -251,10 +215,6 @@ references:
     - literal: "ETH-Bibliothek Zürich"
   URL: "https://www.e-periodica.ch/"
   publisher: "ETH-Bibliothek Zürich"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Digitale Plattform für Schweizer Fachperiodika"
 
 - id: impresso-project-ch
@@ -264,10 +224,6 @@ references:
     - literal: "IMPRESSO Consortium"
   URL: "https://impresso-project.ch/"
   publisher: "IMPRESSO Project"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Projekt zur Zeitungs- und Medienanalyse"
 
 - id: memobase-ch
@@ -277,10 +233,6 @@ references:
     - literal: "Memobase Coordination"
   URL: "https://memobase.ch/"
   publisher: "Memobase"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Rechercheplattform für historische Schweizer Quellen"
 
 - id: swisscollections-ch
@@ -290,10 +242,6 @@ references:
     - literal: "Bibliothèque nationale suisse"
   URL: "https://swisscollections.ch/"
   publisher: "swisscollections"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Zentrales Suchportal für Schweizer Bibliotheks- und Archivbestände"
 ---
 
@@ -315,9 +263,24 @@ Beachten Sie bei der Archivarbeit **Schutzfristen, Nutzungsbedingungen und digit
 
 ## Voraussetzungen
 
-- Grundkenntnisse historischer Quellenkritik (Provenienzprinzip, Kontextualisierung)
-- Grundkenntnisse in Bibliotheks- und Archivrecherche (Kataloge, Findmittel)
-- Grundverständnis des KI-Einsatzes (Prompting)
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
 
 ## Lernziele
 
@@ -329,7 +292,7 @@ Nach Abschluss der Übung können Sie:
 - **mehrsprachige Suchstrategien** entwickeln (DE/FR/EN; inkl. historischer Terminologie),
 - Bibliothekskataloge, bibliografische Datenbanken, Findmittel und Portale **zielgerichtet** nutzen,
 - Fundstellen **reproduzierbar** dokumentieren und quellenkritisch bewerten,
-- KI-Ausgaben als **heuristische Vorschläge** behandeln, systematisch prüfen und reflektieren.
+- Antworten als **heuristische Vorschläge** behandeln, systematisch prüfen und reflektieren.
 
 ## Struktur der Übung
 
@@ -367,7 +330,7 @@ Gib für jede Teilfrage an, welche Dokumenttypen als Evidenz dienen könnten.
 
 ### Kritischer Abgleich
 
-Markieren Sie in der KI-Ausgabe:
+Markieren Sie in der Antwort:
 
 - **prüfbare** vs. **vage** Aussagen,
 - fehlende Arenen (z. B. Vernehmlassung, EDA/EVD),
@@ -588,7 +551,7 @@ Je Pfad: 8–12 Suchbegriffe (DE/FR/EN) inkl. Namensvarianten.
 
 ## 8. Iteration, Reproduzierbarkeit und KI-Reflexion
 
-### Rechercheprotokoll (Pflicht)
+### Rechercheprotokoll
 
 Mindestens:
 
@@ -606,7 +569,7 @@ Mindestens:
 ### KI-Protokoll (Anhang)
 
 - 2–3 Prompts,
-- gekürzte Outputs,
+- gekürzte Antworten,
 - begründete Korrekturen oder Rejects.
 
 ## Abgabe

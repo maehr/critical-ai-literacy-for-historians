@@ -1,6 +1,15 @@
 ---
 title: Übungen
 lang: de
-listing: default
+listing:
+  id: exercises
+  type: table
+  categories: true
+  fields: [title, subtitle, description, categories]
+  exclude: 
+    title: "Übungen" # exercises/index.qmd
 citation: false
 ---
+
+::: {#exercises}
+:::

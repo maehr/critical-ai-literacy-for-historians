@@ -1,6 +1,6 @@
 ---
 lang: de
-title: "Kritisch-reflektierter KI-Einsatz in Public History"
+title: "Public History und Geschichtsvermittlung"
 subtitle: "Wissenskommunikation entlang des Schreib- und Produktionsprozesses"
 description: "Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail, Quellen-Veto und methodischer Transparenz."
 author:
@@ -13,10 +13,12 @@ date: "2025-12-29"
 date-modified: today
 categories: [Public History]
 tags:
-  - Vermittlung
-  - Öffentlichkeit
   - Wissenschaftskommunikation
-  - KI
+  - Wissensvermittlung
+  - Zielgruppenorientierung
+  - Nachvollziehbarkeit
+  - Schweiz
+  - KI-gestützt
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -103,20 +105,36 @@ Diese Übung trainiert Public-History-Wissenskommunikation als **prozessuale Üb
 
 ## Voraussetzungen
 
-* Grundverständnis historischer Forschungsmethoden
-* Basiskenntnisse im Umgang mit generativer KI (Prompting)
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
 
 ## Lernziele
 
-* Einen Vermittlungskontext in Zielgruppen, Medium, Zweck und Rahmenbedingungen zerlegen (Kommunikationsbriefing).
-* Aus einem wissenschaftlichen Artikel eine Kernbotschaft (Message Map) und eine Evidenzmatrix ableiten, ohne neue Fakten zu erfinden.
-* Entwürfe in mehreren Public-History-Formaten erstellen (Blog, Audio, Social, Poster) und formatkonform überarbeiten.
-* KI-Ausgaben systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (Audit Trail).
-* Ein Interview-Kit (Soundbites, Q&A, No-go-Liste, Transparenzstatement) vorbereiten.
+- Einen Vermittlungskontext in Zielgruppen, Medium, Zweck und Rahmenbedingungen zerlegen (Kommunikationsbriefing).
+- Aus einem wissenschaftlichen Artikel eine Kernbotschaft (Message Map) und eine Evidenzmatrix ableiten, ohne neue Fakten zu erfinden.
+- Entwürfe in mehreren Public-History-Formaten erstellen (Blog, Audio, Social, Poster) und formatkonform überarbeiten.
+- Antwortn systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (Audit Trail).
+- Ein Interview-Kit (Soundbites, Q&A, No-go-Liste, Transparenzstatement) vorbereiten.
 
 Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem Themenfeld. Z.B.:
 
-* <https://doi.org/10.1093/pastj/gtae018>
+- <https://doi.org/10.1093/pastj/gtae018>
 
 ### Abgabeformate (Minimum)
 
@@ -124,15 +142,15 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 2. **Message Map + Evidenzmatrix** (Tabellen- oder Stichpunktform)
 3. **Blogpost** (ca. 700–1’000 Wörter) *oder* **Podcast-Skript** (ca. 6–8 Minuten)
 4. **Zwei Kurzformate** aus: Social Media, Poster-Textbausteine, Interview-Kit
-5. **KI-Protokoll** (Prompt-/Output-Log + Reflexionsnotiz, ca. 300–500 Wörter)
+5. **KI-Protokoll** (Prompt-/Antwort-Log + Reflexionsnotiz, ca. 300–500 Wörter)
 
 ## Methodischer Rahmen: KI als kritisch-reflektierte Vermittlungsinfrastruktur
 
 Begriffe (für diese Übung):
 
-* **Audit Trail (KI-Protokoll):** Dokumentation von Prompts, Outputs, Entscheidungen, Korrekturen und Quellenstellen, sodass Ihr Prozess nachvollziehbar bleibt.
-* **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
-* **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
+- **Audit Trail (KI-Protokoll):** Dokumentation von Prompts, Antwortn, Entscheidungen, Korrekturen und Quellenstellen, sodass Ihr Prozess nachvollziehbar bleibt.
+- **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
+- **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
 
 ::: callout-important
 
@@ -168,16 +186,16 @@ Vermittlung als **kontextabhängige Entscheidung** operationalisieren: Für *wen
 
 Wählen Sie einen konkreten Vermittlungskontext (z.B. Museumsblog, Lokalzeitung, Wissenschaftspodcast, Instagram eines Archivs, Ausstellungstafel). Erstellen Sie ein **Kommunikationsbriefing** mit:
 
-* Zielgruppe(n): Vorwissen, Interessen, mögliche Trigger/Missverständnisse
-* Zweck: informieren / kontextualisieren / Debatte eröffnen / Handlungswissen etc.
-* Medium/Format: Länge, Ton, Visualität/Audio, Interaktion
-* Constraints: Sprache(n), Zugänglichkeit (Accessibility), Terminologie, rechtliche/ethische Grenzen
-* Erfolgskriterien: Was sollen Rezipierende nachher *wissen* / *können* / *anders sehen*?
+- Zielgruppe(n): Vorwissen, Interessen, mögliche Trigger/Missverständnisse
+- Zweck: informieren / kontextualisieren / Debatte eröffnen / Handlungswissen etc.
+- Medium/Format: Länge, Ton, Visualität/Audio, Interaktion
+- Constraints: Sprache(n), Zugänglichkeit (Accessibility), Terminologie, rechtliche/ethische Grenzen
+- Erfolgskriterien: Was sollen Rezipierende nachher *wissen* / *können* / *anders sehen*?
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` text
-Du bist Audience-Research-Assistent*in. Erzeuge 2–3 plausible Zielgruppen-Personas für folgenden Kontext (ohne Fakten über reale Personen zu erfinden).
+``` markdown
+Du bist Audience-Research-Assistent:in. Erzeuge 2–3 plausible Zielgruppen-Personas für folgenden Kontext (ohne Fakten über reale Personen zu erfinden).
 Für jede Persona: Vorwissen, Motivationen, mögliche Missverständnisse, geeignete Beispiele/Metaphern, No-gos.
 Kontext: ...
 Thema/Artikel in 3 Sätzen: ...
@@ -185,8 +203,8 @@ Thema/Artikel in 3 Sätzen: ...
 
 ### Kritischer Abgleich
 
-* Persona ≠ Realität: Ergänzen/prüfen Sie Annahmen (z.B. mit realen Zielgruppenhinweisen, Museumskonzepten, Medienrichtlinien).
-* Welche Vereinfachungen wären epistemisch riskant? Notieren Sie *rote Linien*.
+- Persona ≠ Realität: Ergänzen/prüfen Sie Annahmen (z.B. mit realen Zielgruppenhinweisen, Museumskonzepten, Medienrichtlinien).
+- Welche Vereinfachungen wären epistemisch riskant? Notieren Sie *rote Linien*.
 
 ## 2. Message Map und narrative Route
 
@@ -206,8 +224,8 @@ Erstellen Sie:
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` text
-Rolle: Du bist Strukturierer*in. Arbeite nur mit dem Quellenpaket + Briefing.
+``` markdown
+Rolle: Du bist Strukturierer:in. Arbeite nur mit dem Quellenpaket + Briefing.
 Erzeuge eine Message Map (One-liner + 3–4 Stützpunkte + 'So what' für die Zielgruppe).
 Markiere jeden Punkt mit Claim-IDs und weise auf notwendige Kontextabsätze hin.
 Material: ...
@@ -215,8 +233,8 @@ Material: ...
 
 ### Kritischer Abgleich
 
-* Wo droht «presentism» (Gegenwartsüberformung) oder moralische Simplifizierung?
-* Wo braucht es Begriffe/Definitionen statt Storytelling?
+- Wo droht «presentism» (Gegenwartsüberformung) oder moralische Simplifizierung?
+- Wo braucht es Begriffe/Definitionen statt Storytelling?
 
 ## 3. Entwurf I: Blogpost
 
@@ -230,8 +248,8 @@ Schreiben Sie einen Blogpost (ca. 700–1’000 Wörter) mit: - Einstieg, der Zi
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` text
-Rolle: Du bist Blogredaktor*in. Schreibe einen Blogpost für folgenden Kontext.
+``` markdown
+Rolle: Du bist Blogredaktor:in. Schreibe einen Blogpost für folgenden Kontext.
 Constraints: Länge 900 Wörter, klare Zwischenüberschriften, keine neuen Fakten.
 Nutze Claim-IDs im Text in eckigen Klammern, z.B. [C3].
 Material: Briefing + Quellenpaket + Message Map + Claim-Tabelle.
@@ -239,9 +257,9 @@ Material: Briefing + Quellenpaket + Message Map + Claim-Tabelle.
 
 ### Kritischer Abgleich
 
-* Prüfen Sie jeden Absatz: Welche Claims werden gemacht? Sind sie belegt?
-* Prüfen Sie Ton und Register: «Klingt plausibel» ist kein Qualitätskriterium.
-* Prüfen Sie Anschlussfähigkeit: Welche Begriffe müssen erklärt werden?
+- Prüfen Sie jeden Absatz: Welche Claims werden gemacht? Sind sie belegt?
+- Prüfen Sie Ton und Register: «Klingt plausibel» ist kein Qualitätskriterium.
+- Prüfen Sie Anschlussfähigkeit: Welche Begriffe müssen erklärt werden?
 
 ## 4. Revision: Fact-Check, Verständlichkeit, Ethik
 
@@ -251,15 +269,15 @@ Aus einem plausiblen Entwurf ein robustes Vermittlungsprodukt machen.
 
 ### Aufgabe (Checkliste)
 
-* **Claim-by-claim**: Jede Aussage entweder belegt, als Einordnung markiert oder gestrichen.
-* **Verständlichkeit**: unnötige Fachbegriffe reduzieren oder definieren; Beispiele prüfen.
-* **Ethik/Verantwortung**: sensible Gruppen/Personen, Gewalt, Stigmatisierung, Datenpolitik, Bildrechte.
-* **Transparenz**: kurze Notiz zu Methode/Quelle/KI-Unterstützung ergänzen.
+- **Claim-by-claim**: Jede Aussage entweder belegt, als Einordnung markiert oder gestrichen.
+- **Verständlichkeit**: unnötige Fachbegriffe reduzieren oder definieren; Beispiele prüfen.
+- **Ethik/Verantwortung**: sensible Gruppen/Personen, Gewalt, Stigmatisierung, Datenpolitik, Bildrechte.
+- **Transparenz**: kurze Notiz zu Methode/Quelle/KI-Unterstützung ergänzen.
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` text
-Rolle: Du bist Fact-Checker*in.
+``` markdown
+Rolle: Du bist Fact-Checker:in.
 1) Liste alle behaupteten Fakten/Aussagen im Entwurf.
 2) Ordne sie Claim-IDs zu oder markiere 'nicht im Quellenpaket'.
 3) Schlage präzisere Formulierungen vor, die Unsicherheiten korrekt ausdrücken.
@@ -268,8 +286,8 @@ Input: Blog-Entwurf + Quellenpaket.
 
 ### Kritischer Abgleich
 
-* Die KI kann Fehlstellen identifizieren, aber **nicht** verlässlich verifizieren: Verifikation bleibt Ihre Arbeit.
-* Dokumentieren Sie Änderungen im KI-Protokoll (warum geändert? welche Belegstelle?).
+- Die KI kann Fehlstellen identifizieren, aber **nicht** verlässlich verifizieren: Verifikation bleibt Ihre Arbeit.
+- Dokumentieren Sie Änderungen im KI-Protokoll (warum geändert? welche Belegstelle?).
 
 ## 5. Remix: Formatadaptionen
 
@@ -283,7 +301,7 @@ Die folgenden Aufgaben sind bewusst als **Adaptionen** konzipiert: Sie recyclen 
 
 **KI-Workflow**
 
-``` text
+``` markdown
 Erzeuge 3 Varianten (konservativ / erzählerisch / provokationsarm) für einen Thread.
 Regeln: keine neuen Fakten, keine Clickbait-Übertreibung, baue einen Unsicherheiten-Post ein.
 Input: Message Map + Blog-Textauszug + Kontext.
@@ -297,7 +315,7 @@ Input: Message Map + Blog-Textauszug + Kontext.
 
 **KI-Workflow**
 
-``` text
+``` markdown
 Schreibe ein Podcast-Skript (7 Minuten) für [Zielgruppe/Kontext].
 Struktur: Hook (15s) – Kontext (60s) – Kernpunkte (3x90s) – Unsicherheiten (45s) – Abschluss (30s).
 Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Rand.
@@ -311,7 +329,7 @@ Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Ra
 
 **KI-Workflow**
 
-``` text
+``` markdown
 Erzeuge Poster-Textbausteine mit strikter Wortlimite und ohne neue Fakten.
 Achte auf: klare Begriffe, keine impliziten Wertungen, Claim-IDs pro Block.
 Input: Message Map + Evidenzmatrix.
@@ -329,7 +347,7 @@ Erstellen Sie ein Interview-Kit (1–2 Seiten): - **3 Soundbites** (je 12–20 S
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` text
+``` markdown
 Rolle: Du bist Mediencoach. Generiere ein Interview-Kit für Radio/Zeitung.
 Regeln: keine neuen Fakten, Soundbites müssen Claims korrekt wiedergeben, Unsicherheiten nicht kaschieren.
 Input: Message Map + Quellenpaket + Blog-/Podcast-Entwurf.
@@ -337,8 +355,8 @@ Input: Message Map + Quellenpaket + Blog-/Podcast-Entwurf.
 
 ### Kritischer Abgleich
 
-* Stimmen Soundbites mit Claim-IDs überein oder «rutschen» sie in Übertreibung?
-* Sind Brückenstrategien inhaltlich ehrlich (kein Ausweichen ohne Einordnung)?
+- Stimmen Soundbites mit Claim-IDs überein oder «rutschen» sie in Übertreibung?
+- Sind Brückenstrategien inhaltlich ehrlich (kein Ausweichen ohne Einordnung)?
 
 ## Bibliographie
 

@@ -1,6 +1,6 @@
 ---
 lang: de
-title: Schreiben mit kritisch-reflektiertem KI-Einsatz
+title: Wissenschaftliches Schreiben
 subtitle: Rollenbasiertes Übungsset entlang des Schreibprozesses
 description: Eine Übung, die den Einsatz generativer KI als Schreibassistent in mehreren
   Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche
@@ -13,16 +13,14 @@ author:
   - Universität Bern
 date: '2025-12-24'
 date-modified: today
-categories:
-- Methoden
+categories: [Methoden]
 tags:
-- Schreibpraxis
-- Wissenschaftliches Schreiben
-- Argumentation
-- Strukturierung
-- Textproduktion
-- Revision
-- Abstract
+  - Schreibpraxis
+  - Argumentation
+  - Strukturierung
+  - Nachvollziehbarkeit
+  - Wissenschaftliche Integrität
+  - KI-gestützt
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -114,31 +112,47 @@ references:
 
 Diese Übung trainiert den **kritischen Einsatz generativer KI als Schreibassistent** in mehreren klar abgegrenzten Rollen. Die Rollen sind so angeordnet, dass sie einem typischen wissenschaftlichen Schreibprozess entsprechen: **Problem klären → Ideen entwickeln → strukturieren → entwerfen → revidieren → finalisieren**.
 
-Ziel ist nicht, Textproduktion zu «automatisieren», sondern **Entscheidungsqualität** zu erhöhen: bessere Fragestellungen, konsistentere Argumente, präzisere Sprache – bei gleichzeitiger **Nachvollziehbarkeit** der Autor\*innenschaft und der verwendeten Evidenz.
+Ziel ist nicht, Textproduktion zu «automatisieren», sondern **Entscheidungsqualität** zu erhöhen: bessere Fragestellungen, konsistentere Argumente, präzisere Sprache – bei gleichzeitiger **Nachvollziehbarkeit** der Autor:innenschaft und der verwendeten Evidenz.
 
 ## Voraussetzungen
 
-* Grundverständnis historischer Forschungsmethoden
-* Basiskenntnisse im Umgang mit generativer KI (Prompting)
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
 
 ## Lernziele
 
-* KI-Ausgaben als Hypothesen/Entwürfe behandeln und systematisch prüfen.
-* Prompts so gestalten, dass KI nicht 'erfindet', sondern mit bereitgestelltem Material arbeitet.
-* Eine Argumentationsstruktur (These–Belege–Schluss) entwerfen und auf Konsistenz testen.
-* Absätze aus eigenen Stichpunkten generieren und anschliessend fachlich/terminologisch revidieren.
-* 'Revision in zwei Schritten durchführen: Logik/Verständlichkeit → Sprache/Stil.'
-* Den eigenen KI-Einsatz transparent dokumentieren (Prompt- und Entscheidungsprotokoll).
+- Antworten als Hypothesen/Entwürfe behandeln und systematisch prüfen.
+- Prompts so gestalten, dass KI nicht 'erfindet', sondern mit bereitgestelltem Material arbeitet.
+- Eine Argumentationsstruktur (These–Belege–Schluss) entwerfen und auf Konsistenz testen.
+- Absätze aus eigenen Stichpunkten generieren und anschliessend fachlich/terminologisch revidieren.
+- 'Revision in zwei Schritten durchführen: Logik/Verständlichkeit → Sprache/Stil.'
+- Den eigenen KI-Einsatz transparent dokumentieren (Prompt- und Entscheidungsprotokoll).
 
 ## Methodischer Rahmen: KI als Schreibinfrastruktur
 
 In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**. Methodisch hilfreich ist eine klare Arbeitsteilung:
 
-* **Geschichtswissenschaftliche Autor\*innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
-* **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.
-* **Prüfverfahren (obligatorisch):** Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein.
+- **Geschichtswissenschaftliche Autor:innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
+- **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.
+- **Prüfverfahren (obligatorisch):** Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein.
 
-Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. **Eingrenzung des Arbeitsraums** («arbeite nur mit meinen Stichpunkten; markiere Unsicherheiten»). 2. **Formatierte Outputs** (Listen/Argumentmaps), damit Sie systematisch prüfen und selektiv übernehmen können.
+Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. **Eingrenzung des Arbeitsraums** («arbeite nur mit meinen Stichpunkten; markiere Unsicherheiten»). 2. **Formatierte Antworten** (Listen/Argumentmaps), damit Sie systematisch prüfen und selektiv übernehmen können.
 
 ::: callout-important
 
@@ -153,14 +167,14 @@ Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für *Ihr* Material
 
 Führen Sie während der Übung ein kurzes **KI-Protokoll**. Das ist Teil der wissenschaftlichen Nachvollziehbarkeit (und erleichtert spätere Offenlegung/Methodenteil).
 
-**Minimalvorlage** \| Feld \| Inhalt \| \|---\|---\| \| Rolle / Übung \| \| \| Ziel (1 Satz) \| \| \| Input (welches Material?) \| \| \| Prompt (Kernausschnitt) \| \| \| Output (kurz) \| \| \| Prüfschritte (wie verifiziert?) \| \| \| Entscheidung (übernommen/angepasst/verworfen + Begründung) \| \|
+**Minimalvorlage** \| Feld \| Inhalt \| \|---\|---\| \| Rolle / Übung \| \| \| Ziel (1 Satz) \| \| \| Input (welches Material?) \| \| \| Prompt (Kernausschnitt) \| \| \| Antwort (kurz) \| \| \| Prüfschritte (wie verifiziert?) \| \| \| Entscheidung (übernommen/angepasst/verworfen + Begründung) \| \|
 :::
 
 ## Voraussetzungen
 
-* Eigenes Themenfragment (z.B. Seminararbeit) **oder** ein bereitgestellter Textabschnitt (ca. ½–1 Seite)\
-* Eigene Stichpunkte/Notizen zum Thema (mind. 10 Bullet Points)\
-* Zugriff auf ein LLM-Interface Ihrer Wahl
+- Eigenes Themenfragment (z.B. Seminararbeit) **oder** ein bereitgestellter Textabschnitt (ca. ½–1 Seite)\
+- Eigene Stichpunkte/Notizen zum Thema (mind. 10 Bullet Points)\
+- Zugriff auf ein LLM-Interface Ihrer Wahl
 
 ## Struktur der Übung
 
@@ -191,7 +205,7 @@ Den Schreibauftrag und die eigene Argumentationsabsicht so präzise machen, dass
 
 **Prompt-Gerüst**
 
-``` text
+``` markdown
 Du bist Verständnischecker. Stelle mir 8–12 präzise Rückfragen, um Schreibauftrag und Argumentationsziel zu klären.
 Markiere:
 (1) fehlende Informationen,
@@ -207,10 +221,10 @@ Zielpublikum: …
 
 ### Kritischer Abgleich
 
-* Welche Rückfragen zwingen Sie zu **Begriffsklärungen** (z.B. «Modernisierung», «Neutralität», «Governance»)?\
-* Welche Fragen würden Sie **anders** priorisieren – und warum?
+- Welche Rückfragen zwingen Sie zu **Begriffsklärungen** (z.B. «Modernisierung», «Neutralität», «Governance»)?\
+- Welche Fragen würden Sie **anders** priorisieren – und warum?
 
-**Output** - 1 revidierter Auftrag (3–5 Sätze) + 3 definierte Kernbegriffe
+**Ergebnis** - 1 revidierter Auftrag (3–5 Sätze) + 3 definierte Kernbegriffe
 
 ## 2. Brainstorming-Partner + Devil’s Advocate
 
@@ -220,7 +234,7 @@ Ideen generieren, ohne Evidenz zu erfinden, und sofort Gegenargumente/Alternativ
 
 ### Aufgabe A: Brainstorming (ideenorientiert, evidenzneutral)
 
-``` text
+``` markdown
 Rolle: Brainstorming-Partner. Generiere 12 mögliche Argumentlinien/Hypothesen zu meinem Thema.
 Bedingungen:
 - Formuliere jede Linie als überprüfbare Behauptung (keine Facts).
@@ -233,7 +247,7 @@ Mein Material (nur Typen, keine sensiblen Inhalte): …
 
 ### Aufgabe B: Devil’s Advocate (konfrontativ, aber produktiv)
 
-``` text
+``` markdown
 Rolle: Devil’s Advocate. Wähle die 3 plausibelsten meiner Hypothesen und argumentiere jeweils dagegen.
 Für jedes Gegenargument:
 - Benenne die verletzliche Annahme.
@@ -245,10 +259,10 @@ Hypothesen: …
 
 ### Kritischer Abgleich
 
-* Welche Hypothesen sind **falsifizierbar** (im Sinne klarer Widerlegungsbedingungen)?\
-* Wo droht **Presentismus** (Gegenwartskategorien in die Vergangenheit projizieren)?
+- Welche Hypothesen sind **falsifizierbar** (im Sinne klarer Widerlegungsbedingungen)?\
+- Wo droht **Presentismus** (Gegenwartskategorien in die Vergangenheit projizieren)?
 
-**Output** - 1 priorisierte Hypothese/These + 2 zentrale Gegenargumente + 1 geplanter Stress-Test
+**Ergebnis** - 1 priorisierte Hypothese/These + 2 zentrale Gegenargumente + 1 geplanter Stress-Test
 
 ## 3. Strukturierer & Outliner
 
@@ -258,7 +272,7 @@ Eine überprüfbare **Argumentationskette** entwerfen (These → Unterthesen →
 
 ### Aufgabe
 
-``` text
+``` markdown
 Rolle: Strukturierer & Outliner.
 Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. X Wörtern.
 Für jeden Punkt:
@@ -276,10 +290,10 @@ Material (Stichpunkte/Notizen): …
 
 ### Qualitätscheck
 
-* Enthält jede Behauptung eine **Evidenzspur** (mindestens als Platzhalter)?\
-* Gibt es Abschnitte, die nur «Überblick» liefern, aber keine argumentative Funktion haben?
+- Enthält jede Behauptung eine **Evidenzspur** (mindestens als Platzhalter)?\
+- Gibt es Abschnitte, die nur «Überblick» liefern, aber keine argumentative Funktion haben?
 
-**Output** - Gliederung + Markierung von 2–3 Evidenzlücken
+**Ergebnis** - Gliederung + Markierung von 2–3 Evidenzlücken
 
 ## 4. Text aus Stichpunkten
 
@@ -291,7 +305,7 @@ Aus eigenem Material Absätze formulieren lassen, ohne inhaltliche Kontrolle abz
 
 Wählen Sie **einen** Gliederungspunkt (z.B. «Hauptargument 1») und liefern Sie 8–12 Bullet Points (Belege, Beobachtungen, Zitate/Paraphrasen, Begriffe).
 
-``` text
+``` markdown
 Rolle: Textgenerator aus Stichpunkten.
 Schreibe einen Absatz (120–180 Wörter) in akademischem Deutsch.
 Bedingungen:
@@ -305,10 +319,10 @@ Stichpunkte: …
 
 ### Kritischer Abgleich
 
-* Streichen Sie alle Sätze, die nicht direkt auf Ihre Stichpunkte rückführbar sind.\
-* Prüfen Sie Terminologie: Wo glättet KI Begriffe (z.B. «Staat», «Gesellschaft», «Akteur») unzulässig?
+- Streichen Sie alle Sätze, die nicht direkt auf Ihre Stichpunkte rückführbar sind.\
+- Prüfen Sie Terminologie: Wo glättet KI Begriffe (z.B. «Staat», «Gesellschaft», «Akteur») unzulässig?
 
-**Output** - 1 Absatz + eine Version, in der Sie 3–5 Sätze eigenständig präzisiert haben
+**Ergebnis** - 1 Absatz + eine Version, in der Sie 3–5 Sätze eigenständig präzisiert haben
 
 ## 5. Blockaden-Löser
 
@@ -320,7 +334,7 @@ Lokale Probleme lösen (Übergänge, Einstiegssätze, Begriffsdefinitionen), ohn
 
 **A) Übergang bauen**
 
-``` text
+``` markdown
 Rolle: Blockaden-Löser.
 Formuliere 5 Varianten für einen Übergangssatz zwischen Absatz A und B.
 Variante 1 neutral, 2 stärker argumentativ, 3 stärker erklärend, 4 knapper, 5 mit Kontrastmarker.
@@ -330,7 +344,7 @@ Absatz B: …
 
 **B) Definition operationalisieren**
 
-``` text
+``` markdown
 Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «X» im Kontext meines Themas.
 Für jede Definition:
 - Abgrenzung zu 1 Nachbarbegriff
@@ -341,7 +355,7 @@ Kontext: …
 
 **C) Satzdiagnose**
 
-``` text
+``` markdown
 Markiere in meinem Absatz:
 - den zentralen Satz (topic sentence),
 - Sätze mit unklarem Referent («dies», «dabei», «man»),
@@ -350,7 +364,7 @@ Schlage minimale Umstellungen vor (keine Umschreibung des Inhalts).
 Text: …
 ```
 
-**Output** - 1 überarbeiteter Übergang/Definition + kurze Begründung, warum diese Variante
+**Ergebnis** - 1 überarbeiteter Übergang/Definition + kurze Begründung, warum diese Variante
 
 ## 6. Logik-Prüfer
 
@@ -360,7 +374,7 @@ Argumentationslogik sichtbar machen: Stützen Belege die Behauptungen? Sind Schl
 
 ### Aufgabe
 
-``` text
+``` markdown
 Rolle: Logik-Prüfer.
 Analysiere meinen Text (max. 300 Wörter) als Argumentmap:
 1) Hauptthese
@@ -374,10 +388,10 @@ Text: …
 
 ### Kritischer Abgleich
 
-* Welche «impliziten Prämissen» akzeptieren Sie – welche müssen belegt oder umformuliert werden?\
-* Wo sind Kausalbehauptungen eigentlich nur **zeitliche Abfolge**?
+- Welche «impliziten Prämissen» akzeptieren Sie – welche müssen belegt oder umformuliert werden?\
+- Wo sind Kausalbehauptungen eigentlich nur **zeitliche Abfolge**?
 
-**Output** - Argumentmap + 2 gezielte Revisionen im Text (mit Markierung, was sich logisch verbessert)
+**Ergebnis** - Argumentmap + 2 gezielte Revisionen im Text (mit Markierung, was sich logisch verbessert)
 
 ## 7. Korrektorat + Übersetzer
 
@@ -387,7 +401,7 @@ Sprache und Register verbessern, ohne die argumentative Substanz zu verändern; 
 
 ### Aufgabe A: Korrektorat (minimal-invasiv)
 
-``` text
+``` markdown
 Rolle: Korrektorat.
 Verbessere Grammatik, Stil und Präzision, aber ändere keine inhaltlichen Aussagen.
 Arbeite minimal-invasiv:
@@ -399,7 +413,7 @@ Text: …
 
 ### Aufgabe B: Übersetzen (optional)
 
-``` text
+``` markdown
 Rolle: Übersetzer.
 Übersetze den Text ins Englische (oder Französische/Spanische).
 Bedingungen:
@@ -410,7 +424,7 @@ Text: …
 Zielsprache: …
 ```
 
-**Output** - Korrigierte Version + (optional) Übersetzung + Glossar
+**Ergebnis** - Korrigierte Version + (optional) Übersetzung + Glossar
 
 ## 8. Abstract-Schreiber
 
@@ -420,7 +434,7 @@ Den Text auf seine tragende Aussage verdichten: Forschungsproblem, Vorgehen, Bef
 
 ### Aufgabe
 
-``` text
+``` markdown
 Rolle: Abstract-Schreiber.
 Schreibe ein Abstract mit 120–160 Wörtern.
 Muss enthalten:
@@ -434,10 +448,10 @@ Textbasis: …
 
 ### Qualitätscheck
 
-* Deckt das Abstract die **tatsächliche** Argumentationsspitze ab oder nur den Themenbereich?\
-* Entspricht die behauptete Methode dem, was Sie wirklich tun (Quellenarbeit vs. Literaturdiskussion)?
+- Deckt das Abstract die **tatsächliche** Argumentationsspitze ab oder nur den Themenbereich?\
+- Entspricht die behauptete Methode dem, was Sie wirklich tun (Quellenarbeit vs. Literaturdiskussion)?
 
-**Output** - Abstract + 2-Satz-Meta-Kommentar: Was hat KI fälschlich betont/ausgelassen?
+**Ergebnis** - Abstract + 2-Satz-Meta-Kommentar: Was hat KI fälschlich betont/ausgelassen?
 
 ## 9. Verständnischecker (Re-Run)
 
@@ -447,9 +461,9 @@ Lesbarkeit und Interpretationsspielräume aus Sicht des Zielpublikums testen.
 
 ### Aufgabe
 
-``` text
+``` markdown
 Rolle: Verständnischecker.
-Lies meinen Text als kritische*r Leser*in im Seminar.
+Lies meinen Text als kritische*r Leser:in im Seminar.
 1) Was ist die These in einem Satz?
 2) Welche 3 Punkte sind unklar oder missverständlich (jeweils mit Zitatstelle)?
 3) Welche Stelle wirkt unbelegt?
@@ -457,17 +471,17 @@ Lies meinen Text als kritische*r Leser*in im Seminar.
 Text: …
 ```
 
-**Output** - 3 präzisierte Stellen im Text (je 1–2 Sätze überarbeitet)
+**Ergebnis** - 3 präzisierte Stellen im Text (je 1–2 Sätze überarbeitet)
 
 ## Lernergebnis
 
 Am Ende haben Sie ein kleines Paket an Artefakten, das wissenschaftlich weiterverwendbar ist:
 
-* Gliederung (mit Evidenzlücken)\
-* 1–3 überarbeitete Absätze (mit nachvollziehbaren Revisionen)\
-* Argumentmap (Logikprüfung)\
-* Abstract (und optional Übersetzung + Glossar)\
-* KI-Protokoll (Prompt- und Entscheidungsnachweis)
+- Gliederung (mit Evidenzlücken)\
+- 1–3 überarbeitete Absätze (mit nachvollziehbaren Revisionen)\
+- Argumentmap (Logikprüfung)\
+- Abstract (und optional Übersetzung + Glossar)\
+- KI-Protokoll (Prompt- und Entscheidungsnachweis)
 
 ## Bibliographie
 

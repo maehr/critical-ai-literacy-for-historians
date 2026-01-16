@@ -5,6 +5,10 @@ listing:
   id: exercises
   contents: exercises
   type: grid
+  categories: true
+  fields: [title, subtitle, description, categories]
+  exclude: 
+    title: "Übungen" # exercises/index.qmd
 ---
 
 ## Willkommen
@@ -15,20 +19,19 @@ Dieses Repository bietet strukturierte, praxisorientierte Übungen für Historik
 
 Diese Materialien zielen darauf ab, Lernenden zu helfen:
 
--   Zu verstehen, wie KI sowohl als Forschungs**werkzeug** als auch als **Methode** fungiert
--   Darüber nachzudenken, wie sie historische Interpretation und Evidenz prägt
--   Rigorose digitale Quellenkritik anzuwenden, um Datenprovenienz, Repräsentation und Bias zu bewerten
--   Verantwortungsvollen, transparenten und ethisch informierten Einsatz von KI in der historischen Forschung zu praktizieren
+- zu verstehen, wie KI sowohl als **Forschungswerkzeug** als auch als **Methode** fungiert,
+- darüber nachzudenken, wie sie historische Interpretation und Evidenz prägt,
+- rigorose digitale Quellenkritik anzuwenden, um Datenprovenienz, Repräsentation und Bias zu bewerten und
+- verantwortungsvollen, transparenten und ethisch informierten Einsatz von KI in der historischen Forschung zu praktizieren.
 
 ### Prinzipien
 
 Die Übungen fördern:
 
--   **Reproduzierbarkeit** in Forschungsabläufen
--   **Datenschutz** und ethischen Datenumgang
--   **Urheberrechtsbewusstsein** und korrekte Zuordnung
--   **Nachhaltigkeit** durch Minimal-Computing-Ansätze
--   **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
+- **Reproduzierbarkeit** in Forschungsabläufen
+- **Datenschutz** und ethischen Datenumgang
+- **Urheberrechtsbewusstsein** und korrekte Zuordnung
+- **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
 
 Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.
 

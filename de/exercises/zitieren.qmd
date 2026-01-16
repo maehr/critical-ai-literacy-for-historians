@@ -1,6 +1,6 @@
 ---
 lang: de
-title: "Wissenschaftliches Zitieren mit kritischem KI-Einsatz"
+title: "Wissenschaftliches Zitieren"
 subtitle: "Übung zur Zitierpraxis in der Geschichtswissenschaft"
 description: "Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt."
 author:
@@ -13,11 +13,12 @@ date: "2025-12-29"
 date-modified: today
 categories: [Methoden]
 tags:
-- Zitierpraxis
-- Referenzmanagement
-- Wissenschaftliche Integrität
-- Quellenangaben
-- Nachvollziehbarkeit
+  - Zitierpraxis
+  - Referenzmanagement
+  - Nachvollziehbarkeit
+  - Wissenschaftliche Integrität
+  - Digitale Quellenkritik
+  - KI-gestützt
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -107,6 +108,22 @@ Diese Übung vermittelt die **Grundlagen wissenschaftlichen Zitierens** in der G
 - Grundverständnis historischer Forschungsmethoden
 - Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
 
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
+
 ## Lernziele
 
 Nach Abschluss der Übung sind Sie in der Lage:
@@ -195,14 +212,18 @@ Erstelle zusätzlich einen Eintrag in einem Format, das ich direkt in Zotero imp
 ::: callout-tip
 Falls die KI keinen Zugriff auf den Artikel hat, können Sie den Artikel als PDF hochladen oder kopieren Sie den Inhalt und die Metadaten des Artikels an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Beispiel:
 
-""" INHALT DOKUMENT """
+"""
+INHALT DOKUMENT
+"""
 
-""" METADATEN DOKUMENT """
+"""
+METADATEN DOKUMENT
+"""
 
 IHR PROMPT
 :::
 
-Vergleichen Sie die KI-Ausgabe mit Ihrer manuellen Zitation, den offiziellen Zitierempfehlungen auf der Verlagsseite bzw. dem DOI-Import in Zotero. Testen Sie weitere Sekundärliteraturquellen (andere Artikel, Monographien).
+Vergleichen Sie die Antwort mit Ihrer manuellen Zitation, den offiziellen Zitierempfehlungen auf der Verlagsseite bzw. dem DOI-Import in Zotero. Testen Sie weitere Sekundärliteraturquellen (andere Artikel, Monographien).
 
 - Stimmen alle Angaben überein?
 - Gibt es systematische Abweichungen (z.B. bei Seitenzahlen, Herausgebern, Zeitschriftentiteln)?
@@ -214,7 +235,7 @@ Fasse den Artikel <https://doi.org/10.1093/pastj/gtae018> zusammen.
 Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manual of Style.
 ```
 
-Überprüfen Sie die KI-Ausgabe gegen den Originalartikel:
+Überprüfen Sie die Antwort gegen den Originalartikel:
 
 - Stimmen die Zitate mit dem Originaltext überein (Wortlaut, Seitenzahl)?
 - Wurde der Sinnzusammenhang der Zitate korrekt wiedergegeben?

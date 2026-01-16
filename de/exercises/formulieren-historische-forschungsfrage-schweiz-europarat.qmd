@@ -13,11 +13,13 @@ date: "2025-12-29"
 date-modified: today
 categories: [Forschungsdesign]
 tags:
-- Fragestellung
-- Heuristik
-- Schweiz
-- Europarat
-- Zeitgeschichte
+  - Forschungsfrage
+  - Literaturrecherche
+  - Nachvollziehbarkeit
+  - Europarat
+  - Schweiz
+  - Zeitgeschichte
+  - KI-gestützt
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -104,10 +106,6 @@ references:
   title: "Die Schweiz und der Europarat"
   URL: "https://www.dodis.ch/de/die-schweiz-und-der-europarat"
   publisher: "Dodis – Diplomatische Dokumente der Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "E-Dossier zur schweizerischen Aussenpolitik zum Europarat"  
 
 - id: dodis-beitritt1963
@@ -118,10 +116,6 @@ references:
   title: "Beitritt zum Europarat 1963"
   URL: "https://www.dodis.ch/de/beitritt-zum-europarat-1963"
   publisher: "Dodis – Diplomatische Dokumente der Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "E-Dossier zur Geschichte des Europarat-Beitritts der Schweiz"
 
 - id: aps-europarat-2025
@@ -135,10 +129,6 @@ references:
     year: 2025
     month: 11
     day: 12
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "Suchergebnisartikel zu Europarat-Bezug auf anneepolitique.swiss"
 
 - id: wikipedia-europarat-2025
@@ -150,10 +140,6 @@ references:
   publisher: "Wikimedia Foundation"
   issued:
     year: 2025
-  accessed:
-    year: 2025
-    month: 12
-    day: 14
   note: "Artikel zur internationalen Organisation Europarat auf der deutschsprachigen Wikipedia"
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -184,10 +170,6 @@ references:
     year: 2009
     month: 10
     day: 29
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Artikel zur Geschichte und Funktion des Europarats; Version vom 29.10.2009"  
 
 - id: amtsdruckschriften-bar
@@ -197,10 +179,6 @@ references:
     - literal: "Bundesarchiv Schweiz"
   URL: "https://www.amtsdruckschriften.bar.admin.ch/"
   publisher: "Bundesarchiv Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Digitale Sammlung amtlicher Schweizer Druckschriften"
 
 - id: chgov-bar-admin
@@ -210,10 +188,6 @@ references:
     - literal: "Bundesarchiv Schweiz"
   URL: "https://www.chgov.bar.admin.ch/"
   publisher: "Bundesarchiv Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Rechercheportal der Schweizer Regierungspublikationen"
 
 - id: e-newspaperarchives-ch
@@ -223,10 +197,6 @@ references:
     - literal: "ETH-Bibliothek Zürich"
   URL: "https://www.e-newspaperarchives.ch/"
   publisher: "ETH-Bibliothek Zürich"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Digitale Zeitungsarchive der Schweiz"
 
 - id: archives-online-org
@@ -236,10 +206,6 @@ references:
     - literal: "Staatsarchive der Schweiz"
   URL: "https://www.archives-online.org/"
   publisher: "Staatsarchive der Schweiz"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Aggregiertes Recherchesystem schweizerischer Archive"
 
 - id: e-periodica-ch
@@ -249,10 +215,6 @@ references:
     - literal: "ETH-Bibliothek Zürich"
   URL: "https://www.e-periodica.ch/"
   publisher: "ETH-Bibliothek Zürich"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Digitale Plattform für Schweizer Fachperiodika"
 
 - id: impresso-project-ch
@@ -262,10 +224,6 @@ references:
     - literal: "IMPRESSO Consortium"
   URL: "https://impresso-project.ch/"
   publisher: "IMPRESSO Project"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Projekt zur Zeitungs- und Medienanalyse"
 
 - id: memobase-ch
@@ -275,10 +233,6 @@ references:
     - literal: "Memobase Coordination"
   URL: "https://memobase.ch/"
   publisher: "Memobase"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Rechercheplattform für historische Schweizer Quellen"
 
 - id: swisscollections-ch
@@ -288,10 +242,6 @@ references:
     - literal: "Bibliothèque nationale suisse"
   URL: "https://swisscollections.ch/"
   publisher: "swisscollections"
-  accessed:
-    year: 2025
-    month: 12
-    day: 18
   note: "Zentrales Suchportal für Schweizer Bibliotheks- und Archivbestände"
 ---
 
@@ -304,41 +254,56 @@ Im Zentrum steht ein gemeinsames Fallbeispiel: **Die Schweiz und der Europarat**
 Die Übung folgt einem **zirkulären Forschungsverständnis**: Ergebnisse einzelner Schritte können – und sollen – revidiert werden.
 
 ::: callout-note
-## Hinweis zur offline Recherche
 
-Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven.
+## Hinweis zur online Recherche
+
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016]
 :::
 
 ## Voraussetzungen
 
-Für die Bearbeitung der Übung werden folgende Kenntnisse vorausgesetzt:
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
 
--   Grundverständnis historischer Forschungsmethoden
--   Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
 
 ## Lernziele
 
 Nach Abschluss der Übung sind Sie in der Lage:
 
--   zwischen **Thema**, **Fragestellung** und **analytischer historischer Forschungsfrage** zu unterscheiden,
--   eine **präzise und bearbeitbare historische Forschungsfrage** zu formulieren,
--   KI-Systeme **kritisch und methodisch kontrolliert** zur Literatur- und Kontexterschliessung einzusetzen,
--   die **Quellenlage und Machbarkeit** eines historischen Forschungsvorhabens reflektiert einzuschätzen.
+- zwischen **Thema**, **Fragestellung** und **analytischer historischer Forschungsfrage** zu unterscheiden,
+- eine **präzise und bearbeitbare historische Forschungsfrage** zu formulieren,
+- KI-Systeme **kritisch und methodisch kontrolliert** zur Literatur- und Kontexterschliessung einzusetzen,
+- die **Quellenlage und Machbarkeit** eines historischen Forschungsvorhabens reflektiert einzuschätzen.
 
 ## Struktur der Übung
 
 Die Übung ist modular aufgebaut. Jeder Schritt enthält:
 
--   eine **klare Zielsetzung**,
--   eine oder mehrere **konkrete Aufgaben (Prompts)**,
--   einen **Arbeits- und Reflexionsauftrag**.
+- eine **klare Zielsetzung**,
+- eine oder mehrere **konkrete Aufgaben (Prompts)**,
+- einen **Arbeits- und Reflexionsauftrag**.
 
-1.  Begriffsklärung: Was ist eine historische Forschungsfrage?
-2.  Themenfestlegung und historischer Überblick
-3.  Forschungsstand und Forschungslücken
-4.  Quellenlage und Machbarkeit
-5.  Eingrenzung und Formulierung der Forschungsfrage
-6.  Iterative Revision und Reflexion des KI-Einsatzes
+1. Begriffsklärung: Was ist eine historische Forschungsfrage?
+2. Themenfestlegung und historischer Überblick
+3. Forschungsstand und Forschungslücken
+4. Quellenlage und Machbarkeit
+5. Eingrenzung und Formulierung der Forschungsfrage
+6. Iterative Revision und Reflexion des KI-Einsatzes
 
 ## 1. Begriffsklärung: Historische Forschungsfrage
 
@@ -363,16 +328,16 @@ Welche Schritte sind notwendig, um eine historische Forschungsfrage zu entwickel
 
 Vergleichen Sie die KI-Antwort systematisch mit:
 
--   [@werkszeugkasten_basel_2016]
--   [@kompass_geschichtsstudium_2025]
--   [@leitfaden_bremen_2025]
--   [@studienleitfaden_hamburg_2021]
+- [@werkszeugkasten_basel_2016]
+- [@kompass_geschichtsstudium_2025]
+- [@leitfaden_bremen_2025]
+- [@studienleitfaden_hamburg_2021]
 
 Identifizieren Sie:
 
--   Übereinstimmungen,
--   Auslassungen,
--   Begriffsverschiebungen oder Vereinfachungen.
+- Übereinstimmungen,
+- Auslassungen,
+- Begriffsverschiebungen oder Vereinfachungen.
 
 Gezielte Rückfragen an die KI:
 
@@ -401,6 +366,7 @@ Du bist Historiker und hilfst mir im Dialog, ein historisches Thema für eine st
 ```
 
 ::: callout-tip
+
 ## Reflexionsfrage
 
 Worin unterscheidet sich dieser KI-Dialog von einem Gespräch mit einer Dozierenden oder einer Kommilitonin?
@@ -416,9 +382,9 @@ Gib mir einen historischen Überblick über die Beziehung zwischen der Schweiz u
 
 Vergleichen Sie den Überblick mit:
 
--   [@dodis-5020]
--   [@dodis-beitritt1963]
--   [@wikipedia-europarat-2025] (mit Vorsicht nutzen, schauen Sie die [Diskussionsseite](https://de.wikipedia.org/wiki/Diskussion:Europarat) an)
+- [@dodis-5020]
+- [@dodis-beitritt1963]
+- [@wikipedia-europarat-2025] (mit Vorsicht nutzen, schauen Sie die [Diskussionsseite](https://de.wikipedia.org/wiki/Diskussion:Europarat) an)
 
 Gezielte Nachfragen:
 
@@ -450,12 +416,12 @@ Welche offenen Fragen oder Forschungslücken bestehen in der bisherigen Forschun
 
 ### Arbeitsauftrag
 
-1.  Überprüfen Sie die genannten Titel via <https://swisscovery.slsp.ch>.
+1. Überprüfen Sie die genannten Titel via <https://swisscovery.slsp.ch>.
 
-2.  Gleichen Sie die Ergebnisse ab mit:
+2. Gleichen Sie die Ergebnisse ab mit:
 
-    -   [@altermatt-casasus-2013-europarat]
-    -   [@hls-europarat-2009]
+    - [@altermatt-casasus-2013-europarat]
+    - [@hls-europarat-2009]
 
 Gezielte Rückfragen:
 
@@ -489,17 +455,17 @@ Nenne konkrete Archive, Sammlungen und Dokumenttypen zur Schweiz und dem Europar
 
 Vergleichen Sie die Antwort mit u. a.:
 
--   [@dodis-5020]
--   [@dodis-beitritt1963]
--   [@aps-europarat-2025]
--   [@amtsdruckschriften-bar]
--   [@chgov-bar-admin]
--   [@e-newspaperarchives-ch]
--   [@archives-online-org]
--   [@e-periodica-ch]
--   [@impresso-project-ch]
--   [@memobase-ch]
--   [@swisscollections-ch]
+- [@dodis-5020]
+- [@dodis-beitritt1963]
+- [@aps-europarat-2025]
+- [@amtsdruckschriften-bar]
+- [@chgov-bar-admin]
+- [@e-newspaperarchives-ch]
+- [@archives-online-org]
+- [@e-periodica-ch]
+- [@impresso-project-ch]
+- [@memobase-ch]
+- [@swisscollections-ch]
 
 ## 5. Eingrenzung und Formulierung der Forschungsfrage
 
@@ -509,9 +475,9 @@ Transformation einer offenen Fragestellung in eine **präzise analytische histor
 
 ### Mögliche Dimensionen der Eingrenzung
 
--   **Zeitlich:** z. B. 1949–1963, Kalter Krieg, Post-1971
--   **Räumlich:** Schweiz im transnational-europäischen Kontext
--   **Thematisch:** Neutralität, Menschenrechte, Rechtsprechung, Aussenpolitik, Parlamentarismus
+- **Zeitlich:** z. B. 1949–1963, Kalter Krieg, Post-1971
+- **Räumlich:** Schweiz im transnational-europäischen Kontext
+- **Thematisch:** Neutralität, Menschenrechte, Rechtsprechung, Aussenpolitik, Parlamentarismus
 
 ### Aufgabe (Eingrenzung)
 
@@ -529,9 +495,9 @@ Formuliere auf dieser Basis eine analytische historische Forschungsfrage.
 
 Die Forschungsfrage sollte:
 
--   offen und analytisch sein („Wie“, „Warum“, „Inwiefern“),
--   historisch kontextualisiert sein,
--   mit verfügbaren Quellen bearbeitbar erscheinen.
+- offen und analytisch sein („Wie“, „Warum“, „Inwiefern“),
+- historisch kontextualisiert sein,
+- mit verfügbaren Quellen bearbeitbar erscheinen.
 
 ## 6. Iterative Revision und Reflexion
 
@@ -543,17 +509,17 @@ Bewusste Trennung zwischen **KI-Unterstützung** und **eigener Forschungsentsche
 
 Notieren Sie kurz:
 
--   Was hat die KI erleichtert?
--   Wo war sie irreführend, unpräzise oder verkürzend?
--   Welche Entscheidungen konnten nur Sie selbst treffen?
+- Was hat die KI erleichtert?
+- Wo war sie irreführend, unpräzise oder verkürzend?
+- Welche Entscheidungen konnten nur Sie selbst treffen?
 
 ## Lernergebnis
 
 Am Ende der Übung verfügen Sie über:
 
--   eine **klar formulierte analytische historische Forschungsfrage**,
--   ein reflektiertes Verständnis der **Potenziale und Grenzen von KI** im Forschungsdesign,
--   eine methodisch begründete Einschätzung der **Machbarkeit** Ihres Projekts.
+- eine **klar formulierte analytische historische Forschungsfrage**,
+- ein reflektiertes Verständnis der **Potenziale und Grenzen von KI** im Forschungsdesign,
+- eine methodisch begründete Einschätzung der **Machbarkeit** Ihres Projekts.
 
 ## Bibliographie
 

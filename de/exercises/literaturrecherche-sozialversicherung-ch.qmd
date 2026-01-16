@@ -13,11 +13,13 @@ date: "2025-12-29"
 date-modified: today
 categories: [Methoden]
 tags:
-- Literaturrecherche
-- Literaturanalyse
-- Sozialversicherung
-- Schweiz
-- Sekundärliteratur
+  - Literaturrecherche
+  - Literaturanalyse
+  - Referenzmanagement
+  - Reproduzierbarkeit
+  - Schweiz
+  - Sozialpolitik
+  - KI-gestützt
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -42,10 +44,6 @@ references:
   title: "History of Social Security (Switzerland) — Home"
   URL: "https://www.historyofsocialsecurity.ch/home"
   publisher: "History of Social Security"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
   note: "Mehrsprachige Plattform zur Geschichte der sozialen Sicherheit in der Schweiz"
 
 - id: historyofsocialsecurity-synthesis
@@ -53,10 +51,6 @@ references:
   title: "History of Social Security — Synthesis"
   URL: "https://www.historyofsocialsecurity.ch/synthesis"
   publisher: "History of Social Security"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
   note: "Synthetischer Überblick mit Literaturhinweisen nach Etappen"
 
 - id: historyofsocialsecurity-bibliography
@@ -64,10 +58,6 @@ references:
   title: "History of Social Security — Bibliography"
   URL: "https://www.historyofsocialsecurity.ch/bibliography"
   publisher: "History of Social Security"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
   note: "Kuratiertes Literaturverzeichnis (mehrsprachig)"
 
 - id: hls-sozialversicherungen
@@ -75,100 +65,70 @@ references:
   title: "Sozialversicherungen"
   URL: "https://hls-dhs-dss.ch/de/articles/016607/"
   publisher: "Historisches Lexikon der Schweiz (HLS)"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: hls-sozialpolitik
   type: webpage
   title: "Sozialpolitik"
   URL: "https://hls-dhs-dss.ch/articles/016577"
   publisher: "Historisches Lexikon der Schweiz (HLS)"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: hls-ahv
   type: webpage
   title: "Alters- und Hinterlassenenversicherung (AHV)"
   URL: "https://hls-dhs-dss.ch/de/articles/016611/"
   publisher: "Historisches Lexikon der Schweiz (HLS)"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: hls-soziale-sicherheit
   type: webpage
   title: "Soziale Sicherheit"
   URL: "https://hls-dhs-dss.ch/articles/016318"
   publisher: "Historisches Lexikon der Schweiz (HLS)"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: swisscovery
   type: webpage
   title: "swisscovery (SLSP) — Research platform"
   URL: "https://swisscovery.slsp.ch/"
   publisher: "Swiss Library Service Platform (SLSP)"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: e-periodica
   type: webpage
   title: "E-Periodica — Schweizer Zeitschriften online"
   URL: "https://www.e-periodica.ch/"
   publisher: "ETH-Bibliothek"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: e-newspaperarchives
   type: webpage
   title: "e-newspaperarchives.ch — Digitale Zeitungsarchive"
   URL: "https://www.e-newspaperarchives.ch/"
   publisher: "Schweizerische Nationalbibliothek & Partner"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: fedlex
   type: webpage
   title: "Fedlex — Das Portal des Bundesrechts"
   URL: "https://www.fedlex.admin.ch/"
   publisher: "Bundeskanzlei / Schweizerische Eidgenossenschaft"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: amtliches-bulletin
   type: webpage
   title: "Amtliches Bulletin — Parlamentsdebatten"
   URL: "https://www.parlament.ch/de/ratsbetrieb/amtliches-bulletin"
   publisher: "Schweizer Parlament"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: bar-amtsdruckschriften
   type: webpage
   title: "Amtsdruckschriften und weitere digitalisierte Unterlagen"
   URL: "https://www.bar.admin.ch/bar/de/home/recherche/suchen/suchmaschinen-portale/amtsdruckschriften.html"
   publisher: "Schweizerisches Bundesarchiv (BAR)"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: bsv-ahv-chronologie-2025
   type: report
@@ -180,10 +140,7 @@ references:
     month: 1
     day: 6
   URL: "https://www.bsv.admin.ch/dam/de/sd-web/BjJ4nul1AM2s/chronologie_der_ahv-revisionen.pdf"
-  accessed:
-    year: 2025
-    month: 12
-    day: 27
+
 
 - id: leimgruber-solidarity-2008
   type: book
@@ -222,9 +179,24 @@ Die Übung folgt einem zirkulären Such- und Analyseprozess: Ausgangspunkt ist e
 
 ## Voraussetzungen
 
-- Grundkenntnisse in historischer Forschungsmethoden
-- Zugang zu wissenschaftlichen Katalogen/Datenbanken (z. B. swisscovery)
-- Grundkenntnisse in der Nutzung generativer KI
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
 
 ## Lernziele
 
@@ -248,9 +220,9 @@ Nach Abschluss dieser Übung können Sie:
 
 ::: callout-note
 
-## Hinweis zur Materialität
+## Hinweis zur online Recherche
 
-Nicht alles ist digital zugänglich. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016]
 :::
 
 ## Struktur der Übung
@@ -269,7 +241,7 @@ Jeder Schritt enthält:
 6. Screening und Qualitätsbewertung: Relevanz, Argument, Methode, Evidenz
 7. Historiografische Debattenkartierung und Forschungsstand-Text (komprimiert, evidenzsensibel)
 8. Forschungslücke und Eingrenzung: vom Forschungsstand zur Forschungsfrage
-9. Reproduzierbarkeit und Nachweis (Pflicht)
+9. Reproduzierbarkeit und Nachweis
 
 ## 1. Problemformulierung und Suchhorizont
 
@@ -297,7 +269,7 @@ Keine erfundenen Titel.
 
 ### Kritischer Check
 
-Markieren Sie in der KI-Ausgabe:
+Markieren Sie in der Antwort:
 
 - anachronistische Kategorien (als *rückblickende Suchanker* kennzeichnen),
 - implizite Theorieannahmen (z. B. „Wohlfahrtsregime“),
@@ -551,7 +523,7 @@ Für jede Variante:
 
 **Deliverable**: 1 Forschungslücke + 1 priorisierte Forschungsfrage + 1 Risikoabschnitt (150–200 Wörter).
 
-## 9. Reproduzierbarkeit und Nachweis (Pflicht)
+## 9. Reproduzierbarkeit und Nachweis
 
 ### Ziel
 
@@ -562,7 +534,7 @@ Literaturarbeit als nachvollziehbarer Forschungsprozess (FAIR-orientiert, zitati
 - **Suchprotokoll**: Datum, System, Query, Filter, Treffer, Auswahlregeln (≥ 12 Einträge)
 - **Zotero/BibTeX-Export**: Versionierter Stand (Datum), Dubletten-Strategie
 - **Entscheidungslog**: Warum Titel aufgenommen/abgelehnt (stichwortartig)
-- **KI-Protokoll (Anhang)**: 2–4 Prompts, gekürzte Outputs, Ihre Korrekturen/Rejects, Verwendungszweck
+- **KI-Protokoll (Anhang)**: 2–4 Prompts, gekürzte Antworten, Ihre Korrekturen/Rejects, Verwendungszweck
 
 ::: callout-warning
 
