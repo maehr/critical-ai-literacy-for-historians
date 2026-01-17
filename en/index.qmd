@@ -14,27 +14,27 @@ aliases:
 This repository provides structured, hands-on exercises for historians to develop **critical AI literacy**, **digital source criticism**, and **scholarly practice** with large language models (LLMs).
 
 ::: {.callout-warning title="DISCLAIMER"}
-This project is currently under active development and in a very early stage. The materials provided here are preliminary and may change significantly. Please use them with caution and be aware that they may not yet represent the final quality or scope intended for this resource.
+This project is currently under active development (with the help of AI) and in a very early stage. The materials provided here are preliminary and may change significantly. Please use them with caution and be aware that they may not yet represent the final quality or scope intended for this resource.
 :::
 
 ### Purpose
 
 These materials aim to help learners:
 
--   Understand how AI functions as both a research **tool** and a **method**
--   Reflect on how it shapes historical interpretation and evidence
--   Apply rigorous digital source criticism to assess data provenance, representation, and bias
--   Practice responsible, transparent, and ethically informed use of AI in historical research
+- Understand how AI functions as both a research **tool** and a **method**
+- Reflect on how it shapes historical interpretation and evidence
+- Apply rigorous digital source criticism to assess data provenance, representation, and bias
+- Practice responsible, transparent, and ethically informed use of AI in historical research
 
 ### Principles
 
 The exercises promote:
 
--   **Reproducibility** in research workflows
--   **Privacy** and ethical data handling
--   **Copyright awareness** and proper attribution
--   **Sustainability** through minimal computing approaches
--   **Interdisciplinary collaboration** and critical reflection
+- **Reproducibility** in research workflows
+- **Privacy** and ethical data handling
+- **Copyright awareness** and proper attribution
+- **Sustainability** through minimal computing approaches
+- **Interdisciplinary collaboration** and critical reflection
 
 By engaging with these materials, historians will be better equipped to design transparent, meaningful projects that integrate AI into their research without compromising disciplinary rigor.
 
@@ -62,35 +62,35 @@ Moritz Mähr (Dr. sc. ETH Zurich) is an associate researcher in Digital Humaniti
 
 The project is grounded in the following pedagogical principles:
 
-1.  **AI as Tool and Method**: Understanding AI not only as a technical tool but also as a methodological approach that shapes research questions and interpretations
-2.  **Digital Source Criticism**: Applying rigorous critical evaluation to AI-generated content, datasets, and algorithmic outputs
-3.  **Ethical Awareness**: Fostering responsible use of AI that considers privacy, bias, representation, and power dynamics
-4.  **Transparency and Reproducibility**: Promoting open, documented, and replicable research practices
-5.  **Disciplinary Rigor**: Maintaining historical methods and critical thinking while integrating new technologies
+1. **AI as Tool and Method**: Understanding AI not only as a technical tool but also as a methodological approach that shapes research questions and interpretations
+2. **Digital Source Criticism**: Applying rigorous critical evaluation to AI-generated content, datasets, and algorithmic outputs
+3. **Ethical Awareness**: Fostering responsible use of AI that considers privacy, bias, representation, and power dynamics
+4. **Transparency and Reproducibility**: Promoting open, documented, and replicable research practices
+5. **Disciplinary Rigor**: Maintaining historical methods and critical thinking while integrating new technologies
 
 ### Learning Approach
 
 The exercises follow a structured progression:
 
--   **Beginner**: Introduction to AI concepts and basic critical evaluation
--   **Intermediate**: Applying AI tools to historical research with critical reflection
--   **Advanced**: Designing AI-integrated research projects with methodological sophistication
+- **Beginner**: Introduction to AI concepts and basic critical evaluation
+- **Intermediate**: Applying AI tools to historical research with critical reflection
+- **Advanced**: Designing AI-integrated research projects with methodological sophistication
 
 Each exercise includes:
 
--   Clear learning objectives
--   Estimated time commitment
--   Prerequisites
--   Hands-on activities
--   Critical reflection prompts
--   Additional resources
+- Clear learning objectives
+- Estimated time commitment
+- Prerequisites
+- Hands-on activities
+- Critical reflection prompts
+- Additional resources
 
 ### FAIR and CARE Principles
 
 This project adheres to:
 
--   **FAIR** principles (Findable, Accessible, Interoperable, Reusable) for research data and educational materials
--   **CARE** principles (Collective Benefit, Authority to Control, Responsibility, Ethics) for responsible data governance
+- **FAIR** principles (Findable, Accessible, Interoperable, Reusable) for research data and educational materials
+- **CARE** principles (Collective Benefit, Authority to Control, Responsibility, Ethics) for responsible data governance
 
 ### Contributing
 
@@ -98,8 +98,8 @@ We welcome contributions from historians, educators, and researchers. Please see
 
 ### License
 
--   Educational materials: [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
--   Code: [AGPL 3.0](../LICENSE-AGPL.md)
+- Educational materials: [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
+- Code: [AGPL 3.0](../LICENSE-AGPL.md)
 
 ### Contact
 
