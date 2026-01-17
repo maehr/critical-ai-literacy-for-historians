@@ -6,6 +6,8 @@ listing:
   type: table
   categories: true
   fields: [title, subtitle, description, categories]
+  exclude:
+    title: "Exercices" # exercises/index.qmd
 citation: false
 ---
 
