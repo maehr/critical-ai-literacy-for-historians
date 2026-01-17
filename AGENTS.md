@@ -16,7 +16,9 @@ The following agent skills are available in `.agent/skills` to automate common t
 - **Bibliography Management**: Managing citations and format conversion (`.agent/skills/bibliography/SKILL.md`)
 - **Glossary Creation**: Guidelines for creating and maintaining glossaries (`.agent/skills/glossary/SKILL.md`)
 - **Setup New Exercise**: Creating new exercises with correct structure and metadata (`.agent/skills/new_exercise/SKILL.md`)
+- **Sync Exercises**: Audit and sync missing files across languages (`.agent/skills/sync_exercises/SKILL.md`)
 - **Translation**: Translating content between EN/DE/FR (`.agent/skills/translation/SKILL.md`)
+- **Validate Scientific Backing**: Ensure exercises are supported by quality literature (`.agent/skills/validate_backing/SKILL.md`)
 
 ## 3) Multilingual Content Management
 
@@ -213,28 +215,28 @@ Before finalizing changes:
 
 ### Adding a New Exercise
 
-1. Create exercise file in `en/exercises/exerciseN.qmd`
-2. Create parallel files in `de/exercises/exerciseN.qmd` and `fr/exercises/exerciseN.qmd`
-3. Use standard YAML front matter with approved categories/tags
-4. Add citations to `bibliography.bib` if needed
-5. Preview with `quarto preview`
-6. Format with `npm run format`
-7. Commit with `npm run commit`
+**Use the `Setup New Exercise` skill.**
+
+1. Determining topic and creating a unique slug.
+2. Creating the **primary draft** file (full content).
+3. Creating **stubs** in the other two languages (parity).
+4. Adding citations to `bibliography.bib` if needed.
+5. Previewing with `quarto preview`.
 
 ### Updating Existing Content
 
-1. Make changes to content
-2. Update `date-modified` in YAML front matter
-3. If translatable content changed, mark translations for update
-4. Preview changes with `quarto preview`
-5. Format and commit
+1. Make changes to content.
+2. Update `date-modified` in YAML front matter.
+3. If adding entirely new sections, use the `Translation` skill to update the other languages.
+4. Preview changes with `quarto preview`.
+5. Format and commit.
 
 ### Maintaining Bibliography
 
-1. Check for duplicate entries
-2. Ensure consistent formatting
-3. Verify DOIs are valid and accessible
-4. Use descriptive citation keys
-5. Keep entries relevant to AI literacy in historical research
+1. Check for duplicate entries.
+2. Ensure consistent formatting.
+3. Verify DOIs are valid and accessible.
+4. Use descriptive citation keys.
+5. Keep entries relevant to AI literacy in historical research.
 
 **Principle**: Maintain high-quality, accessible, multilingual educational content following FAIR principles. Ensure consistency across languages while respecting cultural and linguistic differences.

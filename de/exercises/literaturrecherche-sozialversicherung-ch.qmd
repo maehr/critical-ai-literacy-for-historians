@@ -284,14 +284,14 @@ Ein robustes Kontextgerüst (Chronologie, Begriffe, Institutionen) als Grundlage
 ### Kernressourcen
 
 - Plattform:
-  - [@historyofsocialsecurity-home]
-  - [@historyofsocialsecurity-synthesis]
-  - [@historyofsocialsecurity-bibliography]
+  - @historyofsocialsecurity-home
+  - @historyofsocialsecurity-synthesis
+  - @historyofsocialsecurity-bibliography
 - HLS-Einstiege:
-  - [@hls-sozialversicherungen]
-  - [@hls-sozialpolitik]
-  - [@hls-ahv]
-  - [@hls-soziale-sicherheit]
+  - @hls-sozialversicherungen
+  - @hls-sozialpolitik
+  - @hls-ahv
+  - @hls-soziale-sicherheit
 
 ### Aufgabe (ohne KI)
 
@@ -327,7 +327,7 @@ Reproduzierbare, dokumentierte Suche in grossen Katalogen; Aufbau eines Startkor
 
 ### Primärer Suchort
 
-- [@swisscovery]
+- @swisscovery
 
 ### Aufgabe (ohne KI)
 
@@ -377,8 +377,8 @@ Debatten und Forschungsstand über Aufsatzliteratur, Rezensionen, Periodika sich
 
 ### Suchorte (Beispiele)
 
-- Zeitschriftenplattformen: [@e-periodica]
-- Zeitungen (für Diskurs- und Rezeptionspfade): [@e-newspaperarchives]
+- Zeitschriftenplattformen: @e-periodica
+- Zeitungen (für Diskurs- und Rezeptionspfade): @e-newspaperarchives
 
 ### Aufgabe (ohne KI)
 

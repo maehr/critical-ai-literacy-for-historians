@@ -19,7 +19,7 @@ website:
   navbar:
     logo: favicon.svg
     logo-alt: 'Critical AI Literacy for Historians'
-    title: 'Critical AI Literacy'
+    title: 'Critical AI Literacy for *Historians*'
     tools:
       - icon: github
         url: https://github.com/maehr/critical-ai-literacy-for-historians/
@@ -70,16 +70,13 @@ website:
 format:
   html:
     toc: true
+    brand: _brand.yml
     theme:
-      light:
-        - brand
-      dark:
-        - brand
-    css: styles.css
+      - default
+      - theme.scss
     code-copy: true
     code-overflow: wrap
     canonical-url: true
-    csl: chicago-in-text-full-mm.csl
 
 freeze: true
 

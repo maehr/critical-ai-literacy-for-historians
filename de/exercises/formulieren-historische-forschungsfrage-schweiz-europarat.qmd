@@ -328,10 +328,10 @@ Welche Schritte sind notwendig, um eine historische Forschungsfrage zu entwickel
 
 Vergleichen Sie die KI-Antwort systematisch mit:
 
-- [@werkszeugkasten_basel_2016]
-- [@kompass_geschichtsstudium_2025]
-- [@leitfaden_bremen_2025]
-- [@studienleitfaden_hamburg_2021]
+- @werkszeugkasten_basel_2016
+- @kompass_geschichtsstudium_2025
+- @leitfaden_bremen_2025
+- @studienleitfaden_hamburg_2021
 
 Identifizieren Sie:
 
@@ -382,9 +382,9 @@ Gib mir einen historischen Überblick über die Beziehung zwischen der Schweiz u
 
 Vergleichen Sie den Überblick mit:
 
-- [@dodis-5020]
-- [@dodis-beitritt1963]
-- [@wikipedia-europarat-2025] (mit Vorsicht nutzen, schauen Sie die [Diskussionsseite](https://de.wikipedia.org/wiki/Diskussion:Europarat) an)
+- @dodis-5020
+- @dodis-beitritt1963
+- @wikipedia-europarat-2025 (mit Vorsicht nutzen, schauen Sie die [Diskussionsseite](https://de.wikipedia.org/wiki/Diskussion:Europarat) an)
 
 Gezielte Nachfragen:
 
@@ -420,8 +420,8 @@ Welche offenen Fragen oder Forschungslücken bestehen in der bisherigen Forschun
 
 2. Gleichen Sie die Ergebnisse ab mit:
 
-    - [@altermatt-casasus-2013-europarat]
-    - [@hls-europarat-2009]
+- @altermatt-casasus-2013-europarat
+- @hls-europarat-2009
 
 Gezielte Rückfragen:
 
@@ -455,17 +455,17 @@ Nenne konkrete Archive, Sammlungen und Dokumenttypen zur Schweiz und dem Europar
 
 Vergleichen Sie die Antwort mit u. a.:
 
-- [@dodis-5020]
-- [@dodis-beitritt1963]
-- [@aps-europarat-2025]
-- [@amtsdruckschriften-bar]
-- [@chgov-bar-admin]
-- [@e-newspaperarchives-ch]
-- [@archives-online-org]
-- [@e-periodica-ch]
-- [@impresso-project-ch]
-- [@memobase-ch]
-- [@swisscollections-ch]
+- @dodis-5020
+- @dodis-beitritt1963
+- @aps-europarat-2025
+- @amtsdruckschriften-bar
+- @chgov-bar-admin
+- @e-newspaperarchives-ch
+- @archives-online-org
+- @e-periodica-ch
+- @impresso-project-ch
+- @memobase-ch
+- @swisscollections-ch
 
 ## 5. Eingrenzung und Formulierung der Forschungsfrage
 

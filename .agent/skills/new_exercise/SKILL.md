@@ -1,6 +1,6 @@
 ---
 name: Setup New Exercise
-description: Step-by-step guide to creating a new exercise in all three languages, ensuring correct metadata and structure.
+description: Create a new exercise in one primary language and generate stubs for the others.
 ---
 
 # Setup New Exercise Skill
@@ -10,34 +10,33 @@ Use this skill when the user asks to "create a new exercise" or "add a module".
 ## 1. Preparation
 
 - **Determine Topic**: Choose a unique slug (e.g., `exercise-bias-in-ocr`).
+- **Select Primary Language**: Ask the user which language they want to draft in (`en`, `de`, or `fr`).
 - **Select Metadata**:
-  - **Category**: Pick ONE from `AI Literacy`, `Source Criticism`, `Ethics`, `Methods`.
-  - **Tags**: Pick 2-4 from approved list.
-  - **Difficulty**: `Beginner`, `Intermediate`, or `Advanced`.
+  - **Category**: Pick ONE.
+    - EN: `AI Literacy`, `Source Criticism`, `Ethics`, `Methods`
+    - DE: `KI & Digitale Methoden`, `Quellen`, `Ethik`, `Methoden`
+    - FR: `Littératie IA`, `Critique des sources`, `Éthique`, `Méthodes`
+  - **Tags**: Pick 2-4.
 
 ## 2. File Creation
 
-Create three files simultaneously:
+Create three files: **one primary draft** and **two stubs**.
 
-1. `en/exercises/SLUG.qmd`
-2. `de/exercises/SLUG.qmd`
-3. `fr/exercises/SLUG.qmd`
+### A. Primary Draft (Full Template)
 
-## 3. Template
-
-Use this template for each file:
+File: `[lang]/exercises/[slug].qmd`
 
 ```yaml
 ---
-lang: [en|de|fr]
-title: "Title in Language"
-description: "Description in Language"
+lang: [lang]
+title: "Title"
+description: "Description"
 author:
   - name: "Your Name"
     affiliation: "Institution"
-date: "YYYY-MM-DD"
-date-modified: "YYYY-MM-DD"
-categories: [CategoryInLanguage]
+date: "today"
+date-modified: "today"
+categories: [Category]
 tags: [Tag1, Tag2]
 difficulty: [Difficulty]
 time_estimate: "45 minutes"
@@ -57,7 +56,13 @@ draft: true
 
 ## Exercise
 
-[Activity steps]
+### Step 1
+
+[Instructions]
+
+### Step 2
+
+[Instructions]
 
 ## Reflection
 
@@ -69,6 +74,28 @@ draft: true
 :::
 ```
 
-## 4. Registering
+### B. Language Stubs (Placeholders)
 
-- Add the new exercise to the appropriate listing or index page if manual addition is required (usually Quarto handles listings automatically).
+For the other two languages, create a file with minimal content to establish file parity.
+
+File: `[other_lang]/exercises/[slug].qmd`
+
+```yaml
+---
+lang: [other_lang]
+title: "TRANSLATION NEEDED: [Original Title]"
+description: "Translation needed"
+draft: true
+---
+
+:::{.callout-warning}
+# Translation Needed
+
+This exercise is currently only available in [Primary Language].
+:::
+```
+
+## 3. Next Steps
+
+- Inform the user that the primary draft and stubs are created.
+- Suggest running the **Translation** skill to generate the missing versions.

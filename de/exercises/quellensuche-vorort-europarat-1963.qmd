@@ -376,17 +376,17 @@ Ein **orientierendes Referenzgerüst** aufbauen, bevor die Tiefenrecherche begin
 
 ### Kernressourcen
 
-- [@dodis-5020]
-- [@dodis-beitritt1963]
-- [@aps-europarat-2025]
-- [@amtsdruckschriften-bar]
-- [@chgov-bar-admin]
-- [@e-newspaperarchives-ch]
-- [@archives-online-org]
-- [@e-periodica-ch]
-- [@impresso-project-ch]
-- [@memobase-ch]
-- [@swisscollections-ch]
+- @dodis-5020
+- @dodis-beitritt1963
+- @aps-europarat-2025
+- @amtsdruckschriften-bar
+- @chgov-bar-admin
+- @e-newspaperarchives-ch
+- @archives-online-org
+- @e-periodica-ch
+- @impresso-project-ch
+- @memobase-ch
+- @swisscollections-ch
 
 ### Aufgabe (KI als Suchassistent, nicht als Quelle)
 

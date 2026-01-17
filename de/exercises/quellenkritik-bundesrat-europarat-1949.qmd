@@ -258,7 +258,7 @@ references:
 
 Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äussere und innere Kritik) anhand einer konkreten Quelle aus den *Diplomatischen Dokumenten der Schweiz (Dodis)*. Im Zentrum steht die Frage, wie eine Quelle **als historisches Evidenzobjekt** behandelt wird: nicht als „Faktenspeicher“, sondern als **situierter Artefakt** mit Entstehungskontext und Überlieferungsgeschichte.
 
-**Fallbeispiel (Primärquelle): [@dodis5020]**
+**Fallbeispiel (Primärquelle): @dodis5020**
 
 ::: callout-note
 
