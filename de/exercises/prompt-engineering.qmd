@@ -20,74 +20,8 @@ tags:
   - Nachvollziehbarkeit
   - Wissenschaftliche Integrität
 draft: false
-nocite: |
-  @promptingguide-ai, @openai-prompt-engineering, @anthropic-claude-prompt-engineering, @meta-llama-prompting, @google-vertex-ai-prompt-design
-references: [
-  {
-    "id": "promptingguide-ai",
-    "type": "webpage",
-    "title": "Prompt Engineering Guide",
-    "URL": "https://www.promptingguide.ai",
-    "author": [
-      {
-        "literal": "PromptingGuide.ai"
-      }
-    ],
-
-  },
-  {
-    "id": "openai-prompt-engineering",
-    "type": "webpage",
-    "title": "Prompt engineering",
-    "container-title": "OpenAI API Documentation",
-    "URL": "https://platform.openai.com/docs/guides/prompt-engineering",
-    "author": [
-      {
-        "literal": "OpenAI"
-      }
-    ],
-
-  },
-  {
-    "id": "anthropic-claude-prompt-engineering",
-    "type": "webpage",
-    "title": "Prompt engineering overview",
-    "container-title": "Claude Documentation",
-    "URL": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
-    "author": [
-      {
-        "literal": "Anthropic"
-      }
-    ],
-
-  },
-  {
-    "id": "meta-llama-prompting",
-    "type": "webpage",
-    "title": "Prompt engineering",
-    "container-title": "LLaMA Documentation",
-    "URL": "https://www.llama.com/docs/how-to-guides/prompting/",
-    "author": [
-      {
-        "literal": "Meta"
-      }
-    ],
-
-  },
-  {
-    "id": "google-vertex-ai-prompt-design",
-    "type": "webpage",
-    "title": "Prompt design strategies",
-    "container-title": "Generative AI on Vertex AI Documentation",
-    "URL": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies",
-    "author": [
-      {
-        "literal": "Google Cloud"
-      }
-    ],
-
-  }
-]
+nocite: ""
+references: []
 ---
 
 ## Überblick und didaktisches Ziel
@@ -582,6 +516,14 @@ Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du 
 1. Prompt-Protokoll (mind. 8 Einträge, verteilt über die Techniken)\
 2. Pro Technik: 1 kurzer Vergleich (A/B) + 5–8 Sätze Reflexion, was sich methodisch verbessert/verschlechtert hat\
 3. Eine «beste Praxis»-Vorlage: Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz
+
+## Ressourcen
+
+- [Prompt Engineering Guide](https://www.promptingguide.ai)
+- [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
+- [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
+- [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
 
 ## Bibliographie
 

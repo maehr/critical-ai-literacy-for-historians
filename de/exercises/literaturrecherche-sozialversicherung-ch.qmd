@@ -39,90 +39,6 @@ references:
   note: "English translation of 'Werkzeugkasten Geschichte'; revised online version"
   URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
 
-- id: historyofsocialsecurity-home
-  type: webpage
-  title: "History of Social Security (Switzerland) — Home"
-  URL: "https://www.historyofsocialsecurity.ch/home"
-  publisher: "History of Social Security"
-  note: "Mehrsprachige Plattform zur Geschichte der sozialen Sicherheit in der Schweiz"
-
-- id: historyofsocialsecurity-synthesis
-  type: webpage
-  title: "History of Social Security — Synthesis"
-  URL: "https://www.historyofsocialsecurity.ch/synthesis"
-  publisher: "History of Social Security"
-  note: "Synthetischer Überblick mit Literaturhinweisen nach Etappen"
-
-- id: historyofsocialsecurity-bibliography
-  type: webpage
-  title: "History of Social Security — Bibliography"
-  URL: "https://www.historyofsocialsecurity.ch/bibliography"
-  publisher: "History of Social Security"
-  note: "Kuratiertes Literaturverzeichnis (mehrsprachig)"
-
-- id: hls-sozialversicherungen
-  type: webpage
-  title: "Sozialversicherungen"
-  URL: "https://hls-dhs-dss.ch/de/articles/016607/"
-  publisher: "Historisches Lexikon der Schweiz (HLS)"
-
-
-- id: hls-sozialpolitik
-  type: webpage
-  title: "Sozialpolitik"
-  URL: "https://hls-dhs-dss.ch/articles/016577"
-  publisher: "Historisches Lexikon der Schweiz (HLS)"
-
-
-- id: hls-ahv
-  type: webpage
-  title: "Alters- und Hinterlassenenversicherung (AHV)"
-  URL: "https://hls-dhs-dss.ch/de/articles/016611/"
-  publisher: "Historisches Lexikon der Schweiz (HLS)"
-
-
-- id: hls-soziale-sicherheit
-  type: webpage
-  title: "Soziale Sicherheit"
-  URL: "https://hls-dhs-dss.ch/articles/016318"
-  publisher: "Historisches Lexikon der Schweiz (HLS)"
-
-
-- id: swisscovery
-  type: webpage
-  title: "swisscovery (SLSP) — Research platform"
-  URL: "https://swisscovery.slsp.ch/"
-  publisher: "Swiss Library Service Platform (SLSP)"
-
-
-- id: e-periodica
-  type: webpage
-  title: "E-Periodica — Schweizer Zeitschriften online"
-  URL: "https://www.e-periodica.ch/"
-  publisher: "ETH-Bibliothek"
-
-
-- id: e-newspaperarchives
-  type: webpage
-  title: "e-newspaperarchives.ch — Digitale Zeitungsarchive"
-  URL: "https://www.e-newspaperarchives.ch/"
-  publisher: "Schweizerische Nationalbibliothek & Partner"
-
-
-- id: fedlex
-  type: webpage
-  title: "Fedlex — Das Portal des Bundesrechts"
-  URL: "https://www.fedlex.admin.ch/"
-  publisher: "Bundeskanzlei / Schweizerische Eidgenossenschaft"
-
-
-- id: amtliches-bulletin
-  type: webpage
-  title: "Amtliches Bulletin — Parlamentsdebatten"
-  URL: "https://www.parlament.ch/de/ratsbetrieb/amtliches-bulletin"
-  publisher: "Schweizer Parlament"
-
-
 - id: bar-amtsdruckschriften
   type: webpage
   title: "Amtsdruckschriften und weitere digitalisierte Unterlagen"
@@ -284,14 +200,14 @@ Ein robustes Kontextgerüst (Chronologie, Begriffe, Institutionen) als Grundlage
 ### Kernressourcen
 
 - Plattform:
-  - @historyofsocialsecurity-home
-  - @historyofsocialsecurity-synthesis
-  - @historyofsocialsecurity-bibliography
+  - [History of Social Security (Switzerland) — Home](https://www.historyofsocialsecurity.ch/home)
+  - [History of Social Security — Synthesis](https://www.historyofsocialsecurity.ch/synthesis)
+  - [History of Social Security — Bibliography](https://www.historyofsocialsecurity.ch/bibliography)
 - HLS-Einstiege:
-  - @hls-sozialversicherungen
-  - @hls-sozialpolitik
-  - @hls-ahv
-  - @hls-soziale-sicherheit
+  - [Historisches Lexikon der Schweiz: Sozialversicherungen](https://hls-dhs-dss.ch/de/articles/016607/)
+  - [Historisches Lexikon der Schweiz: Sozialpolitik](https://hls-dhs-dss.ch/articles/016577)
+  - [Historisches Lexikon der Schweiz: Alters- und Hinterlassenenversicherung (AHV)](https://hls-dhs-dss.ch/de/articles/016611/)
+  - [Historisches Lexikon der Schweiz: Soziale Sicherheit](https://hls-dhs-dss.ch/articles/016318)
 
 ### Aufgabe (ohne KI)
 
@@ -327,7 +243,7 @@ Reproduzierbare, dokumentierte Suche in grossen Katalogen; Aufbau eines Startkor
 
 ### Primärer Suchort
 
-- @swisscovery
+- [swisscovery (SLSP)](https://swisscovery.slsp.ch/)
 
 ### Aufgabe (ohne KI)
 
@@ -377,8 +293,8 @@ Debatten und Forschungsstand über Aufsatzliteratur, Rezensionen, Periodika sich
 
 ### Suchorte (Beispiele)
 
-- Zeitschriftenplattformen: @e-periodica
-- Zeitungen (für Diskurs- und Rezeptionspfade): @e-newspaperarchives
+- Zeitschriftenplattformen: [E-Periodica — Schweizer Zeitschriften online](https://www.e-periodica.ch/)
+- Zeitungen (für Diskurs- und Rezeptionspfade): [e-newspaperarchives.ch — Digitale Zeitungsarchive](https://www.e-newspaperarchives.ch/)
 
 ### Aufgabe (ohne KI)
 
