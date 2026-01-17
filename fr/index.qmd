@@ -5,6 +5,8 @@ listing:
   id: exercises
   contents: exercises
   type: grid
+  exclude:
+    title: "Exercices" # exercises/index.qmd
 ---
 
 ## Bienvenue

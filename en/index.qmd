@@ -5,6 +5,8 @@ listing:
   id: exercises
   contents: exercises
   type: grid
+  exclude:
+    title: "Exercises" # exercises/index.qmd
 aliases:
   - /index.html
 ---
