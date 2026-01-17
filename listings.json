@@ -4,10 +4,8 @@
     "items": []
   },
   {
-    "listing": "/en/index.html",
-    "items": [
-      "/en/exercises/index.html"
-    ]
+    "listing": "/fr/exercises/index.html",
+    "items": []
   },
   {
     "listing": "/de/exercises/index.html",
@@ -42,7 +40,9 @@
     ]
   },
   {
-    "listing": "/fr/exercises/index.html",
-    "items": []
+    "listing": "/en/index.html",
+    "items": [
+      "/en/exercises/index.html"
+    ]
   }
 ]
