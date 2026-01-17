@@ -1,6 +1,13 @@
 ---
 title: "Exercices"
 lang: fr
-listing: default
+listing:
+  id: exercises
+  type: table
+  categories: true
+  fields: [title, subtitle, description, categories]
 citation: false
 ---
+
+::: {#exercises}
+:::
