@@ -1,0 +1,542 @@
+---
+lang: fr
+title: "Prompt Engineering"
+subtitle: "Travail historique avec les LLMs : heuristiques contrôlées, reproductibilité, discipline des preuves"
+description: "Un exercice qui entraîne les techniques centrales de prompting (bases, rôles, zero-/few-shot, trace de réflexion structurée, prompting itératif, optimisation) à l'aide de processus de travail en sciences historiques."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Université de Berne"
+date: "2025-12-29"
+date-modified: today
+categories: [IA & Méthodes numériques]
+tags:
+  - Prompting
+  - Critique des outils
+  - Reproductibilité
+  - Critique des sources numériques
+  - Traçabilité
+  - Intégrité scientifique
+draft: false
+nocite: ""
+references: []
+---
+
+## Aperçu et objectif didactique
+
+Cet exercice rend le prompting visible **comme méthode** : les prompts ici ne sont pas des « astuces », mais plutôt des **opérationnalisations** de tâches de travail historique.
+
+Vous vous entraînerez à :
+
+- délimiter clairement les tâches,
+- formater les réponses de manière vérifiable,
+- contrôler les sources d'erreur, et
+- **documenter les résultats de manière reproductible**.
+
+Contrairement aux exercices thématiques ([Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd), [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd), [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd), [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd), [Écriture](ecriture.qmd), [Citation](citer.qmd), [Public History](public-history.qmd)), cette unité se concentre sur l'**infrastructure commune** : conception de prompt, sélection de rôle, itération et optimisation.
+
+::: callout-important
+
+## Règle de base : L'IA comme hypothèse
+
+Chaque fois que le modèle fournit des faits, de la littérature, des archives, des signatures ou des citations qui ne proviennent pas de votre input ou de références vérifiables, traitez cela comme une **hypothèse** (pas comme un résultat).[@bender2021stochastic] Votre travail reste : **contre-vérification, vérification, décision**.
+:::
+
+## Prérequis
+
+- Compréhension de base des méthodes de recherche historique
+
+## Objectifs d'apprentissage
+
+À l'issue de l'exercice, vous serez en mesure de :
+
+- **structurer** les prompts (contexte structuré, format de réponse, contraintes, mode de vérification),
+- utiliser **à dessein** les rôles (par ex. critique des sources, assistant de recherche, avocat du diable, rédacteur),
+- choisir **selon la situation** entre prompting zero-shot et few-shot,
+- demander une **trace de réflexion structurée** (décomposition de tâche, produits intermédiaires, auto-vérifications),
+- mettre en œuvre le prompting itératif comme un **flux de travail contrôlé** (Générer → Critiquer → Réviser → Vérifier),
+- optimiser les prompts selon des **critères de qualité** (réduction des erreurs, stabilité du format, vérifiabilité, reproductibilité).
+
+## Mode de travail : Protocole IA et test A/B
+
+Maintenez un bref protocole de prompt (piste d'audit). Utilisez-le également dans les autres exercices.
+
+**Modèle minimal :**
+
+- Étape
+- Objectif
+- Input (matériel)
+- Prompt (extrait principal)
+- Réponse (brève)
+- Étapes de vérification
+- Décision
+
+**Test A/B (Minimum) :** Pour chaque technique, exécutez au moins **deux variantes de prompt**, puis comparez :
+
+1. Stabilité du format,
+2. Dépassement (spéculation)
+3. Adéquation pour vos prochaines étapes de travail.
+
+## Package de cas pour tous les exercices
+
+Utilisez – comme dans les autres exercices – un **package de matériel concret et vérifiable** :
+
+1. **Source primaire** voir exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd)
+2. **Ressource contextuelle** voir exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) ou [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd).
+3. **Source secondaire optionnelle** voir exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) ou [Citation](citer.qmd).
+
+::: callout-tip
+
+## Structuration reproductible
+
+Si l'outil n'a pas d'accès stable au document : copiez (a) l'extrait de texte et (b) les métadonnées dans le prompt et séparez visuellement les deux, par ex. avec des triples guillemets.
+
+Exemple de mise en page :
+
+``` markdown
+"""
+TEXTE DU DOCUMENT (extrait/texte complet)
+"""
+
+"""
+MÉTADONNÉES (titre, date, lieu, auteur, édition/URL, cote d'archives, date d'accès)
+"""
+
+TÂCHE
+```
+
+:::
+
+::: callout-info
+
+## Redémarrage de session comme instrument de contrôle
+
+Pour chaque nouvelle tâche, une **nouvelle session** est recommandée.
+
+Un redémarrage de session réduit le report implicite de contexte :  
+Le modèle ne **s'appuie alors plus sur les tâches, exemples ou hypothèses de rôle précédents**, mais travaille exclusivement avec le matériel et la tâche actuels.
+
+Utilisez un redémarrage notamment quand :
+
+- Les réponses font à plusieurs reprises de mauvaises références,
+- Les rôles ou exemples précédents « filtrent »,
+- Des hypothèses floues des étapes précédentes sont perpétuées.
+
+**Aide-mémoire :**  
+Une nouvelle session impose une nouvelle liaison au matériel et augmente la vérifiabilité.
+
+:::
+
+## 1. Bases du Prompt
+
+### Objectif
+
+Reformuler une demande vague pour que la réponse devienne **vérifiable**, **stable en format** et **liée à la source/input**.
+
+### Exercice : De « vague » à « opérationnalisé »
+
+**Demande vague (intentionnellement mauvaise) :**
+
+``` markdown
+Résume le document et dis-moi ce qui est important.
+```
+
+**Tâche :** Créez deux prompts propres à partir de cela :
+
+- **Variante A (minimale) :** seulement objectif + format de réponse.
+- **Variante B (robuste) :** objectif + contexte structuré + contraintes + format de réponse + auto-vérification.
+
+Orientez-vous sur la configuration de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, max. 4 phrases).
+
+**Scaffold de prompt (robuste, adaptable) :**
+
+``` markdown
+Tâche : [concrète, 1–2 phrases]
+Contexte : [séminaire/question de recherche/période]
+Matériel : [texte du document + métadonnées, clairement séparés]
+Règles :
+- Travaille uniquement avec le matériel.
+- Pas d'ajouts de connaissances générales.
+- Marque explicitement les incertitudes.
+Format de sortie :
+1) Paraphrase minimale (max. 4 phrases)
+2) 5 termes clés (du texte)
+3) 3 questions ouvertes (qu'est-ce qui reste flou ?)
+Auto-vérification :
+- Liste 3 endroits où tu serais tenté de spéculer, et explique brièvement pourquoi tu ne le fais pas.
+```
+
+## 2. Rôles : Objectif
+
+### Objectif
+
+Utiliser les rôles comme **contraintes de méthode** : chaque rôle impose différentes heuristiques, angles morts et modes de vérification.
+
+### Exercice 2A : Une tâche, trois rôles
+
+Choisissez **une** tâche parmi les autres exercices (par ex. développer une question de recherche ; critique externe des sources ; termes de recherche pour les catalogues ; briefing de blog).
+
+Faites traiter la même tâche dans trois rôles :
+
+1. **Critique des sources** (proche du texte, sépare les niveaux) – voir [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd).
+2. **Avocat du diable** (tests de stress, contre-arguments) – voir [Écriture](ecriture.qmd).
+3. **Structureur/Outliner** (plan de travail, produits intermédiaires) – voir [Public History](public-history.qmd) ou [Écriture](ecriture.qmd).
+
+**Prompt de rôle (Exemple : Critique des sources, fortement limitant) :**
+
+``` markdown
+Rôle : Critique des sources.
+Tâche : Analyse le matériel exclusivement comme source (critique externe + interne).
+Important :
+- Sépare strictement : [Texte du document] / [Édition/Métadonnées] / [Conclusion].
+- Pas d'évaluations historiques.
+- Chaque conclusion nécessite un support textuel ou de métadonnées.
+Sortie :
+1) Tableau des niveaux
+2) 5 questions vérifiables d'authenticité/transmission
+3) 5 hypothèses de biais/position de locuteur (marquer comme hypothèses)
+```
+
+**Prompt de rôle (Exemple : Avocat du diable, dérivé de l'exercice d'écriture) :**
+
+``` markdown
+Rôle : Avocat du diable.
+Input : Mes hypothèses de travail (H1–H3) + indications de matériel.
+Tâche :
+- Nomme l'hypothèse discutable pour chaque hypothèse.
+- Formule un test de stress (quel constat la renverserait ?).
+- Donne 1 interprétation alternative (max. 2 phrases).
+Pas de faits externes.
+Hypothèses : …
+```
+
+### Exercice 2B : Changement de rôle comme diagnostic
+
+Prenez la **meilleure** réponse de 2A et faites-la **examiner** par un second rôle, pas réécrire :
+
+- Rôle « Vérificateur de logique » (cf. *Écriture*) : cohérence, sauts, points de preuve manquants.
+- Rôle « Assistant catalogue » (cf. *Recherche bibliographique*) : traduit en chaînes de recherche/indicateurs.
+
+## 3. Prompting Zero-shot : Objectif
+
+::: callout-info
+
+## Prompting Zero-shot
+
+Le prompting zero-shot signifie que le modèle ne reçoit pas d'exemples, seulement la tâche, le matériel et les contraintes.
+
+:::
+
+### Objectif
+
+Utiliser le zero-shot comme **référence** : rapide, mais sujet aux erreurs. Vous apprenez *où* le zero-shot suffit et *où* il évite systématiquement.
+
+### Exercice 3A : Paraphrase minimale (Zero-shot)
+
+Utilisez la tâche de [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, max. 4 phrases) comme zero-shot.
+
+``` markdown
+Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds :
+- Qui parle/agit ?
+- Quel est l'occasion ?
+- Quelle est la déclaration/décision centrale ?
+- Quelle conséquence est indiquée ?
+Maximum 4 phrases. Pas d'interprétation.
+```
+
+::: callout-info
+
+## Téléchargement de la source
+
+Téléchargez le document en fichier PDF avec le prompt. Si ce n'est pas possible, copiez le contenu du document au début du prompt et séparez-le visuellement, par exemple avec """. Assurez-vous également que l'IA a accès aux métadonnées (soit par accès en ligne, soit en fournissant les métadonnées). Exemple :
+
+``` markdown
+"""
+CONTENU DU DOCUMENT
+"""
+
+"""
+MÉTADONNÉES DU DOCUMENT (incl. URL)
+"""
+
+VOTRE PROMPT
+```
+
+:::
+
+**Diagnostic :**
+
+Marquez dans la réponse :
+
+- Les endroits qui ne découlent pas clairement du texte,
+- Les hypothèses contextuelles implicites (où le modèle « sait-il » plus que votre input ?).
+
+### Exercice 3B : Trois questions de recherche (Zero-shot)
+
+Utilisez le modèle de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd).
+
+``` markdown
+Donne-moi trois questions de recherche historique possibles qui peuvent être dérivées de la note de service.
+Chaque question doit être (a) délimitable temporellement, (b) vérifiable sur la base des sources, et (c) analytique.
+Pour chaque question, nomme quels types de sources supplémentaires j'ai besoin pour la contre-vérification.
+```
+
+**Réflexion :** Quelles questions sont (i) vraiment liées aux sources, lesquelles (ii) sont des questions « génériques » qui s'appliquent à de nombreux cas ?
+
+## 4. Prompting Few-shot : Objectif
+
+::: callout-info
+
+## Prompting Few-shot
+
+Le prompting few-shot signifie que le modèle reçoit des exemples explicites, ce qui conduit souvent à de meilleures réponses.
+
+:::
+
+### Objectif
+
+Le few-shot utilise des exemples pour stabiliser les **catégories**, les **formats de réponse** et les **normes de qualité**.
+
+### Exercice 4A : Few-shot pour la séparation des niveaux (Texte du document/Édition/Conclusion)
+
+Créez 3–5 phrases d'exemple courtes (peuvent être **fictives**, mais historiquement plausibles) et étiquetez-les.
+
+**Exemple :**
+
+``` markdown
+Exemples (Input → Étiquette) :
+1) "Lieu : Berne ; Date : 7.7.1949." → [Édition/Métadonnées]
+2) "Dans le texte, la neutralité est utilisée comme argument contre l'étape X." → [Texte du document]
+3) "Il en découle que la Suisse était fondamentalement anti-européenne." → [Conclusion] (trop fort ; doit être vérifié/atténué)
+
+Tâche :
+Étiquetez les 10 phrases suivantes de mon matériel comme
+[Texte du document] / [Édition/Métadonnées] / [Conclusion].
+Pour chaque étiquette, donnez 1 indice de preuve (fragment de citation/champ de métadonnées) ou 'pas de support'.
+Matériel : ...
+```
+
+**Consigne de travail :** Ensuite, incorporez le bloc few-shot dans votre prompt de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) et vérifiez si les étiquettes deviennent plus fiables.
+
+### Exercice 4B : Few-shot pour les questions de recherche (Faible vs. Fort)
+
+Prenez 2 questions faibles et 2 questions fortes (de votre exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) ou du séminaire) et entrez-les comme exemples avec un bref commentaire.
+
+**Scaffold :**
+
+``` markdown
+Exemples (Faible/Fort) :
+Faible : "Pourquoi la Suisse a-t-elle rejoint le Conseil de l'Europe ?" → trop large, téléologique, base de preuves floue.
+Fort : "Comment la 'neutralité' a-t-elle été opérationnalisée dans les notes internes du DFAE 1949–1953 comme argument pour/contre un rapprochement institutionnel avec le Conseil de l'Europe ?" → opérateur clair, période, proximité des sources.
+
+Tâche :
+Formule 3 nouvelles questions de recherche dans le style des exemples forts.
+Pour chaque question :
+- Période
+- Termes opérateurs centraux (définir !)
+- Types de sources attendus
+- 1 contre-vérification (quelle source pourrait contredire ?)
+```
+
+## 5. Trace de réflexion structurée : Objectif
+
+::: callout-info
+
+## Prompting Chain-of-Thought
+
+Le prompting Chain-of-Thought désigne une procédure où le modèle **décompose une tâche complexe en étapes intermédiaires explicites** (par ex. extraction → ordonnancement → évaluation → résultat) et **affiche visiblement** ces étapes.
+
+:::
+
+### Objectif
+
+Décomposer les tâches complexes en **produits intermédiaires** (décomposition) et imposer une **auto-vérification**. Ce qui est crucial n'est pas la « longue justification », mais les **étapes intermédiaires vérifiables**.
+
+::: callout-note
+
+## Note sur la « trace de réflexion »
+
+Formulez la trace de réflexion de manière à ce qu'elle reste **brève** et **auditable** (points, critères, tests). L'objectif est la vérifiabilité, pas un « journal interne » détaillé.
+:::
+
+### Exercice 5A : Cartographie d'arguments avec étapes intermédiaires
+
+Utilisez la cartographie d'arguments de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (affirmation/garantie/hypothèse/implication), mais imposez une logique d'étapes :
+
+``` markdown
+Tâche : Génère une cartographie d'arguments pour les passages concernant la neutralité/compatibilité/processus de décision.
+
+Procédure (afficher visiblement) :
+1) Extrais les segments de texte pertinents (max. 5 fragments de citation courts).
+2) Formule par segment une affirmation/garantie/hypothèse/implication (mots-clés).
+3) Auto-vérification : Nomme 3 endroits où le saut du texte → interprétation est délicat, et marque-les comme [Spéculation].
+
+Règles :
+- Utilise uniquement le texte du document.
+- Pas de faits supplémentaires.
+Réponse : Liste Markdown.
+Matériel : ...
+```
+
+### Exercice 5B : Plan de recherche comme pipeline
+
+Transférez la structure de [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd) (sous-questions → types de sources → lieux de recherche → chaînes de recherche) dans un pipeline explicite :
+
+``` markdown
+Objectif : Crée un plan de recherche pour la question : [insérer].
+
+Étapes :
+1) Décompose en 4–6 sous-questions (vérifiables).
+2) Attribue 2–3 types de sources + arènes par sous-question.
+3) Déduis 2 chaînes de recherche par sous-question (DE/FR/EN ; booléen).
+4) Auto-vérification : Liste 5 erreurs typiques (anachronismes, signatures inventées, termes trop larges...) et comment tu les évites.
+
+Réponse : Tableau (Sous-question | Preuve | Chaîne de recherche | Lieu de recherche | Risque).
+```
+
+## 6. Prompting itératif : Objectif
+
+::: callout-info
+
+## Prompting itératif
+
+Le prompting itératif désigne un **cycle de travail contrôlé** dans lequel les réponses de l'IA sont améliorées étape par étape en **critiquant et révisant spécifiquement** chaque sortie.
+
+:::
+
+### Objectif
+
+L'itération comme **révision contrôlée** : Vous ne construisez pas « plus de texte », mais améliorez la précision de l'objectif, la discipline des preuves et le format.
+
+### Exercice 6A : Générer → Critiquer → Réviser (Question de recherche)
+
+1) **Générer (v1) :** Questions de recherche zero-shot (Exercice 3B).\
+2) **Critiquer :** Utilisez la comparaison critique de l'exercice *Question de recherche* (« Pourquoi X manque-t-il ? » / « Sur quelles sources cela repose-t-il ? »).\
+3) **Réviser (v2) :** Faites réviser les questions par l'IA, mais uniquement sur la base de vos points de critique.
+
+**Prompt de critique (Modèle) :**
+
+``` markdown
+Voici la réponse v1 : [insérer].
+Tâche : Critique affirmation par affirmation :
+- Qu'est-ce qui est trop large/téléologique ?
+- Où manquent les termes opérateurs/définitions ?
+- Où la base de preuves est-elle floue ?
+Puis donne une version révisée v2 (max. 3 questions) + une logique de changement (max. 6 points).
+Pas de nouveaux faits.
+```
+
+### Exercice 6B : Itération sur le format de réponse (Citation / Résumé)
+
+Prenez l'exercice *Citation* et imposez une sortie en deux étapes :
+
+1) Extraction de métadonnées structurées (champs),\
+2) seulement ensuite citation Chicago + format d'import Zotero.
+
+**Question d'optimisation :** L'approche en deux étapes améliore-t-elle le diagnostic d'erreur (par ex. numéros de page manquants, mauvais éditeurs) ?
+
+## 7. Optimisation de prompt : Objectif
+
+### Objectif
+
+Améliorer systématiquement les prompts : pas « plus jolis », mais **plus robustes** (moins d'hallucination, meilleure stabilité de format, vérifiabilité plus claire).
+
+### Critères de qualité (Grille)
+
+Évaluez chaque variante de prompt (0–2 points par critère) :
+
+1. **Liaison à l'input** (travaille vraiment uniquement avec le matériel ?)
+2. **Séparation des niveaux** (texte vs. métadonnées vs. conclusion)
+3. **Stabilité du format** (livre ce qui est demandé, sans évitement)
+4. **Transparence des erreurs** (marque les incertitudes)
+5. **Adéquation** (réponse directement utilisable, par ex. pour extrait/plan/journal de recherche)
+
+### Exercice 7A : « Durcir » le prompt (Recherche bibliographique)
+
+Prenez un prompt de littérature naïf (« Nomme la littérature clé sur X ») et optimisez-le pour servir d'**assistant de recherche** (pas de producteur de sources). Orientation : Exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) (« Pas de titres inventés ; pas de connaissance simulée des catalogues ; marquer les incertitudes »).
+
+**Prompt optimisé (Scaffold) :**
+
+``` markdown
+Tu es un assistant de recherche historique.
+Objectif : Corpus de départ pour [sujet/période].
+Règles :
+- N'invente pas de titres/auteurs.
+- Ne fais pas d'affirmations sur la couverture des catalogues.
+- Livre plutôt : stratégies de recherche, chaînes de recherche, types de littérature attendus, et indices pour les étapes de vérification.
+Réponse :
+1) 8 chaînes de recherche (DE/FR/EN) avec brève justification
+2) 5 types de littérature attendus + où les trouver typiquement
+3) 6 étapes de vérification (comment je vérifie, exporte, documente les résultats)
+```
+
+### Exercice 7B : Optimisation de prompt comme « budget d'erreur »
+
+Définissez un budget d'erreur et optimisez pour celui-ci :
+
+- **Budget A :** « 0 titre inventé » (littérature),
+- **Budget B :** « 0 hypothèse contextuelle non étayée » (critique des sources),
+- **Budget C :** « 0 violation de format » (par ex. max. 4 phrases, tableau, IDs d'affirmation).
+
+Exécutez 3 itérations (v1–v3) et documentez :
+
+- quel changement de prompt a réduit quel champ d'erreur,
+- quels effets secondaires apparaissent (par ex. la réponse devient trop vague).
+
+## Bibliothèque courte : Blocs de construction de prompt réutilisables
+
+### 1) Contexte + Liaison au matériel
+
+``` markdown
+Travaille exclusivement avec le matériel ci-dessous.
+S'il te manque des informations, pose des questions de suivi ou marque [Pas clair].
+```
+
+### 2) Séparation des niveaux (Source vs. Édition vs. Conclusion)
+
+``` markdown
+Marque chaque déclaration comme [Texte du document] / [Édition/Métadonnées] / [Conclusion].
+```
+
+### 3) Réponse comme produit intermédiaire (pour la suite du travail)
+
+``` markdown
+Donne la réponse sous forme de tableau avec les champs : Affirmation | Lieu de preuve | Incertitude | Prochaine étape de vérification.
+```
+
+### 4) Imposer auto-vérification / contre-vérification
+
+``` markdown
+Auto-vérification : Nomme 3 contre-preuves plausibles ou interprétations alternatives et ce dont tu aurais besoin pour elles.
+```
+
+## Soumission
+
+1. Protocole de prompt (au moins 8 entrées, réparties sur les techniques)\
+2. Par technique : 1 brève comparaison (A/B) + 5–8 phrases de réflexion sur ce qui s'est méthodologiquement amélioré/empiré\
+3. Un modèle « meilleure pratique » : votre prompt standard personnel pour (a) critique des sources ou (b) recherche bibliographique ou (c) assistance à l'écriture
+
+## Ressources complémentaires
+
+- [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Explication interactive du fonctionnement des modèles de langage basés sur les transformers.
+- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Prédiction du prochain token et bases de l'IA générative.
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et utilisation critique.
+- [Prompt Engineering Guide](https://www.promptingguide.ai)
+- [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
+- [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
+- [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
+
+## Bibliographie
+
+::: {#refs}
+:::
+
+::: callout-warning
+
+## Avertissement de traduction automatique
+
+Cet exercice a été traduit automatiquement de l'allemand à l'aide de l'IA et peut contenir des erreurs ou des inexactitudes. Veuillez vous référer à la [version originale allemande](../../de/exercises/prompt-engineering.qmd) pour le texte faisant autorité. Si vous remarquez des problèmes de traduction, veuillez les signaler.
+:::

@@ -21,6 +21,18 @@ This skill provides instructions for translating content in the `critical-ai-lit
      - If not available, flag them (e.g., `(GERMAN only)`).
      - Propose/Search for localized alternatives if possible.
   5. **Preserve**: YAML keys (`lang`, `date`), Code blocks, Citation keys `[@ref]`.
+  6. **Internal Link Structure**: When encountering internal links like `[Label](file.qmd)`, ensure they point to the correct translated filename (e.g., `[Label](translated-file.qmd)`).
+  7. **Translation Disclaimer**: Add a standard disclaimer at the beginning of the content (after YAML) with the correct relative path to the original source.
+     - Template (EN target):
+
+       ```markdown
+       ::: callout-warning
+
+       ## Automated Translation
+
+       This exercise was automatically translated from the [German original](../../de/exercises/source-file.qmd) and may contain errors. Please consult the original version when in doubt.
+       :::
+       ```
 
 ### B. Sync Update
 

@@ -21,6 +21,7 @@ Use this skill to check for missing files or synchronization issues between lang
 - **Missing Stub**: File exists in 1 language, missing in 2.
 - **Partial Translation**: File exists in 2 languages, missing in 1.
 - **Content Drift**: Files exist in all 3, but timestamps/versions differ significantly (optional advanced check).
+- **Internal Link Structure**: Ensure cross-links between exercises point to the correct translated versions (e.g., in `fr/` links should point to `.qmd` files in `fr/`).
 
 ## 3. Sync Actions
 

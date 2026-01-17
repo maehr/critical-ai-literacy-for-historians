@@ -1,0 +1,520 @@
+---
+lang: en
+title: "Source Criticism"
+subtitle: "Federal Council and Council of Europe 1949"
+description: "A guided exercise for systematic external and internal source criticism of a diplomatic memorandum (Dodis)."
+categories: [Sources]
+tags:
+  - Source Criticism
+  - Contextualization
+  - Council of Europe
+  - Switzerland
+  - Diplomacy
+  - Scientific Integrity
+  - Evidence Discipline
+draft: false
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "University of Bern"
+date: "2025-12-29"
+date-modified: today
+references:
+- id: altermatt-casasus-2013-europarat
+  type: book
+  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
+  editor:
+    - family: Altermatt
+      given: Bernhard
+    - family: Casasus
+      given: Gilbert
+  publisher: "Rüegger"
+  ISBN: "978-3-7253-1005-0"
+  issued:
+    year: 2013
+  publisher-place: "Schweiz"
+  note: "Anthology commissioned by Centre d'Études européennes, University of Freiburg (UniFR-ZEUS) and Neue Helvetische Gesellschaft"
+---
+
+## Overview and Didactic Goal
+
+This exercise teaches **transferable competencies in source criticism** (external and internal criticism) using a specific source from the *Diplomatic Documents of Switzerland (Dodis)*. The central question is how a source is treated **as a historical evidence object**: not as a "fact repository," but as a **situated artifact** with a context of creation and transmission history.
+
+**Case Study (Primary Source): [Dodis: Switzerland and the Council of Europe](https://dodis.ch/5020)**
+
+::: callout-note
+
+## Note on Digital Transmission
+
+The source used here is available in an **editorially prepared digital edition**. For source criticism, therefore, not only the text but also the **editorial layer** (metadata, archive signature, links, editorial guidelines) is part of the subject of investigation.[@fickers2022criticism]
+:::
+
+## Prerequisites
+
+- Basic understanding of historical research methods
+- Basic knowledge of working with generative AI (especially prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+
+:::
+
+::: callout-note
+
+## LLM
+
+You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+
+:::
+
+## Learning Objectives
+
+Upon completion of the exercise, you will be able to:
+
+- systematically apply **external** and **internal** source criticism,
+- verify **authenticity, provenance, and transmission** of a digitally edited memorandum,
+- hermeneutically reconstruct author position, **horizon/standpoint**, intention, and bias,
+- distinguish between **witting** and **unwitting testimony**,
+- precisely determine the **evidence value** of the source in relation to a research question,
+- operationalize the "**veto power of the source**" (what does it exclude? what does it leave open?),
+- use AI systems **critically and methodologically controlled** for source criticism and context exploration.
+
+## Structure of the Exercise
+
+Each step contains:
+
+- an **objective**,
+- **concrete tasks** (incl. optional AI prompts),
+- a **work and reflection assignment**.
+
+1. Orientation: Source Type, Minimal Paraphrase, Initial Research Heuristic
+2. External Criticism: Provenance, Authenticity, Transmission, Edition
+3. Internal Criticism: Speaker Position, Intention, Argument Logic, Bias
+4. Contextualization & Counter-Check: Triangulation with Other Sources
+5. Evidence Value & "Veto Power": What Can Be Supported, What Cannot?
+6. Documentation & Reflection: Reproducibility, AI Protocol
+
+## 1. Orientation: What is This Source (and What Can It Represent)?
+
+### Goal
+
+A **first controlled classification** of the source as an object: type, situation, actor constellation, thematic focus.
+
+### Task 1: Minimal Paraphrase (Without Interpretation)
+
+Formulate in **max. 4 sentences**:
+
+- Who speaks/acts?
+- What is the occasion?
+- What is the central statement/decision?
+- What consequence is indicated?
+
+### Task 1: Minimal Paraphrase (Without Interpretation) Using AI
+
+``` markdown
+Analyze the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe) and answer the following questions:
+Who speaks/acts?
+What is the occasion?
+What is the central statement/decision?
+What consequence is indicated?
+```
+
+::: callout-info
+
+## Uploading the Source
+
+Upload the document as a PDF file together with the prompt. If that's not possible, copy the document content to the beginning of the prompt and visually separate it, for example with """. Also ensure the AI has access to metadata (either through online access or by providing the metadata). Example:
+
+``` markdown
+"""
+DOCUMENT CONTENT
+"""
+
+"""
+DOCUMENT METADATA (incl. URL)
+"""
+
+YOUR PROMPT
+```
+
+:::
+
+### Work Assignment (Reflection)
+
+- Compare the AI's response with your own. What differences do you notice?
+
+- Are there systematic biases (in both your and the AI-generated responses)?
+
+### Task 2: Initial Research Heuristic
+
+Note three **potential research questions** that would *in principle* be workable with this source (without delimitation yet). Examples of question types:
+
+- conceptual history (neutrality as argument)
+- institutional history (foreign policy decision-making processes)
+- history of knowledge (what counts as "compatible"/"incompatible"?)
+- political-cultural (expectations regarding referendums)
+
+### Task 2: Initial Research Heuristic Using AI
+
+``` markdown
+Give me three possible historical research questions that can be derived from the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe).
+Formulate each question so that it is (a) temporally delimitable, (b) source-based verifiable, and (c) analytical.
+For each question, name which additional source types I need for counter-verification.
+```
+
+### Work Assignment (Reflection)
+
+- Which of your three questions **depends most strongly** on this specific source (high source binding)?
+- Which question is **least** source-dependent (would also be formulated "similarly" with other sources)?
+- Which terms are already **interpretively loaded** (e.g., "neutrality," "Europe," "compatibility")?
+
+## 2. External Source Criticism: Authenticity, Provenance, Transmission, Edition
+
+### Goal
+
+Clarify **what** this document is as an object, **how** it was transmitted, and **which editorial layer** lies between the original and you.
+
+### Task 1: Provenance Check (Metadata & Archive Reference)
+
+Collect (from the Dodis page) and document:
+
+- Document type/genre (memo, protocol, report, letter…)
+- Date/time, location
+- Author/signatory (here: Max Petitpierre)
+- Addressee(s) or functional addressee (explicit/implicit)
+- Archive signature (e.g., "E 2800(-)…")
+- Institutional context (department, commissions, participating organizations)
+- Tags/persons/organizations/geography (as edition metadata)
+
+**Result:** a small table + 5–8 lines "editorial notes" (What does the edition provide? What remains open?).
+
+### Task 2: Authenticity as Question Form
+
+Formulate three verifiable questions about authenticity, e.g.:
+
+- Is this an original or a copy/redaction?
+- Are there indications of subsequent editing (cuts, translations, editorial normalization)?
+- Which parts are document text, which are editorial additions (footnotes/cross-references)?
+
+### Task 3: Transmission as an Epistemic Problem
+
+Reconstruct a plausible transmission chain:
+
+**Creation → Filing in Administrative Process → Archiving → Cataloging → Digitization/Edition → Web Display**
+
+At each station, note:
+
+- possible losses/filters (selection logic)
+- possible transformation points (redaction, classification, metadata assignment)
+- possible context losses (missing attachments, missing prior history)
+
+### Work Assignment (Reflection)
+
+- Which information comes **from the document text** (primary text), which **from the edition** (metadata/links)?
+- Which parts of your classification would **not be possible** without the Dodis edition?
+- Where is the editorial layer itself **a source** (e.g., categorization, tags, selection)?
+
+### Task: External Criticism Using AI
+
+``` markdown
+Analyze the digitally edited memorandum (Dodis 5020, Bern 7.7.1949) exclusively from the perspective of external source criticism.
+
+1) Identify based on metadata:
+   - Document type/genre
+   - Date and location
+   - Author/signatory
+   - Institutional context
+   - Archive signature and transmission form
+
+2) Strictly distinguish between:
+   a) Information from the document text
+   b) Information from the editorial and metadata layer (Dodis)
+
+3) Formulate three verifiable questions about authenticity and transmission.
+
+Important:
+- Do not make historical evaluations.
+- Mark each statement explicitly as:
+  [Document text] / [Edition/Metadata] / [Conclusion].
+```
+
+### Reflection Assignment
+
+- Where does AI systematically supplement, where does it "hallucinate" transmission assumptions?
+- Which metadata does it correctly adopt, which remain vague or wrong?
+- To what extent does the explicit marking of levels force methodological clarity?
+
+## 3. Internal Source Criticism: Statement Intent, Standpoint, Argument Logic, Bias
+
+### Goal
+
+Analyze **how** the text produces meaning: through selection, formulations, implicit premises, institutional perspective.
+
+### Task 1: Speech Act and Function Analysis
+
+Determine the function of the memo in the administrative context (plausibilized):
+
+- Does it document an event "for the record"?
+- Does it justify a position to third parties?
+- Does it steer internal opinion formation?
+- Does it mark a red line (neutrality as stop signal)?
+
+**Result:** 1 paragraph (6–10 sentences) that argues *function* and *addressing* (with textual evidence).
+
+### Task 2: Argument Mapping (Neutrality as Key Operator)
+
+Extract all passages concerning neutrality, compatibility, or decision processes and decompose them into:
+
+- **Claim**
+- **Warrant**
+- **Assumption**
+- **Implication (so what)**
+
+**Format Suggestion (Markdown):**
+
+``` markdown
+- Claim:
+- Warrant:
+- Assumption:
+- Implication:
+- Textual Evidence (quote/paraphrase):
+```
+
+### Task 3: Witting vs. Unwitting Testimony
+
+Mark two examples each of:
+
+- **witting testimony** (targeted addressed communications, position statements)
+- **unwitting testimony** (taken-for-granted assumptions, implicit norms, institutional routines)
+
+Guiding questions:
+
+- What self-images of Switzerland are presupposed (e.g., "more absolute neutrality")?
+- What political mechanisms are considered expected (parliament, people, cantons)?
+- What comparison is referenced (Sweden) and for what?
+
+### Task 4: Bias as Structure, Not as "Error"
+
+Analyze perspective limitations:
+
+- What interests/constraints does the author have as department head?
+- Which aspects are systematically missing (e.g., legal dimensions, international reactions, domestic political factions)?
+- Which alternative interpretations would be plausible from other positions (e.g., party politics, economy, press)?
+
+### Work Assignment (Reflection)
+
+- Which of your interpretations are **text-close** (evidenced), which are **context-dependent hypotheses**?
+- Which terms function as **hinges** between text and context (neutrality, compatibility, referendum)?
+
+### Task: Internal Criticism Using AI
+
+``` markdown
+Conduct an internal source criticism of the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen).
+
+Analyze separately:
+1) Speaker position and institutional standpoint
+2) Function and intention of the memo in the administrative context
+3) Argument logic around neutrality and decision processes
+4) Witting vs. unwitting testimony
+
+Rules:
+- Every analytical statement must include a concrete textual evidence
+  (short quote or precise paraphrase).
+- If no evidence exists: explicitly mark as "hypothesis."
+- Do not use context information that is not embedded in the text.
+```
+
+### Reflection Assignment
+
+- Which AI interpretations are text-close, which speculative?
+- Where does AI level institutional perspectives to general statements?
+- Which hermeneutic steps remain non-automatable here as well?
+
+## 4. Contextualization and Counter-Check: Triangulation Rather Than "Context as Décor"
+
+### Goal
+
+Test the explanatory power of the memo through **comparative embedding**: What is specific? What is routine? What is strategic?
+
+### Task 1: Intertextual Tracing (Embedded in the Document)
+
+The memo indirectly references other contexts (e.g., commissions, private federalist networks, comparison with Sweden).
+
+Create a **research matrix** (at least 6 rows):
+
+| Trace in Text | What Exactly to Search? | Expected Source Type | Where to Search? | Purpose of Counter-Check |
+|---------------|-------------------------|----------------------|------------------|--------------------------|
+
+Examples for "Where to search?" (as categories, not exhaustiveness):
+
+- further Dodis documents (cross-references, dossiers)
+- official publications (messages, reports)
+- parliamentary protocols / commission protocols
+- newspapers (reception, controversy)
+- records of private committees/associations
+
+### Task 2: Counterfactual Counter-Question (Control Instrument)
+
+Formulate two counter-questions that *challenge* the memo:
+
+- What would I have to find for the thesis "Neutrality prevented accession" to be **too crude**?
+- What would I have to find for the statement on the referendum to appear **as strategic rhetoric** rather than as prognosis?
+
+### Work Assignment (Reflection)
+
+- What kind of context is **necessary** (to verify claims), and which is **only plausibilizing**?
+- Where does "context" threaten to become a **retrospective smoothing**?
+
+### Task: Research and Counter-Check Planning Using AI
+
+``` markdown
+Derive from the memorandum (Bern, 7.7.1949, Petitpierre/Hansen) a systematic research plan.
+
+1) Name at least:
+   - 5 supplementary primary sources (different types)
+   - 3 types of secondary literature
+
+2) Assign each source to a concrete verification purpose
+   (e.g., confirmation, contextualization, refutation).
+
+3) Formulate a guiding question for each source.
+
+Specifications:
+- No statements about the actual content of these sources.
+- No narrative syntheses.
+- Focus exclusively on verification paths and counter-checks.
+```
+
+### Reflection Assignment
+
+- Which contexts does AI systematically prioritize (politics, institutions)?
+- Which contexts are conspicuously missing (e.g., media, law, economy)?
+- Where does AI tend to use "context" as explanation rather than as verification tool?
+
+## 5. Evidence Value and "Veto Power": What Does the Source Support – and What Not?
+
+### Goal
+
+Determine evidence value strictly **relationally**: source × research question.
+
+### Task 1: Evidence Profile (Claim Scope)
+
+Create a two-part list:
+
+**A. Well Supported (High Certainty)** Statements that the memo directly supports (with textual evidence).
+
+**B. Not Supported / Open (Veto)** Statements that the memo *suggests*, but does not evidence – or even excludes.
+
+Guiding questions:
+
+- What can I say about Petitpierre's position – and what not?
+- What can I say about the Danish position – and what remains unclear (e.g., motives, internal debates)?
+- What does the source say about "Switzerland" – and where is that an impermissible generalization?
+
+### Task 2: Micro-Hypotheses with Falsification Path
+
+Formulate two micro-hypotheses (1 sentence each), e.g.:
+
+- "X functions in 1949 as an institutional gatekeeper concept that politically blocks Y."
+- "The referendum/popular vote reference serves as a legitimation argument to foreign conversation partners."
+
+For each hypothesis:
+
+- Which **additional source** could support it?
+- Which source/observation would **refute** it?
+
+### Task: Evidence Profile Using AI
+
+``` markdown
+Create two separate lists based on the memorandum:
+
+A) Statements that the text directly and unambiguously supports.
+B) Statements that the text does not support, only suggests, or implicitly excludes.
+
+For each statement:
+- short textual evidence or paraphrase
+- rating: certain / probable / speculative
+- justification for rating
+
+Addition:
+Formulate for two statements from List B each a
+concrete falsification path (which source would have to show what?).
+```
+
+### Reflection Assignment
+
+- Where is AI surprisingly restrictive, where too generous?
+- Which statements appear "plausible" but are correctly vetoed?
+- How does the explicit A/B separation change one's own interpretation urge?
+
+### Work Assignment (Reflection)
+
+- Which statement "would one like to make," but the source doesn't allow it?
+- Where is the boundary between **interpretation** and **claim**?
+
+## 6. Documentation & Reflection: Reproducibility, AI Protocol
+
+### Goal
+
+Source criticism as **documented method**: traceable, verifiable, reusable.
+
+### Task 1: Analysis Protocol (Minimum Standard)
+
+Create a brief protocol:
+
+- Full citation/permalink of the source
+- Access date
+- Version/display form (HTML, PDF, export)
+- Your research question (working version)
+- External criticism (bullet points)
+- Internal criticism (bullet points)
+- Evidence profile (A/B list)
+- Open questions & next research steps
+
+### Task 2: AI Reflection (If AI Was Used)
+
+Note:
+
+- Which prompts did you use (verbatim)?
+- Which responses were helpful (and why)?
+- Where did shortening/overgeneralization occur?
+- Which steps remained **inevitably human decisions** (e.g., research question selection, evidence weighting, context decisions)?
+
+::: callout-tip
+
+## Quality Criterion
+
+Good source criticism is not one that "explains everything," but one that makes **limits and verification paths** visible: What is evidenced? What is hypothetical? What needs to be checked next?
+:::
+
+## Learning Outcome
+
+At the end, you will have:
+
+- a **grounded external and internal source criticism** of Dodis 5020,
+- an **evidence profile** (incl. veto points) in relation to a research question,
+- a **research plan** for context and counter-check,
+- a **reproducible analysis protocol** (incl. structured claim extraction),
+- a reflected assessment of **where AI supports exploration** and **where it must be methodologically limited**.
+
+## Further Resources
+
+- [Ranke.2: Wikipedia as Historical Source](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, revision histories, and digital source criticism.
+- [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique of training data and its parallels to source criticism.
+
+## Bibliography
+
+::: {#refs}
+:::
+
+::: callout-warning
+
+## Automated Translation Disclaimer
+
+This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/quellenkritik-bundesrat-europarat-1949.qmd) for the authoritative text. If you notice any translation issues, please report them.
+:::
