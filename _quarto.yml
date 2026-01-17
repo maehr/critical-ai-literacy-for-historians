@@ -36,7 +36,7 @@ website:
       style: 'floating'
       collapse-level: 2
       contents:
-        - text: 'Home'
+        - text: 'About'
           href: en/index.qmd
         - section: 'Exercises'
           href: en/exercises/index.qmd
@@ -48,7 +48,7 @@ website:
       style: 'floating'
       collapse-level: 2
       contents:
-        - text: 'Startseite'
+        - text: 'Über'
           href: de/index.qmd
         - text: 'Übungen'
           href: de/exercises/index.qmd
@@ -60,7 +60,7 @@ website:
       style: 'floating'
       collapse-level: 2
       contents:
-        - text: 'Accueil'
+        - text: 'À propos'
           href: fr/index.qmd
         - section: 'Exercices'
           href: fr/exercises/index.qmd
@@ -71,8 +71,10 @@ format:
   html:
     toc: true
     theme:
-      - brand
-      - cosmo
+      light:
+        - brand
+      dark:
+        - brand
     css: styles.css
     code-copy: true
     code-overflow: wrap

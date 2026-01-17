@@ -9,7 +9,16 @@ This repository provides multilingual educational exercises for developing criti
   - Avoid: `quarto render`, `quarto publish gh-pages`
 - Keep the preview server running while editing to verify changes in real-time.
 
-## 2) Multilingual Content Management
+## 2) Available Skills
+
+The following agent skills are available in `.agent/skills` to automate common tasks. **Always check these skills before performing manual work.**
+
+- **Bibliography Management**: Managing citations and format conversion (`.agent/skills/bibliography/SKILL.md`)
+- **Glossary Creation**: Guidelines for creating and maintaining glossaries (`.agent/skills/glossary/SKILL.md`)
+- **Setup New Exercise**: Creating new exercises with correct structure and metadata (`.agent/skills/new_exercise/SKILL.md`)
+- **Translation**: Translating content between EN/DE/FR (`.agent/skills/translation/SKILL.md`)
+
+## 3) Multilingual Content Management
 
 This repository maintains content in three languages: English (en/), German (de/), and French (fr/).
 
@@ -28,23 +37,21 @@ This repository maintains content in three languages: English (en/), German (de/
 - Exercise numbering and naming should be consistent across languages
 - When adding new exercises, create placeholder files in all three languages
 
-## 3) Exercise Metadata Standards
+## 4) Exercise Metadata Standards
 
-### Categories (Use Only These)
+### Categories
 
-Exercises must use **exactly one** of these categories:
+Exercises must use **exactly one** of these categories (based on the German structure, adapted for other languages):
 
-- **English**: `AI Literacy`, `Source Criticism`, `Ethics`, `Methods`
-- **German**: `KI-Kompetenz`, `Quellenkritik`, `Ethik`, `Methoden`
-- **French**: `Littératie IA`, `Critique des sources`, `Éthique`, `Méthodes`
+- **KI & Digitale Methoden** (AI & Digital Methods / IA & Méthodes numériques)
+- **Quellen** (Sources)
+- **Methoden** (Methods / Méthodes)
+- **Public History**
 
-### Tags (Limited Set)
+### Tags
 
-Use a narrow, controlled set of tags. Choose **2-4 tags** from:
-
-- **English**: `AI`, `LLM`, `History`, `Bias`, `Privacy`, `Transparency`, `Research Methods`
-- **German**: `KI`, `LLM`, `Geschichte`, `Bias`, `Datenschutz`, `Transparenz`, `Forschungsmethoden`
-- **French**: `IA`, `LLM`, `Histoire`, `Biais`, `Confidentialité`, `Transparence`, `Méthodes de recherche`
+Use descriptive tags that characterize the exercise. **Choose 2-4 tags**.
+Examples (not exhaustive): `Prompting`, `Toolkritik`, `Reproduzierbarkeit`, `Ethics`, `Source Criticism`, `Data Literacy`.
 
 ### Required YAML Front Matter
 
@@ -66,7 +73,7 @@ time_estimate: '45 minutes'
 draft: false
 ```
 
-## 4) Citations and Bibliography
+## 5) Citations and Bibliography
 
 ### bibliography.bib Standards
 
@@ -82,7 +89,7 @@ draft: false
 - Reference the `bibliography.bib` file in `_metadata.yml` for each language
 - Ensure all cited works are relevant to AI literacy and historical research
 
-## 5) Repository Structure
+## 6) Repository Structure
 
 This is an educational content repository with the following structure:
 
@@ -104,19 +111,19 @@ critical-ai-literacy-for-historians/
 └── bibliography.bib  # Shared citations
 ```
 
-## 6) Formatting and Linting
+## 7) Formatting and Linting
 
 - Run **`npm run format`** before commits to enforce Prettier formatting
 - Use **`npm run check`** to verify formatting without writing changes
 - All `.qmd`, `.md`, `.yml`, and `.json` files should be formatted with Prettier
 
-## 7) Commits and Changelog
+## 8) Commits and Changelog
 
 - Use **`npm run commit`** to follow Conventional Commits standard
 - After committing, generate entries with **`npm run changelog`** and update `CHANGELOG.md`
 - Use conventional commit types: `feat`, `fix`, `docs`, `chore`, `refactor`
 
-## 8) Documentation Practices
+## 9) Documentation Practices
 
 - Use `.qmd` (Quarto Markdown) for all educational content
 - Include valid YAML front matter in all `.qmd` files
@@ -124,15 +131,30 @@ critical-ai-literacy-for-historians/
 - Include learning objectives, activities, and reflection prompts in exercises
 - Link to relevant resources and further reading
 
-## 9) Content Quality Standards
+## 10) Content Quality Standards
 
-### Exercise Development
+### Exercise Structure & Development
 
-- Each exercise should take 30-90 minutes to complete
-- Include hands-on activities, not just reading
-- Provide critical reflection questions
-- Balance theoretical understanding with practical application
-- Address ethical considerations
+Each exercise follows a strict pedagogical structure. See `de/exercises/prompt-engineering.qmd` or `de/exercises/quellenkritik-bundesrat-europarat-1949.qmd` for reference.
+
+**Standard Sections:**
+
+1. **Overview and Didactic Goal** (`## Überblick und didaktisches Ziel`)
+   - Context of the exercise.
+   - Specific competencies being trained.
+2. **Prerequisites** (`## Voraussetzungen`)
+   - Required methodological knowledge.
+   - Technical requirements (Internet access, specific tools).
+3. **Learning Objectives** (`## Lernziele`)
+   - Bullet points describing what students will be able to do.
+4. **Step-by-Step Sections** (Numbered, e.g., `## 1. Orientierung...`)
+   - **Goal** (`### Ziel`): What is achieved in this step?
+   - **Task** (`### Aufgabe`): Concrete manual task for the student.
+   - **AI Task** (`### Aufgabe ... mittels KI`): The specific prompt or workflow to test with an agent.
+   - **Reflection/Work Assignment** (`### Arbeitsauftrag (Reflexion)`): Critical comparison of AI output vs. manual work, or reflection on the process.
+5. **Deliverables/Learning Outcome** (`## Lernergebnis`)
+   - What the student takes away (artifacts, protocols, insights).
+6. **Bibliography** (`## Bibliographie`)
 
 ### Pedagogical Principles
 
@@ -144,14 +166,14 @@ Exercises should promote:
 - Transparency and reproducibility in research
 - FAIR and CARE principles
 
-## 10) GitHub Features and Security
+## 11) GitHub Features and Security
 
 - Use **issue templates** for new exercise proposals
 - Enable **GitHub Security Alerts** and Dependabot updates
 - Keep `SECURITY.md` current with reporting procedures
 - Use branch protection on `main` branch
 
-## 11) Website Publishing
+## 12) Website Publishing
 
 - In repo **Settings → Pages**:
   - Source: **Deploy from a branch**
@@ -160,7 +182,7 @@ Exercises should promote:
   - `quarto render`
   - `quarto publish gh-pages`
 
-## 12) Commands Recap
+## 13) Commands Recap
 
 | Command                   | Purpose                                          |
 | ------------------------- | ------------------------------------------------ |
@@ -173,7 +195,7 @@ Exercises should promote:
 | `quarto render`           | **Production render** (avoid in agent sessions)  |
 | `quarto publish gh-pages` | **Production publish** (avoid in agent sessions) |
 
-## 13) Verification Checklist
+## 14) Verification Checklist
 
 Before finalizing changes:
 
@@ -187,7 +209,7 @@ Before finalizing changes:
 - [ ] Images have alt text
 - [ ] YAML front matter is valid
 
-## 14) Common Tasks
+## 15) Common Tasks
 
 ### Adding a New Exercise
 
