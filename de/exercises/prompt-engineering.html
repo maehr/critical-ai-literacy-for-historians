@@ -9,7 +9,7 @@
 <meta name="description" content="Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.">
 
 <title>Prompt Engineering – Critical AI Literacy for Historians</title>
-<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both;margin-bottom:0}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -265,7 +265,7 @@
   </ul></li>
   <li><a href="#kurz-library-wiederverwendbare-prompt-bausteine" id="toc-kurz-library-wiederverwendbare-prompt-bausteine" class="nav-link" data-scroll-target="#kurz-library-wiederverwendbare-prompt-bausteine">Kurz-Library: wiederverwendbare Prompt-Bausteine</a></li>
   <li><a href="#abgabe" id="toc-abgabe" class="nav-link" data-scroll-target="#abgabe">Abgabe</a></li>
-  <li><a href="#ressourcen" id="toc-ressourcen" class="nav-link" data-scroll-target="#ressourcen">Ressourcen</a></li>
+  <li><a href="#weiterführende-ressourcen" id="toc-weiterführende-ressourcen" class="nav-link" data-scroll-target="#weiterführende-ressourcen">Weiterführende Ressourcen</a></li>
   <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/de/exercises/prompt-engineering.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></nav>
@@ -347,7 +347,7 @@
 </div>
 </div>
 <div class="callout-body callout-body-container">
-<p>Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als <strong>Hypothese</strong> (nicht als Ergebnis). Ihre Arbeit bleibt: <strong>Gegenprobe, Nachweis, Entscheidung</strong>.</p>
+<p>Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als <strong>Hypothese</strong> (nicht als Ergebnis).<span class="citation" data-cites="bender2021stochastic">(<a href="#ref-bender2021stochastic" role="doc-biblioref">Bender u.&nbsp;a. 2021</a>)</span> Ihre Arbeit bleibt: <strong>Gegenprobe, Nachweis, Entscheidung</strong>.</p>
 </div>
 </div>
 </section>
@@ -763,9 +763,12 @@ Eine neue Session erzwingt erneute Materialbindung und erhöht die Prüfbarkeit.
 <li>Eine «beste Praxis»-Vorlage: Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz</li>
 </ol>
 </section>
-<section id="ressourcen" class="level2">
-<h2 class="anchored" data-anchor-id="ressourcen">Ressourcen</h2>
+<section id="weiterführende-ressourcen" class="level2">
+<h2 class="anchored" data-anchor-id="weiterführende-ressourcen">Weiterführende Ressourcen</h2>
 <ul>
+<li><a href="https://poloclub.github.io/transformer-explainer/">Polo Club: Transformer Explainer</a> – Interaktive Erklärung, wie Transformer-basierte Sprachmodelle funktionieren.</li>
+<li><a href="https://aipedagogy.org/guide/foundations-of-generative-ai/">AI Pedagogy Project: Foundations of Generative AI</a> – Next-Token-Prediction und Grundlagen generativer KI.</li>
+<li><a href="https://aipedagogy.org/guide/llm-tutorial/">AI Pedagogy Project: LLM Tutorial</a> – Grenzen, Halluzinationen, Verifikation und kritische Nutzung.</li>
 <li><a href="https://www.promptingguide.ai">Prompt Engineering Guide</a></li>
 <li><a href="https://platform.openai.com/docs/guides/prompt-engineering">OpenAI: Prompt engineering</a></li>
 <li><a href="https://docs.anthropic.com/claude/docs/prompt-engineering">Anthropic: Prompt Engineering Guide</a></li>
@@ -775,8 +778,10 @@ Eine neue Session erzwingt erneute Materialbindung und erhöht die Prüfbarkeit.
 </section>
 <section id="bibliographie" class="level2">
 <h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
-<div id="refs" role="list">
-
+<div id="refs" class="csl-bib-body hanging-indent references" data-entry-spacing="0" role="list">
+<div id="ref-bender2021stochastic" class="csl-entry" role="listitem">
+Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, und Shmargaret Shmitchell. 2021. <span>„On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜“</span>. In <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21)</em>, 610–23. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
+</div>
 </div>
 
 

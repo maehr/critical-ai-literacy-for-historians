@@ -1,11 +1,16 @@
 [
   {
     "listing": "/en/exercises/index.html",
-    "items": []
-  },
-  {
-    "listing": "/fr/exercises/index.html",
-    "items": []
+    "items": [
+      "/en/exercises/citing.html",
+      "/en/exercises/writing.html",
+      "/en/exercises/formulating-historical-research-question-switzerland-council-of-europe.html",
+      "/en/exercises/literature-research-social-security-ch.html",
+      "/en/exercises/prompt-engineering.html",
+      "/en/exercises/public-history.html",
+      "/en/exercises/source-criticism-federal-council-council-of-europe-1949.html",
+      "/en/exercises/source-search-vorort-council-of-europe-1963.html"
+    ]
   },
   {
     "listing": "/de/exercises/index.html",
@@ -36,13 +41,42 @@
   {
     "listing": "/fr/index.html",
     "items": [
-      "/fr/exercises/index.html"
+      "/fr/exercises/citer.html",
+      "/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html",
+      "/fr/exercises/index.html",
+      "/fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html",
+      "/fr/exercises/prompt-engineering.html",
+      "/fr/exercises/public-history.html",
+      "/fr/exercises/recherche-sources-vorort-conseil-europe-1963.html",
+      "/fr/exercises/recherche-bibliographique-securite-sociale-ch.html",
+      "/fr/exercises/ecriture.html"
+    ]
+  },
+  {
+    "listing": "/fr/exercises/index.html",
+    "items": [
+      "/fr/exercises/citer.html",
+      "/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html",
+      "/fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html",
+      "/fr/exercises/prompt-engineering.html",
+      "/fr/exercises/public-history.html",
+      "/fr/exercises/recherche-sources-vorort-conseil-europe-1963.html",
+      "/fr/exercises/recherche-bibliographique-securite-sociale-ch.html",
+      "/fr/exercises/ecriture.html"
     ]
   },
   {
     "listing": "/en/index.html",
     "items": [
-      "/en/exercises/index.html"
+      "/en/exercises/citing.html",
+      "/en/exercises/writing.html",
+      "/en/exercises/index.html",
+      "/en/exercises/formulating-historical-research-question-switzerland-council-of-europe.html",
+      "/en/exercises/literature-research-social-security-ch.html",
+      "/en/exercises/prompt-engineering.html",
+      "/en/exercises/public-history.html",
+      "/en/exercises/source-criticism-federal-council-council-of-europe-1949.html",
+      "/en/exercises/source-search-vorort-council-of-europe-1963.html"
     ]
   }
 ]

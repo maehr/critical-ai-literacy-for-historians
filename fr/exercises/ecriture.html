@@ -1,0 +1,811 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><meta charset="utf-8"><style>:where(img[jampack-sized]){max-width:100%;height:auto}</style>
+
+
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+<meta name="author" content="Moritz Mähr">
+<meta name="description" content="Un exercice qui forme à l’utilisation de l’IA générative comme assistant d’écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la précision linguistique.">
+
+<title>Écriture scientifique – Critical AI Literacy for Historians</title>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both;margin-bottom:0}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html" rel="next">
+<link href="../../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html" rel="prev">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b341ada2fd7e9645114db7defdc544c9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-186de4b4d61a41b6c87c88aeeba008d1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b341ada2fd7e9645114db7defdc544c9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4e88ab5a068ab9e8647610822c1fcaec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-4e88ab5a068ab9e8647610822c1fcaec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4e88ab5a068ab9e8647610822c1fcaec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+
+
+<meta property="og:title" content="Écriture scientifique – Critical AI Literacy for Historians">
+<meta property="og:description" content="Un exercice qui forme à l’utilisation de l’IA générative comme assistant d’écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la précision linguistique.">
+<meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Critical AI Literacy for Historians">
+<meta name="twitter:title" content="Écriture scientifique – Critical AI Literacy for Historians">
+<meta name="twitter:description" content="Un exercice qui forme à l’utilisation de l’IA générative comme assistant d’écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la précision linguistique.">
+<meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/ecriture.html">
+</head>
+
+<body class="floating nav-fixed nav-sidebar quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="fixed-top headroom">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid navbar-container">
+      <div class="mx-auto navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo light-content" fetchpriority="high" decoding="async">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo dark-content" fetchpriority="high" decoding="async">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Critical AI Literacy for <em>Historians</em></span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="me-auto navbar-nav navbar-nav-scroll">
+  <li class="nav-item">
+    <a class="nav-link" href="../../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../de/index.html"> 
+<span class="menu-text">Deutsch</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../fr/index.html" aria-current="page"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/maehr/critical-ai-literacy-for-historians/" title="" class="px-1 quarto-navigation-tool" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="d-flex container-fluid">
+      <button type="button" class="btn quarto-btn-toggle" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fr/exercises/index.html">Exercices</a></li><li class="breadcrumb-item"><a href="../../fr/exercises/ecriture.html">Écriture scientifique</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="page-columns page-layout-article page-navbar page-rows-contents quarto-container">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="collapse collapse-horizontal floating overflow-auto quarto-sidebar-collapse-item sidebar sidebar-navigation">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">À propos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../fr/exercises/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse depth1 list-unstyled show sidebar-section">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/citer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citation académique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Critique des sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/ecriture.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Écriture scientifique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formuler une question de recherche historique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/prompt-engineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/public-history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Public History et communication historique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/recherche-bibliographique-securite-sociale-ch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recherche et analyse bibliographique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/recherche-sources-vorort-conseil-europe-1963.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recherche de sources pour une question de recherche historique</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliographie</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#aperçu-et-objectif-didactique" id="toc-aperçu-et-objectif-didactique" class="nav-link active" data-scroll-target="#aperçu-et-objectif-didactique">Aperçu et objectif didactique</a></li>
+  <li><a href="#prérequis" id="toc-prérequis" class="nav-link" data-scroll-target="#prérequis">Prérequis</a></li>
+  <li><a href="#objectifs-dapprentissage" id="toc-objectifs-dapprentissage" class="nav-link" data-scroll-target="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+  <li><a href="#cadre-méthodologique-lia-comme-infrastructure-décriture" id="toc-cadre-méthodologique-lia-comme-infrastructure-décriture" class="nav-link" data-scroll-target="#cadre-méthodologique-lia-comme-infrastructure-décriture">Cadre méthodologique : L’IA comme infrastructure d’écriture</a></li>
+  <li><a href="#prérequis-1" id="toc-prérequis-1" class="nav-link" data-scroll-target="#prérequis-1">Prérequis</a></li>
+  <li><a href="#structure-de-lexercice" id="toc-structure-de-lexercice" class="nav-link" data-scroll-target="#structure-de-lexercice">Structure de l’exercice</a></li>
+  <li><a href="#vérificateur-de-compréhension" id="toc-vérificateur-de-compréhension" class="nav-link" data-scroll-target="#vérificateur-de-compréhension">1. Vérificateur de compréhension</a>
+  <ul class="collapse">
+  <li><a href="#objectif" id="toc-objectif" class="nav-link" data-scroll-target="#objectif">Objectif</a></li>
+  <li><a href="#tâche" id="toc-tâche" class="nav-link" data-scroll-target="#tâche">Tâche</a></li>
+  <li><a href="#comparaison-critique" id="toc-comparaison-critique" class="nav-link" data-scroll-target="#comparaison-critique">Comparaison critique</a></li>
+  </ul></li>
+  <li><a href="#partenaire-de-brainstorming-avocat-du-diable" id="toc-partenaire-de-brainstorming-avocat-du-diable" class="nav-link" data-scroll-target="#partenaire-de-brainstorming-avocat-du-diable">2. Partenaire de brainstorming + Avocat du diable</a>
+  <ul class="collapse">
+  <li><a href="#objectif-1" id="toc-objectif-1" class="nav-link" data-scroll-target="#objectif-1">Objectif</a></li>
+  <li><a href="#tâche-a-brainstorming-orienté-idées-neutre-en-preuves" id="toc-tâche-a-brainstorming-orienté-idées-neutre-en-preuves" class="nav-link" data-scroll-target="#tâche-a-brainstorming-orienté-idées-neutre-en-preuves">Tâche A : Brainstorming (orienté idées, neutre en preuves)</a></li>
+  <li><a href="#tâche-b-avocat-du-diable-confrontationnel-mais-productif" id="toc-tâche-b-avocat-du-diable-confrontationnel-mais-productif" class="nav-link" data-scroll-target="#tâche-b-avocat-du-diable-confrontationnel-mais-productif">Tâche B : Avocat du diable (confrontationnel, mais productif)</a></li>
+  <li><a href="#comparaison-critique-1" id="toc-comparaison-critique-1" class="nav-link" data-scroll-target="#comparaison-critique-1">Comparaison critique</a></li>
+  </ul></li>
+  <li><a href="#structureur-outliner" id="toc-structureur-outliner" class="nav-link" data-scroll-target="#structureur-outliner">3. Structureur &amp; Outliner</a>
+  <ul class="collapse">
+  <li><a href="#objectif-2" id="toc-objectif-2" class="nav-link" data-scroll-target="#objectif-2">Objectif</a></li>
+  <li><a href="#tâche-1" id="toc-tâche-1" class="nav-link" data-scroll-target="#tâche-1">Tâche</a></li>
+  <li><a href="#vérification-de-qualité" id="toc-vérification-de-qualité" class="nav-link" data-scroll-target="#vérification-de-qualité">Vérification de qualité</a></li>
+  </ul></li>
+  <li><a href="#texte-à-partir-des-points" id="toc-texte-à-partir-des-points" class="nav-link" data-scroll-target="#texte-à-partir-des-points">4. Texte à partir des points</a>
+  <ul class="collapse">
+  <li><a href="#objectif-3" id="toc-objectif-3" class="nav-link" data-scroll-target="#objectif-3">Objectif</a></li>
+  <li><a href="#tâche-2" id="toc-tâche-2" class="nav-link" data-scroll-target="#tâche-2">Tâche</a></li>
+  <li><a href="#comparaison-critique-2" id="toc-comparaison-critique-2" class="nav-link" data-scroll-target="#comparaison-critique-2">Comparaison critique</a></li>
+  </ul></li>
+  <li><a href="#résolveur-de-blocages" id="toc-résolveur-de-blocages" class="nav-link" data-scroll-target="#résolveur-de-blocages">5. Résolveur de blocages</a>
+  <ul class="collapse">
+  <li><a href="#objectif-4" id="toc-objectif-4" class="nav-link" data-scroll-target="#objectif-4">Objectif</a></li>
+  <li><a href="#micro-exercices-choisissez-2" id="toc-micro-exercices-choisissez-2" class="nav-link" data-scroll-target="#micro-exercices-choisissez-2">Micro-exercices (choisissez 2)</a></li>
+  </ul></li>
+  <li><a href="#vérificateur-de-logique" id="toc-vérificateur-de-logique" class="nav-link" data-scroll-target="#vérificateur-de-logique">6. Vérificateur de logique</a>
+  <ul class="collapse">
+  <li><a href="#objectif-5" id="toc-objectif-5" class="nav-link" data-scroll-target="#objectif-5">Objectif</a></li>
+  <li><a href="#tâche-3" id="toc-tâche-3" class="nav-link" data-scroll-target="#tâche-3">Tâche</a></li>
+  <li><a href="#comparaison-critique-3" id="toc-comparaison-critique-3" class="nav-link" data-scroll-target="#comparaison-critique-3">Comparaison critique</a></li>
+  </ul></li>
+  <li><a href="#relecture-traducteur" id="toc-relecture-traducteur" class="nav-link" data-scroll-target="#relecture-traducteur">7. Relecture + Traducteur</a>
+  <ul class="collapse">
+  <li><a href="#objectif-6" id="toc-objectif-6" class="nav-link" data-scroll-target="#objectif-6">Objectif</a></li>
+  <li><a href="#tâche-a-relecture-minimalement-invasive" id="toc-tâche-a-relecture-minimalement-invasive" class="nav-link" data-scroll-target="#tâche-a-relecture-minimalement-invasive">Tâche A : Relecture (minimalement invasive)</a></li>
+  <li><a href="#tâche-b-traduction-optionnelle" id="toc-tâche-b-traduction-optionnelle" class="nav-link" data-scroll-target="#tâche-b-traduction-optionnelle">Tâche B : Traduction (optionnelle)</a></li>
+  </ul></li>
+  <li><a href="#rédacteur-de-résumé" id="toc-rédacteur-de-résumé" class="nav-link" data-scroll-target="#rédacteur-de-résumé">8. Rédacteur de résumé</a>
+  <ul class="collapse">
+  <li><a href="#objectif-7" id="toc-objectif-7" class="nav-link" data-scroll-target="#objectif-7">Objectif</a></li>
+  <li><a href="#tâche-4" id="toc-tâche-4" class="nav-link" data-scroll-target="#tâche-4">Tâche</a></li>
+  <li><a href="#vérification-de-qualité-1" id="toc-vérification-de-qualité-1" class="nav-link" data-scroll-target="#vérification-de-qualité-1">Vérification de qualité</a></li>
+  </ul></li>
+  <li><a href="#vérificateur-de-compréhension-re-run" id="toc-vérificateur-de-compréhension-re-run" class="nav-link" data-scroll-target="#vérificateur-de-compréhension-re-run">9. Vérificateur de compréhension (Re-Run)</a>
+  <ul class="collapse">
+  <li><a href="#objectif-8" id="toc-objectif-8" class="nav-link" data-scroll-target="#objectif-8">Objectif</a></li>
+  <li><a href="#tâche-5" id="toc-tâche-5" class="nav-link" data-scroll-target="#tâche-5">Tâche</a></li>
+  </ul></li>
+  <li><a href="#résultat-dapprentissage" id="toc-résultat-dapprentissage" class="nav-link" data-scroll-target="#résultat-dapprentissage">Résultat d’apprentissage</a></li>
+  <li><a href="#ressources-complémentaires" id="toc-ressources-complémentaires" class="nav-link" data-scroll-target="#ressources-complémentaires">Ressources complémentaires</a></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/fr/exercises/ecriture.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fr/exercises/index.html">Exercices</a></li><li class="breadcrumb-item"><a href="../../fr/exercises/ecriture.html">Écriture scientifique</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Écriture scientifique</h1>
+<p class="lead subtitle">Ensemble d’exercices basé sur les rôles le long du processus d’écriture</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Méthodes</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Un exercice qui forme à l’utilisation de l’IA générative comme assistant d’écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la précision linguistique.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Auteur·rice</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université de Berne
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">24 décembre 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modifié</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">17 janvier 2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="aperçu-et-objectif-didactique" class="level2">
+<h2 class="anchored" data-anchor-id="aperçu-et-objectif-didactique">Aperçu et objectif didactique</h2>
+<p>Cet exercice forme à l’<strong>utilisation critique de l’IA générative comme assistant d’écriture</strong> dans plusieurs rôles clairement délimités. Les rôles sont organisés pour correspondre à un processus typique d’écriture universitaire : <strong>clarifier le problème → développer les idées → structurer → rédiger → réviser → finaliser</strong>.</p>
+<p>L’objectif n’est pas d’« automatiser » la production de texte, mais d’augmenter la <strong>qualité des décisions</strong> : meilleures questions de recherche, arguments plus cohérents, langage plus précis – tout en maintenant la <strong>traçabilité</strong> de la paternité et des preuves utilisées.</p>
+</section>
+<section id="prérequis" class="level2">
+<h2 class="anchored" data-anchor-id="prérequis">Prérequis</h2>
+<ul>
+<li>Compréhension de base des méthodes de recherche historique</li>
+<li>Connaissances de base dans l’utilisation de l’IA générative (en particulier le prompting)</li>
+</ul>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Prompt Engineering
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Si vous n’êtes pas encore familier avec le prompting, nous vous recommandons de suivre d’abord l’exercice <a href="../../fr/exercises/prompt-engineering.html">Prompt Engineering</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>LLM
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Pour cet exercice, il est utile que le LLM ait accès à Internet et permette le téléchargement de fichiers.</p>
+</div>
+</div>
+</section>
+<section id="objectifs-dapprentissage" class="level2">
+<h2 class="anchored" data-anchor-id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<ul>
+<li>Traiter les réponses comme des hypothèses/ébauches et les vérifier systématiquement.</li>
+<li>Concevoir des prompts pour que l’IA n’« invente » pas mais travaille avec le matériel fourni.</li>
+<li>Rédiger une structure d’argument (thèse–preuves–conclusion) et tester la cohérence.</li>
+<li>Générer des paragraphes à partir de ses propres points et les réviser ensuite professionnellement/terminologiquement.</li>
+<li>Effectuer la révision en deux étapes : logique/compréhensibilité → langue/style.</li>
+<li>Documenter de manière transparente son utilisation de l’IA (protocole de prompt et de décision).</li>
+</ul>
+</section>
+<section id="cadre-méthodologique-lia-comme-infrastructure-décriture" class="level2">
+<h2 class="anchored" data-anchor-id="cadre-méthodologique-lia-comme-infrastructure-décriture">Cadre méthodologique : L’IA comme infrastructure d’écriture</h2>
+<p>Dans cet exercice, l’IA est comprise comme un <strong>outil d’écriture heuristique</strong> : Elle soutient les <em>formulations, la structuration et la vérification</em>, mais ne remplace ni le <strong>travail sur les sources</strong> ni les <strong>décisions interprétatives</strong>.<span class="citation" data-cites="bender2021stochastic">(<a href="#ref-bender2021stochastic" role="doc-biblioref">Bender et al. 2021</a>)</span> Méthodologiquement utile est une division claire du travail :</p>
+<ul>
+<li><strong>Paternité historique :</strong> Question de recherche, sélection des preuves, interprétation, positions normatives.</li>
+<li><strong>Contribution de l’IA (instrumentale) :</strong> Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d’erreurs.</li>
+<li><strong>Procédure de vérification (obligatoire) :</strong> Chaque déclaration de l’IA doit soit (a) être traçable à votre matériel d’input ou (b) être marquée comme hypothèse et vérifiée extérieurement.<span class="citation" data-cites="turingway2022handbook">(<a href="#ref-turingway2022handbook" role="doc-biblioref">The Turing Way Community 2022</a>)</span></li>
+</ul>
+<p>Pour un travail plus fiable, utilisez systématiquement deux principes de prompt : 1. <strong>Délimiter l’espace de travail</strong> (« travaille uniquement avec mes points ; marque les incertitudes »). 2. <strong>Réponses formatées</strong> (listes/cartes d’arguments), pour pouvoir vérifier systématiquement et adopter sélectivement.</p>
+<div class="callout callout-style-default callout-titled callout-important">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Règle de base : L’IA ne peut pas « inventer »
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Utilisez l’IA uniquement comme <strong>outil de transformation et de vérification</strong> pour <em>votre</em> matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l’IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une <strong>hypothèse de recherche</strong> que vous devez <strong>vérifier extérieurement</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Mode de travail : Protocole IA (Piste d’audit)
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Pendant l’exercice, maintenez un bref <strong>protocole IA</strong>. Cela fait partie de la traçabilité scientifique (et facilite la divulgation ultérieure/section méthodes).</p>
+<p><strong>Modèle minimal</strong> | Champ | Contenu | |—|—| | Rôle / Exercice | | | Objectif (1 phrase) | | | Input (quel matériel ?) | | | Prompt (extrait principal) | | | Réponse (brève) | | | Étapes de vérification (comment vérifié ?) | | | Décision (adopté/adapté/rejeté + justification) | |</p>
+</div>
+</div>
+</section>
+<section id="prérequis-1" class="level2">
+<h2 class="anchored" data-anchor-id="prérequis-1">Prérequis</h2>
+<ul>
+<li>Fragment de sujet propre (par ex. travail de séminaire) <strong>ou</strong> une section de texte fournie (env. ½–1 page)<br>
+</li>
+<li>Points/notes propres sur le sujet (au moins 10 points)<br>
+</li>
+<li>Accès à une interface LLM de votre choix</li>
+</ul>
+</section>
+<section id="structure-de-lexercice" class="level2">
+<h2 class="anchored" data-anchor-id="structure-de-lexercice">Structure de l’exercice</h2>
+<p>Les rôles sont regroupés en <strong>phases</strong>. Les étapes individuelles peuvent être sautées ; cependant, au moins un tour complet jusqu’à la révision est judicieux. <strong>Parcours principal (env. 45–60 min) :</strong> 1 → 2 → 3 → 4 → 6 → 8.</p>
+<p><strong>Approfondissement optionnel :</strong> 5 (blocages locaux), 7 (style/traduction), 9 (test de lisibilité comme révision finale).</p>
+<ol type="1">
+<li><strong>Vérificateur de compréhension</strong> (clarifier la tâche, identifier les angles morts)<br>
+</li>
+<li><strong>Partenaire de brainstorming + Avocat du diable</strong> (ouvrir l’espace des idées + contre-arguments)<br>
+</li>
+<li><strong>Structureur &amp; Outliner</strong> (architecture de l’argument)<br>
+</li>
+<li><strong>Texte à partir des points</strong> (rédaction sous discipline des faits)<br>
+</li>
+<li><strong>Résolveur de blocages</strong> (problèmes d’écriture locaux/transitions)<br>
+</li>
+<li><strong>Vérificateur de logique</strong> (cohérence, preuves, règles d’inférence)<br>
+</li>
+<li><strong>Relecture + Traducteur</strong> (style/grammaire/registre ; optionnellement multilinguisme)<br>
+</li>
+<li><strong>Rédacteur de résumé</strong> (compression, focus, « et alors ? »)<br>
+</li>
+<li><strong>Vérificateur de compréhension (Re-Run)</strong> (lisibilité du point de vue du public cible)</li>
+</ol>
+</section>
+<section id="vérificateur-de-compréhension" class="level2">
+<h2 class="anchored" data-anchor-id="vérificateur-de-compréhension">1. Vérificateur de compréhension</h2>
+<section id="objectif" class="level3">
+<h3 class="anchored" data-anchor-id="objectif">Objectif</h3>
+<p>Rendre la tâche d’écriture et votre propre intention argumentative si précises que les étapes IA ultérieures n’« évitent » pas ou ne stabilisent pas de fausses prémisses.</p>
+</section>
+<section id="tâche" class="level3">
+<h3 class="anchored" data-anchor-id="tâche">Tâche</h3>
+<ol type="1">
+<li>Donnez à l’IA <strong>seulement</strong> ce qui suit : Sujet en 2–3 phrases, contexte (cours/genre), public cible, portée, format de soumission.<br>
+</li>
+<li>Faites poser à l’IA des <strong>questions de suivi</strong> et marquer les incertitudes.</li>
+</ol>
+<p><strong>Scaffold de prompt</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Tu es un vérificateur de compréhension. Pose-moi 8–12 questions de suivi précises pour clarifier la tâche d'écriture et l'objectif d'argumentation.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Marque :</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>(1) informations manquantes,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>(2) hypothèses implicites,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>(3) termes qui doivent être définis opérationnellement.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Pas de suggestions de contenu, seulement des questions et un diagnostic.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Contexte : …</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Sujet/thèse (préliminaire) : …</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Genre/portée : …</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Public cible : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="comparaison-critique" class="level3">
+<h3 class="anchored" data-anchor-id="comparaison-critique">Comparaison critique</h3>
+<ul>
+<li>Quelles questions de suivi vous obligent à <strong>clarifier des termes</strong> (par ex. « modernisation », « neutralité », « gouvernance ») ?<br>
+</li>
+<li>Quelles questions <strong>prioriseriez-vous différemment</strong> – et pourquoi ?</li>
+</ul>
+<p><strong>Résultat</strong> - 1 tâche révisée (3–5 phrases) + 3 termes clés définis</p>
+</section>
+</section>
+<section id="partenaire-de-brainstorming-avocat-du-diable" class="level2">
+<h2 class="anchored" data-anchor-id="partenaire-de-brainstorming-avocat-du-diable">2. Partenaire de brainstorming + Avocat du diable</h2>
+<section id="objectif-1" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-1">Objectif</h3>
+<p>Générer des idées sans inventer de preuves, et co-penser immédiatement les contre-arguments/interprétations alternatives.</p>
+</section>
+<section id="tâche-a-brainstorming-orienté-idées-neutre-en-preuves" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-a-brainstorming-orienté-idées-neutre-en-preuves">Tâche A : Brainstorming (orienté idées, neutre en preuves)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Partenaire de brainstorming. Génère 12 lignes d'arguments/hypothèses possibles sur mon sujet.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">Conditions :</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Formule chaque ligne comme une affirmation vérifiable (pas de faits).</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pour chaque ligne : quel type de preuve j'aurais besoin (types de sources/types de littérature).</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Évite les titres de littérature spécifiques ou les cotes d'archives ; si nécessaire, formule comme heuristique de recherche.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>Mon sujet : …</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Mon matériel (seulement les types, pas de contenu sensible) : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="tâche-b-avocat-du-diable-confrontationnel-mais-productif" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-b-avocat-du-diable-confrontationnel-mais-productif">Tâche B : Avocat du diable (confrontationnel, mais productif)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Avocat du diable. Choisis les 3 plus plausibles de mes hypothèses et argumente contre chacune.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">Pour chaque contre-argument :</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Nomme l'hypothèse vulnérable.</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Propose un « test de stress » (quel constat renverserait mon argument ?).</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Formule une interprétation alternative (max. 2 phrases).</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>Pas de faits externes.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Hypothèses : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="comparaison-critique-1" class="level3">
+<h3 class="anchored" data-anchor-id="comparaison-critique-1">Comparaison critique</h3>
+<ul>
+<li>Quelles hypothèses sont <strong>falsifiables</strong> (au sens de conditions de réfutation claires) ?<br>
+</li>
+<li>Où le <strong>présentisme</strong> menace-t-il (projeter les catégories du présent sur le passé) ?</li>
+</ul>
+<p><strong>Résultat</strong> - 1 hypothèse/thèse priorisée + 2 contre-arguments centraux + 1 test de stress planifié</p>
+</section>
+</section>
+<section id="structureur-outliner" class="level2">
+<h2 class="anchored" data-anchor-id="structureur-outliner">3. Structureur &amp; Outliner</h2>
+<section id="objectif-2" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-2">Objectif</h3>
+<p>Rédiger une <strong>chaîne d’arguments</strong> vérifiable (thèse → sous-thèses → preuves → conclusion) avant que le texte ne soit généré.</p>
+</section>
+<section id="tâche-1" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1">Tâche</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Structureur &amp; Outliner.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Crée un plan (max. 8 points principaux) pour un texte d'env. X mots.</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Pour chaque point :</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Objectif de la section (1 phrase)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Affirmation centrale (1 phrase)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Preuve requise (mots-clés ; « de mes notes/sources »)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Transition vers le point suivant (1 phrase)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>Contraintes :</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pas de nouveaux faits.</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Si des preuves manquent : marquer comme <span class="co">[</span><span class="ot">LACUNE DE PREUVE</span><span class="co">]</span> au lieu de compléter.</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>Matériel (points/notes) : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="vérification-de-qualité" class="level3">
+<h3 class="anchored" data-anchor-id="vérification-de-qualité">Vérification de qualité</h3>
+<ul>
+<li>Chaque affirmation a-t-elle une <strong>piste de preuve</strong> (au moins comme espace réservé) ?<br>
+</li>
+<li>Y a-t-il des sections qui ne fournissent que « aperçu » mais n’ont pas de fonction argumentative ?</li>
+</ul>
+<p><strong>Résultat</strong> - Plan + marquage de 2–3 lacunes de preuves</p>
+</section>
+</section>
+<section id="texte-à-partir-des-points" class="level2">
+<h2 class="anchored" data-anchor-id="texte-à-partir-des-points">4. Texte à partir des points</h2>
+<section id="objectif-3" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-3">Objectif</h3>
+<p>Faire formuler des paragraphes à partir de votre propre matériel sans abandonner le contrôle du contenu.</p>
+</section>
+<section id="tâche-2" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2">Tâche</h3>
+<p>Sélectionnez <strong>un</strong> point du plan (par ex. « Argument principal 1 ») et fournissez 8–12 points (preuves, observations, citations/paraphrases, termes).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Générateur de texte à partir de points.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Rédige un paragraphe (120–180 mots) en français académique.</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Conditions :</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Utilise uniquement les informations de mes points.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pas de nouveaux exemples, données, noms, sources.</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Si une phrase nécessiterait des informations supplémentaires : marquer <span class="co">[</span><span class="ot">INCERTAIN</span><span class="co">]</span>.</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Garde ma terminologie ; demande si pas clair.</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>Points : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="comparaison-critique-2" class="level3">
+<h3 class="anchored" data-anchor-id="comparaison-critique-2">Comparaison critique</h3>
+<ul>
+<li>Supprimez toutes les phrases qui ne sont pas directement traçables à vos points.<br>
+</li>
+<li>Vérifiez la terminologie : Où l’IA lisse-t-elle des termes (par ex. « État », « société », « acteur ») de manière inadmissible ?</li>
+</ul>
+<p><strong>Résultat</strong> - 1 paragraphe + une version dans laquelle vous avez affiné indépendamment 3–5 phrases</p>
+</section>
+</section>
+<section id="résolveur-de-blocages" class="level2">
+<h2 class="anchored" data-anchor-id="résolveur-de-blocages">5. Résolveur de blocages</h2>
+<section id="objectif-4" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-4">Objectif</h3>
+<p>Résoudre les problèmes locaux (transitions, phrases d’ouverture, définitions de termes) sans faire « réécrire » le texte.</p>
+</section>
+<section id="micro-exercices-choisissez-2" class="level3">
+<h3 class="anchored" data-anchor-id="micro-exercices-choisissez-2">Micro-exercices (choisissez 2)</h3>
+<p><strong>A) Construire une transition</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Résolveur de blocages.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Formule 5 variantes pour une phrase de transition entre le paragraphe A et B.</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Variante 1 neutre, 2 plus argumentative, 3 plus explicative, 4 plus courte, 5 avec marqueur de contraste.</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Paragraphe A : …</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>Paragraphe B : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>B) Opérationnaliser une définition</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Formule 3 définitions de travail possibles pour le terme « X » dans le contexte de mon sujet.</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Pour chaque définition :</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Délimitation d'1 terme voisin</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>1 indicateur observable (comment reconnaître X dans les sources ?)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>Pas de faits externes.</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>Contexte : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>C) Diagnostic de phrase</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="an">Marque dans mon paragraphe :</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>la phrase centrale (topic sentence),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>les phrases avec référent peu clair (« cela », « ainsi », « on »),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>les phrases qui contiennent en fait deux affirmations.</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Propose des réarrangements minimaux (pas de réécriture du contenu).</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>Texte : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Résultat</strong> - 1 transition/définition révisée + brève justification de pourquoi cette variante</p>
+</section>
+</section>
+<section id="vérificateur-de-logique" class="level2">
+<h2 class="anchored" data-anchor-id="vérificateur-de-logique">6. Vérificateur de logique</h2>
+<section id="objectif-5" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-5">Objectif</h3>
+<p>Rendre visible la logique d’argumentation : Les preuves soutiennent-elles les affirmations ? Les règles d’inférence sont-elles traçables ? Où manquent les prémisses ?</p>
+</section>
+<section id="tâche-3" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-3">Tâche</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Vérificateur de logique.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Analyse mon texte (max. 300 mots) comme une carte d'arguments :</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>1) Thèse principale</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>2) Sous-thèses</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>3) Preuves explicites (du texte)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>4) Prémisses implicites (que je présuppose apparemment)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>5) Sauts logiques ou contradictions possibles</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>Puis donne 5 recommandations de révision concrètes, priorisées par impact.</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>Texte : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="comparaison-critique-3" class="level3">
+<h3 class="anchored" data-anchor-id="comparaison-critique-3">Comparaison critique</h3>
+<ul>
+<li>Quelles « prémisses implicites » acceptez-vous – lesquelles doivent être étayées ou reformulées ?<br>
+</li>
+<li>Où les affirmations causales ne sont-elles en fait que <strong>séquence temporelle</strong> ?</li>
+</ul>
+<p><strong>Résultat</strong> - Carte d’arguments + 2 révisions ciblées dans le texte (avec marquage de ce qui s’est amélioré logiquement)</p>
+</section>
+</section>
+<section id="relecture-traducteur" class="level2">
+<h2 class="anchored" data-anchor-id="relecture-traducteur">7. Relecture + Traducteur</h2>
+<section id="objectif-6" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-6">Objectif</h3>
+<p>Améliorer la langue et le registre sans changer la substance argumentative ; optionnellement transférer la terminologie de manière cohérente dans une seconde langue.</p>
+</section>
+<section id="tâche-a-relecture-minimalement-invasive" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-a-relecture-minimalement-invasive">Tâche A : Relecture (minimalement invasive)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Relecture.</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Améliore la grammaire, le style et la précision, mais ne change aucune déclaration de contenu.</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>Travaille de manière minimalement invasive :</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Remplace les mots vagues (par ex. « important », « montre ») seulement si c'est sans ambiguïté.</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Préserve les termes techniques ; si incertain : marquer <span class="co">[</span><span class="ot">TERME ?</span><span class="co">]</span>.</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>À la fin, donne une liste des 5 erreurs de modèle les plus fréquentes que tu as corrigées.</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>Texte : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="tâche-b-traduction-optionnelle" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-b-traduction-optionnelle">Tâche B : Traduction (optionnelle)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Traducteur.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Traduis le texte en anglais (ou allemand/espagnol).</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>Conditions :</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Préserve le registre (académique) et les marqueurs de prudence (par ex. « pourrait », « suggère »).</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Garde les noms propres et les citations inchangés.</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Donne un mini-tableau glossaire (5–10 paires de termes) pour les termes clés.</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>Texte : …</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>Langue cible : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Résultat</strong> - Version corrigée + (optionnelle) traduction + glossaire</p>
+</section>
+</section>
+<section id="rédacteur-de-résumé" class="level2">
+<h2 class="anchored" data-anchor-id="rédacteur-de-résumé">8. Rédacteur de résumé</h2>
+<section id="objectif-7" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-7">Objectif</h3>
+<p>Distiller le texte jusqu’à sa déclaration porteuse : problème de recherche, approche, constat/argument, pertinence.</p>
+</section>
+<section id="tâche-4" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-4">Tâche</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Rédacteur de résumé.</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Rédige un résumé de 120–160 mots.</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>Doit contenir :</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Problème de recherche (1 phrase)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Approche/matériel (1 phrase)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Argument/constat central (2–3 phrases)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Contribution/pertinence (« et alors ? ») (1 phrase)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>Pas de nouveaux faits ; si pas clair : marquer <span class="co">[</span><span class="ot">PAS CLAIR</span><span class="co">]</span>.</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>Base textuelle : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="vérification-de-qualité-1" class="level3">
+<h3 class="anchored" data-anchor-id="vérification-de-qualité-1">Vérification de qualité</h3>
+<ul>
+<li>Le résumé couvre-t-il le <strong>véritable</strong> point argumentatif ou seulement le domaine thématique ?<br>
+</li>
+<li>La méthode affirmée correspond-elle à ce que vous faites réellement (travail sur les sources vs.&nbsp;discussion de littérature) ?</li>
+</ul>
+<p><strong>Résultat</strong> - Résumé + méta-commentaire de 2 phrases : Qu’est-ce que l’IA a mal souligné/omis ?</p>
+</section>
+</section>
+<section id="vérificateur-de-compréhension-re-run" class="level2">
+<h2 class="anchored" data-anchor-id="vérificateur-de-compréhension-re-run">9. Vérificateur de compréhension (Re-Run)</h2>
+<section id="objectif-8" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-8">Objectif</h3>
+<p>Tester la lisibilité et les marges d’interprétation du point de vue du public cible.</p>
+</section>
+<section id="tâche-5" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-5">Tâche</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="an">Rôle :</span><span class="co"> Vérificateur de compréhension.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Lis mon texte comme un lecteur critique dans un séminaire.</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>1) Quelle est la thèse en une phrase ?</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>2) Quels 3 points sont flous ou ambigus (chacun avec emplacement de citation) ?</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>3) Quel passage semble non étayé ?</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>4) Quelles deux questions me poserais-tu en feedback ?</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>Texte : …</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Résultat</strong> - 3 passages affinés dans le texte (1–2 phrases révisées chacun)</p>
+</section>
+</section>
+<section id="résultat-dapprentissage" class="level2">
+<h2 class="anchored" data-anchor-id="résultat-dapprentissage">Résultat d’apprentissage</h2>
+<p>À la fin, vous avez un petit paquet d’artefacts scientifiquement réutilisables :</p>
+<ul>
+<li>Plan (avec lacunes de preuves)<br>
+</li>
+<li>1–3 paragraphes révisés (avec révisions traçables)<br>
+</li>
+<li>Carte d’arguments (vérification logique)<br>
+</li>
+<li>Résumé (et optionnellement traduction + glossaire)<br>
+</li>
+<li>Protocole IA (documentation de prompts et de décisions)</li>
+</ul>
+</section>
+<section id="ressources-complémentaires" class="level2">
+<h2 class="anchored" data-anchor-id="ressources-complémentaires">Ressources complémentaires</h2>
+<ul>
+<li><a href="https://aipedagogy.org/guide/llm-tutorial/">AI Pedagogy Project: LLM Tutorial</a> – Limites, hallucinations, vérification et utilisation critique des LLMs.</li>
+<li><a href="https://the-turing-way.netlify.app/">The Turing Way</a> – Manuel pour une recherche reproductible, éthique et collaborative.</li>
+</ul>
+</section>
+<section id="bibliographie" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
+<div id="refs" class="csl-bib-body hanging-indent references" data-entry-spacing="0" role="list">
+<div id="ref-bender2021stochastic" class="csl-entry" role="listitem">
+Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, et Shmargaret Shmitchell. 2021. <span>«&nbsp;On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜&nbsp;»</span>. In <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21)</em>, 610‑23. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
+</div>
+<div id="ref-turingway2022handbook" class="csl-entry" role="listitem">
+The Turing Way Community. 2022. <span>«&nbsp;The Turing Way: A Handbook for Reproducible, Ethical and Collaborative Research&nbsp;»</span>. Zenodo. 2022. <a href="https://doi.org/10.5281/zenodo.3233853">https://doi.org/10.5281/zenodo.3233853</a>.
+</div>
+</div>
+<div class="callout callout-style-default callout-titled callout-warning">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Avertissement</span>Avertissement de traduction automatique
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Cet exercice a été traduit automatiquement de l’allemand à l’aide de l’IA et peut contenir des erreurs ou des inexactitudes. Veuillez vous référer à la <a href="../../de/exercises/schreiben.html">version originale allemande</a> pour le texte faisant autorité. Si vous remarquez des problèmes de traduction, veuillez les signaler.</p>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="return window.scrollTo(0,0),!1;
+" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@inreference{mähr2025,
+  author = {Mähr, Moritz},
+  title = {Écriture scientifique},
+  booktitle = {Critical AI Literacy pour les Historiens},
+  date = {2025-12-24},
+  url = {https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/ecriture.html},
+  langid = {fr}
+}
+</code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Veuillez citer ce travail comme suit&nbsp;:</div><div id="ref-mähr2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mähr, Moritz. 2025. <span>“Écriture scientifique.”</span> In
+<em>Critical AI Literacy pour les Historiens</em>. <a href="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/ecriture.html">https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/ecriture.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Copi\xE9");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Copi\xE9"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},C=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){C();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else C(),e.classList.remove("code-annotation-active")});const x=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:x(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=x(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html" class="pagination-link" aria-label="Critique des sources">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Critique des sources</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html" class="pagination-link" aria-label="Formuler une question de recherche historique">
+        <span class="nav-page-text">Formuler une question de recherche historique</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-md-none d-sm-block"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/fr/exercises/ecriture.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer></body></html>

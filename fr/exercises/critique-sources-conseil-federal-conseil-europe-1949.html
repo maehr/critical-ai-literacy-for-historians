@@ -1,0 +1,922 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head><meta charset="utf-8"><style>:where(img[jampack-sized]){max-width:100%;height:auto}</style>
+
+
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
+<meta name="author" content="Moritz Mähr">
+<meta name="description" content="Un exercice guidé pour la critique externe et interne systématique des sources sur une note diplomatique (Dodis).">
+
+<title>Critique des sources – Critical AI Literacy for Historians</title>
+<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}html{-webkit-text-size-adjust:100%}pre>code.sourceCode{white-space:pre;position:relative}pre>code.sourceCode>span{line-height:1.25;display:inline-block}pre>code.sourceCode>span:empty{height:1.2em}.sourceCode{overflow:visible}code.sourceCode>span{color:inherit;text-decoration:inherit}div.sourceCode{margin:1em 0}pre.sourceCode{margin:0}@media screen{div.sourceCode{overflow:auto}}@media print{pre>code.sourceCode{white-space:pre-wrap}pre>code.sourceCode>span{text-indent:-5em;padding-left:5em}}pre.numberSource code{counter-reset:source-line 0}pre.numberSource code>span{counter-increment:source-line;position:relative;left:-4em}pre.numberSource code>span>a:first-child:before{content:counter(source-line);text-align:right;vertical-align:baseline;-webkit-touch-callout:none;user-select:none;-khtml-user-select:none;border:none;width:4em;padding:0 4px;display:inline-block;position:relative;left:-1em}pre.numberSource{margin-left:3em;padding-left:4px}@media screen{pre>code.sourceCode>span>a:first-child:before{text-decoration:underline}}div.csl-entry{clear:both;margin-bottom:0}.hanging-indent div.csl-entry{text-indent:-2em;margin-left:2em}div.csl-left-margin{float:left;min-width:2em}div.csl-right-inline{margin-left:2em;padding-left:1em}div.csl-indent{margin-left:2em}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../fr/exercises/ecriture.html" rel="next">
+<link href="../../fr/exercises/citer.html" rel="prev">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b341ada2fd7e9645114db7defdc544c9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-186de4b4d61a41b6c87c88aeeba008d1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b341ada2fd7e9645114db7defdc544c9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4e88ab5a068ab9e8647610822c1fcaec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-4e88ab5a068ab9e8647610822c1fcaec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4e88ab5a068ab9e8647610822c1fcaec.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+
+
+<meta property="og:title" content="Critique des sources – Critical AI Literacy for Historians">
+<meta property="og:description" content="Un exercice guidé pour la critique externe et interne systématique des sources sur une note diplomatique (Dodis).">
+<meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Critical AI Literacy for Historians">
+<meta name="twitter:title" content="Critique des sources – Critical AI Literacy for Historians">
+<meta name="twitter:description" content="Un exercice guidé pour la critique externe et interne systématique des sources sur une note diplomatique (Dodis).">
+<meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html">
+</head>
+
+<body class="floating nav-fixed nav-sidebar quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="fixed-top headroom">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid navbar-container">
+      <div class="mx-auto navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo light-content" fetchpriority="high" decoding="async">
+    <img src="../../favicon.svg" alt="Critical AI Literacy for Historians" class="navbar-logo dark-content" fetchpriority="high" decoding="async">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Critical AI Literacy for <em>Historians</em></span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="me-auto navbar-nav navbar-nav-scroll">
+  <li class="nav-item">
+    <a class="nav-link" href="../../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../de/index.html"> 
+<span class="menu-text">Deutsch</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../fr/index.html" aria-current="page"> 
+<span class="menu-text">Français</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/maehr/critical-ai-literacy-for-historians/" title="" class="px-1 quarto-navigation-tool" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="d-flex container-fluid">
+      <button type="button" class="btn quarto-btn-toggle" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fr/exercises/index.html">Exercices</a></li><li class="breadcrumb-item"><a href="../../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html">Critique des sources</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
+">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="page-columns page-layout-article page-navbar page-rows-contents quarto-container">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="collapse collapse-horizontal floating overflow-auto quarto-sidebar-collapse-item sidebar sidebar-navigation">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">À propos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../fr/exercises/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Basculer la section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse depth1 list-unstyled show sidebar-section">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/citer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citation académique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Critique des sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/ecriture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Écriture scientifique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Formuler une question de recherche historique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/prompt-engineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/public-history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Public History et communication historique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/recherche-bibliographique-securite-sociale-ch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recherche et analyse bibliographique</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/exercises/recherche-sources-vorort-conseil-europe-1963.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recherche de sources pour une question de recherche historique</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fr/bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliographie</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="margin-sidebar sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#aperçu-et-objectif-didactique" id="toc-aperçu-et-objectif-didactique" class="nav-link active" data-scroll-target="#aperçu-et-objectif-didactique">Aperçu et objectif didactique</a></li>
+  <li><a href="#prérequis" id="toc-prérequis" class="nav-link" data-scroll-target="#prérequis">Prérequis</a></li>
+  <li><a href="#objectifs-dapprentissage" id="toc-objectifs-dapprentissage" class="nav-link" data-scroll-target="#objectifs-dapprentissage">Objectifs d’apprentissage</a></li>
+  <li><a href="#structure-de-lexercice" id="toc-structure-de-lexercice" class="nav-link" data-scroll-target="#structure-de-lexercice">Structure de l’exercice</a></li>
+  <li><a href="#orientation-quest-ce-que-cette-source-et-que-peut-elle-représenter" id="toc-orientation-quest-ce-que-cette-source-et-que-peut-elle-représenter" class="nav-link" data-scroll-target="#orientation-quest-ce-que-cette-source-et-que-peut-elle-représenter">1. Orientation : Qu’est-ce que cette source (et que peut-elle représenter) ?</a>
+  <ul class="collapse">
+  <li><a href="#objectif" id="toc-objectif" class="nav-link" data-scroll-target="#objectif">Objectif</a></li>
+  <li><a href="#tâche-1-paraphrase-minimale-sans-interprétation" id="toc-tâche-1-paraphrase-minimale-sans-interprétation" class="nav-link" data-scroll-target="#tâche-1-paraphrase-minimale-sans-interprétation">Tâche 1 : Paraphrase minimale (sans interprétation)</a></li>
+  <li><a href="#tâche-1-paraphrase-minimale-sans-interprétation-avec-lia" id="toc-tâche-1-paraphrase-minimale-sans-interprétation-avec-lia" class="nav-link" data-scroll-target="#tâche-1-paraphrase-minimale-sans-interprétation-avec-lia">Tâche 1 : Paraphrase minimale (sans interprétation) avec l’IA</a></li>
+  </ul></li>
+  <li><a href="#téléchargement-de-la-source" id="toc-téléchargement-de-la-source" class="nav-link" data-scroll-target="#téléchargement-de-la-source">Téléchargement de la source</a></li>
+  <li><a href="#consigne-de-travail-réflexion" id="toc-consigne-de-travail-réflexion" class="nav-link" data-scroll-target="#consigne-de-travail-réflexion">Consigne de travail (Réflexion)</a></li>
+  <li><a href="#tâche-2-première-heuristique-de-recherche" id="toc-tâche-2-première-heuristique-de-recherche" class="nav-link" data-scroll-target="#tâche-2-première-heuristique-de-recherche">Tâche 2 : Première heuristique de recherche</a></li>
+  <li><a href="#tâche-2-première-heuristique-de-recherche-avec-lia" id="toc-tâche-2-première-heuristique-de-recherche-avec-lia" class="nav-link" data-scroll-target="#tâche-2-première-heuristique-de-recherche-avec-lia">Tâche 2 : Première heuristique de recherche avec l’IA</a></li>
+  <li><a href="#consigne-de-travail-réflexion-1" id="toc-consigne-de-travail-réflexion-1" class="nav-link" data-scroll-target="#consigne-de-travail-réflexion-1">Consigne de travail (Réflexion)</a></li>
+  <li><a href="#critique-externe-des-sources-authenticité-provenance-transmission-édition" id="toc-critique-externe-des-sources-authenticité-provenance-transmission-édition" class="nav-link" data-scroll-target="#critique-externe-des-sources-authenticité-provenance-transmission-édition">2. Critique externe des sources : Authenticité, provenance, transmission, édition</a>
+  <ul class="collapse">
+  <li><a href="#objectif-1" id="toc-objectif-1" class="nav-link" data-scroll-target="#objectif-1">Objectif</a></li>
+  <li><a href="#tâche-1-vérification-de-provenance-métadonnées-référence-darchives" id="toc-tâche-1-vérification-de-provenance-métadonnées-référence-darchives" class="nav-link" data-scroll-target="#tâche-1-vérification-de-provenance-métadonnées-référence-darchives">Tâche 1 : Vérification de provenance (Métadonnées &amp; référence d’archives)</a></li>
+  <li><a href="#tâche-2-lauthenticité-comme-forme-de-question" id="toc-tâche-2-lauthenticité-comme-forme-de-question" class="nav-link" data-scroll-target="#tâche-2-lauthenticité-comme-forme-de-question">Tâche 2 : L’authenticité comme forme de question</a></li>
+  <li><a href="#tâche-3-la-transmission-comme-problème-épistémique" id="toc-tâche-3-la-transmission-comme-problème-épistémique" class="nav-link" data-scroll-target="#tâche-3-la-transmission-comme-problème-épistémique">Tâche 3 : La transmission comme problème épistémique</a></li>
+  <li><a href="#consigne-de-travail-réflexion-2" id="toc-consigne-de-travail-réflexion-2" class="nav-link" data-scroll-target="#consigne-de-travail-réflexion-2">Consigne de travail (Réflexion)</a></li>
+  <li><a href="#tâche-critique-externe-avec-lia" id="toc-tâche-critique-externe-avec-lia" class="nav-link" data-scroll-target="#tâche-critique-externe-avec-lia">Tâche : Critique externe avec l’IA</a></li>
+  <li><a href="#consigne-de-réflexion" id="toc-consigne-de-réflexion" class="nav-link" data-scroll-target="#consigne-de-réflexion">Consigne de réflexion</a></li>
+  </ul></li>
+  <li><a href="#critique-interne-des-sources-intention-de-déclaration-point-de-vue-logique-dargumentation-biais" id="toc-critique-interne-des-sources-intention-de-déclaration-point-de-vue-logique-dargumentation-biais" class="nav-link" data-scroll-target="#critique-interne-des-sources-intention-de-déclaration-point-de-vue-logique-dargumentation-biais">3. Critique interne des sources : Intention de déclaration, point de vue, logique d’argumentation, biais</a>
+  <ul class="collapse">
+  <li><a href="#objectif-2" id="toc-objectif-2" class="nav-link" data-scroll-target="#objectif-2">Objectif</a></li>
+  <li><a href="#tâche-1-analyse-des-actes-de-parole-et-de-fonction" id="toc-tâche-1-analyse-des-actes-de-parole-et-de-fonction" class="nav-link" data-scroll-target="#tâche-1-analyse-des-actes-de-parole-et-de-fonction">Tâche 1 : Analyse des actes de parole et de fonction</a></li>
+  <li><a href="#tâche-2-cartographie-darguments-la-neutralité-comme-opérateur-clé" id="toc-tâche-2-cartographie-darguments-la-neutralité-comme-opérateur-clé" class="nav-link" data-scroll-target="#tâche-2-cartographie-darguments-la-neutralité-comme-opérateur-clé">Tâche 2 : Cartographie d’arguments (La neutralité comme opérateur clé)</a></li>
+  <li><a href="#tâche-3-témoignage-conscient-vs.-inconscient" id="toc-tâche-3-témoignage-conscient-vs.-inconscient" class="nav-link" data-scroll-target="#tâche-3-témoignage-conscient-vs.-inconscient">Tâche 3 : Témoignage conscient vs.&nbsp;inconscient</a></li>
+  <li><a href="#tâche-4-le-biais-comme-structure-pas-comme-erreur" id="toc-tâche-4-le-biais-comme-structure-pas-comme-erreur" class="nav-link" data-scroll-target="#tâche-4-le-biais-comme-structure-pas-comme-erreur">Tâche 4 : Le biais comme structure, pas comme « erreur »</a></li>
+  <li><a href="#consigne-de-travail-réflexion-3" id="toc-consigne-de-travail-réflexion-3" class="nav-link" data-scroll-target="#consigne-de-travail-réflexion-3">Consigne de travail (Réflexion)</a></li>
+  <li><a href="#tâche-critique-interne-avec-lia" id="toc-tâche-critique-interne-avec-lia" class="nav-link" data-scroll-target="#tâche-critique-interne-avec-lia">Tâche : Critique interne avec l’IA</a></li>
+  <li><a href="#consigne-de-réflexion-1" id="toc-consigne-de-réflexion-1" class="nav-link" data-scroll-target="#consigne-de-réflexion-1">Consigne de réflexion</a></li>
+  </ul></li>
+  <li><a href="#contextualisation-et-contre-vérification-triangulation-plutôt-que-contexte-comme-décor" id="toc-contextualisation-et-contre-vérification-triangulation-plutôt-que-contexte-comme-décor" class="nav-link" data-scroll-target="#contextualisation-et-contre-vérification-triangulation-plutôt-que-contexte-comme-décor">4. Contextualisation et contre-vérification : Triangulation plutôt que « contexte comme décor »</a>
+  <ul class="collapse">
+  <li><a href="#objectif-3" id="toc-objectif-3" class="nav-link" data-scroll-target="#objectif-3">Objectif</a></li>
+  <li><a href="#tâche-1-traçage-intertextuel-intégré-dans-le-document" id="toc-tâche-1-traçage-intertextuel-intégré-dans-le-document" class="nav-link" data-scroll-target="#tâche-1-traçage-intertextuel-intégré-dans-le-document">Tâche 1 : Traçage intertextuel (intégré dans le document)</a></li>
+  <li><a href="#tâche-2-contre-question-contrefactuelle-instrument-de-contrôle" id="toc-tâche-2-contre-question-contrefactuelle-instrument-de-contrôle" class="nav-link" data-scroll-target="#tâche-2-contre-question-contrefactuelle-instrument-de-contrôle">Tâche 2 : Contre-question contrefactuelle (instrument de contrôle)</a></li>
+  <li><a href="#consigne-de-travail-réflexion-4" id="toc-consigne-de-travail-réflexion-4" class="nav-link" data-scroll-target="#consigne-de-travail-réflexion-4">Consigne de travail (Réflexion)</a></li>
+  <li><a href="#tâche-planification-de-recherche-et-de-contre-vérification-avec-lia" id="toc-tâche-planification-de-recherche-et-de-contre-vérification-avec-lia" class="nav-link" data-scroll-target="#tâche-planification-de-recherche-et-de-contre-vérification-avec-lia">Tâche : Planification de recherche et de contre-vérification avec l’IA</a></li>
+  <li><a href="#consigne-de-réflexion-2" id="toc-consigne-de-réflexion-2" class="nav-link" data-scroll-target="#consigne-de-réflexion-2">Consigne de réflexion</a></li>
+  </ul></li>
+  <li><a href="#valeur-probante-et-pouvoir-de-veto-que-soutient-la-source-et-que-non" id="toc-valeur-probante-et-pouvoir-de-veto-que-soutient-la-source-et-que-non" class="nav-link" data-scroll-target="#valeur-probante-et-pouvoir-de-veto-que-soutient-la-source-et-que-non">5. Valeur probante et « pouvoir de veto » : Que soutient la source – et que non ?</a>
+  <ul class="collapse">
+  <li><a href="#objectif-4" id="toc-objectif-4" class="nav-link" data-scroll-target="#objectif-4">Objectif</a></li>
+  <li><a href="#tâche-1-profil-de-preuve-portée-des-affirmations" id="toc-tâche-1-profil-de-preuve-portée-des-affirmations" class="nav-link" data-scroll-target="#tâche-1-profil-de-preuve-portée-des-affirmations">Tâche 1 : Profil de preuve (Portée des affirmations)</a></li>
+  <li><a href="#tâche-2-micro-hypothèses-avec-voie-de-falsification" id="toc-tâche-2-micro-hypothèses-avec-voie-de-falsification" class="nav-link" data-scroll-target="#tâche-2-micro-hypothèses-avec-voie-de-falsification">Tâche 2 : Micro-hypothèses avec voie de falsification</a></li>
+  <li><a href="#tâche-profil-de-preuve-avec-lia" id="toc-tâche-profil-de-preuve-avec-lia" class="nav-link" data-scroll-target="#tâche-profil-de-preuve-avec-lia">Tâche : Profil de preuve avec l’IA</a></li>
+  <li><a href="#consigne-de-réflexion-3" id="toc-consigne-de-réflexion-3" class="nav-link" data-scroll-target="#consigne-de-réflexion-3">Consigne de réflexion</a></li>
+  <li><a href="#consigne-de-travail-réflexion-5" id="toc-consigne-de-travail-réflexion-5" class="nav-link" data-scroll-target="#consigne-de-travail-réflexion-5">Consigne de travail (Réflexion)</a></li>
+  </ul></li>
+  <li><a href="#documentation-réflexion-reproductibilité-protocole-ia" id="toc-documentation-réflexion-reproductibilité-protocole-ia" class="nav-link" data-scroll-target="#documentation-réflexion-reproductibilité-protocole-ia">6. Documentation &amp; réflexion : Reproductibilité, protocole IA</a>
+  <ul class="collapse">
+  <li><a href="#objectif-5" id="toc-objectif-5" class="nav-link" data-scroll-target="#objectif-5">Objectif</a></li>
+  <li><a href="#tâche-1-protocole-danalyse-standard-minimum" id="toc-tâche-1-protocole-danalyse-standard-minimum" class="nav-link" data-scroll-target="#tâche-1-protocole-danalyse-standard-minimum">Tâche 1 : Protocole d’analyse (Standard minimum)</a></li>
+  <li><a href="#tâche-2-réflexion-ia-si-lia-a-été-utilisée" id="toc-tâche-2-réflexion-ia-si-lia-a-été-utilisée" class="nav-link" data-scroll-target="#tâche-2-réflexion-ia-si-lia-a-été-utilisée">Tâche 2 : Réflexion IA (si l’IA a été utilisée)</a></li>
+  </ul></li>
+  <li><a href="#résultat-dapprentissage" id="toc-résultat-dapprentissage" class="nav-link" data-scroll-target="#résultat-dapprentissage">Résultat d’apprentissage</a></li>
+  <li><a href="#ressources-complémentaires" id="toc-ressources-complémentaires" class="nav-link" data-scroll-target="#ressources-complémentaires">Ressources complémentaires</a></li>
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="default quarto-title-block"><nav class="quarto-page-breadcrumbs d-lg-block d-none quarto-title-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fr/exercises/index.html">Exercices</a></li><li class="breadcrumb-item"><a href="../../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html">Critique des sources</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Critique des sources</h1>
+<p class="lead subtitle">Conseil fédéral et Conseil de l’Europe 1949</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Sources</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Un exercice guidé pour la critique externe et interne systématique des sources sur une note diplomatique (Dodis).
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Auteur·rice</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Moritz Mähr <a href="mailto:moritz.maehr@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-1367-1618" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==" alt=""></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université de Berne
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">29 décembre 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modifié</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">17 janvier 2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="aperçu-et-objectif-didactique" class="level2">
+<h2 class="anchored" data-anchor-id="aperçu-et-objectif-didactique">Aperçu et objectif didactique</h2>
+<p>Cet exercice enseigne des <strong>compétences transférables en critique des sources</strong> (critique externe et interne) à l’aide d’une source spécifique des <em>Documents Diplomatiques Suisses (Dodis)</em>. La question centrale est de savoir comment une source est traitée <strong>comme un objet de preuve historique</strong> : non pas comme un « répertoire de faits », mais comme un <strong>artefact situé</strong> avec un contexte de création et une histoire de transmission.</p>
+<p><strong>Étude de cas (Source primaire) : <a href="https://dodis.ch/5020">Dodis : La Suisse et le Conseil de l’Europe</a></strong></p>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Remarque sur la transmission numérique
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>La source utilisée ici est disponible dans une <strong>édition numérique préparée éditorialement</strong>. Pour la critique des sources, non seulement le texte mais aussi la <strong>couche éditoriale</strong> (métadonnées, cote d’archives, liens, directives éditoriales) font partie de l’objet d’investigation.<span class="citation" data-cites="fickers2022criticism">(<a href="#ref-fickers2022criticism" role="doc-biblioref">Fickers et Tatarinov 2022</a>)</span></p>
+</div>
+</div>
+</section>
+<section id="prérequis" class="level2">
+<h2 class="anchored" data-anchor-id="prérequis">Prérequis</h2>
+<ul>
+<li>Compréhension de base des méthodes de recherche historique</li>
+<li>Connaissances de base dans l’utilisation de l’IA générative (en particulier le prompting)</li>
+</ul>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Prompt Engineering
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Si vous n’êtes pas encore familier avec le prompting, nous vous recommandons de suivre d’abord l’exercice <a href="../../fr/exercises/prompt-engineering.html">Prompt Engineering</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-titled callout-note">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>LLM
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Pour cet exercice, il est utile que le LLM ait accès à Internet et permette le téléchargement de fichiers.</p>
+</div>
+</div>
+</section>
+<section id="objectifs-dapprentissage" class="level2">
+<h2 class="anchored" data-anchor-id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<p>À l’issue de l’exercice, vous serez en mesure de :</p>
+<ul>
+<li>appliquer systématiquement la critique des sources <strong>externe</strong> et <strong>interne</strong>,</li>
+<li>vérifier l’<strong>authenticité, la provenance et la transmission</strong> d’une note éditée numériquement,</li>
+<li>reconstruire herméneutiquement la position de l’auteur, l’<strong>horizon/point de vue</strong>, l’intention et le biais,</li>
+<li>distinguer entre <strong>témoignage conscient</strong> et <strong>inconscient</strong> (witting/unwitting testimony),</li>
+<li>déterminer précisément la <strong>valeur probante</strong> de la source en relation avec une question de recherche,</li>
+<li>opérationnaliser le « <strong>droit de veto de la source</strong> » (qu’exclut-elle ? que laisse-t-elle ouvert ?),</li>
+<li>utiliser les systèmes d’IA de manière <strong>critique et méthodologiquement contrôlée</strong> pour la critique des sources et l’exploration du contexte.</li>
+</ul>
+</section>
+<section id="structure-de-lexercice" class="level2">
+<h2 class="anchored" data-anchor-id="structure-de-lexercice">Structure de l’exercice</h2>
+<p>Chaque étape contient :</p>
+<ul>
+<li>un <strong>objectif</strong>,</li>
+<li>des <strong>tâches concrètes</strong> (incl.&nbsp;prompts IA optionnels),</li>
+<li>une <strong>consigne de travail et de réflexion</strong>.</li>
+</ul>
+<ol type="1">
+<li>Orientation : Type de source, paraphrase minimale, première heuristique de recherche</li>
+<li>Critique externe : Provenance, authenticité, transmission, édition</li>
+<li>Critique interne : Position de locuteur, intention, logique d’argumentation, biais</li>
+<li>Contextualisation &amp; contre-vérification : Triangulation avec d’autres sources</li>
+<li>Valeur probante &amp; « pouvoir de veto » : Ce qui peut être étayé, ce qui ne peut pas</li>
+<li>Documentation &amp; réflexion : Reproductibilité, protocole IA</li>
+</ol>
+</section>
+<section id="orientation-quest-ce-que-cette-source-et-que-peut-elle-représenter" class="level2">
+<h2 class="anchored" data-anchor-id="orientation-quest-ce-que-cette-source-et-que-peut-elle-représenter">1. Orientation : Qu’est-ce que cette source (et que peut-elle représenter) ?</h2>
+<section id="objectif" class="level3">
+<h3 class="anchored" data-anchor-id="objectif">Objectif</h3>
+<p>Une <strong>première classification contrôlée</strong> de la source comme objet : type, situation, constellation d’acteurs, focus thématique.</p>
+</section>
+<section id="tâche-1-paraphrase-minimale-sans-interprétation" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-paraphrase-minimale-sans-interprétation">Tâche 1 : Paraphrase minimale (sans interprétation)</h3>
+<p>Formulez en <strong>max. 4 phrases</strong> :</p>
+<ul>
+<li>Qui parle/agit ?</li>
+<li>Quel est l’occasion ?</li>
+<li>Quelle est la déclaration/décision centrale ?</li>
+<li>Quelle conséquence est indiquée ?</li>
+</ul>
+</section>
+<section id="tâche-1-paraphrase-minimale-sans-interprétation-avec-lia" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-paraphrase-minimale-sans-interprétation-avec-lia">Tâche 1 : Paraphrase minimale (sans interprétation) avec l’IA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds aux questions suivantes :</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Qui parle/agit ?</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Quel est l'occasion ?</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Quelle est la déclaration/décision centrale ?</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Quelle conséquence est indiquée ?</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="téléchargement-de-la-source" class="level2 callout-info">
+<h2 class="anchored" data-anchor-id="téléchargement-de-la-source">Téléchargement de la source</h2>
+<p>Téléchargez le document en fichier PDF avec le prompt. Si ce n’est pas possible, copiez le contenu du document au début du prompt et séparez-le visuellement, par exemple avec “““. Assurez-vous également que l’IA a accès aux métadonnées (soit par accès en ligne, soit en fournissant les métadonnées). Exemple :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>CONTENU DU DOCUMENT</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>MÉTADONNÉES DU DOCUMENT (incl. URL)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>"""</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>VOTRE PROMPT</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="consigne-de-travail-réflexion" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-travail-réflexion">Consigne de travail (Réflexion)</h3>
+<ul>
+<li><p>Comparez la réponse de l’IA avec la vôtre. Quelles différences remarquez-vous ?</p></li>
+<li><p>Y a-t-il des biais systématiques (dans vos réponses comme dans celles générées par l’IA) ?</p></li>
+</ul>
+</section>
+<section id="tâche-2-première-heuristique-de-recherche" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-première-heuristique-de-recherche">Tâche 2 : Première heuristique de recherche</h3>
+<p>Notez trois <strong>questions de recherche potentielles</strong> qui seraient <em>en principe</em> exploitables avec cette source (sans encore la délimiter). Exemples de types de questions :</p>
+<ul>
+<li>histoire conceptuelle (la neutralité comme argument)</li>
+<li>histoire institutionnelle (processus décisionnels en politique étrangère)</li>
+<li>histoire des savoirs (qu’est-ce qui compte comme « compatible »/« incompatible » ?)</li>
+<li>politico-culturel (attentes concernant les référendums)</li>
+</ul>
+</section>
+<section id="tâche-2-première-heuristique-de-recherche-avec-lia" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-première-heuristique-de-recherche-avec-lia">Tâche 2 : Première heuristique de recherche avec l’IA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Donne-moi trois questions de recherche historique possibles qui peuvent être dérivées de la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe).</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Formule chaque question de manière à ce qu'elle soit (a) délimitable temporellement, (b) vérifiable sur la base des sources, et (c) analytique.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Pour chaque question, nomme quels types de sources supplémentaires j'ai besoin pour la contre-vérification.</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="consigne-de-travail-réflexion-1" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-travail-réflexion-1">Consigne de travail (Réflexion)</h3>
+<ul>
+<li>Laquelle de vos trois questions <strong>dépend le plus fortement</strong> de cette source spécifique (forte liaison à la source) ?</li>
+<li>Quelle question est <strong>le moins</strong> dépendante de la source (serait aussi formulée « de manière similaire » avec d’autres sources) ?</li>
+<li>Quels termes sont déjà <strong>chargés d’interprétation</strong> (par ex. « neutralité », « Europe », « compatibilité ») ?</li>
+</ul>
+</section>
+<section id="critique-externe-des-sources-authenticité-provenance-transmission-édition" class="level2">
+<h2 class="anchored" data-anchor-id="critique-externe-des-sources-authenticité-provenance-transmission-édition">2. Critique externe des sources : Authenticité, provenance, transmission, édition</h2>
+<section id="objectif-1" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-1">Objectif</h3>
+<p>Clarifier <strong>ce que</strong> ce document est en tant qu’objet, <strong>comment</strong> il a été transmis, et <strong>quelle couche éditoriale</strong> se situe entre l’original et vous.</p>
+</section>
+<section id="tâche-1-vérification-de-provenance-métadonnées-référence-darchives" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-vérification-de-provenance-métadonnées-référence-darchives">Tâche 1 : Vérification de provenance (Métadonnées &amp; référence d’archives)</h3>
+<p>Collectez (depuis la page Dodis) et documentez :</p>
+<ul>
+<li>Type/genre de document (note, protocole, rapport, lettre…)</li>
+<li>Date/heure, lieu</li>
+<li>Auteur/signataire (ici : Max Petitpierre)</li>
+<li>Destinataire(s) ou destinataire fonctionnel (explicite/implicite)</li>
+<li>Cote d’archives (par ex. « E 2800(-)… »)</li>
+<li>Contexte institutionnel (département, commissions, organisations participantes)</li>
+<li>Tags/personnes/organisations/géographie (comme métadonnées d’édition)</li>
+</ul>
+<p><strong>Résultat :</strong> un petit tableau + 5–8 lignes de « notes éditoriales » (Que fournit l’édition ? Qu’est-ce qui reste ouvert ?).</p>
+</section>
+<section id="tâche-2-lauthenticité-comme-forme-de-question" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-lauthenticité-comme-forme-de-question">Tâche 2 : L’authenticité comme forme de question</h3>
+<p>Formulez trois questions vérifiables sur l’authenticité, par ex. :</p>
+<ul>
+<li>S’agit-il d’un original ou d’une copie/rédaction ?</li>
+<li>Y a-t-il des indices d’édition ultérieure (coupes, traductions, normalisation éditoriale) ?</li>
+<li>Quelles parties sont du texte de document, lesquelles sont des ajouts éditoriaux (notes de bas de page/références croisées) ?</li>
+</ul>
+</section>
+<section id="tâche-3-la-transmission-comme-problème-épistémique" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-3-la-transmission-comme-problème-épistémique">Tâche 3 : La transmission comme problème épistémique</h3>
+<p>Reconstruisez une chaîne de transmission plausible :</p>
+<p><strong>Création → Classement dans le processus administratif → Archivage → Catalogage → Numérisation/Édition → Affichage web</strong></p>
+<p>À chaque station, notez :</p>
+<ul>
+<li>pertes/filtres possibles (logique de sélection)</li>
+<li>points de transformation possibles (rédaction, classification, attribution de métadonnées)</li>
+<li>pertes de contexte possibles (pièces jointes manquantes, historique antérieur manquant)</li>
+</ul>
+</section>
+<section id="consigne-de-travail-réflexion-2" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-travail-réflexion-2">Consigne de travail (Réflexion)</h3>
+<ul>
+<li>Quelles informations proviennent <strong>du texte du document</strong> (texte primaire), lesquelles <strong>de l’édition</strong> (métadonnées/liens) ?</li>
+<li>Quelles parties de votre classification ne seraient <strong>pas possibles</strong> sans l’édition Dodis ?</li>
+<li>Où la couche éditoriale est-elle elle-même <strong>une source</strong> (par ex. catégorisation, tags, sélection) ?</li>
+</ul>
+</section>
+<section id="tâche-critique-externe-avec-lia" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-critique-externe-avec-lia">Tâche : Critique externe avec l’IA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Analyse la note de service éditée numériquement (Dodis 5020, Berne 7.7.1949) exclusivement du point de vue de la critique externe des sources.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>1) Identifie sur la base des métadonnées :</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Type/genre de document</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Date et lieu</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Auteur/signataire</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Contexte institutionnel</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Cote d'archives et forme de transmission</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>2) Distingue strictement entre :</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>   a) Informations du texte du document</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>   b) Informations de la couche éditoriale et de métadonnées (Dodis)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>3) Formule trois questions vérifiables sur l'authenticité et la transmission.</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>Important :</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ne fais pas d'évaluations historiques.</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Marque chaque déclaration explicitement comme :</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="co">[</span><span class="ot">Texte du document</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Édition/Métadonnées</span><span class="co">]</span> / <span class="co">[</span><span class="ot">Conclusion</span><span class="co">]</span>.</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="consigne-de-réflexion" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-réflexion">Consigne de réflexion</h3>
+<ul>
+<li>Où l’IA complète-t-elle systématiquement, où « hallucine-t-elle » des hypothèses de transmission ?</li>
+<li>Quelles métadonnées adopte-t-elle correctement, lesquelles restent vagues ou fausses ?</li>
+<li>Dans quelle mesure le marquage explicite des niveaux force-t-il la clarté méthodologique ?</li>
+</ul>
+</section>
+</section>
+<section id="critique-interne-des-sources-intention-de-déclaration-point-de-vue-logique-dargumentation-biais" class="level2">
+<h2 class="anchored" data-anchor-id="critique-interne-des-sources-intention-de-déclaration-point-de-vue-logique-dargumentation-biais">3. Critique interne des sources : Intention de déclaration, point de vue, logique d’argumentation, biais</h2>
+<section id="objectif-2" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-2">Objectif</h3>
+<p>Analyser <strong>comment</strong> le texte produit du sens : par la sélection, les formulations, les prémisses implicites, la perspective institutionnelle.</p>
+</section>
+<section id="tâche-1-analyse-des-actes-de-parole-et-de-fonction" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-analyse-des-actes-de-parole-et-de-fonction">Tâche 1 : Analyse des actes de parole et de fonction</h3>
+<p>Déterminez la fonction de la note dans le contexte administratif (plausibilisée) :</p>
+<ul>
+<li>Documente-t-elle un événement « pour le dossier » ?</li>
+<li>Justifie-t-elle une position auprès de tiers ?</li>
+<li>Oriente-t-elle la formation d’opinion interne ?</li>
+<li>Marque-t-elle une ligne rouge (la neutralité comme signal d’arrêt) ?</li>
+</ul>
+<p><strong>Résultat :</strong> 1 paragraphe (6–10 phrases) qui argumente la <em>fonction</em> et l’<em>adressage</em> (avec preuves textuelles).</p>
+</section>
+<section id="tâche-2-cartographie-darguments-la-neutralité-comme-opérateur-clé" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-cartographie-darguments-la-neutralité-comme-opérateur-clé">Tâche 2 : Cartographie d’arguments (La neutralité comme opérateur clé)</h3>
+<p>Extrayez tous les passages concernant la neutralité, la compatibilité ou les processus de décision et décomposez-les en :</p>
+<ul>
+<li><strong>Affirmation</strong> (claim)</li>
+<li><strong>Garantie</strong> (warrant)</li>
+<li><strong>Présupposé</strong> (assumption)</li>
+<li><strong>Implication</strong> (so what)</li>
+</ul>
+<p><strong>Suggestion de format (Markdown) :</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Affirmation :</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Garantie :</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Présupposé :</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Implication :</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Preuve textuelle (citation/paraphrase) :</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="tâche-3-témoignage-conscient-vs.-inconscient" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-3-témoignage-conscient-vs.-inconscient">Tâche 3 : Témoignage conscient vs.&nbsp;inconscient</h3>
+<p>Marquez deux exemples chacun de :</p>
+<ul>
+<li><strong>témoignage conscient</strong> (communications adressées ciblées, déclarations de position)</li>
+<li><strong>témoignage inconscient</strong> (évidences, normes implicites, routines institutionnelles)</li>
+</ul>
+<p>Questions directrices :</p>
+<ul>
+<li>Quelles images de soi de la Suisse sont présupposées (par ex. « neutralité plus absolue ») ?</li>
+<li>Quels mécanismes politiques sont considérés comme attendus (parlement, peuple, cantons) ?</li>
+<li>Quelle comparaison est référencée (Suède) et pour quoi ?</li>
+</ul>
+</section>
+<section id="tâche-4-le-biais-comme-structure-pas-comme-erreur" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-4-le-biais-comme-structure-pas-comme-erreur">Tâche 4 : Le biais comme structure, pas comme « erreur »</h3>
+<p>Analysez les limitations de perspective :</p>
+<ul>
+<li>Quels intérêts/contraintes l’auteur a-t-il en tant que chef de département ?</li>
+<li>Quels aspects manquent systématiquement (par ex. dimensions juridiques, réactions internationales, factions politiques internes) ?</li>
+<li>Quelles interprétations alternatives seraient plausibles depuis d’autres positions (par ex. politique des partis, économie, presse) ?</li>
+</ul>
+</section>
+<section id="consigne-de-travail-réflexion-3" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-travail-réflexion-3">Consigne de travail (Réflexion)</h3>
+<ul>
+<li>Lesquelles de vos interprétations sont <strong>proches du texte</strong> (étayées), lesquelles sont des <strong>hypothèses dépendantes du contexte</strong> ?</li>
+<li>Quels termes fonctionnent comme <strong>charnières</strong> entre le texte et le contexte (neutralité, compatibilité, référendum) ?</li>
+</ul>
+</section>
+<section id="tâche-critique-interne-avec-lia" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-critique-interne-avec-lia">Tâche : Critique interne avec l’IA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Effectue une critique interne des sources de la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen).</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Analyse séparément :</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>1) Position de locuteur et point de vue institutionnel</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>2) Fonction et intention de la note dans le contexte administratif</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>3) Logique d'argumentation autour de la neutralité et des processus de décision</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>4) Témoignage conscient vs. inconscient</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>Règles :</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Chaque déclaration analytique doit inclure une preuve textuelle concrète</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  (courte citation ou paraphrase précise).</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>S'il n'existe pas de preuve : marquer explicitement comme « hypothèse ».</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>N'utilise pas d'informations contextuelles qui ne sont pas intégrées dans le texte.</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="consigne-de-réflexion-1" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-réflexion-1">Consigne de réflexion</h3>
+<ul>
+<li>Quelles interprétations de l’IA sont proches du texte, lesquelles spéculatives ?</li>
+<li>Où l’IA nivelle-t-elle les perspectives institutionnelles en déclarations générales ?</li>
+<li>Quelles étapes herméneutiques restent ici aussi non automatisables ?</li>
+</ul>
+</section>
+</section>
+<section id="contextualisation-et-contre-vérification-triangulation-plutôt-que-contexte-comme-décor" class="level2">
+<h2 class="anchored" data-anchor-id="contextualisation-et-contre-vérification-triangulation-plutôt-que-contexte-comme-décor">4. Contextualisation et contre-vérification : Triangulation plutôt que « contexte comme décor »</h2>
+<section id="objectif-3" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-3">Objectif</h3>
+<p>Tester le pouvoir explicatif de la note par une <strong>intégration comparative</strong> : Qu’est-ce qui est spécifique ? Qu’est-ce qui est routinier ? Qu’est-ce qui est stratégique ?</p>
+</section>
+<section id="tâche-1-traçage-intertextuel-intégré-dans-le-document" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-traçage-intertextuel-intégré-dans-le-document">Tâche 1 : Traçage intertextuel (intégré dans le document)</h3>
+<p>La note fait indirectement référence à d’autres contextes (par ex. commissions, réseaux fédéralistes privés, comparaison avec la Suède).</p>
+<p>Créez une <strong>matrice de recherche</strong> (au moins 6 lignes) :</p>
+<table class="caption-top">
+<colgroup>
+<col style="width:17%">
+<col style="width:22%">
+<col style="width:20%">
+<col style="width:12%">
+<col style="width:26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trace dans le texte</th>
+<th>Que chercher exactement ?</th>
+<th>Type de source attendu</th>
+<th>Où chercher ?</th>
+<th>But de la contre-vérification</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Exemples pour « Où chercher ? » (comme catégories, pas exhaustivité) :</p>
+<ul>
+<li>autres documents Dodis (références croisées, dossiers)</li>
+<li>publications officielles (messages, rapports)</li>
+<li>protocoles parlementaires / protocoles de commission</li>
+<li>journaux (réception, controverse)</li>
+<li>dossiers de comités/associations privés</li>
+</ul>
+</section>
+<section id="tâche-2-contre-question-contrefactuelle-instrument-de-contrôle" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-contre-question-contrefactuelle-instrument-de-contrôle">Tâche 2 : Contre-question contrefactuelle (instrument de contrôle)</h3>
+<p>Formulez deux contre-questions qui <em>défient</em> la note :</p>
+<ul>
+<li>Que devrais-je trouver pour que la thèse « La neutralité a empêché l’adhésion » soit <strong>trop grossière</strong> ?</li>
+<li>Que devrais-je trouver pour que la déclaration sur le référendum apparaisse <strong>comme rhétorique stratégique</strong> plutôt que comme pronostic ?</li>
+</ul>
+</section>
+<section id="consigne-de-travail-réflexion-4" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-travail-réflexion-4">Consigne de travail (Réflexion)</h3>
+<ul>
+<li>Quel type de contexte est <strong>nécessaire</strong> (pour vérifier les affirmations), et lequel est <strong>seulement plausibilisant</strong> ?</li>
+<li>Où le « contexte » menace-t-il de devenir un <strong>lissage rétrospectif</strong> ?</li>
+</ul>
+</section>
+<section id="tâche-planification-de-recherche-et-de-contre-vérification-avec-lia" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-planification-de-recherche-et-de-contre-vérification-avec-lia">Tâche : Planification de recherche et de contre-vérification avec l’IA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Déduis de la note de service (Berne, 7.7.1949, Petitpierre/Hansen) un plan de recherche systématique.</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>1) Nomme au moins :</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>5 sources primaires complémentaires (types différents)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>3 types de littérature secondaire</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>2) Attribue chaque source à un objectif de vérification concret</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>   (par ex. confirmation, contextualisation, réfutation).</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>3) Formule une question directrice pour chaque source.</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>Spécifications :</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pas de déclarations sur le contenu réel de ces sources.</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pas de synthèses narratives.</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Focus exclusivement sur les voies de vérification et les contre-vérifications.</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="consigne-de-réflexion-2" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-réflexion-2">Consigne de réflexion</h3>
+<ul>
+<li>Quels contextes l’IA priorise-t-elle systématiquement (politique, institutions) ?</li>
+<li>Quels contextes manquent de manière flagrante (par ex. médias, droit, économie) ?</li>
+<li>Où l’IA a-t-elle tendance à utiliser le « contexte » comme explication plutôt que comme outil de vérification ?</li>
+</ul>
+</section>
+</section>
+<section id="valeur-probante-et-pouvoir-de-veto-que-soutient-la-source-et-que-non" class="level2">
+<h2 class="anchored" data-anchor-id="valeur-probante-et-pouvoir-de-veto-que-soutient-la-source-et-que-non">5. Valeur probante et « pouvoir de veto » : Que soutient la source – et que non ?</h2>
+<section id="objectif-4" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-4">Objectif</h3>
+<p>Déterminer la valeur probante de manière strictement <strong>relationnelle</strong> : source × question de recherche.</p>
+</section>
+<section id="tâche-1-profil-de-preuve-portée-des-affirmations" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-profil-de-preuve-portée-des-affirmations">Tâche 1 : Profil de preuve (Portée des affirmations)</h3>
+<p>Créez une liste en deux parties :</p>
+<p><strong>A. Bien étayé (haute certitude)</strong> Déclarations que la note soutient directement (avec preuve textuelle).</p>
+<p><strong>B. Non étayé / ouvert (Veto)</strong> Déclarations que la note <em>suggère</em>, mais n’étaye pas – ou exclut même.</p>
+<p>Questions directrices :</p>
+<ul>
+<li>Que puis-je dire sur la position de Petitpierre – et que non ?</li>
+<li>Que puis-je dire sur la position danoise – et qu’est-ce qui reste flou (par ex. motifs, débats internes) ?</li>
+<li>Que dit la source sur « la Suisse » – et où est-ce une généralisation inadmissible ?</li>
+</ul>
+</section>
+<section id="tâche-2-micro-hypothèses-avec-voie-de-falsification" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-micro-hypothèses-avec-voie-de-falsification">Tâche 2 : Micro-hypothèses avec voie de falsification</h3>
+<p>Formulez deux micro-hypothèses (1 phrase chacune), par ex. :</p>
+<ul>
+<li>« X fonctionne en 1949 comme un concept de gardien institutionnel qui bloque politiquement Y. »</li>
+<li>« La référence au référendum/vote populaire sert d’argument de légitimation envers les interlocuteurs étrangers. »</li>
+</ul>
+<p>Pour chaque hypothèse :</p>
+<ul>
+<li>Quelle <strong>source supplémentaire</strong> pourrait la soutenir ?</li>
+<li>Quelle source/observation la <strong>réfuterait</strong> ?</li>
+</ul>
+</section>
+<section id="tâche-profil-de-preuve-avec-lia" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-profil-de-preuve-avec-lia">Tâche : Profil de preuve avec l’IA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="an">Crée deux listes séparées sur la base de la note de service :</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>A) Déclarations que le texte soutient directement et sans ambiguïté.</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>B) Déclarations que le texte ne soutient pas, suggère seulement ou exclut implicitement.</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>Pour chaque déclaration :</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>courte preuve textuelle ou paraphrase</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>évaluation : certain / probable / spéculatif</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>justification de l'évaluation</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>Ajout :</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>Formule pour deux déclarations de la Liste B chacune une</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>voie de falsification concrète (quelle source devrait montrer quoi ?).</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="consigne-de-réflexion-3" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-réflexion-3">Consigne de réflexion</h3>
+<ul>
+<li>Où l’IA est-elle étonnamment restrictive, où trop généreuse ?</li>
+<li>Quelles déclarations semblent « plausibles » mais sont correctement vetotisées ?</li>
+<li>Comment la séparation explicite A/B modifie-t-elle sa propre envie d’interprétation ?</li>
+</ul>
+</section>
+<section id="consigne-de-travail-réflexion-5" class="level3">
+<h3 class="anchored" data-anchor-id="consigne-de-travail-réflexion-5">Consigne de travail (Réflexion)</h3>
+<ul>
+<li>Quelle déclaration « aimerait-on faire », mais la source ne le permet pas ?</li>
+<li>Où est la frontière entre <strong>interprétation</strong> et <strong>affirmation</strong> ?</li>
+</ul>
+</section>
+</section>
+<section id="documentation-réflexion-reproductibilité-protocole-ia" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-réflexion-reproductibilité-protocole-ia">6. Documentation &amp; réflexion : Reproductibilité, protocole IA</h2>
+<section id="objectif-5" class="level3">
+<h3 class="anchored" data-anchor-id="objectif-5">Objectif</h3>
+<p>La critique des sources comme <strong>méthode documentée</strong> : traçable, vérifiable, réutilisable.</p>
+</section>
+<section id="tâche-1-protocole-danalyse-standard-minimum" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-1-protocole-danalyse-standard-minimum">Tâche 1 : Protocole d’analyse (Standard minimum)</h3>
+<p>Créez un bref protocole :</p>
+<ul>
+<li>Citation complète/permalien de la source</li>
+<li>Date d’accès</li>
+<li>Version/forme d’affichage (HTML, PDF, export)</li>
+<li>Votre question de recherche (version de travail)</li>
+<li>Critique externe (points)</li>
+<li>Critique interne (points)</li>
+<li>Profil de preuve (liste A/B)</li>
+<li>Questions ouvertes &amp; prochaines étapes de recherche</li>
+</ul>
+</section>
+<section id="tâche-2-réflexion-ia-si-lia-a-été-utilisée" class="level3">
+<h3 class="anchored" data-anchor-id="tâche-2-réflexion-ia-si-lia-a-été-utilisée">Tâche 2 : Réflexion IA (si l’IA a été utilisée)</h3>
+<p>Notez :</p>
+<ul>
+<li>Quels prompts avez-vous utilisés (verbatim) ?</li>
+<li>Quelles réponses étaient utiles (et pourquoi) ?</li>
+<li>Où y a-t-il eu raccourcissement/surgénéralisation ?</li>
+<li>Quelles étapes sont restées <strong>inévitablement des décisions humaines</strong> (par ex. sélection de la question de recherche, pondération des preuves, décisions contextuelles) ?</li>
+</ul>
+<div class="callout callout-style-default callout-titled callout-tip">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>Critère de qualité
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Une bonne critique des sources n’est pas celle qui « explique tout », mais celle qui rend visibles les <strong>limites et les voies de vérification</strong> : Qu’est-ce qui est étayé ? Qu’est-ce qui est hypothétique ? Qu’est-ce qui doit être vérifié ensuite ?</p>
+</div>
+</div>
+</section>
+</section>
+<section id="résultat-dapprentissage" class="level2">
+<h2 class="anchored" data-anchor-id="résultat-dapprentissage">Résultat d’apprentissage</h2>
+<p>À la fin, vous disposerez de :</p>
+<ul>
+<li>une <strong>critique externe et interne des sources fondée</strong> de Dodis 5020,</li>
+<li>un <strong>profil de preuve</strong> (incl.&nbsp;points de veto) en relation avec une question de recherche,</li>
+<li>un <strong>plan de recherche</strong> pour le contexte et la contre-vérification,</li>
+<li>un <strong>protocole d’analyse reproductible</strong> (incl.&nbsp;extraction structurée des affirmations),</li>
+<li>une évaluation réfléchie de <strong>où l’IA soutient l’exploration</strong> et <strong>où elle doit être méthodologiquement limitée</strong>.</li>
+</ul>
+</section>
+<section id="ressources-complémentaires" class="level2">
+<h2 class="anchored" data-anchor-id="ressources-complémentaires">Ressources complémentaires</h2>
+<ul>
+<li><a href="https://ranke2.uni.lu/u/wikipedia-historical-source/">Ranke.2 : Wikipédia comme source historique</a> – Provenance, historiques de révision et critique des sources numériques.</li>
+<li><a href="https://knowingmachines.org/models-all-the-way">Knowing Machines: Models All the Way Down</a> – Critique des données d’entraînement et ses parallèles avec la critique des sources.</li>
+</ul>
+</section>
+<section id="bibliographie" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
+<div id="refs" class="csl-bib-body hanging-indent references" data-entry-spacing="0" role="list">
+<div id="ref-fickers2022criticism" class="csl-entry" role="listitem">
+Fickers, Andreas, et Juliane Tatarinov. 2022. <span>«&nbsp;Digital Source Criticism: The Case of the Historian’s Craft in the Digital Age&nbsp;»</span>. <em>Journal of Digital History</em> 2 (1): 1‑20. <a href="https://doi.org/10.1515/jdh-2022-0001">https://doi.org/10.1515/jdh-2022-0001</a>.
+</div>
+</div>
+<div class="callout callout-style-default callout-titled callout-warning">
+<div class="d-flex align-content-center callout-header">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Avertissement</span>Avertissement de traduction automatique
+</div>
+</div>
+<div class="callout-body callout-body-container">
+<p>Cet exercice a été traduit automatiquement de l’allemand à l’aide de l’IA et peut contenir des erreurs ou des inexactitudes. Veuillez vous référer à la <a href="../../de/exercises/quellenkritik-bundesrat-europarat-1949.html">version originale allemande</a> pour le texte faisant autorité. Si vous remarquez des problèmes de traduction, veuillez les signaler.</p>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="return window.scrollTo(0,0),!1;
+" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@inreference{mähr2025,
+  author = {Mähr, Moritz},
+  title = {Critique des sources},
+  booktitle = {Critical AI Literacy pour les Historiens},
+  date = {2025-12-29},
+  url = {https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html},
+  langid = {fr}
+}
+</code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Veuillez citer ce travail comme suit&nbsp;:</div><div id="ref-mähr2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mähr, Moritz. 2025. <span>“Critique des sources.”</span> In <em>Critical
+AI Literacy pour les Historiens</em>. <a href="https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html">https://maehr.github.io/critical-ai-literacy-for-historians/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Copi\xE9");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Copi\xE9"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/critical-ai-literacy-for-historians/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},C=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){C();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else C(),e.classList.remove("code-annotation-active")});const x=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:x(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=x(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../fr/exercises/citer.html" class="pagination-link" aria-label="Citation académique">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Citation académique</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../fr/exercises/ecriture.html" class="pagination-link" aria-label="Écriture scientifique">
+        <span class="nav-page-text">Écriture scientifique</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-md-none d-sm-block"><ul><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/edit/main/fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li><li><a href="https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li></ul></div></div></div></footer></body></html>
