@@ -13,6 +13,7 @@ Use this skill to ensure exercises are grounded in scholarly literature and main
 
 - **Minimum**: 3-5 high-quality sources per exercise.
 - **Scope**: Must cover BOTH the historical topic/method AND the AI tool/method being used.
+- **Localization**: Referenced resources should ideally be available in the language of the exercise. If they are not (e.g., source is in German but exercise is in English), they must be flagged (e.g., `(GERMAN only)`).
 - **Citations**: Every source listed must be cited at least once in the text using `[@id]` syntax.
 
 ### B. Quality (Good Enough Backing)

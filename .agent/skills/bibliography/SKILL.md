@@ -30,3 +30,4 @@ To convert between BibTeX and CSL YAML (often used in Quarto frontmatter):
 
 - **Review**: Periodically check that all entries in `bibliography.bib` are cited in at least one exercise.
 - **DOIs**: Ensure DOIs are present for all journal articles and books where available.
+- **Localization**: When adding or updating entries, check for available translations or language-specific editions. Prefer multilingual sources when possible.

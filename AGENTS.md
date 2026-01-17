@@ -39,6 +39,13 @@ This repository maintains content in three languages: English (en/), German (de/
 - Exercise numbering and naming should be consistent across languages
 - When adding new exercises, create placeholder files in all three languages
 
+### Resource Localization
+
+- **Flag Non-Localized Resources**: If a referenced resource (book, website, dataset, etc.) is only available in one or two languages, flag it in the text.
+  - Format: `(ENGLISH only)`, `(GERMAN only)`, or `(FRENCH only)`.
+- **Propose Alternatives**: When translating or creating content, proactively look for and propose properly localized alternatives (e.g., a translated edition of a book, or a similar dataset in the target language).
+- **Bibliography**: Check if the `bibliography.bib` entry has language-specific versions or if a more appropriate localized source exists.
+
 ## 4) Exercise Metadata Standards
 
 ### Categories

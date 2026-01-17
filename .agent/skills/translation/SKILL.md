@@ -17,12 +17,15 @@ This skill provides instructions for translating content in the `critical-ai-lit
   1. Read the distinct source file.
   2. Translate Title, Description, and Tags (map categories strict).
   3. Translate body content (Sections, text).
-  4. **Preserve**: YAML keys (`lang`, `date`), Code blocks, Citation keys `[@ref]`.
+  4. **Resource Localization**: Check if referenced resources (books, websites, datasets) are available in the target language.
+     - If not available, flag them (e.g., `(GERMAN only)`).
+     - Propose/Search for localized alternatives if possible.
+  5. **Preserve**: YAML keys (`lang`, `date`), Code blocks, Citation keys `[@ref]`.
 
 ### B. Sync Update
 
 - **Input**: Source file has changed, target files are outdated.
-- **Goal**: Update targets to match source changes.
+- **Goal**: Update targets to match source changes, including ensuring resource localization consistency.
 
 ## 2. Metadata Translation Guide
 

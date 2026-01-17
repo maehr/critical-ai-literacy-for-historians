@@ -17,6 +17,7 @@ Use this skill when the user asks to "create a new exercise" or "add a module".
     - DE: `KI & Digitale Methoden`, `Quellen`, `Ethik`, `Methoden`
     - FR: `Littératie IA`, `Critique des sources`, `Éthique`, `Méthodes`
   - **Tags**: Pick 2-4.
+- **Resource Localization**: Favor resources available in all three languages. If using language-specific resources, prepare to flag them or provide alternatives for the other language versions.
 
 ## 2. File Creation
 
