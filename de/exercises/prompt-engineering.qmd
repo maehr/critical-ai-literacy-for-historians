@@ -41,7 +41,7 @@ Im Unterschied zu den thematischen Übungen ([Forschungsfrage](formulieren-histo
 
 ## Grundregel: KI als Hypothese
 
-Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als **Hypothese** (nicht als Ergebnis). Ihre Arbeit bleibt: **Gegenprobe, Nachweis, Entscheidung**.
+Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als **Hypothese** (nicht als Ergebnis).[@bender2021stochastic] Ihre Arbeit bleibt: **Gegenprobe, Nachweis, Entscheidung**.
 :::
 
 ## Voraussetzungen
@@ -517,8 +517,11 @@ Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du 
 2. Pro Technik: 1 kurzer Vergleich (A/B) + 5–8 Sätze Reflexion, was sich methodisch verbessert/verschlechtert hat\
 3. Eine «beste Praxis»-Vorlage: Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz
 
-## Ressourcen
+## Weiterführende Ressourcen
 
+- [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Interaktive Erklärung, wie Transformer-basierte Sprachmodelle funktionieren.
+- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Next-Token-Prediction und Grundlagen generativer KI.
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Grenzen, Halluzinationen, Verifikation und kritische Nutzung.
 - [Prompt Engineering Guide](https://www.promptingguide.ai)
 - [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)

@@ -144,7 +144,7 @@ Zitate binden Argumente an:
 - **Primärquellen** (zeitgenössische Dokumente, Akten, Briefe, Protokolle etc.)
 - **Sekundärliteratur** (spätere wissenschaftliche Interpretationen)
 
-Ohne diese Verknüpfung verlieren historische Texte ihren wissenschaftlichen Charakter und werden zu reiner Erzählung.
+Ohne diese Verknüpfung verlieren historische Texte ihren wissenschaftlichen Charakter und werden zu reiner Erzählung.[@turingway2022handbook]
 
 ## Zwecke des Zitierens
 
@@ -239,6 +239,11 @@ Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manua
 
 - Stimmen die Zitate mit dem Originaltext überein (Wortlaut, Seitenzahl)?
 - Wurde der Sinnzusammenhang der Zitate korrekt wiedergegeben?
+
+## Weiterführende Ressourcen
+
+- [The Markup: Wie KI-Detektoren internationale Studierende fälschlicherweise des Betrugs beschuldigen](https://themarkup.org/machine-learning/2023/08/14/how-ai-detection-tools-falsely-accuse-international-students-of-cheating) – Empirische Belege gegen KI-Detektoren; relevant für Bewertungs- und Policy-Diskussionen.
+- [The Turing Way](https://the-turing-way.netlify.app/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
 
 ## Bibliographie
 

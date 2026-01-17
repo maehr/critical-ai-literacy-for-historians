@@ -57,7 +57,7 @@ references:
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung trainiert **übertragbare Recherchekompetenzen**: von der präzisen Operationalisierung einer Forschungsfrage über **systematische** und **unsystematische (Snowball-)Suchstrategien** bis zur **kritischen Bewertung** von Quellen (Provenienz, Kontext, Bias, Relevanz). Generative KI wird dabei als **heuristisches Hilfsmittel** eingesetzt (Begriffsklärung, Keyword-Expansion, Suchpfade).
+Diese Übung trainiert **übertragbare Recherchekompetenzen**: von der präzisen Operationalisierung einer Forschungsfrage über **systematische** und **unsystematische (Snowball-)Suchstrategien** bis zur **kritischen Bewertung** von Quellen (Provenienz, Kontext, Bias, Relevanz).[@putnam2016shadows] Generative KI wird dabei als **heuristisches Hilfsmittel** eingesetzt (Begriffsklärung, Keyword-Expansion, Suchpfade).[@milligan2019history]
 
 Als Fallbeispiel dient die Forschungsfrage:\
 **Welche Rolle spielte der Schweizerische Handels- und Industrie-Verein (Vorort) im Entscheidungsprozess zum Europaratsbeitritt 1963?**
@@ -389,6 +389,11 @@ Mindestens:
 3. Shortlist: 10 Primärquellen-Einheiten
 4. Kurzannotierte Bibliografie (8–12 Titel)
 5. Reflexion zum KI-Einsatz inkl. KI-Protokoll
+
+## Weiterführende Ressourcen
+
+- [Ranke.2: Lessons Übersicht](https://ranke2.uni.lu/lessons/) – Lernmodule zu Web, Social Media und dem digitalen Wandel.
+- [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Kritik an Trainingsdaten und ihre Parallelen zur Quellenkritik.
 
 ## Bibliographie
 

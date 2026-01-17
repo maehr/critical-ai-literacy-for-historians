@@ -146,11 +146,11 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 
 ## Methodischer Rahmen: KI als Schreibinfrastruktur
 
-In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**. Methodisch hilfreich ist eine klare Arbeitsteilung:
+In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**.[@bender2021stochastic] Methodisch hilfreich ist eine klare Arbeitsteilung:
 
 - **Geschichtswissenschaftliche Autor:innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
 - **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.
-- **Prüfverfahren (obligatorisch):** Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein.
+- **Prüfverfahren (obligatorisch):** Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein.[@turingway2022handbook]
 
 Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. **Eingrenzung des Arbeitsraums** («arbeite nur mit meinen Stichpunkten; markiere Unsicherheiten»). 2. **Formatierte Antworten** (Listen/Argumentmaps), damit Sie systematisch prüfen und selektiv übernehmen können.
 
@@ -482,6 +482,11 @@ Am Ende haben Sie ein kleines Paket an Artefakten, das wissenschaftlich weiterve
 - Argumentmap (Logikprüfung)\
 - Abstract (und optional Übersetzung + Glossar)\
 - KI-Protokoll (Prompt- und Entscheidungsnachweis)
+
+## Weiterführende Ressourcen
+
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Grenzen, Halluzinationen, Verifikation und kritische Nutzung von LLMs.
+- [The Turing Way](https://the-turing-way.netlify.app/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
 
 ## Bibliographie
 

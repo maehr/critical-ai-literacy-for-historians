@@ -48,7 +48,7 @@ Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äusser
 
 ## Hinweis zur digitalen Überlieferung
 
-Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen Edition** vor. Für die Quellenkritik gehört deshalb nicht nur der Text, sondern auch die **Editionsebene** (Metadaten, Archivsignatur, Verlinkungen, Editionsrichtlinien) zum Untersuchungsgegenstand.
+Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen Edition** vor. Für die Quellenkritik gehört deshalb nicht nur der Text, sondern auch die **Editionsebene** (Metadaten, Archivsignatur, Verlinkungen, Editionsrichtlinien) zum Untersuchungsgegenstand.[@fickers2022criticism]
 :::
 
 ## Voraussetzungen
@@ -534,6 +534,11 @@ Am Ende verfügen Sie über:
 - einen **Rechercheplan** zur Kontext- und Gegenprobe,
 - ein **reproduzierbares Analyseprotokoll** (inkl. strukturierter Claim-Extraktion),
 - eine reflektierte Einschätzung, **wo KI Exploration unterstützt** und **wo sie methodisch zu begrenzen** ist.
+
+## Weiterführende Ressourcen
+
+- [Ranke.2: Wikipedia als historische Quelle](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenienz, Revisionsgeschichten und digitale Quellenkritik.
+- [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Kritik an Trainingsdaten und ihre Parallelen zur Quellenkritik.
 
 ## Bibliographie
 

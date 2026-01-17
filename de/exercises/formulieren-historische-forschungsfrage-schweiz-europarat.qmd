@@ -64,7 +64,7 @@ Die Übung folgt einem **zirkulären Forschungsverständnis**: Ergebnisse einzel
 
 ## Hinweis zur online Recherche
 
-Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016]
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016shadows] Digitale Quellenkritik erfordert besondere Aufmerksamkeit für die Entstehung und Kuratierung von Online-Sammlungen.[@fickers2022criticism]
 :::
 
 ## Voraussetzungen
@@ -327,6 +327,11 @@ Am Ende der Übung verfügen Sie über:
 - eine **klar formulierte analytische historische Forschungsfrage**,
 - ein reflektiertes Verständnis der **Potenziale und Grenzen von KI** im Forschungsdesign,
 - eine methodisch begründete Einschätzung der **Machbarkeit** Ihres Projekts.
+
+## Weiterführende Ressourcen
+
+- [Ranke.2: Wikipedia als historische Quelle](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenienz, Revisionsgeschichten und digitale Quellenkritik.
+- [AI Pedagogy Project: Was ist KI?](https://aipedagogy.org/guide/what-is-ai/) – Konzeptuelle Einführung für nicht-technische Zielgruppen.
 
 ## Bibliographie
 

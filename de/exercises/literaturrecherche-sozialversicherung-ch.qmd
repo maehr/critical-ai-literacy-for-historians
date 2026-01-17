@@ -138,7 +138,7 @@ Nach Abschluss dieser Übung können Sie:
 
 ## Hinweis zur online Recherche
 
-Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016]
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar.[@milligan2019history] Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016shadows]
 :::
 
 ## Struktur der Übung
@@ -483,6 +483,11 @@ KI darf in dieser Übung helfen, Suchräume zu erweitern und Texte zu strukturie
   - Co-Zitations- oder Schlagwortnetz (vorsichtig: Katalog-Schlagworte sind kuratiert und biasbehaftet).
 
 - Dokumentieren Sie Workflow und Daten (README + Lizenz/Reuse-Hinweise).
+
+## Weiterführende Ressourcen
+
+- [Ranke.2: Lessons Übersicht](https://ranke2.uni.lu/lessons/) – Lernmodule zu Web, Social Media und dem digitalen Wandel.
+- [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Kritik an Trainingsdaten und ihre Parallelen zur Quellenkritik.
 
 ## Bibliographie
 
