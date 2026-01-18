@@ -38,9 +38,43 @@ Les exercices encouragent :
 
 En s'engageant avec ces ressources, les historien·ne·s seront mieux équipé·e·s pour concevoir des projets transparents et significatifs qui intègrent l'IA dans leur recherche sans compromettre la rigueur disciplinaire.
 
-## Pour commencer
+## Choisissez votre parcours
 
-Explorez les exercices pour commencer votre parcours de développement d'une littératie critique de l'IA pour la recherche historique.
+Selon vos intérêts ou vos objectifs d'apprentissage, vous pouvez suivre différents parcours à travers les ressources. Nous vous recommandons de commencer par l'exercice sur le **Prompt Engineering**.
+
+::: {.panel-tabset}
+
+### Parcours A : Conseil de l'Europe / Dodis (Focalisé sur les sources)
+
+Ce parcours vous guide à travers l'ensemble du processus de recherche en utilisant l'exemple de l'histoire diplomatique suisse (Dodis) et du Conseil de l'Europe.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd) : Bases de l'interaction avec les LLM.
+2. [**Question de recherche**](exercises/formuler-question-recherche-historique-suisse-conseil-europe.qmd) : Développer une question de recherche historique.
+3. [**Recherche de sources**](exercises/recherche-sources-vorort-conseil-europe-1963.qmd) : Recherche ciblée de sources primaires.
+4. [**Critique des sources**](exercises/critique-sources-conseil-federal-conseil-europe-1949.qmd) : Appliquer la critique des sources numériques.
+5. [**Écriture**](exercises/ecriture.qmd) : Rédiger et affiner des textes historiques.
+6. [**Citer**](exercises/citer.qmd) : Documenter correctement l'utilisation de l'IA.
+
+### Parcours B : Sécurité sociale (Focalisé sur la littérature)
+
+Ce parcours se concentre sur la recherche bibliographique et la communication de sujets historiques auprès du public.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd) : Bases de l'interaction avec les LLM.
+2. [**Recherche bibliographique**](exercises/recherche-bibliographique-securite-sociale-ch.qmd) : Trouver et évaluer la littérature secondaire.
+3. [**Question de recherche**](exercises/formuler-question-recherche-historique-suisse-conseil-europe.qmd) : (Adapté) Formuler une question de recherche.
+4. [**Écriture**](exercises/ecriture.qmd) : Rédiger et affiner des textes historiques.
+5. [**Citer**](exercises/citer.qmd) : Documenter correctement l'utilisation de l'IA.
+6. [**Public History**](exercises/public-history.qmd) : Présenter l'histoire à un large public.
+
+### Parcours C : Votre propre sujet
+
+Utilisez les méthodes et les modèles pour votre propre projet de recherche.
+
+- **Prérequis** : Terminez d'abord l'exercice sur le [**Prompt Engineering**](exercises/prompt-engineering.qmd).
+- **Transfert** : Utilisez les prompts et les questions de réflexion des autres exercices et appliquez-les à vos propres sources et sujets.
+:::
+
+## Tous les exercices
 
 ::: {#exercises}
 :::
@@ -68,18 +102,9 @@ Le projet repose sur les principes pédagogiques suivants :
 4. **Transparence et reproductibilité** : Promouvoir des pratiques de recherche ouvertes, documentées et réplicables
 5. **Rigueur disciplinaire** : Maintenir les méthodes historiques et la pensée critique tout en intégrant les nouvelles technologies
 
-### Approche d'apprentissage
-
-Les exercices suivent une progression structurée :
-
-- **Débutant** : Introduction aux concepts d'IA et évaluation critique de base
-- **Intermédiaire** : Application d'outils d'IA à la recherche historique avec réflexion critique
-- **Avancé** : Conception de projets de recherche intégrant l'IA avec sophistication méthodologique
-
-Chaque exercice comprend :
+### Chaque exercice comprend
 
 - Des objectifs d'apprentissage clairs
-- Une estimation du temps nécessaire
 - Des prérequis
 - Des activités pratiques
 - Des invitations à la réflexion critique

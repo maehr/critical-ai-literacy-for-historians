@@ -39,9 +39,43 @@ Die Übungen fördern:
 
 Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.
 
-## Erste Schritte
+## Wählen Sie Ihren Pfad
 
-Erkunden Sie die Übungen, um Ihre Reise zur Entwicklung kritischer KI-Kompetenz für die historische Forschung zu beginnen.
+Je nach Interesse oder Lernziel können Sie verschiedenen Pfaden durch die Materialien folgen. Wir empfehlen, mit der Übung zum **Prompt Engineering** zu beginnen.
+
+::: {.panel-tabset}
+
+### Pfad A: Europarat / Dodis (Quellen-fokussiert)
+
+Dieser Pfad führt Sie durch den gesamten Forschungsprozess am Beispiel der Schweizer Diplomatiegeschichte (Dodis) und des Europarats.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Grundlagen der Interaktion mit LLMs.
+2. [**Forschungsfrage**](exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd): Eine historische Forschungsfrage entwickeln.
+3. [**Quellensuche**](exercises/quellensuche-vorort-europarat-1963.qmd): Gezielte Suche nach Primärquellen.
+4. [**Quellenkritik**](exercises/quellenkritik-bundesrat-europarat-1949.qmd): Digitale Quellenkritik anwenden.
+5. [**Schreiben**](exercises/schreiben.qmd): Texte verfassen und überarbeiten.
+6. [**Zitieren**](exercises/zitieren.qmd): KI-Nutzung korrekt ausweisen.
+
+### Pfad B: Sozialversicherung (Literatur-fokussiert)
+
+Dieser Pfad konzentriert sich auf die Literaturrecherche und die Vermittlung historischer Themen in der Öffentlichkeit.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Grundlagen der Interaktion mit LLMs.
+2. [**Literaturrecherche**](exercises/literaturrecherche-sozialversicherung-ch.qmd): Sekundärliteratur finden und bewerten.
+3. [**Forschungsfrage**](exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd): (Adaptiert) Eine Forschungsfrage formulieren.
+4. [**Schreiben**](exercises/schreiben.qmd): Texte verfassen und überarbeiten.
+5. [**Zitieren**](exercises/zitieren.qmd): KI-Nutzung korrekt ausweisen.
+6. [**Public History**](exercises/public-history.qmd): Geschichte für ein breites Publikum aufbereiten.
+
+### Pfad C: Eigenes Thema
+
+Nutzen Sie die Methoden und Vorlagen für Ihr eigenes Forschungsprojekt.
+
+- **Voraussetzung**: Absolvieren Sie zuerst die Übung zum [**Prompt Engineering**](exercises/prompt-engineering.qmd).
+- **Transfer**: Übernehmen Sie die Prompts und Reflexionsfragen aus den anderen Übungen und wenden Sie diese auf Ihre eigenen Quellen und Themen an.
+:::
+
+## Alle Übungen
 
 ::: {#exercises}
 :::
@@ -69,18 +103,9 @@ Das Projekt basiert auf folgenden pädagogischen Prinzipien:
 4. **Transparenz und Reproduzierbarkeit**: Förderung offener, dokumentierter und nachvollziehbarer Forschungspraktiken
 5. **Disziplinäre Strenge**: Beibehaltung historischer Methoden und kritischen Denkens bei der Integration neuer Technologien
 
-### Lernansatz
-
-Die Übungen folgen einer strukturierten Progression:
-
-- **Anfänger**: Einführung in KI-Konzepte und grundlegende kritische Bewertung
-- **Fortgeschrittene**: Anwendung von KI-Tools in der historischen Forschung mit kritischer Reflexion
-- **Experten**: Gestaltung KI-integrierter Forschungsprojekte mit methodologischer Raffinesse
-
-Jede Übung enthält:
+### Jede Übung enthält
 
 - Klare Lernziele
-- Geschätzter Zeitaufwand
 - Voraussetzungen
 - Praktische Aktivitäten
 - Kritische Reflexionsanregungen

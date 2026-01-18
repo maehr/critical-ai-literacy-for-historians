@@ -26,7 +26,7 @@ references: []
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung macht Prompting **als Methode** sichtbar: Prompts sind hier nicht «Tricks», sondern **Operationalisierungen** historischer Arbeitsaufträge.[@oberbichler2025implementing]
+Diese Übung macht Prompting **als Methode** sichtbar: Prompts sind hier nicht «Tricks», sondern **Operationalisierungen** historischer Arbeitsaufträge.[@campbell2025historian; @oberbichler2025implementing]
 
 Trainiert wird, wie Sie
 

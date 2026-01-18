@@ -26,7 +26,7 @@ references: []
 
 ## Overview and Didactic Goal
 
-This exercise makes prompting visible **as a method**: prompts here are not "tricks," but rather **operationalizations** of historical work tasks.[@oberbichler2025implementing]
+This exercise makes prompting visible **as a method**: prompts here are not "tricks," but rather **operationalizations** of historical work tasks.[@campbell2025historian; @oberbichler2025implementing]
 
 You will train how to:
 

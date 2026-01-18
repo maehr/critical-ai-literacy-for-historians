@@ -26,7 +26,7 @@ references: []
 
 ## Aperçu et objectif didactique
 
-Cet exercice rend le prompt visible **en tant que méthode** : les prompts ne sont pas ici des « astuces », mais des **opérationalisations** de tâches de recherche historique.[@oberbichler2025implementing]
+Cet exercice rend le prompt visible **en tant que méthode** : les prompts ne sont pas ici des « astuces », mais des **opérationalisations** de tâches de recherche historique.[@campbell2025historian; @oberbichler2025implementing]
 
 Vous vous entraînerez à :
 

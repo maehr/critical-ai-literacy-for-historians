@@ -146,7 +146,7 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 
 ## Methodischer Rahmen: KI als Schreibinfrastruktur
 
-In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**.[@bender2021stochastic; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
+In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
 
 - **Geschichtswissenschaftliche Autor:innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
 - **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.

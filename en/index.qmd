@@ -40,9 +40,43 @@ The exercises promote:
 
 By engaging with these materials, historians will be better equipped to design transparent, meaningful projects that integrate AI into their research without compromising disciplinary rigor.
 
-## Getting Started
+## Choose Your Path
 
-Explore the exercises to begin your journey in developing critical AI literacy for historical research:
+Depending on your interests or learning goals, you can follow different paths through the materials. We recommend starting with the **Prompt Engineering** exercise.
+
+::: {.panel-tabset}
+
+### Track A: Council of Europe / Dodis (Source-focused)
+
+This track guides you through the entire research process using the example of Swiss diplomatic history (Dodis) and the Council of Europe.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Basics of interacting with LLMs.
+2. [**Research Question**](exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd): Developing a historical research question.
+3. [**Source Search**](exercises/source-search-vorort-council-of-europe-1963.qmd): Targeted search for primary sources.
+4. [**Source Criticism**](exercises/source-criticism-federal-council-council-of-europe-1949.qmd): Applying digital source criticism.
+5. [**Writing**](exercises/writing.qmd): Drafting and refining historical texts.
+6. [**Citing**](exercises/citing.qmd): Properly documenting AI use.
+
+### Track B: Social Security (Literature-focused)
+
+This track focuses on literature research and communicating historical topics to the public.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Basics of interacting with LLMs.
+2. [**Literature Research**](exercises/literature-research-social-security-ch.qmd): Finding and evaluating secondary literature.
+3. [**Research Question**](exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd): (Adapted) Formulating a research question.
+4. [**Writing**](exercises/writing.qmd): Drafting and refining historical texts.
+5. [**Citing**](exercises/citing.qmd): Properly documenting AI use.
+6. [**Public History**](exercises/public-history.qmd): Presenting history for a broad audience.
+
+### Track C: Your Own Topic
+
+Utilize the methods and templates for your own research project.
+
+- **Prerequisite**: Complete the [**Prompt Engineering**](exercises/prompt-engineering.qmd) exercise first.
+- **Transfer**: Use the prompts and reflection questions from the other exercises and apply them to your own sources and topics.
+:::
+
+## All Exercises
 
 ::: {#exercises}
 :::
@@ -70,18 +104,9 @@ The project is grounded in the following pedagogical principles:
 4. **Transparency and Reproducibility**: Promoting open, documented, and replicable research practices
 5. **Disciplinary Rigor**: Maintaining historical methods and critical thinking while integrating new technologies
 
-### Learning Approach
-
-The exercises follow a structured progression:
-
-- **Beginner**: Introduction to AI concepts and basic critical evaluation
-- **Intermediate**: Applying AI tools to historical research with critical reflection
-- **Advanced**: Designing AI-integrated research projects with methodological sophistication
-
-Each exercise includes:
+### Each exercise includes
 
 - Clear learning objectives
-- Estimated time commitment
 - Prerequisites
 - Hands-on activities
 - Critical reflection prompts

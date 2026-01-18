@@ -4,6 +4,9 @@
 **/*.quarto_ipynb
 _site/
 
+# JamPack
+.jampack/
+
 # Exclude example.env
 !example.env
 
