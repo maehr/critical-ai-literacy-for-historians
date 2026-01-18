@@ -57,7 +57,7 @@ Moritz Mähr (Dr. sc. ETH Zürich) ist assoziierter Forscher im Bereich Digital 
 
 ## Über dieses Projekt
 
-**Kritische KI-Kompetenz für Historiker:innen** ist eine Bildungsinitiative, die darauf abzielt, Historiker:innen mit dem Wissen und den Fähigkeiten auszustatten, sich kritisch mit künstlicher Intelligenz in ihrer Forschungspraxis auseinanderzusetzen.
+**Kritische KI-Kompetenz für Historiker:innen** ist eine Bildungsinitiative, die darauf abzielt, Historiker:innen mit dem Wissen und den Fähigkeiten auszustatten, sich kritisch mit künstlicher Intelligenz in ihrer Forschungspraxis auseinanderzusetzen. Die hier vorgestellten Frameworks und Ansätze orientieren sich massgeblich an dem Working Paper *Implementing Generative AI in the Historical Studies*.[@oberbichler2025implementing]
 
 ### Pädagogischer Rahmen
 

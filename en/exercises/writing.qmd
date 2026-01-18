@@ -76,7 +76,7 @@ You can complete this exercise with LLMs from different providers. For this exer
 
 ## Methodological Framework: AI as Writing Infrastructure
 
-In this exercise, AI is understood as a **heuristic writing tool**: It supports *formulations, structuring, and verification*, but replaces neither **source work** nor **interpretive decisions**.[@bender2021stochastic] Methodologically helpful is a clear division of labor:
+In this exercise, AI is understood as a **heuristic writing tool**: it assists with *formulations, structuring, and verification*, but it replaces neither **source work** nor **interpretative decisions**.[@bender2021stochastic; @oberbichler2025implementing] Methodologically helpful is a clear division of labor:
 
 - **Historical authorship:** Research question, evidence selection, interpretation, normative positions.
 - **AI contribution (instrumental):** Generate variants, structure suggestions, readability tests, error diagnosis.

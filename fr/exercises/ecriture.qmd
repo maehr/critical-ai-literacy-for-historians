@@ -76,7 +76,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Cadre méthodologique : L'IA comme infrastructure d'écriture
 
-Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique** : Elle soutient les *formulations, la structuration et la vérification*, mais ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic] Méthodologiquement utile est une division claire du travail :
+Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique** : elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile :
 
 - **Paternité historique :** Question de recherche, sélection des preuves, interprétation, positions normatives.
 - **Contribution de l'IA (instrumentale) :** Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d'erreurs.
