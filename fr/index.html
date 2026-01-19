@@ -63,7 +63,7 @@
     "search-label": "Recherche"
   }
 }</script>
-<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-exercises .list"))return;const i={valueNames:["listing-title","listing-author","listing-date","listing-image","listing-description",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-file-modified-sort"]}],searchColumns:["listing-title","listing-author","listing-date","listing-image","listing-description"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-exercises"]=new List("listing-exercises",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
+<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-exercises .list"))return;const i={valueNames:["listing-image","listing-title","listing-subtitle","listing-description","listing-categories",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-file-modified-sort"]}],searchColumns:["listing-title","listing-author","listing-date","listing-image","listing-description"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-exercises"]=new List("listing-exercises",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -74,10 +74,16 @@
 
 <meta property="og:title" content="Littératie critique de l’IA pour les historien·ne·s – Critical AI Literacy for Historians">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png">
 <meta property="og:site_name" content="Critical AI Literacy for Historians">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1024">
 <meta name="twitter:title" content="Littératie critique de l’IA pour les historien·ne·s – Critical AI Literacy for Historians">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://maehr.github.io/critical-ai-literacy-for-historians/assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1024">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://maehr.github.io/critical-ai-literacy-for-historians/fr/">
 </head>
 
@@ -282,7 +288,7 @@
 </div>
 <section id="objectif" class="level3">
 <h3 class="anchored" data-anchor-id="objectif">Objectif</h3>
-<p>Ces ressources visent à aider les apprenant·e·s à :</p>
+<p>Ces ressources visent à aider les apprenant·e·s à:</p>
 <ul>
 <li>Comprendre comment l’IA fonctionne à la fois comme <strong>outil</strong> et comme <strong>méthode</strong> de recherche</li>
 <li>Réfléchir à la manière dont elle façonne l’interprétation historique et la preuve</li>
@@ -292,7 +298,7 @@
 </section>
 <section id="principes" class="level3">
 <h3 class="anchored" data-anchor-id="principes">Principes</h3>
-<p>Les exercices encouragent :</p>
+<p>Les exercices encouragent:</p>
 <ul>
 <li>La <strong>reproductibilité</strong> dans les workflows de recherche</li>
 <li>Le <strong>respect de la vie privée</strong> et la gestion éthique des données</li>
@@ -307,35 +313,35 @@
 <h2 class="anchored" data-anchor-id="choisissez-votre-parcours">Choisissez votre parcours</h2>
 <p>Selon vos intérêts ou vos objectifs d’apprentissage, vous pouvez suivre différents parcours à travers les ressources. Nous vous recommandons de commencer par l’exercice sur le <strong>Prompt Engineering</strong>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Parcours A : Conseil de l’Europe / Dodis (Focalisé sur les sources)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Parcours B : Sécurité sociale (Focalisé sur la littérature)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Parcours C : Votre propre sujet</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Parcours A: Conseil de l’Europe / Dodis (Focalisé sur les sources)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Parcours B: Sécurité sociale (Focalisé sur la littérature)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Parcours C: Votre propre sujet</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="active tab-pane" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Ce parcours vous guide à travers l’ensemble du processus de recherche en utilisant l’exemple de l’histoire diplomatique suisse (Dodis) et du Conseil de l’Europe.</p>
 <ol type="1">
-<li><a href="../fr/exercises/prompt-engineering.html"><strong>Prompt Engineering</strong></a> : Bases de l’interaction avec les LLM.</li>
-<li><a href="../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html"><strong>Question de recherche</strong></a> : Développer une question de recherche historique.</li>
-<li><a href="../fr/exercises/recherche-sources-vorort-conseil-europe-1963.html"><strong>Recherche de sources</strong></a> : Recherche ciblée de sources primaires.</li>
-<li><a href="../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html"><strong>Critique des sources</strong></a> : Appliquer la critique des sources numériques.</li>
-<li><a href="../fr/exercises/ecriture.html"><strong>Écriture</strong></a> : Rédiger et affiner des textes historiques.</li>
-<li><a href="../fr/exercises/citer.html"><strong>Citer</strong></a> : Documenter correctement l’utilisation de l’IA.</li>
+<li><a href="../fr/exercises/prompt-engineering.html"><strong>Prompt Engineering</strong></a>: Bases de l’interaction avec les LLM.</li>
+<li><a href="../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html"><strong>Question de recherche</strong></a>: Développer une question de recherche historique.</li>
+<li><a href="../fr/exercises/recherche-sources-vorort-conseil-europe-1963.html"><strong>Recherche de sources</strong></a>: Recherche ciblée de sources primaires.</li>
+<li><a href="../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html"><strong>Critique des sources</strong></a>: Appliquer la critique des sources numériques.</li>
+<li><a href="../fr/exercises/ecriture.html"><strong>Écriture</strong></a>: Rédiger et affiner des textes historiques.</li>
+<li><a href="../fr/exercises/citer.html"><strong>Citer</strong></a>: Documenter correctement l’utilisation de l’IA.</li>
 </ol>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Ce parcours se concentre sur la recherche bibliographique et la communication de sujets historiques auprès du public.</p>
 <ol type="1">
-<li><a href="../fr/exercises/prompt-engineering.html"><strong>Prompt Engineering</strong></a> : Bases de l’interaction avec les LLM.</li>
-<li><a href="../fr/exercises/recherche-bibliographique-securite-sociale-ch.html"><strong>Recherche bibliographique</strong></a> : Trouver et évaluer la littérature secondaire.</li>
-<li><a href="../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html"><strong>Question de recherche</strong></a> : (Adapté) Formuler une question de recherche.</li>
-<li><a href="../fr/exercises/ecriture.html"><strong>Écriture</strong></a> : Rédiger et affiner des textes historiques.</li>
-<li><a href="../fr/exercises/citer.html"><strong>Citer</strong></a> : Documenter correctement l’utilisation de l’IA.</li>
-<li><a href="../fr/exercises/public-history.html"><strong>Public History</strong></a> : Présenter l’histoire à un large public.</li>
+<li><a href="../fr/exercises/prompt-engineering.html"><strong>Prompt Engineering</strong></a>: Bases de l’interaction avec les LLM.</li>
+<li><a href="../fr/exercises/recherche-bibliographique-securite-sociale-ch.html"><strong>Recherche bibliographique</strong></a>: Trouver et évaluer la littérature secondaire.</li>
+<li><a href="../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html"><strong>Question de recherche</strong></a>: (Adapté) Formuler une question de recherche.</li>
+<li><a href="../fr/exercises/ecriture.html"><strong>Écriture</strong></a>: Rédiger et affiner des textes historiques.</li>
+<li><a href="../fr/exercises/citer.html"><strong>Citer</strong></a>: Documenter correctement l’utilisation de l’IA.</li>
+<li><a href="../fr/exercises/public-history.html"><strong>Public History</strong></a>: Présenter l’histoire à un large public.</li>
 </ol>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Utilisez les méthodes et les modèles pour votre propre projet de recherche.</p>
 <ul>
-<li><strong>Prérequis</strong> : Terminez d’abord l’exercice sur le <a href="../fr/exercises/prompt-engineering.html"><strong>Prompt Engineering</strong></a>.</li>
-<li><strong>Transfert</strong> : Utilisez les prompts et les questions de réflexion des autres exercices et appliquez-les à vos propres sources et sujets.</li>
+<li><strong>Prérequis</strong>: Terminez d’abord l’exercice sur le <a href="../fr/exercises/prompt-engineering.html"><strong>Prompt Engineering</strong></a>.</li>
+<li><strong>Transfert</strong>: Utilisez les prompts et les questions de réflexion des autres exercices et appliquez-les à vos propres sources et sujets.</li>
 </ul>
 </div>
 </div>
@@ -345,178 +351,202 @@
 <h2 class="anchored" data-anchor-id="tous-les-exercices">Tous les exercices</h2>
 <div id="listing-exercises" class="quarto-listing quarto-listing-container-grid">
 <div class="grid list quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TSVDMyVBOXRob2Rlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795659" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="5" data-listing-word-count-sort="887">
+<div class="g-col-1" data-index="0" data-categories="TSVDMyVBOXRob2Rlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768811928295" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="5" data-listing-word-count-sort="871">
 <a href="../fr/exercises/citer.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Citation académique
 </h5>
+<div class="card-subtitle listing-subtitle">
+Exercice sur les pratiques de citation en recherche historique
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("TSVDMyVBOXRob2Rlcw=="),!1;
+'>Méthodes</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Cet exercice enseigne les fondamentaux de la citation académique en recherche historique, avec un accent particulier sur l’utilisation critique de l’IA générative. Vous…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="U291cmNlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795659" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="14" data-listing-word-count-sort="2628">
+<div class="g-col-1" data-index="1" data-categories="U291cmNlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768811994310" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="13" data-listing-word-count-sort="2538">
 <a href="../fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/source_criticism_Gemini_Generated_Image_ne84kfne84kfne84.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Critique des sources
 </h5>
+<div class="card-subtitle listing-subtitle">
+Conseil fédéral et Conseil de l’Europe 1949
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("U291cmNlcw=="),!1;
+'>Sources</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Un exercice guidé pour la critique externe et interne systématique des sources sur une note diplomatique (Dodis).</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Q29uY2VwdGlvbiUyMGRlJTIwcmVjaGVyY2hl" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795660" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1163">
+<div class="g-col-1" data-index="2" data-categories="Q29uY2VwdGlvbiUyMGRlJTIwcmVjaGVyY2hl" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768811983547" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1131">
 <a href="../fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Formuler une question de recherche historique
 </h5>
+<div class="card-subtitle listing-subtitle">
+La Suisse et le Conseil de l’Europe
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("Q29uY2VwdGlvbiUyMGRlJTIwcmVjaGVyY2hl"),!1;
+'>Conception de recherche</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Un exercice guidé pour le développement systématique d’une question de recherche historique analytique avec utilisation réfléchie de l’IA générative.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SUElMjAlMjYlMjBNJUMzJUE5dGhvZGVzJTIwbnVtJUMzJUE5cmlxdWVz" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795660" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="14" data-listing-word-count-sort="2652">
+<div class="g-col-1" data-index="3" data-categories="SUElMjAlMjYlMjBNJUMzJUE5dGhvZGVzJTIwbnVtJUMzJUE5cmlxdWVz" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768811952182" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="13" data-listing-word-count-sort="2527">
 <a href="../fr/exercises/prompt-engineering.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="2816" height="1536" jampack-sized="true" srcset="../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.webp 2816w, ../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y@2516w.webp 2516w, ../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y@2216w.webp 2216w, ../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y@1916w.webp 1916w, ../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y@1616w.webp 1616w, ../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y@1316w.webp 1316w, ../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y@1016w.webp 1016w" sizes="100vw">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Prompt Engineering
 </h5>
+<div class="card-subtitle listing-subtitle">
+Travail historique avec les LLMs: heuristiques contrôlées, reproductibilité, discipline des preuves
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("SUElMjAlMjYlMjBNJUMzJUE5dGhvZGVzJTIwbnVtJUMzJUE5cmlxdWVz"),!1;
+'>IA &amp; Méthodes numériques</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Un exercice qui entraîne les techniques centrales de prompting (bases, rôles, zero-/few-shot, trace de réflexion structurée, prompting itératif, optimisation) à l’aide de…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHVibGljJTIwSGlzdG9yeQ==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795661" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1852">
+<div class="g-col-1" data-index="4" data-categories="UHVibGljJTIwSGlzdG9yeQ==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768812009156" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1780">
 <a href="../fr/exercises/public-history.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Public History et communication historique
 </h5>
+<div class="card-subtitle listing-subtitle">
+Communication des savoirs le long du processus d’écriture et de production
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("UHVibGljJTIwSGlzdG9yeQ=="),!1;
+'>Public History</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Ensemble d’exercices pour la communication orientée vers le public cible d’un article scientifique dans plusieurs formats (blog, podcast, réseaux sociaux, poster, interview)…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="U291cmNlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795662" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1723">
+<div class="g-col-1" data-index="5" data-categories="UmVjaGVyY2hl" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768812005777" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1667">
 <a href="../fr/exercises/recherche-sources-vorort-conseil-europe-1963.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Recherche de sources pour une question de recherche historique
 </h5>
+<div class="card-subtitle listing-subtitle">
+Le Vorort et l’adhésion au Conseil de l’Europe 1963
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("UmVjaGVyY2hl"),!1;
+'>Recherche</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Un exercice guidé pour la recherche systématique de sources (primaires/secondaires/tertiaires) avec utilisation réfléchie de l’IA générative.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="TSVDMyVBOXRob2Rlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768738795661" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="12" data-listing-word-count-sort="2277">
+<div class="g-col-1" data-index="6" data-categories="TSVDMyVBOXRob2Rlcw==" data-listing-date-sort="1766962800000" data-listing-file-modified-sort="1768811939707" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="12" data-listing-word-count-sort="2203">
 <a href="../fr/exercises/recherche-bibliographique-securite-sociale-ch.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Recherche et analyse bibliographique
 </h5>
+<div class="card-subtitle listing-subtitle">
+Histoire de la sécurité sociale en Suisse
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("TSVDMyVBOXRob2Rlcw=="),!1;
+'>Méthodes</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Un exercice guidé pour la recherche bibliographique systématique et l’analyse bibliographique orientée problème avec utilisation contrôlée critique de l’IA générative.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-29 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="TSVDMyVBOXRob2Rlcw==" data-listing-date-sort="1766530800000" data-listing-file-modified-sort="1768738795659" data-listing-date-modified-sort="1768690800000" data-listing-reading-time-sort="11" data-listing-word-count-sort="2099">
+<div class="g-col-1" data-index="7" data-categories="TSVDMyVBOXRob2Rlcw==" data-listing-date-sort="1766530800000" data-listing-file-modified-sort="1768812007784" data-listing-date-modified-sort="1768777200000" data-listing-reading-time-sort="11" data-listing-word-count-sort="2029">
 <a href="../fr/exercises/ecriture.html" class="quarto-grid-link">
 <div class="card card-left h-100 quarto-grid-item">
-<div class="card-img-top listing-item-img-placeholder" style="height:150px">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.webp" class="card-img thumbnail-image" style="height:150px" alt="" decoding="async" width="1024" height="1024" jampack-sized="true">
+</p>
 <div class="card-body post-contents">
 <h5 class="card-title listing-title no-anchor">
 Écriture scientifique
 </h5>
+<div class="card-subtitle listing-subtitle">
+Ensemble d’exercices basé sur les rôles le long du processus d’écriture
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick='return window.quartoListingCategory("TSVDMyVBOXRob2Rlcw=="),!1;
+'>Méthodes</div>
+
+</div>
 <div class="card-text delink listing-description">
 <p>Un exercice qui forme à l’utilisation de l’IA générative comme assistant d’écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Moritz Mähr
-</div>
-<div class="listing-date">
-24 déc. 2025
-</div>
 </div>
 </div>
 </div></a>
@@ -529,10 +559,10 @@ Moritz Mähr
 <h2 class="anchored" data-anchor-id="à-propos-de-lauteur">À propos de l’auteur</h2>
 <p>Moritz Mähr (Dr.&nbsp;sc. ETH Zurich) est chercheur associé en humanités numériques à l’Université de Berne et spécialiste des sciences de l’information et des bibliothèques au sein des Research Analytics Services de l’ETH Zurich. Ses travaux articulent histoire numérique, science and technology studies et infrastructures de recherche ouvertes. Ses domaines d’intérêt incluent la critique des sources numériques à l’ère de l’IA, l’histoire de la numérisation dans l’administration publique, les approches de minimal computing en histoire publique, ainsi que la durabilité numérique fondée sur les principes FAIR et CARE.</p>
 <ul>
-<li>E-mail : <a href="mailto:moritz.maehr@gmail.com">moritz.maehr@gmail.com</a></li>
-<li>Site web : <a href="https://moritzmaehr.ch/" class="uri">https://moritzmaehr.ch/</a></li>
-<li>ORCID : <a href="https://orcid.org/0000-0002-1367-1618" class="uri">https://orcid.org/0000-0002-1367-1618</a></li>
-<li>GitHub : <a href="https://github.com/maehr" class="uri">https://github.com/maehr</a></li>
+<li>E-mail: <a href="mailto:moritz.maehr@gmail.com">moritz.maehr@gmail.com</a></li>
+<li>Site web: <a href="https://moritzmaehr.ch/" class="uri">https://moritzmaehr.ch/</a></li>
+<li>ORCID: <a href="https://orcid.org/0000-0002-1367-1618" class="uri">https://orcid.org/0000-0002-1367-1618</a></li>
+<li>GitHub: <a href="https://github.com/maehr" class="uri">https://github.com/maehr</a></li>
 </ul>
 </section>
 <section id="à-propos-de-ce-projet" class="level2">
@@ -540,13 +570,13 @@ Moritz Mähr
 <p><strong>Littératie critique de l’IA pour les historien·ne·s</strong> est une initiative éducative conçue pour doter les historien·ne·s des connaissances et des compétences nécessaires pour s’engager de manière critique avec les technologies d’intelligence artificielle dans leur pratique de recherche. Les cadres et approches présentés ici s’inspirent largement du document de travail <em>Implementing Generative AI in the Historical Studies</em>.<span class="citation" data-cites="oberbichler2025implementing">(<a href="#ref-oberbichler2025implementing" role="doc-biblioref">Oberbichler et Petz 2025</a>)</span></p>
 <section id="cadre-pédagogique" class="level3">
 <h3 class="anchored" data-anchor-id="cadre-pédagogique">Cadre pédagogique</h3>
-<p>Le projet repose sur les principes pédagogiques suivants :</p>
+<p>Le projet repose sur les principes pédagogiques suivants:</p>
 <ol type="1">
-<li><strong>L’IA comme outil et méthode</strong> : Comprendre l’IA non seulement comme un outil technique mais aussi comme une approche méthodologique qui façonne les questions de recherche et les interprétations</li>
-<li><strong>Critique des sources numériques</strong> : Appliquer une évaluation critique rigoureuse aux contenus générés par l’IA, aux jeux de données et aux résultats algorithmiques</li>
-<li><strong>Conscience éthique</strong> : Favoriser une utilisation responsable de l’IA qui prend en compte la vie privée, les biais, la représentation et les dynamiques de pouvoir</li>
-<li><strong>Transparence et reproductibilité</strong> : Promouvoir des pratiques de recherche ouvertes, documentées et réplicables</li>
-<li><strong>Rigueur disciplinaire</strong> : Maintenir les méthodes historiques et la pensée critique tout en intégrant les nouvelles technologies</li>
+<li><strong>L’IA comme outil et méthode</strong>: Comprendre l’IA non seulement comme un outil technique mais aussi comme une approche méthodologique qui façonne les questions de recherche et les interprétations</li>
+<li><strong>Critique des sources numériques</strong>: Appliquer une évaluation critique rigoureuse aux contenus générés par l’IA, aux jeux de données et aux résultats algorithmiques</li>
+<li><strong>Conscience éthique</strong>: Favoriser une utilisation responsable de l’IA qui prend en compte la vie privée, les biais, la représentation et les dynamiques de pouvoir</li>
+<li><strong>Transparence et reproductibilité</strong>: Promouvoir des pratiques de recherche ouvertes, documentées et réplicables</li>
+<li><strong>Rigueur disciplinaire</strong>: Maintenir les méthodes historiques et la pensée critique tout en intégrant les nouvelles technologies</li>
 </ol>
 </section>
 <section id="chaque-exercice-comprend" class="level3">
@@ -561,7 +591,7 @@ Moritz Mähr
 </section>
 <section id="principes-fair-et-care" class="level3">
 <h3 class="anchored" data-anchor-id="principes-fair-et-care">Principes FAIR et CARE</h3>
-<p>Ce projet adhère :</p>
+<p>Ce projet adhère:</p>
 <ul>
 <li>Aux principes <strong>FAIR</strong> (Findable, Accessible, Interoperable, Reusable) pour les données de recherche et les matériels pédagogiques</li>
 <li>Aux principes <strong>CARE</strong> (Collective Benefit, Authority to Control, Responsibility, Ethics) pour une gouvernance responsable des données</li>
@@ -574,8 +604,8 @@ Moritz Mähr
 <section id="licence" class="level3">
 <h3 class="anchored" data-anchor-id="licence">Licence</h3>
 <ul>
-<li>Matériels pédagogiques : <a href="../LICENSE-CCBYNCSA.html">CC BY NC SA 4.0</a></li>
-<li>Code : <a href="../LICENSE-AGPL.html">AGPL 3.0</a></li>
+<li>Matériels pédagogiques: <a href="../LICENSE-CCBYNCSA.html">CC BY NC SA 4.0</a></li>
+<li>Code: <a href="../LICENSE-AGPL.html">AGPL 3.0</a></li>
 </ul>
 </section>
 <section id="contact" class="level3">
