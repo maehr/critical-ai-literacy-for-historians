@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Quellen]
+image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
   - Quellensuche
   - Archive

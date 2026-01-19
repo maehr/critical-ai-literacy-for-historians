@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Méthodes]
+image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
 tags:
   - Pratiques de citation
   - Gestion des références
@@ -133,7 +134,7 @@ Vous pouvez réaliser cet exercice avec des LLM de différents fournisseurs. Pou
 
 ## Objectifs d'apprentissage
 
-Après avoir complété cet exercice, vous serez en mesure de :
+Après avoir complété cet exercice, vous serez en mesure de:
 
 - expliquer les fonctions épistémiques et éthiques des citations académiques en recherche historique
 - distinguer clairement entre **connaissances communes**, **sources primaires** et **littérature secondaire**
@@ -144,9 +145,9 @@ Après avoir complété cet exercice, vous serez en mesure de :
 
 ## Que sont les citations académiques ?
 
-Les citations académiques constituent le système formalisé pour référencer des informations, des idées, des données et des interprétations. En recherche historique, elles fonctionnent comme un **mécanisme de contrôle** méthodologique : elles rendent les arguments **vérifiables**, reconstructibles et critiquables en permettant aux lecteurs d'accéder à la base de preuves.
+Les citations académiques constituent le système formalisé pour référencer des informations, des idées, des données et des interprétations. En recherche historique, elles fonctionnent comme un **mécanisme de contrôle** méthodologique: elles rendent les arguments **vérifiables**, reconstructibles et critiquables en permettant aux lecteurs d'accéder à la base de preuves.
 
-Les citations relient les arguments à :
+Les citations relient les arguments à:
 
 - **Sources primaires** (documents contemporains, dossiers, lettres, protocoles, etc.)
 - **Littérature secondaire** (interprétations savantes ultérieures)
@@ -174,8 +175,8 @@ Sans ce lien, les textes historiques perdent leur caractère scientifique et dev
 
 ### 4) Argumentation fondée sur des preuves
 
-- Sources primaires : fondement empirique.
-- Littérature secondaire : contexte, théorie, méthodologie, état du débat.
+- Sources primaires: fondement empirique.
+- Littérature secondaire: contexte, théorie, méthodologie, état du débat.
 
 ### 5) Fonctions discursives et techniques des notes de bas de page
 
@@ -184,13 +185,13 @@ Sans ce lien, les textes historiques perdent leur caractère scientifique et dev
 - Références aux contre-preuves / interprétations alternatives.
 - Recommandations de lecture sans surcharger le texte principal.
 
-**Point clé** : Les citations ne garantissent pas la « vérité » mais l'**inspectabilité**.
+**Point clé**: Les citations ne garantissent pas la « vérité » mais l'**inspectabilité**.
 
 ## Quand dois-je citer ?
 
 **Toute affirmation qui dépasse les connaissances générales de base nécessite une citation.**
 
-**Toujours citer :**
+**Toujours citer:**
 
 - Citations directes (guillemets + référence)
 - Paraphrases (l'idée reste empruntée, même si la formulation est nouvelle)
@@ -198,7 +199,7 @@ Sans ce lien, les textes historiques perdent leur caractère scientifique et dev
 - Données/statistiques et mesures opérationnalisées
 - Emprunts indirects (source primaire via littérature secondaire → double attribution)
 
-**Exception : Connaissances communes.** Les faits largement connus, non controversés et triviaux ne nécessitent pas de référence. **Mais** : Dès que vous qualifiez, précisez, quantifiez ou entrez en territoire controversé, une citation est requise.
+**Exception: Connaissances communes.** Les faits largement connus, non controversés et triviaux ne nécessitent pas de référence. **Mais**: Dès que vous qualifiez, précisez, quantifiez ou entrez en territoire controversé, une citation est requise.
 
 ## Comment citer ?
 
@@ -206,10 +207,10 @@ Utilisez un logiciel de gestion des références (par exemple, Zotero) et suivez
 
 ## Structure de l'exercice
 
-- Exercice 1 : Tester et comparer la citation automatisée.
-- Exercice 2 : Vérifier les résumés générés par IA pour la correction des citations et la fidélité aux sources.
+- Exercice 1: Tester et comparer la citation automatisée.
+- Exercice 2: Vérifier les résumés générés par IA pour la correction des citations et la fidélité aux sources.
 
-## Exercice 1 : Citation automatisée
+## Exercice 1: Citation automatisée
 
 ``` markdown
 Citez l'article <https://doi.org/10.1093/pastj/gtae018> selon le Chicago Manual of Style.
@@ -217,7 +218,7 @@ Créez également une entrée dans un format que je peux directement importer da
 ```
 
 ::: callout-tip
-Si l'IA n'a pas accès à l'article, vous pouvez télécharger l'article en PDF ou copier le contenu et les métadonnées de l'article au début du prompt et les séparer visuellement, par exemple avec """. Exemple :
+Si l'IA n'a pas accès à l'article, vous pouvez télécharger l'article en PDF ou copier le contenu et les métadonnées de l'article au début du prompt et les séparer visuellement, par exemple avec """. Exemple:
 
 """
 CONTENU DU DOCUMENT
@@ -235,21 +236,21 @@ Comparez la réponse avec votre citation manuelle, les recommandations officiell
 - Toutes les informations correspondent-elles ?
 - Y a-t-il des écarts systématiques (par exemple, avec les numéros de page, les éditeurs, les titres de revues) ?
 
-## Exercice 2 : Résumé assisté par IA avec citations originales
+## Exercice 2: Résumé assisté par IA avec citations originales
 
 ``` markdown
 Résumez l'article <https://doi.org/10.1093/pastj/gtae018>. 
 Utilisez uniquement des citations originales de l'article et citez-les selon le Chicago Manual of Style.
 ```
 
-Vérifiez la réponse par rapport à l'article original :
+Vérifiez la réponse par rapport à l'article original:
 
 - Les citations correspondent-elles au texte original (formulation, numéro de page) ?
 - Le sens des citations a-t-il été correctement transmis ?
 
 ## Ressources complémentaires
 
-- [The Markup : Comment les outils de détection de l'IA accusent faussement les étudiants internationaux de tricherie](https://themarkup.org/machine-learning/2023/08/14/how-ai-detection-tools-falsely-accuse-international-students-of-cheating) (ANGLAIS) – Preuves empiriques contre les détecteurs d'IA ; pertinent pour les discussions sur l'évaluation et les politiques.
+- [The Markup: Comment les outils de détection de l'IA accusent faussement les étudiants internationaux de tricherie](https://themarkup.org/machine-learning/2023/08/14/how-ai-detection-tools-falsely-accuse-international-students-of-cheating) (ANGLAIS) – Preuves empiriques contre les détecteurs d'IA ; pertinent pour les discussions sur l'évaluation et les politiques.
 - [The Turing Way](https://the-turing-way.netlify.app/) (ANGLAIS) – Manuel pour une recherche reproductible, éthique et collaborative.
 
 ## Bibliographie

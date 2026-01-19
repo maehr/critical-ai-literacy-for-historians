@@ -6,7 +6,7 @@ listing:
   contents: exercises
   type: grid
   categories: true
-  fields: [title, subtitle, description, categories]
+  fields: [image, title, subtitle, description, categories]
   exclude: 
     title: "Übungen" # exercises/index.qmd
 ---

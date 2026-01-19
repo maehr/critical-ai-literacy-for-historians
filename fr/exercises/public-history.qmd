@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Public History]
+image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
   - Communication scientifique
   - Transfert de connaissances
@@ -41,7 +42,7 @@ references:
 
 ## Aperçu et objectif didactique
 
-Cet exercice forme la communication des savoirs en public history comme **travail de traduction processuel** : d'un article scientifique (argument, preuves, incertitudes) vers des formats orientés vers le public. L'IA générative est utilisée ici **non** comme une autorité, mais comme un *outil pour l'ébauche, la variation, l'édition et la relecture* – avec référence cohérente aux sources, traçabilité et limites claires.
+Cet exercice forme la communication des savoirs en public history comme **travail de traduction processuel**: d'un article scientifique (argument, preuves, incertitudes) vers des formats orientés vers le public. L'IA générative est utilisée ici **non** comme une autorité, mais comme un *outil pour l'ébauche, la variation, l'édition et la relecture* – avec référence cohérente aux sources, traçabilité et limites claires.
 
 ## Prérequis
 
@@ -72,7 +73,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 - Vérifier systématiquement les réponses (affirmation par affirmation, veto des sources, marquer les incertitudes) et documenter les changements de manière traçable (piste d'audit).
 - Préparer un kit d'interview (soundbites, Q&R, liste de no-go, déclaration de transparence).
 
-Le texte de base est un article scientifique (de préférence en accès libre) de votre domaine. Par ex. :
+Le texte de base est un article scientifique (de préférence en accès libre) de votre domaine. Par ex.:
 
 - <https://doi.org/10.1093/pastj/gtae018>
 
@@ -81,24 +82,24 @@ Le texte de base est un article scientifique (de préférence en accès libre) d
 1. **Briefing de communication** (1 page)
 2. **Carte des messages + matrice de preuves** (forme tableau ou points)
 3. **Article de blog** (env. 700–1 000 mots) *ou* **script de podcast** (env. 6–8 minutes)
-4. **Deux formats courts** parmi : réseaux sociaux, blocs de texte poster, kit d'interview
+4. **Deux formats courts** parmi: réseaux sociaux, blocs de texte poster, kit d'interview
 5. **Protocole IA** (journal prompt/réponse + note de réflexion, env. 300–500 mots)
 
-## Cadre méthodologique : L'IA comme infrastructure de communication critiquement réfléchie
+## Cadre méthodologique: L'IA comme infrastructure de communication critiquement réfléchie
 
-Termes (pour cet exercice) :
+Termes (pour cet exercice):
 
-- **Piste d'audit (Protocole IA) :** Documentation des prompts, réponses, décisions, corrections et références aux sources, de sorte que votre processus reste traçable.
-- **Veto des sources :** Toute accentuation narrative est autorisée, **à condition** qu'elle ne contredise pas les déclarations documentées dans l'article.
-- **Vérification affirmation par affirmation :** Les déclarations sont décomposées en *affirmations* vérifiables, liées à des preuves ou marquées comme spéculation.
+- **Piste d'audit (Protocole IA):** Documentation des prompts, réponses, décisions, corrections et références aux sources, de sorte que votre processus reste traçable.
+- **Veto des sources:** Toute accentuation narrative est autorisée, **à condition** qu'elle ne contredise pas les déclarations documentées dans l'article.
+- **Vérification affirmation par affirmation:** Les déclarations sont décomposées en *affirmations* vérifiables, liées à des preuves ou marquées comme spéculation.
 
 Les moteurs de recherche et les systèmes d'IA structurent la visibilité de manière problématique.[@noble2018oppression] Le contenu généré par l'IA pour les applications de public history comporte des risques particuliers, car il atteint un large public sans expertise professionnelle.[@bender2021stochastic]
 
 ::: callout-important
 
-## Règle de base : L'IA ne peut pas « inventer »
+## Règle de base: L'IA ne peut pas « inventer »
 
-Travaillez avec un **package de sources** : titre/DOI, résumé, résultats centraux dans vos propres notes, quelques points clés/emplacements de preuves (pages/sections), éventuellement figures/tableaux.
+Travaillez avec un **package de sources**: titre/DOI, résumé, résultats centraux dans vos propres notes, quelques points clés/emplacements de preuves (pages/sections), éventuellement figures/tableaux.
 Ne donnez à l'IA que du matériel que vous pouvez contrôler vous-même, et faites travailler l'IA explicitement **uniquement à partir de cela**.
 :::
 
@@ -106,46 +107,46 @@ Ne donnez à l'IA que du matériel que vous pouvez contrôler vous-même, et fai
 
 ## Transparence dans le produit
 
-Prévoyez à la fin un bref élément de transparence (par ex. « Comment cela a été créé » / « Assistance IA ») : pour quoi l'IA a été utilisée (structure/variantes linguistiques/relecture), pour quoi non (faits/décisions d'interprétation).
+Prévoyez à la fin un bref élément de transparence (par ex. « Comment cela a été créé » / « Assistance IA »): pour quoi l'IA a été utilisée (structure/variantes linguistiques/relecture), pour quoi non (faits/décisions d'interprétation).
 :::
 
 ## Structure de l'exercice
 
-1. **Analyse de situation** : Contexte + public cible + objectif + contraintes (briefing)
-2. **Planification** : Message clé + preuves + route narrative (carte des messages)
-3. **Ébauche** : Première version (blog ou podcast) avec logique de preuves propre
-4. **Révision** : Vérification des faits/preuves, compréhensibilité, ton, éthique
-5. **Remix/Adaptation** : Formats courts (social/poster) + préparation d'interview
-6. **Documentation** : Protocole IA + réflexion
+1. **Analyse de situation**: Contexte + public cible + objectif + contraintes (briefing)
+2. **Planification**: Message clé + preuves + route narrative (carte des messages)
+3. **Ébauche**: Première version (blog ou podcast) avec logique de preuves propre
+4. **Révision**: Vérification des faits/preuves, compréhensibilité, ton, éthique
+5. **Remix/Adaptation**: Formats courts (social/poster) + préparation d'interview
+6. **Documentation**: Protocole IA + réflexion
 
 ## 1. Analyse du public cible et briefing de communication
 
 ### Objectif
 
-Opérationnaliser la communication comme une **décision dépendante du contexte** : Pour *qui*, *où*, *pourquoi*, *dans quel médium* ?
+Opérationnaliser la communication comme une **décision dépendante du contexte**: Pour *qui*, *où*, *pourquoi*, *dans quel médium* ?
 
 ### Tâche
 
-Choisissez un contexte de communication spécifique (par ex. blog de musée, journal local, podcast scientifique, Instagram d'archives, panneau d'exposition). Créez un **briefing de communication** avec :
+Choisissez un contexte de communication spécifique (par ex. blog de musée, journal local, podcast scientifique, Instagram d'archives, panneau d'exposition). Créez un **briefing de communication** avec:
 
-- Public(s) cible(s) : connaissances préalables, intérêts, déclencheurs/malentendus possibles
-- Objectif : informer / contextualiser / ouvrir le débat / connaissances pratiques etc.
-- Médium/format : longueur, ton, visuel/audio, interaction
-- Contraintes : langue(s), accessibilité, terminologie, limites légales/éthiques
-- Critères de succès : Que devraient les destinataires *savoir* / *être capable de faire* / *voir différemment* après ?
+- Public(s) cible(s): connaissances préalables, intérêts, déclencheurs/malentendus possibles
+- Objectif: informer / contextualiser / ouvrir le débat / connaissances pratiques etc.
+- Médium/format: longueur, ton, visuel/audio, interaction
+- Contraintes: langue(s), accessibilité, terminologie, limites légales/éthiques
+- Critères de succès: Que devraient les destinataires *savoir* / *être capable de faire* / *voir différemment* après ?
 
 ### Flux de travail IA (Esquisse de prompt)
 
 ``` markdown
 Tu es un assistant de recherche d'audience. Génère 2–3 personas de public cible plausibles pour le contexte suivant (sans inventer de faits sur des personnes réelles).
-Pour chaque persona : connaissances préalables, motivations, malentendus possibles, exemples/métaphores appropriés, no-gos.
-Contexte : ...
-Sujet/article en 3 phrases : ...
+Pour chaque persona: connaissances préalables, motivations, malentendus possibles, exemples/métaphores appropriés, no-gos.
+Contexte: ...
+Sujet/article en 3 phrases: ...
 ```
 
 ### Comparaison critique
 
-- Persona ≠ réalité : complétez/vérifiez les hypothèses (par ex. avec des indices de public cible réels, concepts de musée, directives médias).
+- Persona ≠ réalité: complétez/vérifiez les hypothèses (par ex. avec des indices de public cible réels, concepts de musée, directives médias).
 - Quelles simplifications seraient épistémiquement risquées ? Notez les *lignes rouges*.
 
 ## 2. Carte des messages et route narrative
@@ -156,21 +157,21 @@ Construire une **architecture communicative centrale** qui reste stable à trave
 
 ### Tâche
 
-Créez :
+Créez:
 
-1. **One-liner** (1 phrase) : Quel est le message clé – et pourquoi compte-t-il *pour ce public cible* ?
+1. **One-liner** (1 phrase): Quel est le message clé – et pourquoi compte-t-il *pour ce public cible* ?
 2. **3–4 points d'appui** (1–2 phrases chacun) avec référence aux preuves
-3. **Matrice de preuves** : Quels points d'appui reposent sur quelles données/emplacements de sources ?
-4. **Contexte/cadrage** : Qu'est-ce qui doit être expliqué pour que rien ne soit déformé ?
-5. **Incertitudes** : Qu'est-ce qui est contesté, limité ou seulement plausible, non prouvé ?
+3. **Matrice de preuves**: Quels points d'appui reposent sur quelles données/emplacements de sources ?
+4. **Contexte/cadrage**: Qu'est-ce qui doit être expliqué pour que rien ne soit déformé ?
+5. **Incertitudes**: Qu'est-ce qui est contesté, limité ou seulement plausible, non prouvé ?
 
 ### Flux de travail IA (Esquisse de prompt)
 
 ``` markdown
-Rôle : Tu es un structureur. Travaille uniquement avec le package de sources + briefing.
+Rôle: Tu es un structureur. Travaille uniquement avec le package de sources + briefing.
 Génère une carte des messages (one-liner + 3–4 points d'appui + 'so what' pour le public cible).
 Marque chaque point avec des IDs d'affirmation et indique les paragraphes de contexte nécessaires.
-Matériel : ...
+Matériel: ...
 ```
 
 ### Comparaison critique
@@ -178,7 +179,7 @@ Matériel : ...
 - Où le « présentisme » (superposition du présent) ou la simplification morale menace-t-il ?
 - Où sont nécessaires des termes/définitions au lieu de la narration ?
 
-## 3. Ébauche I : Article de blog
+## 3. Ébauche I: Article de blog
 
 ### Objectif
 
@@ -186,7 +187,7 @@ Créer un modèle textuel de base qui sert de référence pour d'autres adaptati
 
 ### Tâche
 
-Rédigez un article de blog (env. 700–1 000 mots) avec :
+Rédigez un article de blog (env. 700–1 000 mots) avec:
 
 - Une ouverture qui correspond au public cible et à l'objectif
 - Structure de section claire (sous-titres)
@@ -197,19 +198,19 @@ Rédigez un article de blog (env. 700–1 000 mots) avec :
 ### Flux de travail IA (Esquisse de prompt)
 
 ``` markdown
-Rôle : Tu es un rédacteur de blog. Rédige un article de blog pour le contexte suivant.
-Contraintes : Longueur 900 mots, sous-titres clairs, pas de nouveaux faits.
+Rôle: Tu es un rédacteur de blog. Rédige un article de blog pour le contexte suivant.
+Contraintes: Longueur 900 mots, sous-titres clairs, pas de nouveaux faits.
 Utilise des IDs d'affirmation dans le texte entre crochets, par ex. [C3].
-Matériel : Briefing + package de sources + carte des messages + tableau d'affirmations.
+Matériel: Briefing + package de sources + carte des messages + tableau d'affirmations.
 ```
 
 ### Comparaison critique
 
-- Vérifiez chaque paragraphe : Quelles affirmations sont faites ? Sont-elles étayées ?
-- Vérifiez le ton et le registre : « Semble plausible » n'est pas un critère de qualité.
-- Vérifiez l'adéquation : Quels termes doivent être expliqués ?
+- Vérifiez chaque paragraphe: Quelles affirmations sont faites ? Sont-elles étayées ?
+- Vérifiez le ton et le registre: « Semble plausible » n'est pas un critère de qualité.
+- Vérifiez l'adéquation: Quels termes doivent être expliqués ?
 
-## 4. Révision : Vérification des faits, compréhensibilité, éthique
+## 4. Révision: Vérification des faits, compréhensibilité, éthique
 
 ### Objectif
 
@@ -217,75 +218,75 @@ Transformer une ébauche plausible en un produit de communication robuste.
 
 ### Tâche (Liste de contrôle)
 
-- **Affirmation par affirmation** : Chaque déclaration soit étayée, marquée comme cadrage, ou supprimée.
-- **Compréhensibilité** : Réduire ou définir le jargon inutile ; vérifier les exemples.
-- **Éthique/responsabilité** : Groupes/personnes sensibles, violence, stigmatisation, politique de données, droits d'image.
-- **Transparence** : Ajouter une brève note sur la méthode/source/assistance IA.
+- **Affirmation par affirmation**: Chaque déclaration soit étayée, marquée comme cadrage, ou supprimée.
+- **Compréhensibilité**: Réduire ou définir le jargon inutile ; vérifier les exemples.
+- **Éthique/responsabilité**: Groupes/personnes sensibles, violence, stigmatisation, politique de données, droits d'image.
+- **Transparence**: Ajouter une brève note sur la méthode/source/assistance IA.
 
 ### Flux de travail IA (Esquisse de prompt)
 
 ``` markdown
-Rôle : Tu es un vérificateur de faits.
+Rôle: Tu es un vérificateur de faits.
 1) Liste tous les faits/déclarations affirmés dans l'ébauche.
 2) Attribue-les aux IDs d'affirmation ou marque 'pas dans le package de sources'.
 3) Propose des formulations plus précises qui expriment correctement les incertitudes.
-Input : Ébauche de blog + package de sources.
+Input: Ébauche de blog + package de sources.
 ```
 
 ### Comparaison critique
 
-- L'IA peut identifier les lacunes, mais **ne peut pas** vérifier de manière fiable : la vérification reste votre travail.
+- L'IA peut identifier les lacunes, mais **ne peut pas** vérifier de manière fiable: la vérification reste votre travail.
 - Documentez les changements dans le protocole IA (pourquoi changé ? quel emplacement de preuve ?).
 
-## 5. Remix : Adaptations de format
+## 5. Remix: Adaptations de format
 
-Les tâches suivantes sont délibérément conçues comme des **adaptations** : Vous recyclez la carte des messages + le texte de base au lieu d'« inventer » à nouveau dans chaque médium.
+Les tâches suivantes sont délibérément conçues comme des **adaptations**: Vous recyclez la carte des messages + le texte de base au lieu d'« inventer » à nouveau dans chaque médium.
 
 ### 5A Réseaux sociaux (Thread + Post unique)
 
-**Objectif :** Traduire le message clé dans un *médium d'attention* sans surafirmation.
+**Objectif:** Traduire le message clé dans un *médium d'attention* sans surafirmation.
 
 **Tâche**
 
 - 1 post unique (max. 280–500 caractères, selon la plateforme) + 1 thread (5–7 posts)
-- 1 « post de contexte » : termes/cadrage
-- 1 « post d'incertitudes » : limites, questions ouvertes
+- 1 « post de contexte »: termes/cadrage
+- 1 « post d'incertitudes »: limites, questions ouvertes
 - 1 référence lien/source (appropriée au format)
 
 **Flux de travail IA**
 
 ``` markdown
 Génère 3 variantes (conservatrice / narrative / sans provocation) pour un thread.
-Règles : pas de nouveaux faits, pas d'exagération clickbait, inclure un post d'incertitudes.
-Input : Carte des messages + extrait de texte de blog + contexte.
+Règles: pas de nouveaux faits, pas d'exagération clickbait, inclure un post d'incertitudes.
+Input: Carte des messages + extrait de texte de blog + contexte.
 ```
 
 ### 5B Script de podcast (6–8 Minutes)
 
-**Objectif :** Communiquer l'argument et le contexte en format audio (voix, rythme, exemples).
+**Objectif:** Communiquer l'argument et le contexte en format audio (voix, rythme, exemples).
 
 **Tâche**
 
 - Script avec segments (accroche, contexte, 2–3 points clés, cadrage, conclusion)
 - Langage parlable (phrases courtes, verbes actifs)
-- Notes d'émission : 5 points + référence source + glossaire (3 termes)
+- Notes d'émission: 5 points + référence source + glossaire (3 termes)
 
 **Flux de travail IA**
 
 ``` markdown
 Rédige un script de podcast (7 minutes) pour [public cible/contexte].
-Structure : Accroche (15s) – Contexte (60s) – Points clés (3x90s) – Incertitudes (45s) – Conclusion (30s).
+Structure: Accroche (15s) – Contexte (60s) – Points clés (3x90s) – Incertitudes (45s) – Conclusion (30s).
 Utilise uniquement les affirmations du package de sources et marque les IDs d'affirmation dans la marge du manuscrit.
 ```
 
 ### 5C Blocs de texte poster (A1/A0, Exposition ou Conférence)
 
-**Objectif :** Hiérarchie visuelle + textes concis qui fonctionnent même sans connaissances préalables.
+**Objectif:** Hiérarchie visuelle + textes concis qui fonctionnent même sans connaissances préalables.
 
 **Tâche**
 
 - Titre (max. 10 mots), sous-titre (max. 20 mots)
-- 3 blocs de texte (max. 60 mots chacun) : « De quoi s'agit-il ? », « Quoi de neuf ? », « Pourquoi pertinent ? »
+- 3 blocs de texte (max. 60 mots chacun): « De quoi s'agit-il ? », « Quoi de neuf ? », « Pourquoi pertinent ? »
 - Légende image/graphique (max. 30 mots) + référence source
 - Texte QR (max. 15 mots) + cible du lien
 
@@ -293,8 +294,8 @@ Utilise uniquement les affirmations du package de sources et marque les IDs d'af
 
 ``` markdown
 Génère des blocs de texte poster avec des limites de mots strictes et pas de nouveaux faits.
-Fais attention à : termes clairs, pas de jugements de valeur implicites, IDs d'affirmation par bloc.
-Input : Carte des messages + matrice de preuves.
+Fais attention à: termes clairs, pas de jugements de valeur implicites, IDs d'affirmation par bloc.
+Input: Carte des messages + matrice de preuves.
 ```
 
 ## 6. Kit d'interview
@@ -305,20 +306,20 @@ Parler de la recherche avec confiance, précision et risque minimisé – y comp
 
 ### Tâche
 
-Créez un kit d'interview (1–2 pages) :
+Créez un kit d'interview (1–2 pages):
 
 - **3 soundbites** (12–20 secondes chacun, paraphrasés)
 - **5 questions centrales** + réponses courtes (3–5 phrases chacune)
 - **2 questions critiques** (par ex. « N'est-ce pas… ? ») + stratégies de transition
-- **Liste no-go** : Déclarations que vous *ne ferez pas* (pour des raisons de preuves/complexité/éthique)
+- **Liste no-go**: Déclarations que vous *ne ferez pas* (pour des raisons de preuves/complexité/éthique)
 - **Déclaration de transparence** sur la méthode et la situation des données (1–2 phrases)
 
 ### Flux de travail IA (Esquisse de prompt)
 
 ``` markdown
-Rôle : Tu es un coach médias. Génère un kit d'interview pour radio/journal.
-Règles : pas de nouveaux faits, les soundbites doivent transmettre correctement les affirmations, ne pas cacher les incertitudes.
-Input : Carte des messages + package de sources + ébauche blog/podcast.
+Rôle: Tu es un coach médias. Génère un kit d'interview pour radio/journal.
+Règles: pas de nouveaux faits, les soundbites doivent transmettre correctement les affirmations, ne pas cacher les incertitudes.
+Input: Carte des messages + package de sources + ébauche blog/podcast.
 ```
 
 ### Comparaison critique
@@ -328,8 +329,8 @@ Input : Carte des messages + package de sources + ébauche blog/podcast.
 
 ## Ressources complémentaires
 
-- [AI Pedagogy Project : Qu'est-ce que l'IA ?](https://aipedagogy.org/guide/what-is-ai/) – Introduction conceptuelle pour les publics non techniques.
-- [Critical AI Literacy : Ressources organisées](https://critical-ai-literacy.github.io/resources/) – Éthique, pouvoir, travail et politique de l'IA.
+- [AI Pedagogy Project: Qu'est-ce que l'IA ?](https://aipedagogy.org/guide/what-is-ai/) – Introduction conceptuelle pour les publics non techniques.
+- [Critical AI Literacy: Ressources organisées](https://critical-ai-literacy.github.io/resources/) – Éthique, pouvoir, travail et politique de l'IA.
 
 ## Bibliographie
 

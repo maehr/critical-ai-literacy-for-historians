@@ -11,7 +11,8 @@ author:
       - "Université de Berne"
 date: "2025-12-29"
 date-modified: today
-categories: [Sources]
+categories: [Recherche]
+image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
   - Recherche de sources
   - Archives
@@ -40,12 +41,12 @@ references:
 
 ## Aperçu et objectif didactique
 
-Cet exercice forme des **compétences de recherche transférables** : de l'opérationnalisation précise d'une question de recherche à travers des **stratégies de recherche systématiques** et **non systématiques (snowball)** jusqu'à l'**évaluation critique** des sources (provenance, contexte, biais, pertinence).[@putnam2016shadows] L'IA générative est utilisée ici comme **aide heuristique** (clarification conceptuelle, expansion de mots-clés, voies de recherche).[@milligan2019history]
+Cet exercice forme des **compétences de recherche transférables**: de l'opérationnalisation précise d'une question de recherche à travers des **stratégies de recherche systématiques** et **non systématiques (snowball)** jusqu'à l'**évaluation critique** des sources (provenance, contexte, biais, pertinence).[@putnam2016shadows] L'IA générative est utilisée ici comme **aide heuristique** (clarification conceptuelle, expansion de mots-clés, voies de recherche).[@milligan2019history]
 
-L'étude de cas est la question de recherche :\
+L'étude de cas est la question de recherche:\
 **Quel rôle l'Union suisse du commerce et de l'industrie (Vorort) a-t-elle joué dans le processus décisionnel pour l'adhésion au Conseil de l'Europe en 1963 ?**
 
-L'exercice suit une **compréhension circulaire de la recherche** : les résultats de recherche modifient les mots-clés, les hypothèses et la délimitation du design de recherche.
+L'exercice suit une **compréhension circulaire de la recherche**: les résultats de recherche modifient les mots-clés, les hypothèses et la délimitation du design de recherche.
 
 ::: callout-note
 
@@ -77,7 +78,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Objectifs d'apprentissage
 
-À l'issue de l'exercice, vous serez en mesure de :
+À l'issue de l'exercice, vous serez en mesure de:
 
 - distinguer **typologiquement** les sources (primaires/secondaires/tertiaires) et justifier leur **fonction épistémique**,
 - traduire une question de recherche en **sous-questions exploitables** et **indicateurs de recherche**,
@@ -91,12 +92,12 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 1. Opérationnaliser la question de recherche
 2. Types de sources et logique de preuve
-3. Recherche systématique I : Sources tertiaires et cadre contextuel
-4. Recherche systématique II : Catalogues, bases de données, publications officielles
-5. Recherche non systématique : Snowballing à partir de la littérature centrale et des dossiers
-6. Archives et instruments de recherche : Logique de provenance et constitution des fonds
-7. Critique des sources : Grille d'évaluation et documentation minimale
-8. Réflexion IA : Utilisation contrôlée, documentation, culture de l'erreur
+3. Recherche systématique I: Sources tertiaires et cadre contextuel
+4. Recherche systématique II: Catalogues, bases de données, publications officielles
+5. Recherche non systématique: Snowballing à partir de la littérature centrale et des dossiers
+6. Archives et instruments de recherche: Logique de provenance et constitution des fonds
+7. Critique des sources: Grille d'évaluation et documentation minimale
+8. Réflexion IA: Utilisation contrôlée, documentation, culture de l'erreur
 
 ## 1. Opérationnaliser la question de recherche
 
@@ -108,7 +109,7 @@ La question de recherche est décomposée en **sous-questions** afin que des **v
 
 Esquissez en 10 minutes un modèle de travail du *processus décisionnel* (acteurs, arènes, phases, types de documents).
 
-**Questions directrices :**
+**Questions directrices:**
 
 - Quelles arènes étatiques sont pertinentes (Conseil fédéral, départements, parlement, consultation, diplomatie) ?
 - Où le Vorort aurait-il pu intervenir (prises de position, contacts, médias, commissions d'experts) ?
@@ -123,7 +124,7 @@ Pour chaque sous-question, indique quels types de documents pourraient servir de
 
 ### Comparaison critique
 
-Marquez dans la réponse :
+Marquez dans la réponse:
 
 - déclarations **vérifiables** vs. **vagues**,
 - arènes manquantes (par ex. consultation, DFAE/DEFR),
@@ -135,20 +136,20 @@ Marquez dans la réponse :
 
 Clarifier **quelle preuve** peut étayer quelles affirmations – et quelles limites systématiques existent.
 
-### Tâche : Matrice des types de sources (Sans IA)
+### Tâche: Matrice des types de sources (Sans IA)
 
-Créez une matrice avec :
+Créez une matrice avec:
 
-- **Lignes** : Sous-questions / sous-hypothèses
-- **Colonnes** : Types de sources
+- **Lignes**: Sous-questions / sous-hypothèses
+- **Colonnes**: Types de sources
 
-**Types de sources :**
+**Types de sources:**
 
-- **Primaires** : Protocoles d'associations, correspondance, rapports internes, soumissions, notes ; documents gouvernementaux ; protocoles parlementaires ; rapports médiatiques
-- **Secondaires** : Littérature de recherche sur la politique étrangère, européenne et des associations ; histoire organisationnelle Vorort/economiesuisse
-- **Tertiaires** : Catalogues, bibliographies, dossiers, registres, bases de données, instruments de recherche
+- **Primaires**: Protocoles d'associations, correspondance, rapports internes, soumissions, notes ; documents gouvernementaux ; protocoles parlementaires ; rapports médiatiques
+- **Secondaires**: Littérature de recherche sur la politique étrangère, européenne et des associations ; histoire organisationnelle Vorort/economiesuisse
+- **Tertiaires**: Catalogues, bibliographies, dossiers, registres, bases de données, instruments de recherche
 
-Pour chaque cellule : *Qu'est-ce qui constituerait une preuve convaincante ?* / *Quels biais sont probables ?*
+Pour chaque cellule: *Qu'est-ce qui constituerait une preuve convaincante ?* / *Quels biais sont probables ?*
 
 ### Tâche (Exploration IA)
 
@@ -161,7 +162,7 @@ Attribue chaque source à une arène (Conseil fédéral / Département / Parleme
 
 Où l'IA « invente-t-elle » typiquement des sources (par ex. protocoles ou lettres apparemment spécifiques sans référence) ? Notez trois domaines à risque.
 
-## 3. Recherche systématique I : Cadre contextuel via sources tertiaires
+## 3. Recherche systématique I: Cadre contextuel via sources tertiaires
 
 ### Objectif
 
@@ -169,9 +170,9 @@ Construire un **cadre de référence orientateur** avant que la recherche approf
 
 ### Ressources principales
 
-- [Dodis : La Suisse et le Conseil de l'Europe](https://www.dodis.ch/fr/la-suisse-et-le-conseil-de-l-europe)
-- [Dodis : Adhésion au Conseil de l'Europe 1963](https://www.dodis.ch/fr/adhesion-au-conseil-de-l-europe-1963)
-- [Année Politique Suisse : Conseil de l'Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
+- [Dodis: La Suisse et le Conseil de l'Europe](https://www.dodis.ch/fr/la-suisse-et-le-conseil-de-l-europe)
+- [Dodis: Adhésion au Conseil de l'Europe 1963](https://www.dodis.ch/fr/adhesion-au-conseil-de-l-europe-1963)
+- [Année Politique Suisse: Conseil de l'Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
 - [Publications officielles de la Suisse (Archives fédérales)](https://www.amtsdruckschriften.bar.admin.ch/)
 - [chgov.bar.admin.ch (Archives fédérales)](https://www.chgov.bar.admin.ch/)
 - [e-newspaperarchives.ch (Bibliothèque ETH Zurich)](https://www.e-newspaperarchives.ch/)
@@ -194,25 +195,25 @@ Pour chaque lieu de recherche, donne 1–2 types de résultats typiques (par ex.
 - Ouvrez au moins **5** lieux de recherche mentionnés et testez **2** requêtes de recherche chacun.
 - Documentez les **résultats nuls** (mauvaise arène, mauvais terme, mauvaise période, numérisation manquante).
 
-## 4. Recherche systématique II : Catalogues, bases de données, publications officielles
+## 4. Recherche systématique II: Catalogues, bases de données, publications officielles
 
 ### Objectif
 
 Développer des termes de recherche comme **hypothèses testables**, incl. terminologie historique et variantes de noms.
 
-### Tâche A : Champs conceptuels
+### Tâche A: Champs conceptuels
 
-Créez trois champs conceptuels (DE/FR/EN) :
+Créez trois champs conceptuels (DE/FR/EN):
 
-1. **Acteur** : Vorort ; Union suisse du commerce et de l'industrie ; USCI ; economiesuisse (*marquer comme rétroprojection*)
-2. **Événement/Institution** : Conseil de l'Europe ; Council of Europe ; adhésion/membership ; 1963 ; CEDH/CrEDH (comme voies contextuelles)
-3. **Processus/Mécanismes** : Consultation ; groupe d'intérêt ; soumission ; prise de position ; expertise ; intérêts économiques ; politique économique extérieure
+1. **Acteur**: Vorort ; Union suisse du commerce et de l'industrie ; USCI ; economiesuisse (*marquer comme rétroprojection*)
+2. **Événement/Institution**: Conseil de l'Europe ; Council of Europe ; adhésion/membership ; 1963 ; CEDH/CrEDH (comme voies contextuelles)
+3. **Processus/Mécanismes**: Consultation ; groupe d'intérêt ; soumission ; prise de position ; expertise ; intérêts économiques ; politique économique extérieure
 
-### Tâche B (Assistée par IA) : Listes de synonymes contrôlées
+### Tâche B (Assistée par IA): Listes de synonymes contrôlées
 
 ``` markdown
 Crée pour les trois champs conceptuels (Acteur / Institution-Événement / Processus) 12–20 termes de recherche chacun.
-Conditions :
+Conditions:
 - Sortie DE/FR/EN séparément
 - Considérer les orthographes historiques et les abréviations
 - Pour chaque terme, indiquer où il apparaît plus probablement (protocole parlementaire / documents internes / presse)
@@ -224,51 +225,51 @@ Conditions :
 - Supprimez ou marquez les termes anachroniques comme **ancres de recherche rétrospectives**.
 - Complétez les **ancres de personnes et de lieux** (par ex. présidence du Vorort, délégués ; Berne/Zurich ; départements pertinents).
 
-## 5. Recherche systématique : Littérature secondaire et ouvrages de référence
+## 5. Recherche systématique: Littérature secondaire et ouvrages de référence
 
 ### Objectif
 
 Créer une base de départ fiable de littérature secondaire (incl. bibliographies).
 
-### Tâche A : Stratégie de catalogue
+### Tâche A: Stratégie de catalogue
 
-Recherchez avec des combinaisons comme :
+Recherchez avec des combinaisons comme:
 
 - (Vorort OR USCI) AND (Conseil de l'Europe OR Council of Europe) AND 196*
 - (Associations OR Politique d'intérêts) AND (Politique étrangère OR Politique européenne) AND Suisse AND 1950*–1960*
 - Suisse AND Conseil de l'Europe AND (adhésion OR membership)
 
-Documentez :
+Documentez:
 
 - Termes de recherche
 - Filtres (année, langue, type de matériel)
 - Nombre de résultats
 - Critères de sélection
 
-### Tâche B (Assistée par IA) : Optimiser les termes de recherche
+### Tâche B (Assistée par IA): Optimiser les termes de recherche
 
 ``` markdown
-Voici mes termes de recherche précédents et mes problèmes de résultats : [insérer].
+Voici mes termes de recherche précédents et mes problèmes de résultats: [insérer].
 Optimise les termes de recherche pour les catalogues (booléen, phrases, troncature).
 Donne 6 variantes et explique brièvement quel problème chaque variante adresse.
 ```
 
 ### Livrable
 
-- **Bibliographie brièvement annotée** (8–12 titres) avec :
+- **Bibliographie brièvement annotée** (8–12 titres) avec:
 
   - Pertinence pour la question (1–2 phrases)
   - Valeur de source attendue (quelles sources primaires sont citées ?)
 
-## 6. Recherche non systématique : Snowballing
+## 6. Recherche non systématique: Snowballing
 
 ### Objectif
 
 À partir d'un **petit corpus de départ**, reconstruire les débats et les références aux sources.
 
-### Tâche : Définir le set de départ
+### Tâche: Définir le set de départ
 
-Sélectionnez :
+Sélectionnez:
 
 - 1 dossier ou édition (navigateur),
 - 1 présentation d'ensemble,
@@ -283,7 +284,7 @@ Sélectionnez :
 ### Tâche (Exploration IA)
 
 ``` markdown
-J'ai les 8 références bibliographiques ou de sources suivantes :
+J'ai les 8 références bibliographiques ou de sources suivantes:
 1. ___
 2. ___
 …
@@ -296,7 +297,7 @@ Propose une recherche de suivi pour chacune.
 
 Le snowballing reproduit les canons et les angles morts. Notez les perspectives manquantes (par ex. syndicats, partis, acteurs internationaux) et les contre-stratégies possibles.
 
-## 7. Recherche aux archives : Instruments de recherche, fonds, accès
+## 7. Recherche aux archives: Instruments de recherche, fonds, accès
 
 ### Objectif
 
@@ -312,41 +313,41 @@ Identifier les sources primaires de manière à ce qu'elles soient **commandable
 
 ## Note méthodologique
 
-« Dossier trouvé » n'est pas la même chose que « preuve sécurisée ». Les instruments de recherche sont des instruments d'accès tertiaires : ils structurent la visibilité, pas la vérité.
+« Dossier trouvé » n'est pas la même chose que « preuve sécurisée ». Les instruments de recherche sont des instruments d'accès tertiaires: ils structurent la visibilité, pas la vérité.
 :::
 
-### Tâche A : Analyse des instruments de recherche
+### Tâche A: Analyse des instruments de recherche
 
-Reconstruisez pour **une** archive :
+Reconstruisez pour **une** archive:
 
 - Types de séries et de dossiers,
 - Logique de catalogage,
 - Restrictions d'accès.
 
-### Tâche B : Shortlist de dossiers (1960–1963)
+### Tâche B: Shortlist de dossiers (1960–1963)
 
-Créez une shortlist de **10 unités** avec :
+Créez une shortlist de **10 unités** avec:
 
 - Cote ou permalien,
 - Titre et période,
 - Relation attendue à la sous-hypothèse,
 - Accès (en ligne / salle de lecture / demande).
 
-### Tâche C (Assistée par IA) : Planifier les voies de recherche
+### Tâche C (Assistée par IA): Planifier les voies de recherche
 
 ``` markdown
-Propose trois voies de recherche :
+Propose trois voies de recherche:
 1) Centrée sur les acteurs
 2) Orientée processus
 3) Centrée sur les événements
-Par voie : 8–12 termes de recherche (DE/FR/EN) incl. variantes de noms.
+Par voie: 8–12 termes de recherche (DE/FR/EN) incl. variantes de noms.
 ```
 
 ## 8. Itération, reproductibilité et réflexion IA
 
 ### Protocole de recherche
 
-Au minimum :
+Au minimum:
 
 - Date, outil/portail, requête, filtre, nombre de résultats
 - Critères de sélection
@@ -369,13 +370,13 @@ Au minimum :
 
 1. Matrice des sources (sous-questions × types de sources)
 2. Protocole de recherche (≥ 15 entrées)
-3. Shortlist : 10 unités de sources primaires
+3. Shortlist: 10 unités de sources primaires
 4. Bibliographie brièvement annotée (8–12 titres)
 5. Réflexion sur l'utilisation de l'IA incl. protocole IA
 
 ## Ressources complémentaires
 
-- [Ranke.2 : Aperçu des leçons](https://ranke2.uni.lu/lessons/) – Modules d'apprentissage sur le web, les médias sociaux et le changement numérique.
+- [Ranke.2: Aperçu des leçons](https://ranke2.uni.lu/lessons/) – Modules d'apprentissage sur le web, les médias sociaux et le changement numérique.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique des données d'entraînement et ses parallèles avec la critique des sources.
 
 ## Bibliographie

@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [KI & Digitale Methoden]
+image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
   - Prompting
   - Toolkritik

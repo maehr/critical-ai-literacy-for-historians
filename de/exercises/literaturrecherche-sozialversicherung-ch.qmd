@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Methoden]
+image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
 tags:
   - Literaturrecherche
   - Literaturanalyse

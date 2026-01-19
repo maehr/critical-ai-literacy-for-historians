@@ -4,6 +4,7 @@ title: "Critique des sources"
 subtitle: "Conseil fédéral et Conseil de l'Europe 1949"
 description: "Un exercice guidé pour la critique externe et interne systématique des sources sur une note diplomatique (Dodis)."
 categories: [Sources]
+image: ../../assets/images/source_criticism_Gemini_Generated_Image_ne84kfne84kfne84.png
 tags:
   - Critique des sources
   - Contextualisation
@@ -40,9 +41,9 @@ references:
 
 ## Aperçu et objectif didactique
 
-Cet exercice enseigne des **compétences transférables en critique des sources** (critique externe et interne) à l'aide d'une source spécifique des *Documents Diplomatiques Suisses (Dodis)*. La question centrale est de savoir comment une source est traitée **comme un objet de preuve historique** : non pas comme un « répertoire de faits », mais comme un **artefact situé** avec un contexte de création et une histoire de transmission.
+Cet exercice enseigne des **compétences transférables en critique des sources** (critique externe et interne) à l'aide d'une source spécifique des *Documents Diplomatiques Suisses (Dodis)*. La question centrale est de savoir comment une source est traitée **comme un objet de preuve historique**: non pas comme un « répertoire de faits », mais comme un **artefact situé** avec un contexte de création et une histoire de transmission.
 
-**Étude de cas (Source primaire) : [Dodis : La Suisse et le Conseil de l'Europe](https://dodis.ch/5020)**
+**Étude de cas (Source primaire): [Dodis: La Suisse et le Conseil de l'Europe](https://dodis.ch/5020)**
 
 ::: callout-note
 
@@ -74,7 +75,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Objectifs d'apprentissage
 
-À l'issue de l'exercice, vous serez en mesure de :
+À l'issue de l'exercice, vous serez en mesure de:
 
 - appliquer systématiquement la critique des sources **externe** et **interne**,
 - vérifier l'**authenticité, la provenance et la transmission** d'une note éditée numériquement,
@@ -86,38 +87,38 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Structure de l'exercice
 
-Chaque étape contient :
+Chaque étape contient:
 
 - un **objectif**,
 - des **tâches concrètes** (incl. prompts IA optionnels),
 - une **consigne de travail et de réflexion**.
 
-1. Orientation : Type de source, paraphrase minimale, première heuristique de recherche
-2. Critique externe : Provenance, authenticité, transmission, édition
-3. Critique interne : Position de locuteur, intention, logique d'argumentation, biais
-4. Contextualisation & contre-vérification : Triangulation avec d'autres sources
-5. Valeur probante & « pouvoir de veto » : Ce qui peut être étayé, ce qui ne peut pas
-6. Documentation & réflexion : Reproductibilité, protocole IA
+1. Orientation: Type de source, paraphrase minimale, première heuristique de recherche
+2. Critique externe: Provenance, authenticité, transmission, édition
+3. Critique interne: Position de locuteur, intention, logique d'argumentation, biais
+4. Contextualisation & contre-vérification: Triangulation avec d'autres sources
+5. Valeur probante & « pouvoir de veto »: Ce qui peut être étayé, ce qui ne peut pas
+6. Documentation & réflexion: Reproductibilité, protocole IA
 
-## 1. Orientation : Qu'est-ce que cette source (et que peut-elle représenter) ?
+## 1. Orientation: Qu'est-ce que cette source (et que peut-elle représenter) ?
 
 ### Objectif
 
-Une **première classification contrôlée** de la source comme objet : type, situation, constellation d'acteurs, focus thématique.
+Une **première classification contrôlée** de la source comme objet: type, situation, constellation d'acteurs, focus thématique.
 
-### Tâche 1 : Paraphrase minimale (sans interprétation)
+### Tâche 1: Paraphrase minimale (sans interprétation)
 
-Formulez en **max. 4 phrases** :
+Formulez en **max. 4 phrases**:
 
 - Qui parle/agit ?
 - Quel est l'occasion ?
 - Quelle est la déclaration/décision centrale ?
 - Quelle conséquence est indiquée ?
 
-### Tâche 1 : Paraphrase minimale (sans interprétation) avec l'IA
+### Tâche 1: Paraphrase minimale (sans interprétation) avec l'IA
 
 ``` markdown
-Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds aux questions suivantes :
+Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds aux questions suivantes:
 Qui parle/agit ?
 Quel est l'occasion ?
 Quelle est la déclaration/décision centrale ?
@@ -128,7 +129,7 @@ Quelle conséquence est indiquée ?
 
 ## Téléchargement de la source
 
-Téléchargez le document en fichier PDF avec le prompt. Si ce n'est pas possible, copiez le contenu du document au début du prompt et séparez-le visuellement, par exemple avec """. Assurez-vous également que l'IA a accès aux métadonnées (soit par accès en ligne, soit en fournissant les métadonnées). Exemple :
+Téléchargez le document en fichier PDF avec le prompt. Si ce n'est pas possible, copiez le contenu du document au début du prompt et séparez-le visuellement, par exemple avec """. Assurez-vous également que l'IA a accès aux métadonnées (soit par accès en ligne, soit en fournissant les métadonnées). Exemple:
 
 ``` markdown
 """
@@ -150,16 +151,16 @@ VOTRE PROMPT
 
 - Y a-t-il des biais systématiques (dans vos réponses comme dans celles générées par l'IA) ?
 
-### Tâche 2 : Première heuristique de recherche
+### Tâche 2: Première heuristique de recherche
 
-Notez trois **questions de recherche potentielles** qui seraient *en principe* exploitables avec cette source (sans encore la délimiter). Exemples de types de questions :
+Notez trois **questions de recherche potentielles** qui seraient *en principe* exploitables avec cette source (sans encore la délimiter). Exemples de types de questions:
 
 - histoire conceptuelle (la neutralité comme argument)
 - histoire institutionnelle (processus décisionnels en politique étrangère)
 - histoire des savoirs (qu'est-ce qui compte comme « compatible »/« incompatible » ?)
 - politico-culturel (attentes concernant les référendums)
 
-### Tâche 2 : Première heuristique de recherche avec l'IA
+### Tâche 2: Première heuristique de recherche avec l'IA
 
 ``` markdown
 Donne-moi trois questions de recherche historique possibles qui peuvent être dérivées de la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe).
@@ -173,41 +174,41 @@ Pour chaque question, nomme quels types de sources supplémentaires j'ai besoin 
 - Quelle question est **le moins** dépendante de la source (serait aussi formulée « de manière similaire » avec d'autres sources) ?
 - Quels termes sont déjà **chargés d'interprétation** (par ex. « neutralité », « Europe », « compatibilité ») ?
 
-## 2. Critique externe des sources : Authenticité, provenance, transmission, édition
+## 2. Critique externe des sources: Authenticité, provenance, transmission, édition
 
 ### Objectif
 
 Clarifier **ce que** ce document est en tant qu'objet, **comment** il a été transmis, et **quelle couche éditoriale** se situe entre l'original et vous.
 
-### Tâche 1 : Vérification de provenance (Métadonnées & référence d'archives)
+### Tâche 1: Vérification de provenance (Métadonnées & référence d'archives)
 
-Collectez (depuis la page Dodis) et documentez :
+Collectez (depuis la page Dodis) et documentez:
 
 - Type/genre de document (note, protocole, rapport, lettre…)
 - Date/heure, lieu
-- Auteur/signataire (ici : Max Petitpierre)
+- Auteur/signataire (ici: Max Petitpierre)
 - Destinataire(s) ou destinataire fonctionnel (explicite/implicite)
 - Cote d'archives (par ex. « E 2800(-)… »)
 - Contexte institutionnel (département, commissions, organisations participantes)
 - Tags/personnes/organisations/géographie (comme métadonnées d'édition)
 
-**Résultat :** un petit tableau + 5–8 lignes de « notes éditoriales » (Que fournit l'édition ? Qu'est-ce qui reste ouvert ?).
+**Résultat:** un petit tableau + 5–8 lignes de « notes éditoriales » (Que fournit l'édition ? Qu'est-ce qui reste ouvert ?).
 
-### Tâche 2 : L'authenticité comme forme de question
+### Tâche 2: L'authenticité comme forme de question
 
-Formulez trois questions vérifiables sur l'authenticité, par ex. :
+Formulez trois questions vérifiables sur l'authenticité, par ex.:
 
 - S'agit-il d'un original ou d'une copie/rédaction ?
 - Y a-t-il des indices d'édition ultérieure (coupes, traductions, normalisation éditoriale) ?
 - Quelles parties sont du texte de document, lesquelles sont des ajouts éditoriaux (notes de bas de page/références croisées) ?
 
-### Tâche 3 : La transmission comme problème épistémique
+### Tâche 3: La transmission comme problème épistémique
 
-Reconstruisez une chaîne de transmission plausible :
+Reconstruisez une chaîne de transmission plausible:
 
 **Création → Classement dans le processus administratif → Archivage → Catalogage → Numérisation/Édition → Affichage web**
 
-À chaque station, notez :
+À chaque station, notez:
 
 - pertes/filtres possibles (logique de sélection)
 - points de transformation possibles (rédaction, classification, attribution de métadonnées)
@@ -219,27 +220,27 @@ Reconstruisez une chaîne de transmission plausible :
 - Quelles parties de votre classification ne seraient **pas possibles** sans l'édition Dodis ?
 - Où la couche éditoriale est-elle elle-même **une source** (par ex. catégorisation, tags, sélection) ?
 
-### Tâche : Critique externe avec l'IA
+### Tâche: Critique externe avec l'IA
 
 ``` markdown
 Analyse la note de service éditée numériquement (Dodis 5020, Berne 7.7.1949) exclusivement du point de vue de la critique externe des sources.
 
-1) Identifie sur la base des métadonnées :
+1) Identifie sur la base des métadonnées:
    - Type/genre de document
    - Date et lieu
    - Auteur/signataire
    - Contexte institutionnel
    - Cote d'archives et forme de transmission
 
-2) Distingue strictement entre :
+2) Distingue strictement entre:
    a) Informations du texte du document
    b) Informations de la couche éditoriale et de métadonnées (Dodis)
 
 3) Formule trois questions vérifiables sur l'authenticité et la transmission.
 
-Important :
+Important:
 - Ne fais pas d'évaluations historiques.
-- Marque chaque déclaration explicitement comme :
+- Marque chaque déclaration explicitement comme:
   [Texte du document] / [Édition/Métadonnées] / [Conclusion].
 ```
 
@@ -249,58 +250,58 @@ Important :
 - Quelles métadonnées adopte-t-elle correctement, lesquelles restent vagues ou fausses ?
 - Dans quelle mesure le marquage explicite des niveaux force-t-il la clarté méthodologique ?
 
-## 3. Critique interne des sources : Intention de déclaration, point de vue, logique d'argumentation, biais
+## 3. Critique interne des sources: Intention de déclaration, point de vue, logique d'argumentation, biais
 
 ### Objectif
 
-Analyser **comment** le texte produit du sens : par la sélection, les formulations, les prémisses implicites, la perspective institutionnelle.
+Analyser **comment** le texte produit du sens: par la sélection, les formulations, les prémisses implicites, la perspective institutionnelle.
 
-### Tâche 1 : Analyse des actes de parole et de fonction
+### Tâche 1: Analyse des actes de parole et de fonction
 
-Déterminez la fonction de la note dans le contexte administratif (plausibilisée) :
+Déterminez la fonction de la note dans le contexte administratif (plausibilisée):
 
 - Documente-t-elle un événement « pour le dossier » ?
 - Justifie-t-elle une position auprès de tiers ?
 - Oriente-t-elle la formation d'opinion interne ?
 - Marque-t-elle une ligne rouge (la neutralité comme signal d'arrêt) ?
 
-**Résultat :** 1 paragraphe (6–10 phrases) qui argumente la *fonction* et l'*adressage* (avec preuves textuelles).
+**Résultat:** 1 paragraphe (6–10 phrases) qui argumente la *fonction* et l'*adressage* (avec preuves textuelles).
 
-### Tâche 2 : Cartographie d'arguments (La neutralité comme opérateur clé)
+### Tâche 2: Cartographie d'arguments (La neutralité comme opérateur clé)
 
-Extrayez tous les passages concernant la neutralité, la compatibilité ou les processus de décision et décomposez-les en :
+Extrayez tous les passages concernant la neutralité, la compatibilité ou les processus de décision et décomposez-les en:
 
 - **Affirmation** (claim)
 - **Garantie** (warrant)
 - **Présupposé** (assumption)
 - **Implication** (so what)
 
-**Suggestion de format (Markdown) :**
+**Suggestion de format (Markdown):**
 
 ``` markdown
-- Affirmation :
-- Garantie :
-- Présupposé :
-- Implication :
-- Preuve textuelle (citation/paraphrase) :
+- Affirmation:
+- Garantie:
+- Présupposé:
+- Implication:
+- Preuve textuelle (citation/paraphrase):
 ```
 
-### Tâche 3 : Témoignage conscient vs. inconscient
+### Tâche 3: Témoignage conscient vs. inconscient
 
-Marquez deux exemples chacun de :
+Marquez deux exemples chacun de:
 
 - **témoignage conscient** (communications adressées ciblées, déclarations de position)
 - **témoignage inconscient** (évidences, normes implicites, routines institutionnelles)
 
-Questions directrices :
+Questions directrices:
 
 - Quelles images de soi de la Suisse sont présupposées (par ex. « neutralité plus absolue ») ?
 - Quels mécanismes politiques sont considérés comme attendus (parlement, peuple, cantons) ?
 - Quelle comparaison est référencée (Suède) et pour quoi ?
 
-### Tâche 4 : Le biais comme structure, pas comme « erreur »
+### Tâche 4: Le biais comme structure, pas comme « erreur »
 
-Analysez les limitations de perspective :
+Analysez les limitations de perspective:
 
 - Quels intérêts/contraintes l'auteur a-t-il en tant que chef de département ?
 - Quels aspects manquent systématiquement (par ex. dimensions juridiques, réactions internationales, factions politiques internes) ?
@@ -311,21 +312,21 @@ Analysez les limitations de perspective :
 - Lesquelles de vos interprétations sont **proches du texte** (étayées), lesquelles sont des **hypothèses dépendantes du contexte** ?
 - Quels termes fonctionnent comme **charnières** entre le texte et le contexte (neutralité, compatibilité, référendum) ?
 
-### Tâche : Critique interne avec l'IA
+### Tâche: Critique interne avec l'IA
 
 ``` markdown
 Effectue une critique interne des sources de la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen).
 
-Analyse séparément :
+Analyse séparément:
 1) Position de locuteur et point de vue institutionnel
 2) Fonction et intention de la note dans le contexte administratif
 3) Logique d'argumentation autour de la neutralité et des processus de décision
 4) Témoignage conscient vs. inconscient
 
-Règles :
+Règles:
 - Chaque déclaration analytique doit inclure une preuve textuelle concrète
   (courte citation ou paraphrase précise).
-- S'il n'existe pas de preuve : marquer explicitement comme « hypothèse ».
+- S'il n'existe pas de preuve: marquer explicitement comme « hypothèse ».
 - N'utilise pas d'informations contextuelles qui ne sont pas intégrées dans le texte.
 ```
 
@@ -335,22 +336,22 @@ Règles :
 - Où l'IA nivelle-t-elle les perspectives institutionnelles en déclarations générales ?
 - Quelles étapes herméneutiques restent ici aussi non automatisables ?
 
-## 4. Contextualisation et contre-vérification : Triangulation plutôt que « contexte comme décor »
+## 4. Contextualisation et contre-vérification: Triangulation plutôt que « contexte comme décor »
 
 ### Objectif
 
-Tester le pouvoir explicatif de la note par une **intégration comparative** : Qu'est-ce qui est spécifique ? Qu'est-ce qui est routinier ? Qu'est-ce qui est stratégique ?
+Tester le pouvoir explicatif de la note par une **intégration comparative**: Qu'est-ce qui est spécifique ? Qu'est-ce qui est routinier ? Qu'est-ce qui est stratégique ?
 
-### Tâche 1 : Traçage intertextuel (intégré dans le document)
+### Tâche 1: Traçage intertextuel (intégré dans le document)
 
 La note fait indirectement référence à d'autres contextes (par ex. commissions, réseaux fédéralistes privés, comparaison avec la Suède).
 
-Créez une **matrice de recherche** (au moins 6 lignes) :
+Créez une **matrice de recherche** (au moins 6 lignes):
 
 | Trace dans le texte | Que chercher exactement ? | Type de source attendu | Où chercher ? | But de la contre-vérification |
 |---------------------|---------------------------|------------------------|---------------|-------------------------------|
 
-Exemples pour « Où chercher ? » (comme catégories, pas exhaustivité) :
+Exemples pour « Où chercher ? » (comme catégories, pas exhaustivité):
 
 - autres documents Dodis (références croisées, dossiers)
 - publications officielles (messages, rapports)
@@ -358,9 +359,9 @@ Exemples pour « Où chercher ? » (comme catégories, pas exhaustivité) :
 - journaux (réception, controverse)
 - dossiers de comités/associations privés
 
-### Tâche 2 : Contre-question contrefactuelle (instrument de contrôle)
+### Tâche 2: Contre-question contrefactuelle (instrument de contrôle)
 
-Formulez deux contre-questions qui *défient* la note :
+Formulez deux contre-questions qui *défient* la note:
 
 - Que devrais-je trouver pour que la thèse « La neutralité a empêché l'adhésion » soit **trop grossière** ?
 - Que devrais-je trouver pour que la déclaration sur le référendum apparaisse **comme rhétorique stratégique** plutôt que comme pronostic ?
@@ -370,12 +371,12 @@ Formulez deux contre-questions qui *défient* la note :
 - Quel type de contexte est **nécessaire** (pour vérifier les affirmations), et lequel est **seulement plausibilisant** ?
 - Où le « contexte » menace-t-il de devenir un **lissage rétrospectif** ?
 
-### Tâche : Planification de recherche et de contre-vérification avec l'IA
+### Tâche: Planification de recherche et de contre-vérification avec l'IA
 
 ``` markdown
 Déduis de la note de service (Berne, 7.7.1949, Petitpierre/Hansen) un plan de recherche systématique.
 
-1) Nomme au moins :
+1) Nomme au moins:
    - 5 sources primaires complémentaires (types différents)
    - 3 types de littérature secondaire
 
@@ -384,7 +385,7 @@ Déduis de la note de service (Berne, 7.7.1949, Petitpierre/Hansen) un plan de r
 
 3) Formule une question directrice pour chaque source.
 
-Spécifications :
+Spécifications:
 - Pas de déclarations sur le contenu réel de ces sources.
 - Pas de synthèses narratives.
 - Focus exclusivement sur les voies de vérification et les contre-vérifications.
@@ -396,52 +397,52 @@ Spécifications :
 - Quels contextes manquent de manière flagrante (par ex. médias, droit, économie) ?
 - Où l'IA a-t-elle tendance à utiliser le « contexte » comme explication plutôt que comme outil de vérification ?
 
-## 5. Valeur probante et « pouvoir de veto » : Que soutient la source – et que non ?
+## 5. Valeur probante et « pouvoir de veto »: Que soutient la source – et que non ?
 
 ### Objectif
 
-Déterminer la valeur probante de manière strictement **relationnelle** : source × question de recherche.
+Déterminer la valeur probante de manière strictement **relationnelle**: source × question de recherche.
 
-### Tâche 1 : Profil de preuve (Portée des affirmations)
+### Tâche 1: Profil de preuve (Portée des affirmations)
 
-Créez une liste en deux parties :
+Créez une liste en deux parties:
 
 **A. Bien étayé (haute certitude)** Déclarations que la note soutient directement (avec preuve textuelle).
 
 **B. Non étayé / ouvert (Veto)** Déclarations que la note *suggère*, mais n'étaye pas – ou exclut même.
 
-Questions directrices :
+Questions directrices:
 
 - Que puis-je dire sur la position de Petitpierre – et que non ?
 - Que puis-je dire sur la position danoise – et qu'est-ce qui reste flou (par ex. motifs, débats internes) ?
 - Que dit la source sur « la Suisse » – et où est-ce une généralisation inadmissible ?
 
-### Tâche 2 : Micro-hypothèses avec voie de falsification
+### Tâche 2: Micro-hypothèses avec voie de falsification
 
-Formulez deux micro-hypothèses (1 phrase chacune), par ex. :
+Formulez deux micro-hypothèses (1 phrase chacune), par ex.:
 
 - « X fonctionne en 1949 comme un concept de gardien institutionnel qui bloque politiquement Y. »
 - « La référence au référendum/vote populaire sert d'argument de légitimation envers les interlocuteurs étrangers. »
 
-Pour chaque hypothèse :
+Pour chaque hypothèse:
 
 - Quelle **source supplémentaire** pourrait la soutenir ?
 - Quelle source/observation la **réfuterait** ?
 
-### Tâche : Profil de preuve avec l'IA
+### Tâche: Profil de preuve avec l'IA
 
 ``` markdown
-Crée deux listes séparées sur la base de la note de service :
+Crée deux listes séparées sur la base de la note de service:
 
 A) Déclarations que le texte soutient directement et sans ambiguïté.
 B) Déclarations que le texte ne soutient pas, suggère seulement ou exclut implicitement.
 
-Pour chaque déclaration :
+Pour chaque déclaration:
 - courte preuve textuelle ou paraphrase
-- évaluation : certain / probable / spéculatif
+- évaluation: certain / probable / spéculatif
 - justification de l'évaluation
 
-Ajout :
+Ajout:
 Formule pour deux déclarations de la Liste B chacune une
 voie de falsification concrète (quelle source devrait montrer quoi ?).
 ```
@@ -457,15 +458,15 @@ voie de falsification concrète (quelle source devrait montrer quoi ?).
 - Quelle déclaration « aimerait-on faire », mais la source ne le permet pas ?
 - Où est la frontière entre **interprétation** et **affirmation** ?
 
-## 6. Documentation & réflexion : Reproductibilité, protocole IA
+## 6. Documentation & réflexion: Reproductibilité, protocole IA
 
 ### Objectif
 
-La critique des sources comme **méthode documentée** : traçable, vérifiable, réutilisable.
+La critique des sources comme **méthode documentée**: traçable, vérifiable, réutilisable.
 
-### Tâche 1 : Protocole d'analyse (Standard minimum)
+### Tâche 1: Protocole d'analyse (Standard minimum)
 
-Créez un bref protocole :
+Créez un bref protocole:
 
 - Citation complète/permalien de la source
 - Date d'accès
@@ -476,9 +477,9 @@ Créez un bref protocole :
 - Profil de preuve (liste A/B)
 - Questions ouvertes & prochaines étapes de recherche
 
-### Tâche 2 : Réflexion IA (si l'IA a été utilisée)
+### Tâche 2: Réflexion IA (si l'IA a été utilisée)
 
-Notez :
+Notez:
 
 - Quels prompts avez-vous utilisés (verbatim) ?
 - Quelles réponses étaient utiles (et pourquoi) ?
@@ -489,12 +490,12 @@ Notez :
 
 ## Critère de qualité
 
-Une bonne critique des sources n'est pas celle qui « explique tout », mais celle qui rend visibles les **limites et les voies de vérification** : Qu'est-ce qui est étayé ? Qu'est-ce qui est hypothétique ? Qu'est-ce qui doit être vérifié ensuite ?
+Une bonne critique des sources n'est pas celle qui « explique tout », mais celle qui rend visibles les **limites et les voies de vérification**: Qu'est-ce qui est étayé ? Qu'est-ce qui est hypothétique ? Qu'est-ce qui doit être vérifié ensuite ?
 :::
 
 ## Résultat d'apprentissage
 
-À la fin, vous disposerez de :
+À la fin, vous disposerez de:
 
 - une **critique externe et interne des sources fondée** de Dodis 5020,
 - un **profil de preuve** (incl. points de veto) en relation avec une question de recherche,
@@ -504,7 +505,7 @@ Une bonne critique des sources n'est pas celle qui « explique tout », mais cel
 
 ## Ressources complémentaires
 
-- [Ranke.2 : Wikipédia comme source historique](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, historiques de révision et critique des sources numériques.
+- [Ranke.2: Wikipédia comme source historique](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, historiques de révision et critique des sources numériques.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique des données d'entraînement et ses parallèles avec la critique des sources.
 
 ## Bibliographie

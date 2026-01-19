@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Public History]
+image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
   - Science Communication
   - Knowledge Transfer

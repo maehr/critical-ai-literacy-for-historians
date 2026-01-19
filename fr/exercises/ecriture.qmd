@@ -12,6 +12,7 @@ author:
 date: '2025-12-24'
 date-modified: today
 categories: [Méthodes]
+image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
   - Pratique d'écriture
   - Argumentation
@@ -40,9 +41,9 @@ references:
 
 ## Aperçu et objectif didactique
 
-Cet exercice forme à l'**utilisation critique de l'IA générative comme assistant d'écriture** dans plusieurs rôles clairement délimités. Les rôles sont organisés pour correspondre à un processus typique d'écriture universitaire : **clarifier le problème → développer les idées → structurer → rédiger → réviser → finaliser**.
+Cet exercice forme à l'**utilisation critique de l'IA générative comme assistant d'écriture** dans plusieurs rôles clairement délimités. Les rôles sont organisés pour correspondre à un processus typique d'écriture universitaire: **clarifier le problème → développer les idées → structurer → rédiger → réviser → finaliser**.
 
-L'objectif n'est pas d'« automatiser » la production de texte, mais d'augmenter la **qualité des décisions** : meilleures questions de recherche, arguments plus cohérents, langage plus précis – tout en maintenant la **traçabilité** de la paternité et des preuves utilisées.
+L'objectif n'est pas d'« automatiser » la production de texte, mais d'augmenter la **qualité des décisions**: meilleures questions de recherche, arguments plus cohérents, langage plus précis – tout en maintenant la **traçabilité** de la paternité et des preuves utilisées.
 
 ## Prérequis
 
@@ -71,29 +72,29 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 - Concevoir des prompts pour que l'IA n'« invente » pas mais travaille avec le matériel fourni.
 - Rédiger une structure d'argument (thèse–preuves–conclusion) et tester la cohérence.
 - Générer des paragraphes à partir de ses propres points et les réviser ensuite professionnellement/terminologiquement.
-- Effectuer la révision en deux étapes : logique/compréhensibilité → langue/style.
+- Effectuer la révision en deux étapes: logique/compréhensibilité → langue/style.
 - Documenter de manière transparente son utilisation de l'IA (protocole de prompt et de décision).
 
-## Cadre méthodologique : L'IA comme infrastructure d'écriture
+## Cadre méthodologique: L'IA comme infrastructure d'écriture
 
-Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique** : elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile :
+Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile:
 
-- **Paternité historique :** Question de recherche, sélection des preuves, interprétation, positions normatives.
-- **Contribution de l'IA (instrumentale) :** Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d'erreurs.
-- **Procédure de vérification (obligatoire) :** Chaque déclaration de l'IA doit soit (a) être traçable à votre matériel d'input ou (b) être marquée comme hypothèse et vérifiée extérieurement.[@turingway2022handbook]
+- **Paternité historique:** Question de recherche, sélection des preuves, interprétation, positions normatives.
+- **Contribution de l'IA (instrumentale):** Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d'erreurs.
+- **Procédure de vérification (obligatoire):** Chaque déclaration de l'IA doit soit (a) être traçable à votre matériel d'input ou (b) être marquée comme hypothèse et vérifiée extérieurement.[@turingway2022handbook]
 
-Pour un travail plus fiable, utilisez systématiquement deux principes de prompt : 1. **Délimiter l'espace de travail** (« travaille uniquement avec mes points ; marque les incertitudes »). 2. **Réponses formatées** (listes/cartes d'arguments), pour pouvoir vérifier systématiquement et adopter sélectivement.
+Pour un travail plus fiable, utilisez systématiquement deux principes de prompt: 1. **Délimiter l'espace de travail** (« travaille uniquement avec mes points ; marque les incertitudes »). 2. **Réponses formatées** (listes/cartes d'arguments), pour pouvoir vérifier systématiquement et adopter sélectivement.
 
 ::: callout-important
 
-## Règle de base : L'IA ne peut pas « inventer »
+## Règle de base: L'IA ne peut pas « inventer »
 
 Utilisez l'IA uniquement comme **outil de transformation et de vérification** pour *votre* matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier extérieurement**.
 :::
 
 ::: callout-note
 
-## Mode de travail : Protocole IA (Piste d'audit)
+## Mode de travail: Protocole IA (Piste d'audit)
 
 Pendant l'exercice, maintenez un bref **protocole IA**. Cela fait partie de la traçabilité scientifique (et facilite la divulgation ultérieure/section méthodes).
 
@@ -108,9 +109,9 @@ Pendant l'exercice, maintenez un bref **protocole IA**. Cela fait partie de la t
 
 ## Structure de l'exercice
 
-Les rôles sont regroupés en **phases**. Les étapes individuelles peuvent être sautées ; cependant, au moins un tour complet jusqu'à la révision est judicieux. **Parcours principal (env. 45–60 min) :** 1 → 2 → 3 → 4 → 6 → 8.
+Les rôles sont regroupés en **phases**. Les étapes individuelles peuvent être sautées ; cependant, au moins un tour complet jusqu'à la révision est judicieux. **Parcours principal (env. 45–60 min):** 1 → 2 → 3 → 4 → 6 → 8.
 
-**Approfondissement optionnel :** 5 (blocages locaux), 7 (style/traduction), 9 (test de lisibilité comme révision finale).
+**Approfondissement optionnel:** 5 (blocages locaux), 7 (style/traduction), 9 (test de lisibilité comme révision finale).
 
 1. **Vérificateur de compréhension** (clarifier la tâche, identifier les angles morts)\
 2. **Partenaire de brainstorming + Avocat du diable** (ouvrir l'espace des idées + contre-arguments)\
@@ -130,23 +131,23 @@ Rendre la tâche d'écriture et votre propre intention argumentative si précise
 
 ### Tâche
 
-1. Donnez à l'IA **seulement** ce qui suit : Sujet en 2–3 phrases, contexte (cours/genre), public cible, portée, format de soumission.\
+1. Donnez à l'IA **seulement** ce qui suit: Sujet en 2–3 phrases, contexte (cours/genre), public cible, portée, format de soumission.\
 2. Faites poser à l'IA des **questions de suivi** et marquer les incertitudes.
 
 **Scaffold de prompt**
 
 ``` markdown
 Tu es un vérificateur de compréhension. Pose-moi 8–12 questions de suivi précises pour clarifier la tâche d'écriture et l'objectif d'argumentation.
-Marque :
+Marque:
 (1) informations manquantes,
 (2) hypothèses implicites,
 (3) termes qui doivent être définis opérationnellement.
 Pas de suggestions de contenu, seulement des questions et un diagnostic.
 
-Contexte : …
-Sujet/thèse (préliminaire) : …
-Genre/portée : …
-Public cible : …
+Contexte: …
+Sujet/thèse (préliminaire): …
+Genre/portée: …
+Public cible: …
 ```
 
 ### Comparaison critique
@@ -162,29 +163,29 @@ Public cible : …
 
 Générer des idées sans inventer de preuves, et co-penser immédiatement les contre-arguments/interprétations alternatives.
 
-### Tâche A : Brainstorming (orienté idées, neutre en preuves)
+### Tâche A: Brainstorming (orienté idées, neutre en preuves)
 
 ``` markdown
-Rôle : Partenaire de brainstorming. Génère 12 lignes d'arguments/hypothèses possibles sur mon sujet.
-Conditions :
+Rôle: Partenaire de brainstorming. Génère 12 lignes d'arguments/hypothèses possibles sur mon sujet.
+Conditions:
 - Formule chaque ligne comme une affirmation vérifiable (pas de faits).
-- Pour chaque ligne : quel type de preuve j'aurais besoin (types de sources/types de littérature).
+- Pour chaque ligne: quel type de preuve j'aurais besoin (types de sources/types de littérature).
 - Évite les titres de littérature spécifiques ou les cotes d'archives ; si nécessaire, formule comme heuristique de recherche.
 
-Mon sujet : …
-Mon matériel (seulement les types, pas de contenu sensible) : …
+Mon sujet: …
+Mon matériel (seulement les types, pas de contenu sensible): …
 ```
 
-### Tâche B : Avocat du diable (confrontationnel, mais productif)
+### Tâche B: Avocat du diable (confrontationnel, mais productif)
 
 ``` markdown
-Rôle : Avocat du diable. Choisis les 3 plus plausibles de mes hypothèses et argumente contre chacune.
-Pour chaque contre-argument :
+Rôle: Avocat du diable. Choisis les 3 plus plausibles de mes hypothèses et argumente contre chacune.
+Pour chaque contre-argument:
 - Nomme l'hypothèse vulnérable.
 - Propose un « test de stress » (quel constat renverserait mon argument ?).
 - Formule une interprétation alternative (max. 2 phrases).
 Pas de faits externes.
-Hypothèses : …
+Hypothèses: …
 ```
 
 ### Comparaison critique
@@ -203,19 +204,19 @@ Rédiger une **chaîne d'arguments** vérifiable (thèse → sous-thèses → pr
 ### Tâche
 
 ``` markdown
-Rôle : Structureur & Outliner.
+Rôle: Structureur & Outliner.
 Crée un plan (max. 8 points principaux) pour un texte d'env. X mots.
-Pour chaque point :
+Pour chaque point:
 - Objectif de la section (1 phrase)
 - Affirmation centrale (1 phrase)
 - Preuve requise (mots-clés ; « de mes notes/sources »)
 - Transition vers le point suivant (1 phrase)
 
-Contraintes :
+Contraintes:
 - Pas de nouveaux faits.
-- Si des preuves manquent : marquer comme [LACUNE DE PREUVE] au lieu de compléter.
+- Si des preuves manquent: marquer comme [LACUNE DE PREUVE] au lieu de compléter.
 
-Matériel (points/notes) : …
+Matériel (points/notes): …
 ```
 
 ### Vérification de qualité
@@ -236,21 +237,21 @@ Faire formuler des paragraphes à partir de votre propre matériel sans abandonn
 Sélectionnez **un** point du plan (par ex. « Argument principal 1 ») et fournissez 8–12 points (preuves, observations, citations/paraphrases, termes).
 
 ``` markdown
-Rôle : Générateur de texte à partir de points.
+Rôle: Générateur de texte à partir de points.
 Rédige un paragraphe (120–180 mots) en français académique.
-Conditions :
+Conditions:
 - Utilise uniquement les informations de mes points.
 - Pas de nouveaux exemples, données, noms, sources.
-- Si une phrase nécessiterait des informations supplémentaires : marquer [INCERTAIN].
+- Si une phrase nécessiterait des informations supplémentaires: marquer [INCERTAIN].
 - Garde ma terminologie ; demande si pas clair.
 
-Points : …
+Points: …
 ```
 
 ### Comparaison critique
 
 - Supprimez toutes les phrases qui ne sont pas directement traçables à vos points.\
-- Vérifiez la terminologie : Où l'IA lisse-t-elle des termes (par ex. « État », « société », « acteur ») de manière inadmissible ?
+- Vérifiez la terminologie: Où l'IA lisse-t-elle des termes (par ex. « État », « société », « acteur ») de manière inadmissible ?
 
 **Résultat** - 1 paragraphe + une version dans laquelle vous avez affiné indépendamment 3–5 phrases
 
@@ -265,33 +266,33 @@ Résoudre les problèmes locaux (transitions, phrases d'ouverture, définitions 
 **A) Construire une transition**
 
 ``` markdown
-Rôle : Résolveur de blocages.
+Rôle: Résolveur de blocages.
 Formule 5 variantes pour une phrase de transition entre le paragraphe A et B.
 Variante 1 neutre, 2 plus argumentative, 3 plus explicative, 4 plus courte, 5 avec marqueur de contraste.
-Paragraphe A : …
-Paragraphe B : …
+Paragraphe A: …
+Paragraphe B: …
 ```
 
 **B) Opérationnaliser une définition**
 
 ``` markdown
 Formule 3 définitions de travail possibles pour le terme « X » dans le contexte de mon sujet.
-Pour chaque définition :
+Pour chaque définition:
 - Délimitation d'1 terme voisin
 - 1 indicateur observable (comment reconnaître X dans les sources ?)
 Pas de faits externes.
-Contexte : …
+Contexte: …
 ```
 
 **C) Diagnostic de phrase**
 
 ``` markdown
-Marque dans mon paragraphe :
+Marque dans mon paragraphe:
 - la phrase centrale (topic sentence),
 - les phrases avec référent peu clair (« cela », « ainsi », « on »),
 - les phrases qui contiennent en fait deux affirmations.
 Propose des réarrangements minimaux (pas de réécriture du contenu).
-Texte : …
+Texte: …
 ```
 
 **Résultat** - 1 transition/définition révisée + brève justification de pourquoi cette variante
@@ -300,20 +301,20 @@ Texte : …
 
 ### Objectif
 
-Rendre visible la logique d'argumentation : Les preuves soutiennent-elles les affirmations ? Les règles d'inférence sont-elles traçables ? Où manquent les prémisses ?
+Rendre visible la logique d'argumentation: Les preuves soutiennent-elles les affirmations ? Les règles d'inférence sont-elles traçables ? Où manquent les prémisses ?
 
 ### Tâche
 
 ``` markdown
-Rôle : Vérificateur de logique.
-Analyse mon texte (max. 300 mots) comme une carte d'arguments :
+Rôle: Vérificateur de logique.
+Analyse mon texte (max. 300 mots) comme une carte d'arguments:
 1) Thèse principale
 2) Sous-thèses
 3) Preuves explicites (du texte)
 4) Prémisses implicites (que je présuppose apparemment)
 5) Sauts logiques ou contradictions possibles
 Puis donne 5 recommandations de révision concrètes, priorisées par impact.
-Texte : …
+Texte: …
 ```
 
 ### Comparaison critique
@@ -329,29 +330,29 @@ Texte : …
 
 Améliorer la langue et le registre sans changer la substance argumentative ; optionnellement transférer la terminologie de manière cohérente dans une seconde langue.
 
-### Tâche A : Relecture (minimalement invasive)
+### Tâche A: Relecture (minimalement invasive)
 
 ``` markdown
-Rôle : Relecture.
+Rôle: Relecture.
 Améliore la grammaire, le style et la précision, mais ne change aucune déclaration de contenu.
-Travaille de manière minimalement invasive :
+Travaille de manière minimalement invasive:
 - Remplace les mots vagues (par ex. « important », « montre ») seulement si c'est sans ambiguïté.
-- Préserve les termes techniques ; si incertain : marquer [TERME ?].
+- Préserve les termes techniques ; si incertain: marquer [TERME ?].
 À la fin, donne une liste des 5 erreurs de modèle les plus fréquentes que tu as corrigées.
-Texte : …
+Texte: …
 ```
 
-### Tâche B : Traduction (optionnelle)
+### Tâche B: Traduction (optionnelle)
 
 ``` markdown
-Rôle : Traducteur.
+Rôle: Traducteur.
 Traduis le texte en anglais (ou allemand/espagnol).
-Conditions :
+Conditions:
 - Préserve le registre (académique) et les marqueurs de prudence (par ex. « pourrait », « suggère »).
 - Garde les noms propres et les citations inchangés.
 - Donne un mini-tableau glossaire (5–10 paires de termes) pour les termes clés.
-Texte : …
-Langue cible : …
+Texte: …
+Langue cible: …
 ```
 
 **Résultat** - Version corrigée + (optionnelle) traduction + glossaire
@@ -360,20 +361,20 @@ Langue cible : …
 
 ### Objectif
 
-Distiller le texte jusqu'à sa déclaration porteuse : problème de recherche, approche, constat/argument, pertinence.
+Distiller le texte jusqu'à sa déclaration porteuse: problème de recherche, approche, constat/argument, pertinence.
 
 ### Tâche
 
 ``` markdown
-Rôle : Rédacteur de résumé.
+Rôle: Rédacteur de résumé.
 Rédige un résumé de 120–160 mots.
-Doit contenir :
+Doit contenir:
 - Problème de recherche (1 phrase)
 - Approche/matériel (1 phrase)
 - Argument/constat central (2–3 phrases)
 - Contribution/pertinence (« et alors ? ») (1 phrase)
-Pas de nouveaux faits ; si pas clair : marquer [PAS CLAIR].
-Base textuelle : …
+Pas de nouveaux faits ; si pas clair: marquer [PAS CLAIR].
+Base textuelle: …
 ```
 
 ### Vérification de qualité
@@ -381,7 +382,7 @@ Base textuelle : …
 - Le résumé couvre-t-il le **véritable** point argumentatif ou seulement le domaine thématique ?\
 - La méthode affirmée correspond-elle à ce que vous faites réellement (travail sur les sources vs. discussion de littérature) ?
 
-**Résultat** - Résumé + méta-commentaire de 2 phrases : Qu'est-ce que l'IA a mal souligné/omis ?
+**Résultat** - Résumé + méta-commentaire de 2 phrases: Qu'est-ce que l'IA a mal souligné/omis ?
 
 ## 9. Vérificateur de compréhension (Re-Run)
 
@@ -392,20 +393,20 @@ Tester la lisibilité et les marges d'interprétation du point de vue du public 
 ### Tâche
 
 ``` markdown
-Rôle : Vérificateur de compréhension.
+Rôle: Vérificateur de compréhension.
 Lis mon texte comme un lecteur critique dans un séminaire.
 1) Quelle est la thèse en une phrase ?
 2) Quels 3 points sont flous ou ambigus (chacun avec emplacement de citation) ?
 3) Quel passage semble non étayé ?
 4) Quelles deux questions me poserais-tu en feedback ?
-Texte : …
+Texte: …
 ```
 
 **Résultat** - 3 passages affinés dans le texte (1–2 phrases révisées chacun)
 
 ## Résultat d'apprentissage
 
-À la fin, vous avez un petit paquet d'artefacts scientifiquement réutilisables :
+À la fin, vous avez un petit paquet d'artefacts scientifiquement réutilisables:
 
 - Plan (avec lacunes de preuves)\
 - 1–3 paragraphes révisés (avec révisions traçables)\

@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Methods]
+image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
 tags:
   - Citation Practice
   - Reference Management

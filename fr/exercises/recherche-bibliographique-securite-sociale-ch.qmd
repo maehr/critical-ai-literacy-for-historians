@@ -12,6 +12,7 @@ author:
 date: "2025-12-29"
 date-modified: today
 categories: [Méthodes]
+image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
 tags:
   - Recherche bibliographique
   - Analyse bibliographique
@@ -89,9 +90,9 @@ references:
 
 Cet exercice introduit la recherche bibliographique systématique et l'analyse bibliographique orientée problème – avec l'objectif de pouvoir reconstruire l'état de la recherche sur un sujet historique. L'accent est mis sur l'utilisation critique contrôlée de l'IA générative comme outil heuristique pour élargir les espaces de recherche et structurer les textes.
 
-**Étude de cas : Histoire de la sécurité sociale en Suisse**
+**Étude de cas: Histoire de la sécurité sociale en Suisse**
 
-L'exercice suit un processus de recherche et d'analyse circulaire : le point de départ est un large domaine thématique (sécurité sociale), à partir duquel un focus problématique clair, une question de recherche affinée et un corpus reproductible de littérature secondaire pertinente sont successivement développés. Les phases de recherche et d'analyse manuelles alternent avec des explorations assistées par l'IA, qui sont chacune validées de manière critique.
+L'exercice suit un processus de recherche et d'analyse circulaire: le point de départ est un large domaine thématique (sécurité sociale), à partir duquel un focus problématique clair, une question de recherche affinée et un corpus reproductible de littérature secondaire pertinente sont successivement développés. Les phases de recherche et d'analyse manuelles alternent avec des explorations assistées par l'IA, qui sont chacune validées de manière critique.
 
 ## Prérequis
 
@@ -116,7 +117,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Objectifs d'apprentissage
 
-À l'issue de cet exercice, vous serez en mesure de :
+À l'issue de cet exercice, vous serez en mesure de:
 
 - justifier la fonction de la recherche et de l'analyse bibliographique dans la recherche historique,
 - traduire un sujet sur la sécurité sociale suisse en stratégie de recherche exploitable,
@@ -132,7 +133,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 **L'analyse bibliographique** est la lecture critique orientée problème de cette littérature pour reconstruire les arguments, les références théoriques, les méthodes, les bases de preuves et les controverses (plutôt que d'extraire des « faits »).
 
-**Étude de cas** : *Histoire de la sécurité sociale en Suisse* (État providence, AVS/AI/AA/AMal/AC, fédéralisme, associations, ordre de genre, transferts transnationaux).
+**Étude de cas**: *Histoire de la sécurité sociale en Suisse* (État providence, AVS/AI/AA/AMal/AC, fédéralisme, associations, ordre de genre, transferts transnationaux).
 
 ::: callout-note
 
@@ -143,7 +144,7 @@ Malgré la numérisation croissante, la recherche historique ne peut pas être e
 
 ## Structure de l'exercice
 
-Chaque étape contient :
+Chaque étape contient:
 
 - un **objectif**,
 - des **tâches concrètes** (incl. prompts IA optionnels),
@@ -151,12 +152,12 @@ Chaque étape contient :
 
 1. Formulation du problème et horizon de recherche
 2. Connaissances d'orientation via les ressources tertiaires (cadre de débat et conceptuel)
-3. Recherche systématique I : Catalogues (couverture et logique de récupération)
-4. Recherche systématique II : Revues/médias et voies spéciales (contexte, recensions, concepts)
-5. Snowballing : Citation en arrière/en avant (contrôle des canons et des angles morts)
-6. Sélection et évaluation de la qualité : pertinence, argument, méthode, preuve
+3. Recherche systématique I: Catalogues (couverture et logique de récupération)
+4. Recherche systématique II: Revues/médias et voies spéciales (contexte, recensions, concepts)
+5. Snowballing: Citation en arrière/en avant (contrôle des canons et des angles morts)
+6. Sélection et évaluation de la qualité: pertinence, argument, méthode, preuve
 7. Cartographie historiographique des débats et texte sur l'état de la recherche (condensé, sensible aux preuves)
-8. Lacune de recherche et délimitation : de l'état de la recherche à la question de recherche
+8. Lacune de recherche et délimitation: de l'état de la recherche à la question de recherche
 9. Reproductibilité et documentation
 
 ## 1. Formulation du problème et horizon de recherche
@@ -167,7 +168,7 @@ Du large domaine thématique (sécurité sociale) à un **focus problématique**
 
 ### Tâche (Sans IA)
 
-Formulez en 5-8 phrases :
+Formulez en 5-8 phrases:
 
 - Période d'investigation (par ex. 1880–1950 / 1938–1948 / 1970–2005)
 - Sous-domaine (par ex. prévoyance vieillesse, assurance maladie, invalidité, chômage)
@@ -178,14 +179,14 @@ Formulez en 5-8 phrases :
 
 ``` markdown
 Je travaille sur le sujet « Histoire de la sécurité sociale en Suisse ».
-Propose 6 variantes de focus orientées problème et historiquement exploitables (chacune avec : période, focus acteur/arène, mécanisme).
+Propose 6 variantes de focus orientées problème et historiquement exploitables (chacune avec: période, focus acteur/arène, mécanisme).
 Pour chaque variante, donne 8 termes de recherche (DE/FR/EN ; termes historiquement plausibles) et 3 types de littérature attendus (monographie, article, chapitre d'anthologie).
 Pas de titres inventés.
 ```
 
 ### Vérification critique
 
-Marquez dans la réponse :
+Marquez dans la réponse:
 
 - les catégories anachroniques (marquer comme *ancres de recherche rétrospectives*),
 - les hypothèses théoriques implicites (par ex. « régime de protection sociale »),
@@ -199,24 +200,24 @@ Un cadre contextuel robuste (chronologie, concepts, institutions) comme base pou
 
 ### Ressources principales
 
-- Plateforme :
+- Plateforme:
   - [History of Social Security (Switzerland) — Home](https://www.historyofsocialsecurity.ch/home)
   - [History of Social Security — Synthesis](https://www.historyofsocialsecurity.ch/synthesis)
   - [History of Social Security — Bibliography](https://www.historyofsocialsecurity.ch/bibliography)
-- Points d'entrée DHS :
-  - [Dictionnaire historique de la Suisse : Assurances sociales](https://hls-dhs-dss.ch/fr/articles/016607/)
-  - [Dictionnaire historique de la Suisse : Politique sociale](https://hls-dhs-dss.ch/articles/016577)
-  - [Dictionnaire historique de la Suisse : Assurance-vieillesse et survivants (AVS)](https://hls-dhs-dss.ch/fr/articles/016611/)
-  - [Dictionnaire historique de la Suisse : Sécurité sociale](https://hls-dhs-dss.ch/articles/016318)
+- Points d'entrée DHS:
+  - [Dictionnaire historique de la Suisse: Assurances sociales](https://hls-dhs-dss.ch/fr/articles/016607/)
+  - [Dictionnaire historique de la Suisse: Politique sociale](https://hls-dhs-dss.ch/articles/016577)
+  - [Dictionnaire historique de la Suisse: Assurance-vieillesse et survivants (AVS)](https://hls-dhs-dss.ch/fr/articles/016611/)
+  - [Dictionnaire historique de la Suisse: Sécurité sociale](https://hls-dhs-dss.ch/articles/016318)
 
 ### Tâche (Sans IA)
 
-Lire (survol) :
+Lire (survol):
 
 - une étape de synthèse sur la plateforme,
 - un article DHS (ou plusieurs brièvement).
 
-Extraire :
+Extraire:
 
 - 8–12 termes clés (incl. terminologie historique),
 - 6 « points fixes » (événements/lois/institutions),
@@ -225,7 +226,7 @@ Extraire :
 ### Tâche (Exploration IA)
 
 ``` markdown
-À partir des termes/points fixes suivants : [insérer]
+À partir des termes/points fixes suivants: [insérer]
 1) Construis une carte de débat (4–6 axes de débat) sur l'histoire de la sécurité sociale en Suisse.
 2) Attribue 5–8 types d'auteurs/ouvrages typiques à chaque axe qu'on attendrait typiquement (sans inventer de titres spécifiques).
 3) Déduis 10 chaînes de recherche pour les catalogues (booléen, phrases).
@@ -235,7 +236,7 @@ Extraire :
 
 Validez les « axes de débat » avec au moins 2 sources d'entrée indépendantes (DHS/plateforme/sommaires d'anthologies).
 
-## 3. Recherche systématique I : Catalogues (Couverture et logique de récupération)
+## 3. Recherche systématique I: Catalogues (Couverture et logique de récupération)
 
 ### Objectif
 
@@ -247,13 +248,13 @@ Recherche reproductible et documentée dans les grands catalogues ; construction
 
 ### Tâche (Sans IA)
 
-Effectuez 6 séries de recherche dans swisscovery :
+Effectuez 6 séries de recherche dans swisscovery:
 
 - 2 chacune avec des termes larges,
 - 2 chacune avec des phrases/filtres précis,
 - 2 chacune avec multilinguisme (DE/FR/EN) et variantes de noms.
 
-Documentez par série :
+Documentez par série:
 
 - Requête de recherche (exacte), filtres, nombre de résultats, date d'export,
 - 3 critères de sélection (pertinence, période, type de publication),
@@ -266,14 +267,14 @@ Effectuez les séries de recherche **de manière heuristique** avec l'IA. Fourni
 ``` markdown
 Tu es un assistant de recherche historique avec des connaissances de l'histoire sociale, économique et politique suisse.
 
-Contexte :
-- Sujet de recherche : Histoire de la sécurité sociale en Suisse
-- Période : [par ex. 1880–1950]
-- Objectif : Construction d'un premier corpus de départ large de littérature secondaire
+Contexte:
+- Sujet de recherche: Histoire de la sécurité sociale en Suisse
+- Période: [par ex. 1880–1950]
+- Objectif: Construction d'un premier corpus de départ large de littérature secondaire
 
-Tâche : Recherche de littérature secondaire pertinente.
+Tâche: Recherche de littérature secondaire pertinente.
 
-Conditions :
+Conditions:
 - Pas d'invention de titres ou d'auteurs spécifiques.
 - Pas de connaissance simulée des catalogues.
 - Marquer explicitement les incertitudes.
@@ -282,9 +283,9 @@ Conditions :
 ### Vérification critique
 
 - Aucun titre des suggestions de l'IA n'est adopté sans avoir été trouvé dans le catalogue.
-- Pour chaque titre adopté : noter la « justification d'adoption » en 1 phrase.
+- Pour chaque titre adopté: noter la « justification d'adoption » en 1 phrase.
 
-## 4. Recherche systématique II : Revues/médias et voies spéciales (Contexte, recensions, concepts)
+## 4. Recherche systématique II: Revues/médias et voies spéciales (Contexte, recensions, concepts)
 
 ### Objectif
 
@@ -292,17 +293,17 @@ Rendre visibles les débats et l'état de la recherche à travers la littératur
 
 ### Lieux de recherche (Exemples)
 
-- Plateformes de revues : [E-Periodica — Revues suisses en ligne](https://www.e-periodica.ch/)
-- Journaux (pour les voies de discours et de réception) : [e-newspaperarchives.ch — Archives numériques de journaux](https://www.e-newspaperarchives.ch/)
+- Plateformes de revues: [E-Periodica — Revues suisses en ligne](https://www.e-periodica.ch/)
+- Journaux (pour les voies de discours et de réception): [e-newspaperarchives.ch — Archives numériques de journaux](https://www.e-newspaperarchives.ch/)
 
 ### Tâche (Sans IA)
 
-Sélectionnez 2 titres de revues ou corpus de périodiques et recherchez :
+Sélectionnez 2 titres de revues ou corpus de périodiques et recherchez:
 
 - « assurance sociale », « AVS », « assurance invalidité », « assurance maladie »,
 - plus votre terme de focus.
 
-Extraire :
+Extraire:
 
 - 5 articles ou recensions pertinents,
 - termes/cadres récurrents (par ex. « charges », « solidarité », « abus », « trois piliers »).
@@ -310,14 +311,14 @@ Extraire :
 ### Tâche (Exploration IA)
 
 ``` markdown
-À partir de ces 5 résumés/titres : [insérer]
+À partir de ces 5 résumés/titres: [insérer]
 1) Regroupe-les par logique de question (institutionnelle, centrée sur les acteurs, histoire des idées, économie politique, genre).
 2) Propose 2 mots-clés de suivi par groupe (DE/FR/EN) et nomme 1 « angle mort » typique chacun.
 ```
 
-**Livrable** : Mini-cluster (5 items) + liste de mise à jour des mots-clés.
+**Livrable**: Mini-cluster (5 items) + liste de mise à jour des mots-clés.
 
-## 5. Snowballing : Citation en arrière/en avant (Contrôle des canons et des angles morts)
+## 5. Snowballing: Citation en arrière/en avant (Contrôle des canons et des angles morts)
 
 ### Objectif
 
@@ -325,14 +326,14 @@ Extraire :
 
 ### Tâche (Sans IA)
 
-Sélectionnez 3 textes « semences » (de préférence de types différents : aperçu, monographie, article).
+Sélectionnez 3 textes « semences » (de préférence de types différents: aperçu, monographie, article).
 
-Pour chaque semence :
+Pour chaque semence:
 
 - 10 références pertinentes de la bibliographie/notes de bas de page (en arrière),
 - 5 travaux plus récents via recherche de citations (en avant ; par ex. Google Scholar/pages d'éditeurs).
 
-Documentez :
+Documentez:
 
 - pourquoi chaque référence a été incluse (1 phrase),
 - si vous avez élargi ou réduit un axe de débat.
@@ -340,19 +341,19 @@ Documentez :
 ### Tâche (Exploration IA)
 
 ``` markdown
-Voici 10 références de la bibliographie d'un texte semence : [insérer]
-Organise-les par :
+Voici 10 références de la bibliographie d'un texte semence: [insérer]
+Organise-les par:
 (a) axe de débat, (b) méthode, (c) base de sources attendue.
-Marque : lesquelles 3 seraient indispensables pour une section « État de la recherche » – et justifie.
+Marque: lesquelles 3 seraient indispensables pour une section « État de la recherche » – et justifie.
 ```
 
 ### Vérification critique
 
-Tenez un *Journal de rejet* : au moins 5 résultats rejetés mais « plausibles de manière tentante » incl. raison du rejet (mauvaise période, mauvaise arène, seulement vulgarisation scientifique, etc.).
+Tenez un *Journal de rejet*: au moins 5 résultats rejetés mais « plausibles de manière tentante » incl. raison du rejet (mauvaise période, mauvaise arène, seulement vulgarisation scientifique, etc.).
 
-**Livrable** : Liste de snowball (≥ 30 références au total) + Journal de rejet (≥ 5).
+**Livrable**: Liste de snowball (≥ 30 références au total) + Journal de rejet (≥ 5).
 
-## 6. Sélection et évaluation de la qualité : Pertinence, argument, méthode, preuve
+## 6. Sélection et évaluation de la qualité: Pertinence, argument, méthode, preuve
 
 ### Objectif
 
@@ -360,7 +361,7 @@ Ne pas seulement collecter la littérature, mais sélectionner analytiquement.
 
 ### Tâche (Sans IA)
 
-Créez une grille d'évaluation (1 page), par ex. :
+Créez une grille d'évaluation (1 page), par ex.:
 
 - Question de recherche/thèse
 - Théorie/concepts (explicite/implicite)
@@ -374,27 +375,27 @@ Appliquez-la à 6 titres de votre corpus (extrait court, 150–250 mots par titr
 ### Tâche (Exploration IA)
 
 ``` markdown
-Utilise cette grille : [insérer]
+Utilise cette grille: [insérer]
 Crée pour chacun des titres/résumés suivants une annotation brève structurée (max. 180 mots),
 incl. (1) contribution présumée, (2) approche méthodologique, (3) biais/limitation potentiel.
-Si des informations manquent : marquer explicitement comme « pas clair », ne pas compléter.
+Si des informations manquent: marquer explicitement comme « pas clair », ne pas compléter.
 ```
 
 ### Vérification critique
 
-Échantillon : vérifiez pour 2 titres sur la base de l'introduction/conclusion si la structure de l'IA et votre lecture sont cohérentes.
+Échantillon: vérifiez pour 2 titres sur la base de l'introduction/conclusion si la structure de l'IA et votre lecture sont cohérentes.
 
-**Livrable** : 6 entrées annotées + grille.
+**Livrable**: 6 entrées annotées + grille.
 
 ## 7. Cartographie historiographique des débats et texte sur l'état de la recherche (Condensé, sensible aux preuves)
 
 ### Objectif
 
-Faire du corpus une « conversation » reconstruite : Qui argumente comment – et pourquoi ?
+Faire du corpus une « conversation » reconstruite: Qui argumente comment – et pourquoi ?
 
 ### Tâche (Sans IA)
 
-Rédigez un mémo de débat de 400–600 mots :
+Rédigez un mémo de débat de 400–600 mots:
 
 - 2–3 controverses principales,
 - positions centrales,
@@ -404,15 +405,15 @@ Rédigez un mémo de débat de 400–600 mots :
 ### Tâche (Exploration IA)
 
 ``` markdown
-Voici mon mémo de débat : [insérer]
+Voici mon mémo de débat: [insérer]
 1) Identifie les hypothèses implicites (agence/structure, État/privé, normativité, diagnostics contemporains).
 2) Propose 2 structurations alternatives (par ex. par arènes au lieu de sujets).
 3) Nomme 5 questions de suivi ciblées que je devrais poser à la littérature pour formuler précisément les lacunes de recherche.
 ```
 
-**Livrable** : Mémo de débat + 5 questions de suivi.
+**Livrable**: Mémo de débat + 5 questions de suivi.
 
-## 8. Lacune de recherche et délimitation : De l'état de la recherche à la question de recherche
+## 8. Lacune de recherche et délimitation: De l'état de la recherche à la question de recherche
 
 ### Objectif
 
@@ -420,42 +421,42 @@ Déduire une question de recherche exploitable et analytique de l'examen bibliog
 
 ### Tâche (Sans IA)
 
-Formulez :
+Formulez:
 
-- 1 énoncé de lacune de recherche (max. 3 phrases) : *« La recherche a montré X ; Y reste flou parce que… »*
+- 1 énoncé de lacune de recherche (max. 3 phrases): *« La recherche a montré X ; Y reste flou parce que… »*
 - 2 questions de recherche (1 phrase chacune), qui sont *plausibles sur la base des sources et de la littérature*.
 
 ### Tâche (Exploration IA)
 
 ``` markdown
-À partir de cette lacune de recherche : [insérer]
+À partir de cette lacune de recherche: [insérer]
 Formule 4 variantes d'une question de recherche historique analytique.
-Pour chaque variante :
+Pour chaque variante:
 - délimitation de cas possible (temps/espace/arène),
 - contribution attendue (quel débat est adressé ?),
 - champ de risque (par ex. accès aux sources, anachronisme, causalité trop large).
 ```
 
-**Livrable** : 1 lacune de recherche + 1 question de recherche priorisée + 1 section de risque (150–200 mots).
+**Livrable**: 1 lacune de recherche + 1 question de recherche priorisée + 1 section de risque (150–200 mots).
 
 ## 9. Reproductibilité et documentation
 
 ### Objectif
 
-Le travail bibliographique comme **méthode documentée** : traçable, vérifiable, réutilisable.
+Le travail bibliographique comme **méthode documentée**: traçable, vérifiable, réutilisable.
 
 ### Exigences minimales
 
-- **Protocole de recherche** : Date, système, requête, filtre, résultats, règles de sélection (≥ 12 entrées)
-- **Export Zotero/BibTeX** : État versionné (date), stratégie de doublons
-- **Journal de décision** : Pourquoi le titre a été inclus/rejeté (mots-clés)
-- **Protocole IA (Annexe)** : 2–4 prompts, réponses raccourcies, vos corrections/rejets, but d'utilisation
+- **Protocole de recherche**: Date, système, requête, filtre, résultats, règles de sélection (≥ 12 entrées)
+- **Export Zotero/BibTeX**: État versionné (date), stratégie de doublons
+- **Journal de décision**: Pourquoi le titre a été inclus/rejeté (mots-clés)
+- **Protocole IA (Annexe)**: 2–4 prompts, réponses raccourcies, vos corrections/rejets, but d'utilisation
 
 ::: callout-warning
 
 ## L'IA comme outil, pas comme source
 
-L'IA peut aider dans cet exercice à élargir les espaces de recherche et à structurer les textes. Elle ne remplace pas :
+L'IA peut aider dans cet exercice à élargir les espaces de recherche et à structurer les textes. Elle ne remplace pas:
 
 - la vérification bibliographique (catalogue/DOI),
 - l'examen critique des sources de la base de preuves,
@@ -471,21 +472,21 @@ L'IA peut aider dans cet exercice à élargir les espaces de recherche et à str
 5. Lacune de recherche + question de recherche + champ de risque (env. 1 page)
 6. Protocole IA (Annexe)
 
-# Optionnel : Parcours avancé (Méthodes numériques)
+# Optionnel: Parcours avancé (Méthodes numériques)
 
 - Exportez les métadonnées (titre/auteur/année/mots-clés) depuis swisscovery/Zotero.
 
-- Construisez une carte bibliographique simple :
+- Construisez une carte bibliographique simple:
 
   - Évolution temporelle (années de publication),
   - Langues/types de publication,
-  - Réseau de co-citation ou de mots-clés (attention : les mots-clés de catalogue sont organisés et biaisés).
+  - Réseau de co-citation ou de mots-clés (attention: les mots-clés de catalogue sont organisés et biaisés).
 
 - Documentez le flux de travail et les données (README + notes de licence/réutilisation).
 
 ## Ressources complémentaires
 
-- [Ranke.2 : Aperçu des leçons](https://ranke2.uni.lu/lessons/) – Modules d'apprentissage sur le web, les médias sociaux et le changement numérique.
+- [Ranke.2: Aperçu des leçons](https://ranke2.uni.lu/lessons/) – Modules d'apprentissage sur le web, les médias sociaux et le changement numérique.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique des données d'entraînement et ses parallèles avec la critique des sources.
 
 ## Bibliographie

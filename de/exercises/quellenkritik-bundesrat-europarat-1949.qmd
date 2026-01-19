@@ -4,6 +4,7 @@ title: "Quellenkritik"
 subtitle: "Bundesrat und Europarat 1949"
 description: "Eine angeleitete Übung zur systematischen externen und internen Quellenkritik an einer diplomatischen Aktennotiz (Dodis)."
 categories: [Quellen]
+image: ../../assets/images/source_criticism_Gemini_Generated_Image_ne84kfne84kfne84.png
 tags:
   - Quellenkritik
   - Kontextualisierung

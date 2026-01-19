@@ -4,6 +4,7 @@ title: "Source Criticism"
 subtitle: "Federal Council and Council of Europe 1949"
 description: "A guided exercise for systematic external and internal source criticism of a diplomatic memorandum (Dodis)."
 categories: [Sources]
+image: ../../assets/images/source_criticism_Gemini_Generated_Image_ne84kfne84kfne84.png
 tags:
   - Source Criticism
   - Contextualization

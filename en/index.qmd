@@ -5,6 +5,7 @@ listing:
   id: exercises
   contents: exercises
   type: grid
+  fields: [image, title, subtitle, description, categories]
   exclude:
     title: "Exercises" # exercises/index.qmd
 aliases:
