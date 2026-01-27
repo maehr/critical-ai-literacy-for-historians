@@ -173,7 +173,7 @@ Formulieren Sie in 5–8 Sätzen:
 - Untersuchungszeitraum (z. B. 1880–1950 / 1938–1948 / 1970–2005)
 - Teilbereich (z. B. Altersvorsorge, Krankenversicherung, Invalidität, Arbeitslosigkeit)
 - vermutete Konflikt- oder Mechanismenlogik (z. B. Föderalismus/Referendum, Verbände, Expertise, Geschlecht, Transfer)
-- erwartete Literaturräume (Geschichte / Politikwissenschaft / Rechtsgeschichte / Sozialpolitik)
+- erwartete Themenfelder (Geschichte / Politikwissenschaft / Rechtsgeschichte / Sozialpolitik)
 
 ### Aufgabe (KI-Exploration)
 

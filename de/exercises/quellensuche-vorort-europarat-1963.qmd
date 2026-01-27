@@ -26,23 +26,6 @@ references:
 - id: altermatt-casasus-2013-europarat
   type: book
   title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
-- id: altermatt-casasus-2013-europarat
-  type: book
-  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
-  editor:
-    - family: Altermatt
-      given: Bernhard
-    - family: Casasus
-      given: Gilbert
-  publisher: "Rüegger"
-  ISBN: "978-3-7253-1005-0"
-  issued:
-    year: 2013
-  publisher-place: "Schweiz"
-  note: "Sammelband herausgegeben im Auftrag des Centre d’Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft" 
-- id: altermatt-casasus-2013-europarat
-  type: book
-  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
   editor:
     - family: Altermatt
       given: Bernhard
