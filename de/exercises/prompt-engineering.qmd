@@ -1,0 +1,535 @@
+---
+lang: de
+title: "Prompt Engineering"
+subtitle: "Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin"
+description: "Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Universität Bern"
+date: "2025-12-29"
+date-modified: today
+categories: [KI & Digitale Methoden]
+image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
+tags:
+  - Prompting
+  - Toolkritik
+  - Reproduzierbarkeit
+  - Digitale Quellenkritik
+  - Nachvollziehbarkeit
+  - Wissenschaftliche Integrität
+draft: false
+nocite: ""
+references: []
+---
+
+## Überblick und didaktisches Ziel
+
+Diese Übung macht Prompting **als Methode** sichtbar: Prompts sind hier nicht «Tricks», sondern **Operationalisierungen** historischer Arbeitsaufträge.[@campbell2025historian; @oberbichler2025implementing]
+
+Trainiert wird, wie Sie
+
+- Aufgaben sauber eingrenzen,
+- Antwort überprüfbar formatieren,
+- Fehlerquellen kontrollieren und
+- Ergebnisse **reproduzierbar dokumentieren**.
+
+Im Unterschied zu den thematischen Übungen ([Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd), [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd), [Quellensuche](quellensuche-vorort-europarat-1963.qmd), [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd), [Schreiben](schreiben.qmd), [Zitieren](zitieren.qmd), [Public History](public-history.qmd)) fokussiert diese Einheit die **gemeinsame Infrastruktur**: Prompt-Design, Rollenwahl, Iteration und Optimierung.
+
+::: callout-important
+
+## Grundregel: KI als Hypothese
+
+Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als **Hypothese** (nicht als Ergebnis).[@bender2021stochastic] Ihre Arbeit bleibt: **Gegenprobe, Nachweis, Entscheidung**.
+:::
+
+## Voraussetzungen
+
+- Grundverständnis historischer Forschungsmethoden
+
+## Lernziele
+
+Nach Abschluss der Übung können Sie:
+
+- Prompts **strukturieren** (strukturierter Kontext, Antwort-Format, Constraints, Prüfmodus),
+- Rollen **gezielt** einsetzen (z. B. Quellenkritiker:in, Rechercheassistent:in, Devil’s Advocate, Lektor:in),
+- Zero-shot und Few-shot Prompting **situationsgerecht** wählen,
+- eine **strukturierte Denkspur** anfordern (Aufgabendecomposition, Zwischenprodukte, Self-Checks),
+- iteratives Prompting als **kontrollierten Workflow** umsetzen (Generate → Critique → Revise → Verify),
+- Prompts anhand von **Qualitätskriterien** optimieren (Fehlerreduktion, Formatstabilität, Prüfbarkeit, Reproduzierbarkeit).
+
+## Arbeitsmodus: KI-Protokoll und A/B-Testing
+
+Führen Sie ein kurzes Prompt-Protokoll (Audit Trail). Nutzen Sie es auch in den anderen Übungen.
+
+**Minimalvorlage:**
+
+- Schritt
+- Ziel
+- Input (Material)
+- Prompt (Kernausschnitt)
+- Antwort (kurz)
+- Prüfschritte
+- Entscheidung
+
+**A/B-Testing (Minimum):** Für jede Technik mindestens **zwei Prompt-Varianten** laufen lassen, dann vergleichen:
+
+1. Formatstabilität,
+2. Übergriffigkeit (Spekulationen)
+3. Anschlussfähigkeit an Ihre nächsten Arbeitsschritte.
+
+## Fallpaket für alle Übungen
+
+Verwenden Sie – wie in den anderen Übungen – ein **konkretes, kontrollierbares Materialpaket**:
+
+1. **Primärquelle** siehe Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd)
+2. **Kontextressource** siehe Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd) oder [Quellensuche](quellensuche-vorort-europarat-1963.qmd).
+3. **Optionale Sekundärquelle** siehe Übung [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd) oder [Zitieren](zitieren.qmd).
+
+::: callout-tip
+
+## Reproduzierbare Strukturierung
+
+Wenn das Tool keinen stabilen Dokumentzugriff hat: kopieren Sie (a) Textauszug und (b) Metadaten in den Prompt und grenzen beides visuell ab, z. B. mit drei Anführungszeichen.
+
+Beispiel-Layout:
+
+``` markdown
+"""
+DOKUMENTTEXT (Auszug/ganzer Text)
+"""
+
+"""
+METADATEN (Titel, Datum, Ort, Autor, Edition/URL, Archivsignatur, Zugriffsdatum)
+"""
+
+AUFGABE
+```
+
+:::
+
+::: callout-info
+
+## Session-Neustart als Kontrollinstrument
+
+Für jede neue Aufgabe empfiehlt sich eine **neue Session**.
+
+Ein Session-Neustart reduziert implizite Kontextverschleppung:  
+Das Modell greift dann **nicht mehr auf frühere Aufgaben, Beispiele oder Rollenannahmen** zurück, sondern arbeitet ausschliesslich mit dem aktuellen Material und Auftrag.
+
+Nutzen Sie einen Neustart insbesondere, wenn:
+
+- Antworten wiederholt falsche Bezüge herstellen,
+- frühere Rollen oder Beispiele «durchsickern»,
+- unklare Annahmen aus vorherigen Schritten fortgeschrieben werden.
+
+**Merksatz:**  
+Eine neue Session erzwingt erneute Materialbindung und erhöht die Prüfbarkeit.
+
+:::
+
+## 1. Prompt Basics
+
+### Ziel
+
+Eine unpräzise Anfrage so zu reformulieren, dass Antwort **prüfbar**, **formatstabil** und **quellen-/inputgebunden** wird.
+
+### Übung: Von «vage» zu «operationalisiert»
+
+**Vage Anfrage (absichtlich schlecht):**
+
+``` markdown
+Fasse das Dokument zusammen und sag mir, was wichtig ist.
+```
+
+**Aufgabe:** Erstellen Sie daraus zwei saubere Prompts:
+
+- **Variante A (minimal):** nur Ziel + Antwort-Format.
+- **Variante B (robust):** Ziel + strukturierter Kontext + Constraints + Antwort-Format + Self-Check.
+
+Orientieren Sie sich am Setup aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Minimalparaphrase, max. 4 Sätze).
+
+**Prompt-Gerüst (robust, adaptierbar):**
+
+``` markdown
+Aufgabe: [konkret, 1–2 Sätze]
+Kontext: [Seminar/Fragestellung/Zeitraum]
+Material: [Dokumenttext + Metadaten, klar abgegrenzt]
+Regeln:
+- Arbeite nur mit dem Material.
+- Keine Ergänzungen aus Allgemeinwissen.
+- Markiere Unsicherheiten explizit.
+Ausgabe-Format:
+1) Minimalparaphrase (max. 4 Sätze)
+2) 5 Schlüsselbegriffe (aus dem Text)
+3) 3 offene Fragen (was bleibt unklar?)
+Self-Check:
+- Liste 3 Stellen, wo du versucht wärst zu spekulieren, und erkläre kurz, warum du es nicht tust.
+```
+
+## 2. Rollen
+
+### Ziel
+
+Rollen als **Methoden-Constraints** nutzen: jede Rolle erzwingt andere Heuristiken, Blindstellen und Prüfmodi.
+
+### Übung 2A: Eine Aufgabe, drei Rollen
+
+Wählen Sie **eine** Aufgabe aus den anderen Übungen (z. B. Forschungsfrage entwickeln; externe Quellenkritik; Suchbegriffe für Kataloge; Blog-Briefing).
+
+Lassen Sie dieselbe Aufgabe in drei Rollen bearbeiten:
+
+1. **Quellenkritiker:in** (textnah, Ebenen trennen) – siehe [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd).
+2. **Devil’s Advocate** (Stress-Tests, Gegenargumente) – siehe [Schreiben](schreiben.qmd).
+3. **Strukturierer:in/Outliner** (Arbeitsplan, Zwischenprodukte) – siehe [Public History](public-history.qmd) oder [Schreiben](schreiben.qmd).
+
+**Rollen-Prompt (Beispiel: Quellenkritiker:in, stark begrenzend):**
+
+``` markdown
+Rolle: Quellenkritiker:in.
+Aufgabe: Analysiere das Material ausschliesslich als Quelle (externe + interne Kritik).
+Wichtig:
+- Trenne strikt: [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
+- Keine historischen Bewertungen.
+- Jede Schlussfolgerung braucht eine Text- oder Metadatenstütze.
+Ausgabe:
+1) Ebenen-Tabelle
+2) 5 prüfbare Authentizitäts-/Überlieferungsfragen
+3) 5 Bias-/Sprechpositions-Hypothesen (als Hypothesen markieren)
+```
+
+**Rollen-Prompt (Beispiel: Devil’s Advocate, aus der Schreibübung abgeleitet):**
+
+``` markdown
+Rolle: Devil’s Advocate.
+Input: Meine Arbeitshypothesen (H1–H3) + Materialhinweise.
+Aufgabe:
+- Nenne zu jeder Hypothese die diskutierbare Annahme.
+- Formuliere einen Stress-Test (welcher Befund würde kippen?).
+- Gib 1 alternative Deutung (max. 2 Sätze).
+Keine externen Fakten.
+```
+
+### Übung 2B: Rollenwechsel als Diagnose
+
+Nehmen Sie die **beste** Antwort aus 2A und lassen Sie sie durch eine zweite Rolle **prüfen**, nicht neu schreiben:
+
+- Rolle «Logik-Prüfer:in» (vgl.* Schreiben\*): Konsistenz, Sprünge, fehlende Evidenzstellen.
+- Rolle «Katalog-Assistent:in» (vgl.* Literaturrecherche\*): übersetzt in Suchstrings/Indikatoren.
+
+## 3. Zero-shot Prompting
+
+::: callout-info
+
+## Zero-shot Prompting
+
+Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur Auftrag, Material und Constraints.
+
+:::
+
+### Ziel
+
+Zero-shot als **Baseline** einsetzen: schnell, aber fehleranfällig. Sie lernen, *wo* Zero-shot reicht und *wo* er systematisch ausweicht.
+
+### Übung 3A: Minimalparaphrase (Zero-shot)
+
+Nutzen Sie die Aufgabe aus [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Minimalparaphrase, max. 4 Sätze) als Zero-shot.
+
+``` markdown
+Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte:
+- Wer spricht/handelt?
+- Was ist der Anlass?
+- Was ist die zentrale Aussage/Entscheidung?
+- Welche Konsequenz wird angedeutet?
+Maximal 4 Sätze. Keine Interpretation.
+```
+
+::: callout-info
+
+## Hochladen der Quelle
+
+Laden Sie das Dokument als PDF Datei hoch zusammen mit dem Prompt. Falls das nicht möglich ist, kopieren sie den Inhalt des Dokuments an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Stellen Sie darüber hinaus sicher, dass die KI Zugriff auf die Metadaten hat (entweder durch Online-Zugriff oder indem Sie die Metadaten zur Verfügung stellen). Beispiel:
+
+``` markdown
+"""
+INHALT DOKUMENT
+"""
+
+"""
+METADATEN DOKUMENT (inkl. URL)
+"""
+
+IHR PROMPT
+```
+
+:::
+
+**Diagnose:**
+
+Markieren Sie in der Antwort:
+
+- Stellen, die nicht eindeutig aus dem Text folgen,
+- implizite Kontextannahmen (wo «weiss» das Modell mehr als Ihr Input?).
+
+### Übung 3B: Drei Forschungsfragen (Zero-shot)
+
+Nutzen Sie die Vorlage aus der Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd).
+
+``` markdown
+Gib mir drei mögliche historische Forschungsfragen, die sich aus der Aktennotiz ableiten lassen.
+Jede Frage muss (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch sein.
+Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.
+```
+
+**Reflexion:** Welche Fragen sind (i) wirklich quellengebunden, welche (ii) «generische» Fragen, die auf viele Fälle passen?
+
+## 4. Few-shot Prompting
+
+::: callout-info
+
+## Few-shot Prompting
+
+Few-shot Prompting heisst, dass das Modell explizite Beispiele erhält, was oft zu besseren Antworten führt.
+
+:::
+
+### Ziel
+
+Few-shot nutzt Beispiele, um **Kategorien**, **Antwort-Formate** und **Qualitätsmassstäbe** zu stabilisieren.
+
+### Übung 4A: Few-shot für Ebenen-Trennung (Dokumenttext/Edition/Schlussfolgerung)
+
+Erstellen Sie 3–5 kurze Beispielsätze (dürfen **fiktiv**, aber historisch plausibel sein) und labeln Sie sie.
+
+**Beispiel:**
+
+``` markdown
+Beispiele (Input → Label):
+1) "Ort: Bern; Datum: 7.7.1949." → [Edition/Metadaten]
+2) "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → [Dokumenttext]
+3) "Daraus folgt, dass die Schweiz grundsätzlich anti-europäisch war." → [Schlussfolgerung] (zu stark; müsste geprüft/abgeschwächt werden)
+
+Aufgabe:
+Labeln Sie nun die folgenden 10 Sätze aus meinem Material als
+[Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
+Geben Sie bei jedem Label 1 Evidenzhinweis (Zitatfragment/Metadatenfeld) oder 'keine Stütze'.
+Material: ...
+```
+
+**Arbeitsauftrag:** Übernehmen Sie danach den Few-shot-Block in Ihren Prompt aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) und prüfen Sie, ob die Labels zuverlässiger werden.
+
+### Übung 4B: Few-shot für Forschungsfragen (schwach vs. stark)
+
+Nehmen Sie 2 schwache und 2 starke Fragen (aus Ihrer Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd) oder aus dem Seminar) und geben Sie sie als Beispiele mit kurzem Kommentar ein.
+
+**Gerüst:**
+
+``` markdown
+Beispiele (Schwach/Stark):
+Schwach: "Warum trat die Schweiz dem Europarat bei?" → zu breit, teleologisch, unklare Evidenzbasis.
+Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argument für/gegen eine institutionelle Annäherung an den Europarat operationalisiert?" → klarer Operator, Zeitraum, Quellennähe.
+
+Aufgabe:
+Formuliere 3 neue Forschungsfragen im Stil der starken Beispiele.
+Zu jeder Frage:
+- Zeitraum
+- zentrale Operatorbegriffe (definieren!)
+- erwartete Quellengattungen
+- 1 Gegenprobe (welche Quelle könnte widersprechen?)
+```
+
+## 5. Strukturierte Denkspur (Chain-of-Thought Prompting)
+
+::: callout-info
+
+## Chain-of-Thought Prompting
+
+Chain-of-Thought Prompting bezeichnet ein Vorgehen, bei dem das Modell eine **komplexe Aufgabe in explizite Zwischenschritte zerlegt** (z. B. Extraktion → Ordnung → Bewertung → Ergebnis) und diese Schritte **sichtbar ausgibt**.
+
+:::
+
+### Ziel
+
+Komplexe Aufgaben in **Zwischenprodukte** zerlegen (Decomposition) und einen **Self-Check** erzwingen. Entscheidend ist nicht «lange Begründung», sondern **prüfbare Zwischenschritte**.
+
+::: callout-note
+
+## Hinweis zur «Denkspur»
+
+Formulieren Sie die Denkspur so, dass sie **kurz** und **auditierbar** bleibt (Stichpunkte, Kriterien, Tests). Ziel ist Prüfbarkeit, nicht ein ausführliches «inneres Tagebuch».
+:::
+
+### Übung 5A: Argumentmapping mit Zwischenschritten
+
+Nutzen Sie das Argumentmapping aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Claim/Begründung/Voraussetzung/Implikation), aber erzwingen Sie Schrittlogik:
+
+``` markdown
+Aufgabe: Erzeuge ein Argumentmapping zu den Passagen, die Neutralität/Vereinbarkeit/Entscheidungsprozess betreffen.
+
+Vorgehen (sichtbar ausgeben):
+1) Extrahiere relevante Textsegmente (max. 5 kurze Zitatfragmente).
+2) Formuliere pro Segment ein Claim/Warrant/Assumption/Implication (stichwortartig).
+3) Self-Check: Nenne 3 Stellen, wo der Sprung von Text → Interpretation heikel ist, und markiere sie als [Spekulation].
+
+Regeln:
+- Nutze nur Dokumenttext.
+- Keine zusätzlichen Fakten.
+Antwort: Markdown-Liste.
+Material: ...
+```
+
+### Übung 5B: Rechercheplan als Pipeline
+
+Übertragen Sie die Struktur aus [Quellensuche](quellensuche-vorort-europarat-1963.qmd) (Teilfragen → Quellentypen → Suchorte → Suchstrings) in eine explizite Pipeline:
+
+``` markdown
+Ziel: Erstelle einen Rechercheplan zur Frage: [einfügen].
+
+Schritte:
+1) Zerlege in 4–6 Teilfragen (prüfbar).
+2) Ordne pro Teilfrage 2–3 Quellentypen + Arenen zu.
+3) Leite pro Teilfrage 2 Suchstrings ab (DE/FR/EN; Boolean).
+4) Self-Check: Liste 5 typische Fehler (Anachronismen, erfundene Signaturen, zu breite Begriffe ...) und wie du sie vermeidest.
+
+Antwort: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).
+```
+
+## 6. Iteratives Prompting
+
+::: callout-info
+
+## Iteratives Prompting
+
+Iteratives Prompting bezeichnet einen **kontrollierten Arbeitszyklus**, bei dem KI-Antworten schrittweise verbessert werden, indem jede Ausgabe **gezielt kritisiert und revidiert** wird.
+
+:::
+
+### Ziel
+
+Iteration als **kontrollierte Revision**: Sie bauen nicht «mehr Text», sondern verbessern Zielpräzision, Evidenzdisziplin und Format.
+
+### Übung 6A: Generate → Critique → Revise (Forschungsfrage)
+
+1) **Generate (v1):** Zero-shot Forschungsfragen (Übung 3B).\
+2) **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung *Forschungsfrage* («Warum fehlt X?» / «Auf welche Quellen stützt sich das?»).\
+3) **Revise (v2):** Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.
+
+**Critique-Prompt (Vorlage):**
+
+``` markdown
+Hier ist Antwort v1: [einfügen].
+Aufgabe: Kritisiere claim-by-claim:
+- Was ist zu breit/teleologisch?
+- Wo fehlen Operatorbegriffe/Definitionen?
+- Wo ist die Evidenzbasis unklar?
+Gib danach eine revidierte Version v2 (max. 3 Fragen) + eine Änderungslogik (max. 6 Stichpunkte).
+Keine neuen Fakten.
+```
+
+### Übung 6B: Iteration über Antwort-Format (Zitieren / Zusammenfassen)
+
+Nehmen Sie die Übung *Zitieren* und erzwingen Sie eine zweistufige Ausgabe:
+
+1) Extraktion strukturierter Metadaten (Felder),\
+2) erst dann Chicago-Zitat + Zotero-Importformat.
+
+**Optimierungsfrage:** Verbessert die Zweistufigkeit Fehlerdiagnose (z. B. fehlende Seitenzahlen, falsche Herausgeber:innen)?
+
+## 7. Prompt Optimierung
+
+### Ziel
+
+Prompts systematisch verbessern: nicht «schöner», sondern **robuster** (weniger Halluzination, bessere Formatstabilität, klarere Prüfbarkeit).
+
+### Qualitätskriterien (Rubrik)
+
+Bewerten Sie jede Prompt-Variante (0–2 Punkte pro Kriterium):
+
+1. **Input-Bindung** (arbeitet wirklich nur mit Material?)
+2. **Ebenen-Trennung** (Text vs. Metadaten vs. Schlussfolgerung)
+3. **Formatstabilität** (liefert, was gefordert ist, ohne Ausweichen)
+4. **Fehlertransparenz** (markiert Unsicherheiten)
+5. **Anschlussfähigkeit** (Antwort ist direkt weiterverwendbar, z. B. für Exzerpt/Gliederung/Recherchelog)
+
+### Übung 7A: Prompt «härten» (Literaturrecherche)
+
+Nehmen Sie einen naiven Literaturprompt («Nenne zentrale Literatur zu X») und optimieren Sie ihn so, dass er als **Rechercheassistenz** taugt (nicht als Quellenproduzent). Orientierung: Übung [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd) («Keine erfundenen Titel; keine vorgetäuschte Katalogkenntnis; Unsicherheiten markieren»).
+
+**Optimierter Prompt (Gerüst):**
+
+``` markdown
+Du bist historischer Rechercheassistent.
+Ziel: Startkorpus für [Thema/Zeitraum].
+Regeln:
+- Erfinde keine Titel/Autor:innen.
+- Gib keine Behauptungen über Katalogabdeckung.
+- Liefere stattdessen: Suchstrategien, Suchstrings, erwartbare Literaturtypen, und Hinweise auf Prüfschritte.
+Antwort:
+1) 8 Suchstrings (DE/FR/EN) mit kurzer Begründung
+2) 5 erwartbare Literaturtypen + wo man sie typischerweise findet
+3) 6 Prüfschritte (wie ich Treffer verifiziere, exportiere, dokumentiere)
+```
+
+### Übung 7B: Prompt-Optimierung als «Fehlerbudget»
+
+Definieren Sie ein Fehlerbudget und optimieren Sie darauf:
+
+- **Budget A:** «0 erfundene Titel» (Literatur),
+- **Budget B:** «0 ungestützte Kontextannahmen» (Quellenkritik),
+- **Budget C:** «0 Formatverstösse» (z. B. max. 4 Sätze, Tabelle, Claim-IDs).
+
+Führen Sie 3 Iterationen durch (v1–v3) und protokollieren Sie:
+
+- welche Prompt-Änderung welches Fehlerfeld reduziert hat,
+- welche Nebenwirkungen entstehen (z. B. Antwort wird zu vage).
+
+## Kurz-Library: wiederverwendbare Prompt-Bausteine
+
+**1) Kontext + Materialbindung**
+
+``` markdown
+Arbeite ausschliesslich mit dem untenstehenden Material.
+Wenn dir Informationen fehlen, stelle Rückfragen oder markiere [Unklar].
+```
+
+**2) Ebenen-Trennung (Quelle vs. Edition vs. Schlussfolgerung)**
+
+``` markdown
+Markiere jede Aussage als [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
+```
+
+**3) Antwort als Zwischenprodukt (für Weiterarbeit)**
+
+``` markdown
+Gib die Antwort als Tabelle mit Feldern: Claim | Evidenzstelle | Unsicherheit | Nächster Prüfschritt.
+```
+
+**4) Self-Check / Gegenprobe erzwingen**
+
+``` markdown
+Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.
+```
+
+## Abgabe
+
+1. Prompt-Protokoll (mind. 8 Einträge, verteilt über die Techniken)\
+2. Pro Technik: 1 kurzer Vergleich (A/B) + 5–8 Sätze Reflexion, was sich methodisch verbessert/verschlechtert hat\
+3. Eine «beste Praxis»-Vorlage: Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz
+
+## Weiterführende Ressourcen
+
+- [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Interaktive Erklärung, wie Transformer-basierte Sprachmodelle funktionieren.
+- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Next-Token-Prediction und Grundlagen generativer KI.
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Grenzen, Halluzinationen, Verifikation und kritische Nutzung.
+- [Prompt Engineering Guide](https://www.promptingguide.ai)
+- [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
+- [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
+- [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
+
+## Bibliographie
+
+::: {#refs}
+:::

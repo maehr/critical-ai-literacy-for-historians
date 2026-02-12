@@ -1,8 +1,0 @@
----
-title: Critical AI Literacy for Historians
-lang: en
----
-
-::: {.callout-warning title="DISCLAIMER"}
-This project is currently under active development and in a very early stage. The materials provided here are preliminary and may change significantly. Please use them with caution and be aware that they may not yet represent the final quality or scope intended for this resource.
-:::

@@ -1,0 +1,259 @@
+---
+lang: fr
+title: "Citation académique"
+subtitle: "Exercice sur les pratiques de citation en recherche historique"
+description: "Cet exercice enseigne les fondamentaux de la citation académique en recherche historique, avec un accent particulier sur l'utilisation critique de l'IA générative. Vous apprendrez comment les citations fonctionnent comme un outil méthodologique pour rendre les arguments historiques traçables et vérifiables, et comment structurer le travail d'écriture assisté par IA de manière à préserver la chaîne de preuves."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Université de Berne"
+date: "2025-12-29"
+date-modified: today
+categories: [Méthodes]
+image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
+tags:
+  - Pratiques de citation
+  - Gestion des références
+  - Traçabilité
+  - Intégrité académique
+  - Critique des sources numériques
+  - Assisté par IA
+draft: false
+references:
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: "Kompass Geschichtsstudium"
+  subtitle: "Version HS 2025"
+  author:
+    - family: Luther
+      given: Johannes
+    - family: Meier
+      given: Marietta
+    - family: Kaiser
+      given: Rafael
+    - family: Tinner
+      given: Tamara Ann
+  issued:
+    year: 2025
+  publisher: "Historisches Seminar, Universität Zürich"
+  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
+- id: leitfaden_bremen_2025
+  type: book
+  title: "Leitfaden Geschichtswissenschaft"
+  subtitle: "Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage"
+  issued:
+    year: 2025
+  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
+  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
+  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: "Studienleitfaden Fachbereich Geschichte"
+  author:
+    - family: Lösse
+      given: Esther
+    - family: Anders
+      given: Klaas
+    - family: Szadziewski
+      given: Max
+  issued:
+    year: 2021
+  publisher: "Fachbereich Geschichte, Universität Hamburg"
+  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
+  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: "Werkzeugkasten Geschichte"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  issued:
+    year: 2016
+  publisher: "Departement Geschichte, Universität Basel"
+  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
+  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+---
+
+::: callout-warning
+
+## Traduction automatique
+
+Cet exercice a été traduit automatiquement de l'[original allemand](../../de/exercises/zitieren.qmd) et peut contenir des erreurs. Veuillez consulter la version originale en cas de doute.
+:::
+
+## Vue d'ensemble et objectif didactique
+
+Cet exercice enseigne les **fondamentaux de la citation académique** en recherche historique, avec un accent particulier sur l'**utilisation critique de l'IA générative**. Vous apprendrez comment les citations fonctionnent comme un outil méthodologique pour rendre les arguments historiques traçables et vérifiables, et comment structurer le travail d'écriture assisté par IA de manière à préserver la **chaîne de preuves**.
+
+## Prérequis
+
+- Compréhension de base des méthodes de recherche historique
+- Connaissances de base du travail avec l'IA générative (en particulier le prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+Si vous n'êtes pas encore familiarisé avec le prompting, nous vous recommandons de compléter d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
+
+:::
+
+::: callout-note
+
+## LLM
+
+Vous pouvez réaliser cet exercice avec des LLM de différents fournisseurs. Pour cet exercice, il est utile que le LLM ait un accès à internet et permette le téléchargement de fichiers.
+
+:::
+
+## Objectifs d'apprentissage
+
+Après avoir complété cet exercice, vous serez en mesure de:
+
+- expliquer les fonctions épistémiques et éthiques des citations académiques en recherche historique
+- distinguer clairement entre **connaissances communes**, **sources primaires** et **littérature secondaire**
+- décider de manière cohérente **quand** une citation est nécessaire (et quand elle ne l'est pas)
+- appliquer les pratiques de citation par notes de bas de page selon des normes établies (par exemple, Chicago Manual of Style)
+- utiliser les citations de manière ciblée pour **soutenir**, **contextualiser** et **qualifier de manière critique** les arguments historiques
+- employer l'IA générative comme **outil heuristique** sans endommager la **chaîne de preuves**
+
+## Que sont les citations académiques ?
+
+Les citations académiques constituent le système formalisé pour référencer des informations, des idées, des données et des interprétations. En recherche historique, elles fonctionnent comme un **mécanisme de contrôle** méthodologique: elles rendent les arguments **vérifiables**, reconstructibles et critiquables en permettant aux lecteurs d'accéder à la base de preuves.
+
+Les citations relient les arguments à:
+
+- **Sources primaires** (documents contemporains, dossiers, lettres, protocoles, etc.)
+- **Littérature secondaire** (interprétations savantes ultérieures)
+
+Sans ce lien, les textes historiques perdent leur caractère scientifique et deviennent de simples récits.[@turingway2022handbook]
+
+## Objectifs de la citation
+
+### 1) Intégrité académique et attribution
+
+- Prévient le plagiat (les dettes intellectuelles deviennent visibles).
+- Documente la paternité et les travaux antérieurs.
+- Stabilise la crédibilité par une pratique responsable.
+
+### 2) Vérifiabilité et transparence
+
+- Les lecteurs peuvent localiser et évaluer les sources.
+- Les citations documentent la **chaîne de preuves** (source → analyse → affirmation).
+- L'effort de recherche (travail d'archives/données) devient également visible.
+
+### 3) Positionnement dans le paysage de la recherche
+
+- Les citations situent les déclarations dans le discours.
+- Elles marquent l'accord, la distinction, la controverse et la connectivité.
+
+### 4) Argumentation fondée sur des preuves
+
+- Sources primaires: fondement empirique.
+- Littérature secondaire: contexte, théorie, méthodologie, état du débat.
+
+### 5) Fonctions discursives et techniques des notes de bas de page
+
+- Contextualiser/traduire des citations.
+- Commentaire critique des sources.
+- Références aux contre-preuves / interprétations alternatives.
+- Recommandations de lecture sans surcharger le texte principal.
+
+**Point clé**: Les citations ne garantissent pas la « vérité » mais l'**inspectabilité**.
+
+## Quand dois-je citer ?
+
+**Toute affirmation qui dépasse les connaissances générales de base nécessite une citation.**
+
+**Toujours citer:**
+
+- Citations directes (guillemets + référence)
+- Paraphrases (l'idée reste empruntée, même si la formulation est nouvelle)
+- Arguments/cadres interprétatifs adoptés
+- Données/statistiques et mesures opérationnalisées
+- Emprunts indirects (source primaire via littérature secondaire → double attribution)
+
+**Exception: Connaissances communes.** Les faits largement connus, non controversés et triviaux ne nécessitent pas de référence. **Mais**: Dès que vous qualifiez, précisez, quantifiez ou entrez en territoire controversé, une citation est requise.
+
+## Comment citer ?
+
+Utilisez un logiciel de gestion des références (par exemple, Zotero) et suivez une norme établie comme le [Chicago Manual of Style](https://www.chicagomanualofstyle.org/) ou les directives d'[infoclio.ch](https://www.infoclio.ch/de/citation-style). Selon votre institution d'enseignement ou le contexte de publication, différentes conventions peuvent s'appliquer. Renseignez-vous à l'avance et assurez la cohérence.
+
+## Structure de l'exercice
+
+- Exercice 1: Tester et comparer la citation automatisée.
+- Exercice 2: Vérifier les résumés générés par IA pour la correction des citations et la fidélité aux sources.
+
+## Exercice 1: Citation automatisée
+
+``` markdown
+Citez l'article <https://doi.org/10.1093/pastj/gtae018> selon le Chicago Manual of Style.
+Créez également une entrée dans un format que je peux directement importer dans Zotero.
+```
+
+::: callout-tip
+Si l'IA n'a pas accès à l'article, vous pouvez télécharger l'article en PDF ou copier le contenu et les métadonnées de l'article au début du prompt et les séparer visuellement, par exemple avec """. Exemple:
+
+"""
+CONTENU DU DOCUMENT
+"""
+
+"""
+MÉTADONNÉES DU DOCUMENT
+"""
+
+VOTRE PROMPT
+:::
+
+Comparez la réponse avec votre citation manuelle, les recommandations officielles de citation sur le site de l'éditeur ou l'importation DOI dans Zotero. Testez d'autres sources de littérature secondaire (autres articles, monographies).
+
+- Toutes les informations correspondent-elles ?
+- Y a-t-il des écarts systématiques (par exemple, avec les numéros de page, les éditeurs, les titres de revues) ?
+
+## Exercice 2: Résumé assisté par IA avec citations originales
+
+``` markdown
+Résumez l'article <https://doi.org/10.1093/pastj/gtae018>. 
+Utilisez uniquement des citations originales de l'article et citez-les selon le Chicago Manual of Style.
+```
+
+Vérifiez la réponse par rapport à l'article original:
+
+- Les citations correspondent-elles au texte original (formulation, numéro de page) ?
+- Le sens des citations a-t-il été correctement transmis ?
+
+## Ressources complémentaires
+
+- [The Markup: Comment les outils de détection de l'IA accusent faussement les étudiants internationaux de tricherie](https://themarkup.org/machine-learning/2023/08/14/how-ai-detection-tools-falsely-accuse-international-students-of-cheating) (ANGLAIS) – Preuves empiriques contre les détecteurs d'IA ; pertinent pour les discussions sur l'évaluation et les politiques.
+- [The Turing Way](https://the-turing-way.netlify.app/) (ANGLAIS) – Manuel pour une recherche reproductible, éthique et collaborative.
+
+## Bibliographie
+
+::: {#refs}
+:::

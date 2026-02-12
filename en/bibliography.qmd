@@ -5,9 +5,18 @@ nocite: |
   @*
 ---
 
-::: callout-note
-This page lists all references cited throughout the Critical AI Literacy for Historians project. The bibliography is automatically generated from all citations used in the exercises and documentation.
+::: callout-tip
+
+## Note: Copyright
+
+We strive to use freely accessible literature. If this is not possible, we ask you to obtain the literature via the library platform [LIBER Libraries](https://libereurope.eu/user-list/). Despite valid arguments, we advise against using platforms such as [Anna's Archive](https://en.wikipedia.org/wiki/Anna%27s_Archive) or [Library Genesis](https://de.wikipedia.org/wiki/Library_Genesis).
+
+See @karaganis2018shadow
 :::
 
 ::: {#refs}
+:::
+
+::: callout-note
+This page lists all references cited throughout the Critical AI Literacy for Historians project. The bibliography is automatically generated from all citations used in the exercises and documentation.
 :::

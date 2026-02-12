@@ -5,36 +5,128 @@ listing:
   id: exercises
   contents: exercises
   type: grid
+  categories: true
+  fields: [image, title, subtitle, description, categories]
+  exclude: 
+    title: "Übungen" # exercises/index.qmd
 ---
 
 ## Willkommen
 
-Dieses Repository bietet strukturierte, praxisorientierte Übungen für Historiker:innen zur Entwicklung von **kritischer KI-Kompetenz**, **digitaler Quellenkritik** und **wissenschaftlicher Praxis** mit großen Sprachmodellen (LLMs).
+Dieses Repository bietet strukturierte, praxisorientierte Übungen für Historiker:innen zur Entwicklung von **kritischer KI-Kompetenz**, **digitaler Quellenkritik** und **wissenschaftlicher Praxis** mit grossen Sprachmodellen (LLMs).
+
+::: {.callout-warning title="DISCLAIMER"}
+Dieses Projekt ist derzeit noch in einer sehr frühen Phase und wird aktiv entwickelt (unter der Zuhilfenahme von AI). Die Materialien, die hier zur Verfügung gestellt werden, sind vorläufig und können sich erheblich verändern. Bitte verwenden Sie sie mit Vorsicht und achten Sie darauf, dass sie möglicherweise noch nicht die endgültige Qualität oder den gewünschten Umfang repräsentieren, die für diese Ressource vorgesehen waren.
+:::
 
 ### Zweck
 
 Diese Materialien zielen darauf ab, Lernenden zu helfen:
 
--   Zu verstehen, wie KI sowohl als Forschungs**werkzeug** als auch als **Methode** fungiert
--   Darüber nachzudenken, wie sie historische Interpretation und Evidenz prägt
--   Rigorose digitale Quellenkritik anzuwenden, um Datenprovenienz, Repräsentation und Bias zu bewerten
--   Verantwortungsvollen, transparenten und ethisch informierten Einsatz von KI in der historischen Forschung zu praktizieren
+- zu verstehen, wie KI sowohl als **Forschungswerkzeug** als auch als **Methode** fungiert,
+- darüber nachzudenken, wie sie historische Interpretation und Evidenz prägt,
+- rigorose digitale Quellenkritik anzuwenden, um Datenprovenienz, Repräsentation und Bias zu bewerten und
+- verantwortungsvollen, transparenten und ethisch informierten Einsatz von KI in der historischen Forschung zu praktizieren.
 
 ### Prinzipien
 
 Die Übungen fördern:
 
--   **Reproduzierbarkeit** in Forschungsabläufen
--   **Datenschutz** und ethischen Datenumgang
--   **Urheberrechtsbewusstsein** und korrekte Zuordnung
--   **Nachhaltigkeit** durch Minimal-Computing-Ansätze
--   **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
+- **Reproduzierbarkeit** in Forschungsabläufen
+- **Datenschutz** und ethischen Datenumgang
+- **Urheberrechtsbewusstsein** und korrekte Zuordnung
+- **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
 
 Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.
 
-## Erste Schritte
+## Wählen Sie Ihren Pfad
 
-Erkunden Sie die Übungen, um Ihre Reise zur Entwicklung kritischer KI-Kompetenz für die historische Forschung zu beginnen.
+Je nach Interesse oder Lernziel können Sie verschiedenen Pfaden durch die Materialien folgen. Wir empfehlen, mit der Übung zum **Prompt Engineering** zu beginnen.
+
+::: {.panel-tabset}
+
+### Pfad A: Europarat / Dodis (Quellen-fokussiert)
+
+Dieser Pfad führt Sie durch den gesamten Forschungsprozess am Beispiel der Schweizer Diplomatiegeschichte (Dodis) und des Europarats.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Grundlagen der Interaktion mit LLMs.
+2. [**Forschungsfrage**](exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd): Eine historische Forschungsfrage entwickeln.
+3. [**Quellensuche**](exercises/quellensuche-vorort-europarat-1963.qmd): Gezielte Suche nach Primärquellen.
+4. [**Quellenkritik**](exercises/quellenkritik-bundesrat-europarat-1949.qmd): Digitale Quellenkritik anwenden.
+5. [**Schreiben**](exercises/schreiben.qmd): Texte verfassen und überarbeiten.
+6. [**Zitieren**](exercises/zitieren.qmd): KI-Nutzung korrekt ausweisen.
+
+### Pfad B: Sozialversicherung (Literatur-fokussiert)
+
+Dieser Pfad konzentriert sich auf die Literaturrecherche und die Vermittlung historischer Themen in der Öffentlichkeit.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Grundlagen der Interaktion mit LLMs.
+2. [**Literaturrecherche**](exercises/literaturrecherche-sozialversicherung-ch.qmd): Sekundärliteratur finden und bewerten.
+3. [**Forschungsfrage**](exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd): (Adaptiert) Eine Forschungsfrage formulieren.
+4. [**Schreiben**](exercises/schreiben.qmd): Texte verfassen und überarbeiten.
+5. [**Zitieren**](exercises/zitieren.qmd): KI-Nutzung korrekt ausweisen.
+6. [**Public History**](exercises/public-history.qmd): Geschichte für ein breites Publikum aufbereiten.
+
+### Pfad C: Eigenes Thema
+
+Nutzen Sie die Methoden und Vorlagen für Ihr eigenes Forschungsprojekt.
+
+- **Voraussetzung**: Absolvieren Sie zuerst die Übung zum [**Prompt Engineering**](exercises/prompt-engineering.qmd).
+- **Transfer**: Übernehmen Sie die Prompts und Reflexionsfragen aus den anderen Übungen und wenden Sie diese auf Ihre eigenen Quellen und Themen an.
+:::
+
+## Alle Übungen
 
 ::: {#exercises}
 :::
+
+## Über den Autor
+
+Moritz Mähr (Dr. sc. ETH Zürich) ist assoziierter Forscher im Bereich Digital Humanities an der Universität Bern und Spezialist für Informations- und Bibliothekswissenschaft bei den Research Analytics Services der ETH Zürich. Seine Arbeit verbindet Digital History, Science and Technology Studies sowie offene Forschungsinfrastrukturen. Schwerpunkte sind digitale Quellenkritik im Zeitalter von KI, die Geschichte der Digitalisierung in der öffentlichen Verwaltung, Minimal-Computing-Ansätze in der Public History sowie digitale Nachhaltigkeit auf Basis der FAIR- und CARE-Prinzipien.
+
+- E-Mail: [moritz.maehr@gmail.com](mailto:moritz.maehr@gmail.com)
+- Website: <https://moritzmaehr.ch/>
+- ORCID: <https://orcid.org/0000-0002-1367-1618>
+- GitHub: <https://github.com/maehr>
+
+## Über dieses Projekt
+
+**Kritische KI-Kompetenz für Historiker:innen** ist eine Bildungsinitiative, die darauf abzielt, Historiker:innen mit dem Wissen und den Fähigkeiten auszustatten, sich kritisch mit künstlicher Intelligenz in ihrer Forschungspraxis auseinanderzusetzen. Die hier vorgestellten Frameworks und Ansätze orientieren sich massgeblich an dem Working Paper *Implementing Generative AI in the Historical Studies*.[@oberbichler2025implementing]
+
+### Pädagogischer Rahmen
+
+Das Projekt basiert auf folgenden pädagogischen Prinzipien:
+
+1. **KI als Werkzeug und Methode**: KI nicht nur als technisches Werkzeug verstehen, sondern auch als methodischer Ansatz, der Forschungsfragen und Interpretationen prägt
+2. **Digitale Quellenkritik**: Rigorose kritische Bewertung von KI-generierten Inhalten, Datensätzen und algorithmischen Ausgaben
+3. **Ethisches Bewusstsein**: Förderung eines verantwortungsvollen KI-Einsatzes, der Datenschutz, Bias, Repräsentation und Machtdynamiken berücksichtigt
+4. **Transparenz und Reproduzierbarkeit**: Förderung offener, dokumentierter und nachvollziehbarer Forschungspraktiken
+5. **Disziplinäre Strenge**: Beibehaltung historischer Methoden und kritischen Denkens bei der Integration neuer Technologien
+
+### Jede Übung enthält
+
+- Klare Lernziele
+- Voraussetzungen
+- Praktische Aktivitäten
+- Kritische Reflexionsanregungen
+- Zusätzliche Ressourcen
+
+### FAIR- und CARE-Prinzipien
+
+Dieses Projekt folgt:
+
+- **FAIR**-Prinzipien (Findable, Accessible, Interoperable, Reusable) für Forschungsdaten und Bildungsmaterialien
+- **CARE**-Prinzipien (Collective Benefit, Authority to Control, Responsibility, Ethics) für verantwortungsvolle Daten-Governance
+
+### Mitwirken
+
+Wir freuen uns über Beiträge von Historiker:innen, Pädagog:innen und Forscher:innen. Bitte siehe unsere [Beitragsrichtlinien](../CONTRIBUTING.md) für weitere Informationen.
+
+### Lizenz
+
+- Bildungsmaterialien: [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
+- Code: [AGPL 3.0](../LICENSE-AGPL.md)
+
+### Kontakt
+
+Für Fragen oder Feedback, bitte [öffnen Sie ein Issue](https://github.com/maehr/critical-ai-literacy-for-historians/issues) oder kontaktieren Sie die Maintainer.

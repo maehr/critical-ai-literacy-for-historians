@@ -5,36 +5,130 @@ listing:
   id: exercises
   contents: exercises
   type: grid
+  fields: [image, title, subtitle, description, categories]
+  exclude:
+    title: "Exercises" # exercises/index.qmd
+aliases:
+  - /index.html
 ---
 
 ## Welcome
 
 This repository provides structured, hands-on exercises for historians to develop **critical AI literacy**, **digital source criticism**, and **scholarly practice** with large language models (LLMs).
 
+::: {.callout-warning title="DISCLAIMER"}
+This project is currently under active development (with the help of AI) and in a very early stage. The materials provided here are preliminary and may change significantly. Please use them with caution and be aware that they may not yet represent the final quality or scope intended for this resource.
+:::
+
 ### Purpose
 
 These materials aim to help learners:
 
--   Understand how AI functions as both a research **tool** and a **method**
--   Reflect on how it shapes historical interpretation and evidence
--   Apply rigorous digital source criticism to assess data provenance, representation, and bias
--   Practice responsible, transparent, and ethically informed use of AI in historical research
+- Understand how AI functions as both a research **tool** and a **method**
+- Reflect on how it shapes historical interpretation and evidence
+- Apply rigorous digital source criticism to assess data provenance, representation, and bias
+- Practice responsible, transparent, and ethically informed use of AI in historical research
 
 ### Principles
 
 The exercises promote:
 
--   **Reproducibility** in research workflows
--   **Privacy** and ethical data handling
--   **Copyright awareness** and proper attribution
--   **Sustainability** through minimal computing approaches
--   **Interdisciplinary collaboration** and critical reflection
+- **Reproducibility** in research workflows
+- **Privacy** and ethical data handling
+- **Copyright awareness** and proper attribution
+- **Sustainability** through minimal computing approaches
+- **Interdisciplinary collaboration** and critical reflection
 
 By engaging with these materials, historians will be better equipped to design transparent, meaningful projects that integrate AI into their research without compromising disciplinary rigor.
 
-## Getting Started
+## Choose Your Path
 
-Explore the exercises to begin your journey in developing critical AI literacy for historical research:
+Depending on your interests or learning goals, you can follow different paths through the materials. We recommend starting with the **Prompt Engineering** exercise.
+
+::: {.panel-tabset}
+
+### Track A: Council of Europe / Dodis (Source-focused)
+
+This track guides you through the entire research process using the example of Swiss diplomatic history (Dodis) and the Council of Europe.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Basics of interacting with LLMs.
+2. [**Research Question**](exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd): Developing a historical research question.
+3. [**Source Search**](exercises/source-search-vorort-council-of-europe-1963.qmd): Targeted search for primary sources.
+4. [**Source Criticism**](exercises/source-criticism-federal-council-council-of-europe-1949.qmd): Applying digital source criticism.
+5. [**Writing**](exercises/writing.qmd): Drafting and refining historical texts.
+6. [**Citing**](exercises/citing.qmd): Properly documenting AI use.
+
+### Track B: Social Security (Literature-focused)
+
+This track focuses on literature research and communicating historical topics to the public.
+
+1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Basics of interacting with LLMs.
+2. [**Literature Research**](exercises/literature-research-social-security-ch.qmd): Finding and evaluating secondary literature.
+3. [**Research Question**](exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd): (Adapted) Formulating a research question.
+4. [**Writing**](exercises/writing.qmd): Drafting and refining historical texts.
+5. [**Citing**](exercises/citing.qmd): Properly documenting AI use.
+6. [**Public History**](exercises/public-history.qmd): Presenting history for a broad audience.
+
+### Track C: Your Own Topic
+
+Utilize the methods and templates for your own research project.
+
+- **Prerequisite**: Complete the [**Prompt Engineering**](exercises/prompt-engineering.qmd) exercise first.
+- **Transfer**: Use the prompts and reflection questions from the other exercises and apply them to your own sources and topics.
+:::
+
+## All Exercises
 
 ::: {#exercises}
 :::
+
+## About the author
+
+Moritz Mähr (Dr. sc. ETH Zurich) is an associate researcher in Digital Humanities at the University of Bern and an information and library science specialist with Research Analytics Services at ETH Zurich. His work bridges digital history, science and technology studies, and open research infrastructure, with a focus on digital source criticism in the age of AI, the history of digitization in public administration, minimal-computing approaches to public history, and digital sustainability grounded in FAIR and CARE principles.
+
+- Email: [moritz.maehr@gmail.com](mailto:moritz.maehr@gmail.com)
+- Website: <https://moritzmaehr.ch/>
+- ORCID: <https://orcid.org/0000-0002-1367-1618>
+- GitHub: <https://github.com/maehr>
+
+## About This Project
+
+**Critical AI Literacy for Historians** is an educational initiative designed to equip historians with the knowledge and skills to critically engage with artificial intelligence technologies in their research practice. The frameworks and approaches presented here are largely based on the working paper *Implementing Generative AI in the Historical Studies*.[@oberbichler2025implementing]
+
+### Pedagogical Framework
+
+The project is grounded in the following pedagogical principles:
+
+1. **AI as Tool and Method**: Understanding AI not only as a technical tool but also as a methodological approach that shapes research questions and interpretations
+2. **Digital Source Criticism**: Applying rigorous critical evaluation to AI-generated content, datasets, and algorithmic outputs
+3. **Ethical Awareness**: Fostering responsible use of AI that considers privacy, bias, representation, and power dynamics
+4. **Transparency and Reproducibility**: Promoting open, documented, and replicable research practices
+5. **Disciplinary Rigor**: Maintaining historical methods and critical thinking while integrating new technologies
+
+### Each exercise includes
+
+- Clear learning objectives
+- Prerequisites
+- Hands-on activities
+- Critical reflection prompts
+- Additional resources
+
+### FAIR and CARE Principles
+
+This project adheres to:
+
+- **FAIR** principles (Findable, Accessible, Interoperable, Reusable) for research data and educational materials
+- **CARE** principles (Collective Benefit, Authority to Control, Responsibility, Ethics) for responsible data governance
+
+### Contributing
+
+We welcome contributions from historians, educators, and researchers. Please see our [contributing guidelines](../CONTRIBUTING.md) for more information.
+
+### License
+
+- Educational materials: [CC BY NC SA 4.0](../LICENSE-CCBYNCSA.md)
+- Code: [AGPL 3.0](../LICENSE-AGPL.md)
+
+### Contact
+
+For questions or feedback, please [open an issue](https://github.com/maehr/critical-ai-literacy-for-historians/issues) or contact the maintainers.

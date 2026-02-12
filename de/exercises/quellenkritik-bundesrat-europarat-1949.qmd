@@ -1,0 +1,547 @@
+---
+lang: de
+title: "Quellenkritik"
+subtitle: "Bundesrat und Europarat 1949"
+description: "Eine angeleitete Übung zur systematischen externen und internen Quellenkritik an einer diplomatischen Aktennotiz (Dodis)."
+categories: [Quellen]
+image: ../../assets/images/source_criticism_Gemini_Generated_Image_ne84kfne84kfne84.png
+tags:
+  - Quellenkritik
+  - Kontextualisierung
+  - Europarat
+  - Schweiz
+  - Diplomatie
+  - Wissenschaftliche Integrität
+  - Evidenzdisziplin
+draft: false
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "Universität Bern"
+date: "2025-12-29"
+date-modified: today
+references:
+- id: altermatt-casasus-2013-europarat
+  type: book
+  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
+  editor:
+    - family: Altermatt
+      given: Bernhard
+    - family: Casasus
+      given: Gilbert
+  publisher: "Rüegger"
+  ISBN: "978-3-7253-1005-0"
+  issued:
+    year: 2013
+  publisher-place: "Schweiz"
+  note: "Sammelband herausgegeben im Auftrag des Centre d’Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft"
+---
+
+## Überblick und didaktisches Ziel
+
+Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äussere und innere Kritik) anhand einer konkreten Quelle aus den *Diplomatischen Dokumenten der Schweiz (Dodis)*. Im Zentrum steht die Frage, wie eine Quelle **als historisches Evidenzobjekt** behandelt wird: nicht als „Faktenspeicher“, sondern als **situierter Artefakt** mit Entstehungskontext und Überlieferungsgeschichte.
+
+**Fallbeispiel (Primärquelle): [Dodis: Switzerland and the Council of Europe](https://dodis.ch/5020)**
+
+::: callout-note
+
+## Hinweis zur digitalen Überlieferung
+
+Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen Edition** vor. Für die Quellenkritik gehört deshalb nicht nur der Text, sondern auch die **Editionsebene** (Metadaten, Archivsignatur, Verlinkungen, Editionsrichtlinien) zum Untersuchungsgegenstand.[@fickers2022criticism]
+:::
+
+## Voraussetzungen
+
+- Grundverständnis historischer Forschungsmethoden
+- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prompt Engineering](prompt-engineering.qmd) zuerst zu durchlaufen.
+
+:::
+
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+
+:::
+
+## Lernziele
+
+Nach Abschluss der Übung sind Sie in der Lage:
+
+- **externe** und **interne** Quellenkritik systematisch anzuwenden,
+- **Authentizität, Provenienz und Überlieferung** einer digital edierten Aktennotiz zu prüfen,
+- Autor:innenschaft, **Horizon/Standpunkt**, Intention und Bias hermeneutisch zu rekonstruieren,
+- zwischen **wissentlicher** und **unwissentlicher** Aussageebene (witting/unwitting testimony) zu unterscheiden,
+- den **Evidenzwert** der Quelle in Relation zu einer Forschungsfrage präzise zu bestimmen,
+- das "**Vetorecht der Quelle**" zu operationalisieren (was schliesst sie aus? was lässt sie offen?),
+- KI-Systeme **kritisch und methodisch kontrolliert** zur Quellenkritik und Kontexterschliessung einzusetzen.
+
+## Struktur der Übung
+
+Jeder Schritt enthält:
+
+- eine **Zielsetzung**,
+- **konkrete Aufgaben** (inkl. optionaler KI-Prompts),
+- einen **Arbeits- und Reflexionsauftrag**.
+
+1. Orientierung: Quellengattung, Minimalparaphrase, erste Forschungsheuristik
+2. Externe Kritik: Provenienz, Authentizität, Überlieferung, Edition
+3. Interne Kritik: Sprecherposition, Intention, Argumentlogik, Bias
+4. Kontextualisierung & Gegenprobe: Triangulation mit weiteren Quellen
+5. Evidenzwert & „Veto-Macht“: was lässt sich stützen, was nicht?
+6. Dokumentation & Reflexion: Reproduzierbarkeit, KI-Protokoll
+
+## 1. Orientierung: Was ist diese Quelle (und wofür kann sie stehen)?
+
+### Ziel
+
+Eine **erste kontrollierte Einordnung** der Quelle als Objekt: Gattung, Situation, Akteurskonstellation, thematischer Fokus.
+
+### Aufgabe 1: Minimalparaphrase (ohne Interpretation)
+
+Formulieren Sie in **max. 4 Sätzen**:
+
+- Wer spricht/handelt?
+- Was ist der Anlass?
+- Was ist die zentrale Aussage/Entscheidung?
+- Welche Konsequenz wird angedeutet?
+
+### Aufgabe 1: Minimalparaphrase (ohne Interpretation) mittels KI
+
+``` markdown
+Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte folgende Fragen:
+Wer spricht/handelt?
+Was ist der Anlass?
+Was ist die zentrale Aussage/Entscheidung?
+Welche Konsequenz wird angedeutet?
+```
+
+::: callout-info
+
+## Hochladen der Quelle
+
+Laden Sie das Dokument als PDF Datei hoch zusammen mit dem Prompt. Falls das nicht möglich ist, kopieren sie den Inhalt des Dokuments an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Stellen Sie darüber hinaus sicher, dass die KI Zugriff auf die Metadaten hat (entweder durch Online-Zugriff oder indem Sie die Metadaten zur Verfügung stellen). Beispiel:
+
+``` markdown
+"""
+INHALT DOKUMENT
+"""
+
+"""
+METADATEN DOKUMENT (inkl. URL)
+"""
+
+IHR PROMPT
+```
+
+:::
+
+### Arbeitsauftrag (Reflexion)
+
+- Vergleichen Sie die Antwort der KI mit ihrer eigenen. Welche Unterschiede stellen Sie fest?
+
+- Gibt es systematische Verzerrungen (sowohl in Ihren als auch in den KI-generierten Antworten)?
+
+### Aufgabe 2: Erste Forschungsheuristik
+
+Notieren Sie drei **potenzielle Forschungsfragen**, die *prinzipiell* mit dieser Quelle bearbeitbar wären (noch ohne Eingrenzung). Beispiele für Fragetypen:
+
+- begriffsgeschichtlich (Neutralität als Argument)
+- institutionsgeschichtlich (Aussenpolitische Entscheidungswege)
+- wissensgeschichtlich (was gilt als „vereinbar“/„unvereinbar“?)
+- politisch-kulturell (Erwartungen an Volksabstimmungen)
+
+### Aufgabe 2: Erste Forschungsheuristik mittels KI
+
+``` markdown
+Gib mir drei mögliche historische Forschungsfragen, die sich aus der angehängten Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) ableiten lassen.
+Formuliere jede Frage so, dass sie (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch ist.
+Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.
+```
+
+### Arbeitsauftrag (Reflexion)
+
+- Welche Ihrer drei Fragen **hängt am stärksten** an dieser spezifischen Quelle (hohe Quellenbindung)?
+- Welche Frage ist **am wenigsten** quellenabhängig (würde auch mit anderen Quellen „ähnlich“ formuliert)?
+- Welche Begriffe sind bereits **interpretativ aufgeladen** (z. B. „Neutralität“, „Europa“, „Vereinbarkeit“)?
+
+## 2. Externe Quellenkritik: Authentizität, Provenienz, Überlieferung, Edition
+
+### Ziel
+
+Klären, **was** dieses Dokument als Objekt ist, **wie** es überliefert wurde, und **welche Editionsschicht** zwischen Original und Ihnen liegt.
+
+### Aufgabe 1: Provenienz-Check (Metadaten & Archivbezug)
+
+Erheben Sie (von der Dodis-Seite) und protokollieren Sie:
+
+- Dokumenttyp/Gattung (Notiz, Protokoll, Bericht, Brief …)
+- Datum/Uhrzeit, Ort
+- Autor/Unterzeichner (hier: Max Petitpierre)
+- Adressat:in(nen) bzw. Funktionsadressat (explizit/implizit)
+- Archivsignatur (z. B. „E 2800(-)…“)
+- Institutioneller Kontext (Departement, Kommissionen, beteiligte Organisationen)
+- Tags/Personen/Organisationen/Geografie (als Editionsmetadaten)
+
+**Ergebnis:** eine kleine Tabelle + 5–8 Zeilen „Editionsnotizen“ (Was liefert die Edition? Was bleibt offen?).
+
+### Aufgabe 2: Authentizität als Frageform
+
+Formulieren Sie drei prüfbare Fragen zur Authentizität, z. B.:
+
+- Handelt es sich um ein Original oder eine Abschrift/Redaktion?
+- Gibt es Hinweise auf nachträgliche Bearbeitung (Kürzungen, Übersetzungen, redaktionelle Normalisierung)?
+- Welche Teile sind Dokumenttext, welche editorische Ergänzung (Fussnoten/Verweise)?
+
+### Aufgabe 3: Überlieferung (Transmission) als epistemisches Problem
+
+Rekonstruieren Sie eine plausible Überlieferungskette:
+
+**Entstehung → Ablage im Verwaltungsprozess → Archivierung → Erschliessung → Digitalisierung/Edition → Anzeige im Web**
+
+Notieren Sie an jeder Station:
+
+- mögliche Verluste/Filter (Selektionslogik)
+- mögliche Transformationspunkte (Redaktion, Klassifikation, Metadatenvergabe)
+- mögliche Kontextverluste (fehlende Beilagen, fehlende Vorgeschichte)
+
+### Arbeitsauftrag (Reflexion)
+
+- Welche Informationen stammen **aus dem Dokumenttext** (Primärtext), welche **aus der Edition** (Metadaten/Verlinkung)?
+- Welche Teile Ihrer Einordnung wären ohne Dodis-Edition **nicht möglich**?
+- Wo ist die Editionsschicht selbst **eine Quelle** (z. B. Kategorisierung, Tags, Auswahl)?
+
+### Aufgabe: Externe Kritik mittels KI
+
+``` markdown
+Analysiere die digital edierte Aktennotiz (Dodis 5020, Bern 7.7.1949) ausschliesslich unter dem Gesichtspunkt der externen Quellenkritik.
+
+1) Identifiziere auf Basis der Metadaten:
+   - Dokumenttyp/Gattung
+   - Datum und Ort
+   - Autor/Unterzeichner
+   - institutionellen Kontext
+   - Archivsignatur und Überlieferungsform
+
+2) Unterscheide strikt zwischen:
+   a) Informationen aus dem Dokumenttext
+   b) Informationen aus der Editions- und Metadatenschicht (Dodis)
+
+3) Formuliere drei prüfbare Fragen zur Authentizität und Überlieferung.
+
+Wichtig:
+- Triff keine historischen Bewertungen.
+- Markiere jede Aussage explizit als:
+  [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
+```
+
+### Reflexionsauftrag
+
+- Wo ergänzt die KI systematisch, wo **halluziniert** sie Überlieferungsannahmen?
+- Welche Metadaten übernimmt sie korrekt, welche bleiben vage oder falsch?
+- Inwiefern zwingt die explizite Kennzeichnung der Ebenen zu methodischer Klarheit?
+
+## 3. Interne Quellenkritik: Aussageabsicht, Standpunkt, Argumentlogik, Bias
+
+### Ziel
+
+Analysieren, **wie** der Text Bedeutung produziert: durch Auswahl, Formulierungen, implizite Prämissen, institutionelle Perspektive.
+
+### Aufgabe 1: Sprechakt- und Funktionsanalyse
+
+Bestimmen Sie die Funktion der Notiz im Verwaltungskontext (plausibilisiert):
+
+- Dokumentiert sie ein Ereignis „für die Akten“?
+- Rechtfertigt sie eine Position gegenüber Dritten?
+- Steuert sie interne Meinungsbildung?
+- Markiert sie eine rote Linie (Neutralität als Stoppsignal)?
+
+**Ergebnis:** 1 Absatz (6–10 Sätze), der *Funktion* und *Adressierung* argumentiert (mit Textbelegen).
+
+### Aufgabe 2: Argumentmapping (Neutralität als Schlüsseloperator)
+
+Extrahieren Sie alle Passagen, die Neutralität, Vereinbarkeit oder Entscheidungsprozesse betreffen, und zerlegen Sie sie in:
+
+- **Behauptung** (claim)
+- **Begründung** (warrant)
+- **Voraussetzung** (assumption)
+- **Implikation** (so what)
+
+**Formatvorschlag (Markdown):**
+
+``` markdown
+- Claim:
+- Begründung:
+- Voraussetzung:
+- Implikation:
+- Textbeleg (Zitat/Paraphrase):
+```
+
+### Aufgabe 3: Wissentliche vs. unwissentliche Aussageebene
+
+Markieren Sie zwei Beispiele für:
+
+- **wissentliche Aussagen** (gezielt adressierte Mitteilungen, Positionsdarstellung)
+- **unwissentliche Aussagen** (Selbstverständlichkeiten, implizite Normen, institutionelle Routinen)
+
+Leitfragen:
+
+- Welche Selbstbilder der Schweiz werden vorausgesetzt (z. B. „absolutere Neutralität“)?
+- Welche politischen Mechanismen gelten als erwartbar (Parlament, Volk, Kantone)?
+- Welche Vergleichsfolie wird herangezogen (Schweden) und wofür?
+
+### Aufgabe 4: Bias als Struktur, nicht als „Fehler“
+
+Analysieren Sie Perspektivenbegrenzungen:
+
+- Welche Interessen/Constraints hat der Autor als Departementschef?
+- Welche Aspekte fehlen systematisch (z. B. juristische Dimensionen, internationale Reaktionen, innenpolitische Lager)?
+- Welche Alternativdeutungen wären aus anderen Positionen plausibel (z. B. Parteipolitik, Wirtschaft, Presse)?
+
+````{=html}
+<!-- ### Optional: KI-Exploration (nur mit Belegpflicht)
+
+``` markdown
+Analysiere diese Notiz hermeneutisch: (1) Autorhorizont vs. Standpunkt, (2) Intention/Funktion, (3) wissentliche und unwissentliche Aussageebenen.
+Wichtig: Gib jede Aussage nur zusammen mit einem konkreten Textbeleg (kurzes Zitat oder präzise Paraphrase).
+Wenn dir ein Beleg fehlt, markiere es als Hypothese.
+``` -->
+````
+
+### Arbeitsauftrag (Reflexion)
+
+- Welche Ihrer Interpretationen sind **textnah** (belegbar), welche sind **kontextabhängige Hypothesen**?
+- Welche Begriffe fungieren als **Scharnier** zwischen Text und Kontext (Neutralität, Vereinbarkeit, Volksabstimmung)?
+
+### Aufgabe: Interne Kritik mittels KI
+
+``` markdown
+Führe eine interne Quellenkritik der angehängten Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) durch.
+
+Analysiere getrennt:
+1) Sprecherposition und institutionellen Standpunkt
+2) Funktion und Intention der Notiz im Verwaltungskontext
+3) Argumentationslogik rund um Neutralität und Entscheidungsprozesse
+4) wissentliche vs. unwissentliche Aussageebenen
+
+Regeln:
+- Jede analytische Aussage muss mit einem konkreten Textbeleg
+  (kurzes Zitat oder präzise Paraphrase) versehen sein.
+- Wenn kein Beleg vorliegt: explizit als „Hypothese“ markieren.
+- Keine Kontextinformationen verwenden, die nicht im Text angelegt sind.
+```
+
+### Reflexionsauftrag
+
+- Welche Interpretationen der KI sind textnah, welche spekulativ?
+- Wo nivelliert die KI institutionelle Perspektiven zu allgemeinen Aussagen?
+- Welche hermeneutischen Schritte bleiben auch hier nicht automatisierbar?
+
+## 4. Kontextualisierung und Gegenprobe: Triangulation statt „Kontext als Dekor“
+
+### Ziel
+
+Die Aussagekraft der Notiz durch **vergleichende Einbettung** prüfen: Was ist spezifisch? Was ist routiniert? Was ist strategisch?
+
+### Aufgabe 1: Intertextuelle Spurensuche (im Dokument angelegt)
+
+Die Notiz verweist indirekt auf weitere Kontexte (z. B. Kommissionen, private föderalistische Netzwerke, Vergleich mit Schweden).
+
+Erstellen Sie eine **Recherche-Matrix** (mind. 6 Zeilen):
+
+| Spur im Text | Was genau suchen? | Erwartete Quellengattung | Wo suchen? | Zweck der Gegenprobe |
+|---------------|---------------|---------------|---------------|---------------|
+
+Beispiele für „Wo suchen?“ (als Kategorien, nicht als Vollständigkeit):
+
+- weitere Dodis-Dokumente (Querverweise, Dossiers)
+- Amtsdruckschriften (Botschaften, Berichte)
+- Parlamentsprotokolle / Kommissionsprotokolle
+- Zeitungen (Rezeption, Kontroverse)
+- Akten zu privaten Komitees/Vereinen
+
+### Aufgabe 2: Kontrafaktische Gegenfrage (Kontrollinstrument)
+
+Formulieren Sie zwei Gegenfragen, die die Notiz *herausfordern*:
+
+- Was müsste ich finden, damit die These „Neutralität verhinderte den Beitritt“ **zu grob** wird?
+- Was müsste ich finden, damit die Aussage zur Volksabstimmung **als strategische Rhetorik** statt als Prognose erscheint?
+
+````{=html}
+<!-- ### Optional: KI-Exploration (Rechercheplanung, nicht Ergebnisproduktion)
+
+``` markdown
+Leite aus der Notiz (Bern, 7.7.1949, Petitpierre/Hansen) einen Rechercheplan ab:
+1) Welche ergänzenden Primärquellen brauche ich zur Gegenprobe?
+2) Welche Sekundärliteratur hilft bei Kontext (Neutralitätspolitik, frühe europäische Institutionen, schweizerischer Entscheidungsprozess)?
+3) Welche Suchbegriffe (DE/FR) sind wahrscheinlich produktiv?
+Gib keine Behauptungen über Inhalte dieser Quellen, sondern nur Plan/Heuristik.
+``` -->
+````
+
+### Arbeitsauftrag (Reflexion)
+
+- Welche Art Kontext ist **notwendig** (um Behauptungen zu prüfen), und welcher ist **nur plausibilisierend**?
+- Wo droht „Kontext“ zu einer **nachträglichen Glättung** zu werden?
+
+### Aufgabe: Recherche- und Gegenprobe-Planung mittels KI
+
+``` markdown
+Leite aus der Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) einen systematischen Rechercheplan ab.
+
+1) Nenne mindestens:
+   - 5 ergänzende Primärquellen (unterschiedliche Gattungen)
+   - 3 Typen von Sekundärliteratur
+
+2) Ordne jede Quelle einer konkreten Prüfabsicht zu
+   (z. B. Bestätigung, Kontextualisierung, Widerlegung).
+
+3) Formuliere zu jeder Quelle eine Leitfrage.
+
+Vorgaben:
+- Keine Aussagen über den tatsächlichen Inhalt dieser Quellen.
+- Keine narrativen Synthesen.
+- Fokus ausschliesslich auf Prüfpfade und Gegenproben.
+```
+
+### Reflexionsauftrag
+
+- Welche Kontexte priorisiert die KI systematisch (Politik, Institutionen)?
+- Welche Kontexte fehlen auffällig (z. B. Medien, Recht, Ökonomie)?
+- Wo tendiert die KI dazu, „Kontext“ als Erklärung statt als Prüfmittel zu verwenden?
+
+## 5. Evidenzwert und „Veto-Macht“: Was belegt die Quelle – und was nicht?
+
+### Ziel
+
+Den Evidenzwert strikt **relational** bestimmen: Quelle × Forschungsfrage.
+
+### Aufgabe 1: Evidenz-Profil (Claim-Scope)
+
+Erstellen Sie eine zweigeteilte Liste:
+
+**A. Gut gestützt (hohe Sicherheit)** Aussagen, die die Notiz direkt trägt (mit Textbeleg).
+
+**B. Nicht gestützt / offen (Veto)** Aussagen, die die Notiz *nahelegt*, aber nicht belegt – oder sogar ausschliesst.
+
+Leitfragen:
+
+- Was kann ich über die Position Petitpierres sagen – und was nicht?
+- Was kann ich über die dänische Position sagen – und was bleibt unklar (z. B. Motive, interne Debatten)?
+- Was sagt die Quelle über „die Schweiz“ – und wo ist das eine unzulässige Generalisierung?
+
+### Aufgabe 2: Mikro-Hypothesen mit Falsifikationspfad
+
+Formulieren Sie zwei Mikro-Hypothesen (je 1 Satz), z. B.:
+
+- „X fungiert 1949 als institutioneller Gatekeeper-Begriff, der Y politisch blockiert.“
+- „Die Referendums-/Volksabstimmungsreferenz dient als Legitimationsargument gegenüber ausländischen Gesprächspartnern.“
+
+Für jede Hypothese:
+
+- Welche **zusätzliche Quelle** könnte sie stützen?
+- Welche Quelle/Beobachtung würde sie **widerlegen**?
+
+````{=html}
+<!-- ### Optional: KI-Exploration (Vetorecht der Quellen explizit machen)
+
+``` markdown
+Erstelle für diese Aktennotiz zwei Listen:
+(1) Aussagen, die der Text direkt stützt (mit Beleg),
+(2) Aussagen, die der Text nicht stützt oder implizit ausschliesst (Veto-Macht).
+Markiere jede Aussage als: sicher / wahrscheinlich / spekulativ.
+``` -->
+````
+
+### Aufgabe: Evidenzprofil mittels KI
+
+``` markdown
+Erstelle auf Basis der Aktennotiz zwei getrennte Listen:
+
+A) Aussagen, die der Text direkt und eindeutig stützt.
+B) Aussagen, die der Text nicht stützt, nur nahelegt oder implizit ausschliesst.
+
+Für jede Aussage:
+- kurzer Textbeleg oder Paraphrase
+- Einstufung: sicher / wahrscheinlich / spekulativ
+- Begründung der Einstufung
+
+Zusatz:
+Formuliere für zwei Aussagen aus Liste B je einen
+konkreten Falsifikationspfad (welche Quelle müsste was zeigen?).
+```
+
+### Reflexionsauftrag
+
+- Wo ist die KI überraschend restriktiv, wo zu grosszügig?
+- Welche Aussagen erscheinen „plausibel“, werden aber korrekt vetoisiert?
+- Wie verändert die explizite A/B-Trennung den eigenen Interpretationsdrang?
+
+### Arbeitsauftrag (Reflexion)
+
+- Welche Aussage „würde man gern machen“, aber die Quelle erlaubt sie nicht?
+- Wo ist die Grenze zwischen **Interpretation** und **Behauptung**?
+
+## 6. Dokumentation & Reflexion: Reproduzierbarkeit, KI-Protokoll
+
+### Ziel
+
+Quellenkritik als **dokumentierte Methode**: nachvollziehbar, überprüfbar, wiederverwendbar.
+
+### Aufgabe 1: Analyseprotokoll (Minimalstandard)
+
+Legen Sie ein kurzes Protokoll an:
+
+- Vollzitat/Permalink der Quelle
+- Datum des Zugriffs
+- Version/Anzeigeform (HTML, PDF, Export)
+- Ihre Forschungsfrage (Arbeitsversion)
+- Externe Kritik (Stichpunkte)
+- Interne Kritik (Stichpunkte)
+- Evidenzprofil (A/B-Liste)
+- Offene Fragen & nächste Rechercheschritte
+
+### Aufgabe 2: KI-Reflexion (wenn KI genutzt wurde)
+
+Notieren Sie:
+
+- Welche Prompts haben Sie verwendet (wörtlich)?
+- Welche Antworten waren hilfreich (und warum)?
+- Wo traten Verkürzungen/Übergeneralisierungen auf?
+- Welche Schritte blieben **unvermeidlich menschliche Entscheidungen** (z. B. Auswahl der Forschungsfrage, Gewichtung von Evidenz, Kontextentscheidungen)?
+
+::: callout-tip
+
+## Qualitätskriterium
+
+Eine gute Quellenkritik ist nicht die, die „alles erklärt“, sondern die, die **Grenzen und Prüfpfade** sichtbar macht: Was ist belegt? Was ist hypothetisch? Was müsste als Nächstes geprüft werden?
+:::
+
+## Lernergebnis
+
+Am Ende verfügen Sie über:
+
+- eine **begründete externe und interne Quellenkritik** zu Dodis 5020,
+- ein **Evidenzprofil** (inkl. Veto-Punkten) in Relation zu einer Forschungsfrage,
+- einen **Rechercheplan** zur Kontext- und Gegenprobe,
+- ein **reproduzierbares Analyseprotokoll** (inkl. strukturierter Claim-Extraktion),
+- eine reflektierte Einschätzung, **wo KI Exploration unterstützt** und **wo sie methodisch zu begrenzen** ist.
+
+## Weiterführende Ressourcen
+
+- [Ranke.2: Wikipedia als historische Quelle](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenienz, Revisionsgeschichten und digitale Quellenkritik.
+- [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Kritik an Trainingsdaten und ihre Parallelen zur Quellenkritik.
+
+## Bibliographie
+
+::: {#refs}
+:::

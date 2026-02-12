@@ -1,0 +1,502 @@
+---
+lang: en
+title: "Literature Research and Analysis"
+subtitle: "History of Social Security in Switzerland"
+description: "A guided exercise for systematic literature research and problem-oriented literature analysis with critically controlled use of generative AI."
+author:
+  - name: "Moritz Mähr"
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - "University of Bern"
+date: "2025-12-29"
+date-modified: today
+categories: [Methods]
+image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
+tags:
+  - Literature Research
+  - Literature Analysis
+  - Reference Management
+  - Reproducibility
+  - Switzerland
+  - Social Policy
+  - AI-Assisted
+draft: false
+references:
+- id: history_toolkit_en_2016
+  type: book
+  title: "History: A Toolkit for Students"
+  author:
+    - family: Stüdli
+      given: Beat
+    - family: Hitz
+      given: Benjamin
+  translator:
+    - family: Grogan
+      given: Patrick
+  issued:
+    year: 2016
+  publisher: "Department of History, University of Basel"
+  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version"
+  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+
+- id: bar-amtsdruckschriften
+  type: webpage
+  title: "Amtsdruckschriften und weitere digitalisierte Unterlagen"
+  URL: "https://www.bar.admin.ch/bar/de/home/recherche/suchen/suchmaschinen-portale/amtsdruckschriften.html"
+  publisher: "Schweizerisches Bundesarchiv (BAR)"
+
+
+- id: bsv-ahv-chronologie-2025
+  type: report
+  title: "Bisherige Revisionen der schweizerischen Altersvorsorge (Chronologie)"
+  author:
+    - literal: "Bundesamt für Sozialversicherungen (BSV)"
+  issued:
+    year: 2025
+    month: 1
+    day: 6
+  URL: "https://www.bsv.admin.ch/dam/de/sd-web/BjJ4nul1AM2s/chronologie_der_ahv-revisionen.pdf"
+
+
+- id: leimgruber-solidarity-2008
+  type: book
+  title: "Solidarity without the State? Business and the Shaping of the Swiss Welfare State, 1890–2000"
+  author:
+    - family: Leimgruber
+      given: Matthieu
+  issued:
+    year: 2008
+  publisher: "Cambridge University Press"
+  DOI: "10.1017/CBO9780511497094"
+  note: "Publication date: 06.03.2008 (online); DOI according to publisher"
+
+- id: obinger-1998
+  type: article-journal
+  title: "Federalism, Direct Democracy, and Welfare State Development in Switzerland"
+  author:
+    - family: Obinger
+      given: Herbert
+  issued:
+    year: 1998
+  container-title: "Journal of Public Policy"
+  volume: "18"
+  issue: "3"
+  page: "241–263"
+  DOI: "10.1017/S0143814X98000129"
+---
+
+## Overview and Didactic Goal
+
+This exercise introduces systematic literature research and problem-oriented literature analysis – with the goal of being able to reconstruct the state of research on a historical topic. A focus lies on the critically controlled use of generative AI as a heuristic tool for expanding search spaces and structuring texts.
+
+**Case Study: History of Social Security in Switzerland**
+
+The exercise follows a circular search and analysis process: the starting point is a broad topic area (social security), from which a clear problem focus, a refined research question, and a reproducible corpus of relevant secondary literature are successively developed. Manual research and analysis phases alternate with AI-assisted explorations, which are each critically validated.
+
+## Prerequisites
+
+- Basic understanding of historical research methods
+- Basic knowledge of working with generative AI (especially prompting)
+
+::: callout-note
+
+## Prompt Engineering
+
+If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+
+:::
+
+::: callout-note
+
+## LLM
+
+You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+
+:::
+
+## Learning Objectives
+
+Upon completion of this exercise, you will be able to:
+
+- justify the function of literature research and analysis in historical research,
+- translate a topic on Swiss social security into a researchable search strategy,
+- conduct and document systematic (catalogs/databases) and unsystematic (snowballing) research,
+- use AI as a **heuristic search aid** (keyword expansion, query design, screening),
+- systematically assess relevance, argumentation, theory, and methods of secondary literature,
+- identify central lines of debate and research gaps and derive a refined research question from them,
+- implement literature management in a reproducible and citation-secure manner (Zotero/BibTeX, search protocol, decision log).
+
+## What is Literature Research and Literature Analysis?
+
+**Literature research** is the systematic identification of relevant secondary literature (and relevant tertiary resources) to map the state of research.
+
+**Literature analysis** is the problem-oriented, critical reading of this literature to reconstruct arguments, theoretical references, methods, evidence bases, and controversies (rather than extracting "facts").
+
+**Case Study**: *History of Social Security in Switzerland* (welfare state, AHV/IV/UV/KV/ALV, federalism, associations, gender order, transnational transfers).
+
+::: callout-note
+
+## Note on Online Research
+
+Despite advancing digitization, historical research cannot be conducted entirely online.[@milligan2019history] In particular, out-of-print secondary literature and sources not yet catalogued often require physical research in libraries and archives. Plan for access (library, interlibrary loan, archive) and note that platforms/catalogs structure visibility (cataloging logic) and do not guarantee completeness.[@putnam2016shadows]
+:::
+
+## Structure of the Exercise
+
+Each step contains:
+
+- an **objective**,
+- **concrete tasks** (incl. optional AI prompts),
+- a **work and reflection assignment**.
+
+1. Problem Formulation and Search Horizon
+2. Orientation Knowledge via Tertiary Resources (Debate and Conceptual Framework)
+3. Systematic Search I: Catalogs (Coverage and Retrieval Logic)
+4. Systematic Search II: Journals/Media and Special Paths (Context, Reviews, Concepts)
+5. Snowballing: Backward/Forward Citation (Control Canons and Blind Spots)
+6. Screening and Quality Assessment: Relevance, Argument, Method, Evidence
+7. Historiographic Debate Mapping and State of Research Text (Condensed, Evidence-Sensitive)
+8. Research Gap and Delimitation: From State of Research to Research Question
+9. Reproducibility and Documentation
+
+## 1. Problem Formulation and Search Horizon
+
+### Goal
+
+From the broad topic area (social security) to a clear **problem focus** and an initial search hypothesis.
+
+### Task (Without AI)
+
+Formulate in 5–8 sentences:
+
+- Investigation period (e.g., 1880–1950 / 1938–1948 / 1970–2005)
+- Subarea (e.g., old-age provision, health insurance, disability, unemployment)
+- Presumed conflict or mechanism logic (e.g., federalism/referendum, associations, expertise, gender, transfer)
+- Expected literature spaces (history / political science / legal history / social policy)
+
+### Task (AI Exploration)
+
+``` markdown
+I am working on the topic "History of Social Security in Switzerland."
+Suggest 6 problem-oriented, historically workable focus variants (each with: time period, actor/arena focus, mechanism).
+For each variant, provide 8 search terms (DE/FR/EN; historically plausible terms) and 3 expected literature types (monograph, article, anthology chapter).
+No invented titles.
+```
+
+### Critical Check
+
+Mark in the response:
+
+- anachronistic categories (mark as *retrospective search anchors*),
+- implicit theoretical assumptions (e.g., "welfare regime"),
+- missing perspectives (e.g., gender, cantonal level, ILO/transfer).
+
+## 2. Orientation Knowledge via Tertiary Resources (Debate and Conceptual Framework)
+
+### Goal
+
+A robust contextual framework (chronology, concepts, institutions) as a basis for targeted literature research.
+
+### Core Resources
+
+- Platform:
+  - [History of Social Security (Switzerland) — Home](https://www.historyofsocialsecurity.ch/home)
+  - [History of Social Security — Synthesis](https://www.historyofsocialsecurity.ch/synthesis)
+  - [History of Social Security — Bibliography](https://www.historyofsocialsecurity.ch/bibliography)
+- HLS Entry Points:
+  - [Historical Dictionary of Switzerland: Social Insurance](https://hls-dhs-dss.ch/en/articles/016607/)
+  - [Historical Dictionary of Switzerland: Social Policy](https://hls-dhs-dss.ch/articles/016577)
+  - [Historical Dictionary of Switzerland: Old Age and Survivors' Insurance (AHV)](https://hls-dhs-dss.ch/en/articles/016611/)
+  - [Historical Dictionary of Switzerland: Social Security](https://hls-dhs-dss.ch/articles/016318)
+
+### Task (Without AI)
+
+Read (skimming):
+
+- one synthesis stage on the platform,
+- one HLS article (or several briefly).
+
+Extract:
+
+- 8–12 key terms (incl. historical terminology),
+- 6 "fixed points" (events/laws/institutions),
+- 5 "debate markers" (e.g., federalism as veto point, state/private relationship, gender, transfer, expert knowledge).
+
+### Task (AI Exploration)
+
+``` markdown
+Based on the following terms/fixed points: [insert]
+1) Build a debate map (4–6 debate axes) on the history of social security in Switzerland.
+2) Assign 5–8 typical author/work types to each axis that one would typically expect (without inventing specific titles).
+3) Derive 10 search strings for catalogs (Boolean, phrases).
+```
+
+### Critical Check
+
+Validate "debate axes" with at least 2 independent entry sources (HLS/platform/anthology TOCs).
+
+## 3. Systematic Search I: Catalogs (Coverage and Retrieval Logic)
+
+### Goal
+
+Reproducible, documented search in major catalogs; building a starting corpus.
+
+### Primary Search Location
+
+- [swisscovery (SLSP)](https://swisscovery.slsp.ch/)
+
+### Task (Without AI)
+
+Conduct 6 search runs in swisscovery:
+
+- 2 each with broad terms,
+- 2 each with precise phrases/filters,
+- 2 each with multilingualism (DE/FR/EN) and name variants.
+
+Document per run:
+
+- Search query (exact), filters, number of hits, export date,
+- 3 selection criteria (relevance, time period, publication type),
+- 3 exclusion criteria.
+
+### Task (AI Exploration)
+
+Conduct the search runs **heuristically** using AI. Provide sufficient context.
+
+``` markdown
+You are a historical research assistant with knowledge of Swiss social, economic, and political history.
+
+Context:
+- Research topic: History of Social Security in Switzerland
+- Time period: [e.g., 1880–1950]
+- Goal: Building an initial, broad starting corpus of secondary literature
+
+Task: Search for relevant secondary literature.
+
+Conditions:
+- No invention of specific titles or authors.
+- No pretended catalog knowledge.
+- Mark uncertainties explicitly.
+```
+
+### Critical Check
+
+- No title from AI suggestions is adopted without being found in the catalog.
+- For each adopted title: note the "adoption rationale" in 1 sentence.
+
+## 4. Systematic Search II: Journals/Media and Special Paths (Context, Reviews, Concepts)
+
+### Goal
+
+Make debates and state of research visible through journal literature, reviews, periodicals.
+
+### Search Locations (Examples)
+
+- Journal platforms: [E-Periodica — Swiss Journals Online](https://www.e-periodica.ch/)
+- Newspapers (for discourse and reception paths): [e-newspaperarchives.ch — Digital Newspaper Archives](https://www.e-newspaperarchives.ch/)
+
+### Task (Without AI)
+
+Select 2 journal titles or periodical corpora and search for:
+
+- "social insurance," "AHV," "disability insurance," "health insurance,"
+- plus your focus term.
+
+Extract:
+
+- 5 relevant articles or reviews,
+- recurring terms/frames (e.g., "burdens," "solidarity," "abuse," "three pillars").
+
+### Task (AI Exploration)
+
+``` markdown
+From these 5 abstracts/titles: [insert]
+1) Cluster them by question logic (institutional, actor-centered, intellectual history, political economy, gender).
+2) Suggest 2 follow-up keywords per cluster (DE/FR/EN) and name 1 typical "blind spot" each.
+```
+
+**Deliverable**: Mini-cluster (5 items) + keyword update list.
+
+## 5. Snowballing: Backward/Forward Citation (Control Canons and Blind Spots)
+
+### Goal
+
+From a small core corpus, reconstruct footnotes/bibliographies in depth; simultaneously make canon bias visible.
+
+### Task (Without AI)
+
+Select 3 "seed" texts (preferably different types: overview, monograph, article).
+
+For each seed:
+
+- 10 relevant references from bibliography/footnotes (backward),
+- 5 newer works via citation search (forward; e.g., Google Scholar/publisher pages).
+
+Document:
+
+- why each reference was included (1 sentence),
+- whether you expanded or narrowed a debate axis.
+
+### Task (AI Exploration)
+
+``` markdown
+Here are 10 references from the bibliography of a seed text: [insert]
+Organize them by:
+(a) debate axis, (b) method, (c) expected source base.
+Mark: which 3 would be indispensable for a "State of Research" section – and justify.
+```
+
+### Critical Check
+
+Maintain a *Reject Log*: at least 5 rejected but "temptingly plausible" hits incl. rejection reason (wrong time period, wrong arena, only popular science, etc.).
+
+**Deliverable**: Snowball list (≥ 30 references total) + Reject Log (≥ 5).
+
+## 6. Screening and Quality Assessment: Relevance, Argument, Method, Evidence
+
+### Goal
+
+Not just collect literature, but analytically select.
+
+### Task (Without AI)
+
+Create an assessment rubric (1 page), e.g.:
+
+- Research question/thesis
+- Theory/concepts (explicit/implicit)
+- Method (archive-based, discourse-analytical, comparative, quantitative)
+- Source base (which primary sources? which gaps?)
+- Contribution (what is new? what is contested?)
+- Connection to your focus
+
+Apply it to 6 titles from your corpus (short excerpt, 150–250 words per title).
+
+### Task (AI Exploration)
+
+``` markdown
+Use this rubric: [insert]
+Create for each of the following titles/abstracts a structured brief annotation (max. 180 words),
+incl. (1) presumed contribution, (2) methodological approach, (3) potential bias/limitation.
+If information is missing: explicitly mark as "unclear," do not supplement.
+```
+
+### Critical Check
+
+Sample: check for 2 titles based on introduction/conclusion whether AI structure and your reading are consistent.
+
+**Deliverable**: 6 annotated entries + rubric.
+
+## 7. Historiographic Debate Mapping and State of Research Text (Condensed, Evidence-Sensitive)
+
+### Goal
+
+Make the corpus a reconstructed "conversation": Who argues how – and why?
+
+### Task (Without AI)
+
+Write a 400–600 word debate memo:
+
+- 2–3 main controversies,
+- central positions,
+- typical evidence or method disputes,
+- open flanks (unaddressed, underexposed, contested).
+
+### Task (AI Exploration)
+
+``` markdown
+Here is my debate memo: [insert]
+1) Identify implicit assumptions (agency/structure, state/private, normativity, contemporary diagnoses).
+2) Suggest 2 alternative structurings (e.g., by arenas instead of topics).
+3) Name 5 targeted follow-up questions I should ask the literature to formulate research gaps precisely.
+```
+
+**Deliverable**: Debate memo + 5 follow-up questions.
+
+## 8. Research Gap and Delimitation: From State of Research to Research Question
+
+### Goal
+
+Derive a workable, analytical research question from the literature review (not from "interest" alone).
+
+### Task (Without AI)
+
+Formulate:
+
+- 1 research gap statement (max. 3 sentences): *"Research has shown X; Y remains unclear because…"*
+- 2 research questions (1 sentence each), which are *plausible based on sources and literature*.
+
+### Task (AI Exploration)
+
+``` markdown
+Based on this research gap: [insert]
+Formulate 4 variants of an analytical historical research question.
+For each variant:
+- possible case delimitation (time/space/arena),
+- expected contribution (which debate is addressed?),
+- risk field (e.g., source access, anachronism, too broad causality).
+```
+
+**Deliverable**: 1 research gap + 1 prioritized research question + 1 risk section (150–200 words).
+
+## 9. Reproducibility and Documentation
+
+### Goal
+
+Literature work as a **documented method**: traceable, verifiable, reusable.
+
+### Minimum Requirements
+
+- **Search protocol**: Date, system, query, filter, hits, selection rules (≥ 12 entries)
+- **Zotero/BibTeX export**: Versioned state (date), duplicate strategy
+- **Decision log**: Why title included/rejected (keywords)
+- **AI protocol (Appendix)**: 2–4 prompts, shortened responses, your corrections/rejects, purpose of use
+
+::: callout-warning
+
+## AI as Tool, Not as Source
+
+AI may help in this exercise to expand search spaces and structure texts. It does not replace:
+
+- bibliographic verification (catalog/DOI),
+- source-critical examination of the evidence base,
+- historiographic judgment formation.
+:::
+
+# Submission (Compact)
+
+1. Focus statement + debate map (1–2 pages)
+2. Search protocol (≥ 12 entries) + Reject Log (≥ 5)
+3. Briefly annotated bibliography (10–15 titles)
+4. Debate memo (400–600 words)
+5. Research gap + research question + risk field (approx. 1 page)
+6. AI protocol (Appendix)
+
+# Optional: Advanced Track (Digital Methods)
+
+- Export metadata (title/author/year/keywords) from swisscovery/Zotero.
+
+- Build a simple bibliography map:
+
+  - Time course (publication years),
+  - Languages/publication types,
+  - Co-citation or keyword network (caution: catalog keywords are curated and biased).
+
+- Document workflow and data (README + license/reuse notes).
+
+## Further Resources
+
+- [Ranke.2: Lessons Overview](https://ranke2.uni.lu/lessons/) – Learning modules on web, social media, and digital change.
+- [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique of training data and its parallels to source criticism.
+
+## Bibliography
+
+::: {#refs}
+:::
+
+::: callout-warning
+
+## Automated Translation Disclaimer
+
+This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/literaturrecherche-sozialversicherung-ch.qmd) for the authoritative text. If you notice any translation issues, please report them.
+:::
