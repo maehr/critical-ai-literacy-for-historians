@@ -11,7 +11,7 @@ author:
       - "Université de Berne"
 date: "2025-12-29"
 date-modified: today
-categories: [Conception de recherche]
+categories: [Méthodes]
 image: ../../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.png
 tags:
   - Question de recherche

@@ -59,7 +59,7 @@ Exercises must use **exactly one** of these categories (based on the German stru
 
 ### Tags
 
-Use descriptive tags that characterize the exercise. **Choose 2-4 tags**.
+Use descriptive tags that characterize the exercise. There is no strict upper limit; add as many tags as needed to represent the exercise clearly (3 - 5 recommended).
 Examples (not exhaustive): `Prompting`, `Toolkritik`, `Reproduzierbarkeit`, `Ethics`, `Source Criticism`, `Data Literacy`.
 
 ### Required YAML Front Matter
@@ -74,11 +74,9 @@ author:
   - name: 'Author Name'
     affiliation: 'Institution'
 date: 'YYYY-MM-DD'
-date-modified: 'YYYY-MM-DD'
+date-modified: 'YYYY-MM-DD' # or 'today'
 categories: [Category] # ONE category only
-tags: [Tag1, Tag2, Tag3] # 2-4 tags
-difficulty: 'Beginner' # or Intermediate, Advanced
-time_estimate: '45 minutes'
+tags: [Tag1, Tag2, Tag3]
 draft: false
 ```
 
@@ -106,15 +104,12 @@ This is an educational content repository with the following structure:
 critical-ai-literacy-for-historians/
 ├── en/               # English content
 │   ├── index.qmd
-│   ├── about.qmd
 │   └── exercises/
 ├── de/               # German content
 │   ├── index.qmd
-│   ├── about.qmd
 │   └── exercises/
 ├── fr/               # French content
 │   ├── index.qmd
-│   ├── about.qmd
 │   └── exercises/
 ├── assets/           # Shared images and fonts
 └── bibliography.bib  # Shared citations
