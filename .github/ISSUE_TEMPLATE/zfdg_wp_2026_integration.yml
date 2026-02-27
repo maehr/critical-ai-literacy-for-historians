@@ -1,0 +1,33 @@
+name: 🛠️ Add Feature - Integrate ZfdG WP 2026
+description: Proposal to integrate https://zfdg.de/wp_2026 into the curriculum
+title: '[Feature]: Integrate ZfdG WP 2026 into the exercise collection'
+labels: ['feature request', 'enhancement']
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe what feature you'd like. Pseudo-code, mockups, or screenshots of similar solutions are encouraged!
+      value: |
+        Propose a new exercise that critically reviews and applies selected methods or recommendations from the ZfdG WP 2026 publication.
+
+        Suggested integration path:
+        1. Create one new exercise in `en/exercises/` focused on critically evaluating the publication's claims in historical research workflows.
+        2. Add matching placeholder files in `de/exercises/` and `fr/exercises/` to preserve multilingual structure parity.
+        3. Add supporting references to `bibliography.bib` (with DOI/URL where available) and cite them in the new exercise.
+        4. Include a reproducibility reflection section comparing manual historical method steps with AI-supported steps inspired by the publication.
+  - type: dropdown
+    id: category
+    attributes:
+      label: What type of pull request would this be?
+      options:
+        - 'New Feature'
+        - 'Enhancement'
+        - 'Guide'
+        - 'Docs'
+        - 'Other'
+  - type: textarea
+    id: references
+    attributes:
+      label: Any links to similar examples or other references we should review?
+      value: |
+        - https://zfdg.de/wp_2026
