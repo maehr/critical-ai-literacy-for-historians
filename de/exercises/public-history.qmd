@@ -374,6 +374,10 @@ Input: Message Map + Quellenpaket + Blog-/Podcast-Entwurf.
 - [AI Pedagogy Project: Was ist KI?](https://aipedagogy.org/guide/what-is-ai/) – Konzeptuelle Einführung für nicht-technische Zielgruppen.
 - [Critical AI Literacy: Kuratierte Ressourcen](https://critical-ai-literacy.github.io/resources/) – Ethik, Macht, Arbeit und Politik der KI.
 
+### Weiterführende Literatur
+
+- @drucker2011humanities – Kritik an Konventionen der Datenvisualisierung; führt das Konzept der «Capta» ein – die Idee, dass Daten konstruiert und nicht objektiv gegeben sind.
+
 ## Bibliographie
 
 ::: {#refs}

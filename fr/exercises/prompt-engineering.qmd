@@ -529,6 +529,11 @@ Auto-vérification: Nomme 3 contre-preuves plausibles ou interprétations altern
 - [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
 - [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
 - [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
+- [Playlist YouTube : Littératie critique de l'IA (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Série de vidéos sur l'apprentissage automatique, les modèles de langage, le prompting, les biais, la visualisation de données, les méthodes d'évaluation et la science ouverte. (GERMAN only)
+
+### Lectures complémentaires
+
+- @sternfeld2023historian – Compare les pipelines ML aux flux de travail des historien·ne·s ; situe les systèmes d'IA techniques dans un contexte humaniste.
 
 ## Bibliographie
 

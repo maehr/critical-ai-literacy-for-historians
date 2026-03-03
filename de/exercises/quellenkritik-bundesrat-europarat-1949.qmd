@@ -550,6 +550,19 @@ Am Ende verfügen Sie über:
 - [Ranke.2: Wikipedia als historische Quelle](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenienz, Revisionsgeschichten und digitale Quellenkritik.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Kritik an Trainingsdaten und ihre Parallelen zur Quellenkritik.
 
+### Weiterführende Literatur
+
+- @stark2023conjectural – Verortet KI in der Tradition der «konjekturalen Wissenschaften»; diskutiert epistemologische Risiken automatisierter Mustererkennung.
+- @lang2026beyond – Ethische Datenarbeit in den (digitalen) Geisteswissenschaften; relevant für Datenprovenienz und Datensatzdokumentation.
+
+::: callout-tip
+
+## Optionale Aktivität: Open Public Peer Review
+
+Lesen und kommentieren Sie @lang2026beyond über das offene Peer-Review-Verfahren (Hypothes.is) auf der [ZfdG-Seite](https://zfdg.de/wp_2026). Reflektieren Sie, wie öffentliche Begutachtung Transparenz und Unsicherheitsmanagement in der Wissenschaft fördert.
+
+:::
+
 ## Bibliographie
 
 ::: {#refs}

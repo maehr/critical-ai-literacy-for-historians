@@ -529,6 +529,11 @@ Self-check: Name 3 plausible counter-evidence or alternative interpretations and
 - [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
 - [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
 - [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
+- [YouTube Playlist: Critical AI Literacy (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Video series on machine learning, language models, prompting, bias, data visualization, evaluation methods, and open science. (GERMAN only)
+
+### Further Reading
+
+- @sternfeld2023historian – Compares ML pipelines to historians' workflows; situates technical AI systems in a humanistic context.
 
 ## Bibliography
 
