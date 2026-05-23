@@ -1,14 +1,14 @@
 ---
 lang: fr
-title: "Écriture scientifique"
+title: 'Écriture scientifique'
 subtitle: "Ensemble d'exercices basé sur les rôles le long du processus d'écriture"
 description: "Un exercice qui forme à l'utilisation de l'IA générative comme assistant d'écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la précision linguistique."
 author:
-- name: Moritz Mähr
-  orcid: 0000-0002-1367-1618
-  email: moritz.maehr@gmail.com
-  affiliations:
-  - Université de Berne
+  - name: Moritz Mähr
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - Université de Berne
 date: '2025-12-24'
 date-modified: today
 categories: [Méthodes]
@@ -22,21 +22,21 @@ tags:
   - Assisté par IA
 draft: false
 references:
-- id: history_toolkit_en_2016
-  type: book
-  title: 'History: A Toolkit for Students'
-  author:
-  - family: Stüdli
-    given: Beat
-  - family: Hitz
-    given: Benjamin
-  translator:
-  - family: Grogan
-    given: Patrick
-  issued:
-    year: 2016
-  publisher: Department of History, University of Basel
-  URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
+  - id: history_toolkit_en_2016
+    type: book
+    title: 'History: A Toolkit for Students'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    translator:
+      - family: Grogan
+        given: Patrick
+    issued:
+      year: 2016
+    publisher: Department of History, University of Basel
+    URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
 ---
 
 ## Aperçu et objectif didactique
@@ -77,7 +77,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Cadre méthodologique: L'IA comme infrastructure d'écriture
 
-Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile:
+Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide aux _formulations, à la structuration et à la vérification_, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile:
 
 - **Paternité historique:** Question de recherche, sélection des preuves, interprétation, positions normatives.
 - **Contribution de l'IA (instrumentale):** Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d'erreurs.
@@ -89,14 +89,14 @@ Pour un travail plus fiable, utilisez systématiquement deux principes de prompt
 
 ## Règle de base: L'IA ne peut pas « inventer »
 
-Utilisez l'IA uniquement comme **outil de transformation et de vérification** pour *votre* matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier extérieurement**.
+Utilisez l'IA uniquement comme **outil de transformation et de vérification** pour _votre_ matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier extérieurement**.
 :::
 
 ::: callout-note
 
-## Mode de travail: Protocole IA (Piste d'audit)
+## Mode de travail: Protocole IA
 
-Pendant l'exercice, maintenez un bref **protocole IA**. Cela fait partie de la traçabilité scientifique (et facilite la divulgation ultérieure/section méthodes).
+Pendant l'exercice, maintenez un bref **protocole IA**: une trace vérifiable de vos prompts, réponses, étapes de vérification et décisions (aussi appelée piste d'audit). Cela fait partie de la traçabilité scientifique et facilite la divulgation ultérieure dans la section méthodes.
 
 **Modèle minimal** | Champ | Contenu | |---|---| | Rôle / Exercice | | | Objectif (1 phrase) | | | Input (quel matériel ?) | | | Prompt (extrait principal) | | | Réponse (brève) | | | Étapes de vérification (comment vérifié ?) | | | Décision (adopté/adapté/rejeté + justification) | |
 :::
@@ -136,7 +136,7 @@ Rendre la tâche d'écriture et votre propre intention argumentative si précise
 
 **Scaffold de prompt**
 
-``` markdown
+```markdown
 Tu es un vérificateur de compréhension. Pose-moi 8–12 questions de suivi précises pour clarifier la tâche d'écriture et l'objectif d'argumentation.
 Marque:
 (1) informations manquantes,
@@ -165,9 +165,10 @@ Générer des idées sans inventer de preuves, et co-penser immédiatement les c
 
 ### Tâche A: Brainstorming (orienté idées, neutre en preuves)
 
-``` markdown
+```markdown
 Rôle: Partenaire de brainstorming. Génère 12 lignes d'arguments/hypothèses possibles sur mon sujet.
 Conditions:
+
 - Formule chaque ligne comme une affirmation vérifiable (pas de faits).
 - Pour chaque ligne: quel type de preuve j'aurais besoin (types de sources/types de littérature).
 - Évite les titres de littérature spécifiques ou les cotes d'archives ; si nécessaire, formule comme heuristique de recherche.
@@ -178,14 +179,15 @@ Mon matériel (seulement les types, pas de contenu sensible): …
 
 ### Tâche B: Avocat du diable (confrontationnel, mais productif)
 
-``` markdown
+```markdown
 Rôle: Avocat du diable. Choisis les 3 plus plausibles de mes hypothèses et argumente contre chacune.
 Pour chaque contre-argument:
+
 - Nomme l'hypothèse vulnérable.
 - Propose un « test de stress » (quel constat renverserait mon argument ?).
 - Formule une interprétation alternative (max. 2 phrases).
-Pas de faits externes.
-Hypothèses: …
+  Pas de faits externes.
+  Hypothèses: …
 ```
 
 ### Comparaison critique
@@ -203,16 +205,18 @@ Rédiger une **chaîne d'arguments** vérifiable (thèse → sous-thèses → pr
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: Structureur & Outliner.
 Crée un plan (max. 8 points principaux) pour un texte d'env. X mots.
 Pour chaque point:
+
 - Objectif de la section (1 phrase)
 - Affirmation centrale (1 phrase)
 - Preuve requise (mots-clés ; « de mes notes/sources »)
 - Transition vers le point suivant (1 phrase)
 
 Contraintes:
+
 - Pas de nouveaux faits.
 - Si des preuves manquent: marquer comme [LACUNE DE PREUVE] au lieu de compléter.
 
@@ -236,10 +240,11 @@ Faire formuler des paragraphes à partir de votre propre matériel sans abandonn
 
 Sélectionnez **un** point du plan (par ex. « Argument principal 1 ») et fournissez 8–12 points (preuves, observations, citations/paraphrases, termes).
 
-``` markdown
+```markdown
 Rôle: Générateur de texte à partir de points.
 Rédige un paragraphe (120–180 mots) en français académique.
 Conditions:
+
 - Utilise uniquement les informations de mes points.
 - Pas de nouveaux exemples, données, noms, sources.
 - Si une phrase nécessiterait des informations supplémentaires: marquer [INCERTAIN].
@@ -265,7 +270,7 @@ Résoudre les problèmes locaux (transitions, phrases d'ouverture, définitions 
 
 **A) Construire une transition**
 
-``` markdown
+```markdown
 Rôle: Résolveur de blocages.
 Formule 5 variantes pour une phrase de transition entre le paragraphe A et B.
 Variante 1 neutre, 2 plus argumentative, 3 plus explicative, 4 plus courte, 5 avec marqueur de contraste.
@@ -275,24 +280,26 @@ Paragraphe B: …
 
 **B) Opérationnaliser une définition**
 
-``` markdown
+```markdown
 Formule 3 définitions de travail possibles pour le terme « X » dans le contexte de mon sujet.
 Pour chaque définition:
+
 - Délimitation d'1 terme voisin
 - 1 indicateur observable (comment reconnaître X dans les sources ?)
-Pas de faits externes.
-Contexte: …
+  Pas de faits externes.
+  Contexte: …
 ```
 
 **C) Diagnostic de phrase**
 
-``` markdown
+```markdown
 Marque dans mon paragraphe:
+
 - la phrase centrale (topic sentence),
 - les phrases avec référent peu clair (« cela », « ainsi », « on »),
 - les phrases qui contiennent en fait deux affirmations.
-Propose des réarrangements minimaux (pas de réécriture du contenu).
-Texte: …
+  Propose des réarrangements minimaux (pas de réécriture du contenu).
+  Texte: …
 ```
 
 **Résultat** - 1 transition/définition révisée + brève justification de pourquoi cette variante
@@ -305,16 +312,17 @@ Rendre visible la logique d'argumentation: Les preuves soutiennent-elles les aff
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: Vérificateur de logique.
 Analyse mon texte (max. 300 mots) comme une carte d'arguments:
-1) Thèse principale
-2) Sous-thèses
-3) Preuves explicites (du texte)
-4) Prémisses implicites (que je présuppose apparemment)
-5) Sauts logiques ou contradictions possibles
-Puis donne 5 recommandations de révision concrètes, priorisées par impact.
-Texte: …
+
+1. Thèse principale
+2. Sous-thèses
+3. Preuves explicites (du texte)
+4. Prémisses implicites (que je présuppose apparemment)
+5. Sauts logiques ou contradictions possibles
+   Puis donne 5 recommandations de révision concrètes, priorisées par impact.
+   Texte: …
 ```
 
 ### Comparaison critique
@@ -332,27 +340,29 @@ Améliorer la langue et le registre sans changer la substance argumentative ; op
 
 ### Tâche A: Relecture (minimalement invasive)
 
-``` markdown
+```markdown
 Rôle: Relecture.
 Améliore la grammaire, le style et la précision, mais ne change aucune déclaration de contenu.
 Travaille de manière minimalement invasive:
+
 - Remplace les mots vagues (par ex. « important », « montre ») seulement si c'est sans ambiguïté.
 - Préserve les termes techniques ; si incertain: marquer [TERME ?].
-À la fin, donne une liste des 5 erreurs de modèle les plus fréquentes que tu as corrigées.
-Texte: …
+  À la fin, donne une liste des 5 erreurs de modèle les plus fréquentes que tu as corrigées.
+  Texte: …
 ```
 
 ### Tâche B: Traduction (optionnelle)
 
-``` markdown
+```markdown
 Rôle: Traducteur.
 Traduis le texte en anglais (ou allemand/espagnol).
 Conditions:
+
 - Préserve le registre (académique) et les marqueurs de prudence (par ex. « pourrait », « suggère »).
 - Garde les noms propres et les citations inchangés.
 - Donne un mini-tableau glossaire (5–10 paires de termes) pour les termes clés.
-Texte: …
-Langue cible: …
+  Texte: …
+  Langue cible: …
 ```
 
 **Résultat** - Version corrigée + (optionnelle) traduction + glossaire
@@ -365,16 +375,17 @@ Distiller le texte jusqu'à sa déclaration porteuse: problème de recherche, ap
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: Rédacteur de résumé.
 Rédige un résumé de 120–160 mots.
 Doit contenir:
+
 - Problème de recherche (1 phrase)
 - Approche/matériel (1 phrase)
 - Argument/constat central (2–3 phrases)
 - Contribution/pertinence (« et alors ? ») (1 phrase)
-Pas de nouveaux faits ; si pas clair: marquer [PAS CLAIR].
-Base textuelle: …
+  Pas de nouveaux faits ; si pas clair: marquer [PAS CLAIR].
+  Base textuelle: …
 ```
 
 ### Vérification de qualité
@@ -392,14 +403,15 @@ Tester la lisibilité et les marges d'interprétation du point de vue du public 
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: Vérificateur de compréhension.
 Lis mon texte comme un lecteur critique dans un séminaire.
-1) Quelle est la thèse en une phrase ?
-2) Quels 3 points sont flous ou ambigus (chacun avec emplacement de citation) ?
-3) Quel passage semble non étayé ?
-4) Quelles deux questions me poserais-tu en feedback ?
-Texte: …
+
+1. Quelle est la thèse en une phrase ?
+2. Quels 3 points sont flous ou ambigus (chacun avec emplacement de citation) ?
+3. Quel passage semble non étayé ?
+4. Quelles deux questions me poserais-tu en feedback ?
+   Texte: …
 ```
 
 **Résultat** - 3 passages affinés dans le texte (1–2 phrases révisées chacun)

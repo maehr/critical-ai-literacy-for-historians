@@ -1,15 +1,15 @@
 ---
 lang: fr
-title: "Prompt Engineering"
-subtitle: "Travail historique avec les LLMs: heuristiques contrôlées, reproductibilité, discipline des preuves"
+title: 'Prompt Engineering'
+subtitle: 'Travail historique avec les LLMs: heuristiques contrôlées, reproductibilité, discipline des preuves'
 description: "Un exercice qui entraîne les techniques centrales de prompting (bases, rôles, zero-/few-shot, trace de réflexion structurée, prompting itératif, optimisation) à l'aide de processus de travail en sciences historiques."
 author:
-  - name: "Moritz Mähr"
+  - name: 'Moritz Mähr'
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
     affiliations:
-      - "Université de Berne"
-date: "2025-12-29"
+      - 'Université de Berne'
+date: '2025-12-29'
 date-modified: today
 categories: [IA & Méthodes numériques]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
@@ -21,7 +21,7 @@ tags:
   - Traçabilité
   - Intégrité scientifique
 draft: false
-nocite: ""
+nocite: ''
 references: []
 ---
 
@@ -49,6 +49,19 @@ Chaque fois que le modèle fournit des faits, de la littérature, des archives, 
 
 - Compréhension de base des méthodes de recherche historique
 
+## Termes clés
+
+Pour cet exercice, les définitions de travail suivantes suffisent:
+
+- **Prompt:** Votre consigne adressée au système d'IA, avec le matériel, l'objectif, les limites et le format de réponse souhaité.
+- **Protocole IA / protocole de prompt (piste d'audit):** Brève documentation des prompts, réponses, étapes de vérification, corrections et décisions. Il fonctionne comme un journal de recherche: le chemin vers le résultat reste traçable.
+- **Veto des sources:** Une affirmation produite par l'IA est rejetée si elle n'est pas étayée par le matériel fourni ou vérifiable.
+- **Vérification affirmation par affirmation:** Chaque affirmation est vérifiée séparément, puis étayée, signalée ou supprimée.
+- **Zero-shot / few-shot:** En zero-shot, le modèle ne reçoit aucun exemple; en few-shot, il reçoit quelques exemples pour stabiliser le format et les critères de qualité.
+- **Trace de réflexion structurée / chain-of-thought:** Le modèle doit rendre visibles des étapes intermédiaires. Ces étapes ne sont pas des preuves, mais des aides à la vérification.
+- **Hallucination:** Sortie de l'IA qui semble plausible, mais qui est fausse ou non étayée.
+- **Biais:** Distorsion dans les sources, les données, les modèles, les systèmes de recherche ou les interprétations.
+
 ## Objectifs d'apprentissage
 
 À l'issue de l'exercice, vous serez en mesure de:
@@ -62,7 +75,7 @@ Chaque fois que le modèle fournit des faits, de la littérature, des archives, 
 
 ## Mode de travail: Protocole IA et test A/B
 
-Maintenez un bref protocole de prompt (piste d'audit). Utilisez-le également dans les autres exercices.
+Maintenez un bref **protocole IA** ou **protocole de prompt** (piste d'audit). Utilisez-le également dans les autres exercices.
 
 **Modèle minimal:**
 
@@ -96,7 +109,7 @@ Si l'outil n'a pas d'accès stable au document: copiez (a) l'extrait de texte et
 
 Exemple de mise en page:
 
-``` markdown
+```markdown
 """
 TEXTE DU DOCUMENT (extrait/texte complet)
 """
@@ -140,7 +153,7 @@ Reformuler une demande vague pour que la réponse devienne **vérifiable**, **st
 
 **Demande vague (intentionnellement mauvaise):**
 
-``` markdown
+```markdown
 Résume le document et dis-moi ce qui est important.
 ```
 
@@ -153,19 +166,22 @@ Orientez-vous sur la configuration de l'exercice [Critique des sources](critique
 
 **Scaffold de prompt (robuste, adaptable):**
 
-``` markdown
+```markdown
 Tâche: [concrète, 1–2 phrases]
 Contexte: [séminaire/question de recherche/période]
 Matériel: [texte du document + métadonnées, clairement séparés]
 Règles:
+
 - Travaille uniquement avec le matériel.
 - Pas d'ajouts de connaissances générales.
 - Marque explicitement les incertitudes.
-Format de sortie:
-1) Paraphrase minimale (max. 4 phrases)
-2) 5 termes clés (du texte)
-3) 3 questions ouvertes (qu'est-ce qui reste flou ?)
-Auto-vérification:
+  Format de sortie:
+
+1. Paraphrase minimale (max. 4 phrases)
+2. 5 termes clés (du texte)
+3. 3 questions ouvertes (qu'est-ce qui reste flou ?)
+   Auto-vérification:
+
 - Liste 3 endroits où tu serais tenté de spéculer, et explique brièvement pourquoi tu ne le fais pas.
 ```
 
@@ -187,38 +203,41 @@ Faites traiter la même tâche dans trois rôles:
 
 **Prompt de rôle (Exemple: Critique des sources, fortement limitant):**
 
-``` markdown
+```markdown
 Rôle: Critique des sources.
 Tâche: Analyse le matériel exclusivement comme source (critique externe + interne).
 Important:
+
 - Sépare strictement: [Texte du document] / [Édition/Métadonnées] / [Conclusion].
 - Pas d'évaluations historiques.
 - Chaque conclusion nécessite un support textuel ou de métadonnées.
-Sortie:
-1) Tableau des niveaux
-2) 5 questions vérifiables d'authenticité/transmission
-3) 5 hypothèses de biais/position de locuteur (marquer comme hypothèses)
+  Sortie:
+
+1. Tableau des niveaux
+2. 5 questions vérifiables d'authenticité/transmission
+3. 5 hypothèses de biais/position de locuteur (marquer comme hypothèses)
 ```
 
 **Prompt de rôle (Exemple: Avocat du diable, dérivé de l'exercice d'écriture):**
 
-``` markdown
+```markdown
 Rôle: Avocat du diable.
 Input: Mes hypothèses de travail (H1–H3) + indications de matériel.
 Tâche:
+
 - Nomme l'hypothèse discutable pour chaque hypothèse.
 - Formule un test de stress (quel constat la renverserait ?).
 - Donne 1 interprétation alternative (max. 2 phrases).
-Pas de faits externes.
-Hypothèses: …
+  Pas de faits externes.
+  Hypothèses: …
 ```
 
 ### Exercice 2B: Changement de rôle comme diagnostic
 
 Prenez la **meilleure** réponse de 2A et faites-la **examiner** par un second rôle, pas réécrire:
 
-- Rôle « Vérificateur de logique » (cf. *Écriture*): cohérence, sauts, points de preuve manquants.
-- Rôle « Assistant catalogue » (cf. *Recherche bibliographique*): traduit en chaînes de recherche/indicateurs.
+- Rôle « Vérificateur de logique » (cf. _Écriture_): cohérence, sauts, points de preuve manquants.
+- Rôle « Assistant catalogue » (cf. _Recherche bibliographique_): traduit en chaînes de recherche/indicateurs.
 
 ## 3. Prompting Zero-shot: Objectif
 
@@ -232,19 +251,20 @@ Le prompting zero-shot signifie que le modèle ne reçoit pas d'exemples, seulem
 
 ### Objectif
 
-Utiliser le zero-shot comme **référence**: rapide, mais sujet aux erreurs. Vous apprenez *où* le zero-shot suffit et *où* il évite systématiquement.
+Utiliser le zero-shot comme **référence**: rapide, mais sujet aux erreurs. Vous apprenez _où_ le zero-shot suffit et _où_ il évite systématiquement.
 
 ### Exercice 3A: Paraphrase minimale (Zero-shot)
 
 Utilisez la tâche de [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, max. 4 phrases) comme zero-shot.
 
-``` markdown
+```markdown
 Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds:
+
 - Qui parle/agit ?
 - Quel est l'occasion ?
 - Quelle est la déclaration/décision centrale ?
 - Quelle conséquence est indiquée ?
-Maximum 4 phrases. Pas d'interprétation.
+  Maximum 4 phrases. Pas d'interprétation.
 ```
 
 ::: callout-info
@@ -253,7 +273,7 @@ Maximum 4 phrases. Pas d'interprétation.
 
 Téléchargez le document en fichier PDF avec le prompt. Si ce n'est pas possible, copiez le contenu du document au début du prompt et séparez-le visuellement, par exemple avec """. Assurez-vous également que l'IA a accès aux métadonnées (soit par accès en ligne, soit en fournissant les métadonnées). Exemple:
 
-``` markdown
+```markdown
 """
 CONTENU DU DOCUMENT
 """
@@ -278,7 +298,7 @@ Marquez dans la réponse:
 
 Utilisez le modèle de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd).
 
-``` markdown
+```markdown
 Donne-moi trois questions de recherche historique possibles qui peuvent être dérivées de la note de service.
 Chaque question doit être (a) délimitable temporellement, (b) vérifiable sur la base des sources, et (c) analytique.
 Pour chaque question, nomme quels types de sources supplémentaires j'ai besoin pour la contre-vérification.
@@ -306,11 +326,12 @@ Créez 3–5 phrases d'exemple courtes (peuvent être **fictives**, mais histori
 
 **Exemple:**
 
-``` markdown
+```markdown
 Exemples (Input → Étiquette):
-1) "Lieu: Berne ; Date: 7.7.1949." → [Édition/Métadonnées]
-2) "Dans le texte, la neutralité est utilisée comme argument contre l'étape X." → [Texte du document]
-3) "Il en découle que la Suisse était fondamentalement anti-européenne." → [Conclusion] (trop fort ; doit être vérifié/atténué)
+
+1. "Lieu: Berne ; Date: 7.7.1949." → [Édition/Métadonnées]
+2. "Dans le texte, la neutralité est utilisée comme argument contre l'étape X." → [Texte du document]
+3. "Il en découle que la Suisse était fondamentalement anti-européenne." → [Conclusion] (trop fort ; doit être vérifié/atténué)
 
 Tâche:
 Étiquetez les 10 phrases suivantes de mon matériel comme
@@ -327,7 +348,7 @@ Prenez 2 questions faibles et 2 questions fortes (de votre exercice [Question de
 
 **Scaffold:**
 
-``` markdown
+```markdown
 Exemples (Faible/Fort):
 Faible: "Pourquoi la Suisse a-t-elle rejoint le Conseil de l'Europe ?" → trop large, téléologique, base de preuves floue.
 Fort: "Comment la 'neutralité' a-t-elle été opérationnalisée dans les notes internes du DFAE 1949–1953 comme argument pour/contre un rapprochement institutionnel avec le Conseil de l'Europe ?" → opérateur clair, période, proximité des sources.
@@ -335,6 +356,7 @@ Fort: "Comment la 'neutralité' a-t-elle été opérationnalisée dans les notes
 Tâche:
 Formule 3 nouvelles questions de recherche dans le style des exemples forts.
 Pour chaque question:
+
 - Période
 - Termes opérateurs centraux (définir !)
 - Types de sources attendus
@@ -366,33 +388,36 @@ Formulez la trace de réflexion de manière à ce qu'elle reste **brève** et **
 
 Utilisez la cartographie d'arguments de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (affirmation/garantie/hypothèse/implication), mais imposez une logique d'étapes:
 
-``` markdown
+```markdown
 Tâche: Génère une cartographie d'arguments pour les passages concernant la neutralité/compatibilité/processus de décision.
 
 Procédure (afficher visiblement):
-1) Extrais les segments de texte pertinents (max. 5 fragments de citation courts).
-2) Formule par segment une affirmation/garantie/hypothèse/implication (mots-clés).
-3) Auto-vérification: Nomme 3 endroits où le saut du texte → interprétation est délicat, et marque-les comme [Spéculation].
+
+1. Extrais les segments de texte pertinents (max. 5 fragments de citation courts).
+2. Formule par segment une affirmation/garantie/hypothèse/implication (mots-clés).
+3. Auto-vérification: Nomme 3 endroits où le saut du texte → interprétation est délicat, et marque-les comme [Spéculation].
 
 Règles:
+
 - Utilise uniquement le texte du document.
 - Pas de faits supplémentaires.
-Réponse: Liste Markdown.
-Matériel: ...
+  Réponse: Liste Markdown.
+  Matériel: ...
 ```
 
 ### Exercice 5B: Plan de recherche comme pipeline
 
 Transférez la structure de [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd) (sous-questions → types de sources → lieux de recherche → chaînes de recherche) dans un pipeline explicite:
 
-``` markdown
+```markdown
 Objectif: Crée un plan de recherche pour la question: [insérer].
 
 Étapes:
-1) Décompose en 4–6 sous-questions (vérifiables).
-2) Attribue 2–3 types de sources + arènes par sous-question.
-3) Déduis 2 chaînes de recherche par sous-question (DE/FR/EN ; booléen).
-4) Auto-vérification: Liste 5 erreurs typiques (anachronismes, signatures inventées, termes trop larges...) et comment tu les évites.
+
+1. Décompose en 4–6 sous-questions (vérifiables).
+2. Attribue 2–3 types de sources + arènes par sous-question.
+3. Déduis 2 chaînes de recherche par sous-question (DE/FR/EN ; booléen).
+4. Auto-vérification: Liste 5 erreurs typiques (anachronismes, signatures inventées, termes trop larges...) et comment tu les évites.
 
 Réponse: Tableau (Sous-question | Preuve | Chaîne de recherche | Lieu de recherche | Risque).
 ```
@@ -413,28 +438,29 @@ L'itération comme **révision contrôlée**: Vous ne construisez pas « plus de
 
 ### Exercice 6A: Générer → Critiquer → Réviser (Question de recherche)
 
-1) **Générer (v1):** Questions de recherche zero-shot (Exercice 3B).\
-2) **Critiquer:** Utilisez la comparaison critique de l'exercice *Question de recherche* (« Pourquoi X manque-t-il ? » / « Sur quelles sources cela repose-t-il ? »).\
-3) **Réviser (v2):** Faites réviser les questions par l'IA, mais uniquement sur la base de vos points de critique.
+1. **Générer (v1):** Questions de recherche zero-shot (Exercice 3B).\
+2. **Critiquer:** Utilisez la comparaison critique de l'exercice _Question de recherche_ (« Pourquoi X manque-t-il ? » / « Sur quelles sources cela repose-t-il ? »).\
+3. **Réviser (v2):** Faites réviser les questions par l'IA, mais uniquement sur la base de vos points de critique.
 
 **Prompt de critique (Modèle):**
 
-``` markdown
+```markdown
 Voici la réponse v1: [insérer].
 Tâche: Critique affirmation par affirmation:
+
 - Qu'est-ce qui est trop large/téléologique ?
 - Où manquent les termes opérateurs/définitions ?
 - Où la base de preuves est-elle floue ?
-Puis donne une version révisée v2 (max. 3 questions) + une logique de changement (max. 6 points).
-Pas de nouveaux faits.
+  Puis donne une version révisée v2 (max. 3 questions) + une logique de changement (max. 6 points).
+  Pas de nouveaux faits.
 ```
 
 ### Exercice 6B: Itération sur le format de réponse (Citation / Résumé)
 
-Prenez l'exercice *Citation* et imposez une sortie en deux étapes:
+Prenez l'exercice _Citation_ et imposez une sortie en deux étapes:
 
-1) Extraction de métadonnées structurées (champs),\
-2) seulement ensuite citation Chicago + format d'import Zotero.
+1. Extraction de métadonnées structurées (champs),\
+2. seulement ensuite citation Chicago + format d'import Zotero.
 
 **Question d'optimisation:** L'approche en deux étapes améliore-t-elle le diagnostic d'erreur (par ex. numéros de page manquants, mauvais éditeurs) ?
 
@@ -460,17 +486,19 @@ Prenez un prompt de littérature naïf (« Nomme la littérature clé sur X ») 
 
 **Prompt optimisé (Scaffold):**
 
-``` markdown
+```markdown
 Tu es un assistant de recherche historique.
 Objectif: Corpus de départ pour [sujet/période].
 Règles:
+
 - N'invente pas de titres/auteurs.
 - Ne fais pas d'affirmations sur la couverture des catalogues.
 - Livre plutôt: stratégies de recherche, chaînes de recherche, types de littérature attendus, et indices pour les étapes de vérification.
-Réponse:
-1) 8 chaînes de recherche (DE/FR/EN) avec brève justification
-2) 5 types de littérature attendus + où les trouver typiquement
-3) 6 étapes de vérification (comment je vérifie, exporte, documente les résultats)
+  Réponse:
+
+1. 8 chaînes de recherche (DE/FR/EN) avec brève justification
+2. 5 types de littérature attendus + où les trouver typiquement
+3. 6 étapes de vérification (comment je vérifie, exporte, documente les résultats)
 ```
 
 ### Exercice 7B: Optimisation de prompt comme « budget d'erreur »
@@ -490,26 +518,26 @@ Exécutez 3 itérations (v1–v3) et documentez:
 
 ### 1) Contexte + Liaison au matériel
 
-``` markdown
+```markdown
 Travaille exclusivement avec le matériel ci-dessous.
 S'il te manque des informations, pose des questions de suivi ou marque [Pas clair].
 ```
 
 ### 2) Séparation des niveaux (Source vs. Édition vs. Conclusion)
 
-``` markdown
+```markdown
 Marque chaque déclaration comme [Texte du document] / [Édition/Métadonnées] / [Conclusion].
 ```
 
 ### 3) Réponse comme produit intermédiaire (pour la suite du travail)
 
-``` markdown
+```markdown
 Donne la réponse sous forme de tableau avec les champs: Affirmation | Lieu de preuve | Incertitude | Prochaine étape de vérification.
 ```
 
 ### 4) Imposer auto-vérification / contre-vérification
 
-``` markdown
+```markdown
 Auto-vérification: Nomme 3 contre-preuves plausibles ou interprétations alternatives et ce dont tu aurais besoin pour elles.
 ```
 

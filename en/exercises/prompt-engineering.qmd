@@ -1,15 +1,15 @@
 ---
 lang: en
-title: "Prompt Engineering"
-subtitle: "Historical Work with LLMs: Controlled Heuristics, Reproducibility, Evidence Discipline"
-description: "An exercise that trains central prompting techniques (basics, roles, zero-/few-shot, structured thinking trace, iterative prompting, optimization) using historical science work processes."
+title: 'Prompt Engineering'
+subtitle: 'Historical Work with LLMs: Controlled Heuristics, Reproducibility, Evidence Discipline'
+description: 'An exercise that trains central prompting techniques (basics, roles, zero-/few-shot, structured thinking trace, iterative prompting, optimization) using historical science work processes.'
 author:
-  - name: "Moritz Mähr"
+  - name: 'Moritz Mähr'
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
     affiliations:
-      - "University of Bern"
-date: "2025-12-29"
+      - 'University of Bern'
+date: '2025-12-29'
 date-modified: today
 categories: [AI & Digital Methods]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
@@ -21,7 +21,7 @@ tags:
   - Traceability
   - Scientific Integrity
 draft: false
-nocite: ""
+nocite: ''
 references: []
 ---
 
@@ -49,6 +49,19 @@ Whenever the model provides facts, literature, archives, signatures, or quotes t
 
 - Basic understanding of historical research methods
 
+## Key Terms
+
+For this exercise, the following working definitions are sufficient:
+
+- **Prompt:** Your instruction to the AI system, including material, goal, limits, and desired response format.
+- **AI protocol / prompt protocol (audit trail):** A brief documentation of prompts, responses, verification steps, corrections, and decisions. It works like a research journal: the path to the result remains traceable.
+- **Source veto:** An AI statement is rejected if it is not supported by the provided or verifiable material.
+- **Claim-by-claim check:** Each individual claim is checked separately and either supported, marked, or deleted.
+- **Zero-shot / few-shot:** In zero-shot prompting, the model receives no examples; in few-shot prompting, it receives a few examples to stabilize format and quality standards.
+- **Structured thinking trace / chain-of-thought:** The model is asked to make intermediate steps visible. These steps are not evidence, but aids for verification.
+- **Hallucination:** A plausible-sounding but false or unsupported AI output.
+- **Bias:** A distortion in sources, data, models, search systems, or interpretations.
+
 ## Learning Objectives
 
 Upon completion of the exercise, you will be able to:
@@ -62,7 +75,7 @@ Upon completion of the exercise, you will be able to:
 
 ## Working Mode: AI Protocol and A/B Testing
 
-Maintain a brief prompt protocol (audit trail). Also use it in the other exercises.
+Maintain a brief **AI protocol** or **prompt protocol** (audit trail). Also use it in the other exercises.
 
 **Minimal Template:**
 
@@ -96,7 +109,7 @@ If the tool does not have stable document access: copy (a) text excerpt and (b) 
 
 Example layout:
 
-``` markdown
+```markdown
 """
 DOCUMENT TEXT (excerpt/full text)
 """
@@ -140,7 +153,7 @@ To reformulate a vague request so that the response becomes **verifiable**, **fo
 
 **Vague request (intentionally bad):**
 
-``` markdown
+```markdown
 Summarize the document and tell me what's important.
 ```
 
@@ -153,19 +166,22 @@ Orient yourself on the setup from the exercise [Source Criticism](source-critici
 
 **Prompt Scaffold (robust, adaptable):**
 
-``` markdown
+```markdown
 Task: [concrete, 1–2 sentences]
 Context: [seminar/research question/time period]
 Material: [document text + metadata, clearly separated]
 Rules:
+
 - Work only with the material.
 - No additions from general knowledge.
 - Mark uncertainties explicitly.
-Output format:
-1) Minimal paraphrase (max. 4 sentences)
-2) 5 key terms (from the text)
-3) 3 open questions (what remains unclear?)
-Self-check:
+  Output format:
+
+1. Minimal paraphrase (max. 4 sentences)
+2. 5 key terms (from the text)
+3. 3 open questions (what remains unclear?)
+   Self-check:
+
 - List 3 places where you'd be tempted to speculate, and briefly explain why you don't.
 ```
 
@@ -187,38 +203,41 @@ Have the same task processed in three roles:
 
 **Role Prompt (Example: Source Critic, strongly limiting):**
 
-``` markdown
+```markdown
 Role: Source Critic.
 Task: Analyze the material exclusively as a source (external + internal criticism).
 Important:
+
 - Strictly separate: [Document text] / [Edition/Metadata] / [Conclusion].
 - No historical evaluations.
 - Every conclusion needs text or metadata support.
-Output:
-1) Level table
-2) 5 verifiable authenticity/transmission questions
-3) 5 bias/speaker position hypotheses (mark as hypotheses)
+  Output:
+
+1. Level table
+2. 5 verifiable authenticity/transmission questions
+3. 5 bias/speaker position hypotheses (mark as hypotheses)
 ```
 
 **Role Prompt (Example: Devil's Advocate, derived from the writing exercise):**
 
-``` markdown
+```markdown
 Role: Devil's Advocate.
 Input: My working hypotheses (H1–H3) + material hints.
 Task:
+
 - Name the debatable assumption for each hypothesis.
 - Formulate a stress test (what finding would overturn it?).
 - Give 1 alternative interpretation (max. 2 sentences).
-No external facts.
-Hypotheses: …
+  No external facts.
+  Hypotheses: …
 ```
 
 ### Exercise 2B: Role Switch as Diagnosis
 
 Take the **best** response from 2A and have it **reviewed** by a second role, not rewritten:
 
-- Role "Logic Checker" (cf. *Writing*): consistency, jumps, missing evidence points.
-- Role "Catalog Assistant" (cf. *Literature Research*): translates into search strings/indicators.
+- Role "Logic Checker" (cf. _Writing_): consistency, jumps, missing evidence points.
+- Role "Catalog Assistant" (cf. _Literature Research_): translates into search strings/indicators.
 
 ## 3. Zero-shot Prompting: Goal
 
@@ -232,19 +251,20 @@ Zero-shot prompting means that the model receives no examples, only task, materi
 
 ### Goal
 
-To use zero-shot as a **baseline**: fast, but error-prone. You learn *where* zero-shot suffices and *where* it systematically evades.
+To use zero-shot as a **baseline**: fast, but error-prone. You learn _where_ zero-shot suffices and _where_ it systematically evades.
 
 ### Exercise 3A: Minimal Paraphrase (Zero-shot)
 
 Use the task from [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (minimal paraphrase, max. 4 sentences) as zero-shot.
 
-``` markdown
+```markdown
 Analyze the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe) and answer:
+
 - Who speaks/acts?
 - What is the occasion?
 - What is the central statement/decision?
 - What consequence is indicated?
-Maximum 4 sentences. No interpretation.
+  Maximum 4 sentences. No interpretation.
 ```
 
 ::: callout-info
@@ -253,7 +273,7 @@ Maximum 4 sentences. No interpretation.
 
 Upload the document as a PDF file together with the prompt. If that's not possible, copy the document content to the beginning of the prompt and visually separate it, for example with """. Also ensure the AI has access to metadata (either through online access or by providing the metadata). Example:
 
-``` markdown
+```markdown
 """
 DOCUMENT CONTENT
 """
@@ -278,7 +298,7 @@ Mark in the response:
 
 Use the template from the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd).
 
-``` markdown
+```markdown
 Give me three possible historical research questions that can be derived from the memorandum.
 Each question must be (a) temporally delimitable, (b) source-based verifiable, and (c) analytical.
 For each question, name which additional source types I need for counter-verification.
@@ -306,11 +326,12 @@ Create 3–5 short example sentences (may be **fictional**, but historically pla
 
 **Example:**
 
-``` markdown
+```markdown
 Examples (Input → Label):
-1) "Location: Bern; Date: 7.7.1949." → [Edition/Metadata]
-2) "In the text, neutrality is used as an argument against step X." → [Document text]
-3) "From this it follows that Switzerland was fundamentally anti-European." → [Conclusion] (too strong; needs to be verified/softened)
+
+1. "Location: Bern; Date: 7.7.1949." → [Edition/Metadata]
+2. "In the text, neutrality is used as an argument against step X." → [Document text]
+3. "From this it follows that Switzerland was fundamentally anti-European." → [Conclusion] (too strong; needs to be verified/softened)
 
 Task:
 Label the following 10 sentences from my material as
@@ -327,7 +348,7 @@ Take 2 weak and 2 strong questions (from your exercise [Research Question](formu
 
 **Scaffold:**
 
-``` markdown
+```markdown
 Examples (Weak/Strong):
 Weak: "Why did Switzerland join the Council of Europe?" → too broad, teleological, unclear evidence base.
 Strong: "How was 'neutrality' operationalized in internal FDFA notes 1949–1953 as an argument for/against institutional rapprochement with the Council of Europe?" → clear operator, time period, source proximity.
@@ -335,6 +356,7 @@ Strong: "How was 'neutrality' operationalized in internal FDFA notes 1949–1953
 Task:
 Formulate 3 new research questions in the style of the strong examples.
 For each question:
+
 - Time period
 - Central operator terms (define!)
 - Expected source types
@@ -366,33 +388,36 @@ Formulate the thinking trace so that it remains **brief** and **auditable** (bul
 
 Use the argument mapping from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (claim/warrant/assumption/implication), but enforce step logic:
 
-``` markdown
+```markdown
 Task: Generate an argument mapping for passages concerning neutrality/compatibility/decision processes.
 
 Procedure (output visibly):
-1) Extract relevant text segments (max. 5 short quote fragments).
-2) Formulate per segment a claim/warrant/assumption/implication (keywords).
-3) Self-check: Name 3 places where the jump from text → interpretation is tricky, and mark them as [Speculation].
+
+1. Extract relevant text segments (max. 5 short quote fragments).
+2. Formulate per segment a claim/warrant/assumption/implication (keywords).
+3. Self-check: Name 3 places where the jump from text → interpretation is tricky, and mark them as [Speculation].
 
 Rules:
+
 - Use only document text.
 - No additional facts.
-Response: Markdown list.
-Material: ...
+  Response: Markdown list.
+  Material: ...
 ```
 
 ### Exercise 5B: Research Plan as Pipeline
 
 Transfer the structure from [Source Search](source-search-vorort-council-of-europe-1963.qmd) (sub-questions → source types → search locations → search strings) into an explicit pipeline:
 
-``` markdown
+```markdown
 Goal: Create a research plan for the question: [insert].
 
 Steps:
-1) Decompose into 4–6 sub-questions (verifiable).
-2) Assign 2–3 source types + arenas per sub-question.
-3) Derive 2 search strings per sub-question (DE/FR/EN; Boolean).
-4) Self-check: List 5 typical errors (anachronisms, invented signatures, overly broad terms...) and how you avoid them.
+
+1. Decompose into 4–6 sub-questions (verifiable).
+2. Assign 2–3 source types + arenas per sub-question.
+3. Derive 2 search strings per sub-question (DE/FR/EN; Boolean).
+4. Self-check: List 5 typical errors (anachronisms, invented signatures, overly broad terms...) and how you avoid them.
 
 Response: Table (Sub-question | Evidence | Search string | Search location | Risk).
 ```
@@ -413,28 +438,29 @@ Iteration as **controlled revision**: You're not building "more text," but impro
 
 ### Exercise 6A: Generate → Critique → Revise (Research Question)
 
-1) **Generate (v1):** Zero-shot research questions (Exercise 3B).\
-2) **Critique:** Use the critical comparison from the *Research Question* exercise ("Why is X missing?" / "What sources does this rely on?").\
-3) **Revise (v2):** Have the AI revise the questions, but only based on your critique points.
+1. **Generate (v1):** Zero-shot research questions (Exercise 3B).\
+2. **Critique:** Use the critical comparison from the _Research Question_ exercise ("Why is X missing?" / "What sources does this rely on?").\
+3. **Revise (v2):** Have the AI revise the questions, but only based on your critique points.
 
 **Critique Prompt (Template):**
 
-``` markdown
+```markdown
 Here is response v1: [insert].
-Task: Critique claim-by-claim:
+Task: Check claim by claim:
+
 - What is too broad/teleological?
 - Where are operator terms/definitions missing?
 - Where is the evidence base unclear?
-Then give a revised version v2 (max. 3 questions) + a change logic (max. 6 bullet points).
-No new facts.
+  Then give a revised version v2 (max. 3 questions) + a change logic (max. 6 bullet points).
+  No new facts.
 ```
 
 ### Exercise 6B: Iteration on Response Format (Citing / Summarizing)
 
-Take the exercise *Citing* and enforce a two-stage output:
+Take the exercise _Citing_ and enforce a two-stage output:
 
-1) Extraction of structured metadata (fields),\
-2) only then Chicago citation + Zotero import format.
+1. Extraction of structured metadata (fields),\
+2. only then Chicago citation + Zotero import format.
 
 **Optimization question:** Does the two-stage approach improve error diagnosis (e.g., missing page numbers, wrong editors)?
 
@@ -460,17 +486,19 @@ Take a naive literature prompt ("Name key literature on X") and optimize it to s
 
 **Optimized Prompt (Scaffold):**
 
-``` markdown
+```markdown
 You are a historical research assistant.
 Goal: Starting corpus for [topic/time period].
 Rules:
+
 - Don't invent titles/authors.
 - Make no claims about catalog coverage.
 - Instead deliver: search strategies, search strings, expected literature types, and hints for verification steps.
-Response:
-1) 8 search strings (DE/FR/EN) with brief justification
-2) 5 expected literature types + where to typically find them
-3) 6 verification steps (how I verify, export, document hits)
+  Response:
+
+1. 8 search strings (DE/FR/EN) with brief justification
+2. 5 expected literature types + where to typically find them
+3. 6 verification steps (how I verify, export, document hits)
 ```
 
 ### Exercise 7B: Prompt Optimization as "Error Budget"
@@ -490,26 +518,26 @@ Run 3 iterations (v1–v3) and document:
 
 ### 1) Context + Material Binding
 
-``` markdown
+```markdown
 Work exclusively with the material below.
 If you're missing information, ask follow-up questions or mark [Unclear].
 ```
 
 ### 2) Level Separation (Source vs. Edition vs. Conclusion)
 
-``` markdown
+```markdown
 Mark each statement as [Document text] / [Edition/Metadata] / [Conclusion].
 ```
 
 ### 3) Response as Intermediate Product (for Further Work)
 
-``` markdown
+```markdown
 Give the response as a table with fields: Claim | Evidence location | Uncertainty | Next verification step.
 ```
 
 ### 4) Enforce Self-Check / Counter-Check
 
-``` markdown
+```markdown
 Self-check: Name 3 plausible counter-evidence or alternative interpretations and what you'd need for them.
 ```
 

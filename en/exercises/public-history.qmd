@@ -1,15 +1,15 @@
 ---
 lang: en
-title: "Public History and History Communication"
-subtitle: "Knowledge Communication along the Writing and Production Process"
-description: "Exercise set for target audience-oriented communication of a scholarly article in multiple formats (blog, podcast, social media, poster, interview) – with audit trail, source veto, and methodological transparency."
+title: 'Public History and History Communication'
+subtitle: 'Knowledge Communication along the Writing and Production Process'
+description: 'Exercise set for target audience-oriented communication of a scholarly article in multiple formats (blog, podcast, social media, poster, interview) – with AI protocol, source veto, and methodological transparency.'
 author:
-  - name: "Moritz Mähr"
+  - name: 'Moritz Mähr'
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
     affiliations:
-      - "University of Bern"
-date: "2025-12-29"
+      - 'University of Bern'
+date: '2025-12-29'
 date-modified: today
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
@@ -22,87 +22,87 @@ tags:
   - AI-Assisted
 draft: false
 references:
-- id: history_toolkit_en_2016
-  type: book
-  title: "History: A Toolkit for Students"
-  author:
-    - family: Stüdli
-      given: Beat
-    - family: Hitz
-      given: Benjamin
-  translator:
-    - family: Grogan
-      given: Patrick
-  issued:
-    year: 2016
-  publisher: "Department of History, University of Basel"
-  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
-  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
-  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
-- id: kompass_geschichtsstudium_2025
-  type: book
-  title: "Kompass Geschichtsstudium"
-  subtitle: "Version HS 2025"
-  author:
-    - family: Luther
-      given: Johannes
-    - family: Meier
-      given: Marietta
-    - family: Kaiser
-      given: Rafael
-    - family: Tinner
-      given: Tamara Ann
-  issued:
-    year: 2025
-  publisher: "Historisches Seminar, Universität Zürich"
-  note: "Official study guide; updated July 21, 2025"
-  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
-  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
-- id: leitfaden_bremen_2025
-  type: book
-  title: "Leitfaden Geschichtswissenschaft"
-  subtitle: "Study Guide of the Institute for Historical Studies, 8th Edition"
-  issued:
-    year: 2025
-  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
-  note: "Revised and expanded 8th edition; contains guidelines for the use of generative AI"
-  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
-  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
-- id: studienleitfaden_hamburg_2021
-  type: book
-  title: "Studienleitfaden Fachbereich Geschichte"
-  author:
-    - family: Lösse
-      given: Esther
-    - family: Anders
-      given: Klaas
-    - family: Szadziewski
-      given: Max
-  issued:
-    year: 2021
-  publisher: "Fachbereich Geschichte, Universität Hamburg"
-  note: "Edited by Monica Rüthers; completed January 6, 2021"
-  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
-  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
-- id: werkszeugkasten_basel_2016
-  type: book
-  title: "Werkzeugkasten Geschichte"
-  author:
-    - family: Stüdli
-      given: Beat
-    - family: Hitz
-      given: Benjamin
-  issued:
-    year: 2016
-  publisher: "Departement Geschichte, Universität Basel"
-  note: "Revised online version of the 2010 study guide"
-  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
-  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+  - id: history_toolkit_en_2016
+    type: book
+    title: 'History: A Toolkit for Students'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    translator:
+      - family: Grogan
+        given: Patrick
+    issued:
+      year: 2016
+    publisher: 'Department of History, University of Basel'
+    note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+    URL: 'https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf'
+    abstract: 'Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources.'
+  - id: kompass_geschichtsstudium_2025
+    type: book
+    title: 'Kompass Geschichtsstudium'
+    subtitle: 'Version HS 2025'
+    author:
+      - family: Luther
+        given: Johannes
+      - family: Meier
+        given: Marietta
+      - family: Kaiser
+        given: Rafael
+      - family: Tinner
+        given: Tamara Ann
+    issued:
+      year: 2025
+    publisher: 'Historisches Seminar, Universität Zürich'
+    note: 'Official study guide; updated July 21, 2025'
+    URL: 'https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf'
+    abstract: 'Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools.'
+  - id: leitfaden_bremen_2025
+    type: book
+    title: 'Leitfaden Geschichtswissenschaft'
+    subtitle: 'Study Guide of the Institute for Historical Studies, 8th Edition'
+    issued:
+      year: 2025
+    publisher: 'Institut für Geschichtswissenschaft, Universität Bremen'
+    note: 'Revised and expanded 8th edition; contains guidelines for the use of generative AI'
+    URL: 'https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf'
+    abstract: 'Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI.'
+  - id: studienleitfaden_hamburg_2021
+    type: book
+    title: 'Studienleitfaden Fachbereich Geschichte'
+    author:
+      - family: Lösse
+        given: Esther
+      - family: Anders
+        given: Klaas
+      - family: Szadziewski
+        given: Max
+    issued:
+      year: 2021
+    publisher: 'Fachbereich Geschichte, Universität Hamburg'
+    note: 'Edited by Monica Rüthers; completed January 6, 2021'
+    URL: 'https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf'
+    abstract: 'Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence.'
+  - id: werkszeugkasten_basel_2016
+    type: book
+    title: 'Werkzeugkasten Geschichte'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    issued:
+      year: 2016
+    publisher: 'Departement Geschichte, Universität Basel'
+    note: 'Revised online version of the 2010 study guide'
+    URL: 'https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf'
+    abstract: 'Comprehensive guide to historical research practice with emphasis on source criticism and digital resources.'
 ---
 
 ## Overview and Didactic Goal
 
-This exercise trains public history knowledge communication as **processual translation work**: from a scholarly article (argument, evidence, uncertainties) to audience-oriented formats. Generative AI is used here **not** as an authority, but as a *tool for drafting, variation, editing, and proofreading* – with consistent source reference, traceability, and clear limits.
+This exercise trains public history knowledge communication as **processual translation work**: from a scholarly article (argument, evidence, uncertainties) to audience-oriented formats. Generative AI is used here **not** as an authority, but as a _tool for drafting, variation, editing, and proofreading_ – with consistent source reference, traceability, and clear limits.
 
 ## Prerequisites
 
@@ -130,7 +130,7 @@ You can complete this exercise with LLMs from different providers. For this exer
 - Decompose a communication context into target audiences, medium, purpose, and constraints (communication briefing).
 - Derive a core message (message map) and evidence matrix from a scholarly article without inventing new facts.
 - Create drafts in multiple public history formats (blog, audio, social, poster) and revise them format-appropriately.
-- Systematically verify responses (claim-by-claim, source veto, mark uncertainties) and document changes traceably (audit trail).
+- Systematically verify responses (claim by claim, source veto, mark uncertainties) and document changes traceably in an AI protocol.
 - Prepare an interview kit (soundbites, Q&A, no-go list, transparency statement).
 
 The base text is a (preferably open-access) scholarly article from your subject area. E.g.:
@@ -141,7 +141,7 @@ The base text is a (preferably open-access) scholarly article from your subject 
 
 1. **Communication briefing** (1 page)
 2. **Message map + evidence matrix** (table or bullet form)
-3. **Blog post** (approx. 700–1,000 words) *or* **podcast script** (approx. 6–8 minutes)
+3. **Blog post** (approx. 700–1,000 words) _or_ **podcast script** (approx. 6–8 minutes)
 4. **Two short formats** from: social media, poster text blocks, interview kit
 5. **AI protocol** (prompt/response log + reflection note, approx. 300–500 words)
 
@@ -149,9 +149,9 @@ The base text is a (preferably open-access) scholarly article from your subject 
 
 Terms (for this exercise):
 
-- **Audit Trail (AI Protocol):** Documentation of prompts, responses, decisions, corrections, and source references, so that your process remains traceable.
-- **Source Veto:** Any narrative sharpening is allowed, **provided** it does not contradict the statements documented in the article.
-- **Claim-by-claim Check:** Statements are decomposed as verifiable *claims*, linked to evidence or marked as speculation.
+- **AI protocol (audit trail):** Documentation of prompts, responses, decisions, corrections, and source references, so that your working process remains traceable.
+- **Source veto:** An AI statement or narrative sharpening is rejected if it contradicts the statements documented in the article or is not supported by the material.
+- **Claim-by-claim check:** Statements are decomposed into verifiable _claims_, linked to evidence, or marked as speculation.
 
 Search engines and AI systems structure visibility in problematic ways.[@noble2018oppression] AI-generated content for public history applications carries particular risks, as it reaches a broad audience without professional expertise.[@bender2021stochastic]
 
@@ -183,7 +183,7 @@ Plan at the end a brief transparency element (e.g., "How this was created" / "AI
 
 ### Goal
 
-Operationalize communication as a **context-dependent decision**: For *whom*, *where*, *why*, *in which medium*?
+Operationalize communication as a **context-dependent decision**: For _whom_, _where_, _why_, _in which medium_?
 
 ### Task
 
@@ -193,11 +193,11 @@ Choose a specific communication context (e.g., museum blog, local newspaper, sci
 - Purpose: inform / contextualize / open debate / action knowledge etc.
 - Medium/format: length, tone, visuality/audio, interaction
 - Constraints: language(s), accessibility, terminology, legal/ethical limits
-- Success criteria: What should recipients *know* / *be able to do* / *see differently* afterward?
+- Success criteria: What should recipients _know_ / _be able to do_ / _see differently_ afterward?
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 You are an audience research assistant. Generate 2–3 plausible target audience personas for the following context (without inventing facts about real people).
 For each persona: prior knowledge, motivations, possible misunderstandings, suitable examples/metaphors, no-gos.
 Context: ...
@@ -207,7 +207,7 @@ Topic/article in 3 sentences: ...
 ### Critical Comparison
 
 - Persona ≠ reality: supplement/verify assumptions (e.g., with real target audience hints, museum concepts, media guidelines).
-- Which simplifications would be epistemically risky? Note *red lines*.
+- Which simplifications would be epistemically risky? Note _red lines_.
 
 ## 2. Message Map and Narrative Route
 
@@ -219,7 +219,7 @@ Build a **communicative core architecture** that remains stable across formats.
 
 Create:
 
-1. **One-liner** (1 sentence): What is the core message – and why does it matter *for this target audience*?
+1. **One-liner** (1 sentence): What is the core message – and why does it matter _for this target audience_?
 2. **3–4 support points** (1–2 sentences each) with evidence reference
 3. **Evidence matrix**: Which support points rely on which data/source locations?
 4. **Context/framing**: What needs to be explained so that nothing is distorted?
@@ -227,7 +227,7 @@ Create:
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: You are a structurer. Work only with the source package + briefing.
 Generate a message map (one-liner + 3–4 support points + 'so what' for the target audience).
 Mark each point with claim IDs and indicate necessary context paragraphs.
@@ -257,7 +257,7 @@ Write a blog post (approx. 700–1,000 words) with:
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: You are a blog editor. Write a blog post for the following context.
 Constraints: Length 900 words, clear subheadings, no new facts.
 Use claim IDs in the text in square brackets, e.g., [C3].
@@ -278,19 +278,20 @@ Turn a plausible draft into a robust communication product.
 
 ### Task (Checklist)
 
-- **Claim-by-claim**: Every statement either supported, marked as framing, or deleted.
+- **Check claim by claim**: Every statement either supported, marked as framing, or deleted.
 - **Comprehensibility**: Reduce or define unnecessary jargon; check examples.
 - **Ethics/responsibility**: Sensitive groups/persons, violence, stigmatization, data policy, image rights.
 - **Transparency**: Add brief note on method/source/AI assistance.
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: You are a fact-checker.
-1) List all claimed facts/statements in the draft.
-2) Assign them to claim IDs or mark 'not in source package'.
-3) Suggest more precise formulations that correctly express uncertainties.
-Input: Blog draft + source package.
+
+1. List all claimed facts/statements in the draft.
+2. Assign them to claim IDs or mark 'not in source package'.
+3. Suggest more precise formulations that correctly express uncertainties.
+   Input: Blog draft + source package.
 ```
 
 ### Critical Comparison
@@ -304,7 +305,7 @@ The following tasks are deliberately designed as **adaptations**: You recycle me
 
 ### 5A Social Media (Thread + Single Post)
 
-**Goal:** Translate core message into an *attention medium* without overclaiming.
+**Goal:** Translate core message into an _attention medium_ without overclaiming.
 
 **Task**
 
@@ -315,7 +316,7 @@ The following tasks are deliberately designed as **adaptations**: You recycle me
 
 **AI Workflow**
 
-``` markdown
+```markdown
 Generate 3 variants (conservative / narrative / provocation-averse) for a thread.
 Rules: no new facts, no clickbait exaggeration, include an uncertainties post.
 Input: Message map + blog text excerpt + context.
@@ -333,7 +334,7 @@ Input: Message map + blog text excerpt + context.
 
 **AI Workflow**
 
-``` markdown
+```markdown
 Write a podcast script (7 minutes) for [target audience/context].
 Structure: Hook (15s) – Context (60s) – Key points (3x90s) – Uncertainties (45s) – Conclusion (30s).
 Use only claims from the source package and mark claim IDs in the margin of the manuscript.
@@ -352,7 +353,7 @@ Use only claims from the source package and mark claim IDs in the margin of the 
 
 **AI Workflow**
 
-``` markdown
+```markdown
 Generate poster text blocks with strict word limits and no new facts.
 Pay attention to: clear terms, no implicit value judgments, claim IDs per block.
 Input: Message map + evidence matrix.
@@ -371,12 +372,12 @@ Create an interview kit (1–2 pages):
 - **3 soundbites** (12–20 seconds each, paraphrased)
 - **5 core questions** + short answers (3–5 sentences each)
 - **2 critical questions** (e.g., "Isn't that…?") + bridging strategies
-- **No-go list**: Statements you *won't* make (due to evidence/complexity/ethics)
+- **No-go list**: Statements you _won't_ make (due to evidence/complexity/ethics)
 - **Transparency statement** on method and data situation (1–2 sentences)
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: You are a media coach. Generate an interview kit for radio/newspaper.
 Rules: no new facts, soundbites must correctly convey claims, don't hide uncertainties.
 Input: Message map + source package + blog/podcast draft.

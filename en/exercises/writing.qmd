@@ -1,14 +1,14 @@
 ---
 lang: en
-title: "Academic Writing"
-subtitle: "Role-Based Exercise Set along the Writing Process"
-description: "An exercise that trains the use of generative AI as a writing assistant in multiple roles – with focus on traceability, argument logic, and linguistic precision."
+title: 'Academic Writing'
+subtitle: 'Role-Based Exercise Set along the Writing Process'
+description: 'An exercise that trains the use of generative AI as a writing assistant in multiple roles – with focus on traceability, argument logic, and linguistic precision.'
 author:
-- name: Moritz Mähr
-  orcid: 0000-0002-1367-1618
-  email: moritz.maehr@gmail.com
-  affiliations:
-  - University of Bern
+  - name: Moritz Mähr
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - University of Bern
 date: '2025-12-24'
 date-modified: today
 categories: [Methods]
@@ -22,21 +22,21 @@ tags:
   - AI-Assisted
 draft: false
 references:
-- id: history_toolkit_en_2016
-  type: book
-  title: 'History: A Toolkit for Students'
-  author:
-  - family: Stüdli
-    given: Beat
-  - family: Hitz
-    given: Benjamin
-  translator:
-  - family: Grogan
-    given: Patrick
-  issued:
-    year: 2016
-  publisher: Department of History, University of Basel
-  URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
+  - id: history_toolkit_en_2016
+    type: book
+    title: 'History: A Toolkit for Students'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    translator:
+      - family: Grogan
+        given: Patrick
+    issued:
+      year: 2016
+    publisher: Department of History, University of Basel
+    URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
 ---
 
 ## Overview and Didactic Goal
@@ -77,7 +77,7 @@ You can complete this exercise with LLMs from different providers. For this exer
 
 ## Methodological Framework: AI as Writing Infrastructure
 
-In this exercise, AI is understood as a **heuristic writing tool**: it assists with *formulations, structuring, and verification*, but it replaces neither **source work** nor **interpretative decisions**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodologically helpful is a clear division of labor:
+In this exercise, AI is understood as a **heuristic writing tool**: it assists with _formulations, structuring, and verification_, but it replaces neither **source work** nor **interpretative decisions**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodologically helpful is a clear division of labor:
 
 - **Historical authorship:** Research question, evidence selection, interpretation, normative positions.
 - **AI contribution (instrumental):** Generate variants, structure suggestions, readability tests, error diagnosis.
@@ -89,14 +89,14 @@ For more reliable work, consistently use two prompt principles: 1. **Delimiting 
 
 ## Basic Rule: AI May Not "Invent"
 
-Use AI only as a **transformation and verification tool** for *your* material (notes, source excerpts, literature summaries, outline drafts). When AI names additional facts, literature, or sources, that counts as a **research hypothesis** that you must **externally verify**.
+Use AI only as a **transformation and verification tool** for _your_ material (notes, source excerpts, literature summaries, outline drafts). When AI names additional facts, literature, or sources, that counts as a **research hypothesis** that you must **externally verify**.
 :::
 
 ::: callout-note
 
-## Working Mode: AI Protocol (Audit Trail)
+## Working Mode: AI Protocol
 
-During the exercise, maintain a brief **AI protocol**. This is part of scientific traceability (and facilitates later disclosure/methods section).
+During the exercise, maintain a brief **AI protocol**: a traceable record of your prompts, responses, verification steps, and decisions (also called an audit trail). This is part of scientific traceability and facilitates later disclosure in the methods section.
 
 **Minimal Template** | Field | Content | |---|---| | Role / Exercise | | | Goal (1 sentence) | | | Input (which material?) | | | Prompt (core excerpt) | | | Response (brief) | | | Verification steps (how verified?) | | | Decision (adopted/adapted/rejected + justification) | |
 :::
@@ -136,7 +136,7 @@ Make the writing task and your own argumentation intent so precise that later AI
 
 **Prompt Scaffold**
 
-``` markdown
+```markdown
 You are a comprehension checker. Ask me 8–12 precise follow-up questions to clarify the writing task and argumentation goal.
 Mark:
 (1) missing information,
@@ -165,9 +165,10 @@ Generate ideas without inventing evidence, and immediately co-think counter-argu
 
 ### Task A: Brainstorming (idea-oriented, evidence-neutral)
 
-``` markdown
+```markdown
 Role: Brainstorming partner. Generate 12 possible argument lines/hypotheses on my topic.
 Conditions:
+
 - Formulate each line as a verifiable claim (no facts).
 - For each line: which kind of evidence I would need (source types/literature types).
 - Avoid specific literature titles or archive signatures; if necessary, formulate as search heuristic.
@@ -178,14 +179,15 @@ My material (only types, no sensitive content): …
 
 ### Task B: Devil's Advocate (confrontational, but productive)
 
-``` markdown
+```markdown
 Role: Devil's Advocate. Choose the 3 most plausible of my hypotheses and argue against each.
 For each counter-argument:
+
 - Name the vulnerable assumption.
 - Suggest a "stress test" (what finding would overturn my argument?).
 - Formulate an alternative interpretation (max. 2 sentences).
-No external facts.
-Hypotheses: …
+  No external facts.
+  Hypotheses: …
 ```
 
 ### Critical Comparison
@@ -203,16 +205,18 @@ Draft a verifiable **argument chain** (thesis → sub-theses → evidence → co
 
 ### Task
 
-``` markdown
+```markdown
 Role: Structurer & Outliner.
 Create an outline (max. 8 main points) for a text of approx. X words.
 For each point:
+
 - Goal of the section (1 sentence)
 - Central claim (1 sentence)
 - Required evidence (keywords; "from my notes/sources")
 - Transition to next point (1 sentence)
 
 Constraints:
+
 - No new facts.
 - If evidence is missing: mark as [EVIDENCE GAP] instead of supplementing.
 
@@ -236,10 +240,11 @@ Have paragraphs formulated from your own material without giving up content cont
 
 Select **one** outline point (e.g., "Main argument 1") and provide 8–12 bullet points (evidence, observations, quotes/paraphrases, terms).
 
-``` markdown
+```markdown
 Role: Text generator from bullet points.
 Write a paragraph (120–180 words) in academic English.
 Conditions:
+
 - Use only information from my bullet points.
 - No new examples, data, names, sources.
 - If a sentence would need additional information: mark [UNCERTAIN].
@@ -265,7 +270,7 @@ Solve local problems (transitions, opening sentences, term definitions) without 
 
 **A) Build Transition**
 
-``` markdown
+```markdown
 Role: Blockage solver.
 Formulate 5 variants for a transition sentence between paragraph A and B.
 Variant 1 neutral, 2 more argumentative, 3 more explanatory, 4 shorter, 5 with contrast marker.
@@ -275,24 +280,26 @@ Paragraph B: …
 
 **B) Operationalize Definition**
 
-``` markdown
+```markdown
 Formulate 3 possible working definitions for the term "X" in the context of my topic.
 For each definition:
+
 - Delimitation from 1 neighboring term
 - 1 observable indicator (how do I recognize X in sources?)
-No external facts.
-Context: …
+  No external facts.
+  Context: …
 ```
 
 **C) Sentence Diagnosis**
 
-``` markdown
+```markdown
 Mark in my paragraph:
+
 - the central sentence (topic sentence),
 - sentences with unclear referent ("this," "thereby," "one"),
 - sentences that actually contain two claims.
-Suggest minimal rearrangements (no content rewriting).
-Text: …
+  Suggest minimal rearrangements (no content rewriting).
+  Text: …
 ```
 
 **Result** - 1 revised transition/definition + brief justification of why this variant
@@ -305,16 +312,17 @@ Make argumentation logic visible: Do evidence support claims? Are inference rule
 
 ### Task
 
-``` markdown
+```markdown
 Role: Logic checker.
 Analyze my text (max. 300 words) as an argument map:
-1) Main thesis
-2) Sub-theses
-3) Explicit evidence (from the text)
-4) Implicit premises (that I apparently presuppose)
-5) Possible logical jumps or contradictions
-Then give 5 concrete revision recommendations, prioritized by impact.
-Text: …
+
+1. Main thesis
+2. Sub-theses
+3. Explicit evidence (from the text)
+4. Implicit premises (that I apparently presuppose)
+5. Possible logical jumps or contradictions
+   Then give 5 concrete revision recommendations, prioritized by impact.
+   Text: …
 ```
 
 ### Critical Comparison
@@ -332,27 +340,29 @@ Improve language and register without changing argumentative substance; optional
 
 ### Task A: Proofreading (minimally invasive)
 
-``` markdown
+```markdown
 Role: Proofreading.
 Improve grammar, style, and precision, but change no content statements.
 Work minimally invasive:
+
 - Replace vague words (e.g., "important," "shows") only if unambiguous.
 - Preserve technical terms; if uncertain: mark [TERM?].
-At the end, give a list of the 5 most frequent pattern errors you corrected.
-Text: …
+  At the end, give a list of the 5 most frequent pattern errors you corrected.
+  Text: …
 ```
 
 ### Task B: Translating (optional)
 
-``` markdown
+```markdown
 Role: Translator.
 Translate the text into English (or French/Spanish).
 Conditions:
+
 - Preserve register (academic) and hedge markers (e.g., "could," "suggests").
 - Keep proper names and quotes unchanged.
 - Give a mini-glossary table (5–10 term pairs) for key terms.
-Text: …
-Target language: …
+  Text: …
+  Target language: …
 ```
 
 **Result** - Corrected version + (optional) translation + glossary
@@ -365,16 +375,17 @@ Distill the text to its supporting statement: research problem, approach, findin
 
 ### Task
 
-``` markdown
+```markdown
 Role: Abstract writer.
 Write an abstract of 120–160 words.
 Must contain:
+
 - Research problem (1 sentence)
 - Approach/material (1 sentence)
 - Core argument/finding (2–3 sentences)
 - Contribution/relevance ("so what?") (1 sentence)
-No new facts; if unclear: mark [UNCLEAR].
-Text base: …
+  No new facts; if unclear: mark [UNCLEAR].
+  Text base: …
 ```
 
 ### Quality Check
@@ -392,14 +403,15 @@ Test readability and interpretation margins from the target audience's perspecti
 
 ### Task
 
-``` markdown
+```markdown
 Role: Comprehension checker.
 Read my text as a critical reader in a seminar.
-1) What is the thesis in one sentence?
-2) Which 3 points are unclear or ambiguous (each with quote location)?
-3) Which passage seems unsupported?
-4) Which two questions would you ask me in feedback?
-Text: …
+
+1. What is the thesis in one sentence?
+2. Which 3 points are unclear or ambiguous (each with quote location)?
+3. Which passage seems unsupported?
+4. Which two questions would you ask me in feedback?
+   Text: …
 ```
 
 **Result** - 3 refined passages in the text (1–2 sentences revised each)

@@ -6,11 +6,11 @@ description: Eine Übung, die den Einsatz generativer KI als Schreibassistent in
   Rollen trainiert – mit Fokus auf Nachvollziehbarkeit, Argumentationslogik und sprachliche
   Präzision.
 author:
-- name: Moritz Mähr
-  orcid: 0000-0002-1367-1618
-  email: moritz.maehr@gmail.com
-  affiliations:
-  - Universität Bern
+  - name: Moritz Mähr
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliations:
+      - Universität Bern
 date: '2025-12-24'
 date-modified: today
 categories: [Methoden]
@@ -24,89 +24,89 @@ tags:
   - KI-gestützt
 draft: false
 references:
-- id: history_toolkit_en_2016
-  type: book
-  title: 'History: A Toolkit for Students'
-  author:
-  - family: Stüdli
-    given: Beat
-  - family: Hitz
-    given: Benjamin
-  translator:
-  - family: Grogan
-    given: Patrick
-  issued:
-    year: 2016
-  publisher: Department of History, University of Basel
-  note: English translation of 'Werkzeugkasten Geschichte'; revised online version
-    of the 2010 study guide
-  URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
-  abstract: Study guide covering research questions, literature and source work, analytical
-    techniques, academic writing, citation, and digital resources.
-- id: kompass_geschichtsstudium_2025
-  type: book
-  title: Kompass Geschichtsstudium
-  subtitle: Version HS 2025
-  author:
-  - family: Luther
-    given: Johannes
-  - family: Meier
-    given: Marietta
-  - family: Kaiser
-    given: Rafael
-  - family: Tinner
-    given: Tamara Ann
-  issued:
-    year: 2025
-  publisher: Historisches Seminar, Universität Zürich
-  note: Offizielle Studienanleitung; aktualisiert am 21. Juli 2025
-  URL: https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf
-  abstract: Systematic overview of study requirements and methods in history, including
-    digital competence and citation of AI-based tools.
-- id: leitfaden_bremen_2025
-  type: book
-  title: Leitfaden Geschichtswissenschaft
-  subtitle: Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage
-  issued:
-    year: 2025
-  publisher: Institut für Geschichtswissenschaft, Universität Bremen
-  note: Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer
-    KI
-  URL: https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf
-  abstract: Study guide covering historical theory, source criticism, academic writing
-    formats, citation practices, and the use of generative AI.
-- id: studienleitfaden_hamburg_2021
-  type: book
-  title: Studienleitfaden Fachbereich Geschichte
-  author:
-  - family: Lösse
-    given: Esther
-  - family: Anders
-    given: Klaas
-  - family: Szadziewski
-    given: Max
-  issued:
-    year: 2021
-  publisher: Fachbereich Geschichte, Universität Hamburg
-  note: Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021
-  URL: https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf
-  abstract: Orientation guide for history students covering organization of studies,
-    research, reading, citation, and digital competence.
-- id: werkszeugkasten_basel_2016
-  type: book
-  title: Werkzeugkasten Geschichte
-  author:
-  - family: Stüdli
-    given: Beat
-  - family: Hitz
-    given: Benjamin
-  issued:
-    year: 2016
-  publisher: Departement Geschichte, Universität Basel
-  note: Revidierte Online-Version des Studienleitfadens von 2010
-  URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf
-  abstract: Comprehensive guide to historical research practice with emphasis on source
-    criticism and digital resources.
+  - id: history_toolkit_en_2016
+    type: book
+    title: 'History: A Toolkit for Students'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    translator:
+      - family: Grogan
+        given: Patrick
+    issued:
+      year: 2016
+    publisher: Department of History, University of Basel
+    note: English translation of 'Werkzeugkasten Geschichte'; revised online version
+      of the 2010 study guide
+    URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
+    abstract: Study guide covering research questions, literature and source work, analytical
+      techniques, academic writing, citation, and digital resources.
+  - id: kompass_geschichtsstudium_2025
+    type: book
+    title: Kompass Geschichtsstudium
+    subtitle: Version HS 2025
+    author:
+      - family: Luther
+        given: Johannes
+      - family: Meier
+        given: Marietta
+      - family: Kaiser
+        given: Rafael
+      - family: Tinner
+        given: Tamara Ann
+    issued:
+      year: 2025
+    publisher: Historisches Seminar, Universität Zürich
+    note: Offizielle Studienanleitung; aktualisiert am 21. Juli 2025
+    URL: https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf
+    abstract: Systematic overview of study requirements and methods in history, including
+      digital competence and citation of AI-based tools.
+  - id: leitfaden_bremen_2025
+    type: book
+    title: Leitfaden Geschichtswissenschaft
+    subtitle: Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage
+    issued:
+      year: 2025
+    publisher: Institut für Geschichtswissenschaft, Universität Bremen
+    note: Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer
+      KI
+    URL: https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf
+    abstract: Study guide covering historical theory, source criticism, academic writing
+      formats, citation practices, and the use of generative AI.
+  - id: studienleitfaden_hamburg_2021
+    type: book
+    title: Studienleitfaden Fachbereich Geschichte
+    author:
+      - family: Lösse
+        given: Esther
+      - family: Anders
+        given: Klaas
+      - family: Szadziewski
+        given: Max
+    issued:
+      year: 2021
+    publisher: Fachbereich Geschichte, Universität Hamburg
+    note: Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021
+    URL: https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf
+    abstract: Orientation guide for history students covering organization of studies,
+      research, reading, citation, and digital competence.
+  - id: werkszeugkasten_basel_2016
+    type: book
+    title: Werkzeugkasten Geschichte
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    issued:
+      year: 2016
+    publisher: Departement Geschichte, Universität Basel
+    note: Revidierte Online-Version des Studienleitfadens von 2010
+    URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf
+    abstract: Comprehensive guide to historical research practice with emphasis on source
+      criticism and digital resources.
 ---
 
 ## Überblick und didaktisches Ziel
@@ -147,7 +147,7 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 
 ## Methodischer Rahmen: KI als Schreibinfrastruktur
 
-In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
+In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei _Formulierungen, Strukturierung und Prüfung_, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
 
 - **Geschichtswissenschaftliche Autor:innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
 - **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.
@@ -159,14 +159,14 @@ Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. 
 
 ## Grundregel: KI darf nichts «erfinden»
 
-Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für *Ihr* Material (Notizen, Quellenexzerpte, Literaturzusammenfassungen, Gliederungsentwürfe). Wenn KI zusätzliche Fakten, Literatur oder Quellen nennt, gilt das als **Recherche-Hypothese**, die Sie **extern verifizieren** müssen.
+Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für _Ihr_ Material (Notizen, Quellenexzerpte, Literaturzusammenfassungen, Gliederungsentwürfe). Wenn KI zusätzliche Fakten, Literatur oder Quellen nennt, gilt das als **Recherche-Hypothese**, die Sie **extern verifizieren** müssen.
 :::
 
 ::: callout-note
 
-## Arbeitsmodus: KI-Protokoll (Audit Trail)
+## Arbeitsmodus: KI-Protokoll
 
-Führen Sie während der Übung ein kurzes **KI-Protokoll**. Das ist Teil der wissenschaftlichen Nachvollziehbarkeit (und erleichtert spätere Offenlegung/Methodenteil).
+Führen Sie während der Übung ein kurzes **KI-Protokoll**. Gemeint ist eine nachvollziehbare Spur Ihrer Prompts, Antworten, Prüfschritte und Entscheidungen (auch: Audit Trail). Das ist Teil der wissenschaftlichen Nachvollziehbarkeit und erleichtert spätere Offenlegung im Methodenteil.
 
 **Minimalvorlage** \| Feld \| Inhalt \| \|---\|---\| \| Rolle / Übung \| \| \| Ziel (1 Satz) \| \| \| Input (welches Material?) \| \| \| Prompt (Kernausschnitt) \| \| \| Antwort (kurz) \| \| \| Prüfschritte (wie verifiziert?) \| \| \| Entscheidung (übernommen/angepasst/verworfen + Begründung) \| \|
 :::
@@ -206,7 +206,7 @@ Den Schreibauftrag und die eigene Argumentationsabsicht so präzise machen, dass
 
 **Prompt-Gerüst**
 
-``` markdown
+```markdown
 Du bist Verständnischecker. Stelle mir 8–12 präzise Rückfragen, um Schreibauftrag und Argumentationsziel zu klären.
 Markiere:
 (1) fehlende Informationen,
@@ -235,9 +235,10 @@ Ideen generieren, ohne Evidenz zu erfinden, und sofort Gegenargumente/Alternativ
 
 ### Aufgabe A: Brainstorming (ideenorientiert, evidenzneutral)
 
-``` markdown
+```markdown
 Rolle: Brainstorming-Partner. Generiere 12 mögliche Argumentlinien/Hypothesen zu meinem Thema.
 Bedingungen:
+
 - Formuliere jede Linie als überprüfbare Behauptung (keine Facts).
 - Gib zu jeder Linie: welche Art von Evidenz ich bräuchte (Quellentypen/Literaturtypen).
 - Vermeide konkrete Literaturtitel oder Archivsignaturen; wenn nötig, formuliere als Suchheuristik.
@@ -248,14 +249,15 @@ Mein Material (nur Typen, keine sensiblen Inhalte): …
 
 ### Aufgabe B: Devil’s Advocate (konfrontativ, aber produktiv)
 
-``` markdown
+```markdown
 Rolle: Devil’s Advocate. Wähle die 3 plausibelsten meiner Hypothesen und argumentiere jeweils dagegen.
 Für jedes Gegenargument:
+
 - Benenne die verletzliche Annahme.
 - Schlage einen «Stress-Test» vor (welcher Befund würde mein Argument kippen?).
 - Formuliere eine alternative Deutung (max. 2 Sätze).
-Nutze keine externen Fakten.
-Hypothesen: …
+  Nutze keine externen Fakten.
+  Hypothesen: …
 ```
 
 ### Kritischer Abgleich
@@ -273,16 +275,18 @@ Eine überprüfbare **Argumentationskette** entwerfen (These → Unterthesen →
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Strukturierer & Outliner.
 Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. X Wörtern.
 Für jeden Punkt:
+
 - Ziel des Abschnitts (1 Satz)
 - zentrale Behauptung (1 Satz)
 - benötigte Evidenz (Stichworte; «aus meinen Notizen/Quellen»)
 - Übergang zum nächsten Punkt (1 Satz)
 
 Constraints:
+
 - Keine neuen Fakten.
 - Wenn Evidenz fehlt: markiere als [EVIDENZLÜCKE] statt zu ergänzen.
 
@@ -306,10 +310,11 @@ Aus eigenem Material Absätze formulieren lassen, ohne inhaltliche Kontrolle abz
 
 Wählen Sie **einen** Gliederungspunkt (z.B. «Hauptargument 1») und liefern Sie 8–12 Bullet Points (Belege, Beobachtungen, Zitate/Paraphrasen, Begriffe).
 
-``` markdown
+```markdown
 Rolle: Textgenerator aus Stichpunkten.
 Schreibe einen Absatz (120–180 Wörter) in akademischem Deutsch.
 Bedingungen:
+
 - Verwende ausschliesslich Informationen aus meinen Stichpunkten.
 - Keine neuen Beispiele, Daten, Namen, Quellen.
 - Wenn ein Satz zusätzliche Information bräuchte: [UNSICHER] markieren.
@@ -335,7 +340,7 @@ Lokale Probleme lösen (Übergänge, Einstiegssätze, Begriffsdefinitionen), ohn
 
 **A) Übergang bauen**
 
-``` markdown
+```markdown
 Rolle: Blockaden-Löser.
 Formuliere 5 Varianten für einen Übergangssatz zwischen Absatz A und B.
 Variante 1 neutral, 2 stärker argumentativ, 3 stärker erklärend, 4 knapper, 5 mit Kontrastmarker.
@@ -345,24 +350,26 @@ Absatz B: …
 
 **B) Definition operationalisieren**
 
-``` markdown
+```markdown
 Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «X» im Kontext meines Themas.
 Für jede Definition:
+
 - Abgrenzung zu 1 Nachbarbegriff
 - 1 beobachtbares Indiz (woran erkenne ich X in Quellen?)
-Keine externen Fakten.
-Kontext: …
+  Keine externen Fakten.
+  Kontext: …
 ```
 
 **C) Satzdiagnose**
 
-``` markdown
+```markdown
 Markiere in meinem Absatz:
+
 - den zentralen Satz (topic sentence),
 - Sätze mit unklarem Referent («dies», «dabei», «man»),
 - Sätze, die eigentlich zwei Behauptungen enthalten.
-Schlage minimale Umstellungen vor (keine Umschreibung des Inhalts).
-Text: …
+  Schlage minimale Umstellungen vor (keine Umschreibung des Inhalts).
+  Text: …
 ```
 
 **Ergebnis** - 1 überarbeiteter Übergang/Definition + kurze Begründung, warum diese Variante
@@ -375,16 +382,17 @@ Argumentationslogik sichtbar machen: Stützen Belege die Behauptungen? Sind Schl
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Logik-Prüfer.
 Analysiere meinen Text (max. 300 Wörter) als Argumentmap:
-1) Hauptthese
-2) Unterthesen
-3) explizite Belege (aus dem Text)
-4) implizite Prämissen (die ich offenbar voraussetze)
-5) mögliche logische Sprünge oder Widersprüche
-Gib dann 5 konkrete Revisionsempfehlungen, priorisiert nach Wirkung.
-Text: …
+
+1. Hauptthese
+2. Unterthesen
+3. explizite Belege (aus dem Text)
+4. implizite Prämissen (die ich offenbar voraussetze)
+5. mögliche logische Sprünge oder Widersprüche
+   Gib dann 5 konkrete Revisionsempfehlungen, priorisiert nach Wirkung.
+   Text: …
 ```
 
 ### Kritischer Abgleich
@@ -402,27 +410,29 @@ Sprache und Register verbessern, ohne die argumentative Substanz zu verändern; 
 
 ### Aufgabe A: Korrektorat (minimal-invasiv)
 
-``` markdown
+```markdown
 Rolle: Korrektorat.
 Verbessere Grammatik, Stil und Präzision, aber ändere keine inhaltlichen Aussagen.
 Arbeite minimal-invasiv:
+
 - Ersetze vage Wörter (z.B. «wichtig», «zeigt») nur, wenn eindeutig.
 - Erhalte Fachtermini; wenn unsicher: [TERM?] markieren.
-Gib am Ende eine Liste der 5 häufigsten Musterfehler, die du korrigiert hast.
-Text: …
+  Gib am Ende eine Liste der 5 häufigsten Musterfehler, die du korrigiert hast.
+  Text: …
 ```
 
 ### Aufgabe B: Übersetzen (optional)
 
-``` markdown
+```markdown
 Rolle: Übersetzer.
 Übersetze den Text ins Englische (oder Französische/Spanische).
 Bedingungen:
+
 - Bewahre Register (akademisch) und Hedge-Marker (z.B. «könnte», «legt nahe»).
 - Erhalte Eigennamen und Zitate unverändert.
 - Gib eine Mini-Glossar-Tabelle (5–10 Termpaare) für Schlüsselbegriffe.
-Text: …
-Zielsprache: …
+  Text: …
+  Zielsprache: …
 ```
 
 **Ergebnis** - Korrigierte Version + (optional) Übersetzung + Glossar
@@ -435,16 +445,17 @@ Den Text auf seine tragende Aussage verdichten: Forschungsproblem, Vorgehen, Bef
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Abstract-Schreiber.
 Schreibe ein Abstract mit 120–160 Wörtern.
 Muss enthalten:
+
 - Forschungsproblem (1 Satz)
 - Ansatz/Material (1 Satz)
 - Kernargument/Befund (2–3 Sätze)
 - Beitrag/Relevanz («so what?») (1 Satz)
-Keine neuen Fakten; wenn unklar: [UNKLAR] markieren.
-Textbasis: …
+  Keine neuen Fakten; wenn unklar: [UNKLAR] markieren.
+  Textbasis: …
 ```
 
 ### Qualitätscheck
@@ -462,14 +473,15 @@ Lesbarkeit und Interpretationsspielräume aus Sicht des Zielpublikums testen.
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Verständnischecker.
-Lies meinen Text als kritische*r Leser:in im Seminar.
-1) Was ist die These in einem Satz?
-2) Welche 3 Punkte sind unklar oder missverständlich (jeweils mit Zitatstelle)?
-3) Welche Stelle wirkt unbelegt?
-4) Welche zwei Fragen würdest du mir im Feedback stellen?
-Text: …
+Lies meinen Text als kritische\*r Leser:in im Seminar.
+
+1. Was ist die These in einem Satz?
+2. Welche 3 Punkte sind unklar oder missverständlich (jeweils mit Zitatstelle)?
+3. Welche Stelle wirkt unbelegt?
+4. Welche zwei Fragen würdest du mir im Feedback stellen?
+   Text: …
 ```
 
 **Ergebnis** - 3 präzisierte Stellen im Text (je 1–2 Sätze überarbeitet)

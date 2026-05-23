@@ -1,15 +1,15 @@
 ---
 lang: de
-title: "Prompt Engineering"
-subtitle: "Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin"
-description: "Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert."
+title: 'Prompt Engineering'
+subtitle: 'Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin'
+description: 'Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert.'
 author:
-  - name: "Moritz Mähr"
+  - name: 'Moritz Mähr'
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
     affiliations:
-      - "Universität Bern"
-date: "2025-12-29"
+      - 'Universität Bern'
+date: '2025-12-29'
 date-modified: today
 categories: [KI & Digitale Methoden]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
@@ -21,7 +21,7 @@ tags:
   - Nachvollziehbarkeit
   - Wissenschaftliche Integrität
 draft: false
-nocite: ""
+nocite: ''
 references: []
 ---
 
@@ -49,6 +49,19 @@ Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, di
 
 - Grundverständnis historischer Forschungsmethoden
 
+## Zentrale Begriffe
+
+Für diese Übung genügen folgende Arbeitsdefinitionen:
+
+- **Prompt:** Ihre Arbeitsanweisung an das KI-System, inklusive Material, Ziel, Grenzen und gewünschtem Antwortformat.
+- **KI-Protokoll / Prompt-Protokoll (Audit Trail):** Eine kurze Dokumentation von Prompts, Antworten, Prüfschritten, Korrekturen und Entscheidungen. Es funktioniert ähnlich wie ein Forschungsjournal: Der Weg zum Ergebnis bleibt nachvollziehbar.
+- **Quellen-Veto:** Eine KI-Aussage wird verworfen, wenn sie nicht durch das bereitgestellte oder nachprüfbare Material gedeckt ist.
+- **Claim-by-claim-Prüfung:** Jede einzelne Behauptung wird separat geprüft und entweder belegt, markiert oder gestrichen.
+- **Zero-shot / Few-shot:** Beim Zero-shot erhält das Modell keine Beispiele; beim Few-shot erhält es wenige Beispiele, um Format und Qualitätsmassstab zu stabilisieren.
+- **Strukturierte Denkspur / Chain-of-Thought:** Das Modell soll Zwischenschritte sichtbar machen. Diese Zwischenschritte sind keine Belege, sondern Prüfhilfen.
+- **Halluzination:** Eine plausibel klingende, aber falsche oder nicht belegte KI-Ausgabe.
+- **Bias:** Eine Verzerrung in Quellen, Daten, Modellen, Suchsystemen oder Interpretationen.
+
 ## Lernziele
 
 Nach Abschluss der Übung können Sie:
@@ -62,7 +75,7 @@ Nach Abschluss der Übung können Sie:
 
 ## Arbeitsmodus: KI-Protokoll und A/B-Testing
 
-Führen Sie ein kurzes Prompt-Protokoll (Audit Trail). Nutzen Sie es auch in den anderen Übungen.
+Führen Sie ein kurzes **KI-Protokoll** bzw. **Prompt-Protokoll** (Audit Trail). Nutzen Sie es auch in den anderen Übungen.
 
 **Minimalvorlage:**
 
@@ -96,7 +109,7 @@ Wenn das Tool keinen stabilen Dokumentzugriff hat: kopieren Sie (a) Textauszug u
 
 Beispiel-Layout:
 
-``` markdown
+```markdown
 """
 DOKUMENTTEXT (Auszug/ganzer Text)
 """
@@ -140,7 +153,7 @@ Eine unpräzise Anfrage so zu reformulieren, dass Antwort **prüfbar**, **format
 
 **Vage Anfrage (absichtlich schlecht):**
 
-``` markdown
+```markdown
 Fasse das Dokument zusammen und sag mir, was wichtig ist.
 ```
 
@@ -153,19 +166,22 @@ Orientieren Sie sich am Setup aus der Übung [Quellenkritik](quellenkritik-bunde
 
 **Prompt-Gerüst (robust, adaptierbar):**
 
-``` markdown
+```markdown
 Aufgabe: [konkret, 1–2 Sätze]
 Kontext: [Seminar/Fragestellung/Zeitraum]
 Material: [Dokumenttext + Metadaten, klar abgegrenzt]
 Regeln:
+
 - Arbeite nur mit dem Material.
 - Keine Ergänzungen aus Allgemeinwissen.
 - Markiere Unsicherheiten explizit.
-Ausgabe-Format:
-1) Minimalparaphrase (max. 4 Sätze)
-2) 5 Schlüsselbegriffe (aus dem Text)
-3) 3 offene Fragen (was bleibt unklar?)
-Self-Check:
+  Ausgabe-Format:
+
+1. Minimalparaphrase (max. 4 Sätze)
+2. 5 Schlüsselbegriffe (aus dem Text)
+3. 3 offene Fragen (was bleibt unklar?)
+   Self-Check:
+
 - Liste 3 Stellen, wo du versucht wärst zu spekulieren, und erkläre kurz, warum du es nicht tust.
 ```
 
@@ -187,37 +203,40 @@ Lassen Sie dieselbe Aufgabe in drei Rollen bearbeiten:
 
 **Rollen-Prompt (Beispiel: Quellenkritiker:in, stark begrenzend):**
 
-``` markdown
+```markdown
 Rolle: Quellenkritiker:in.
 Aufgabe: Analysiere das Material ausschliesslich als Quelle (externe + interne Kritik).
 Wichtig:
+
 - Trenne strikt: [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
 - Keine historischen Bewertungen.
 - Jede Schlussfolgerung braucht eine Text- oder Metadatenstütze.
-Ausgabe:
-1) Ebenen-Tabelle
-2) 5 prüfbare Authentizitäts-/Überlieferungsfragen
-3) 5 Bias-/Sprechpositions-Hypothesen (als Hypothesen markieren)
+  Ausgabe:
+
+1. Ebenen-Tabelle
+2. 5 prüfbare Authentizitäts-/Überlieferungsfragen
+3. 5 Bias-/Sprechpositions-Hypothesen (als Hypothesen markieren)
 ```
 
 **Rollen-Prompt (Beispiel: Devil’s Advocate, aus der Schreibübung abgeleitet):**
 
-``` markdown
+```markdown
 Rolle: Devil’s Advocate.
 Input: Meine Arbeitshypothesen (H1–H3) + Materialhinweise.
 Aufgabe:
+
 - Nenne zu jeder Hypothese die diskutierbare Annahme.
 - Formuliere einen Stress-Test (welcher Befund würde kippen?).
 - Gib 1 alternative Deutung (max. 2 Sätze).
-Keine externen Fakten.
+  Keine externen Fakten.
 ```
 
 ### Übung 2B: Rollenwechsel als Diagnose
 
 Nehmen Sie die **beste** Antwort aus 2A und lassen Sie sie durch eine zweite Rolle **prüfen**, nicht neu schreiben:
 
-- Rolle «Logik-Prüfer:in» (vgl.* Schreiben\*): Konsistenz, Sprünge, fehlende Evidenzstellen.
-- Rolle «Katalog-Assistent:in» (vgl.* Literaturrecherche\*): übersetzt in Suchstrings/Indikatoren.
+- Rolle «Logik-Prüfer:in» (vgl.\* Schreiben\*): Konsistenz, Sprünge, fehlende Evidenzstellen.
+- Rolle «Katalog-Assistent:in» (vgl.\* Literaturrecherche\*): übersetzt in Suchstrings/Indikatoren.
 
 ## 3. Zero-shot Prompting
 
@@ -231,19 +250,20 @@ Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur
 
 ### Ziel
 
-Zero-shot als **Baseline** einsetzen: schnell, aber fehleranfällig. Sie lernen, *wo* Zero-shot reicht und *wo* er systematisch ausweicht.
+Zero-shot als **Baseline** einsetzen: schnell, aber fehleranfällig. Sie lernen, _wo_ Zero-shot reicht und _wo_ er systematisch ausweicht.
 
 ### Übung 3A: Minimalparaphrase (Zero-shot)
 
 Nutzen Sie die Aufgabe aus [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Minimalparaphrase, max. 4 Sätze) als Zero-shot.
 
-``` markdown
+```markdown
 Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte:
+
 - Wer spricht/handelt?
 - Was ist der Anlass?
 - Was ist die zentrale Aussage/Entscheidung?
 - Welche Konsequenz wird angedeutet?
-Maximal 4 Sätze. Keine Interpretation.
+  Maximal 4 Sätze. Keine Interpretation.
 ```
 
 ::: callout-info
@@ -252,7 +272,7 @@ Maximal 4 Sätze. Keine Interpretation.
 
 Laden Sie das Dokument als PDF Datei hoch zusammen mit dem Prompt. Falls das nicht möglich ist, kopieren sie den Inhalt des Dokuments an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Stellen Sie darüber hinaus sicher, dass die KI Zugriff auf die Metadaten hat (entweder durch Online-Zugriff oder indem Sie die Metadaten zur Verfügung stellen). Beispiel:
 
-``` markdown
+```markdown
 """
 INHALT DOKUMENT
 """
@@ -277,7 +297,7 @@ Markieren Sie in der Antwort:
 
 Nutzen Sie die Vorlage aus der Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd).
 
-``` markdown
+```markdown
 Gib mir drei mögliche historische Forschungsfragen, die sich aus der Aktennotiz ableiten lassen.
 Jede Frage muss (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch sein.
 Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.
@@ -305,11 +325,12 @@ Erstellen Sie 3–5 kurze Beispielsätze (dürfen **fiktiv**, aber historisch pl
 
 **Beispiel:**
 
-``` markdown
+```markdown
 Beispiele (Input → Label):
-1) "Ort: Bern; Datum: 7.7.1949." → [Edition/Metadaten]
-2) "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → [Dokumenttext]
-3) "Daraus folgt, dass die Schweiz grundsätzlich anti-europäisch war." → [Schlussfolgerung] (zu stark; müsste geprüft/abgeschwächt werden)
+
+1. "Ort: Bern; Datum: 7.7.1949." → [Edition/Metadaten]
+2. "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → [Dokumenttext]
+3. "Daraus folgt, dass die Schweiz grundsätzlich anti-europäisch war." → [Schlussfolgerung] (zu stark; müsste geprüft/abgeschwächt werden)
 
 Aufgabe:
 Labeln Sie nun die folgenden 10 Sätze aus meinem Material als
@@ -326,7 +347,7 @@ Nehmen Sie 2 schwache und 2 starke Fragen (aus Ihrer Übung [Forschungsfrage](fo
 
 **Gerüst:**
 
-``` markdown
+```markdown
 Beispiele (Schwach/Stark):
 Schwach: "Warum trat die Schweiz dem Europarat bei?" → zu breit, teleologisch, unklare Evidenzbasis.
 Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argument für/gegen eine institutionelle Annäherung an den Europarat operationalisiert?" → klarer Operator, Zeitraum, Quellennähe.
@@ -334,6 +355,7 @@ Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argumen
 Aufgabe:
 Formuliere 3 neue Forschungsfragen im Stil der starken Beispiele.
 Zu jeder Frage:
+
 - Zeitraum
 - zentrale Operatorbegriffe (definieren!)
 - erwartete Quellengattungen
@@ -365,33 +387,36 @@ Formulieren Sie die Denkspur so, dass sie **kurz** und **auditierbar** bleibt (S
 
 Nutzen Sie das Argumentmapping aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Claim/Begründung/Voraussetzung/Implikation), aber erzwingen Sie Schrittlogik:
 
-``` markdown
+```markdown
 Aufgabe: Erzeuge ein Argumentmapping zu den Passagen, die Neutralität/Vereinbarkeit/Entscheidungsprozess betreffen.
 
 Vorgehen (sichtbar ausgeben):
-1) Extrahiere relevante Textsegmente (max. 5 kurze Zitatfragmente).
-2) Formuliere pro Segment ein Claim/Warrant/Assumption/Implication (stichwortartig).
-3) Self-Check: Nenne 3 Stellen, wo der Sprung von Text → Interpretation heikel ist, und markiere sie als [Spekulation].
+
+1. Extrahiere relevante Textsegmente (max. 5 kurze Zitatfragmente).
+2. Formuliere pro Segment ein Claim/Warrant/Assumption/Implication (stichwortartig).
+3. Self-Check: Nenne 3 Stellen, wo der Sprung von Text → Interpretation heikel ist, und markiere sie als [Spekulation].
 
 Regeln:
+
 - Nutze nur Dokumenttext.
 - Keine zusätzlichen Fakten.
-Antwort: Markdown-Liste.
-Material: ...
+  Antwort: Markdown-Liste.
+  Material: ...
 ```
 
 ### Übung 5B: Rechercheplan als Pipeline
 
 Übertragen Sie die Struktur aus [Quellensuche](quellensuche-vorort-europarat-1963.qmd) (Teilfragen → Quellentypen → Suchorte → Suchstrings) in eine explizite Pipeline:
 
-``` markdown
+```markdown
 Ziel: Erstelle einen Rechercheplan zur Frage: [einfügen].
 
 Schritte:
-1) Zerlege in 4–6 Teilfragen (prüfbar).
-2) Ordne pro Teilfrage 2–3 Quellentypen + Arenen zu.
-3) Leite pro Teilfrage 2 Suchstrings ab (DE/FR/EN; Boolean).
-4) Self-Check: Liste 5 typische Fehler (Anachronismen, erfundene Signaturen, zu breite Begriffe ...) und wie du sie vermeidest.
+
+1. Zerlege in 4–6 Teilfragen (prüfbar).
+2. Ordne pro Teilfrage 2–3 Quellentypen + Arenen zu.
+3. Leite pro Teilfrage 2 Suchstrings ab (DE/FR/EN; Boolean).
+4. Self-Check: Liste 5 typische Fehler (Anachronismen, erfundene Signaturen, zu breite Begriffe ...) und wie du sie vermeidest.
 
 Antwort: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).
 ```
@@ -412,28 +437,29 @@ Iteration als **kontrollierte Revision**: Sie bauen nicht «mehr Text», sondern
 
 ### Übung 6A: Generate → Critique → Revise (Forschungsfrage)
 
-1) **Generate (v1):** Zero-shot Forschungsfragen (Übung 3B).\
-2) **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung *Forschungsfrage* («Warum fehlt X?» / «Auf welche Quellen stützt sich das?»).\
-3) **Revise (v2):** Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.
+1. **Generate (v1):** Zero-shot Forschungsfragen (Übung 3B).\
+2. **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung _Forschungsfrage_ («Warum fehlt X?» / «Auf welche Quellen stützt sich das?»).\
+3. **Revise (v2):** Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.
 
 **Critique-Prompt (Vorlage):**
 
-``` markdown
+```markdown
 Hier ist Antwort v1: [einfügen].
-Aufgabe: Kritisiere claim-by-claim:
+Aufgabe: Prüfe Behauptung für Behauptung:
+
 - Was ist zu breit/teleologisch?
 - Wo fehlen Operatorbegriffe/Definitionen?
 - Wo ist die Evidenzbasis unklar?
-Gib danach eine revidierte Version v2 (max. 3 Fragen) + eine Änderungslogik (max. 6 Stichpunkte).
-Keine neuen Fakten.
+  Gib danach eine revidierte Version v2 (max. 3 Fragen) + eine Änderungslogik (max. 6 Stichpunkte).
+  Keine neuen Fakten.
 ```
 
 ### Übung 6B: Iteration über Antwort-Format (Zitieren / Zusammenfassen)
 
-Nehmen Sie die Übung *Zitieren* und erzwingen Sie eine zweistufige Ausgabe:
+Nehmen Sie die Übung _Zitieren_ und erzwingen Sie eine zweistufige Ausgabe:
 
-1) Extraktion strukturierter Metadaten (Felder),\
-2) erst dann Chicago-Zitat + Zotero-Importformat.
+1. Extraktion strukturierter Metadaten (Felder),\
+2. erst dann Chicago-Zitat + Zotero-Importformat.
 
 **Optimierungsfrage:** Verbessert die Zweistufigkeit Fehlerdiagnose (z. B. fehlende Seitenzahlen, falsche Herausgeber:innen)?
 
@@ -459,17 +485,19 @@ Nehmen Sie einen naiven Literaturprompt («Nenne zentrale Literatur zu X») und 
 
 **Optimierter Prompt (Gerüst):**
 
-``` markdown
+```markdown
 Du bist historischer Rechercheassistent.
 Ziel: Startkorpus für [Thema/Zeitraum].
 Regeln:
+
 - Erfinde keine Titel/Autor:innen.
 - Gib keine Behauptungen über Katalogabdeckung.
 - Liefere stattdessen: Suchstrategien, Suchstrings, erwartbare Literaturtypen, und Hinweise auf Prüfschritte.
-Antwort:
-1) 8 Suchstrings (DE/FR/EN) mit kurzer Begründung
-2) 5 erwartbare Literaturtypen + wo man sie typischerweise findet
-3) 6 Prüfschritte (wie ich Treffer verifiziere, exportiere, dokumentiere)
+  Antwort:
+
+1. 8 Suchstrings (DE/FR/EN) mit kurzer Begründung
+2. 5 erwartbare Literaturtypen + wo man sie typischerweise findet
+3. 6 Prüfschritte (wie ich Treffer verifiziere, exportiere, dokumentiere)
 ```
 
 ### Übung 7B: Prompt-Optimierung als «Fehlerbudget»
@@ -489,26 +517,26 @@ Führen Sie 3 Iterationen durch (v1–v3) und protokollieren Sie:
 
 **1) Kontext + Materialbindung**
 
-``` markdown
+```markdown
 Arbeite ausschliesslich mit dem untenstehenden Material.
 Wenn dir Informationen fehlen, stelle Rückfragen oder markiere [Unklar].
 ```
 
 **2) Ebenen-Trennung (Quelle vs. Edition vs. Schlussfolgerung)**
 
-``` markdown
+```markdown
 Markiere jede Aussage als [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
 ```
 
 **3) Antwort als Zwischenprodukt (für Weiterarbeit)**
 
-``` markdown
+```markdown
 Gib die Antwort als Tabelle mit Feldern: Claim | Evidenzstelle | Unsicherheit | Nächster Prüfschritt.
 ```
 
 **4) Self-Check / Gegenprobe erzwingen**
 
-``` markdown
+```markdown
 Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.
 ```
 

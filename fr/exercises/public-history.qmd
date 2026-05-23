@@ -1,15 +1,15 @@
 ---
 lang: fr
-title: "Public History et communication historique"
+title: 'Public History et communication historique'
 subtitle: "Communication des savoirs le long du processus d'écriture et de production"
-description: "Ensemble d'exercices pour la communication orientée vers le public cible d'un article scientifique dans plusieurs formats (blog, podcast, réseaux sociaux, poster, interview) – avec piste d'audit, veto des sources et transparence méthodologique."
+description: "Ensemble d'exercices pour la communication orientée vers le public cible d'un article scientifique dans plusieurs formats (blog, podcast, réseaux sociaux, poster, interview) – avec protocole IA, veto des sources et transparence méthodologique."
 author:
-  - name: "Moritz Mähr"
+  - name: 'Moritz Mähr'
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
     affiliations:
-      - "Université de Berne"
-date: "2025-12-29"
+      - 'Université de Berne'
+date: '2025-12-29'
 date-modified: today
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
@@ -22,27 +22,27 @@ tags:
   - Assisté par IA
 draft: false
 references:
-- id: history_toolkit_en_2016
-  type: book
-  title: "History: A Toolkit for Students"
-  author:
-    - family: Stüdli
-      given: Beat
-    - family: Hitz
-      given: Benjamin
-  translator:
-    - family: Grogan
-      given: Patrick
-  issued:
-    year: 2016
-  publisher: "Department of History, University of Basel"
-  note: "Traduction anglaise de 'Werkzeugkasten Geschichte'; version en ligne révisée du guide d'études de 2010"
-  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
+  - id: history_toolkit_en_2016
+    type: book
+    title: 'History: A Toolkit for Students'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    translator:
+      - family: Grogan
+        given: Patrick
+    issued:
+      year: 2016
+    publisher: 'Department of History, University of Basel'
+    note: "Traduction anglaise de 'Werkzeugkasten Geschichte'; version en ligne révisée du guide d'études de 2010"
+    URL: 'https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf'
 ---
 
 ## Aperçu et objectif didactique
 
-Cet exercice forme la communication des savoirs en public history comme **travail de traduction processuel**: d'un article scientifique (argument, preuves, incertitudes) vers des formats orientés vers le public. L'IA générative est utilisée ici **non** comme une autorité, mais comme un *outil pour l'ébauche, la variation, l'édition et la relecture* – avec référence cohérente aux sources, traçabilité et limites claires.
+Cet exercice forme la communication des savoirs en public history comme **travail de traduction processuel**: d'un article scientifique (argument, preuves, incertitudes) vers des formats orientés vers le public. L'IA générative est utilisée ici **non** comme une autorité, mais comme un _outil pour l'ébauche, la variation, l'édition et la relecture_ – avec référence cohérente aux sources, traçabilité et limites claires.
 
 ## Prérequis
 
@@ -70,7 +70,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 - Décomposer un contexte de communication en publics cibles, médium, objectif et contraintes (briefing de communication).
 - Déduire d'un article scientifique un message clé (carte des messages) et une matrice de preuves sans inventer de nouveaux faits.
 - Créer des ébauches dans plusieurs formats de public history (blog, audio, social, poster) et les réviser de manière appropriée au format.
-- Vérifier systématiquement les réponses (affirmation par affirmation, veto des sources, marquer les incertitudes) et documenter les changements de manière traçable (piste d'audit).
+- Vérifier systématiquement les réponses (affirmation par affirmation, veto des sources, marquer les incertitudes) et documenter les changements de manière traçable dans un protocole IA.
 - Préparer un kit d'interview (soundbites, Q&R, liste de no-go, déclaration de transparence).
 
 Le texte de base est un article scientifique (de préférence en accès libre) de votre domaine. Par ex.:
@@ -81,7 +81,7 @@ Le texte de base est un article scientifique (de préférence en accès libre) d
 
 1. **Briefing de communication** (1 page)
 2. **Carte des messages + matrice de preuves** (forme tableau ou points)
-3. **Article de blog** (env. 700–1 000 mots) *ou* **script de podcast** (env. 6–8 minutes)
+3. **Article de blog** (env. 700–1 000 mots) _ou_ **script de podcast** (env. 6–8 minutes)
 4. **Deux formats courts** parmi: réseaux sociaux, blocs de texte poster, kit d'interview
 5. **Protocole IA** (journal prompt/réponse + note de réflexion, env. 300–500 mots)
 
@@ -89,9 +89,9 @@ Le texte de base est un article scientifique (de préférence en accès libre) d
 
 Termes (pour cet exercice):
 
-- **Piste d'audit (Protocole IA):** Documentation des prompts, réponses, décisions, corrections et références aux sources, de sorte que votre processus reste traçable.
-- **Veto des sources:** Toute accentuation narrative est autorisée, **à condition** qu'elle ne contredise pas les déclarations documentées dans l'article.
-- **Vérification affirmation par affirmation:** Les déclarations sont décomposées en *affirmations* vérifiables, liées à des preuves ou marquées comme spéculation.
+- **Protocole IA (piste d'audit):** Documentation des prompts, réponses, décisions, corrections et références aux sources, de sorte que votre démarche reste traçable.
+- **Veto des sources:** Une affirmation produite par l'IA ou une accentuation narrative est rejetée si elle contredit les déclarations documentées dans l'article ou n'est pas étayée par le matériel.
+- **Vérification affirmation par affirmation:** Les déclarations sont décomposées en _affirmations_ vérifiables, liées à des preuves ou marquées comme spéculation.
 
 Les moteurs de recherche et les systèmes d'IA structurent la visibilité de manière problématique.[@noble2018oppression] Le contenu généré par l'IA pour les applications de public history comporte des risques particuliers, car il atteint un large public sans expertise professionnelle.[@bender2021stochastic]
 
@@ -123,7 +123,7 @@ Prévoyez à la fin un bref élément de transparence (par ex. « Comment cela a
 
 ### Objectif
 
-Opérationnaliser la communication comme une **décision dépendante du contexte**: Pour *qui*, *où*, *pourquoi*, *dans quel médium* ?
+Opérationnaliser la communication comme une **décision dépendante du contexte**: Pour _qui_, _où_, _pourquoi_, _dans quel médium_ ?
 
 ### Tâche
 
@@ -133,11 +133,11 @@ Choisissez un contexte de communication spécifique (par ex. blog de musée, jou
 - Objectif: informer / contextualiser / ouvrir le débat / connaissances pratiques etc.
 - Médium/format: longueur, ton, visuel/audio, interaction
 - Contraintes: langue(s), accessibilité, terminologie, limites légales/éthiques
-- Critères de succès: Que devraient les destinataires *savoir* / *être capable de faire* / *voir différemment* après ?
+- Critères de succès: Que devraient les destinataires _savoir_ / _être capable de faire_ / _voir différemment_ après ?
 
 ### Flux de travail IA (Esquisse de prompt)
 
-``` markdown
+```markdown
 Tu es un assistant de recherche d'audience. Génère 2–3 personas de public cible plausibles pour le contexte suivant (sans inventer de faits sur des personnes réelles).
 Pour chaque persona: connaissances préalables, motivations, malentendus possibles, exemples/métaphores appropriés, no-gos.
 Contexte: ...
@@ -147,7 +147,7 @@ Sujet/article en 3 phrases: ...
 ### Comparaison critique
 
 - Persona ≠ réalité: complétez/vérifiez les hypothèses (par ex. avec des indices de public cible réels, concepts de musée, directives médias).
-- Quelles simplifications seraient épistémiquement risquées ? Notez les *lignes rouges*.
+- Quelles simplifications seraient épistémiquement risquées ? Notez les _lignes rouges_.
 
 ## 2. Carte des messages et route narrative
 
@@ -159,7 +159,7 @@ Construire une **architecture communicative centrale** qui reste stable à trave
 
 Créez:
 
-1. **One-liner** (1 phrase): Quel est le message clé – et pourquoi compte-t-il *pour ce public cible* ?
+1. **One-liner** (1 phrase): Quel est le message clé – et pourquoi compte-t-il _pour ce public cible_ ?
 2. **3–4 points d'appui** (1–2 phrases chacun) avec référence aux preuves
 3. **Matrice de preuves**: Quels points d'appui reposent sur quelles données/emplacements de sources ?
 4. **Contexte/cadrage**: Qu'est-ce qui doit être expliqué pour que rien ne soit déformé ?
@@ -167,7 +167,7 @@ Créez:
 
 ### Flux de travail IA (Esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: Tu es un structureur. Travaille uniquement avec le package de sources + briefing.
 Génère une carte des messages (one-liner + 3–4 points d'appui + 'so what' pour le public cible).
 Marque chaque point avec des IDs d'affirmation et indique les paragraphes de contexte nécessaires.
@@ -197,7 +197,7 @@ Rédigez un article de blog (env. 700–1 000 mots) avec:
 
 ### Flux de travail IA (Esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: Tu es un rédacteur de blog. Rédige un article de blog pour le contexte suivant.
 Contraintes: Longueur 900 mots, sous-titres clairs, pas de nouveaux faits.
 Utilise des IDs d'affirmation dans le texte entre crochets, par ex. [C3].
@@ -225,12 +225,13 @@ Transformer une ébauche plausible en un produit de communication robuste.
 
 ### Flux de travail IA (Esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: Tu es un vérificateur de faits.
-1) Liste tous les faits/déclarations affirmés dans l'ébauche.
-2) Attribue-les aux IDs d'affirmation ou marque 'pas dans le package de sources'.
-3) Propose des formulations plus précises qui expriment correctement les incertitudes.
-Input: Ébauche de blog + package de sources.
+
+1. Liste tous les faits/déclarations affirmés dans l'ébauche.
+2. Attribue-les aux IDs d'affirmation ou marque 'pas dans le package de sources'.
+3. Propose des formulations plus précises qui expriment correctement les incertitudes.
+   Input: Ébauche de blog + package de sources.
 ```
 
 ### Comparaison critique
@@ -244,7 +245,7 @@ Les tâches suivantes sont délibérément conçues comme des **adaptations**: V
 
 ### 5A Réseaux sociaux (Thread + Post unique)
 
-**Objectif:** Traduire le message clé dans un *médium d'attention* sans surafirmation.
+**Objectif:** Traduire le message clé dans un _médium d'attention_ sans surafirmation.
 
 **Tâche**
 
@@ -255,7 +256,7 @@ Les tâches suivantes sont délibérément conçues comme des **adaptations**: V
 
 **Flux de travail IA**
 
-``` markdown
+```markdown
 Génère 3 variantes (conservatrice / narrative / sans provocation) pour un thread.
 Règles: pas de nouveaux faits, pas d'exagération clickbait, inclure un post d'incertitudes.
 Input: Carte des messages + extrait de texte de blog + contexte.
@@ -273,7 +274,7 @@ Input: Carte des messages + extrait de texte de blog + contexte.
 
 **Flux de travail IA**
 
-``` markdown
+```markdown
 Rédige un script de podcast (7 minutes) pour [public cible/contexte].
 Structure: Accroche (15s) – Contexte (60s) – Points clés (3x90s) – Incertitudes (45s) – Conclusion (30s).
 Utilise uniquement les affirmations du package de sources et marque les IDs d'affirmation dans la marge du manuscrit.
@@ -292,7 +293,7 @@ Utilise uniquement les affirmations du package de sources et marque les IDs d'af
 
 **Flux de travail IA**
 
-``` markdown
+```markdown
 Génère des blocs de texte poster avec des limites de mots strictes et pas de nouveaux faits.
 Fais attention à: termes clairs, pas de jugements de valeur implicites, IDs d'affirmation par bloc.
 Input: Carte des messages + matrice de preuves.
@@ -311,12 +312,12 @@ Créez un kit d'interview (1–2 pages):
 - **3 soundbites** (12–20 secondes chacun, paraphrasés)
 - **5 questions centrales** + réponses courtes (3–5 phrases chacune)
 - **2 questions critiques** (par ex. « N'est-ce pas… ? ») + stratégies de transition
-- **Liste no-go**: Déclarations que vous *ne ferez pas* (pour des raisons de preuves/complexité/éthique)
+- **Liste no-go**: Déclarations que vous _ne ferez pas_ (pour des raisons de preuves/complexité/éthique)
 - **Déclaration de transparence** sur la méthode et la situation des données (1–2 phrases)
 
 ### Flux de travail IA (Esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: Tu es un coach médias. Génère un kit d'interview pour radio/journal.
 Règles: pas de nouveaux faits, les soundbites doivent transmettre correctement les affirmations, ne pas cacher les incertitudes.
 Input: Carte des messages + package de sources + ébauche blog/podcast.

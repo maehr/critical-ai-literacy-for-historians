@@ -1,15 +1,15 @@
 ---
 lang: de
-title: "Public History und Geschichtsvermittlung"
-subtitle: "Wissenskommunikation entlang des Schreib- und Produktionsprozesses"
-description: "Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail, Quellen-Veto und methodischer Transparenz."
+title: 'Public History und Geschichtsvermittlung'
+subtitle: 'Wissenskommunikation entlang des Schreib- und Produktionsprozesses'
+description: 'Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit KI-Protokoll, Quellen-Veto und methodischer Transparenz.'
 author:
-  - name: "Moritz Mähr"
+  - name: 'Moritz Mähr'
     orcid: 0000-0002-1367-1618
     email: moritz.maehr@gmail.com
     affiliations:
-      - "Universität Bern"
-date: "2025-12-29"
+      - 'Universität Bern'
+date: '2025-12-29'
 date-modified: today
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
@@ -22,87 +22,87 @@ tags:
   - KI-gestützt
 draft: false
 references:
-- id: history_toolkit_en_2016
-  type: book
-  title: "History: A Toolkit for Students"
-  author:
-    - family: Stüdli
-      given: Beat
-    - family: Hitz
-      given: Benjamin
-  translator:
-    - family: Grogan
-      given: Patrick
-  issued:
-    year: 2016
-  publisher: "Department of History, University of Basel"
-  note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
-  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf"
-  abstract: "Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources."
-- id: kompass_geschichtsstudium_2025
-  type: book
-  title: "Kompass Geschichtsstudium"
-  subtitle: "Version HS 2025"
-  author:
-    - family: Luther
-      given: Johannes
-    - family: Meier
-      given: Marietta
-    - family: Kaiser
-      given: Rafael
-    - family: Tinner
-      given: Tamara Ann
-  issued:
-    year: 2025
-  publisher: "Historisches Seminar, Universität Zürich"
-  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
-  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
-  abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
-- id: leitfaden_bremen_2025
-  type: book
-  title: "Leitfaden Geschichtswissenschaft"
-  subtitle: "Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage"
-  issued:
-    year: 2025
-  publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
-  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
-  URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
-  abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
-- id: studienleitfaden_hamburg_2021
-  type: book
-  title: "Studienleitfaden Fachbereich Geschichte"
-  author:
-    - family: Lösse
-      given: Esther
-    - family: Anders
-      given: Klaas
-    - family: Szadziewski
-      given: Max
-  issued:
-    year: 2021
-  publisher: "Fachbereich Geschichte, Universität Hamburg"
-  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
-  URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
-  abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
-- id: werkszeugkasten_basel_2016
-  type: book
-  title: "Werkzeugkasten Geschichte"
-  author:
-    - family: Stüdli
-      given: Beat
-    - family: Hitz
-      given: Benjamin
-  issued:
-    year: 2016
-  publisher: "Departement Geschichte, Universität Basel"
-  note: "Revidierte Online-Version des Studienleitfadens von 2010"
-  URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
-  abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
+  - id: history_toolkit_en_2016
+    type: book
+    title: 'History: A Toolkit for Students'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    translator:
+      - family: Grogan
+        given: Patrick
+    issued:
+      year: 2016
+    publisher: 'Department of History, University of Basel'
+    note: "English translation of 'Werkzeugkasten Geschichte'; revised online version of the 2010 study guide"
+    URL: 'https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf'
+    abstract: 'Study guide covering research questions, literature and source work, analytical techniques, academic writing, citation, and digital resources.'
+  - id: kompass_geschichtsstudium_2025
+    type: book
+    title: 'Kompass Geschichtsstudium'
+    subtitle: 'Version HS 2025'
+    author:
+      - family: Luther
+        given: Johannes
+      - family: Meier
+        given: Marietta
+      - family: Kaiser
+        given: Rafael
+      - family: Tinner
+        given: Tamara Ann
+    issued:
+      year: 2025
+    publisher: 'Historisches Seminar, Universität Zürich'
+    note: 'Offizielle Studienanleitung; aktualisiert am 21. Juli 2025'
+    URL: 'https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf'
+    abstract: 'Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools.'
+  - id: leitfaden_bremen_2025
+    type: book
+    title: 'Leitfaden Geschichtswissenschaft'
+    subtitle: 'Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage'
+    issued:
+      year: 2025
+    publisher: 'Institut für Geschichtswissenschaft, Universität Bremen'
+    note: 'Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI'
+    URL: 'https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf'
+    abstract: 'Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI.'
+  - id: studienleitfaden_hamburg_2021
+    type: book
+    title: 'Studienleitfaden Fachbereich Geschichte'
+    author:
+      - family: Lösse
+        given: Esther
+      - family: Anders
+        given: Klaas
+      - family: Szadziewski
+        given: Max
+    issued:
+      year: 2021
+    publisher: 'Fachbereich Geschichte, Universität Hamburg'
+    note: 'Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021'
+    URL: 'https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf'
+    abstract: 'Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence.'
+  - id: werkszeugkasten_basel_2016
+    type: book
+    title: 'Werkzeugkasten Geschichte'
+    author:
+      - family: Stüdli
+        given: Beat
+      - family: Hitz
+        given: Benjamin
+    issued:
+      year: 2016
+    publisher: 'Departement Geschichte, Universität Basel'
+    note: 'Revidierte Online-Version des Studienleitfadens von 2010'
+    URL: 'https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf'
+    abstract: 'Comprehensive guide to historical research practice with emphasis on source criticism and digital resources.'
 ---
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung trainiert Public-History-Wissenskommunikation als **prozessuale Übersetzungsarbeit**: von einem wissenschaftlichen Artikel (Argument, Belege, Unsicherheiten) hin zu publikumsorientierten Formaten. Generative KI wird dabei **nicht** als Autorität, sondern als *Werkzeug für Entwurf, Variation, Redigieren und Gegenlesen* verwendet – mit konsequentem Quellenbezug, Nachvollziehbarkeit und klaren Grenzen.
+Diese Übung trainiert Public-History-Wissenskommunikation als **prozessuale Übersetzungsarbeit**: von einem wissenschaftlichen Artikel (Argument, Belege, Unsicherheiten) hin zu publikumsorientierten Formaten. Generative KI wird dabei **nicht** als Autorität, sondern als _Werkzeug für Entwurf, Variation, Redigieren und Gegenlesen_ verwendet – mit konsequentem Quellenbezug, Nachvollziehbarkeit und klaren Grenzen.
 
 ## Voraussetzungen
 
@@ -130,7 +130,7 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 - Einen Vermittlungskontext in Zielgruppen, Medium, Zweck und Rahmenbedingungen zerlegen (Kommunikationsbriefing).
 - Aus einem wissenschaftlichen Artikel eine Kernbotschaft (Message Map) und eine Evidenzmatrix ableiten, ohne neue Fakten zu erfinden.
 - Entwürfe in mehreren Public-History-Formaten erstellen (Blog, Audio, Social, Poster) und formatkonform überarbeiten.
-- Antwortn systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (Audit Trail).
+- Antworten systematisch prüfen (Behauptung für Behauptung, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar in einem KI-Protokoll dokumentieren.
 - Ein Interview-Kit (Soundbites, Q&A, No-go-Liste, Transparenzstatement) vorbereiten.
 
 Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem Themenfeld. Z.B.:
@@ -141,7 +141,7 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 
 1. **Kommunikationsbriefing** (1 Seite)
 2. **Message Map + Evidenzmatrix** (Tabellen- oder Stichpunktform)
-3. **Blogpost** (ca. 700–1’000 Wörter) *oder* **Podcast-Skript** (ca. 6–8 Minuten)
+3. **Blogpost** (ca. 700–1’000 Wörter) _oder_ **Podcast-Skript** (ca. 6–8 Minuten)
 4. **Zwei Kurzformate** aus: Social Media, Poster-Textbausteine, Interview-Kit
 5. **KI-Protokoll** (Prompt-/Antwort-Log + Reflexionsnotiz, ca. 300–500 Wörter)
 
@@ -149,9 +149,9 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 
 Begriffe (für diese Übung):
 
-- **Audit Trail (KI-Protokoll):** Dokumentation von Prompts, Antwortn, Entscheidungen, Korrekturen und Quellenstellen, sodass Ihr Prozess nachvollziehbar bleibt.
-- **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
-- **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
+- **KI-Protokoll (Audit Trail):** Dokumentation von Prompts, Antworten, Entscheidungen, Korrekturen und Quellenstellen, sodass Ihr Arbeitsweg nachvollziehbar bleibt.
+- **Quellen-Veto:** Eine KI-Aussage oder narrative Zuspitzung wird verworfen, wenn sie den belegten Aussagen im Artikel widerspricht oder nicht durch das Material gedeckt ist.
+- **Prüfung Behauptung für Behauptung (Claim-by-claim Check):** Aussagen werden in überprüfbare _Behauptungen_ zerlegt, mit Belegstellen verknüpft oder als Spekulation markiert.
 
 Suchmaschinen und KI-Systeme strukturieren Sichtbarkeit auf problematische Weise.[@noble2018oppression] KI-generierte Inhalte für Public-History-Anwendungen bergen besondere Risiken, da sie ein breites Publikum ohne Fachexpertise erreichen.[@bender2021stochastic]
 
@@ -183,7 +183,7 @@ Planen Sie am Ende ein kurzes Transparenz-Element ein (z.B. «So wurde gearbeite
 
 ### Ziel
 
-Vermittlung als **kontextabhängige Entscheidung** operationalisieren: Für *wen*, *wo*, *warum*, *in welchem Medium*?
+Vermittlung als **kontextabhängige Entscheidung** operationalisieren: Für _wen_, _wo_, _warum_, _in welchem Medium_?
 
 ### Aufgabe
 
@@ -193,11 +193,11 @@ Wählen Sie einen konkreten Vermittlungskontext (z.B. Museumsblog, Lokalzeitung,
 - Zweck: informieren / kontextualisieren / Debatte eröffnen / Handlungswissen etc.
 - Medium/Format: Länge, Ton, Visualität/Audio, Interaktion
 - Constraints: Sprache(n), Zugänglichkeit (Accessibility), Terminologie, rechtliche/ethische Grenzen
-- Erfolgskriterien: Was sollen Rezipierende nachher *wissen* / *können* / *anders sehen*?
+- Erfolgskriterien: Was sollen Rezipierende nachher _wissen_ / _können_ / _anders sehen_?
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Du bist Audience-Research-Assistent:in. Erzeuge 2–3 plausible Zielgruppen-Personas für folgenden Kontext (ohne Fakten über reale Personen zu erfinden).
 Für jede Persona: Vorwissen, Motivationen, mögliche Missverständnisse, geeignete Beispiele/Metaphern, No-gos.
 Kontext: ...
@@ -207,7 +207,7 @@ Thema/Artikel in 3 Sätzen: ...
 ### Kritischer Abgleich
 
 - Persona ≠ Realität: Ergänzen/prüfen Sie Annahmen (z.B. mit realen Zielgruppenhinweisen, Museumskonzepten, Medienrichtlinien).
-- Welche Vereinfachungen wären epistemisch riskant? Notieren Sie *rote Linien*.
+- Welche Vereinfachungen wären epistemisch riskant? Notieren Sie _rote Linien_.
 
 ## 2. Message Map und narrative Route
 
@@ -219,7 +219,7 @@ Eine **kommunikative Kernarchitektur** bauen, die formatübergreifend stabil ble
 
 Erstellen Sie:
 
-1. **One-liner** (1 Satz): Was ist die Kernbotschaft – und warum zählt sie *für diese Zielgruppe*?
+1. **One-liner** (1 Satz): Was ist die Kernbotschaft – und warum zählt sie _für diese Zielgruppe_?
 2. **3–4 Stützpunkte** (je 1–2 Sätze) mit Belegbezug
 3. **Evidenzmatrix**: Welche Stützpunkte stützen sich auf welche Daten/Quellenstellen?
 4. **Kontext/Einordnung**: Was muss erklärt werden, damit nichts verzerrt wird?
@@ -227,7 +227,7 @@ Erstellen Sie:
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Strukturierer:in. Arbeite nur mit dem Quellenpaket + Briefing.
 Erzeuge eine Message Map (One-liner + 3–4 Stützpunkte + 'So what' für die Zielgruppe).
 Markiere jeden Punkt mit Claim-IDs und weise auf notwendige Kontextabsätze hin.
@@ -251,7 +251,7 @@ Schreiben Sie einen Blogpost (ca. 700–1’000 Wörter) mit: - Einstieg, der Zi
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Blogredaktor:in. Schreibe einen Blogpost für folgenden Kontext.
 Constraints: Länge 900 Wörter, klare Zwischenüberschriften, keine neuen Fakten.
 Nutze Claim-IDs im Text in eckigen Klammern, z.B. [C3].
@@ -272,19 +272,20 @@ Aus einem plausiblen Entwurf ein robustes Vermittlungsprodukt machen.
 
 ### Aufgabe (Checkliste)
 
-- **Claim-by-claim**: Jede Aussage entweder belegt, als Einordnung markiert oder gestrichen.
+- **Behauptung für Behauptung prüfen**: Jede Aussage entweder belegen, als Einordnung markieren oder streichen.
 - **Verständlichkeit**: unnötige Fachbegriffe reduzieren oder definieren; Beispiele prüfen.
 - **Ethik/Verantwortung**: sensible Gruppen/Personen, Gewalt, Stigmatisierung, Datenpolitik, Bildrechte.
 - **Transparenz**: kurze Notiz zu Methode/Quelle/KI-Unterstützung ergänzen.
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Fact-Checker:in.
-1) Liste alle behaupteten Fakten/Aussagen im Entwurf.
-2) Ordne sie Claim-IDs zu oder markiere 'nicht im Quellenpaket'.
-3) Schlage präzisere Formulierungen vor, die Unsicherheiten korrekt ausdrücken.
-Input: Blog-Entwurf + Quellenpaket.
+
+1. Liste alle behaupteten Fakten/Aussagen im Entwurf.
+2. Ordne sie Claim-IDs zu oder markiere 'nicht im Quellenpaket'.
+3. Schlage präzisere Formulierungen vor, die Unsicherheiten korrekt ausdrücken.
+   Input: Blog-Entwurf + Quellenpaket.
 ```
 
 ### Kritischer Abgleich
@@ -298,13 +299,13 @@ Die folgenden Aufgaben sind bewusst als **Adaptionen** konzipiert: Sie recyclen 
 
 ### 5A Social Media (Thread + Single Post)
 
-**Ziel:** Kernbotschaft in ein *Aufmerksamkeitsmedium* übersetzen, ohne Overclaiming.
+**Ziel:** Kernbotschaft in ein _Aufmerksamkeitsmedium_ übersetzen, ohne Overclaiming.
 
 **Aufgabe** - 1 Single Post (max. 280–500 Zeichen, je nach Plattform) + 1 Thread (5–7 Posts) - 1 «Kontext-Post»: Begriffe/Einordnung - 1 «Unsicherheiten-Post»: Grenzen, offene Fragen - 1 Link-/Quellenhinweis (formatgerecht)
 
 **KI-Workflow**
 
-``` markdown
+```markdown
 Erzeuge 3 Varianten (konservativ / erzählerisch / provokationsarm) für einen Thread.
 Regeln: keine neuen Fakten, keine Clickbait-Übertreibung, baue einen Unsicherheiten-Post ein.
 Input: Message Map + Blog-Textauszug + Kontext.
@@ -318,7 +319,7 @@ Input: Message Map + Blog-Textauszug + Kontext.
 
 **KI-Workflow**
 
-``` markdown
+```markdown
 Schreibe ein Podcast-Skript (7 Minuten) für [Zielgruppe/Kontext].
 Struktur: Hook (15s) – Kontext (60s) – Kernpunkte (3x90s) – Unsicherheiten (45s) – Abschluss (30s).
 Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Rand.
@@ -332,7 +333,7 @@ Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Ra
 
 **KI-Workflow**
 
-``` markdown
+```markdown
 Erzeuge Poster-Textbausteine mit strikter Wortlimite und ohne neue Fakten.
 Achte auf: klare Begriffe, keine impliziten Wertungen, Claim-IDs pro Block.
 Input: Message Map + Evidenzmatrix.
@@ -346,11 +347,11 @@ Souverän, präzise und risikoarm über Forschung sprechen können – inkl. «N
 
 ### Aufgabe
 
-Erstellen Sie ein Interview-Kit (1–2 Seiten): - **3 Soundbites** (je 12–20 Sekunden, sinngemäss) - **5 Kernfragen** + kurze Antworten (je 3–5 Sätze) - **2 kritische Fragen** (z.B. «Ist das nicht…?») + Brückenstrategien - **No-go-Liste**: Aussagen, die Sie *nicht* machen (wegen Evidenz/Komplexität/Ethik) - **Transparenzsatz** zu Methode und Datenlage (1–2 Sätze)
+Erstellen Sie ein Interview-Kit (1–2 Seiten): - **3 Soundbites** (je 12–20 Sekunden, sinngemäss) - **5 Kernfragen** + kurze Antworten (je 3–5 Sätze) - **2 kritische Fragen** (z.B. «Ist das nicht…?») + Brückenstrategien - **No-go-Liste**: Aussagen, die Sie _nicht_ machen (wegen Evidenz/Komplexität/Ethik) - **Transparenzsatz** zu Methode und Datenlage (1–2 Sätze)
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Mediencoach. Generiere ein Interview-Kit für Radio/Zeitung.
 Regeln: keine neuen Fakten, Soundbites müssen Claims korrekt wiedergeben, Unsicherheiten nicht kaschieren.
 Input: Message Map + Quellenpaket + Blog-/Podcast-Entwurf.
