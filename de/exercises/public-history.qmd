@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: '2026-08-14'
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -149,7 +149,6 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 
 Begriffe (für diese Übung):
 
-- **Audit Trail (KI-Protokoll):** Dokumentation von Prompts, Antwortn, Entscheidungen, Korrekturen und Quellenstellen, sodass Ihr Prozess nachvollziehbar bleibt.
 - **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
 - **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
 
@@ -169,6 +168,8 @@ Geben Sie der KI nur Material, das Sie selbst kontrollieren können, und lassen 
 
 Planen Sie am Ende ein kurzes Transparenz-Element ein (z.B. «So wurde gearbeitet» / «KI-Unterstützung»): wofür KI genutzt wurde (Struktur/Sprachvarianten/Gegenlesen), wofür nicht (Fakten/Interpretationsentscheid).
 :::
+
+{{< include ../_ki-protokoll.qmd >}}
 
 ## Struktur der Übung
 
