@@ -21,7 +21,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-14"
 references:
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -69,7 +69,14 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 ## LLM
 
-Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Für diese Übung ist es hilfreich, wenn das LLM Zugriff auf das Internet hat und sich Dateien hochladen lassen.
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Internetzugriff und Datei-Upload gehören heute zur Grundausstattung. Es lohnt sich, vor dem Start diese vier Punkte zu klären:
+
+- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
+- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
+- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
+- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training unterscheiden sich.
+
+Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihres Setups.
 
 :::
 
@@ -129,7 +136,9 @@ Welche Konsequenz wird angedeutet?
 
 ## Hochladen der Quelle
 
-Laden Sie das Dokument als PDF Datei hoch zusammen mit dem Prompt. Falls das nicht möglich ist, kopieren sie den Inhalt des Dokuments an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Stellen Sie darüber hinaus sicher, dass die KI Zugriff auf die Metadaten hat (entweder durch Online-Zugriff oder indem Sie die Metadaten zur Verfügung stellen). Beispiel:
+Laden Sie das Dokument als PDF-Datei zusammen mit dem Prompt hoch. Das ist der Normalfall. Stellen Sie sicher, dass die KI auch Zugriff auf die Metadaten hat. Rufen Sie die Metadaten online ab oder geben Sie sie selbst an.
+
+Nur im Ausnahmefall, wenn der Upload nicht funktioniert, kopieren Sie den Inhalt des Dokuments an den Anfang des Prompts. Grenzen Sie ihn visuell ab, beispielsweise durch """. Beispiel:
 
 ``` markdown
 """

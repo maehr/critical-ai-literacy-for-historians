@@ -49,6 +49,21 @@ Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, di
 
 - Grundverständnis historischer Forschungsmethoden
 
+::: callout-note
+
+## LLM
+
+Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Internetzugriff und Datei-Upload gehören heute zur Grundausstattung. Es lohnt sich, vor dem Start diese vier Punkte zu klären:
+
+- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
+- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
+- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
+- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training unterscheiden sich.
+
+Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihres Setups.
+
+:::
+
 ## Lernziele
 
 Nach Abschluss der Übung können Sie:
@@ -86,7 +101,9 @@ Verwenden Sie – wie in den anderen Übungen – ein **konkretes, kontrollierba
 
 ## Reproduzierbare Strukturierung
 
-Wenn das Tool keinen stabilen Dokumentzugriff hat: kopieren Sie (a) Textauszug und (b) Metadaten in den Prompt und grenzen beides visuell ab, z. B. mit drei Anführungszeichen.
+Übergeben Sie die Quelle als Datei. Das ist der Normalfall.
+
+Nur im Ausnahmefall, wenn das Tool keinen stabilen Dokumentzugriff hat, kopieren Sie (a) Textauszug und (b) Metadaten in den Prompt. Grenzen Sie beides visuell ab, z. B. mit drei Anführungszeichen.
 
 Beispiel-Layout:
 
@@ -106,12 +123,21 @@ AUFGABE
 
 ::: callout-info
 
-## Session-Neustart als Kontrollinstrument
+## Session-Neustart: Massnahme mit Prüfpflicht
 
-Für jede neue Aufgabe empfiehlt sich eine **neue Session**.
+Beginnen Sie jede neue Aufgabe in einer **neuen Session**.
 
-Ein Session-Neustart reduziert implizite Kontextverschleppung:  
-Das Modell greift dann **nicht mehr auf frühere Aufgaben, Beispiele oder Rollenannahmen** zurück, sondern arbeitet ausschliesslich mit dem aktuellen Material und Auftrag.
+Ein Neustart zwingt Sie, das Material erneut zu übergeben. Das erhöht die Prüfbarkeit Ihrer Arbeitsschritte.
+
+Ein Neustart garantiert aber **keinen leeren Kontext**. Viele Systeme führen einen dauerhaften Speicher, einen Projekt- oder Arbeitsbereichskontext oder eine Vorgabe der Organisation. Solche Systeme übernehmen Angaben aus früheren Sitzungen auch in eine neue Session.
+
+**Prüfen Sie deshalb, was Ihr System übernimmt:**
+
+1. Beginnen Sie eine neue Session.
+2. Fragen Sie, was das System über Sie und über Ihre früheren Aufgaben weiss.
+3. Fragen Sie, woher diese Angaben stammen.
+4. Prüfen Sie die Einstellungen zu Speicher, Projekten und Chatverlauf.
+5. Notieren Sie das Ergebnis im KI-Protokoll.
 
 Nutzen Sie einen Neustart insbesondere, wenn:
 
@@ -119,8 +145,8 @@ Nutzen Sie einen Neustart insbesondere, wenn:
 - frühere Rollen oder Beispiele «durchsickern»,
 - unklare Annahmen aus vorherigen Schritten fortgeschrieben werden.
 
-**Merksatz:**  
-Eine neue Session erzwingt erneute Materialbindung und erhöht die Prüfbarkeit.
+**Merksatz:**
+Eine neue Session ist eine Massnahme, keine Garantie. Behaupten Sie Reproduzierbarkeit erst, nachdem Sie den übernommenen Kontext geprüft haben.
 
 :::
 
@@ -244,7 +270,9 @@ Maximal 4 Sätze. Keine Interpretation.
 
 ## Hochladen der Quelle
 
-Laden Sie das Dokument als PDF Datei hoch zusammen mit dem Prompt. Falls das nicht möglich ist, kopieren sie den Inhalt des Dokuments an den Anfang des Prompts und grenzen sie diesen visuell ab, beispielsweise durch """. Stellen Sie darüber hinaus sicher, dass die KI Zugriff auf die Metadaten hat (entweder durch Online-Zugriff oder indem Sie die Metadaten zur Verfügung stellen). Beispiel:
+Laden Sie das Dokument als PDF-Datei zusammen mit dem Prompt hoch. Das ist der Normalfall. Stellen Sie sicher, dass die KI auch Zugriff auf die Metadaten hat. Rufen Sie die Metadaten online ab oder geben Sie sie selbst an.
+
+Nur im Ausnahmefall, wenn der Upload nicht funktioniert, kopieren Sie den Inhalt des Dokuments an den Anfang des Prompts. Grenzen Sie ihn visuell ab, beispielsweise durch """. Beispiel:
 
 ``` markdown
 """
