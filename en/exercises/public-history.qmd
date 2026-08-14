@@ -391,9 +391,6 @@ Input: Message map + source package + blog/podcast draft.
 
 - [AI Pedagogy Project: What is AI?](https://aipedagogy.org/guide/what-is-ai/) – Conceptual introduction for non-technical audiences.
 - [Critical AI Literacy: Curated Resources](https://critical-ai-literacy.github.io/resources/) – Ethics, power, labor, and politics of AI.
-
-### Further Reading
-
 - @drucker2011humanities – Critiques conventions of data visualization; introduces the concept of "capta" — the idea that data are constructed, not objectively given.
 
 ## Bibliography
