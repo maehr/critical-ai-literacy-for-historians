@@ -2,7 +2,7 @@
 lang: de
 title: "Wissenschaftliches Zitieren"
 subtitle: "Übung zur Zitierpraxis in der Geschichtswissenschaft"
-description: "Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt."
+description: "Diese Übung vermittelt die Grundlagen wissenschaftlichen Zitierens in der Geschichtswissenschaft, mit besonderem Fokus auf den kritischen Einsatz generativer KI. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, wie Sie KI-gestützte Textarbeit so gestalten, dass die Evidenzkette intakt bleibt, und wie Sie Ihre KI-Nutzung in Seminararbeit, Qualifikationsarbeit und Publikation korrekt ausweisen."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-14"
 categories: [Methoden]
 image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
 tags:
@@ -19,6 +19,7 @@ tags:
   - Nachvollziehbarkeit
   - Wissenschaftliche Integrität
   - Digitale Quellenkritik
+  - Offenlegung
   - KI-gestützt
 draft: false
 references:
@@ -102,7 +103,9 @@ references:
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung vermittelt die **Grundlagen wissenschaftlichen Zitierens** in der Geschichtswissenschaft, mit besonderem Fokus auf den **kritischen Einsatz generativer KI**. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen, und wie Sie KI-gestützte Textarbeit so gestalten, dass die **Evidenzkette** intakt bleibt.
+Diese Übung vermittelt die **Grundlagen wissenschaftlichen Zitierens** in der Geschichtswissenschaft, mit besonderem Fokus auf den **kritischen Einsatz generativer KI**. Sie lernen, wie Zitate als methodisches Werkzeug funktionieren, um historische Argumente nachvollziehbar und überprüfbar zu machen. Sie lernen ausserdem, wie Sie KI-gestützte Textarbeit so gestalten, dass die **Evidenzkette** intakt bleibt.
+
+Die Übung hat zwei Teile. Der erste Teil behandelt das **Zitieren** von Quellen und Literatur. Der zweite Teil behandelt die **Offenlegung**: die Erklärung, mit der Sie Ihre eigene KI-Nutzung ausweisen. Diese Übung schliesst beide Lernpfade ab.
 
 ## Voraussetzungen
 
@@ -130,11 +133,13 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 Nach Abschluss der Übung sind Sie in der Lage:
 
 - die epistemischen und ethischen Funktionen wissenschaftlicher Zitate in der historischen Forschung zu erklären
-- **Common Knowledge**, **Primärquellen** und **Sekundärliteratur** sauber zu unterscheiden
+- **Common Knowledge** (breit bekanntes, unstrittiges Hintergrundwissen ohne Nachweispflicht), **Primärquellen** und **Sekundärliteratur** sauber zu unterscheiden
 - konsistent zu entscheiden, **wann** ein Zitat nötig ist (und wann nicht)
 - Fussnoten-Zitationspraxis nach etablierten Standards (z.B. Chicago Manual of Style) anzuwenden
 - Zitate gezielt zu nutzen, um historische Argumente zu **stützen**, **einzubetten** und **kritisch zu qualifizieren**
 - generative KI als **heuristisches Werkzeug** einzusetzen, ohne die **Evidenzkette** zu beschädigen
+- Ihre eigene KI-Nutzung in einer **Offenlegung** auszuweisen und diese aus Ihrem **KI-Protokoll** abzuleiten
+- die verbindlichen Regeln Ihrer Institution und Ihrer Zielzeitschrift selbst zu finden
 
 ## Was sind wissenschaftliche Zitate?
 
@@ -196,17 +201,190 @@ Ohne diese Verknüpfung verlieren historische Texte ihren wissenschaftlichen Cha
 
 ## Wie zitiere ich?
 
-Setzen Sie ein Literaturverwaltungsprogramm (z.B. Zotero) ein und folgen Sie einem etablierten Standard wie dem [Chicago Manual of Style](https://www.chicagomanualofstyle.org/) oder den Richtlinien von [infoclio.ch](https://www.infoclio.ch/de/citation-style). Je nach Bildungsinstitution oder Publikationskontext können abweichende Konventionen gelten. Informieren Sie sich vorgängig und achten Sie auf Konsistenz.
+Setzen Sie ein Literaturverwaltungsprogramm (z.B. Zotero) ein und folgen Sie einem etablierten Standard. In der Geschichtswissenschaft ist das meist der **Chicago Manual of Style** in der 18. Auflage von 2024 [@chicago2024manual]. Das vollständige Werk ist kostenpflichtig. Die kurze [Chicago-Style Citation Quick Guide](https://www.chicagomanualofstyle.org/tools_citationguide.html) ist frei zugänglich (ENGLISH only). Eine deutschsprachige Alternative sind die Richtlinien von [infoclio.ch](https://www.infoclio.ch/de/citation-style).
+
+Je nach Bildungsinstitution oder Publikationskontext können abweichende Konventionen gelten. Informieren Sie sich vorgängig und achten Sie auf Konsistenz.
+
+## KI-Nutzung ausweisen
+
+Ein Zitat und eine Offenlegung sind zwei verschiedene Dinge. Ein **Zitat** weist eine einzelne Textstelle nach. Eine **Offenlegung** (auch **Deklaration** genannt) beschreibt Ihren Arbeitsprozess. Sie sagt, ob und wie Sie generative KI eingesetzt haben. Eine Arbeit braucht oft beides.
+
+### Vom KI-Protokoll zur Offenlegung
+
+In den anderen Übungen führen Sie ein **KI-Protokoll** (Audit Trail). Das Protokoll ist Ihr privater Arbeitsnachweis. Es enthält Prompts, Antworten, Prüfschritte und Entscheidungen. Die Offenlegung ist die öffentliche Aussage. Sie fassen das Protokoll auf wenige Sätze zusammen.
+
+| Merkmal   | KI-Protokoll                                        | Offenlegung                                       |
+| --------- | --------------------------------------------------- | ------------------------------------------------- |
+| Adressat  | Sie selbst und Ihre Betreuung auf Anfrage           | alle Leser:innen                                   |
+| Umfang    | vollständig, alle Einträge                          | kurz, meist 5 bis 15 Sätze                        |
+| Ort       | eigene Datei oder Anhang                            | fester Ort in der Arbeit                           |
+| Zweck     | Rekonstruktion des Arbeitsprozesses                 | Transparenz und Verantwortung                      |
+| Zeitpunkt | laufend während der Arbeit                          | am Schluss, aus dem Protokoll abgeleitet           |
+
+**Merksatz**: Ohne Protokoll können Sie keine wahrheitsgemässe Offenlegung schreiben.
+
+### Wann muss ich offenlegen?
+
+::: callout-warning
+
+## Zuerst die Regel Ihrer Institution prüfen
+
+Prüfen Sie die Regel Ihrer Institution, bevor Sie sich auf eine Faustregel verlassen. Viele Hochschulen verlangen eine Deklaration für **jeden** KI-Einsatz, auch für die Rechtschreibprüfung.
+
+:::
+
+Legen Sie den KI-Einsatz offen, sobald er **substanziell** ist. Substanziell heisst: Die KI hat Ihr Ergebnis inhaltlich mitgeprägt. Die Living Guidelines der Europäischen Kommission zählen dazu die Literaturübersicht, die Interpretation von Analysen, das Formulieren von Forschungszielen und das Entwickeln von Hypothesen. Eine reine Textkorrektur gilt dort nicht als substanzieller Einsatz [@eucommission2026genai].
+
+### Was gehört in eine Offenlegung?
+
+Die Deutsche Forschungsgemeinschaft nennt vier Angaben. Forschende sollen offenlegen, **ob** und **welche** generativen Modelle sie **zu welchem Zweck** und **in welchem Umfang** eingesetzt haben [@dfg2023generative]. Ergänzen Sie zwei weitere Angaben, damit die Evidenzkette sichtbar bleibt:
+
+1. **Ob**: Haben Sie generative KI eingesetzt? Antworten Sie mit Ja oder Nein.
+2. **Welche**: Nennen Sie das Werkzeug, den Anbieter und die Version. Nennen Sie auch den Zeitraum.
+3. **Zweck**: Nennen Sie jede Aufgabe einzeln, zum Beispiel Gliederung, Literatursuche oder Übersetzung.
+4. **Umfang**: Nennen Sie die betroffenen Kapitel oder Abschnitte. Nennen Sie Zahlen, wo das möglich ist.
+5. **Prüfung**: Beschreiben Sie, wie Sie die Ergebnisse verifiziert haben.
+6. **Verantwortung**: Erklären Sie, dass Sie für den Inhalt einstehen.
+
+Nennen Sie auch, wofür Sie **keine** KI eingesetzt haben. Diese Angabe schützt Sie vor Missverständnissen.
+
+### Wo steht die Offenlegung?
+
+Der Ort hängt vom Texttyp ab. Die folgende Tabelle nennt die üblichen Orte. Die Vorgabe Ihrer Institution oder Ihrer Zeitschrift geht immer vor.
+
+| Texttyp                                     | Ort der Offenlegung                                                                                             |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Seminararbeit, Proseminararbeit             | unterschriebene Erklärung am Anfang oder am Schluss, oft als Formular der Institution; Details in Fussnote oder Anhang |
+| Qualifikationsarbeit (Bachelor, Master, Dissertation) | Formular der Fakultät nach dem Prüfungsreglement, plus ein kurzer Abschnitt im Methodenteil                |
+| Aufsatz, Buchbeitrag, Monographie           | Methodenteil oder Danksagung, nach den Autorenhinweisen des Verlags                                              |
+| Vortrag, Poster, Blogbeitrag                | kurzer Hinweis am Schluss oder auf der letzten Folie                                                              |
+
+Das Historische Institut der Universität Bern verlangt zum Beispiel eine unterschriebene KI-Deklaration zu jeder Seminararbeit. Eine unterlassene Deklaration gilt dort wie ein Plagiat als Täuschung [@unibe2026kirichtlinien]. Zeitschriften verlangen die Angabe meist bei der Einreichung im Methodenteil [@icmje2026recommendations].
+
+### KI ist keine Autorin
+
+Zu diesem Punkt besteht ein breiter Konsens. Nur natürliche Personen können als Autorinnen und Autoren in Erscheinung treten [@dfg2023generative]. Die Living Guidelines der Europäischen Kommission formulieren es so: KI-Systeme sind weder Autoren noch Ko-Autoren, weil Autorschaft Handlungsfähigkeit und Verantwortung voraussetzt [@eucommission2026genai]. Die ICMJE-Empfehlungen begründen dasselbe Verbot damit, dass ein Chatbot keine Verantwortung für Genauigkeit und Integrität übernehmen kann [@icmje2026recommendations].
+
+Daraus folgt eine harte Konsequenz. Sie haften für jeden Satz und für jeden Nachweis in Ihrer Arbeit. Der Hinweis «das hat die KI so geschrieben» entlastet Sie nicht.
+
+### Die verbindlichen Regeln finden
+
+::: callout-important
+
+## Diese Übung ist keine Regel
+
+Diese Übung erklärt ein Verfahren. Verbindlich sind allein die Regeln Ihrer Institution und Ihrer Zeitschrift. Suchen Sie diese Regeln, bevor Sie eine Arbeit abgeben.
+
+:::
+
+1. Öffnen Sie die Website Ihres Instituts. Suchen Sie nach «Plagiat», «Selbständigkeitserklärung», «Eigenständigkeitserklärung» oder «KI».
+2. Laden Sie die Vorlage für die Selbständigkeitserklärung herunter. Prüfen Sie, ob sie eine KI-Deklaration enthält.
+3. Lesen Sie den Studienleitfaden Ihres Faches. Viele Leitfäden enthalten seit 2023 einen Abschnitt zu generativer KI [@kompass_geschichtsstudium_2025; @leitfaden_bremen_2025].
+4. Prüfen Sie das Prüfungsreglement, wenn Sie eine Qualifikationsarbeit schreiben.
+5. Öffnen Sie für eine Publikation die Autorenhinweise der Zeitschrift. Suchen Sie dort nach «KI», «AI» oder «generative».
+6. Notieren Sie die Fundstelle und das Datum in Ihrem KI-Protokoll.
+7. Fragen Sie die betreuende Person, wenn eine Regel unklar bleibt. Fragen Sie vor der Abgabe.
+
+### KI-Output zitieren
+
+Die Offenlegung beschreibt den Prozess. Ein **Zitat** brauchen Sie zusätzlich, sobald Sie KI-generierten Text wörtlich oder sinngemäss in Ihre Arbeit übernehmen. Der Chicago Manual of Style regelt diesen Fall seit der 18. Auflage in Abschnitt 14.112 [@chicago2024manual].
+
+Drei Regeln gelten dort:
+
+- Weisen Sie den KI-Inhalt an der Stelle nach, im Text oder in einer Fussnote.
+- Nehmen Sie den KI-Inhalt nicht ins Literaturverzeichnis auf. Eine Ausnahme gilt, wenn ein öffentlicher Link auf die Ausgabe existiert.
+- Nennen Sie den Anbieter, den Prompt, das Werkzeug mit Version und das Datum.
+
+Muster für eine Fussnote:
+
+``` markdown
+1. [Anbieter], Antwort auf «[Ihr Prompt, gekürzt]», [Werkzeug und Version],
+   [Datum der Erzeugung], [öffentlicher Link, falls vorhanden].
+```
+
+Ein KI-Text ist keine Quelle und keine Sekundärliteratur. Er belegt nichts. Behandeln Sie jede Aussage der KI als **Recherche-Hypothese**, die Sie extern verifizieren müssen.
+
+### Musterbeispiel: Offenlegung in einer Seminararbeit
+
+Das folgende Beispiel steht am Schluss der Arbeit, vor dem Literaturverzeichnis. Es ergänzt das Formular der Institution, es ersetzt es nicht. Ersetzen Sie alle Angaben in eckigen Klammern durch Ihre eigenen.
+
+``` markdown
+## Offenlegung des KI-Einsatzes
+
+Für diese Arbeit habe ich generative KI eingesetzt. Ich habe dafür
+[Werkzeug, Version, Anbieter] zwischen dem 3. und dem 14. März 2026 genutzt.
+
+Zweck und Umfang:
+
+- Gliederung: Ich habe drei Gliederungsvarianten erzeugen lassen. Variante 2
+  habe ich stark überarbeitet für die Kapitel 2 bis 4 übernommen.
+- Literatursuche: Ich habe nach Sekundärliteratur zur Schweizer Europapolitik
+  gefragt. Von 12 vorgeschlagenen Titeln existierten 5 nicht. Die übrigen 7
+  Titel habe ich im Bibliothekskatalog geprüft. Ich zitiere nur geprüfte Titel.
+- Sprache: Ich habe die Kapitel 1 und 5 auf Grammatik und Rechtschreibung
+  prüfen lassen.
+
+Keine KI eingesetzt habe ich für die Interpretation der Quellen und für die
+Übersetzung der französischen Dokumente.
+
+Prüfung: Ich habe jede inhaltliche Aussage der KI an der Quelle oder an der
+Sekundärliteratur geprüft. Alle wörtlichen Zitate habe ich mit dem Original
+abgeglichen (Wortlaut und Seitenzahl).
+
+Verantwortung: Der Inhalt dieser Arbeit ist meine eigene Leistung. Ich
+verantworte alle Aussagen und alle Nachweise.
+
+Das vollständige KI-Protokoll umfasst 14 Einträge. Es liegt vor und kann auf
+Anfrage eingesehen werden.
+
+[Ort], [Datum]
+[Name]
+```
+
+Für einen Aufsatz genügt ein kurzer Absatz im Methodenteil:
+
+``` markdown
+Für die Vorarbeiten zu diesem Aufsatz habe ich ein generatives Sprachmodell
+eingesetzt ([Werkzeug, Version, Anbieter], Zugriff im März 2026): zur
+Strukturierung der Argumentation, zur Zusammenfassung von 40 Zeitungsartikeln
+und zur sprachlichen Überarbeitung. Alle Zusammenfassungen habe ich gegen die
+Originalartikel geprüft. Das Modell hat keine Quellen ausgewertet und keine
+Interpretation beigesteuert. Die Autorschaft und die Verantwortung für diesen
+Text liegen allein bei mir. Prompts und Antworten sind unter [Link] hinterlegt.
+```
+
+::: callout-caution
+
+## Diese Formulierung genügt nicht
+
+Vermeiden Sie den Satz «Diese Arbeit wurde mit Unterstützung von KI erstellt.» Er nennt weder das Werkzeug noch den Zweck noch den Umfang noch die Prüfung. Eine solche Angabe ist nicht überprüfbar und erfüllt die Anforderungen nicht.
+
+:::
 
 ## Struktur der Übung
 
 - Übung 1: Automatisiertes Zitieren testen und vergleichen.
 - Übung 2: KI-Zusammenfassungen auf korrekte Zitation und Belegtreue prüfen.
+- Übung 3: Eine eigene Offenlegung aus dem KI-Protokoll schreiben.
+
+::: callout-note
+
+## Testartikel: frei zugänglich
+
+Die Übungen 1 und 2 arbeiten mit einem Open-Access-Artikel. Sie brauchen dafür keinen institutionellen Zugang:
+
+Andreas Fickers, «Update für die Hermeneutik. Geschichtswissenschaft auf dem Weg zur digitalen Forensik?», Zeithistorische Forschungen 17 (2020), Heft 1, S. 157–168, <https://doi.org/10.14765/zzf.dok-1765> [@fickers2020hermeneutik].
+
+Der Volltext und ein PDF stehen frei unter <https://zeithistorische-forschungen.de/1-2020/5823>. Laden Sie das PDF vor Beginn herunter. Sie brauchen es, um die KI-Antworten gegen das Original zu prüfen.
+
+**Variante mit institutionellem Zugang**: Wiederholen Sie beide Übungen mit einem Artikel hinter einer Bezahlschranke, zum Beispiel <https://doi.org/10.1093/pastj/gtae018>. Vergleichen Sie, wie sich die Antworten der KI unterscheiden.
+
+:::
 
 ## Übung 1: Automatisiertes Zitieren
 
 ``` markdown
-Zitiere den Artikel <https://doi.org/10.1093/pastj/gtae018> nach Chicago Manual of Style.
+Zitiere den Artikel <https://doi.org/10.14765/zzf.dok-1765> nach Chicago Manual of Style (18. Auflage).
 Erstelle zusätzlich einen Eintrag in einem Format, das ich direkt in Zotero importieren kann.
 ```
 
@@ -232,17 +410,72 @@ Vergleichen Sie die Antwort mit Ihrer manuellen Zitation, den offiziellen Zitier
 ## Übung 2: KI-gestützte Zusammenfassung mit Originalzitaten
 
 ``` markdown
-Fasse den Artikel <https://doi.org/10.1093/pastj/gtae018> zusammen. 
-Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manual of Style.
+Fasse den Artikel <https://doi.org/10.14765/zzf.dok-1765> zusammen.
+Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manual of Style (18. Auflage).
 ```
 
-Überprüfen Sie die Antwort gegen den Originalartikel:
+Überprüfen Sie die Antwort gegen den Originalartikel. Das PDF steht frei zur Verfügung, deshalb können Sie jedes Zitat direkt nachschlagen.
 
 - Stimmen die Zitate mit dem Originaltext überein (Wortlaut, Seitenzahl)?
 - Wurde der Sinnzusammenhang der Zitate korrekt wiedergegeben?
 
+## Übung 3: Die eigene KI-Nutzung ausweisen
+
+### Ziel
+
+Sie schreiben eine vollständige Offenlegung für eine eigene Arbeit. Sie leiten diese Offenlegung aus Ihrem KI-Protokoll ab.
+
+### Aufgabe (manuell)
+
+1. Öffnen Sie Ihr KI-Protokoll aus den vorherigen Übungen.
+2. Suchen Sie die verbindliche Regel Ihrer Institution nach dem Verfahren im Abschnitt [Die verbindlichen Regeln finden](#die-verbindlichen-regeln-finden).
+3. Ordnen Sie jeden Protokolleintrag einem Zweck zu, zum Beispiel Recherche, Gliederung oder Sprache.
+4. Schreiben Sie die Offenlegung nach dem Musterbeispiel. Verwenden Sie alle sechs Angaben.
+5. Nennen Sie mindestens eine Aufgabe, für die Sie keine KI eingesetzt haben.
+
+### Aufgabe mittels KI
+
+``` markdown
+Hier ist mein KI-Protokoll:
+"""
+[PROTOKOLL EINFÜGEN]
+"""
+
+Hier sind die Vorgaben meiner Institution:
+"""
+[VORGABEN EINFÜGEN]
+"""
+
+Formuliere daraus einen Entwurf für eine Offenlegung des KI-Einsatzes.
+Nenne ob, welche Werkzeuge, zu welchem Zweck, in welchem Umfang, wie geprüft
+und wer verantwortlich ist. Erfinde nichts. Markiere jede Angabe, die im
+Protokoll fehlt, mit [FEHLT].
+```
+
+### Arbeitsauftrag (Reflexion)
+
+Vergleichen Sie den Entwurf der KI mit Ihrer eigenen Fassung.
+
+- Welche Angaben hat die KI erfunden oder beschönigt?
+- Welche Lücken im Protokoll hat die KI sichtbar gemacht?
+- Erfüllt der Entwurf die Vorgabe Ihrer Institution?
+
+Korrigieren Sie jede falsche Angabe von Hand. Sie verantworten die Offenlegung, nicht die KI.
+
+## Lernergebnis
+
+Sie nehmen aus dieser Übung drei Ergebnisse mit:
+
+1. einen Vergleich von KI-Zitaten mit der geprüften Zitation aus Übung 1 und Übung 2
+2. eine fertige **Offenlegung** für eine eigene Arbeit aus Übung 3
+3. die Fundstelle der verbindlichen Regel Ihrer Institution, notiert im KI-Protokoll
+
 ## Weiterführende Ressourcen
 
+- [DFG: Stellungnahme zum Einfluss generativer Modelle](https://www.dfg.de/resource/blob/289674/ff57cf46c5ca109cb18533b21fba49bd/230921-stellungnahme-praesidium-ki-ai-data.pdf) – Kurzer Grundlagentext zu Offenlegung und Autorschaft [@dfg2023generative].
+- [Europäische Kommission: Living Guidelines on the Responsible Use of Generative AI in Research](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf) – Empfehlungen für Forschende, dritte Fassung von Mai 2026 (ENGLISH only).
+- [ICMJE Recommendations](https://www.icmje.org/recommendations/) – Vorgaben vieler Zeitschriften zur Offenlegung bei der Einreichung (ENGLISH only).
+- [Historisches Institut Bern: Plagiate und KI-Gebrauch](https://www.hist.unibe.ch/studium/plagiate__ki_gebrauch/index_ger.html) – Beispiel für eine institutionelle Regel mit Vorlage zur KI-Deklaration.
 - [The Markup: Wie KI-Detektoren internationale Studierende fälschlicherweise des Betrugs beschuldigen](https://themarkup.org/machine-learning/2023/08/14/how-ai-detection-tools-falsely-accuse-international-students-of-cheating) – Empirische Belege gegen KI-Detektoren; relevant für Bewertungs- und Policy-Diskussionen.
 - [The Turing Way](https://the-turing-way.netlify.app/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
 
