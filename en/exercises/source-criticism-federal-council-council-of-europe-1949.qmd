@@ -507,6 +507,8 @@ At the end, you will have:
 
 - [Ranke.2: Wikipedia as Historical Source](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, revision histories, and digital source criticism.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique of training data and its parallels to source criticism.
+- @stark2023conjectural – Reads machine learning as a conjectural science that infers from traces; discusses the epistemological risks of automated pattern recognition.
+- @lang2026beyond – Ethical data work in the (digital) humanities; relevant to data provenance and dataset documentation.
 
 ## Bibliography
 

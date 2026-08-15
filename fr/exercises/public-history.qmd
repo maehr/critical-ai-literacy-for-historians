@@ -331,6 +331,7 @@ Input: Carte des messages + package de sources + ébauche blog/podcast.
 
 - [AI Pedagogy Project: Qu'est-ce que l'IA ?](https://aipedagogy.org/guide/what-is-ai/) – Introduction conceptuelle pour les publics non techniques.
 - [Critical AI Literacy: Ressources organisées](https://critical-ai-literacy.github.io/resources/) – Éthique, pouvoir, travail et politique de l'IA.
+- @drucker2011humanities – Critique des conventions de la visualisation de données ; introduit le concept de « capta » — l'idée que les données sont construites et non objectivement données.
 
 ## Bibliographie
 

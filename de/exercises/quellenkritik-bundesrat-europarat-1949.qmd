@@ -549,6 +549,8 @@ Am Ende verfügen Sie über:
 
 - [Ranke.2: Wikipedia als historische Quelle](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenienz, Revisionsgeschichten und digitale Quellenkritik.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Kritik an Trainingsdaten und ihre Parallelen zur Quellenkritik.
+- @stark2023conjectural – Liest maschinelles Lernen als konjekturale Wissenschaft, die aus Spuren schliesst; diskutiert die epistemologischen Risiken automatisierter Mustererkennung.
+- @lang2026beyond – Ethische Datenarbeit in den (digitalen) Geisteswissenschaften; relevant für Datenprovenienz und Datensatzdokumentation.
 
 ## Bibliographie
 

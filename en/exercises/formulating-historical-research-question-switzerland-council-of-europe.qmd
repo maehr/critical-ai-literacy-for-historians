@@ -319,6 +319,7 @@ At the end of the exercise, you will have:
 
 - [Ranke.2: Wikipedia as Historical Source](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, revision histories, and digital source criticism.
 - [AI Pedagogy Project: What is AI?](https://aipedagogy.org/guide/what-is-ai/) – Conceptual introduction for non-technical audiences.
+- @meadows2023practice – Introduces a journal forum on what AI changes for the methods and the epistemology of history; useful for judging which research decisions stay with the researcher.
 
 ## Bibliography
 

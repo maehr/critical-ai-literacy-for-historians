@@ -507,6 +507,8 @@ Une bonne critique des sources n'est pas celle qui « explique tout », mais cel
 
 - [Ranke.2: Wikipédia comme source historique](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, historiques de révision et critique des sources numériques.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique des données d'entraînement et ses parallèles avec la critique des sources.
+- @stark2023conjectural – Lit l'apprentissage automatique comme une science conjecturale qui infère à partir de traces ; discute des risques épistémologiques de la reconnaissance automatisée de motifs.
+- @lang2026beyond – Travail éthique avec les données dans les humanités (numériques) ; pertinent pour la provenance des données et la documentation des jeux de données.
 
 ## Bibliographie
 

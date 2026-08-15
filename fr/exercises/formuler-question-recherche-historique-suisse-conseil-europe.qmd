@@ -319,6 +319,7 @@ Notez brièvement:
 
 - [Ranke.2: Wikipédia comme source historique](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, historiques de révision et critique des sources numériques.
 - [AI Pedagogy Project: Qu'est-ce que l'IA ?](https://aipedagogy.org/guide/what-is-ai/) – Introduction conceptuelle pour les publics non techniques.
+- @meadows2023practice – Introduit un forum de revue sur ce que l'IA change pour les méthodes et l'épistémologie de l'histoire ; utile pour juger quelles décisions de recherche restent celles du chercheur ou de la chercheuse.
 
 ## Bibliographie
 

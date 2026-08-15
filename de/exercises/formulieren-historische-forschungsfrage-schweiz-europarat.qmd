@@ -340,6 +340,7 @@ Am Ende der Übung verfügen Sie über:
 
 - [Ranke.2: Wikipedia als historische Quelle](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenienz, Revisionsgeschichten und digitale Quellenkritik.
 - [AI Pedagogy Project: Was ist KI?](https://aipedagogy.org/guide/what-is-ai/) – Konzeptuelle Einführung für nicht-technische Zielgruppen.
+- @meadows2023practice – Einführung in ein Zeitschriftenforum dazu, was KI für Methoden und Epistemologie der Geschichtswissenschaft verändert; hilfreich für die Frage, welche Forschungsentscheide bei den Forschenden bleiben.
 
 ## Bibliographie
 
