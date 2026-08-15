@@ -104,7 +104,7 @@ Nach Abschluss der Übung können Sie:
 5. Systematische Recherche: Sekundärliteratur und Referenzwerke\
 6. Unsystematische Suche: Snowballing\
 7. Archivrecherche: Findmittel, Bestände, Zugang\
-8. Iteration, Reproduzierbarkeit und KI-Reflexion
+8. Iteration, Reproduzierbarkeit und KI-Protokoll
 
 Die quellenkritische Bewertung der gefundenen Dokumente ist nicht Teil dieser Übung. Sie üben diesen Schritt in der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd).
 
@@ -289,7 +289,7 @@ Wählen Sie:
 - 1 Überblicksdarstellung,
 - 1 vertiefende Studie (akteurs- oder institutionsnah).
 
-### Snowball-Protokoll
+### Rechercheprotokoll, Abschnitt Schneeballverfahren
 
 - zentrale Referenzen (10–20),
 - zitierte Primärquellen (Archive, Signaturen, Dokumenttypen),
@@ -359,9 +359,9 @@ Schlage drei Suchpfade vor:
 Je Pfad: 8–12 Suchbegriffe (DE/FR/EN) inkl. Namensvarianten.
 ```
 
-## 8. Iteration, Reproduzierbarkeit und KI-Reflexion
+## 8. Iteration, Reproduzierbarkeit und KI-Protokoll
 
-### Rechercheprotokoll
+### Rechercheprotokoll, Abschnitt Suche
 
 Mindestens:
 
