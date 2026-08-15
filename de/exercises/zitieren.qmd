@@ -240,7 +240,7 @@ Legen Sie den KI-Einsatz offen, sobald er **substanziell** ist. Substanziell hei
 Die Deutsche Forschungsgemeinschaft nennt vier Angaben. Forschende sollen offenlegen, **ob** und **welche** generativen Modelle sie **zu welchem Zweck** und **in welchem Umfang** eingesetzt haben [@dfg2023generative]. Ergänzen Sie zwei weitere Angaben, damit die Evidenzkette sichtbar bleibt:
 
 1. **Ob**: Haben Sie generative KI eingesetzt? Antworten Sie mit Ja oder Nein.
-2. **Welche**: Nennen Sie das Werkzeug, den Anbieter und die Version. Nennen Sie auch den Zeitraum.
+2. **Welche**: Nennen Sie das Werkzeug, die Version und den Anbieter. Nennen Sie auch den Zeitraum.
 3. **Zweck**: Nennen Sie jede Aufgabe einzeln, zum Beispiel Gliederung, Literatursuche oder Übersetzung.
 4. **Umfang**: Nennen Sie die betroffenen Kapitel oder Abschnitte. Nennen Sie Zahlen, wo das möglich ist.
 5. **Prüfung**: Beschreiben Sie, wie Sie die Ergebnisse verifiziert haben.
@@ -271,7 +271,7 @@ Daraus folgt eine harte Konsequenz. Sie haften für jeden Satz und für jeden Na
 
 ::: callout-important
 
-## Diese Übung ist keine Regel
+## Verbindlich sind die Vorgaben Ihrer Institution
 
 Diese Übung erklärt ein Verfahren. Verbindlich sind allein die Regeln Ihrer Institution und Ihrer Zeitschrift. Suchen Sie diese Regeln, bevor Sie eine Arbeit abgeben.
 
