@@ -1,102 +1,127 @@
 ---
 name: Setup New Exercise
-description: Create a new exercise in one primary language and generate stubs for the others.
+description: Create a new exercise in German and generate stubs for English and French.
 ---
 
 # Setup New Exercise Skill
 
-Use this skill when the user asks to "create a new exercise" or "add a module".
+Use this skill when the user asks to create a new exercise or to add a module.
+
+`AGENTS.md` is the contract. If this skill contradicts `AGENTS.md`, follow `AGENTS.md`.
 
 ## 1. Preparation
 
-- **Determine Topic**: Choose a unique slug (e.g., `exercise-bias-in-ocr`).
-- **Select Primary Language**: Ask the user which language they want to draft in (`en`, `de`, or `fr`).
-- **Select Metadata**:
-  - **Category**: Pick ONE.
-    - EN: `AI Literacy`, `Source Criticism`, `Ethics`, `Methods`
-    - DE: `KI & Digitale Methoden`, `Quellen`, `Ethik`, `Methoden`
-    - FR: `Littératie IA`, `Critique des sources`, `Éthique`, `Méthodes`
-  - **Tags**: Pick 2-4.
-- **Resource Localization**: Favor resources available in all three languages. If using language-specific resources, prepare to flag them or provide alternatives for the other language versions.
+- Choose the topic and a unique slug, for example `bias-in-ocr`.
+- Write the full exercise in German. German leads. English and French follow.
+- Choose exactly one category. The four categories are the complete list.
+
+| German                 | English              | French                   |
+| ---------------------- | -------------------- | ------------------------ |
+| KI & Digitale Methoden | AI & Digital Methods | IA & Méthodes numériques |
+| Quellen                | Sources              | Sources                  |
+| Methoden               | Methods              | Méthodes                 |
+| Public History         | Public History       | Public History           |
+
+- Do not invent a category. Ethics is a tag, and not a category.
+- Choose three to five tags in the language of the file.
+- Choose a `difficulty` value: `Beginner`, `Intermediate`, or `Advanced`.
+- Choose an honest `time_estimate`, for example `'60 min'` or `'2 d'`.
+- Prefer resources that exist in all three languages. Flag a resource that exists in one language only.
 
 ## 2. File Creation
 
-Create three files: **one primary draft** and **two stubs**.
+Create three files: one full German file and two stubs.
 
-### A. Primary Draft (Full Template)
+### A. German Exercise (Full Template)
 
-File: `[lang]/exercises/[slug].qmd`
+File: `de/exercises/[slug].qmd`
+
+The block below uses single quotes, because Prettier formats this skill file. Write double quotes in the `.qmd` file, as the existing exercises do. See `AGENTS.md` section 8.
 
 ```yaml
 ---
-lang: [lang]
-title: "Title"
-description: "Description"
+lang: de
+title: 'Titel'
+subtitle: 'Kurze zweite Zeile'
+description: 'Kurzbeschreibung'
 author:
-  - name: "Your Name"
-    affiliation: "Institution"
-date: "today"
-date-modified: "today"
-categories: [Category]
-tags: [Tag1, Tag2]
-difficulty: [Difficulty]
-time_estimate: "45 minutes"
+  - name: 'Name'
+    orcid: 0000-0000-0000-0000
+    email: name@example.org
+    affiliations:
+      - 'Institution'
+date: '2026-01-31'
+date-modified: '2026-01-31'
+categories: [Quellen]
+image: ../../assets/images/example.png
+tags:
+  - Tag1
+  - Tag2
+  - Tag3
+difficulty: Beginner
+time_estimate: '60 min'
 draft: true
 ---
+```
 
-# Title
+Use the section structure from `AGENTS.md` section 11:
 
-## Learning Objectives
+```markdown
+## Überblick und didaktisches Ziel
 
-*   Objective 1
-*   Objective 2
+## Voraussetzungen
 
-## Introduction
+## Lernziele
 
-[Content]
+## 1. [Erster Schritt]
 
-## Exercise
+### Ziel
 
-### Step 1
+### Aufgabe
 
-[Instructions]
+### Aufgabe ... mittels KI
 
-### Step 2
+### Arbeitsauftrag (Reflexion)
 
-[Instructions]
+## Lernergebnis
 
-## Reflection
-
-*   Question 1
-
-## References
+## Bibliographie
 
 ::: {#refs}
 :::
 ```
 
-### B. Language Stubs (Placeholders)
+### B. Language Stubs
 
-For the other two languages, create a file with minimal content to establish file parity.
+For English and French, create a file with minimal content to establish file parity.
 
-File: `[other_lang]/exercises/[slug].qmd`
+File: `[en|fr]/exercises/[slug].qmd`
 
 ```yaml
 ---
-lang: [other_lang]
-title: "TRANSLATION NEEDED: [Original Title]"
-description: "Translation needed"
+lang: en
+title: 'TRANSLATION NEEDED: [Original Title]'
+description: 'Translation needed'
 draft: true
 ---
+::: callout-warning
+## Translation Needed
 
-:::{.callout-warning}
-# Translation Needed
-
-This exercise is currently only available in [Primary Language].
+This exercise exists in German only.
 :::
 ```
 
-## 3. Next Steps
+## 3. Content Rules
 
-- Inform the user that the primary draft and stubs are created.
-- Suggest running the **Translation** skill to generate the missing versions.
+- Do not name an AI product, an AI vendor, or a model. Describe the capability that the tool needs.
+- Name the audit trail KI-Protokoll. Do not use another name.
+- Add every new term to `de/glossary.qmd`, then link to the anchor of the entry.
+- Use only the five Quarto callout types: `note`, `tip`, `important`, `caution`, and `warning`.
+- Caution: `callout-info` is not a valid type. Quarto renders such a block without a title bar.
+- State the workload of the exercise before the first step.
+
+## 4. Next Steps
+
+1. Check the result with `quarto preview`. `npm run check` does not read `.qmd` files.
+2. Tell the user that the German file and the two stubs exist.
+3. Suggest the Translation skill for the English version and the French version.
