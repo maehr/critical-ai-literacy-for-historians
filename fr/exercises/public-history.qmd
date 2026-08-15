@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -93,7 +93,7 @@ Termes (pour cet exercice):
 - **Veto des sources:** Toute accentuation narrative est autorisée, **à condition** qu'elle ne contredise pas les déclarations documentées dans l'article.
 - **Vérification affirmation par affirmation:** Les déclarations sont décomposées en *affirmations* vérifiables, liées à des preuves ou marquées comme spéculation.
 
-Les moteurs de recherche et les systèmes d'IA structurent la visibilité de manière problématique.[@noble2018oppression] Le contenu généré par l'IA pour les applications de public history comporte des risques particuliers, car il atteint un large public sans expertise professionnelle.[@bender2021stochastic]
+Les moteurs de recherche et les systèmes d'IA structurent la visibilité de manière problématique. [@noble2018oppression] Le contenu généré par l'IA pour les applications de public history comporte des risques particuliers, car il atteint un large public sans expertise professionnelle. [@bender2021stochastic]
 
 ::: callout-important
 

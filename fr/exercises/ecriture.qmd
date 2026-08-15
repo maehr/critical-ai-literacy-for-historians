@@ -10,7 +10,7 @@ author:
   affiliations:
   - Université de Berne
 date: '2025-12-24'
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Méthodes]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -77,11 +77,11 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Cadre méthodologique: L'IA comme infrastructure d'écriture
 
-Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile:
+Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile:
 
 - **Paternité historique:** Question de recherche, sélection des preuves, interprétation, positions normatives.
 - **Contribution de l'IA (instrumentale):** Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d'erreurs.
-- **Procédure de vérification (obligatoire):** Chaque déclaration de l'IA doit soit (a) être traçable à votre matériel d'input ou (b) être marquée comme hypothèse et vérifiée extérieurement.[@turingway2022handbook]
+- **Procédure de vérification (obligatoire):** Chaque déclaration de l'IA doit soit (a) être traçable à votre matériel d'input ou (b) être marquée comme hypothèse et vérifiée extérieurement. [@turingway2022handbook]
 
 Pour un travail plus fiable, utilisez systématiquement deux principes de prompt: 1. **Délimiter l'espace de travail** (« travaille uniquement avec mes points ; marque les incertitudes »). 2. **Réponses formatées** (listes/cartes d'arguments), pour pouvoir vérifier systématiquement et adopter sélectivement.
 

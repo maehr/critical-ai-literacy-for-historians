@@ -21,7 +21,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 references:
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -49,7 +49,7 @@ This exercise teaches **transferable competencies in source criticism** (externa
 
 ## Note on Digital Transmission
 
-The source used here is available in an **editorially prepared digital edition**. For source criticism, therefore, not only the text but also the **editorial layer** (metadata, archive signature, links, editorial guidelines) is part of the subject of investigation.[@fickers2022criticism]
+The source used here is available in an **editorially prepared digital edition**. For source criticism, therefore, not only the text but also the **editorial layer** (metadata, archive signature, links, editorial guidelines) is part of the subject of investigation. [@fickers2022criticism]
 :::
 
 ## Prerequisites
@@ -125,7 +125,7 @@ What is the central statement/decision?
 What consequence is indicated?
 ```
 
-::: callout-info
+::: callout-tip
 
 ## Uploading the Source
 

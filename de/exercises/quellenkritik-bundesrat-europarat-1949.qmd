@@ -21,7 +21,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-14"
+date-modified: "2026-08-15"
 references:
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -49,7 +49,7 @@ Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äusser
 
 ## Hinweis zur digitalen Überlieferung
 
-Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen Edition** vor. Für die Quellenkritik gehört deshalb nicht nur der Text, sondern auch die **Editionsebene** (Metadaten, Archivsignatur, Verlinkungen, Editionsrichtlinien) zum Untersuchungsgegenstand.[@fickers2022criticism]
+Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen Edition** vor. Für die Quellenkritik gehört deshalb nicht nur der Text, sondern auch die **Editionsebene** (Metadaten, Archivsignatur, Verlinkungen, Editionsrichtlinien) zum Untersuchungsgegenstand. [@fickers2022criticism]
 :::
 
 ## Voraussetzungen
@@ -113,7 +113,7 @@ Jeder Schritt enthält:
 
 Eine **erste kontrollierte Einordnung** der Quelle als Objekt: Gattung, Situation, Akteurskonstellation, thematischer Fokus.
 
-### Aufgabe 1: Minimalparaphrase (ohne Interpretation)
+### Aufgabe 1a: Minimalparaphrase ohne KI
 
 Formulieren Sie in **max. 4 Sätzen**:
 
@@ -122,7 +122,7 @@ Formulieren Sie in **max. 4 Sätzen**:
 - Was ist die zentrale Aussage/Entscheidung?
 - Welche Konsequenz wird angedeutet?
 
-### Aufgabe 1: Minimalparaphrase (ohne Interpretation) mittels KI
+### Aufgabe 1b: Dieselbe Minimalparaphrase mittels KI
 
 ``` markdown
 Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte folgende Fragen:
@@ -132,7 +132,7 @@ Was ist die zentrale Aussage/Entscheidung?
 Welche Konsequenz wird angedeutet?
 ```
 
-::: callout-info
+::: callout-tip
 
 ## Hochladen der Quelle
 
@@ -160,7 +160,7 @@ IHR PROMPT
 
 - Gibt es systematische Verzerrungen (sowohl in Ihren als auch in den KI-generierten Antworten)?
 
-### Aufgabe 2: Erste Forschungsheuristik
+### Aufgabe 2a: Erste Forschungsheuristik ohne KI
 
 Notieren Sie drei **potenzielle Forschungsfragen**, die *prinzipiell* mit dieser Quelle bearbeitbar wären (noch ohne Eingrenzung). Beispiele für Fragetypen:
 
@@ -169,7 +169,7 @@ Notieren Sie drei **potenzielle Forschungsfragen**, die *prinzipiell* mit dieser
 - wissensgeschichtlich (was gilt als „vereinbar“/„unvereinbar“?)
 - politisch-kulturell (Erwartungen an Volksabstimmungen)
 
-### Aufgabe 2: Erste Forschungsheuristik mittels KI
+### Aufgabe 2b: Dieselbe Forschungsheuristik mittels KI
 
 ``` markdown
 Gib mir drei mögliche historische Forschungsfragen, die sich aus der angehängten Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) ableiten lassen.
@@ -229,7 +229,7 @@ Notieren Sie an jeder Station:
 - Welche Teile Ihrer Einordnung wären ohne Dodis-Edition **nicht möglich**?
 - Wo ist die Editionsschicht selbst **eine Quelle** (z. B. Kategorisierung, Tags, Auswahl)?
 
-### Aufgabe: Externe Kritik mittels KI
+### Aufgabe 4: Externe Kritik mittels KI
 
 ``` markdown
 Analysiere die digital edierte Aktennotiz (Dodis 5020, Bern 7.7.1949) ausschliesslich unter dem Gesichtspunkt der externen Quellenkritik.
@@ -331,7 +331,7 @@ Wenn dir ein Beleg fehlt, markiere es als Hypothese.
 - Welche Ihrer Interpretationen sind **textnah** (belegbar), welche sind **kontextabhängige Hypothesen**?
 - Welche Begriffe fungieren als **Scharnier** zwischen Text und Kontext (Neutralität, Vereinbarkeit, Volksabstimmung)?
 
-### Aufgabe: Interne Kritik mittels KI
+### Aufgabe 5: Interne Kritik mittels KI
 
 ``` markdown
 Führe eine interne Quellenkritik der angehängten Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) durch.
@@ -402,7 +402,7 @@ Gib keine Behauptungen über Inhalte dieser Quellen, sondern nur Plan/Heuristik.
 - Welche Art Kontext ist **notwendig** (um Behauptungen zu prüfen), und welcher ist **nur plausibilisierend**?
 - Wo droht „Kontext“ zu einer **nachträglichen Glättung** zu werden?
 
-### Aufgabe: Recherche- und Gegenprobe-Planung mittels KI
+### Aufgabe 3: Recherche- und Gegenprobe-Planung mittels KI
 
 ``` markdown
 Leite aus der Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) einen systematischen Rechercheplan ab.
@@ -452,7 +452,7 @@ Leitfragen:
 
 Formulieren Sie zwei Mikro-Hypothesen (je 1 Satz), z. B.:
 
-- „X fungiert 1949 als institutioneller Gatekeeper-Begriff, der Y politisch blockiert.“
+- „Neutralität fungiert 1949 als institutioneller Gatekeeper-Begriff, der eine Annäherung an den Europarat politisch blockiert.“
 - „Die Referendums-/Volksabstimmungsreferenz dient als Legitimationsargument gegenüber ausländischen Gesprächspartnern.“
 
 Für jede Hypothese:
@@ -471,7 +471,7 @@ Markiere jede Aussage als: sicher / wahrscheinlich / spekulativ.
 ``` -->
 ````
 
-### Aufgabe: Evidenzprofil mittels KI
+### Aufgabe 3: Evidenzprofil mittels KI
 
 ``` markdown
 Erstelle auf Basis der Aktennotiz zwei getrennte Listen:

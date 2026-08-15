@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: '2026-08-14'
+date-modified: "2026-08-15"
 categories: [KI & Digitale Methoden]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -27,7 +27,7 @@ references: []
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung macht Prompting **als Methode** sichtbar: Prompts sind hier nicht «Tricks», sondern **Operationalisierungen** historischer Arbeitsaufträge.[@campbell2025historian; @oberbichler2025implementing]
+Diese Übung macht Prompting **als Methode** sichtbar: Prompts sind hier nicht «Tricks», sondern **Operationalisierungen** historischer Arbeitsaufträge. [@campbell2025historian; @oberbichler2025implementing]
 
 Trainiert wird, wie Sie
 
@@ -42,7 +42,7 @@ Im Unterschied zu den thematischen Übungen ([Forschungsfrage](formulieren-histo
 
 ## Grundregel: KI als Hypothese
 
-Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als **Hypothese** (nicht als Ergebnis).[@bender2021stochastic] Ihre Arbeit bleibt: **Gegenprobe, Nachweis, Entscheidung**.
+Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als **Hypothese** (nicht als Ergebnis). [@bender2021stochastic] Ihre Arbeit bleibt: **Gegenprobe, Nachweis, Entscheidung**.
 :::
 
 ## Voraussetzungen
@@ -121,7 +121,7 @@ AUFGABE
 
 :::
 
-::: callout-info
+::: callout-tip
 
 ## Session-Neustart: Massnahme mit Prüfpflicht
 
@@ -238,14 +238,14 @@ Keine externen Fakten.
 
 Nehmen Sie die **beste** Antwort aus 2A und lassen Sie sie durch eine zweite Rolle **prüfen**, nicht neu schreiben:
 
-- Rolle «Logik-Prüfer:in» (vgl.* Schreiben\*): Konsistenz, Sprünge, fehlende Evidenzstellen.
-- Rolle «Katalog-Assistent:in» (vgl.* Literaturrecherche\*): übersetzt in Suchstrings/Indikatoren.
+- Rolle «Logik-Prüfer:in» (vgl. Übung [Schreiben](schreiben.qmd)): Konsistenz, Sprünge, fehlende Evidenzstellen.
+- Rolle «Katalog-Assistent:in» (vgl. Übung [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd)): übersetzt in Suchstrings/Indikatoren.
 
 ## 3. Zero-shot Prompting
 
-::: callout-info
+::: callout-note
 
-## Zero-shot Prompting
+## Definition: Zero-shot Prompting
 
 Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur Auftrag, Material und Constraints.
 
@@ -268,7 +268,7 @@ Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europ
 Maximal 4 Sätze. Keine Interpretation.
 ```
 
-::: callout-info
+::: callout-tip
 
 ## Hochladen der Quelle
 
@@ -311,9 +311,9 @@ Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe b
 
 ## 4. Few-shot Prompting
 
-::: callout-info
+::: callout-note
 
-## Few-shot Prompting
+## Definition: Few-shot Prompting
 
 Few-shot Prompting heisst, dass das Modell explizite Beispiele erhält, was oft zu besseren Antworten führt.
 
@@ -366,9 +366,9 @@ Zu jeder Frage:
 
 ## 5. Strukturierte Denkspur (Chain-of-Thought Prompting)
 
-::: callout-info
+::: callout-note
 
-## Chain-of-Thought Prompting
+## Definition: Chain-of-Thought Prompting
 
 Chain-of-Thought Prompting bezeichnet ein Vorgehen, bei dem das Modell eine **komplexe Aufgabe in explizite Zwischenschritte zerlegt** (z. B. Extraktion → Ordnung → Bewertung → Ergebnis) und diese Schritte **sichtbar ausgibt**.
 
@@ -408,8 +408,10 @@ Material: ...
 
 Übertragen Sie die Struktur aus [Quellensuche](quellensuche-vorort-europarat-1963.qmd) (Teilfragen → Quellentypen → Suchorte → Suchstrings) in eine explizite Pipeline:
 
+Ersetzen Sie im folgenden Prompt die Beispielfrage durch Ihre eigene Frage.
+
 ``` markdown
-Ziel: Erstelle einen Rechercheplan zur Frage: [einfügen].
+Ziel: Erstelle einen Rechercheplan zur Frage: Wie wurde Neutralität zwischen 1949 und 1963 als Argument gegen einen Beitritt der Schweiz zum Europarat verwendet?
 
 Schritte:
 1) Zerlege in 4–6 Teilfragen (prüfbar).
@@ -422,9 +424,9 @@ Antwort: Tabelle (Teilfrage | Evidenz | Suchstring | Suchort | Risiko).
 
 ## 6. Iteratives Prompting
 
-::: callout-info
+::: callout-note
 
-## Iteratives Prompting
+## Definition: Iteratives Prompting
 
 Iteratives Prompting bezeichnet einen **kontrollierten Arbeitszyklus**, bei dem KI-Antworten schrittweise verbessert werden, indem jede Ausgabe **gezielt kritisiert und revidiert** wird.
 
@@ -437,13 +439,15 @@ Iteration als **kontrollierte Revision**: Sie bauen nicht «mehr Text», sondern
 ### Übung 6A: Generate → Critique → Revise (Forschungsfrage)
 
 1) **Generate (v1):** Zero-shot Forschungsfragen (Übung 3B).\
-2) **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung *Forschungsfrage* («Warum fehlt X?» / «Auf welche Quellen stützt sich das?»).\
+2) **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd) («Warum fehlt der Aspekt Neutralität?» / «Auf welche Quellen stützt sich das?»).\
 3) **Revise (v2):** Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.
 
 **Critique-Prompt (Vorlage):**
 
+Fügen Sie hinter «Hier ist Antwort v1:» den vollständigen Text der ersten Antwort ein.
+
 ``` markdown
-Hier ist Antwort v1: [einfügen].
+Hier ist Antwort v1: <Text der ersten Antwort einsetzen>.
 Aufgabe: Kritisiere claim-by-claim:
 - Was ist zu breit/teleologisch?
 - Wo fehlen Operatorbegriffe/Definitionen?
@@ -454,7 +458,7 @@ Keine neuen Fakten.
 
 ### Übung 6B: Iteration über Antwort-Format (Zitieren / Zusammenfassen)
 
-Nehmen Sie die Übung *Zitieren* und erzwingen Sie eine zweistufige Ausgabe:
+Nehmen Sie die Übung [Zitieren](zitieren.qmd) und erzwingen Sie eine zweistufige Ausgabe:
 
 1) Extraktion strukturierter Metadaten (Felder),\
 2) erst dann Chicago-Zitat + Zotero-Importformat.
@@ -536,11 +540,13 @@ Gib die Antwort als Tabelle mit Feldern: Claim | Evidenzstelle | Unsicherheit | 
 Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.
 ```
 
-## Abgabe
+## Lernergebnis
 
-1. Prompt-Protokoll (mind. 8 Einträge, verteilt über die Techniken)\
-2. Pro Technik: 1 kurzer Vergleich (A/B) + 5–8 Sätze Reflexion, was sich methodisch verbessert/verschlechtert hat\
-3. Eine «beste Praxis»-Vorlage: Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz
+Am Ende verfügen Sie über diese Artefakte:
+
+1. Ein KI-Protokoll mit mindestens 8 Einträgen, verteilt über die Techniken.\
+2. Pro Technik einen kurzen A/B-Vergleich und 5–8 Sätze Reflexion. Beschreiben Sie darin, was sich methodisch verbessert oder verschlechtert hat.\
+3. Eine «beste Praxis»-Vorlage. Das ist Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz.
 
 ## Weiterführende Ressourcen
 

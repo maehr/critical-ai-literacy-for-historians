@@ -12,7 +12,7 @@ author:
   affiliations:
   - Universität Bern
 date: '2025-12-24'
-date-modified: '2026-08-14'
+date-modified: "2026-08-15"
 categories: [Methoden]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -119,6 +119,9 @@ Ziel ist nicht, Textproduktion zu «automatisieren», sondern **Entscheidungsqua
 
 - Grundverständnis historischer Forschungsmethoden
 - Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Zugriff auf ein KI-System Ihrer Wahl
+- Ein eigenes Themenfragment (zum Beispiel eine Seminararbeit) oder ein bereitgestellter Textabschnitt von einer halben bis einer Seite
+- Eigene Stichpunkte oder Notizen zum Thema (mindestens 10 Bullet Points)
 
 ::: callout-note
 
@@ -149,16 +152,16 @@ Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgeb
 - Prompts so gestalten, dass KI nicht 'erfindet', sondern mit bereitgestelltem Material arbeitet.
 - Eine Argumentationsstruktur (These–Belege–Schluss) entwerfen und auf Konsistenz testen.
 - Absätze aus eigenen Stichpunkten generieren und anschliessend fachlich/terminologisch revidieren.
-- 'Revision in zwei Schritten durchführen: Logik/Verständlichkeit → Sprache/Stil.'
+- Die Revision in zwei Schritten durchführen: zuerst Logik und Verständlichkeit, dann Sprache und Stil.
 - Den eigenen KI-Einsatz transparent dokumentieren (Prompt- und Entscheidungsprotokoll).
 
 ## Methodischer Rahmen: KI als Schreibinfrastruktur
 
-In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
+In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
 
 - **Geschichtswissenschaftliche Autor:innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
 - **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.
-- **Prüfverfahren (obligatorisch):** Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein.[@turingway2022handbook]
+- **Prüfverfahren (obligatorisch):** Jede KI-Aussage muss entweder (a) auf Ihr Input-Material rückführbar oder (b) als Hypothese gekennzeichnet und extern verifiziert sein. [@turingway2022handbook]
 
 Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. **Eingrenzung des Arbeitsraums** («arbeite nur mit meinen Stichpunkten; markiere Unsicherheiten»). 2. **Formatierte Antworten** (Listen/Argumentmaps), damit Sie systematisch prüfen und selektiv übernehmen können.
 
@@ -170,12 +173,6 @@ Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für *Ihr* Material
 :::
 
 {{< include ../_ki-protokoll.qmd >}}
-
-## Voraussetzungen
-
-- Eigenes Themenfragment (z.B. Seminararbeit) **oder** ein bereitgestellter Textabschnitt (ca. ½–1 Seite)\
-- Eigene Stichpunkte/Notizen zum Thema (mind. 10 Bullet Points)\
-- Zugriff auf ein LLM-Interface Ihrer Wahl
 
 ## Struktur der Übung
 
@@ -225,7 +222,10 @@ Zielpublikum: …
 - Welche Rückfragen zwingen Sie zu **Begriffsklärungen** (z.B. «Modernisierung», «Neutralität», «Governance»)?\
 - Welche Fragen würden Sie **anders** priorisieren – und warum?
 
-**Ergebnis** - 1 revidierter Auftrag (3–5 Sätze) + 3 definierte Kernbegriffe
+**Ergebnis:**
+
+- 1 revidierter Auftrag (3–5 Sätze)
+- 3 definierte Kernbegriffe
 
 ## 2. Brainstorming-Partner + Devil’s Advocate
 
@@ -263,7 +263,11 @@ Hypothesen: …
 - Welche Hypothesen sind **falsifizierbar** (im Sinne klarer Widerlegungsbedingungen)?\
 - Wo droht **Presentismus** (Gegenwartskategorien in die Vergangenheit projizieren)?
 
-**Ergebnis** - 1 priorisierte Hypothese/These + 2 zentrale Gegenargumente + 1 geplanter Stress-Test
+**Ergebnis:**
+
+- 1 priorisierte Hypothese oder These
+- 2 zentrale Gegenargumente
+- 1 geplanter Stress-Test
 
 ## 3. Strukturierer & Outliner
 
@@ -273,9 +277,11 @@ Eine überprüfbare **Argumentationskette** entwerfen (These → Unterthesen →
 
 ### Aufgabe
 
+Setzen Sie im folgenden Prompt Ihre eigene Wortzahl ein. Das Beispiel nennt 3000 Wörter.
+
 ``` markdown
 Rolle: Strukturierer & Outliner.
-Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. X Wörtern.
+Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. 3000 Wörtern.
 Für jeden Punkt:
 - Ziel des Abschnitts (1 Satz)
 - zentrale Behauptung (1 Satz)
@@ -294,7 +300,10 @@ Material (Stichpunkte/Notizen): …
 - Enthält jede Behauptung eine **Evidenzspur** (mindestens als Platzhalter)?\
 - Gibt es Abschnitte, die nur «Überblick» liefern, aber keine argumentative Funktion haben?
 
-**Ergebnis** - Gliederung + Markierung von 2–3 Evidenzlücken
+**Ergebnis:**
+
+- 1 Gliederung
+- 2–3 markierte Evidenzlücken
 
 ## 4. Text aus Stichpunkten
 
@@ -323,7 +332,10 @@ Stichpunkte: …
 - Streichen Sie alle Sätze, die nicht direkt auf Ihre Stichpunkte rückführbar sind.\
 - Prüfen Sie Terminologie: Wo glättet KI Begriffe (z.B. «Staat», «Gesellschaft», «Akteur») unzulässig?
 
-**Ergebnis** - 1 Absatz + eine Version, in der Sie 3–5 Sätze eigenständig präzisiert haben
+**Ergebnis:**
+
+- 1 Absatz
+- 1 zweite Version des Absatzes, in der Sie 3–5 Sätze eigenständig präzisiert haben
 
 ## 5. Blockaden-Löser
 
@@ -345,11 +357,13 @@ Absatz B: …
 
 **B) Definition operationalisieren**
 
+Ersetzen Sie im folgenden Prompt den Begriff «Neutralität» durch Ihren eigenen Begriff.
+
 ``` markdown
-Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «X» im Kontext meines Themas.
+Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «Neutralität» im Kontext meines Themas.
 Für jede Definition:
 - Abgrenzung zu 1 Nachbarbegriff
-- 1 beobachtbares Indiz (woran erkenne ich X in Quellen?)
+- 1 beobachtbares Indiz (woran erkenne ich «Neutralität» in Quellen?)
 Keine externen Fakten.
 Kontext: …
 ```
@@ -365,7 +379,10 @@ Schlage minimale Umstellungen vor (keine Umschreibung des Inhalts).
 Text: …
 ```
 
-**Ergebnis** - 1 überarbeiteter Übergang/Definition + kurze Begründung, warum diese Variante
+**Ergebnis:**
+
+- 1 überarbeiteter Übergang oder 1 überarbeitete Definition
+- 1 kurze Begründung, warum Sie diese Variante gewählt haben
 
 ## 6. Logik-Prüfer
 
@@ -392,7 +409,10 @@ Text: …
 - Welche «impliziten Prämissen» akzeptieren Sie – welche müssen belegt oder umformuliert werden?\
 - Wo sind Kausalbehauptungen eigentlich nur **zeitliche Abfolge**?
 
-**Ergebnis** - Argumentmap + 2 gezielte Revisionen im Text (mit Markierung, was sich logisch verbessert)
+**Ergebnis:**
+
+- 1 Argumentmap
+- 2 gezielte Revisionen im Text, mit einer Markierung, was sich logisch verbessert
 
 ## 7. Korrektorat + Übersetzer
 
@@ -425,7 +445,11 @@ Text: …
 Zielsprache: …
 ```
 
-**Ergebnis** - Korrigierte Version + (optional) Übersetzung + Glossar
+**Ergebnis:**
+
+- 1 korrigierte Version
+- optional: 1 Übersetzung
+- optional: 1 Glossar
 
 ## 8. Abstract-Schreiber
 
@@ -452,7 +476,10 @@ Textbasis: …
 - Deckt das Abstract die **tatsächliche** Argumentationsspitze ab oder nur den Themenbereich?\
 - Entspricht die behauptete Methode dem, was Sie wirklich tun (Quellenarbeit vs. Literaturdiskussion)?
 
-**Ergebnis** - Abstract + 2-Satz-Meta-Kommentar: Was hat KI fälschlich betont/ausgelassen?
+**Ergebnis:**
+
+- 1 Abstract
+- 1 Meta-Kommentar in 2 Sätzen: Was hat die KI fälschlich betont oder ausgelassen?
 
 ## 9. Verständnischecker (Re-Run)
 
@@ -464,7 +491,7 @@ Lesbarkeit und Interpretationsspielräume aus Sicht des Zielpublikums testen.
 
 ``` markdown
 Rolle: Verständnischecker.
-Lies meinen Text als kritische*r Leser:in im Seminar.
+Lies meinen Text als kritische:r Leser:in im Seminar.
 1) Was ist die These in einem Satz?
 2) Welche 3 Punkte sind unklar oder missverständlich (jeweils mit Zitatstelle)?
 3) Welche Stelle wirkt unbelegt?
@@ -472,7 +499,9 @@ Lies meinen Text als kritische*r Leser:in im Seminar.
 Text: …
 ```
 
-**Ergebnis** - 3 präzisierte Stellen im Text (je 1–2 Sätze überarbeitet)
+**Ergebnis:**
+
+- 3 präzisierte Stellen im Text, je 1–2 Sätze überarbeitet
 
 ## Lernergebnis
 

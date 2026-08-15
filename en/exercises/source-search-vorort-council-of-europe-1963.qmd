@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Sources]
 image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
@@ -41,7 +41,7 @@ references:
 
 ## Overview and Didactic Goal
 
-This exercise trains **transferable research competencies**: from precise operationalization of a research question through **systematic** and **unsystematic (snowball) search strategies** to **critical evaluation** of sources (provenance, context, bias, relevance).[@putnam2016shadows] Generative AI is used here as a **heuristic aid** (conceptual clarification, keyword expansion, search paths).[@milligan2019history]
+This exercise trains **transferable research competencies**: from precise operationalization of a research question through **systematic** and **unsystematic (snowball) search strategies** to **critical evaluation** of sources (provenance, context, bias, relevance). [@putnam2016shadows] Generative AI is used here as a **heuristic aid** (conceptual clarification, keyword expansion, search paths). [@milligan2019history]
 
 The case study is the research question:\
 **What role did the Swiss Trade and Industry Association (Vorort) play in the decision-making process for Council of Europe accession in 1963?**

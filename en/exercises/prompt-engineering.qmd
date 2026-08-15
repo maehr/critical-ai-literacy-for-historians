@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [AI & Digital Methods]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -27,7 +27,7 @@ references: []
 
 ## Overview and Didactic Goal
 
-This exercise makes prompting visible **as a method**: prompts here are not "tricks," but rather **operationalizations** of historical work tasks.[@campbell2025historian; @oberbichler2025implementing]
+This exercise makes prompting visible **as a method**: prompts here are not "tricks," but rather **operationalizations** of historical work tasks. [@campbell2025historian; @oberbichler2025implementing]
 
 You will train how to:
 
@@ -42,7 +42,7 @@ Unlike the thematic exercises ([Research Question](formulating-historical-resear
 
 ## Basic Rule: AI as Hypothesis
 
-Whenever the model provides facts, literature, archives, signatures, or quotes that do not come from your input or verifiable references, treat that as a **hypothesis** (not as a result).[@bender2021stochastic] Your work remains: **counter-check, verification, decision**.
+Whenever the model provides facts, literature, archives, signatures, or quotes that do not come from your input or verifiable references, treat that as a **hypothesis** (not as a result). [@bender2021stochastic] Your work remains: **counter-check, verification, decision**.
 :::
 
 ## Prerequisites
@@ -110,7 +110,7 @@ TASK
 
 :::
 
-::: callout-info
+::: callout-tip
 
 ## Session Restart as Control Instrument
 
@@ -222,7 +222,7 @@ Take the **best** response from 2A and have it **reviewed** by a second role, no
 
 ## 3. Zero-shot Prompting: Goal
 
-::: callout-info
+::: callout-note
 
 ## Zero-shot Prompting
 
@@ -247,7 +247,7 @@ Analyze the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of 
 Maximum 4 sentences. No interpretation.
 ```
 
-::: callout-info
+::: callout-tip
 
 ## Uploading the Source
 
@@ -288,7 +288,7 @@ For each question, name which additional source types I need for counter-verific
 
 ## 4. Few-shot Prompting: Goal
 
-::: callout-info
+::: callout-note
 
 ## Few-shot Prompting
 
@@ -343,7 +343,7 @@ For each question:
 
 ## 5. Structured Thinking Trace: Goal
 
-::: callout-info
+::: callout-note
 
 ## Chain-of-Thought Prompting
 
@@ -399,7 +399,7 @@ Response: Table (Sub-question | Evidence | Search string | Search location | Ris
 
 ## 6. Iterative Prompting: Goal
 
-::: callout-info
+::: callout-note
 
 ## Iterative Prompting
 

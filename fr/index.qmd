@@ -100,7 +100,7 @@ Moritz Mähr (Dr. sc. ETH Zurich) est chercheur associé en humanités numériqu
 
 ## À propos de ce projet
 
-**Littératie critique de l'IA pour les historien·ne·s** est une initiative éducative conçue pour doter les historien·ne·s des connaissances et des compétences nécessaires pour s'engager de manière critique avec les technologies d'intelligence artificielle dans leur pratique de recherche. Les cadres et approches présentés ici s'inspirent largement du document de travail *Implementing Generative AI in the Historical Studies*.[@oberbichler2025implementing]
+**Littératie critique de l'IA pour les historien·ne·s** est une initiative éducative conçue pour doter les historien·ne·s des connaissances et des compétences nécessaires pour s'engager de manière critique avec les technologies d'intelligence artificielle dans leur pratique de recherche. Les cadres et approches présentés ici s'inspirent largement du document de travail *Implementing Generative AI in the Historical Studies*. [@oberbichler2025implementing]
 
 ### Cadre pédagogique
 
