@@ -8,9 +8,7 @@ draft: true
 citation: false
 ---
 
-::: callout-warning
-
-# Translation Needed
+::: {.callout-warning title="Translation Needed"}
 
 This glossary is currently only available in German. See [Glossar](../de/glossary.qmd).
 :::

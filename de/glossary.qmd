@@ -95,27 +95,14 @@ Trunkierung heisst, dass Sie ein Wort abschneiden und mit einem Platzhalter alle
 
 Bei der Sichtung prüfen Sie die Treffer rasch auf Relevanz und sortieren sie in «behalten» oder «verwerfen».
 
-### Ablehnungsliste (Reject-Log) {#gl-reject-log}
+### Reject-Log {#gl-reject-log}
 
-Eine Ablehnungsliste hält fest, welche Treffer Sie verworfen haben und aus welchem Grund.
+Ein Reject-Log hält fest, welche Treffer Sie verworfen haben und aus welchem Grund.
 
 ### Findmittel {#gl-findmittel}
 
 Findmittel sind die Verzeichnisse eines Archivs, die zeigen, welche Bestände vorhanden sind und wie sie geordnet sind.
 
-## Historisches Arbeiten
-
-### Arena {#gl-arena}
-
-Eine Arena ist der Ort, an dem eine historische Auseinandersetzung stattfand, zum Beispiel das Parlament, ein Verband oder die Presse.
-
-### Presentismus {#gl-presentismus}
-
-Presentismus heisst, dass Sie heutige Begriffe und Massstäbe ungeprüft auf die Vergangenheit übertragen.
-
-### Register {#gl-register}
-
-Das Register ist die Sprachebene eines Textes, also der Unterschied zwischen wissenschaftlicher, journalistischer und mündlicher Sprache.
 
 ## Schreiben und Vermittlung
 
@@ -127,9 +114,9 @@ Ein Arbeitsergebnis ist das greifbare Produkt eines Arbeitsschritts, das Sie abg
 
 Eine Vergleichsgrundlage ist ein erstes, einfaches Ergebnis, an dem Sie alle späteren Fassungen messen.
 
-### Botschaftsplan (Message Map) {#gl-message-map}
+### Message Map {#gl-message-map}
 
-Ein Botschaftsplan hält die Kernbotschaft eines Beitrags fest, dazu drei bis vier Stützpunkte und die Bedeutung für die Zielgruppe.
+Eine Message Map hält die Kernbotschaft eines Beitrags fest, dazu drei bis vier Stützpunkte und die Bedeutung für die Zielgruppe.
 
 ### Einstieg (Hook) {#gl-hook}
 
@@ -163,8 +150,8 @@ Markdown ist eine einfache Schreibweise, die Überschriften, Listen und Hervorhe
 
 ### FAIR-Prinzipien {#gl-fair}
 
-Die FAIR-Prinzipien fordern, dass Forschungsdaten auffindbar, zugänglich, kombinierbar und nachnutzbar sind.
+Die FAIR-Prinzipien fordern, dass Forschungsdaten auffindbar, zugänglich, kombinierbar und nachnutzbar sind. Der Wortlaut steht bei [GO FAIR](https://www.go-fair.org/fair-principles/) und in @wilkinson2016fair.
 
 ### CARE-Prinzipien {#gl-care}
 
-Die CARE-Prinzipien fordern, dass Daten den betroffenen Gemeinschaften nützen und dass diese Gemeinschaften über ihre Daten mitbestimmen.
+Die CARE-Prinzipien fordern, dass Daten den betroffenen Gemeinschaften nützen und dass diese Gemeinschaften über ihre Daten mitbestimmen. Der Wortlaut steht bei der [Global Indigenous Data Alliance](https://www.gida-global.org/care) und in @carroll2020care.

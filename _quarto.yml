@@ -10,6 +10,8 @@ website:
   repo-url: https://github.com/maehr/critical-ai-literacy-for-historians/
   issue-url: https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose
   repo-actions: [edit, issue]
+  # Temporary: keeps the draft en/fr glossary stubs in the sidebar.
+  # Remove once the porting issues (#23, #24) replace both stubs.
   draft-mode: visible
   page-navigation: true
   bread-crumbs: true
