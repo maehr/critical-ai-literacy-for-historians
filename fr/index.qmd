@@ -3,11 +3,20 @@ title: "Littératie critique de l'IA pour les historien·ne·s"
 lang: fr
 listing:
   id: exercises
-  contents: exercises
+  # Ordre d'apprentissage, et non alphabétique. « sort: false » conserve cet ordre.
+  contents:
+    - exercises/prompt-engineering.qmd
+    - exercises/recherche-bibliographique-securite-sociale-ch.qmd
+    - exercises/formuler-question-recherche-historique-suisse-conseil-europe.qmd
+    - exercises/recherche-sources-vorort-conseil-europe-1963.qmd
+    - exercises/critique-sources-conseil-federal-conseil-europe-1949.qmd
+    - exercises/ecriture.qmd
+    - exercises/citer.qmd
+    - exercises/public-history.qmd
+  sort: false
   type: grid
+  categories: true
   fields: [image, title, subtitle, description, categories]
-  exclude:
-    title: "Exercices" # exercises/index.qmd
 ---
 
 ## Bienvenue
@@ -62,7 +71,7 @@ Ce parcours se concentre sur la recherche bibliographique et la communication de
 
 1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Bases de l'interaction avec les LLM.
 2. [**Recherche bibliographique**](exercises/recherche-bibliographique-securite-sociale-ch.qmd): Trouver et évaluer la littérature secondaire.
-3. [**Question de recherche**](exercises/formuler-question-recherche-historique-suisse-conseil-europe.qmd): (Adapté) Formuler une question de recherche.
+3. [**Question de recherche**](exercises/formuler-question-recherche-historique-suisse-conseil-europe.qmd): Formuler une question de recherche. L'exercice utilise l'exemple du Conseil de l'Europe. Transposez chaque étape au thème de la sécurité sociale.
 4. [**Écriture**](exercises/ecriture.qmd): Rédiger et affiner des textes historiques.
 5. [**Citer**](exercises/citer.qmd): Documenter correctement l'utilisation de l'IA.
 6. [**Public History**](exercises/public-history.qmd): Présenter l'histoire à un large public.

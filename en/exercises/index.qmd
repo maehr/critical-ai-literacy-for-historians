@@ -3,11 +3,20 @@ title: Exercises
 lang: en
 listing:
   id: exercises
+  # Learning order, not alphabetical order. "sort: false" keeps this order.
+  contents:
+    - prompt-engineering.qmd
+    - literature-research-social-security-ch.qmd
+    - formulating-historical-research-question-switzerland-council-of-europe.qmd
+    - source-search-vorort-council-of-europe-1963.qmd
+    - source-criticism-federal-council-council-of-europe-1949.qmd
+    - writing.qmd
+    - citing.qmd
+    - public-history.qmd
+  sort: false
   type: table
   categories: true
   fields: [title, subtitle, description, categories]
-  exclude:
-    title: "Exercises" # exercises/index.qmd
 citation: false
 ---
 
