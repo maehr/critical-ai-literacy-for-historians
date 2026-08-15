@@ -1,244 +1,244 @@
 # AGENTS Guidelines for Critical AI Literacy for Historians
 
-This repository provides multilingual educational exercises for developing critical AI literacy in historical research. These guidelines apply when interacting with the repository using AI agents (e.g., Copilot, Cursor, or other AI tools).
+This repository holds multilingual educational exercises for critical AI literacy in historical research. This file is the contract for every agent that works here, and for every person who directs one. If another file contradicts this file, follow this file and report the contradiction.
 
 ## 1) Use Preview Mode During Interactive Sessions
 
-- **Always run `quarto preview`** while iterating on documentation. Live reload works for `.qmd`, `.md`, and asset files.
-- **Do not run production commands inside agent sessions** unless explicitly requested by the human maintainer:
-  - Avoid: `quarto render`, `quarto publish gh-pages`
-- Keep the preview server running while editing to verify changes in real-time.
+- Run `quarto preview` while you edit content. Live reload works for `.qmd`, `.md`, and asset files.
+- Keep the preview server active, because the preview is the only check of the content.
+- Do not run `quarto render` or `quarto publish gh-pages` in an agent session. The maintainer must ask first.
 
 ## 2) Available Skills
 
-The following agent skills are available in `.agent/skills` to automate common tasks. **Always check these skills before performing manual work.**
+The skills in `.agent/skills` automate common tasks. Read the skill before you do the work by hand.
 
-- **Bibliography Management**: Managing citations and format conversion (`.agent/skills/bibliography/SKILL.md`)
-- **Glossary Creation**: Guidelines for creating and maintaining glossaries (`.agent/skills/glossary/SKILL.md`)
-- **Setup New Exercise**: Creating new exercises with correct structure and metadata (`.agent/skills/new_exercise/SKILL.md`)
-- **Sync Exercises**: Audit and sync missing files across languages (`.agent/skills/sync_exercises/SKILL.md`)
-- **Translation**: Translating content between EN/DE/FR (`.agent/skills/translation/SKILL.md`)
-- **Validate Scientific Backing**: Ensure exercises are supported by quality literature (`.agent/skills/validate_backing/SKILL.md`)
+- Bibliography Management: manage citations and convert formats (`.agent/skills/bibliography/SKILL.md`)
+- Setup New Exercise: create an exercise with the correct structure and metadata (`.agent/skills/new_exercise/SKILL.md`)
+- Sync Exercises: audit and sync missing files across the languages (`.agent/skills/sync_exercises/SKILL.md`)
+- Translation: translate content from German into English and French (`.agent/skills/translation/SKILL.md`)
+- Validate Scientific Backing: check that literature supports an exercise (`.agent/skills/validate_backing/SKILL.md`)
 
 ## 3) Multilingual Content Management
 
-This repository maintains content in three languages: English (en/), German (de/), and French (fr/).
+This repository holds content in German (`de/`), English (`en/`), and French (`fr/`).
 
 ### Translation Workflow
 
-- **Manual Translations**: All translations should be done manually by qualified translators or native speakers to ensure accuracy and cultural appropriateness.
-- **Keeping Translations in Sync**: When updating content:
-  1. Make changes to the English version first (en/)
-  2. Mark the corresponding German and French files as needing translation
-  3. Create an issue using the label `translation-needed` to track translation work
-  4. Ensure all three language versions have parallel content structure
+German leads. The audience is German-speaking historians. `de/` is the reference version, and `en/` and `fr/` follow it.
 
-### Content Parity
+Caution: do not add new substance to `en/` or `fr/`. The two versions then drift from the reference version.
 
-- Each language directory should have identical file structure
-- Exercise numbering and naming should be consistent across languages
-- When adding new exercises, create placeholder files in all three languages
+1. Write the change in the German file first.
+2. Translate the change into English and French, or mark the two files as outdated.
+3. Open an issue with the label `translation-needed` for each translation that you do not write.
+4. Give a translated file the automated-translation callout from `.agent/skills/translation/SKILL.md`.
 
-### Resource Localization
+### Content Parity and Resource Localization
 
-- **Flag Non-Localized Resources**: If a referenced resource (book, website, dataset, etc.) is only available in one or two languages, flag it in the text.
-  - Format: `(ENGLISH only)`, `(GERMAN only)`, or `(FRENCH only)`.
-- **Propose Alternatives**: When translating or creating content, proactively look for and propose properly localized alternatives (e.g., a translated edition of a book, or a similar dataset in the target language).
-- **Bibliography**: Check if the `bibliography.bib` entry has language-specific versions or if a more appropriate localized source exists.
+- Give each language directory the same file structure.
+- Use the same exercise order and the same slug in all three languages.
+- When you add an exercise, create a stub file in the other two languages.
+- Flag a resource that exists in one language only. Use the form `(GERMAN only)`, `(ENGLISH only)`, or `(FRENCH only)`.
+- Propose a localized alternative when one exists, for example a translated edition of a book.
+- Check `bibliography.bib` for a language-specific edition before you add a new entry.
 
 ## 4) Exercise Metadata Standards
 
 ### Categories
 
-Exercises must use **exactly one** of these categories (based on the German structure, adapted for other languages):
+An exercise must carry exactly one category. The four categories below are the complete list. Use the label of the language of the file.
 
-- **KI & Digitale Methoden** (AI & Digital Methods / IA & Méthodes numériques)
-- **Quellen** (Sources)
-- **Methoden** (Methods / Méthodes)
-- **Public History**
+| German                 | English              | French                   |
+| ---------------------- | -------------------- | ------------------------ |
+| KI & Digitale Methoden | AI & Digital Methods | IA & Méthodes numériques |
+| Quellen                | Sources              | Sources                  |
+| Methoden               | Methods              | Méthodes                 |
+| Public History         | Public History       | Public History           |
+
+Ethics is not a category. Ethical awareness applies to every exercise, so it does not divide the set. Use the tag `Ethik`, `Ethics`, or `Éthique` instead.
+
+Do not invent a category. This table is the only full copy. The dropdown in `.github/ISSUE_TEMPLATE/exercise_proposal.yml` repeats it, so change both files in the same pull request.
 
 ### Tags
 
-Use descriptive tags that characterize the exercise. There is no strict upper limit; add as many tags as needed to represent the exercise clearly (3 - 5 recommended).
-Examples (not exhaustive): `Prompting`, `Toolkritik`, `Reproduzierbarkeit`, `Ethics`, `Source Criticism`, `Data Literacy`.
+Use descriptive tags that characterize the exercise. Three to five tags are recommended, and there is no upper limit. Translate a tag into the language of the file. Examples are `Prompting`, `Toolkritik`, `Reproduzierbarkeit`, `Ethik`, `Quellenkritik`, and `Datenkompetenz`.
+
+### Difficulty and Time
+
+Every exercise must carry a `difficulty` field and a `time_estimate` field, because `README.md` promises both to the learner.
+
+- `difficulty` takes `Beginner`, `Intermediate`, or `Advanced`. These values stay in English in all three languages, because they are machine values and not learner text.
+- `time_estimate` takes a quoted number and a unit: `min` for minutes, `d` for days. Examples are `'60 min'`, `'45-60 min'`, and `'2 d'`. State the honest time for the complete exercise, and write days for an exercise that needs archive visits.
 
 ### Required YAML Front Matter
 
-Every exercise must include:
+Every exercise must carry the fields below. The order of the fields is free. The example uses single quotes, because Prettier formats this file. See section 8.
 
 ```yaml
-lang: en # or de, fr
+lang: de # or en, fr
 title: 'Exercise Title'
+subtitle: 'Short second line'
 description: 'Brief description'
 author:
   - name: 'Author Name'
-    affiliation: 'Institution'
-date: 'YYYY-MM-DD'
-date-modified: 'YYYY-MM-DD' # or 'today'
-categories: [Category] # ONE category only
-tags: [Tag1, Tag2, Tag3]
+    orcid: 0000-0000-0000-0000
+    email: author@example.org
+    affiliations:
+      - 'Institution'
+date: '2026-01-31'
+date-modified: '2026-01-31'
+categories: [Quellen] # exactly one category from the table above
+image: ../../assets/images/example.png
+tags:
+  - Tag1
+  - Tag2
+  - Tag3
+difficulty: Beginner # Beginner, Intermediate, or Advanced
+time_estimate: '60 min'
 draft: false
 ```
 
-## 5) Citations and Bibliography
+- `author` takes a list. Each author takes an `affiliations` list. Do not write a scalar `affiliation`.
+- `subtitle` and `image` are required, because every exercise carries them.
+- `date-modified` takes a real date. Replace `today` with a real date in every file that you change.
+- Use double quotes in the front matter of a `.qmd` file, as all 24 exercises do. Prettier never reads `.qmd` files, so no tool changes this style.
 
-### bibliography.bib Standards
+## 5) Terminology and Content Rules
 
-- Use consistent BibTeX formatting
-- Include DOI when available
-- Use descriptive citation keys: `authorYEARkeyword` format (e.g., `russell2020artificial`)
-- Required fields for articles: `author`, `title`, `journal`, `year`, `volume`, `pages`, `doi`
-- Required fields for books: `author`, `title`, `publisher`, `year`, `isbn`
+**Never name an AI product.** Do not name an AI product, an AI vendor, or a model. Describe what the tool must be able to do, for example "a KI-System that can read a PDF file". This rule covers exercise text, prerequisites, and links, so cite a neutral source instead of vendor documentation.
 
-### Citing in Exercises
+**One term for the audit trail.** The log of AI use has one name: **KI-Protokoll**. Use this term in every German file. Do not write Prompt-Protokoll, Audit Trail, Analyseprotokoll, Rechercheprotokoll, Suchprotokoll, Entscheidungslog, or Prüfpfad. Use "AI log" in English and "journal IA" in French, and name the German term once in each translated file.
 
-- Use `[@citationkey]` for inline citations
-- Reference the `bibliography.bib` file in `_metadata.yml` for each language
-- Ensure all cited works are relevant to AI literacy and historical research
+**Glossary.** The course glossary is the content page `de/glossary.qmd`, and not a skill. It holds a short working definition of every term that an exercise uses without explanation. When you introduce a term, add the definition, then link to the anchor of the entry, for example `[Prompt](../glossary.qmd#gl-prompt)`.
 
-## 6) Repository Structure
+**Callouts.** Quarto has five callout types: `note`, `tip`, `important`, `caution`, and `warning`. Caution: `callout-info` is not one of them. Quarto renders such a block as a plain division without a title bar and without a color.
 
-This is an educational content repository with the following structure:
+**Language level.** Write short sentences for a reader who is not tech savvy. Define a term before you use it. State the workload of an exercise before the first step, and not in the hand-in section.
+
+## 6) Citations and Bibliography
+
+- Use consistent BibTeX formatting, and include the DOI when one exists.
+- Use the citation key format `authorYEARkeyword`, for example `russell2020artificial`.
+- Give an article these fields: `author`, `title`, `journal`, `year`, `volume`, `pages`, and `doi`.
+- Give a book these fields: `author`, `title`, `publisher`, `year`, and `isbn`.
+- Use `[@citationkey]` for an inline citation, and cite every work that the bibliography section lists.
+- Reference `bibliography.bib` in the `_metadata.yml` file of each language.
+
+## 7) Repository Structure
+
+Each language directory holds `index.qmd` and `exercises/`. `de/` also holds `glossary.qmd`.
 
 ```
 critical-ai-literacy-for-historians/
+├── de/               # German content (reference version)
 ├── en/               # English content
-│   ├── index.qmd
-│   └── exercises/
-├── de/               # German content
-│   ├── index.qmd
-│   └── exercises/
 ├── fr/               # French content
-│   ├── index.qmd
-│   └── exercises/
 ├── assets/           # Shared images and fonts
 └── bibliography.bib  # Shared citations
 ```
 
-## 7) Formatting and Linting
+## 8) Formatting and Linting
 
-- Run **`npm run format`** before commits to enforce Prettier formatting
-- Use **`npm run check`** to verify formatting without writing changes
-- All `.qmd`, `.md`, `.yml`, and `.json` files should be formatted with Prettier
+Run `npm run format` before you commit. Run `npm run check` to verify the formatting without a change.
 
-## 8) Commits and Changelog
+Caution: `npm run check` verifies none of the course content. Prettier has no parser for `.qmd`, so it skips all 30 content files. The `.husky/pre-commit` hook and the CI `lint` job run the same command and skip the same files. Verify content with `quarto preview`. Issue #26 tracks a fix.
 
-- Use **`npm run commit`** to follow Conventional Commits standard
-- After committing, generate entries with **`npm run changelog`** and update `CHANGELOG.md`
-- Use conventional commit types: `feat`, `fix`, `docs`, `chore`, `refactor`
+Prettier formats `.md`, `.yml`, and `.json` files, and also a YAML code block inside a Markdown file. `.prettierrc` sets `singleQuote: true`, so every YAML example in this file and in the skills is single-quoted. Do not "correct" these examples to double quotes, because `npm run format` reverts the change. The rule for `.qmd` front matter is different. See section 4.
 
-## 9) Documentation Practices
+## 9) Commits and Changelog
 
-- Use `.qmd` (Quarto Markdown) for all educational content
-- Include valid YAML front matter in all `.qmd` files
-- Write in clear, accessible academic language
-- Include learning objectives, activities, and reflection prompts in exercises
-- Link to relevant resources and further reading
+- Use `npm run commit` for the Conventional Commits wizard.
+- Run `npm run changelog` after a commit, then update `CHANGELOG.md`.
+- Use these commit types: `feat`, `fix`, `docs`, `chore`, and `refactor`.
 
-## 10) Content Quality Standards
+## 10) Documentation Practices
 
-### Exercise Structure & Development
+- Use `.qmd` for all educational content, with valid YAML front matter.
+- Write clear academic language that a novice understands, and link to further reading.
 
-Each exercise follows a strict pedagogical structure. See `de/exercises/prompt-engineering.qmd` or `de/exercises/quellenkritik-bundesrat-europarat-1949.qmd` for reference.
+## 11) Content Quality Standards
 
-**Standard Sections:**
+### Exercise Structure
 
-1. **Overview and Didactic Goal** (`## Überblick und didaktisches Ziel`)
-   - Context of the exercise.
-   - Specific competencies being trained.
-2. **Prerequisites** (`## Voraussetzungen`)
-   - Required methodological knowledge.
-   - Technical requirements (Internet access, specific tools).
-3. **Learning Objectives** (`## Lernziele`)
-   - Bullet points describing what students will be able to do.
-4. **Step-by-Step Sections** (Numbered, e.g., `## 1. Orientierung...`)
-   - **Goal** (`### Ziel`): What is achieved in this step?
-   - **Task** (`### Aufgabe`): Concrete manual task for the student.
-   - **AI Task** (`### Aufgabe ... mittels KI`): The specific prompt or workflow to test with an agent.
-   - **Reflection/Work Assignment** (`### Arbeitsauftrag (Reflexion)`): Critical comparison of AI output vs. manual work, or reflection on the process.
-5. **Deliverables/Learning Outcome** (`## Lernergebnis`)
-   - What the student takes away (artifacts, protocols, insights).
-6. **Bibliography** (`## Bibliographie`)
+Each exercise follows a fixed pedagogical structure. Use `de/exercises/prompt-engineering.qmd` or `de/exercises/quellenkritik-bundesrat-europarat-1949.qmd` as the reference.
+
+1. `## Überblick und didaktisches Ziel`: give the context, and name the competencies that the exercise trains.
+2. `## Voraussetzungen`: name the knowledge that the learner needs, and the capabilities that the tool needs.
+3. `## Lernziele`: list what the learner can do after the exercise.
+4. Numbered steps, for example `## 1. Orientierung`, each with four parts:
+   - `### Ziel`: state the result of the step.
+   - `### Aufgabe`: give the manual task.
+   - `### Aufgabe ... mittels KI`: give the prompt or the workflow to test.
+   - `### Arbeitsauftrag (Reflexion)`: compare the AI output with the manual work.
+5. `## Lernergebnis`: list the artifacts, the protocols, and the insights that the learner takes away.
+6. `## Bibliographie`
 
 ### Pedagogical Principles
 
-Exercises should promote:
+An exercise must promote:
 
-- Critical thinking about AI as tool and method
-- Digital source criticism skills
-- Ethical awareness (bias, privacy, representation)
+- Critical thinking about AI as a tool and as a method
+- Digital source criticism
+- Ethical awareness of bias, privacy, and representation
 - Transparency and reproducibility in research
-- FAIR and CARE principles
+- The FAIR principles and the CARE principles
 
-## 11) GitHub Features and Security
+## 12) GitHub Features and Security
 
-- Use **issue templates** for new exercise proposals
-- Enable **GitHub Security Alerts** and Dependabot updates
-- Keep `SECURITY.md` current with reporting procedures
-- Use branch protection on `main` branch
+- Use the issue templates for a new exercise proposal.
+- Keep GitHub Security Alerts, Dependabot updates, and branch protection on `main` active.
+- Keep `SECURITY.md` current.
 
-## 12) Website Publishing
+## 13) Website Publishing
 
-- In repo **Settings → Pages**:
-  - Source: **Deploy from a branch**
-  - Branch: **`gh-pages`**, folder: **`/ (root)`**
-- **Production commands** (run _outside_ agent sessions unless explicitly authorized):
-  - `quarto render`
-  - `quarto publish gh-pages`
+- In repository Settings, open Pages. Set Source to "Deploy from a branch", Branch to `gh-pages`, and the folder to `/ (root)`.
+- Run `quarto render` and `quarto publish gh-pages` outside an agent session, unless the maintainer authorizes them.
 
-## 13) Commands Recap
+## 14) Commands Recap
 
-| Command                   | Purpose                                          |
-| ------------------------- | ------------------------------------------------ |
-| `quarto preview`          | Live preview with reload                         |
-| `npm run check`           | Verify formatting                                |
-| `npm run format`          | Apply Prettier formatting                        |
-| `npm run commit`          | Conventional Commits wizard                      |
-| `npm run changelog`       | Generate changelog from commits                  |
-| `npm run prepare`         | Setup Husky git hooks                            |
-| `quarto render`           | **Production render** (avoid in agent sessions)  |
-| `quarto publish gh-pages` | **Production publish** (avoid in agent sessions) |
+| Command                   | Purpose                                                          |
+| ------------------------- | ---------------------------------------------------------------- |
+| `quarto preview`          | Live preview with reload. This is the only check of the content. |
+| `npm run check`           | Verify formatting. This skips all `.qmd` files.                  |
+| `npm run format`          | Apply Prettier formatting and tidy the bibliography              |
+| `npm run commit`          | Conventional Commits wizard                                      |
+| `npm run changelog`       | Generate the changelog from the commits                          |
+| `npm run prepare`         | Set up the Husky git hooks                                       |
+| `quarto render`           | Production render. Avoid in an agent session.                    |
+| `quarto publish gh-pages` | Production publish. Avoid in an agent session.                   |
 
-## 14) Verification Checklist
+## 15) Verification Checklist
 
-Before finalizing changes:
+Check this list before you finish a change.
 
-- [ ] All files formatted with `npm run check`
-- [ ] `quarto preview` renders without errors
-- [ ] All three languages have parallel content structure
-- [ ] Exercise metadata follows standards (correct categories/tags)
-- [ ] Bibliography entries are properly formatted
-- [ ] All citations are valid and referenced
-- [ ] Links work correctly
-- [ ] Images have alt text
-- [ ] YAML front matter is valid
+- [ ] `npm run format` ran without an error.
+- [ ] `quarto preview` renders the changed pages without an error.
+- [ ] The three languages have the same structure.
+- [ ] Each exercise carries one category from section 4, plus `difficulty` and `time_estimate`.
+- [ ] `date-modified` holds a real date in every changed file.
+- [ ] No AI product, vendor, or model is named, and the audit trail is named KI-Protokoll.
+- [ ] Every callout uses one of the five valid types, and every new term has a glossary entry.
+- [ ] The bibliography entries are complete, and every citation resolves.
+- [ ] Every link works, and every image has alt text.
 
-## 15) Common Tasks
+## 16) Common Tasks
 
-### Adding a New Exercise
+### Add a New Exercise
 
-**Use the `Setup New Exercise` skill.**
+Use the Setup New Exercise skill.
 
-1. Determining topic and creating a unique slug.
-2. Creating the **primary draft** file (full content).
-3. Creating **stubs** in the other two languages (parity).
-4. Adding citations to `bibliography.bib` if needed.
-5. Previewing with `quarto preview`.
+1. Choose the topic and a unique slug.
+2. Write the full German file in `de/exercises/`, then create a stub in `en/exercises/` and in `fr/exercises/`.
+3. Add the citations to `bibliography.bib`, and add every new term to `de/glossary.qmd`.
+4. Check the result with `quarto preview`.
 
-### Updating Existing Content
+### Update Existing Content
 
-1. Make changes to content.
-2. Update `date-modified` in YAML front matter.
-3. If adding entirely new sections, use the `Translation` skill to update the other languages.
-4. Preview changes with `quarto preview`.
-5. Format and commit.
+1. Change the German file, and set `date-modified` to the current date.
+2. Use the Translation skill for the English file and the French file, or open an issue with the label `translation-needed`.
+3. Check the result with `quarto preview`.
+4. Run `npm run format`, then commit.
 
-### Maintaining Bibliography
+### Maintain the Bibliography
 
-1. Check for duplicate entries.
-2. Ensure consistent formatting.
-3. Verify DOIs are valid and accessible.
-4. Use descriptive citation keys.
-5. Keep entries relevant to AI literacy in historical research.
-
-**Principle**: Maintain high-quality, accessible, multilingual educational content following FAIR principles. Ensure consistency across languages while respecting cultural and linguistic differences.
+Apply the rules in section 6. Search for duplicate entries, verify that each DOI resolves, and keep every entry relevant to AI literacy in historical research.
