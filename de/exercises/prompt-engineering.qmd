@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: '2026-08-14'
 categories: [KI & Digitale Methoden]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -62,19 +62,13 @@ Nach Abschluss der Übung können Sie:
 
 ## Arbeitsmodus: KI-Protokoll und A/B-Testing
 
-Führen Sie ein kurzes Prompt-Protokoll (Audit Trail). Nutzen Sie es auch in den anderen Übungen.
+Führen Sie ein KI-Protokoll. Nutzen Sie es auch in den anderen Übungen.
 
-**Minimalvorlage:**
+{{< include ../_ki-protokoll.qmd >}}
 
-- Schritt
-- Ziel
-- Input (Material)
-- Prompt (Kernausschnitt)
-- Antwort (kurz)
-- Prüfschritte
-- Entscheidung
+### A/B-Testing (Minimum)
 
-**A/B-Testing (Minimum):** Für jede Technik mindestens **zwei Prompt-Varianten** laufen lassen, dann vergleichen:
+Lassen Sie für jede Technik mindestens **zwei Prompt-Varianten** laufen. Vergleichen Sie dann:
 
 1. Formatstabilität,
 2. Übergriffigkeit (Spekulationen)

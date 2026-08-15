@@ -2,7 +2,7 @@
 lang: de
 title: "Public History und Geschichtsvermittlung"
 subtitle: "Wissenskommunikation entlang des Schreib- und Produktionsprozesses"
-description: "Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail, Quellen-Veto und methodischer Transparenz."
+description: "Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit KI-Protokoll, Quellen-Veto und methodischer Transparenz."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: '2026-08-14'
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -130,7 +130,7 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 - Einen Vermittlungskontext in Zielgruppen, Medium, Zweck und Rahmenbedingungen zerlegen (Kommunikationsbriefing).
 - Aus einem wissenschaftlichen Artikel eine Kernbotschaft (Message Map) und eine Evidenzmatrix ableiten, ohne neue Fakten zu erfinden.
 - Entwürfe in mehreren Public-History-Formaten erstellen (Blog, Audio, Social, Poster) und formatkonform überarbeiten.
-- Antwortn systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (Audit Trail).
+- Antworten systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (KI-Protokoll).
 - Ein Interview-Kit (Soundbites, Q&A, No-go-Liste, Transparenzstatement) vorbereiten.
 
 Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem Themenfeld. Z.B.:
@@ -149,7 +149,6 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 
 Begriffe (für diese Übung):
 
-- **Audit Trail (KI-Protokoll):** Dokumentation von Prompts, Antwortn, Entscheidungen, Korrekturen und Quellenstellen, sodass Ihr Prozess nachvollziehbar bleibt.
 - **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
 - **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
 
@@ -169,6 +168,8 @@ Geben Sie der KI nur Material, das Sie selbst kontrollieren können, und lassen 
 
 Planen Sie am Ende ein kurzes Transparenz-Element ein (z.B. «So wurde gearbeitet» / «KI-Unterstützung»): wofür KI genutzt wurde (Struktur/Sprachvarianten/Gegenlesen), wofür nicht (Fakten/Interpretationsentscheid).
 :::
+
+{{< include ../_ki-protokoll.qmd >}}
 
 ## Struktur der Übung
 

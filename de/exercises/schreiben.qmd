@@ -12,7 +12,7 @@ author:
   affiliations:
   - Universität Bern
 date: '2025-12-24'
-date-modified: today
+date-modified: '2026-08-14'
 categories: [Methoden]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -162,14 +162,7 @@ Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. 
 Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für *Ihr* Material (Notizen, Quellenexzerpte, Literaturzusammenfassungen, Gliederungsentwürfe). Wenn KI zusätzliche Fakten, Literatur oder Quellen nennt, gilt das als **Recherche-Hypothese**, die Sie **extern verifizieren** müssen.
 :::
 
-::: callout-note
-
-## Arbeitsmodus: KI-Protokoll (Audit Trail)
-
-Führen Sie während der Übung ein kurzes **KI-Protokoll**. Das ist Teil der wissenschaftlichen Nachvollziehbarkeit (und erleichtert spätere Offenlegung/Methodenteil).
-
-**Minimalvorlage** \| Feld \| Inhalt \| \|---\|---\| \| Rolle / Übung \| \| \| Ziel (1 Satz) \| \| \| Input (welches Material?) \| \| \| Prompt (Kernausschnitt) \| \| \| Antwort (kurz) \| \| \| Prüfschritte (wie verifiziert?) \| \| \| Entscheidung (übernommen/angepasst/verworfen + Begründung) \| \|
-:::
+{{< include ../_ki-protokoll.qmd >}}
 
 ## Voraussetzungen
 
