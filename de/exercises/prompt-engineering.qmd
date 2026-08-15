@@ -68,7 +68,7 @@ Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgeb
 
 Nach Abschluss der Übung können Sie:
 
-- Prompts **strukturieren** (strukturierter Kontext, Antwort-Format, Constraints, Prüfmodus),
+- Prompts **strukturieren** (strukturierter Kontext, Antwort-Format, [Vorgaben](../glossary.qmd#gl-constraints), Prüfmodus),
 - Rollen **gezielt** einsetzen (z. B. Quellenkritiker:in, Rechercheassistent:in, Devil’s Advocate, Lektor:in),
 - Zero-shot und Few-shot Prompting **situationsgerecht** wählen,
 - eine **strukturierte Denkspur** anfordern (Aufgabendecomposition, Zwischenprodukte, Self-Checks),
@@ -169,7 +169,7 @@ Fasse das Dokument zusammen und sag mir, was wichtig ist.
 **Aufgabe:** Erstellen Sie daraus zwei saubere Prompts:
 
 - **Variante A (minimal):** nur Ziel + Antwort-Format.
-- **Variante B (robust):** Ziel + strukturierter Kontext + Constraints + Antwort-Format + Self-Check.
+- **Variante B (robust):** Ziel + strukturierter Kontext + Vorgaben + Antwort-Format + Self-Check.
 
 Orientieren Sie sich am Setup aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Minimalparaphrase, max. 4 Sätze).
 
@@ -195,7 +195,7 @@ Self-Check:
 
 ### Ziel
 
-Rollen als **Methoden-Constraints** nutzen: jede Rolle erzwingt andere Heuristiken, Blindstellen und Prüfmodi.
+Rollen als **methodische Vorgaben** nutzen: jede Rolle erzwingt andere Heuristiken, Blindstellen und Prüfmodi.
 
 ### Übung 2A: Eine Aufgabe, drei Rollen
 
@@ -205,7 +205,7 @@ Lassen Sie dieselbe Aufgabe in drei Rollen bearbeiten:
 
 1. **Quellenkritiker:in** (textnah, Ebenen trennen) – siehe [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd).
 2. **Devil’s Advocate** (Stress-Tests, Gegenargumente) – siehe [Schreiben](schreiben.qmd).
-3. **Strukturierer:in/Outliner** (Arbeitsplan, Zwischenprodukte) – siehe [Public History](public-history.qmd) oder [Schreiben](schreiben.qmd).
+3. **Strukturierer:in** (Arbeitsplan, Zwischenprodukte) – siehe [Public History](public-history.qmd) oder [Schreiben](schreiben.qmd).
 
 **Rollen-Prompt (Beispiel: Quellenkritiker:in, stark begrenzend):**
 
@@ -247,7 +247,7 @@ Nehmen Sie die **beste** Antwort aus 2A und lassen Sie sie durch eine zweite Rol
 
 ## Definition: Zero-shot Prompting
 
-Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur Auftrag, Material und Constraints.
+Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur Auftrag, Material und Vorgaben.
 
 :::
 

@@ -172,7 +172,7 @@ Planen Sie am Ende ein kurzes Transparenz-Element ein (z.B. «So wurde gearbeite
 
 ## Struktur der Übung
 
-1. **Situationsanalyse**: Kontext + Zielgruppe + Zweck + Constraints (Briefing)
+1. **Situationsanalyse**: Kontext + Zielgruppe + Zweck + [Vorgaben](../glossary.qmd#gl-constraints) (Briefing)
 2. **Planung**: Kernbotschaft + Evidenz + Narrative Route (Message Map)
 3. **Entwurf**: Erstfassung (Blog oder Podcast) mit sauberer Beleglogik
 4. **Revision**: Fakten-/Belegcheck, Verständlichkeit, Ton, Ethik
@@ -192,7 +192,7 @@ Wählen Sie einen konkreten Vermittlungskontext (z.B. Museumsblog, Lokalzeitung,
 - Zielgruppe(n): Vorwissen, Interessen, mögliche Trigger/Missverständnisse
 - Zweck: informieren / kontextualisieren / Debatte eröffnen / Handlungswissen etc.
 - Medium/Format: Länge, Ton, Visualität/Audio, Interaktion
-- Constraints: Sprache(n), Zugänglichkeit (Accessibility), Terminologie, rechtliche/ethische Grenzen
+- Vorgaben: Sprache(n), Zugänglichkeit, Terminologie, rechtliche/ethische Grenzen
 - Erfolgskriterien: Was sollen Rezipierende nachher *wissen* / *können* / *anders sehen*?
 
 ### KI-Workflow (Prompt-Skizze)
@@ -259,7 +259,7 @@ Schreiben Sie einen Blogpost von ca. 700–1'000 Wörtern. Der Blogpost enthält
 
 ``` markdown
 Rolle: Du bist Blogredaktor:in. Schreibe einen Blogpost für folgenden Kontext.
-Constraints: Länge 900 Wörter, klare Zwischenüberschriften, keine neuen Fakten.
+Vorgaben: Länge 900 Wörter, klare Zwischenüberschriften, keine neuen Fakten.
 Nutze Claim-IDs im Text in eckigen Klammern, z.B. [C3].
 Material: Briefing + Quellenpaket + Message Map + Claim-Tabelle.
 ```

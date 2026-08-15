@@ -43,7 +43,7 @@ Die Übungen fördern:
 - **Reproduzierbarkeit** in Forschungsabläufen
 - **Datenschutz** und ethischen Datenumgang
 - **Urheberrechtsbewusstsein** und korrekte Zuordnung
-- **Nachhaltigkeit** durch Minimal Computing, also durch Verfahren mit geringem Rechenaufwand
+- **Nachhaltigkeit** durch [Minimal Computing](glossary.qmd#gl-minimal-computing), also durch Verfahren mit geringem Rechenaufwand
 - **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
 
 Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.

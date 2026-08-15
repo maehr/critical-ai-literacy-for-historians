@@ -132,7 +132,7 @@ Nach Abschluss dieser Übung können Sie:
 - KI als **heuristische Suchhilfe** nutzen (Keyword-Expansion, Query-Design, Screening),
 - Relevanz, Argumentation, Theorie und Methoden von Sekundärliteratur strukturiert beurteilen,
 - zentrale Debattenlinien und Forschungslücken identifizieren und daraus eine präzisierte Forschungsfrage ableiten,
-- Literaturmanagement reproduzierbar und zitationssicher umsetzen (Zotero/BibTeX, Suchprotokoll, Entscheidungslog).
+- Literaturmanagement reproduzierbar und zitationssicher umsetzen (Zotero/BibTeX, Rechercheprotokoll, KI-Protokoll).
 
 ## Was ist Literaturrecherche und Literaturanalyse?
 
@@ -291,7 +291,7 @@ Bedingungen:
 ### Kritischer Check
 
 - Kein Titel aus KI-Vorschlägen wird übernommen, ohne dass er im Katalog gefunden wurde.
-- Pro aufgenommenem Titel: notieren Sie den „Aufnahmerationale“ in 1 Satz.
+- Pro aufgenommenem Titel: notieren Sie in einem Satz, warum Sie ihn aufgenommen haben.
 
 ## 4. Systematische Suche II: Zeitschriften/Medien und Spezialpfade (Kontext, Reviews, Begriffe)
 
@@ -357,9 +357,9 @@ Markiere: welche 3 wären für einen „State of Research“-Abschnitt unverzich
 
 ### Kritischer Check
 
-Führen Sie ein *Reject-Log*: mind. 5 abgelehnte, aber „verführerisch plausible“ Treffer inkl. Ablehnungsgrund (falscher Zeitraum, falsche Arena, nur populärwissenschaftlich, etc.).
+Führen Sie im Rechercheprotokoll einen Abschnitt *Reject-Log*: mind. 5 abgelehnte, aber „verführerisch plausible“ Treffer inkl. Ablehnungsgrund (falscher Zeitraum, falsche Arena, nur populärwissenschaftlich, etc.).
 
-**Deliverable**: Snowball-Liste (≥ 30 Referenzen insgesamt) + Reject-Log (≥ 5).
+**Deliverable**: Snowball-Liste (≥ 30 Referenzen insgesamt) + Abschnitt *Reject-Log* (≥ 5).
 
 ## 6. Screening und Qualitätsbewertung: Relevanz, Argument, Methode, Evidenz
 
@@ -455,9 +455,9 @@ Literaturarbeit als nachvollziehbarer Forschungsprozess (FAIR-orientiert, zitati
 
 ### Mindestanforderungen
 
-- **Suchprotokoll**: Datum, System, Query, Filter, Treffer, Auswahlregeln (≥ 12 Einträge)
+- **Rechercheprotokoll, Abschnitt Suche**: Datum, System, Suchanfrage, Filter, Treffer, Auswahlregeln (≥ 12 Einträge)
 - **Zotero/BibTeX-Export**: Versionierter Stand (Datum), Dubletten-Strategie
-- **Entscheidungslog**: Warum Titel aufgenommen/abgelehnt (stichwortartig)
+- **Rechercheprotokoll, Abschnitt Entscheidungen**: Warum Titel aufgenommen oder abgelehnt (stichwortartig)
 - **KI-Protokoll (Anhang)**: 2–4 Prompts, gekürzte Antworten, Ihre Korrekturen/Rejects, Verwendungszweck
 
 ::: callout-warning
@@ -476,7 +476,7 @@ KI darf in dieser Übung helfen, Suchräume zu erweitern und Texte zu strukturie
 Am Ende verfügen Sie über diese Artefakte:
 
 1. Fokus-Statement und Debattenkarte (1–2 Seiten)
-2. Suchprotokoll (≥ 12 Einträge) und Reject-Log (≥ 5 Einträge)
+2. Rechercheprotokoll mit Abschnitt Suche (≥ 12 Einträge) und Abschnitt *Reject-Log* (≥ 5 Einträge)
 3. Kurzannotierte Bibliografie (10–15 Titel)
 4. Debattenmemo (400–600 Wörter)
 5. Forschungslücke, Forschungsfrage und Risikofeld (ca. 1 Seite)

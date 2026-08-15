@@ -312,7 +312,7 @@ Leitfragen:
 
 Analysieren Sie Perspektivenbegrenzungen:
 
-- Welche Interessen/Constraints hat der Autor als Departementschef?
+- Welche Interessen und Zwänge hat der Autor als Departementschef?
 - Welche Aspekte fehlen systematisch (z. B. juristische Dimensionen, internationale Reaktionen, innenpolitische Lager)?
 - Welche Alternativdeutungen wären aus anderen Positionen plausibel (z. B. Parteipolitik, Wirtschaft, Presse)?
 
@@ -419,7 +419,7 @@ Leite aus der Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) einen systematisch
 Vorgaben:
 - Keine Aussagen über den tatsächlichen Inhalt dieser Quellen.
 - Keine narrativen Synthesen.
-- Fokus ausschliesslich auf Prüfpfade und Gegenproben.
+- Fokus ausschliesslich auf Prüfschritte und Gegenproben.
 ```
 
 ### Reflexionsauftrag
@@ -508,6 +508,8 @@ Quellenkritik als **dokumentierte Methode**: nachvollziehbar, überprüfbar, wie
 
 ### Aufgabe 1: Analyseprotokoll (Minimalstandard)
 
+Das Analyseprotokoll dokumentiert die **Quelle**, nicht Ihre KI-Nutzung. Ihre KI-Nutzung halten Sie getrennt davon im KI-Protokoll fest.
+
 Legen Sie ein kurzes Protokoll an:
 
 - Vollzitat/Permalink der Quelle
@@ -519,7 +521,7 @@ Legen Sie ein kurzes Protokoll an:
 - Evidenzprofil (A/B-Liste)
 - Offene Fragen & nächste Rechercheschritte
 
-### Aufgabe 2: KI-Reflexion (wenn KI genutzt wurde)
+### Aufgabe 2: KI-Protokoll (wenn KI genutzt wurde)
 
 Notieren Sie:
 
@@ -532,7 +534,7 @@ Notieren Sie:
 
 ## Qualitätskriterium
 
-Eine gute Quellenkritik ist nicht die, die „alles erklärt“, sondern die, die **Grenzen und Prüfpfade** sichtbar macht: Was ist belegt? Was ist hypothetisch? Was müsste als Nächstes geprüft werden?
+Eine gute Quellenkritik ist nicht die, die „alles erklärt“, sondern die, die **Grenzen und Prüfschritte** sichtbar macht: Was ist belegt? Was ist hypothetisch? Was müsste als Nächstes geprüft werden?
 :::
 
 ## Lernergebnis

@@ -55,11 +55,17 @@ Eine Persona ist ein erfundenes Kurzprofil einer Zielgruppe mit Vorwissen, Motiv
 
 ## Nachweise und Prüfung
 
-### KI-Protokoll (Prompt-Protokoll, Audit Trail) {#gl-ki-protokoll}
+### KI-Protokoll {#gl-ki-protokoll}
 
-<!-- Die Definition dieses Begriffs gehört zur Übung Prompt Engineering (Issue #14). Hier steht nur der Verweis. -->
+Das KI-Protokoll dokumentiert Ihre KI-Nutzung: Material, Prompt, Antwort, Prüfschritte und Entscheidung. Die Definition, die Vorlage und ein ausgefülltes Beispiel stehen in der Übung [Prompt Engineering](exercises/prompt-engineering.qmd).
 
-Die Definition und die Vorlage stehen in der Übung [Prompt Engineering](exercises/prompt-engineering.qmd).
+### Rechercheprotokoll {#gl-rechercheprotokoll}
+
+Das Rechercheprotokoll dokumentiert Ihre Suche: Datum, System, Suchanfrage, Filter, Trefferzahl und Auswahlregeln. Es hält fest, wie Sie gesucht haben, nicht wie Sie KI genutzt haben.
+
+### Analyseprotokoll {#gl-analyseprotokoll}
+
+Das Analyseprotokoll dokumentiert eine einzelne Quelle: Vollzitat, Zugriffsdatum, Anzeigeform, äussere und innere Kritik sowie offene Fragen. Es beschreibt die Quelle, nicht Ihre KI-Nutzung.
 
 ### Quellen-Veto {#gl-quellen-veto}
 
@@ -123,6 +129,10 @@ Eine Message Map hält die Kernbotschaft eines Beitrags fest, dazu drei bis vier
 Der Einstieg ist der erste Abschnitt eines Beitrags, der das Interesse der Zielgruppe weckt.
 
 ## Technik, Daten und Nachweise
+
+### Minimal Computing {#gl-minimal-computing}
+
+Minimal Computing bezeichnet Verfahren, die mit wenig Rechenleistung, wenig Software und wenig Energie auskommen. Ziel ist, dass ein Projekt langfristig lauffähig, überprüfbar und ohne teure Infrastruktur nachnutzbar bleibt.
 
 ### Literaturverwaltungsprogramm (Zotero) {#gl-zotero}
 
