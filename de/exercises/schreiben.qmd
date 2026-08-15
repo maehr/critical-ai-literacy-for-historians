@@ -132,7 +132,7 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 ## LLM
 
-Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Internetzugriff und Datei-Upload gehören heute zur Grundausstattung. Es lohnt sich, vor dem Start diese vier Punkte zu klären:
+Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
 
 - **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
 - **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?

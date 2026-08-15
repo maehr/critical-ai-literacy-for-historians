@@ -53,7 +53,7 @@ Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, di
 
 ## LLM
 
-Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. Internetzugriff und Datei-Upload gehören heute zur Grundausstattung. Es lohnt sich, vor dem Start diese vier Punkte zu klären:
+Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
 
 - **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
 - **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
@@ -133,11 +133,13 @@ Ein Neustart garantiert aber **keinen leeren Kontext**. Viele Systeme führen ei
 
 **Prüfen Sie deshalb, was Ihr System übernimmt:**
 
-1. Beginnen Sie eine neue Session.
-2. Fragen Sie, was das System über Sie und über Ihre früheren Aufgaben weiss.
-3. Fragen Sie, woher diese Angaben stammen.
-4. Prüfen Sie die Einstellungen zu Speicher, Projekten und Chatverlauf.
-5. Notieren Sie das Ergebnis im KI-Protokoll.
+1. Prüfen Sie die Einstellungen zu Speicher, Projekten und Chatverlauf. Diese Einstellungen sind der belastbare Nachweis.
+2. Beginnen Sie eine neue Session.
+3. Fragen Sie, was das System über Sie und über Ihre früheren Aufgaben weiss.
+4. Fragen Sie, woher diese Angaben stammen.
+5. Vergleichen Sie die Antworten mit den Einstellungen. Notieren Sie Abweichungen im KI-Protokoll.
+
+Die Antwort des Systems über den eigenen Speicher ist eine Selbstauskunft, kein Nachweis. Behandeln Sie sie wie jede andere KI-Ausgabe: als Behauptung, die Sie prüfen.
 
 Nutzen Sie einen Neustart insbesondere, wenn:
 
