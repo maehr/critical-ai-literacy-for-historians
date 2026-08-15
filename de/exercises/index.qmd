@@ -3,11 +3,20 @@ title: Übungen
 lang: de
 listing:
   id: exercises
+  # Lernreihenfolge, nicht alphabetisch. "sort: false" behält diese Reihenfolge bei.
+  contents:
+    - prompt-engineering.qmd
+    - literaturrecherche-sozialversicherung-ch.qmd
+    - formulieren-historische-forschungsfrage-schweiz-europarat.qmd
+    - quellensuche-vorort-europarat-1963.qmd
+    - quellenkritik-bundesrat-europarat-1949.qmd
+    - schreiben.qmd
+    - zitieren.qmd
+    - public-history.qmd
+  sort: false
   type: table
   categories: true
   fields: [title, subtitle, description, categories]
-  exclude: 
-    title: "Übungen" # exercises/index.qmd
 citation: false
 ---
 

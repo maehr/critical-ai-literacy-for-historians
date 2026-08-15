@@ -3,12 +3,20 @@ title: "Kritische KI-Kompetenz für Historiker:innen"
 lang: de
 listing:
   id: exercises
-  contents: exercises
+  # Lernreihenfolge, nicht alphabetisch. "sort: false" behält diese Reihenfolge bei.
+  contents:
+    - exercises/prompt-engineering.qmd
+    - exercises/literaturrecherche-sozialversicherung-ch.qmd
+    - exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd
+    - exercises/quellensuche-vorort-europarat-1963.qmd
+    - exercises/quellenkritik-bundesrat-europarat-1949.qmd
+    - exercises/schreiben.qmd
+    - exercises/zitieren.qmd
+    - exercises/public-history.qmd
+  sort: false
   type: grid
   categories: true
   fields: [image, title, subtitle, description, categories]
-  exclude: 
-    title: "Übungen" # exercises/index.qmd
 ---
 
 ## Willkommen
@@ -35,6 +43,7 @@ Die Übungen fördern:
 - **Reproduzierbarkeit** in Forschungsabläufen
 - **Datenschutz** und ethischen Datenumgang
 - **Urheberrechtsbewusstsein** und korrekte Zuordnung
+- **Nachhaltigkeit** durch Minimal Computing, also durch Verfahren mit geringem Rechenaufwand
 - **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
 
 Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.
@@ -62,7 +71,7 @@ Dieser Pfad konzentriert sich auf die Literaturrecherche und die Vermittlung his
 
 1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Grundlagen der Interaktion mit LLMs.
 2. [**Literaturrecherche**](exercises/literaturrecherche-sozialversicherung-ch.qmd): Sekundärliteratur finden und bewerten.
-3. [**Forschungsfrage**](exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd): (Adaptiert) Eine Forschungsfrage formulieren.
+3. [**Forschungsfrage**](exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd): Eine Forschungsfrage formulieren. Die Übung nutzt das Beispiel Europarat. Übertragen Sie jeden Schritt auf das Thema Sozialversicherung.
 4. [**Schreiben**](exercises/schreiben.qmd): Texte verfassen und überarbeiten.
 5. [**Zitieren**](exercises/zitieren.qmd): KI-Nutzung korrekt ausweisen.
 6. [**Public History**](exercises/public-history.qmd): Geschichte für ein breites Publikum aufbereiten.

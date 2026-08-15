@@ -3,11 +3,20 @@ title: "Critical AI Literacy for Historians"
 lang: en
 listing:
   id: exercises
-  contents: exercises
+  # Learning order, not alphabetical order. "sort: false" keeps this order.
+  contents:
+    - exercises/prompt-engineering.qmd
+    - exercises/literature-research-social-security-ch.qmd
+    - exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd
+    - exercises/source-search-vorort-council-of-europe-1963.qmd
+    - exercises/source-criticism-federal-council-council-of-europe-1949.qmd
+    - exercises/writing.qmd
+    - exercises/citing.qmd
+    - exercises/public-history.qmd
+  sort: false
   type: grid
+  categories: true
   fields: [image, title, subtitle, description, categories]
-  exclude:
-    title: "Exercises" # exercises/index.qmd
 aliases:
   - /index.html
 ---
@@ -64,7 +73,7 @@ This track focuses on literature research and communicating historical topics to
 
 1. [**Prompt Engineering**](exercises/prompt-engineering.qmd): Basics of interacting with LLMs.
 2. [**Literature Research**](exercises/literature-research-social-security-ch.qmd): Finding and evaluating secondary literature.
-3. [**Research Question**](exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd): (Adapted) Formulating a research question.
+3. [**Research Question**](exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd): Formulating a research question. The exercise uses the Council of Europe as its example. Transfer each step to the topic of social security.
 4. [**Writing**](exercises/writing.qmd): Drafting and refining historical texts.
 5. [**Citing**](exercises/citing.qmd): Properly documenting AI use.
 6. [**Public History**](exercises/public-history.qmd): Presenting history for a broad audience.

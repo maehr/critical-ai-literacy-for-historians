@@ -41,9 +41,18 @@ website:
       contents:
         - text: 'About'
           href: en/index.qmd
+        # Learning order, not alphabetical order. See en/index.qmd.
         - section: 'Exercises'
           href: en/exercises/index.qmd
-          contents: en/exercises/*
+          contents:
+            - en/exercises/prompt-engineering.qmd
+            - en/exercises/literature-research-social-security-ch.qmd
+            - en/exercises/formulating-historical-research-question-switzerland-council-of-europe.qmd
+            - en/exercises/source-search-vorort-council-of-europe-1963.qmd
+            - en/exercises/source-criticism-federal-council-council-of-europe-1949.qmd
+            - en/exercises/writing.qmd
+            - en/exercises/citing.qmd
+            - en/exercises/public-history.qmd
         - text: Glossary
           href: en/glossary.qmd
         - text: Bibliography
@@ -55,9 +64,18 @@ website:
       contents:
         - text: 'Über'
           href: de/index.qmd
-        - text: 'Übungen'
+        # Lernreihenfolge, nicht alphabetisch. Siehe de/index.qmd.
+        - section: 'Übungen'
           href: de/exercises/index.qmd
-          contents: de/exercises/*
+          contents:
+            - de/exercises/prompt-engineering.qmd
+            - de/exercises/literaturrecherche-sozialversicherung-ch.qmd
+            - de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd
+            - de/exercises/quellensuche-vorort-europarat-1963.qmd
+            - de/exercises/quellenkritik-bundesrat-europarat-1949.qmd
+            - de/exercises/schreiben.qmd
+            - de/exercises/zitieren.qmd
+            - de/exercises/public-history.qmd
         - text: Glossar
           href: de/glossary.qmd
         - text: Bibliographie
@@ -69,9 +87,18 @@ website:
       contents:
         - text: 'À propos'
           href: fr/index.qmd
+        # Ordre d'apprentissage, et non alphabétique. Voir fr/index.qmd.
         - section: 'Exercices'
           href: fr/exercises/index.qmd
-          contents: fr/exercises/*
+          contents:
+            - fr/exercises/prompt-engineering.qmd
+            - fr/exercises/recherche-bibliographique-securite-sociale-ch.qmd
+            - fr/exercises/formuler-question-recherche-historique-suisse-conseil-europe.qmd
+            - fr/exercises/recherche-sources-vorort-conseil-europe-1963.qmd
+            - fr/exercises/critique-sources-conseil-federal-conseil-europe-1949.qmd
+            - fr/exercises/ecriture.qmd
+            - fr/exercises/citer.qmd
+            - fr/exercises/public-history.qmd
         - text: Glossaire
           href: fr/glossary.qmd
         - text: Bibliographie
