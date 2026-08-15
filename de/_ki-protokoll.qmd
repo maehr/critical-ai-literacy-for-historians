@@ -33,7 +33,7 @@ Für den Prompt und für die Antwort gelten unterschiedliche Regeln:
 - **Prompt: wörtlich.** Kopieren Sie den Prompt genau so, wie Sie ihn eingegeben haben. Ist der Prompt sehr lang, kopieren Sie den Kernausschnitt und kürzen Sie mit `[…]`.
 - **Antwort: zusammengefasst.** Fassen Sie die Antwort in zwei bis drei Sätzen zusammen. Kopieren Sie eine Stelle nur dann wörtlich, wenn Sie diese Stelle in Ihren Text übernehmen oder wenn Sie einen Fehler der KI belegen wollen.
 
-Wie viele Einträge eine Übung verlangt, steht in der jeweiligen Übung.
+Wie viel eine Übung verlangt, steht in der jeweiligen Übung. Manche Übungen nennen eine Zahl von Einträgen, andere einen Umfang in Wörtern. Nennt eine Übung nichts, führen Sie für jeden Arbeitsschritt mit KI einen Eintrag.
 
 ### Vorlage für einen Eintrag
 
