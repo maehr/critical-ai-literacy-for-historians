@@ -74,9 +74,9 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 - **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
 - **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
 - **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training unterscheiden sich.
+- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihres Setups.
+Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
 
 :::
 

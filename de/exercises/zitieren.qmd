@@ -129,9 +129,9 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 - **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
 - **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
 - **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training unterscheiden sich.
+- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihres Setups.
+Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
 
 :::
 
@@ -400,6 +400,7 @@ Ein System mit Websuche ruft den Artikel in der Regel selbst über den DOI ab. P
 
 Nur im Ausnahmefall, wenn die KI keinen Zugriff auf den Artikel erhält, laden Sie den Artikel als PDF hoch. Sie können auch Inhalt und Metadaten an den Anfang des Prompts kopieren und visuell abgrenzen, beispielsweise durch """. Beispiel:
 
+``` markdown
 """
 INHALT DOKUMENT
 """
@@ -409,6 +410,7 @@ METADATEN DOKUMENT
 """
 
 IHR PROMPT
+```
 :::
 
 Vergleichen Sie die Antwort mit Ihrer manuellen Zitation, den offiziellen Zitierempfehlungen auf der Verlagsseite bzw. dem DOI-Import in Zotero. Testen Sie weitere Sekundärliteraturquellen (andere Artikel, Monographien).
