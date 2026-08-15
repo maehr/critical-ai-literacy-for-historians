@@ -1,0 +1,157 @@
+---
+lang: de
+title: 'Glossar'
+description: 'Kurze Arbeitsdefinitionen der Fachbegriffe, die in den Übungen vorkommen.'
+date: '2026-08-14'
+date-modified: '2026-08-14'
+toc-depth: 2
+draft: false
+citation: false
+---
+
+Dieses Glossar erklärt die Begriffe, die in den Übungen ohne weitere Erklärung vorkommen. Jeder Eintrag ist eine Arbeitsdefinition für diesen Kurs und kein Lexikonartikel. Die Übungen sprechen von einem **KI-System**, wenn ein Programm auf einem grossen Sprachmodell beruht. Wo ein Begriff aus dem Englischen stammt, steht der deutsche Arbeitsbegriff zuerst und der englische Begriff in Klammern.
+
+## KI-Systeme und Prompts
+
+### Grosses Sprachmodell (Large Language Model, LLM) {#gl-llm}
+
+Ein grosses Sprachmodell ist ein Computerprogramm, das aus sehr vielen Texten gelernt hat und zu einer Eingabe das wahrscheinlichste nächste Wort ergänzt.
+
+### Prompt (Arbeitsanweisung) {#gl-prompt}
+
+Ein Prompt ist Ihre schriftliche Arbeitsanweisung an ein KI-System, mit Material, Ziel, Grenzen und gewünschtem Antwortformat.
+
+### Vorgaben (Constraints) {#gl-constraints}
+
+Vorgaben sind die Grenzen, die Sie im Prompt setzen, zum Beispiel die Textlänge, die erlaubten Quellen oder die verbotenen Aussagen.
+
+### Prompt ohne Beispiele (Zero-shot) {#gl-zero-shot}
+
+Beim Zero-shot erhält das KI-System nur den Auftrag und das Material, aber kein Beispiel für die gewünschte Antwort.
+
+### Prompt mit wenigen Beispielen (Few-shot) {#gl-few-shot}
+
+Beim Few-shot erhält das KI-System zwei bis fünf Musterantworten, damit Format und Qualität der Antwort stabil bleiben.
+
+### Strukturierte Denkspur (Chain-of-Thought) {#gl-chain-of-thought}
+
+Eine strukturierte Denkspur ist die Aufforderung an das KI-System, die Zwischenschritte offenzulegen (die Zwischenschritte sind Prüfhilfen, keine Belege).
+
+### Halluzination {#gl-halluzination}
+
+Eine Halluzination ist eine Antwort des KI-Systems, die plausibel klingt, aber falsch oder nicht belegt ist.
+
+### Verzerrung (Bias) {#gl-bias}
+
+Eine Verzerrung ist eine einseitige Auswahl oder Bewertung in Quellen, Daten, Modellen, Suchsystemen oder Interpretationen.
+
+### Sitzung (Session) {#gl-session}
+
+Eine Sitzung ist ein zusammenhängendes Gespräch mit einem KI-System, in dem das System den bisherigen Verlauf mitliest.
+
+### Persona {#gl-persona}
+
+Eine Persona ist ein erfundenes Kurzprofil einer Zielgruppe mit Vorwissen, Motiven und möglichen Missverständnissen.
+
+## Nachweise und Prüfung
+
+### KI-Protokoll (Prompt-Protokoll, Audit Trail) {#gl-ki-protokoll}
+
+<!-- Die Definition dieses Begriffs gehört zur Übung Prompt Engineering (Issue #14). Hier steht nur der Verweis. -->
+
+Die Definition und die Vorlage stehen in der Übung [Prompt Engineering](exercises/prompt-engineering.qmd).
+
+### Quellen-Veto {#gl-quellen-veto}
+
+Ein Quellen-Veto heisst: Sie verwerfen eine Aussage des KI-Systems, wenn das bereitgestellte oder nachprüfbare Material sie nicht deckt.
+
+### Behauptung (Claim) und Claim-ID {#gl-claim}
+
+Eine Behauptung ist eine einzelne überprüfbare Aussage in Ihrem Text, und die Claim-ID ist ihre kurze Nummer wie «C3».
+
+### Triangulation {#gl-triangulation}
+
+Triangulation heisst, dass Sie eine Aussage mit mindestens zwei unabhängigen Quellen prüfen.
+
+### Heuristik {#gl-heuristik}
+
+Eine Heuristik ist eine Faustregel für die Suche, die schnell zu einem brauchbaren, aber nicht gesicherten Ergebnis führt.
+
+## Recherche
+
+### Schneeballverfahren (Snowballing) {#gl-snowballing}
+
+Beim Schneeballverfahren folgen Sie den Literaturangaben eines Textes rückwärts und suchen vorwärts nach Texten, die diesen Text zitieren.
+
+### Boolesche Operatoren (Boolean) {#gl-boolean}
+
+Boolesche Operatoren sind die Suchwörter AND, OR und NOT, die Suchbegriffe in einer Datenbank verbinden oder ausschliessen.
+
+### Trunkierung {#gl-trunkierung}
+
+Trunkierung heisst, dass Sie ein Wort abschneiden und mit einem Platzhalter alle Wortformen suchen (`Sozial*` findet Sozialversicherung und Sozialpolitik).
+
+### Sichtung (Screening) {#gl-screening}
+
+Bei der Sichtung prüfen Sie die Treffer rasch auf Relevanz und sortieren sie in «behalten» oder «verwerfen».
+
+### Reject-Log {#gl-reject-log}
+
+Ein Reject-Log hält fest, welche Treffer Sie verworfen haben und aus welchem Grund.
+
+### Findmittel {#gl-findmittel}
+
+Findmittel sind die Verzeichnisse eines Archivs, die zeigen, welche Bestände vorhanden sind und wie sie geordnet sind.
+
+
+## Schreiben und Vermittlung
+
+### Arbeitsergebnis (Deliverable) {#gl-deliverable}
+
+Ein Arbeitsergebnis ist das greifbare Produkt eines Arbeitsschritts, das Sie abgeben oder ablegen (eine Liste, eine Tabelle, ein Text).
+
+### Vergleichsgrundlage (Baseline) {#gl-baseline}
+
+Eine Vergleichsgrundlage ist ein erstes, einfaches Ergebnis, an dem Sie alle späteren Fassungen messen.
+
+### Message Map {#gl-message-map}
+
+Eine Message Map hält die Kernbotschaft eines Beitrags fest, dazu drei bis vier Stützpunkte und die Bedeutung für die Zielgruppe.
+
+### Einstieg (Hook) {#gl-hook}
+
+Der Einstieg ist der erste Abschnitt eines Beitrags, der das Interesse der Zielgruppe weckt.
+
+## Technik, Daten und Nachweise
+
+### Literaturverwaltungsprogramm (Zotero) {#gl-zotero}
+
+Ein Literaturverwaltungsprogramm wie Zotero speichert Ihre Titelangaben und erzeugt daraus Fussnoten und Literaturverzeichnisse.
+
+### BibTeX {#gl-bibtex}
+
+BibTeX ist ein Dateiformat für Titelangaben, das Literaturverwaltungsprogramme und Satzprogramme lesen können.
+
+### DOI {#gl-doi}
+
+Ein DOI (Digital Object Identifier) ist eine dauerhafte Nummer für eine Publikation, die immer zur gleichen Fundstelle führt.
+
+### Permalink {#gl-permalink}
+
+Ein Permalink ist eine Internetadresse, die dauerhaft auf dasselbe Dokument zeigt.
+
+### Texterkennung (OCR) {#gl-ocr}
+
+Die Texterkennung wandelt das Bild einer Seite in durchsuchbaren Text um und macht dabei Fehler.
+
+### Markdown {#gl-markdown}
+
+Markdown ist eine einfache Schreibweise, die Überschriften, Listen und Hervorhebungen mit wenigen Zeichen markiert.
+
+### FAIR-Prinzipien {#gl-fair}
+
+Die FAIR-Prinzipien fordern, dass Forschungsdaten auffindbar, zugänglich, kombinierbar und nachnutzbar sind. Der Wortlaut steht bei [GO FAIR](https://www.go-fair.org/fair-principles/) und in @wilkinson2016fair.
+
+### CARE-Prinzipien {#gl-care}
+
+Die CARE-Prinzipien fordern, dass Daten den betroffenen Gemeinschaften nützen und dass diese Gemeinschaften über ihre Daten mitbestimmen. Der Wortlaut steht bei der [Global Indigenous Data Alliance](https://www.gida-global.org/care) und in @carroll2020care.

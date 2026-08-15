@@ -1,0 +1,14 @@
+---
+lang: en
+title: 'TRANSLATION NEEDED: Glossary'
+description: 'Translation needed'
+date: '2026-08-14'
+date-modified: '2026-08-14'
+draft: true
+citation: false
+---
+
+::: {.callout-warning title="Translation Needed"}
+
+This glossary is currently only available in German. See [Glossar](../de/glossary.qmd).
+:::

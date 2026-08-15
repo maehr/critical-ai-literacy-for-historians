@@ -10,6 +10,9 @@ website:
   repo-url: https://github.com/maehr/critical-ai-literacy-for-historians/
   issue-url: https://github.com/maehr/critical-ai-literacy-for-historians/issues/new/choose
   repo-actions: [edit, issue]
+  # Temporary: keeps the draft en/fr glossary stubs in the sidebar.
+  # Remove once the porting issues (#23, #24) replace both stubs.
+  draft-mode: visible
   page-navigation: true
   bread-crumbs: true
   back-to-top-navigation: true
@@ -41,6 +44,8 @@ website:
         - section: 'Exercises'
           href: en/exercises/index.qmd
           contents: en/exercises/*
+        - text: Glossary
+          href: en/glossary.qmd
         - text: Bibliography
           href: en/bibliography.qmd
     - id: de
@@ -53,6 +58,8 @@ website:
         - text: 'Übungen'
           href: de/exercises/index.qmd
           contents: de/exercises/*
+        - text: Glossar
+          href: de/glossary.qmd
         - text: Bibliographie
           href: de/bibliography.qmd
     - id: fr
@@ -65,6 +72,8 @@ website:
         - section: 'Exercices'
           href: fr/exercises/index.qmd
           contents: fr/exercises/*
+        - text: Glossaire
+          href: fr/glossary.qmd
         - text: Bibliographie
           href: fr/bibliography.qmd
 format:
