@@ -13,16 +13,7 @@ Use this skill when the user asks to create a new exercise or to add a module.
 
 - Choose the topic and a unique slug, for example `bias-in-ocr`.
 - Write the full exercise in German. German leads. English and French follow.
-- Choose exactly one category. The four categories are the complete list.
-
-| German                 | English              | French                   |
-| ---------------------- | -------------------- | ------------------------ |
-| KI & Digitale Methoden | AI & Digital Methods | IA & Méthodes numériques |
-| Quellen                | Sources              | Sources                  |
-| Methoden               | Methods              | Méthodes                 |
-| Public History         | Public History       | Public History           |
-
-- Do not invent a category. Ethics is a tag, and not a category.
+- Choose exactly one category from the table in `AGENTS.md` section 4. Do not invent a category, and do not copy the table into another file. Ethics is a tag, and not a category.
 - Choose three to five tags in the language of the file.
 - Choose a `difficulty` value: `Beginner`, `Intermediate`, or `Advanced`.
 - Choose an honest `time_estimate`, for example `'60 min'` or `'2 d'`.
@@ -64,27 +55,9 @@ draft: true
 ---
 ```
 
-Use the section structure from `AGENTS.md` section 11:
+Use the section structure from `AGENTS.md` section 11. Close the file with the bibliography division:
 
 ```markdown
-## Überblick und didaktisches Ziel
-
-## Voraussetzungen
-
-## Lernziele
-
-## 1. [Erster Schritt]
-
-### Ziel
-
-### Aufgabe
-
-### Aufgabe ... mittels KI
-
-### Arbeitsauftrag (Reflexion)
-
-## Lernergebnis
-
 ## Bibliographie
 
 ::: {#refs}
@@ -116,8 +89,7 @@ This exercise exists in German only.
 - Do not name an AI product, an AI vendor, or a model. Describe the capability that the tool needs.
 - Name the audit trail KI-Protokoll. Do not use another name.
 - Add every new term to `de/glossary.qmd`, then link to the anchor of the entry.
-- Use only the five Quarto callout types: `note`, `tip`, `important`, `caution`, and `warning`.
-- Caution: `callout-info` is not a valid type. Quarto renders such a block without a title bar.
+- Caution: `callout-info` is not valid. Use only `note`, `tip`, `important`, `caution`, and `warning`.
 - State the workload of the exercise before the first step.
 
 ## 4. Next Steps
