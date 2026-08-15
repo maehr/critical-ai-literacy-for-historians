@@ -10,7 +10,7 @@ author:
   affiliations:
   - University of Bern
 date: '2025-12-24'
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Methods]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -77,11 +77,11 @@ You can complete this exercise with LLMs from different providers. For this exer
 
 ## Methodological Framework: AI as Writing Infrastructure
 
-In this exercise, AI is understood as a **heuristic writing tool**: it assists with *formulations, structuring, and verification*, but it replaces neither **source work** nor **interpretative decisions**.[@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodologically helpful is a clear division of labor:
+In this exercise, AI is understood as a **heuristic writing tool**: it assists with *formulations, structuring, and verification*, but it replaces neither **source work** nor **interpretative decisions**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodologically helpful is a clear division of labor:
 
 - **Historical authorship:** Research question, evidence selection, interpretation, normative positions.
 - **AI contribution (instrumental):** Generate variants, structure suggestions, readability tests, error diagnosis.
-- **Verification procedure (mandatory):** Every AI statement must either (a) be traceable to your input material or (b) be marked as a hypothesis and externally verified.[@turingway2022handbook]
+- **Verification procedure (mandatory):** Every AI statement must either (a) be traceable to your input material or (b) be marked as a hypothesis and externally verified. [@turingway2022handbook]
 
 For more reliable work, consistently use two prompt principles: 1. **Delimiting the workspace** ("work only with my bullet points; mark uncertainties"). 2. **Formatted responses** (lists/argument maps), so you can systematically verify and selectively adopt.
 

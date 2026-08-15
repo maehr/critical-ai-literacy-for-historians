@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [IA & Méthodes numériques]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -27,7 +27,7 @@ references: []
 
 ## Aperçu et objectif didactique
 
-Cet exercice rend le prompt visible **en tant que méthode**: les prompts ne sont pas ici des « astuces », mais des **opérationalisations** de tâches de recherche historique.[@campbell2025historian; @oberbichler2025implementing]
+Cet exercice rend le prompt visible **en tant que méthode**: les prompts ne sont pas ici des « astuces », mais des **opérationalisations** de tâches de recherche historique. [@campbell2025historian; @oberbichler2025implementing]
 
 Vous vous entraînerez à:
 
@@ -42,7 +42,7 @@ Contrairement aux exercices thématiques ([Question de recherche](formuler-quest
 
 ## Règle de base: L'IA comme hypothèse
 
-Chaque fois que le modèle fournit des faits, de la littérature, des archives, des signatures ou des citations qui ne proviennent pas de votre input ou de références vérifiables, traitez cela comme une **hypothèse** (pas comme un résultat).[@bender2021stochastic] Votre travail reste: **contre-vérification, vérification, décision**.
+Chaque fois que le modèle fournit des faits, de la littérature, des archives, des signatures ou des citations qui ne proviennent pas de votre input ou de références vérifiables, traitez cela comme une **hypothèse** (pas comme un résultat). [@bender2021stochastic] Votre travail reste: **contre-vérification, vérification, décision**.
 :::
 
 ## Prérequis
@@ -110,7 +110,7 @@ TÂCHE
 
 :::
 
-::: callout-info
+::: callout-tip
 
 ## Redémarrage de session comme instrument de contrôle
 
@@ -222,7 +222,7 @@ Prenez la **meilleure** réponse de 2A et faites-la **examiner** par un second r
 
 ## 3. Prompting Zero-shot: Objectif
 
-::: callout-info
+::: callout-note
 
 ## Prompting Zero-shot
 
@@ -247,7 +247,7 @@ Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conse
 Maximum 4 phrases. Pas d'interprétation.
 ```
 
-::: callout-info
+::: callout-tip
 
 ## Téléchargement de la source
 
@@ -288,7 +288,7 @@ Pour chaque question, nomme quels types de sources supplémentaires j'ai besoin 
 
 ## 4. Prompting Few-shot: Objectif
 
-::: callout-info
+::: callout-note
 
 ## Prompting Few-shot
 
@@ -343,7 +343,7 @@ Pour chaque question:
 
 ## 5. Trace de réflexion structurée: Objectif
 
-::: callout-info
+::: callout-note
 
 ## Prompting Chain-of-Thought
 
@@ -399,7 +399,7 @@ Réponse: Tableau (Sous-question | Preuve | Chaîne de recherche | Lieu de reche
 
 ## 6. Prompting itératif: Objectif
 
-::: callout-info
+::: callout-note
 
 ## Prompting itératif
 

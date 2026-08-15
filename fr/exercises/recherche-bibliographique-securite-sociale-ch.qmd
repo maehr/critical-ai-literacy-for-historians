@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Méthodes]
 image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
 tags:
@@ -139,7 +139,7 @@ Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Po
 
 ## Remarque sur la recherche en ligne
 
-Malgré la numérisation croissante, la recherche historique ne peut pas être entièrement menée en ligne.[@milligan2019history] En particulier, la littérature secondaire épuisée et les sources non encore cataloguées nécessitent souvent des recherches physiques dans les bibliothèques et les archives. Planifiez l'accès (bibliothèque, prêt inter-bibliothèques, archives) et notez que les plateformes/catalogues structurent la visibilité (logique de catalogage) et ne garantissent pas l'exhaustivité.[@putnam2016shadows]
+Malgré la numérisation croissante, la recherche historique ne peut pas être entièrement menée en ligne. [@milligan2019history] En particulier, la littérature secondaire épuisée et les sources non encore cataloguées nécessitent souvent des recherches physiques dans les bibliothèques et les archives. Planifiez l'accès (bibliothèque, prêt inter-bibliothèques, archives) et notez que les plateformes/catalogues structurent la visibilité (logique de catalogage) et ne garantissent pas l'exhaustivité. [@putnam2016shadows]
 :::
 
 ## Structure de l'exercice

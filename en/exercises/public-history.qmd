@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -153,7 +153,7 @@ Terms (for this exercise):
 - **Source Veto:** Any narrative sharpening is allowed, **provided** it does not contradict the statements documented in the article.
 - **Claim-by-claim Check:** Statements are decomposed as verifiable *claims*, linked to evidence or marked as speculation.
 
-Search engines and AI systems structure visibility in problematic ways.[@noble2018oppression] AI-generated content for public history applications carries particular risks, as it reaches a broad audience without professional expertise.[@bender2021stochastic]
+Search engines and AI systems structure visibility in problematic ways. [@noble2018oppression] AI-generated content for public history applications carries particular risks, as it reaches a broad audience without professional expertise. [@bender2021stochastic]
 
 ::: callout-important
 

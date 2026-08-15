@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-14"
+date-modified: "2026-08-15"
 categories: [Methoden]
 image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
 tags:
@@ -146,7 +146,7 @@ Nach Abschluss dieser Übung können Sie:
 
 ## Hinweis zur online Recherche
 
-Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar.[@milligan2019history] Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016shadows]
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. [@milligan2019history] Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren. [@putnam2016shadows]
 :::
 
 ## Struktur der Übung
@@ -233,7 +233,7 @@ Extrahieren Sie:
 ### Aufgabe (KI-Exploration)
 
 ``` markdown
-Ausgehend von folgenden Begriffen/ Fixpunkten: [einfügen]
+Ausgehend von folgenden Begriffen und Fixpunkten: <hier Ihre 6 Fixpunkte und 5 Debattenmarker einfügen>
 1) Baue eine Debattenkarte (4–6 Debattenachsen) zur Geschichte der Sozialversicherung in der Schweiz.
 2) Ordne jeder Achse 5–8 Autoren-/Werktypen zu, die man typischerweise erwarten würde (ohne konkrete Titel zu erfinden).
 3) Leite daraus 10 Suchstrings für Kataloge ab (Boolean, Phrasen).
@@ -319,7 +319,7 @@ Extrahieren Sie:
 ### Aufgabe (KI-Exploration)
 
 ``` markdown
-Aus diesen 5 Abstracts/Titeln: [einfügen]
+Aus diesen 5 Abstracts und Titeln: <hier Ihre 5 Abstracts oder Titel einfügen>
 1) Clustere sie nach Fragelogik (institutionell, akteurszentriert, ideengeschichtlich, politökonomisch, gender).
 2) Schlage 2 Anschluss-Keywords pro Cluster vor (DE/FR/EN) und nenne je 1 typischen „blinden Fleck“.
 ```
@@ -349,7 +349,7 @@ Dokumentieren Sie:
 ### Aufgabe (KI-Exploration)
 
 ``` markdown
-Hier sind 10 Referenzen aus der Bibliografie eines Seed-Texts: [einfügen]
+Hier sind 10 Referenzen aus der Bibliografie eines Seed-Texts: <hier Ihre 10 Referenzen einfügen>
 Ordne sie nach:
 (a) Debattenachse, (b) Methode, (c) erwarteter Quellenbasis.
 Markiere: welche 3 wären für einen „State of Research“-Abschnitt unverzichtbar – und begründe.
@@ -383,7 +383,7 @@ Wenden Sie es auf 6 Titel aus Ihrem Korpus an (Kurz-Exzerpt, 150–250 Wörter j
 ### Aufgabe (KI-Exploration)
 
 ``` markdown
-Nutze dieses Raster: [einfügen]
+Nutze dieses Raster: <hier Ihr Bewertungsraster einfügen>
 Erstelle für jeden der folgenden Titel/Abstracts eine strukturierte Kurzannotation (max. 180 Wörter),
 inkl. (1) vermuteter Beitrag, (2) methodischer Zugriff, (3) potenzielle Bias/Limitation.
 Wenn Informationen fehlen: explizit als „unklar“ markieren, nicht ergänzen.
@@ -413,7 +413,7 @@ Schreiben Sie ein 400–600 Wörter Debattenmemo:
 ### Aufgabe (KI-Exploration)
 
 ``` markdown
-Hier ist mein Debattenmemo: [einfügen]
+Hier ist mein Debattenmemo: <hier Ihr Debattenmemo einfügen>
 1) Identifiziere implizite Annahmen (Agency/Struktur, Staat/Privat, Normativität, Zeitdiagnosen).
 2) Schlage 2 alternative Strukturierungen vor (z. B. nach Arenen statt nach Themen).
 3) Nenne 5 gezielte Rückfragen, die ich an die Literatur stellen sollte, um Forschungslücken präzise zu formulieren.
@@ -437,7 +437,7 @@ Formulieren Sie:
 ### Aufgabe (KI-Exploration)
 
 ``` markdown
-Ausgehend von dieser Forschungslücke: [einfügen]
+Ausgehend von dieser Forschungslücke: <hier Ihren Forschungslückensatz einfügen>
 Formuliere 4 Varianten einer analytischen historischen Forschungsfrage.
 Für jede Variante:
 - mögliche Fallabgrenzung (Zeit/Raum/Arena),
@@ -471,16 +471,20 @@ KI darf in dieser Übung helfen, Suchräume zu erweitern und Texte zu strukturie
 - historiografische Urteilsbildung.
 :::
 
-# Abgabe (kompakt)
+## Lernergebnis
 
-1. Fokus-Statement + Debattenkarte (1–2 Seiten)
-2. Suchprotokoll (≥ 12 Einträge) + Reject-Log (≥ 5)
+Am Ende verfügen Sie über diese Artefakte:
+
+1. Fokus-Statement und Debattenkarte (1–2 Seiten)
+2. Suchprotokoll (≥ 12 Einträge) und Reject-Log (≥ 5 Einträge)
 3. Kurzannotierte Bibliografie (10–15 Titel)
 4. Debattenmemo (400–600 Wörter)
-5. Forschungslücke + Forschungsfrage + Risikofeld (ca. 1 Seite)
+5. Forschungslücke, Forschungsfrage und Risikofeld (ca. 1 Seite)
 6. KI-Protokoll (Anhang)
 
-# Optional: Advanced Track (digital methods)
+Dazu kommt eine methodische Einsicht: Sie können begründen, welche Treffer ein Katalog zeigt und welche er systematisch verbirgt.
+
+## Optional: Advanced Track (digitale Methoden)
 
 - Exportieren Sie Metadaten (Titel/Autor/Jahr/Keywords) aus swisscovery/Zotero.
 

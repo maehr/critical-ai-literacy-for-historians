@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Sources]
 image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
@@ -41,7 +41,7 @@ references:
 
 ## Aperçu et objectif didactique
 
-Cet exercice forme des **compétences de recherche transférables**: de l'opérationnalisation précise d'une question de recherche à travers des **stratégies de recherche systématiques** et **non systématiques (snowball)** jusqu'à l'**évaluation critique** des sources (provenance, contexte, biais, pertinence).[@putnam2016shadows] L'IA générative est utilisée ici comme **aide heuristique** (clarification conceptuelle, expansion de mots-clés, voies de recherche).[@milligan2019history]
+Cet exercice forme des **compétences de recherche transférables**: de l'opérationnalisation précise d'une question de recherche à travers des **stratégies de recherche systématiques** et **non systématiques (snowball)** jusqu'à l'**évaluation critique** des sources (provenance, contexte, biais, pertinence). [@putnam2016shadows] L'IA générative est utilisée ici comme **aide heuristique** (clarification conceptuelle, expansion de mots-clés, voies de recherche). [@milligan2019history]
 
 L'étude de cas est la question de recherche:\
 **Quel rôle l'Union suisse du commerce et de l'industrie (Vorort) a-t-elle joué dans le processus décisionnel pour l'adhésion au Conseil de l'Europe en 1963 ?**

@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Méthodes]
 image: ../../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.png
 tags:
@@ -51,7 +51,7 @@ L'exercice suit une **compréhension circulaire de la recherche**: les résultat
 
 ## Remarque sur la recherche en ligne
 
-Malgré la numérisation croissante, la recherche historique ne peut pas être entièrement menée en ligne. En particulier, la littérature secondaire épuisée et les sources non encore cataloguées nécessitent souvent des recherches physiques dans les bibliothèques et les archives. Planifiez l'accès (bibliothèque, prêt inter-bibliothèques, archives) et notez que les plateformes/catalogues structurent la visibilité (logique de catalogage) et ne garantissent pas l'exhaustivité.[@putnam2016shadows] La critique des sources numériques nécessite une attention particulière à la création et à la conservation des collections en ligne.[@fickers2022criticism]
+Malgré la numérisation croissante, la recherche historique ne peut pas être entièrement menée en ligne. En particulier, la littérature secondaire épuisée et les sources non encore cataloguées nécessitent souvent des recherches physiques dans les bibliothèques et les archives. Planifiez l'accès (bibliothèque, prêt inter-bibliothèques, archives) et notez que les plateformes/catalogues structurent la visibilité (logique de catalogage) et ne garantissent pas l'exhaustivité. [@putnam2016shadows] La critique des sources numériques nécessite une attention particulière à la création et à la conservation des collections en ligne. [@fickers2022criticism]
 :::
 
 ## Prérequis

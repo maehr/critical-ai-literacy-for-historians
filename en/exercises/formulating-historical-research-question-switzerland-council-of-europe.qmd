@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Methods]
 image: ../../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.png
 tags:
@@ -51,7 +51,7 @@ The exercise follows a **circular understanding of research**: results from indi
 
 ## Note on Online Research
 
-Despite advancing digitization, historical research cannot be conducted entirely online. In particular, out-of-print secondary literature and sources not yet catalogued often require physical research in libraries and archives. Plan for access (library, interlibrary loan, archive) and note that platforms/catalogs structure visibility (cataloging logic) and do not guarantee completeness.[@putnam2016shadows] Digital source criticism requires special attention to the creation and curation of online collections.[@fickers2022criticism]
+Despite advancing digitization, historical research cannot be conducted entirely online. In particular, out-of-print secondary literature and sources not yet catalogued often require physical research in libraries and archives. Plan for access (library, interlibrary loan, archive) and note that platforms/catalogs structure visibility (cataloging logic) and do not guarantee completeness. [@putnam2016shadows] Digital source criticism requires special attention to the creation and curation of online collections. [@fickers2022criticism]
 :::
 
 ## Prerequisites

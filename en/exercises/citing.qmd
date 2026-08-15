@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 categories: [Methods]
 image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
 tags:
@@ -152,7 +152,7 @@ Citations tie arguments to:
 - **Primary sources** (contemporary documents, files, letters, protocols, etc.)
 - **Secondary literature** (later scholarly interpretations)
 
-Without this linkage, historical texts lose their scholarly character and become mere narrative.[@turingway2022handbook]
+Without this linkage, historical texts lose their scholarly character and become mere narrative. [@turingway2022handbook]
 
 ## Purposes of Citation
 

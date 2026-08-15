@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-14"
+date-modified: "2026-08-15"
 categories: [Methoden]
 image: ../../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.png
 tags:
@@ -23,20 +23,6 @@ tags:
   - KI-gestützt
 draft: false
 references:
-- id: altermatt-casasus-2013-europarat
-  type: book
-  title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
-  editor:
-    - family: Altermatt
-      given: Bernhard
-    - family: Casasus
-      given: Gilbert
-  publisher: "Rüegger"
-  ISBN: "978-3-7253-1005-0"
-  issued:
-    year: 2013
-  publisher-place: "Schweiz"
-  note: "Sammelband herausgegeben im Auftrag des Centre d’Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft" 
 - id: altermatt-casasus-2013-europarat
   type: book
   title: "50 Jahre Engagement der Schweiz im Europarat 1963–2013: Die Schweiz als Akteur oder Zaungast der europäischen Integration?"
@@ -65,7 +51,7 @@ Die Übung folgt einem **zirkulären Forschungsverständnis**: Ergebnisse einzel
 
 ## Hinweis zur online Recherche
 
-Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren.[@putnam2016shadows] Digitale Quellenkritik erfordert besondere Aufmerksamkeit für die Entstehung und Kuratierung von Online-Sammlungen.[@fickers2022criticism]
+Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren. [@putnam2016shadows] Digitale Quellenkritik erfordert besondere Aufmerksamkeit für die Entstehung und Kuratierung von Online-Sammlungen. [@fickers2022criticism]
 :::
 
 ## Voraussetzungen
@@ -154,10 +140,10 @@ Identifizieren Sie:
 - Auslassungen,
 - Begriffsverschiebungen oder Vereinfachungen.
 
-Gezielte Rückfragen an die KI:
+Gezielte Rückfragen an die KI: Setzen Sie das Element ein, das Sie in der Antwort vermissen. Das Beispiel nennt den Forschungsstand.
 
 ``` markdown
-Warum fehlt das Element X?
+Warum fehlt das Element «Forschungsstand»?
 ```
 
 ``` markdown
@@ -201,10 +187,10 @@ Vergleichen Sie den Überblick mit:
 - [Dodis: Beitritt zum Europarat 1963](https://www.dodis.ch/de/beitritt-zum-europarat-1963)
 - [Wikipedia: Europarat](https://de.wikipedia.org/wiki/Europarat) (mit Vorsicht nutzen, schauen Sie die [Diskussionsseite](https://de.wikipedia.org/wiki/Diskussion:Europarat) an)
 
-Gezielte Nachfragen:
+Gezielte Nachfragen: Setzen Sie den Aspekt ein, den Sie vermissen. Weitere Beispiele sind EMRK und EGMR.
 
 ``` markdown
-Warum fehlt der Aspekt X (z. B. Neutralität, EMRK, EGMR)?
+Warum fehlt der Aspekt «Neutralität»?
 ```
 
 ``` markdown
@@ -238,14 +224,17 @@ Welche offenen Fragen oder Forschungslücken bestehen in der bisherigen Forschun
 - @altermatt-casasus-2013-europarat
 - [Historisches Lexikon der Schweiz: Europarat](https://hls-dhs-dss.ch/de/articles/026470/2009-10-29/)
 
-Gezielte Rückfragen:
+Gezielte Rückfragen: Setzen Sie den Titel ein, den Sie in der Antwort vermissen. Das Beispiel nennt den Sammelband von Altermatt und Casasus.
 
 ``` markdown
-Warum fehlt das Werk X?
+Warum fehlt das Werk «50 Jahre Engagement der Schweiz im Europarat 1963–2013»?
 ```
 
+Setzen Sie in die zweite Rückfrage Ihre eigene Frage und Ihr eigenes Werk ein.
+
 ``` markdown
-Warum wird Frage Y als Forschungslücke bezeichnet, obwohl sie in Werk Z behandelt wird?
+Warum wird die Frage nach der Rolle der Neutralität als Forschungslücke bezeichnet,
+obwohl sie in «50 Jahre Engagement der Schweiz im Europarat 1963–2013» behandelt wird?
 ```
 
 ## 4. Quellenlage und Machbarkeit
@@ -256,8 +245,12 @@ Einschätzung, ob eine Forschungsfrage **quellenbasiert bearbeitbar** ist.
 
 ### Aufgabe (Primärquellen)
 
+Ersetzen Sie im folgenden Prompt die Beispielfrage durch Ihre eigene Arbeitsfrage.
+
 ``` markdown
-Welche Primärquellen eignen sich zur Untersuchung der Forschungsfrage X?
+Welche Primärquellen eignen sich zur Untersuchung der Forschungsfrage
+«Wie wurde Neutralität zwischen 1949 und 1963 als Argument gegen einen Beitritt
+der Schweiz zum Europarat verwendet?»
 ```
 
 Falls nötig:
@@ -296,8 +289,12 @@ Transformation einer offenen Fragestellung in eine **präzise analytische histor
 
 ### Aufgabe (Eingrenzung)
 
+Ersetzen Sie im folgenden Prompt die Beispielfrage durch Ihre eigene Arbeitsfrage.
+
 ``` markdown
-Schlage mögliche zeitliche, räumliche und thematische Eingrenzungen für die Forschungsfrage X vor.
+Schlage mögliche zeitliche, räumliche und thematische Eingrenzungen für die Forschungsfrage
+«Wie wurde Neutralität zwischen 1949 und 1963 als Argument gegen einen Beitritt
+der Schweiz zum Europarat verwendet?» vor.
 ```
 
 ### Aufgabe (Formulierung)

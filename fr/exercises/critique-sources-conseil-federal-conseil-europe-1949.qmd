@@ -21,7 +21,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: today
+date-modified: "2026-08-15"
 references:
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -49,7 +49,7 @@ Cet exercice enseigne des **compétences transférables en critique des sources*
 
 ## Remarque sur la transmission numérique
 
-La source utilisée ici est disponible dans une **édition numérique préparée éditorialement**. Pour la critique des sources, non seulement le texte mais aussi la **couche éditoriale** (métadonnées, cote d'archives, liens, directives éditoriales) font partie de l'objet d'investigation.[@fickers2022criticism]
+La source utilisée ici est disponible dans une **édition numérique préparée éditorialement**. Pour la critique des sources, non seulement le texte mais aussi la **couche éditoriale** (métadonnées, cote d'archives, liens, directives éditoriales) font partie de l'objet d'investigation. [@fickers2022criticism]
 :::
 
 ## Prérequis
@@ -125,7 +125,7 @@ Quelle est la déclaration/décision centrale ?
 Quelle conséquence est indiquée ?
 ```
 
-::: callout-info
+::: callout-tip
 
 ## Téléchargement de la source
 

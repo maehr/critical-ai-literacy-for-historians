@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: '2026-08-14'
+date-modified: "2026-08-15"
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -144,14 +144,6 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 
 - <https://doi.org/10.1093/pastj/gtae018>
 
-### Abgabeformate (Minimum)
-
-1. **Kommunikationsbriefing** (1 Seite)
-2. **Message Map + Evidenzmatrix** (Tabellen- oder Stichpunktform)
-3. **Blogpost** (ca. 700–1’000 Wörter) *oder* **Podcast-Skript** (ca. 6–8 Minuten)
-4. **Zwei Kurzformate** aus: Social Media, Poster-Textbausteine, Interview-Kit
-5. **KI-Protokoll** (Prompt-/Antwort-Log + Reflexionsnotiz, ca. 300–500 Wörter)
-
 ## Methodischer Rahmen: KI als kritisch-reflektierte Vermittlungsinfrastruktur
 
 Begriffe (für diese Übung):
@@ -159,7 +151,7 @@ Begriffe (für diese Übung):
 - **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
 - **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
 
-Suchmaschinen und KI-Systeme strukturieren Sichtbarkeit auf problematische Weise.[@noble2018oppression] KI-generierte Inhalte für Public-History-Anwendungen bergen besondere Risiken, da sie ein breites Publikum ohne Fachexpertise erreichen.[@bender2021stochastic]
+Suchmaschinen und KI-Systeme strukturieren Sichtbarkeit auf problematische Weise. [@noble2018oppression] KI-generierte Inhalte für Public-History-Anwendungen bergen besondere Risiken, da sie ein breites Publikum ohne Fachexpertise erreichen. [@bender2021stochastic]
 
 ::: callout-important
 
@@ -255,7 +247,13 @@ Ein textliches Basismodell erstellen, das als Referenz für weitere Adaptionen d
 
 ### Aufgabe
 
-Schreiben Sie einen Blogpost (ca. 700–1’000 Wörter) mit: - Einstieg, der Zielgruppe und Zweck trifft - klare Abschnittsstruktur (Zwischentitel) - expliziter Beleglogik (Claim-IDs oder Fussnoten/Verweise auf Belegstellen) - «Was wir wissen / was wir nicht wissen» (kurzer Abschnitt) - Call-to-action/Weiterlesen (z.B. Link auf Artikel, Glossar, Quellen)
+Schreiben Sie einen Blogpost von ca. 700–1'000 Wörtern. Der Blogpost enthält:
+
+- einen Einstieg, der Zielgruppe und Zweck trifft,
+- eine klare Abschnittsstruktur mit Zwischentiteln,
+- eine explizite Beleglogik (Claim-IDs oder Fussnoten und Verweise auf Belegstellen),
+- einen kurzen Abschnitt «Was wir wissen und was wir nicht wissen»,
+- einen Call-to-action zum Weiterlesen, zum Beispiel einen Link auf Artikel, Glossar oder Quellen.
 
 ### KI-Workflow (Prompt-Skizze)
 
@@ -308,7 +306,13 @@ Die folgenden Aufgaben sind bewusst als **Adaptionen** konzipiert: Sie recyclen 
 
 **Ziel:** Kernbotschaft in ein *Aufmerksamkeitsmedium* übersetzen, ohne Overclaiming.
 
-**Aufgabe** - 1 Single Post (max. 280–500 Zeichen, je nach Plattform) + 1 Thread (5–7 Posts) - 1 «Kontext-Post»: Begriffe/Einordnung - 1 «Unsicherheiten-Post»: Grenzen, offene Fragen - 1 Link-/Quellenhinweis (formatgerecht)
+**Aufgabe:**
+
+- 1 Single Post (max. 280–500 Zeichen, je nach Plattform)
+- 1 Thread (5–7 Posts)
+- 1 «Kontext-Post» mit Begriffen und Einordnung
+- 1 «Unsicherheiten-Post» mit Grenzen und offenen Fragen
+- 1 formatgerechter Link- oder Quellenhinweis
 
 **KI-Workflow**
 
@@ -322,7 +326,11 @@ Input: Message Map + Blog-Textauszug + Kontext.
 
 **Ziel:** Argument und Kontext im Audioformat (Stimme, Rhythmus, Beispiele) vermitteln.
 
-**Aufgabe** - Skript mit Segmenten (Hook, Kontext, 2–3 Kernpunkte, Einordnung, Abschluss) - sprechbare Sprache (kurze Sätze, aktive Verben) - Show Notes: 5 Bulletpoints + Quellenhinweis + Glossar (3 Begriffe)
+**Aufgabe:**
+
+- 1 Skript mit den Segmenten Hook, Kontext, 2–3 Kernpunkte, Einordnung und Abschluss
+- sprechbare Sprache mit kurzen Sätzen und aktiven Verben
+- Show Notes mit 5 Bulletpoints, 1 Quellenhinweis und 1 Glossar mit 3 Begriffen
 
 **KI-Workflow**
 
@@ -336,7 +344,12 @@ Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Ra
 
 **Ziel:** Visuelle Hierarchie + knappe Texte, die auch ohne Vorwissen funktionieren.
 
-**Aufgabe** - Headline (max. 10 Wörter), Subheadline (max. 20 Wörter) - 3 Textblöcke (je max. 60 Wörter): «Worum geht’s?», «Was ist neu?», «Warum relevant?» - Bild-/Grafiklegende (max. 30 Wörter) + Quellenangabe - QR-Text (max. 15 Wörter) + Linkziel
+**Aufgabe:**
+
+- 1 Headline (max. 10 Wörter) und 1 Subheadline (max. 20 Wörter)
+- 3 Textblöcke zu je max. 60 Wörtern: «Worum geht's?», «Was ist neu?», «Warum relevant?»
+- 1 Bild- oder Grafiklegende (max. 30 Wörter) mit Quellenangabe
+- 1 QR-Text (max. 15 Wörter) mit Linkziel
 
 **KI-Workflow**
 
@@ -354,7 +367,13 @@ Souverän, präzise und risikoarm über Forschung sprechen können – inkl. «N
 
 ### Aufgabe
 
-Erstellen Sie ein Interview-Kit (1–2 Seiten): - **3 Soundbites** (je 12–20 Sekunden, sinngemäss) - **5 Kernfragen** + kurze Antworten (je 3–5 Sätze) - **2 kritische Fragen** (z.B. «Ist das nicht…?») + Brückenstrategien - **No-go-Liste**: Aussagen, die Sie *nicht* machen (wegen Evidenz/Komplexität/Ethik) - **Transparenzsatz** zu Methode und Datenlage (1–2 Sätze)
+Erstellen Sie ein Interview-Kit von 1–2 Seiten. Das Kit enthält:
+
+- **3 Soundbites** von je 12–20 Sekunden, sinngemäss formuliert,
+- **5 Kernfragen** mit kurzen Antworten von je 3–5 Sätzen,
+- **2 kritische Fragen** (zum Beispiel «Ist das nicht…?») mit Brückenstrategien,
+- eine **No-go-Liste** mit Aussagen, die Sie *nicht* machen, weil Evidenz, Komplexität oder Ethik dagegen sprechen,
+- einen **Transparenzsatz** zu Methode und Datenlage (1–2 Sätze).
 
 ### KI-Workflow (Prompt-Skizze)
 
@@ -368,6 +387,18 @@ Input: Message Map + Quellenpaket + Blog-/Podcast-Entwurf.
 
 - Stimmen Soundbites mit Claim-IDs überein oder «rutschen» sie in Übertreibung?
 - Sind Brückenstrategien inhaltlich ehrlich (kein Ausweichen ohne Einordnung)?
+
+## Lernergebnis
+
+Am Ende verfügen Sie über diese Artefakte:
+
+1. **Kommunikationsbriefing** (1 Seite)
+2. **Message Map und Evidenzmatrix** (Tabellen- oder Stichpunktform)
+3. **Blogpost** (ca. 700–1'000 Wörter) *oder* **Podcast-Skript** (ca. 6–8 Minuten)
+4. **Zwei Kurzformate** aus: Social Media, Poster-Textbausteine, Interview-Kit
+5. **KI-Protokoll** mit Prompts, Antworten und einer Reflexionsnotiz (ca. 300–500 Wörter)
+
+Dazu kommt eine methodische Einsicht: Sie können begründen, wo die KI eine Vermittlung verbessert und wo Sie die Verantwortung für Evidenz und Deutung selbst tragen.
 
 ## Weiterführende Ressourcen
 

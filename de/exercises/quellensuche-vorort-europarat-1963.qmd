@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-14"
+date-modified: "2026-08-15"
 categories: [Quellen]
 image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
@@ -41,7 +41,7 @@ references:
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung trainiert **übertragbare Recherchekompetenzen**: von der präzisen Operationalisierung einer Forschungsfrage über **systematische** und **unsystematische (Snowball-)Suchstrategien** bis zur **kritischen Bewertung** von Quellen (Provenienz, Kontext, Bias, Relevanz).[@putnam2016shadows] Generative KI wird dabei als **heuristisches Hilfsmittel** eingesetzt (Begriffsklärung, Keyword-Expansion, Suchpfade).[@milligan2019history]
+Diese Übung trainiert **übertragbare Recherchekompetenzen**: von der präzisen Operationalisierung einer Forschungsfrage über **systematische** und **unsystematische (Snowball-)Suchstrategien** bis zur **kritischen Bewertung** von Quellen (Provenienz, Kontext, Bias, Relevanz). [@putnam2016shadows] Generative KI wird dabei als **heuristisches Hilfsmittel** eingesetzt (Begriffsklärung, Keyword-Expansion, Suchpfade). [@milligan2019history]
 
 Als Fallbeispiel dient die Forschungsfrage:\
 **Welche Rolle spielte der Schweizerische Handels- und Industrie-Verein (Vorort) im Entscheidungsprozess zum Europaratsbeitritt 1963?**
@@ -99,12 +99,14 @@ Nach Abschluss der Übung können Sie:
 
 1. Forschungsfrage operationalisieren\
 2. Quellenarten und Evidenzlogik\
-3. Systematische Suche I: Tertiärquellen und Kontextgerüst\
+3. Systematische Suche I: Kontextgerüst über Tertiärquellen\
 4. Systematische Suche II: Kataloge, Datenbanken, Amtsdruckschriften\
-5. Unsystematische Suche: Snowballing aus Kernliteratur und Dossiers\
-6. Archive und Findmittel: Provenienzlogik und Bestandsbildung\
-7. Quellenkritik: Bewertungsraster und Minimaldokumentation\
-8. KI-Reflexion: kontrollierte Nutzung, Nachweis, Fehlerkultur
+5. Systematische Recherche: Sekundärliteratur und Referenzwerke\
+6. Unsystematische Suche: Snowballing\
+7. Archivrecherche: Findmittel, Bestände, Zugang\
+8. Iteration, Reproduzierbarkeit und KI-Reflexion
+
+Die quellenkritische Bewertung der gefundenen Dokumente ist nicht Teil dieser Übung. Sie üben diesen Schritt in der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd).
 
 ## 1. Forschungsfrage operationalisieren
 
@@ -255,8 +257,13 @@ Dokumentieren Sie:
 
 ### Aufgabe B (KI-gestützt): Suchbegriffe optimieren
 
+Ersetzen Sie im folgenden Prompt die Beispielzeilen durch Ihre eigenen Suchbegriffe und Trefferprobleme.
+
 ``` markdown
-Hier sind meine bisherigen Suchbegriffe und Trefferprobleme: [einfügen].
+Hier sind meine bisherigen Suchbegriffe und Trefferprobleme:
+- "Vorort AND Europarat": 3 Treffer, alle nach 1990.
+- "SHIV AND Beitritt": 0 Treffer.
+- "Interessenverband AND Europapolitik": über 800 Treffer, kaum einschlägig.
 Optimiere die Suchbegriffe für Kataloge (Boolean, Phrasen, Trunkierung).
 Gib 6 Varianten an und erkläre kurz, welches Problem jede Variante adressiert.
 ```
@@ -290,11 +297,13 @@ Wählen Sie:
 
 ### Aufgabe (KI-Exploration)
 
+Ersetzen Sie im folgenden Prompt die beiden Beispielangaben durch Ihre eigenen acht Angaben.
+
 ``` markdown
 Ich habe folgende 8 Literatur- oder Quellenangaben:
-1. ___
-2. ___
-…
+1. Altermatt, Bernhard und Gilbert Casasus (Hg.): 50 Jahre Engagement der Schweiz im Europarat 1963–2013. Zürich 2013.
+2. Dodis-Dokument 5020: Aktennotiz Petitpierre, Bern, 7.7.1949.
+3. …
 Ordne sie nach (a) Primär/Sekundär, (b) Arena, (c) potenzieller Erkenntniswert
 für die Rolle des Vororts.
 Schlage je eine Anschlussrecherche vor.
@@ -373,13 +382,17 @@ Mindestens:
 - gekürzte Antworten,
 - begründete Korrekturen oder Rejects.
 
-## Abgabe
+## Lernergebnis
+
+Am Ende verfügen Sie über diese Artefakte:
 
 1. Quellen-Matrix (Teilfragen × Quellentypen)
 2. Rechercheprotokoll (≥ 15 Einträge)
 3. Shortlist: 10 Primärquellen-Einheiten
 4. Kurzannotierte Bibliografie (8–12 Titel)
 5. Reflexion zum KI-Einsatz inkl. KI-Protokoll
+
+Dazu kommt eine methodische Einsicht: Sie können begründen, welche Suchwege belastbare Treffer liefern und wo eine KI-Antwort nur plausibel klingt.
 
 ## Weiterführende Ressourcen
 
