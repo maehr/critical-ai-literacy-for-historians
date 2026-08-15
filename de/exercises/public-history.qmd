@@ -2,7 +2,7 @@
 lang: de
 title: "Public History und Geschichtsvermittlung"
 subtitle: "Wissenskommunikation entlang des Schreib- und Produktionsprozesses"
-description: "Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit Audit-Trail, Quellen-Veto und methodischer Transparenz."
+description: "Übungsset zur zielgruppenorientierten Vermittlung eines wissenschaftlichen Artikels in mehreren Formaten (Blog, Podcast, Social Media, Poster, Interview) – mit KI-Protokoll, Quellen-Veto und methodischer Transparenz."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -130,7 +130,7 @@ Sie können die Übung mit LLMs von unterschiedlichen Herstellern durchführen. 
 - Einen Vermittlungskontext in Zielgruppen, Medium, Zweck und Rahmenbedingungen zerlegen (Kommunikationsbriefing).
 - Aus einem wissenschaftlichen Artikel eine Kernbotschaft (Message Map) und eine Evidenzmatrix ableiten, ohne neue Fakten zu erfinden.
 - Entwürfe in mehreren Public-History-Formaten erstellen (Blog, Audio, Social, Poster) und formatkonform überarbeiten.
-- Antwortn systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (Audit Trail).
+- Antworten systematisch prüfen (Claim-by-claim, Quellen-Veto, Unsicherheiten markieren) und Änderungen nachvollziehbar dokumentieren (KI-Protokoll).
 - Ein Interview-Kit (Soundbites, Q&A, No-go-Liste, Transparenzstatement) vorbereiten.
 
 Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem Themenfeld. Z.B.:

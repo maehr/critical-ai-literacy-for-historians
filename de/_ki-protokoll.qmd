@@ -1,6 +1,6 @@
 <!-- Gemeinsamer Erklärtext zum KI-Protokoll. Die Übungen binden diese Datei mit dem include-Shortcode ein. -->
 
-### KI-Protokoll: Ihr Forschungsjournal für die KI-Nutzung
+:::: {.callout-note collapse="true" title="KI-Protokoll: Ihr Forschungsjournal für die KI-Nutzung (aufklappen)"}
 
 Ein **KI-Protokoll** ist eine kurze Dokumentation Ihrer KI-Nutzung. Sie halten in jedem Eintrag fest: welches Material Sie eingegeben haben, was Sie gefragt haben, was die KI geantwortet hat, wie Sie die Antwort geprüft haben und wie Sie entschieden haben.
 
@@ -15,7 +15,7 @@ In der englischsprachigen Literatur heisst dieses Protokoll **Audit Trail**. Der
 Schreiben Sie den Eintrag direkt nach dem Arbeitsschritt, nicht am Ende der Übung. Nach einer Stunde kennen Sie den genauen Wortlaut Ihres Prompts nicht mehr.
 :::
 
-#### Wo Sie das Protokoll führen
+### Wo Sie das Protokoll führen
 
 Sie brauchen kein besonderes Werkzeug. Eine Textdatei oder ein Dokument in Ihrer Textverarbeitung genügt. Auch eine Tabelle in einem Tabellenprogramm ist möglich.
 
@@ -24,7 +24,7 @@ Sie brauchen kein besonderes Werkzeug. Eine Textdatei oder ein Dokument in Ihrer
 3. Schreiben Sie jeden Eintrag untereinander in dieselbe Datei.
 4. Speichern Sie die Datei zusammen mit Ihrer Abgabe.
 
-#### Wie lang ein Eintrag ist
+### Wie lang ein Eintrag ist
 
 Ein Eintrag ist kurz. Er umfasst fünf bis zehn Zeilen und kostet Sie ein bis zwei Minuten. Ein Eintrag deckt einen Arbeitsschritt ab, also einen Prompt und die dazugehörige Antwort.
 
@@ -35,7 +35,7 @@ Für den Prompt und für die Antwort gelten unterschiedliche Regeln:
 
 Wie viele Einträge eine Übung verlangt, steht in der jeweiligen Übung.
 
-#### Vorlage für einen Eintrag
+### Vorlage für einen Eintrag
 
 Kopieren Sie diese Tabelle für jeden Eintrag neu.
 
@@ -69,7 +69,7 @@ Wenn Sie in Markdown schreiben, kopieren Sie diesen Quelltext:
 
 Eine Liste mit denselben Feldern ist ebenso gültig. Wählen Sie die Form, die Sie schneller ausfüllen.
 
-#### Ein ausgefüllter Eintrag als Beispiel
+### Ein ausgefüllter Eintrag als Beispiel
 
 Das Beispiel stammt aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd). Eine Studentin prüft dort eine Aktennotiz vom 7. Juli 1949.
 
@@ -88,3 +88,4 @@ Das Beispiel stammt aus der Übung [Quellenkritik](quellenkritik-bundesrat-europ
 Der Eintrag zeigt den Normalfall: Ein Teil der Antwort ist brauchbar, ein Teil ist falsch, und ein Teil ist unbelegt.
 
 Beachten Sie die dritte Kategorie. Die Studentin behauptet nicht, die Signatur sei erfunden. Sie hält nur fest, was sie prüfen kann: Die Signatur steht nicht im Material. Ob es den Bestand gibt, ist eine andere Frage. Sie können eine Angabe erst dann als falsch bezeichnen, wenn Sie sie geprüft haben. Bis dahin ist sie unbelegt. Diese Unterscheidung ist der Kern der Quellenkritik, und sie gilt auch gegenüber der KI.
+::::
