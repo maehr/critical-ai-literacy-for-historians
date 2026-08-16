@@ -12,7 +12,7 @@ author:
   affiliations:
   - Universität Bern
 date: '2025-12-24'
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Methoden]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -48,7 +48,7 @@ references:
 - id: kompass_geschichtsstudium_2025
   type: book
   title: Kompass Geschichtsstudium
-  subtitle: Version HS 2025
+  subtitle: Version FS 2026
   author:
   - family: Luther
     given: Johannes
@@ -59,10 +59,10 @@ references:
   - family: Tinner
     given: Tamara Ann
   issued:
-    year: 2025
+    year: 2026
   publisher: Historisches Seminar, Universität Zürich
-  note: Offizielle Studienanleitung; aktualisiert am 21. Juli 2025
-  URL: https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf
+  note: Offizielle Studienanleitung; aktualisiert am 26. Januar 2026
+  URL: https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf
   abstract: Systematic overview of study requirements and methods in history, including
     digital competence and citation of AI-based tools.
 - id: leitfaden_bremen_2025
@@ -529,7 +529,7 @@ Am Ende haben Sie ein kleines Paket an Artefakten, das wissenschaftlich weiterve
 ## Weiterführende Ressourcen
 
 - [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Grenzen, Halluzinationen, Verifikation und kritische Nutzung von LLMs.
-- [The Turing Way](https://the-turing-way.netlify.app/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
+- [The Turing Way](https://book.the-turing-way.org/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
 
 ## Bibliographie
 

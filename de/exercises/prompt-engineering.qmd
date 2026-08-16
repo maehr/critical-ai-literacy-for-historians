@@ -703,11 +703,11 @@ Am Ende verfügen Sie über diese Artefakte:
 - [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Interaktive Erklärung, wie Transformer-basierte Sprachmodelle funktionieren.
 - [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Next-Token-Prediction und Grundlagen generativer KI.
 - [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Grenzen, Halluzinationen, Verifikation und kritische Nutzung.
-- [Prompt Engineering Guide](https://www.promptingguide.ai)
-- [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
-- [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
-- [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
+- [Prompt Engineering Guide](https://www.promptingguide.ai) – Herstellerneutrale Übersicht über Prompting und seine Grundbegriffe.
+- [Prompt Engineering Guide: Techniken](https://www.promptingguide.ai/techniques) – Zero-Shot, Few-Shot und Chain-of-Thought, jeweils mit Beispielen.
+- [Prompt Engineering Guide: Risiken und Fehlanwendungen](https://www.promptingguide.ai/risks) – Prompt Injection, erfundene Fakten und Verzerrungen.
+- [Learn Prompting](https://learnprompting.org/docs/introduction) – Offener Kurs zu Prompting, von den Grundlagen bis zu fortgeschrittenen Techniken.
+- [Wikipedia: Prompt Engineering](https://de.wikipedia.org/wiki/Prompt_Engineering) – Enzyklopädischer Überblick mit Belegen zur Forschungsliteratur.
 - [YouTube-Playlist: Kritische KI-Kompetenz (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Videoreihe zu Machine Learning, Sprachmodellen, Prompting, Bias, Datenvisualisierung, Evaluationsverfahren und Open Science. (GERMAN only)
 - @sternfeld2023historian – Erklärt, wie ein maschinelles Lernsystem aus einem Datensatz «lernt» und warum KI als soziotechnisches System und nicht als autonome Instanz funktioniert.
 

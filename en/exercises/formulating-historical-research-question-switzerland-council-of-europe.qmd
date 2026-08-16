@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Methods]
 image: ../../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.png
 tags:
@@ -123,7 +123,7 @@ What steps are necessary to develop a historical research question?
 Compare the AI response systematically with:
 
 - [History Toolkit (University of Basel)](https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf)
-- [Compass for History Studies (University of Zurich)](https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf) (GERMAN only)
+- [Compass for History Studies (University of Zurich)](https://www.hist.uzh.ch/de/studium/geschichte-studieren-in-zuerich/studienrelevante-dokumente/kompass.html) (GERMAN only)
 - [Guide to Historical Studies (University of Bremen)](https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf) (GERMAN only)
 - [Study Guide History Department (University of Hamburg)](https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf) (GERMAN only)
 

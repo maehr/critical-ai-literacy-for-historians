@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [IA & Méthodes numériques]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -524,11 +524,11 @@ Auto-vérification: Nomme 3 contre-preuves plausibles ou interprétations altern
 - [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Explication interactive du fonctionnement des modèles de langage basés sur les transformers.
 - [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Prédiction du prochain token et bases de l'IA générative.
 - [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et utilisation critique.
-- [Prompt Engineering Guide](https://www.promptingguide.ai)
-- [OpenAI: Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic: Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)
-- [Meta: Prompt engineering](https://www.llama.com/docs/how-to-guides/prompting/)
-- [Google Cloud: Prompt design strategies](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies)
+- [Prompt Engineering Guide](https://www.promptingguide.ai) (ANGLAIS) – Vue d'ensemble neutre du prompting et de ses notions de base.
+- [Prompt Engineering Guide: Techniques](https://www.promptingguide.ai/techniques) (ANGLAIS) – Zero-shot, few-shot et chain-of-thought, avec des exemples.
+- [Prompt Engineering Guide: Risks and misuses](https://www.promptingguide.ai/risks) (ANGLAIS) – Injection de prompt, faits inventés et biais.
+- [Learn Prompting](https://learnprompting.org/docs/introduction) (ANGLAIS) – Cours ouvert sur le prompting, des bases aux techniques avancées.
+- [Wikipedia : Ingénierie de prompt](https://fr.wikipedia.org/wiki/Ing%C3%A9nierie_de_prompt) – Vue d'ensemble encyclopédique avec des références à la littérature de recherche.
 - [Playlist YouTube : Littératie critique de l'IA (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Série de vidéos sur l'apprentissage automatique, les modèles de langage, le prompting, les biais, la visualisation de données, les méthodes d'évaluation et la science ouverte. (GERMAN only)
 - @sternfeld2023historian – Explique comment un système d'apprentissage automatique « apprend » à partir d'un jeu de données et pourquoi l'IA fonctionne comme un système sociotechnique et non comme un agent autonome.
 
