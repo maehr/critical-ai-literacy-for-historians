@@ -1,6 +1,7 @@
 ---
 title: Übungen
 lang: de
+date-modified: "2026-08-15"
 listing:
   id: exercises
   # Lernreihenfolge, nicht alphabetisch. "sort: false" behält diese Reihenfolge bei.
@@ -16,9 +17,51 @@ listing:
   sort: false
   type: table
   categories: true
-  fields: [title, subtitle, description, categories]
+  fields: [title, subtitle, difficulty, time_estimate, categories]
+  field-display-names:
+    difficulty: "Niveau"
+    time_estimate: "Dauer"
+  field-links: [title]
 citation: false
 ---
+
+Diese Seite listet die acht Übungen des Kurses. Jede Übung trainiert einen Arbeitsschritt der historischen Forschung mit KI-Systemen. Sie brauchen keine Programmierkenntnisse.
+
+## So lesen Sie eine Übung
+
+Jede Übung beginnt mit dem Abschnitt «Auf einen Blick». Dieser Abschnitt nennt fünf Angaben:
+
+- **Dauer**: die ehrliche Arbeitszeit für die ganze Übung.
+- **Niveau**: Beginner, Intermediate oder Advanced.
+- **Kernpfad**: die Schritte, die zu einem vollständigen Ergebnis führen.
+- **Optionale Vertiefung**: die Schritte, die Sie weglassen können.
+- **Abgabe (Minimum)**: was Sie am Ende vorlegen.
+
+Danach folgt der Abschnitt «Was Sie brauchen». Er nennt das Wissen, die nötigen Fähigkeiten des KI-Systems und die weiteren Werkzeuge. Lesen Sie beide Abschnitte, bevor Sie mit Schritt 1 beginnen.
+
+## Empfohlene Reihenfolge
+
+Beginnen Sie mit der Übung [Prompt Engineering](prompt-engineering.qmd). Sie ist die Grundlage für alle anderen Übungen. Danach folgen die Übungen dem Ablauf eines Forschungsprojekts:
+
+1. [Prompt Engineering](prompt-engineering.qmd) – die gemeinsame Grundlage. Hier legen Sie auch Ihr [KI-Protokoll](../glossary.qmd#gl-ki-protokoll) an.
+2. [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd) – den Forschungsstand systematisch erschliessen.
+3. [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd) – aus dem Thema eine bearbeitbare Frage machen.
+4. [Quellensuche](quellensuche-vorort-europarat-1963.qmd) – Primärquellen finden und den Zugang planen.
+5. [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) – eine einzelne Quelle prüfen und einordnen.
+6. [Wissenschaftliches Schreiben](schreiben.qmd) – aus Material einen Text entwickeln.
+7. [Zitieren](zitieren.qmd) – Belege sichern und die eigene KI-Nutzung offenlegen.
+8. [Public History](public-history.qmd) – Ergebnisse für ein Publikum übersetzen.
+
+Sie können die Übungen 2 bis 8 auch einzeln bearbeiten. Die Übung [Zitieren](zitieren.qmd) bildet die Ausnahme. Sie braucht Ihr KI-Protokoll aus einer früheren Übung.
+
+::: callout-tip
+
+## Planen Sie die Quellensuche früh
+
+Die Übung [Quellensuche](quellensuche-vorort-europarat-1963.qmd) ist ein mehrtägiges Rechercheprojekt. Alle anderen Übungen dauern zwischen einer Stunde und einem Arbeitstag. Beginnen Sie deshalb früh mit der Quellensuche, wenn Sie den ganzen Kurs in einem Semester bearbeiten.
+:::
+
+## Alle Übungen
 
 ::: {#exercises}
 :::

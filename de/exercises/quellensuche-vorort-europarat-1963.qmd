@@ -21,6 +21,8 @@ tags:
   - Zeitgeschichte
   - Nachvollziehbarkeit
   - KI-gestützt
+difficulty: Advanced
+time_estimate: "3 d"
 draft: false
 references:
 - id: altermatt-casasus-2013-europarat
@@ -55,10 +57,39 @@ Die Übung folgt einem **zirkulären Forschungsverständnis**: Suchresultate ver
 Beachten Sie bei der Archivarbeit **Schutzfristen, Nutzungsbedingungen und digitale Verfügbarkeit** der einzelnen Bestände. Planen Sie den Arbeitsaufwand für Einsichtsgesuche, On-Site-Konsultation und Reproduktionsrechte ein.
 :::
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Dauer**                | mehrere Tage, davon ca. 6 bis 8 Stunden am Bildschirm                                                            |
+| **Niveau**               | Advanced                                                                                                         |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                        |
+| **Optionale Vertiefung** | 5 (Sekundärliteratur und Referenzwerke)                                                                          |
+| **Abgabe (Minimum)**     | [Rechercheprotokoll](../glossary.qmd#gl-rechercheprotokoll): 15 Einträge. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 3 Einträge. |
+
+::: callout-important
+
+## Diese Übung ist ein mehrtägiges Rechercheprojekt
+
+Diese Übung ist keine Übung für einen Nachmittag. Sie öffnen fünf Portale, Sie führen mindestens zehn dokumentierte Suchen durch, und Sie erstellen eine Shortlist von zehn Archiveinheiten.
+
+Planen Sie die Arbeit in drei Etappen:
+
+1. Bildschirmarbeit (Schritte 1 bis 6): ca. 4 bis 5 Stunden, auf zwei Sitzungen verteilbar.
+2. Findmittel und Shortlist (Schritt 7): ca. 2 bis 3 Stunden.
+3. Dokumentation (Schritt 8): ca. 1 Stunde.
+
+Für die Abgabe brauchen Sie keinen Archivbesuch. Die Shortlist entsteht aus den Findmitteln.
+
+Wenn Sie die Dossiers wirklich einsehen wollen, rechnen Sie mit zusätzlichen Wochen. Ein Einsichtsgesuch, eine Schutzfristverkürzung und ein Termin im Lesesaal haben lange Vorlaufzeiten. Diese Kalenderzeit gehört zur Übung, aber nicht zur Abgabe.
+:::
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -68,20 +99,22 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die drei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Im Web suchen und die Fundstellen mit einer Adresse belegen. Sie brauchen das in Schritt 3 und in Schritt 5.
+- Eine hochgeladene Datei lesen, zum Beispiel ein Findmittel als PDF-Datei.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Tabelle mit Suchbegriffen.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Ein Konto für den Bibliothekskatalog Ihrer Hochschule.
+- Ein Konto für die Archivportale, die Sie in Schritt 7 nutzen. Die Registrierung ist meist kostenlos, sie dauert aber einen Tag.
+- Ein [Literaturverwaltungsprogramm](../glossary.qmd#gl-zotero) für die kurzannotierte Bibliografie.
+- Eine Datei für Ihr Rechercheprotokoll und eine Datei für Ihr KI-Protokoll.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -378,9 +411,11 @@ Mindestens:
 
 ### KI-Protokoll (Anhang)
 
-- 2–3 Prompts,
-- gekürzte Antworten,
-- begründete Korrekturen oder Rejects.
+Mindestens 3 Einträge. Jeder Eintrag enthält:
+
+- den Prompt im Wortlaut,
+- die gekürzte Antwort,
+- Ihre begründete Korrektur oder Ihren Reject.
 
 ## Lernergebnis
 
@@ -390,7 +425,7 @@ Am Ende verfügen Sie über diese Artefakte:
 2. Rechercheprotokoll (≥ 15 Einträge)
 3. Shortlist: 10 Primärquellen-Einheiten
 4. Kurzannotierte Bibliografie (8–12 Titel)
-5. Reflexion zum KI-Einsatz inkl. KI-Protokoll
+5. Reflexion zum KI-Einsatz inkl. KI-Protokoll (≥ 3 Einträge)
 
 Dazu kommt eine methodische Einsicht: Sie können begründen, welche Suchwege belastbare Treffer liefern und wo eine KI-Antwort nur plausibel klingt.
 

@@ -21,6 +21,8 @@ tags:
   - Schweiz
   - Sozialpolitik
   - KI-gestützt
+difficulty: Intermediate
+time_estimate: "1 d"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -94,10 +96,31 @@ Diese Übung führt in die systematische Literaturrecherche und problemorientier
 
 Die Übung folgt einem zirkulären Such- und Analyseprozess: Ausgangspunkt ist ein breites Themenfeld (Sozialversicherung), aus dem sukzessive ein klarer Problemfokus, eine präzisierte Forschungsfrage und ein reproduzierbarer Korpus relevanter Sekundärliteratur entwickelt werden. Dabei wechseln sich manuelle Recherche- und Analysephasen mit KI-gestützten Explorationen ab, die jeweils kritisch validiert werden.
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                                                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 1 Arbeitstag (6 bis 8 Stunden)                                                                                                                                              |
+| **Niveau**               | Intermediate                                                                                                                                                                    |
+| **Kernpfad**             | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                       |
+| **Optionale Vertiefung** | 4 (Spezialpfade), 7 (Debattenkartierung), Advanced Track                                                                                                                        |
+| **Abgabe (Minimum)**     | [Rechercheprotokoll](../glossary.qmd#gl-rechercheprotokoll): 12 Einträge. [Reject-Log](../glossary.qmd#gl-reject-log): 5 Einträge. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 4 Einträge. |
+
+Teilen Sie den Arbeitstag auf zwei oder drei Sitzungen auf. Der Kernpfad führt Sie zu einer präzisierten Forschungsfrage. Die optionale Vertiefung kostet ca. 2 Stunden zusätzlich.
+
+::: callout-caution
+
+## Planen Sie Zeit für den Zugang zur Literatur ein
+
+Bestellen Sie fehlende Titel früh. Eine Fernleihe dauert oft mehrere Tage. Diese Wartezeit ist in der Dauer oben nicht enthalten.
+:::
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -107,20 +130,21 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die drei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Im Web suchen und die Fundstellen mit einer Adresse belegen. Sie brauchen das in Schritt 2 und in Schritt 4.
+- Eine hochgeladene Datei lesen, zum Beispiel eine Trefferliste oder einen Aufsatz.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Tabelle.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Ein [Literaturverwaltungsprogramm](../glossary.qmd#gl-zotero). Sie exportieren daraus Ihre Titelliste.
+- Ein Konto für den Bibliothekskatalog Ihrer Hochschule. Sie brauchen es für Schritt 3 und für die Fernleihe.
+- Eine Datei für Ihr Rechercheprotokoll und eine Datei für Ihr KI-Protokoll.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -458,7 +482,7 @@ Literaturarbeit als nachvollziehbarer Forschungsprozess (FAIR-orientiert, zitati
 - **Rechercheprotokoll, Abschnitt Suche**: Datum, System, Suchanfrage, Filter, Treffer, Auswahlregeln (≥ 12 Einträge)
 - **Zotero/BibTeX-Export**: Versionierter Stand (Datum), Dubletten-Strategie
 - **Rechercheprotokoll, Abschnitt Entscheidungen**: Warum Titel aufgenommen oder abgelehnt (stichwortartig)
-- **KI-Protokoll (Anhang)**: 2–4 Prompts, gekürzte Antworten, Ihre Korrekturen/Rejects, Verwendungszweck
+- **KI-Protokoll (Anhang)**: ≥ 4 Einträge mit Prompt, gekürzter Antwort, Ihren Korrekturen oder Rejects und dem Verwendungszweck
 
 ::: callout-warning
 
@@ -480,7 +504,7 @@ Am Ende verfügen Sie über diese Artefakte:
 3. Kurzannotierte Bibliografie (10–15 Titel)
 4. Debattenmemo (400–600 Wörter)
 5. Forschungslücke, Forschungsfrage und Risikofeld (ca. 1 Seite)
-6. KI-Protokoll (Anhang)
+6. KI-Protokoll (Anhang, ≥ 4 Einträge)
 
 Dazu kommt eine methodische Einsicht: Sie können begründen, welche Treffer ein Katalog zeigt und welche er systematisch verbirgt.
 

@@ -21,6 +21,8 @@ tags:
   - Digitale Quellenkritik
   - Offenlegung
   - KI-gestützt
+difficulty: Beginner
+time_estimate: "90 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -107,10 +109,33 @@ Diese Übung vermittelt die **Grundlagen wissenschaftlichen Zitierens** in der G
 
 Die Übung hat zwei Teile. Der erste Teil behandelt das **Zitieren** von Quellen und Literatur. Der zweite Teil behandelt die **Offenlegung**: die Erklärung, mit der Sie Ihre eigene KI-Nutzung ausweisen. Diese Übung schliesst beide Lernpfade ab.
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                       |
+| ------------------------ | -------------------------------------------------------------------------- |
+| **Dauer**                | ca. 90 Minuten                                                             |
+| **Niveau**               | Beginner                                                                   |
+| **Kernpfad**             | Übung 1 → Übung 2 → Übung 3                                                |
+| **Optionale Vertiefung** | Die Variante mit einem Artikel hinter einer Bezahlschranke                 |
+| **Abgabe (Minimum)**     | Eine Offenlegung des KI-Einsatzes. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 4 Einträge. |
+
+Alle drei Übungen gehören zum Kernpfad. Die optionale Vertiefung kostet ca. 20 Minuten zusätzlich.
+
+::: callout-important
+
+## Bringen Sie Ihr KI-Protokoll mit
+
+Übung 3 arbeitet mit dem KI-Protokoll aus den vorherigen Übungen. Ohne dieses Protokoll können Sie keine Offenlegung schreiben.
+
+Haben Sie noch kein Protokoll? Führen Sie zuerst die Übung [Prompt Engineering](prompt-engineering.qmd) durch. Sie legen dort Ihr Protokoll an.
+:::
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -120,20 +145,21 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die zwei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Im Web suchen und einen Artikel über seinen [DOI](../glossary.qmd#gl-doi) abrufen. Sie brauchen das in Übung 1 und in Übung 2.
+- Eine hochgeladene Datei lesen. Sie brauchen das, wenn das System den Artikel nicht selbst abruft.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Ein [Literaturverwaltungsprogramm](../glossary.qmd#gl-zotero). Sie vergleichen damit die Angaben der KI mit einem geprüften Import.
+- Der Testartikel als PDF-Datei. Der Artikel ist frei zugänglich, und Sie brauchen dafür keinen institutionellen Zugang.
+- Ihr KI-Protokoll aus den vorherigen Übungen.
+- Die verbindliche Regel Ihrer Institution zur KI-Nutzung. Sie finden diese Regel nach dem Verfahren in dieser Übung.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -475,11 +501,12 @@ Korrigieren Sie jede falsche Angabe von Hand. Sie verantworten die Offenlegung, 
 
 ## Lernergebnis
 
-Sie nehmen aus dieser Übung drei Ergebnisse mit:
+Sie nehmen aus dieser Übung vier Ergebnisse mit:
 
 1. einen Vergleich von KI-Zitaten mit der geprüften Zitation aus Übung 1 und Übung 2
 2. eine fertige **Offenlegung** für eine eigene Arbeit aus Übung 3
 3. die Fundstelle der verbindlichen Regel Ihrer Institution, notiert im KI-Protokoll
+4. ein KI-Protokoll mit mindestens 4 Einträgen aus dieser Übung
 
 ## Weiterführende Ressourcen
 

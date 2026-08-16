@@ -13,6 +13,8 @@ tags:
   - Diplomatie
   - Wissenschaftliche Integrität
   - Evidenzdisziplin
+difficulty: Intermediate
+time_estimate: "180 min"
 draft: false
 author:
   - name: "Moritz Mähr"
@@ -52,10 +54,26 @@ Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äusser
 Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen Edition** vor. Für die Quellenkritik gehört deshalb nicht nur der Text, sondern auch die **Editionsebene** (Metadaten, Archivsignatur, Verlinkungen, Editionsrichtlinien) zum Untersuchungsgegenstand. [@fickers2022criticism]
 :::
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Dauer**                | ca. 180 Minuten                                                                                          |
+| **Niveau**               | Intermediate                                                                                             |
+| **Kernpfad**             | 1 → 2 → 3 → 5 → 6                                                                                        |
+| **Optionale Vertiefung** | 4 (Kontextualisierung und Gegenprobe)                                                                    |
+| **Abgabe (Minimum)**     | [Analyseprotokoll](../glossary.qmd#gl-analyseprotokoll) zu einer Quelle. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 6 Einträge. |
+
+Der Kernpfad führt Sie in ca. 180 Minuten zu einer vollständigen Quellenkritik. Schritt 4 kostet ca. 90 Minuten zusätzlich, denn Sie suchen dafür weitere Quellen.
+
+Die zwei Protokolle haben unterschiedliche Aufgaben. Das Analyseprotokoll beschreibt die Quelle. Das KI-Protokoll beschreibt Ihre KI-Nutzung. Führen Sie beide getrennt.
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -65,20 +83,20 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die drei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Eine hochgeladene Datei lesen und aus dieser Datei zitieren. Sie brauchen das ab Schritt 1.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Tabelle mit Behauptung und Belegstelle.
+- Im Web suchen und die Fundstellen mit einer Adresse belegen. Sie brauchen das nur in Schritt 4.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Die Quelle als Datei. Sie laden das Dokument Dodis 5020 frei herunter, und Sie brauchen dafür keinen institutionellen Zugang.
+- Eine Datei für Ihr Analyseprotokoll und eine Datei für Ihr KI-Protokoll.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -521,7 +539,7 @@ Legen Sie ein kurzes Protokoll an:
 - Evidenzprofil (A/B-Liste)
 - Offene Fragen & nächste Rechercheschritte
 
-### Aufgabe 2: KI-Protokoll (wenn KI genutzt wurde)
+### Aufgabe 2: KI-Protokoll (mindestens 6 Einträge)
 
 Notieren Sie:
 
@@ -545,6 +563,7 @@ Am Ende verfügen Sie über:
 - ein **Evidenzprofil** (inkl. Veto-Punkten) in Relation zu einer Forschungsfrage,
 - einen **Rechercheplan** zur Kontext- und Gegenprobe,
 - ein **reproduzierbares Analyseprotokoll** (inkl. strukturierter Claim-Extraktion),
+- ein **KI-Protokoll** mit mindestens 6 Einträgen,
 - eine reflektierte Einschätzung, **wo KI Exploration unterstützt** und **wo sie methodisch zu begrenzen** ist.
 
 ## Weiterführende Ressourcen
