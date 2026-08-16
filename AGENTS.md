@@ -107,7 +107,13 @@ draft: false
 
 **Never name an AI product.** Do not name an AI product, an AI vendor, or a model. Describe what the tool must be able to do, for example "a KI-System that can read a PDF file". This rule covers exercise text, prerequisites, and links, so cite a neutral source instead of vendor documentation.
 
-**One term for the audit trail.** The log of AI use has one name: **KI-Protokoll**. Use this term in every German file. Do not write Prompt-Protokoll, Audit Trail, Analyseprotokoll, Rechercheprotokoll, Suchprotokoll, Entscheidungslog, or Prüfpfad. Use "AI log" in English and "journal IA" in French, and name the German term once in each translated file.
+**Three protocols, one name each.** The course documents three different things. Name each one exactly:
+
+- **KI-Protokoll**: AI use, that is material, prompt, answer, checks and decision.
+- **Rechercheprotokoll**: searching, that is date, system, query, filters, hits and selection rules. The sections _Schneeballverfahren_, _Entscheidungen_ and _Reject-Log_ belong inside it.
+- **Analyseprotokoll**: one source, that is citation, access date, display form, and external and internal criticism.
+
+Do not write Prompt-Protokoll, Audit Trail, Suchprotokoll, Snowball-Protokoll, Entscheidungslog, Prompt- und Entscheidungsprotokoll, Prompt- und Entscheidungsnachweis, KI-Reflexion or Prüfpfad. Each of the three has an entry in `de/glossary.qmd`. Link it on first use per file. In English and French, keep the German term once in each translated file.
 
 **Glossary.** The course glossary is the content page `de/glossary.qmd`, and not a skill. It holds a short working definition of every term that an exercise uses without explanation. When you introduce a term, add the definition, then link to the anchor of the entry, for example `[Prompt](../glossary.qmd#gl-prompt)`.
 
@@ -163,7 +169,7 @@ Prettier formats `.md`, `.yml`, and `.json` files, and also a YAML code block in
 Each exercise follows a fixed pedagogical structure. Use `de/exercises/prompt-engineering.qmd` or `de/exercises/quellenkritik-bundesrat-europarat-1949.qmd` as the reference.
 
 1. `## Überblick und didaktisches Ziel`: give the context, and name the competencies that the exercise trains.
-2. `## Voraussetzungen`: name the knowledge that the learner needs, and the capabilities that the tool needs.
+2. `## Was Sie brauchen`: name the duration, the core path, the optional steps, the hand-in minimum, the knowledge that the learner needs, and the capabilities that the tool needs. State the hand-in minimum here, not only in the hand-in section.
 3. `## Lernziele`: list what the learner can do after the exercise.
 4. Numbered steps, for example `## 1. Orientierung`, each with four parts:
    - `### Ziel`: state the result of the step.
@@ -216,7 +222,7 @@ Check this list before you finish a change.
 - [ ] The three languages have the same structure.
 - [ ] Each exercise carries one category from section 4, plus `difficulty` and `time_estimate`.
 - [ ] `date-modified` holds a real date in every changed file.
-- [ ] No AI product, vendor, or model is named, and the audit trail is named KI-Protokoll.
+- [ ] No AI product, vendor, or model is named, and each protocol uses its own name from section 5.
 - [ ] Every callout uses one of the five valid types, and every new term has a glossary entry.
 - [ ] The bibliography entries are complete, and every citation resolves.
 - [ ] Every link works, and every image has alt text.
