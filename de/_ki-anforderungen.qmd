@@ -1,24 +1,34 @@
-<!-- Gemeinsamer Text zu Konto, Kosten und Datenschutz. Die Übungen binden diese Datei mit dem include-Shortcode ein. -->
+<!-- Gemeinsamer Text zu Konto, Kosten, Datenschutz und Recht. Die Übungen binden diese Datei mit dem include-Shortcode ein. -->
 
-:::: {.callout-note collapse="true" title="Konto, Kosten und Datenschutz: vor dem Start klären (aufklappen)"}
+:::: {.callout-note collapse="true" title="Konto, Kosten, Datenschutz und Recht: vor dem Start klären (aufklappen)"}
 
-Sie können jede Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie deshalb vor dem Start die vier folgenden Punkte.
+Sie können jede Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie deshalb vor dem Start die fünf folgenden Punkte.
 
 ### Kosten
 
-Ein kostenloses Konto genügt für kurze Textaufgaben. Für einige Fähigkeiten brauchen Sie ein kostenpflichtiges Konto. Das betrifft meist die Suche im Web, das Lesen langer Dateien und einen Modus für längeres, schrittweises Arbeiten. Prüfen Sie zuerst, ob Ihre Hochschule einen Zugang bereitstellt.
+Ein kostenloses Konto genügt für kurze Textaufgaben. Für einige Fähigkeiten brauchen Sie ein kostenpflichtiges Konto. Das betrifft meist die Suche im Web, das Lesen langer Dateien und den [eingebauten Denkmodus](../glossary.qmd#gl-denkmodus). Prüfen Sie zuerst, ob Ihre Hochschule einen Zugang bereitstellt.
 
 ### Werkzeuge
 
 Prüfen Sie, welche Werkzeuge Ihr Konto freischaltet. Kann das System im Web suchen? Kann es eine hochgeladene Datei lesen? Kann es externe Dienste aufrufen? Die Übung nennt die Fähigkeiten, die sie voraussetzt.
 
+Der Abschnitt [Fähigkeiten prüfen und einordnen](prompt-engineering.qmd#sec-faehigkeiten) erklärt fünf neuere Fähigkeiten. Er beschreibt auch, was jede Fähigkeit für Ihre Quellenarbeit bedeutet.
+
 ### Speicher
 
 Manche Systeme übernehmen Angaben aus früheren Sitzungen oder aus einem Projektkontext. Prüfen Sie die Einstellungen zu Speicher, Projekten und Chatverlauf. Eine neue Sitzung garantiert deshalb keinen leeren Kontext.
 
-### Konto und Datenschutz
+### Konto: institutionell oder privat
 
-Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+Prüfen Sie, mit welchem Konto Sie arbeiten. Die Regeln unterscheiden sich in drei Punkten.
+
+| Punkt              | Konto Ihrer Institution                                          | Privates Konto                                              |
+| ------------------ | ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| Vertrag            | Ihre Hochschule schliesst ihn ab und haftet mit.                 | Sie schliessen ihn selbst ab und haften allein.             |
+| Training           | Ein Vertrag schliesst die Nutzung Ihrer Eingaben oft aus.        | Viele Anbieter nutzen Eingaben für das Training.            |
+| Erlaubtes Material | Die Hochschule regelt, welche Daten Sie eingeben dürfen.         | Sie haben keine solche Regel und tragen das Risiko selbst.  |
+
+Fragen Sie die IT-Stelle oder die Bibliothek Ihrer Hochschule, wenn Sie die Regeln nicht finden. Halten Sie die Antwort in Ihrem [KI-Protokoll](../glossary.qmd#gl-ki-protokoll) fest.
 
 ::: callout-caution
 
@@ -28,13 +38,28 @@ Laden Sie kein Material hoch, über das Sie nicht verfügen dürfen. Ein Upload 
 
 Diese Materialien bleiben ausserhalb des KI-Systems:
 
-- Personenbezogene Daten lebender Personen, zum Beispiel aus Interviews, aus Nachlässen oder aus Beständen mit Schutzfrist.
+- [Personenbezogene Daten](../glossary.qmd#gl-personenbezogene-daten) lebender Personen, zum Beispiel aus Interviews, aus Nachlässen oder aus Beständen mit Schutzfrist.
 - Digitalisate, deren Nutzungsbedingungen eine Weitergabe untersagen.
 - Unveröffentlichte Texte anderer Personen, zum Beispiel Manuskripte oder Gutachten.
 - Lizenzpflichtige Volltexte, wenn die Lizenz Ihrer Bibliothek eine Weitergabe untersagt.
 
-Im Zweifel arbeiten Sie mit einem kurzen Auszug oder mit einer anonymisierten Fassung.
+Im Zweifel arbeiten Sie mit einem kurzen Auszug oder mit einer anonymisierten Fassung. Sie können auch ein [lokales Modell](../glossary.qmd#gl-offenes-modell) verwenden, denn dabei bleibt das Material auf Ihrem Rechner.
 :::
 
-Halten Sie Ihre Antworten auf diese vier Punkte fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+### Recht: Datenschutz und Kennzeichnung
+
+Zwei Rechtsgebiete betreffen Ihre Arbeit direkt. Dieser Abschnitt gibt eine Orientierung und keine Rechtsberatung.
+
+**Datenschutz.** In der EU gilt die Datenschutz-Grundverordnung, in der Schweiz das revidierte [Datenschutzgesetz](../glossary.qmd#gl-datenschutzrecht) [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. Beide Gesetze schützen personenbezogene Daten lebender Personen. Ein Upload gibt solche Daten an einen Dritten weiter, und dafür brauchen Sie eine Rechtsgrundlage. Für die Forschung gelten Erleichterungen, aber keine Freistellung. Der Europäische Datenschutzausschuss verlangt auch für Forschung einen klaren Zweck, eine Rechtsgrundlage und die Information der betroffenen Personen [@edpb2026forschung]. Für verstorbene Personen gelten stattdessen die Schutzfristen und die Benutzungsordnung des Archivs.
+
+**Kennzeichnung.** Die [KI-Verordnung der EU](../glossary.qmd#gl-kiverordnung) verlangt seit dem 2. August 2026 eine Kennzeichnung von erzeugten Inhalten [@eu2024kiverordnung]. Die Pflicht gilt für erzeugte oder veränderte Bilder, Tonaufnahmen und Videos. Sie gilt auch für erzeugte Texte, die Sie zu einer Frage von öffentlichem Interesse veröffentlichen. Für einen Text entfällt die Pflicht, wenn Sie ihn geprüft haben und die redaktionelle Verantwortung tragen. Die Verordnung nennt diese Pflicht für den beruflichen Einsatz und nicht für rein private Nutzung.
+
+::: callout-important
+
+## Die Kennzeichnung ersetzt die wissenschaftliche Offenlegung nicht
+
+Die rechtliche Kennzeichnung und die wissenschaftliche Offenlegung sind zwei getrennte Pflichten. Ihre Hochschule verlangt eine Deklaration auch dann, wenn das Gesetz keine Kennzeichnung fordert. Die Übung [Zitieren](zitieren.qmd) zeigt, wie Sie Ihre KI-Nutzung ausweisen.
+:::
+
+Halten Sie Ihre Antworten auf diese fünf Punkte fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
 ::::

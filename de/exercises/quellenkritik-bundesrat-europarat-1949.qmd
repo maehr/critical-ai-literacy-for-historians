@@ -23,7 +23,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 references:
 - id: altermatt-casasus-2013-europarat
   type: book
@@ -154,6 +154,8 @@ Welche Konsequenz wird angedeutet?
 
 ## Hochladen der Quelle
 
+Prüfen Sie vor dem Upload, ob Sie über das Material verfügen dürfen. Der Abschnitt «Was Sie brauchen» nennt die Materialien, die ausserhalb des KI-Systems bleiben. Dodis 5020 ist frei zugänglich, deshalb ist der Upload hier unproblematisch.
+
 Laden Sie das Dokument als PDF-Datei zusammen mit dem Prompt hoch. Das ist der Normalfall. Stellen Sie sicher, dass die KI auch Zugriff auf die Metadaten hat. Rufen Sie die Metadaten online ab oder geben Sie sie selbst an.
 
 Nur im Ausnahmefall, wenn der Upload nicht funktioniert, kopieren Sie den Inhalt des Dokuments an den Anfang des Prompts. Grenzen Sie ihn visuell ab, beispielsweise durch """. Beispiel:
@@ -170,6 +172,17 @@ METADATEN DOKUMENT (inkl. URL)
 IHR PROMPT
 ```
 
+:::
+
+::: callout-caution
+
+## Ein KI-System kann eine Vorlage falsch lesen
+
+Diese Übung nutzt eine edierte Fassung mit geprüftem Text. Bei einem Scan oder bei einer handschriftlichen Vorlage ist die Lage anders. Das System liest dann ein Bild und erzeugt daraus Text.
+
+Ein allgemeines KI-System hält an einer unleserlichen Stelle nicht an. Es setzt ein plausibles Wort ein und markiert nichts. Die Fehlerrate der [Handschriftenerkennung](../glossary.qmd#gl-htr) hängt stark von Schrift, Layout und Sprache ab [@romein2025assessing; @diezgarcia2025evaluating]. Solche Fehler verändern jede spätere Auswertung [@vanstrien2020assessing].
+
+Vergleichen Sie deshalb jedes Zitat mit dem Digitalisat. Notieren Sie im [Analyseprotokoll](../glossary.qmd#gl-analyseprotokoll), ob der Text maschinell erkannt wurde. Der Abschnitt [Fähigkeiten prüfen und einordnen](prompt-engineering.qmd#sec-faehigkeiten) erklärt diesen Punkt ausführlich.
 :::
 
 ### Arbeitsauftrag (Reflexion)

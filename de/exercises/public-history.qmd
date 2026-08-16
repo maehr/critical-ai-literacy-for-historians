@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -186,6 +186,18 @@ Geben Sie der KI nur Material, das Sie selbst kontrollieren können, und lassen 
 ## Transparenz im Produkt
 
 Planen Sie am Ende ein kurzes Transparenz-Element ein (z.B. «So wurde gearbeitet» / «KI-Unterstützung»): wofür KI genutzt wurde (Struktur/Sprachvarianten/Gegenlesen), wofür nicht (Fakten/Interpretationsentscheid).
+:::
+
+::: callout-important
+
+## Bei einer Veröffentlichung kommt eine rechtliche Pflicht dazu
+
+Diese Übung führt zu Produkten für ein Publikum. Damit gilt neben der wissenschaftlichen Offenlegung auch die [KI-Verordnung der EU](../glossary.qmd#gl-kiverordnung) [@eu2024kiverordnung]. Artikel 50 verlangt seit dem 2. August 2026 eine Kennzeichnung in zwei Fällen.
+
+1. **Bild, Ton und Video.** Kennzeichnen Sie jedes erzeugte oder veränderte Bild, jede erzeugte Tonaufnahme und jedes erzeugte Video. Das betrifft die Formate 5A bis 5C und das Podcast-Skript direkt.
+2. **Text zu öffentlichen Fragen.** Kennzeichnen Sie erzeugten Text, den Sie zur Information der Öffentlichkeit veröffentlichen. Diese Pflicht entfällt, wenn Sie den Text geprüft haben und die redaktionelle Verantwortung tragen.
+
+Die Ausnahme für geprüften Text hebt Ihre wissenschaftliche Offenlegung nicht auf. Die Übung [Zitieren](zitieren.qmd) zeigt, wie Sie beide Pflichten erfüllen.
 :::
 
 {{< include ../_ki-protokoll.qmd >}}
