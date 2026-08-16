@@ -10,7 +10,7 @@ author:
   affiliations:
   - Université de Berne
 date: '2025-12-24'
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Méthodes]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -417,7 +417,7 @@ Texte: …
 ## Ressources complémentaires
 
 - [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et utilisation critique des LLMs.
-- [The Turing Way](https://the-turing-way.netlify.app/) – Manuel pour une recherche reproductible, éthique et collaborative.
+- [The Turing Way](https://book.the-turing-way.org/) – Manuel pour une recherche reproductible, éthique et collaborative.
 
 ## Bibliographie
 

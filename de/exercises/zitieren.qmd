@@ -45,7 +45,7 @@ references:
 - id: kompass_geschichtsstudium_2025
   type: book
   title: "Kompass Geschichtsstudium"
-  subtitle: "Version HS 2025"
+  subtitle: "Version FS 2026"
   author:
     - family: Luther
       given: Johannes
@@ -56,10 +56,10 @@ references:
     - family: Tinner
       given: Tamara Ann
   issued:
-    year: 2025
+    year: 2026
   publisher: "Historisches Seminar, Universität Zürich"
-  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
-  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  note: "Offizielle Studienanleitung; aktualisiert am 26. Januar 2026"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf"
   abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
 - id: leitfaden_bremen_2025
   type: book
@@ -530,8 +530,8 @@ Sie nehmen aus dieser Übung vier Ergebnisse mit:
 - [Europäische Kommission: Living Guidelines on the Responsible Use of Generative AI in Research](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf) – Empfehlungen für Forschende, dritte Fassung von Mai 2026 (ENGLISH only).
 - [ICMJE Recommendations](https://www.icmje.org/recommendations/) – Vorgaben vieler Zeitschriften zur Offenlegung bei der Einreichung (ENGLISH only).
 - [Historisches Institut Bern: Plagiate und KI-Gebrauch](https://www.hist.unibe.ch/studium/plagiate__ki_gebrauch/index_ger.html) – Beispiel für eine institutionelle Regel mit Vorlage zur KI-Deklaration.
-- [The Markup: Wie KI-Detektoren internationale Studierende fälschlicherweise des Betrugs beschuldigen](https://themarkup.org/machine-learning/2023/08/14/how-ai-detection-tools-falsely-accuse-international-students-of-cheating) – Empirische Belege gegen KI-Detektoren; relevant für Bewertungs- und Policy-Diskussionen.
-- [The Turing Way](https://the-turing-way.netlify.app/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
+- [Stanford HAI: AI-Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers) – Bericht zu einer Studie, die KI-Detektoren prüft. Die Detektoren stufen Texte von Studierenden ohne englische Muttersprache oft falsch als maschinell ein (ENGLISH only).
+- [The Turing Way](https://book.the-turing-way.org/) – Handbuch für reproduzierbare, ethische und kollaborative Forschung.
 
 ## Bibliographie
 

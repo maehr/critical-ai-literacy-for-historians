@@ -44,7 +44,7 @@ references:
 - id: kompass_geschichtsstudium_2025
   type: book
   title: "Kompass Geschichtsstudium"
-  subtitle: "Version HS 2025"
+  subtitle: "Version FS 2026"
   author:
     - family: Luther
       given: Johannes
@@ -55,10 +55,10 @@ references:
     - family: Tinner
       given: Tamara Ann
   issued:
-    year: 2025
+    year: 2026
   publisher: "Historisches Seminar, Universität Zürich"
-  note: "Offizielle Studienanleitung; aktualisiert am 21. Juli 2025"
-  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  note: "Offizielle Studienanleitung; aktualisiert am 26. Januar 2026"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf"
   abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
 - id: leitfaden_bremen_2025
   type: book

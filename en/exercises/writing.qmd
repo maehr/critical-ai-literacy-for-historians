@@ -10,7 +10,7 @@ author:
   affiliations:
   - University of Bern
 date: '2025-12-24'
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Methods]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -417,7 +417,7 @@ At the end, you have a small package of artifacts that is scientifically reusabl
 ## Further Resources
 
 - [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limits, hallucinations, verification, and critical use of LLMs.
-- [The Turing Way](https://the-turing-way.netlify.app/) – Handbook for reproducible, ethical, and collaborative research.
+- [The Turing Way](https://book.the-turing-way.org/) – Handbook for reproducible, ethical, and collaborative research.
 
 ## Bibliography
 

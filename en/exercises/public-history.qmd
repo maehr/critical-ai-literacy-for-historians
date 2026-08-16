@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Public History]
 image: ../../assets/images/public_history_Gemini_Generated_Image_alc722alc722alc7.png
 tags:
@@ -42,7 +42,7 @@ references:
 - id: kompass_geschichtsstudium_2025
   type: book
   title: "Kompass Geschichtsstudium"
-  subtitle: "Version HS 2025"
+  subtitle: "Version FS 2026"
   author:
     - family: Luther
       given: Johannes
@@ -53,10 +53,10 @@ references:
     - family: Tinner
       given: Tamara Ann
   issued:
-    year: 2025
+    year: 2026
   publisher: "Historisches Seminar, Universität Zürich"
-  note: "Official study guide; updated July 21, 2025"
-  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20250721_Kompass_V11-HS2025.pdf"
+  note: "Official study guide; updated January 26, 2026"
+  URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf"
   abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
 - id: leitfaden_bremen_2025
   type: book
