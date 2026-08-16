@@ -1,0 +1,40 @@
+<!-- Gemeinsamer Text zu Konto, Kosten und Datenschutz. Die Übungen binden diese Datei mit dem include-Shortcode ein. -->
+
+:::: {.callout-note collapse="true" title="Konto, Kosten und Datenschutz: vor dem Start klären (aufklappen)"}
+
+Sie können jede Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie deshalb vor dem Start die vier folgenden Punkte.
+
+### Kosten
+
+Ein kostenloses Konto genügt für kurze Textaufgaben. Für einige Fähigkeiten brauchen Sie ein kostenpflichtiges Konto. Das betrifft meist die Suche im Web, das Lesen langer Dateien und einen Modus für längeres, schrittweises Arbeiten. Prüfen Sie zuerst, ob Ihre Hochschule einen Zugang bereitstellt.
+
+### Werkzeuge
+
+Prüfen Sie, welche Werkzeuge Ihr Konto freischaltet. Kann das System im Web suchen? Kann es eine hochgeladene Datei lesen? Kann es externe Dienste aufrufen? Die Übung nennt die Fähigkeiten, die sie voraussetzt.
+
+### Speicher
+
+Manche Systeme übernehmen Angaben aus früheren Sitzungen oder aus einem Projektkontext. Prüfen Sie die Einstellungen zu Speicher, Projekten und Chatverlauf. Eine neue Sitzung garantiert deshalb keinen leeren Kontext.
+
+### Konto und Datenschutz
+
+Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+
+::: callout-caution
+
+## Prüfen Sie jedes Material vor dem Hochladen
+
+Laden Sie kein Material hoch, über das Sie nicht verfügen dürfen. Ein Upload verlässt Ihren Rechner und Sie können ihn nicht zurückholen.
+
+Diese Materialien bleiben ausserhalb des KI-Systems:
+
+- Personenbezogene Daten lebender Personen, zum Beispiel aus Interviews, aus Nachlässen oder aus Beständen mit Schutzfrist.
+- Digitalisate, deren Nutzungsbedingungen eine Weitergabe untersagen.
+- Unveröffentlichte Texte anderer Personen, zum Beispiel Manuskripte oder Gutachten.
+- Lizenzpflichtige Volltexte, wenn die Lizenz Ihrer Bibliothek eine Weitergabe untersagt.
+
+Im Zweifel arbeiten Sie mit einem kurzen Auszug oder mit einer anonymisierten Fassung.
+:::
+
+Halten Sie Ihre Antworten auf diese vier Punkte fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+::::

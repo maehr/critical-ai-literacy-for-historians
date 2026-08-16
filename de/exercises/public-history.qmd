@@ -20,6 +20,8 @@ tags:
   - Nachvollziehbarkeit
   - Schweiz
   - KI-gestützt
+difficulty: Intermediate
+time_estimate: "240 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -104,10 +106,28 @@ references:
 
 Diese Übung trainiert Public-History-Wissenskommunikation als **prozessuale Übersetzungsarbeit**: von einem wissenschaftlichen Artikel (Argument, Belege, Unsicherheiten) hin zu publikumsorientierten Formaten. Generative KI wird dabei **nicht** als Autorität, sondern als *Werkzeug für Entwurf, Variation, Redigieren und Gegenlesen* verwendet – mit konsequentem Quellenbezug, Nachvollziehbarkeit und klaren Grenzen.
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------ |
+| **Dauer**                | ca. 4 Stunden                                                                            |
+| **Niveau**               | Intermediate                                                                             |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 5A → 6                                                                   |
+| **Optionale Vertiefung** | 5B (Podcast-Skript), 5C (Poster-Textbausteine)                                            |
+| **Abgabe (Minimum)**     | Ein Blogpost von 700 bis 1000 Wörtern. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 8 Einträge und eine Reflexionsnotiz von 300 bis 500 Wörtern. |
+
+Der Kernpfad führt Sie in ca. 4 Stunden zu einem Blogpost und zu zwei Kurzformaten. Teilen Sie die Zeit auf zwei Sitzungen auf. Jede optionale Vertiefung kostet ca. 45 Minuten zusätzlich.
+
+Statt des Blogposts können Sie ein Podcast-Skript von 6 bis 8 Minuten abgeben. Ersetzen Sie dafür Schritt 3 durch Schritt 5B.
+
+Der Blogpost bleibt eine Textabgabe, deshalb nennt die Übung dafür eine Wortzahl. Für das KI-Protokoll zählen Sie Einträge.
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -117,20 +137,20 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die drei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Eine hochgeladene Datei lesen, also Ihren Basisartikel und Ihr Quellenpaket.
+- Nur mit dem Material arbeiten, das Sie ihm geben. Sie prüfen diese Vorgabe in Schritt 4.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Tabelle mit Claim-IDs.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Ein wissenschaftlicher Artikel als Basistext. Wählen Sie einen frei zugänglichen Artikel aus Ihrem Themenfeld.
+- Eine Datei für Ihr KI-Protokoll.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -396,7 +416,7 @@ Am Ende verfügen Sie über diese Artefakte:
 2. **Message Map und Evidenzmatrix** (Tabellen- oder Stichpunktform)
 3. **Blogpost** (ca. 700–1'000 Wörter) *oder* **Podcast-Skript** (ca. 6–8 Minuten)
 4. **Zwei Kurzformate** aus: Social Media, Poster-Textbausteine, Interview-Kit
-5. **KI-Protokoll** mit Prompts, Antworten und einer Reflexionsnotiz (ca. 300–500 Wörter)
+5. **KI-Protokoll** mit mindestens 8 Einträgen und einer Reflexionsnotiz (ca. 300–500 Wörter)
 
 Dazu kommt eine methodische Einsicht: Sie können begründen, wo die KI eine Vermittlung verbessert und wo Sie die Verantwortung für Evidenz und Deutung selbst tragen.
 

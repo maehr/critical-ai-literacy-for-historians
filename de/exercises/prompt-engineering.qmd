@@ -20,6 +20,8 @@ tags:
   - Digitale Quellenkritik
   - Nachvollziehbarkeit
   - Wissenschaftliche Integrität
+difficulty: Beginner
+time_estimate: "120 min"
 draft: false
 nocite: ""
 references: []
@@ -45,24 +47,40 @@ Im Unterschied zu den thematischen Übungen ([Forschungsfrage](formulieren-histo
 Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, die nicht aus Ihrem Input oder verifizierbaren Nachweisen stammen, behandeln Sie das als **Hypothese** (nicht als Ergebnis). [@bender2021stochastic] Ihre Arbeit bleibt: **Gegenprobe, Nachweis, Entscheidung**.
 :::
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                   |
+| ------------------------ | ---------------------------------------------------------------------- |
+| **Dauer**                | ca. 120 Minuten                                                        |
+| **Niveau**               | Beginner                                                               |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7                                                  |
+| **Optionale Vertiefung** | 5 (strukturierte Denkspur)                                             |
+| **Abgabe (Minimum)**     | [KI-Protokoll](../glossary.qmd#gl-ki-protokoll) mit mindestens 8 Einträgen |
+
+Der Kernpfad führt Sie in ca. 120 Minuten zu einem vollständigen Ergebnis. Die optionale Vertiefung kostet ca. 30 Minuten zusätzlich.
+
+Diese Übung ist die Grundlage für alle anderen Übungen. Rechnen Sie beim ersten Durchgang mit mehr Zeit, denn Sie richten hier auch Ihr KI-Protokoll ein.
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die drei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Eine hochgeladene Datei lesen und aus dieser Datei zitieren. Sie brauchen das in Schritt 3 und in Schritt 4.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Tabelle.
+- Eine neue Sitzung starten. Sie prüfen in dieser Übung, was das System aus früheren Sitzungen übernimmt.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Eine Datei für Ihr KI-Protokoll. Eine Textdatei oder ein Dokument in Ihrer Textverarbeitung genügt.
+- Das Materialpaket aus dem Abschnitt «Fallpaket für alle Übungen». Sie laden dafür eine frei zugängliche Quelle herunter.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 

@@ -21,6 +21,8 @@ tags:
   - Schweiz
   - Zeitgeschichte
   - KI-gestützt
+difficulty: Beginner
+time_estimate: "90 min"
 draft: false
 references:
 - id: altermatt-casasus-2013-europarat
@@ -54,10 +56,24 @@ Die Übung folgt einem **zirkulären Forschungsverständnis**: Ergebnisse einzel
 Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren. [@putnam2016shadows] Digitale Quellenkritik erfordert besondere Aufmerksamkeit für die Entstehung und Kuratierung von Online-Sammlungen. [@fickers2022criticism]
 :::
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                       |
+| ------------------------ | -------------------------------------------------------------------------- |
+| **Dauer**                | ca. 90 Minuten                                                             |
+| **Niveau**               | Beginner                                                                   |
+| **Kernpfad**             | 1 → 2 → 4 → 5 → 6                                                          |
+| **Optionale Vertiefung** | 3 (Forschungsstand und Forschungslücken)                                   |
+| **Abgabe (Minimum)**     | Eine Forschungsfrage. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 5 Einträge. |
+
+Der Kernpfad führt Sie in ca. 90 Minuten zu einer bearbeitbaren Forschungsfrage. Schritt 3 kostet ca. 60 Minuten zusätzlich. Sie üben den Forschungsstand ausführlich in der Übung [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd).
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -67,20 +83,19 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die zwei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Im Web suchen und die Fundstellen mit einer Adresse belegen. Sie brauchen das in Schritt 2 und in Schritt 4.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Liste von Varianten.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+**Weitere Werkzeuge und Zugänge**
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+- Eine Datei für Ihr KI-Protokoll.
+- Ein Konto für den Bibliothekskatalog Ihrer Hochschule. Sie prüfen damit in Schritt 4 die Quellenlage.
 
-:::
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -325,11 +340,16 @@ Notieren Sie kurz:
 - Wo war sie irreführend, unpräzise oder verkürzend?
 - Welche Entscheidungen konnten nur Sie selbst treffen?
 
+### KI-Protokoll
+
+Schliessen Sie Ihr KI-Protokoll ab. Es umfasst mindestens 5 Einträge, also einen Eintrag pro Arbeitsschritt mit KI.
+
 ## Lernergebnis
 
 Am Ende der Übung verfügen Sie über:
 
 - eine **klar formulierte analytische historische Forschungsfrage**,
+- ein **KI-Protokoll** mit mindestens 5 Einträgen,
 - ein reflektiertes Verständnis der **Potenziale und Grenzen von KI** im Forschungsdesign,
 - eine methodisch begründete Einschätzung der **Machbarkeit** Ihres Projekts.
 

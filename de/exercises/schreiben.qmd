@@ -22,6 +22,8 @@ tags:
   - Nachvollziehbarkeit
   - Wissenschaftliche Integrität
   - KI-gestützt
+difficulty: Beginner
+time_estimate: "60 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -115,13 +117,24 @@ Diese Übung trainiert den **kritischen Einsatz generativer KI als Schreibassist
 
 Ziel ist nicht, Textproduktion zu «automatisieren», sondern **Entscheidungsqualität** zu erhöhen: bessere Fragestellungen, konsistentere Argumente, präzisere Sprache – bei gleichzeitiger **Nachvollziehbarkeit** der Autor:innenschaft und der verwendeten Evidenz.
 
-## Voraussetzungen
+## Auf einen Blick
+
+| Angabe                   | Wert                                                                       |
+| ------------------------ | -------------------------------------------------------------------------- |
+| **Dauer**                | ca. 45 bis 60 Minuten                                                      |
+| **Niveau**               | Beginner                                                                   |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 8                                                      |
+| **Optionale Vertiefung** | 5 (Blockaden), 7 (Stil und Übersetzung), 9 (Lesbarkeitstest)               |
+| **Abgabe (Minimum)**     | Ein überarbeiteter Textabschnitt. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 6 Einträge. |
+
+Der Kernpfad führt Sie in 45 bis 60 Minuten zu einem überarbeiteten Text. Jede optionale Vertiefung kostet ca. 15 Minuten zusätzlich. Führen Sie pro Schritt des Kernpfads einen Eintrag im KI-Protokoll.
+
+## Was Sie brauchen
+
+**Fachliches Wissen**
 
 - Grundverständnis historischer Forschungsmethoden
-- Basiskenntnisse im Umgang mit generativer KI (insbesondere Prompting)
-- Zugriff auf ein KI-System Ihrer Wahl
-- Ein eigenes Themenfragment (zum Beispiel eine Seminararbeit) oder ein bereitgestellter Textabschnitt von einer halben bis einer Seite
-- Eigene Stichpunkte oder Notizen zum Thema (mindestens 10 Bullet Points)
+- Basiskenntnisse im Umgang mit generativer KI, insbesondere Prompting
 
 ::: callout-note
 
@@ -131,20 +144,22 @@ Falls Sie noch nicht mit Prompting vertraut sind, empfehlen wir die Übung [Prom
 
 :::
 
-::: callout-note
+**Fähigkeiten des KI-Systems**
 
-## LLM
+Das System muss die zwei folgenden Dinge können:
 
-Sie können die Übung mit KI-Systemen von unterschiedlichen Herstellern durchführen. Was ein System kann, hängt vom Produkt und von Ihrem Konto ab. Klären Sie vor dem Start diese vier Punkte:
+- Nur mit dem Material arbeiten, das Sie ihm geben. Sie prüfen diese Vorgabe in jedem Schritt.
+- Eine Antwort in einem Format liefern, das Sie vorgeben, zum Beispiel als Gliederung.
 
-- **Werkzeuge:** Kann das System im Web suchen, Dateien lesen und externe Dienste aufrufen?
-- **Denkmodus:** Bietet das System einen Modus für längeres, schrittweises Arbeiten?
-- **Speicher:** Übernimmt das System Angaben aus früheren Sitzungen oder aus einem Projektkontext?
-- **Konto:** Arbeiten Sie mit einem Konto Ihrer Institution oder mit einem privaten Konto? Die Regeln zu Datenschutz und Training können sich unterscheiden. Prüfen Sie die Vorgaben, die für Sie gelten.
+Diese Übung braucht weder eine Websuche noch einen Datei-Upload. Ein kostenloses Konto genügt.
 
-Halten Sie Ihre Antworten fest. Sie gehören zur Beschreibung Ihrer Arbeitsumgebung.
+**Weitere Werkzeuge und Zugänge**
 
-:::
+- Ein eigenes Themenfragment, zum Beispiel aus einer Seminararbeit. Ein Textabschnitt von einer halben bis einer Seite genügt.
+- Eigene Stichpunkte oder Notizen zum Thema, mindestens 10 Punkte.
+- Eine Datei für Ihr KI-Protokoll.
+
+{{< include ../_ki-anforderungen.qmd >}}
 
 ## Lernziele
 
@@ -176,9 +191,7 @@ Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für *Ihr* Material
 
 ## Struktur der Übung
 
-Die Rollen sind zu **Phasen** gebündelt. Einzelne Schritte können übersprungen werden; sinnvoll ist aber mindestens eine vollständige Runde bis zur Revision. **Kernpfad (ca. 45–60 Min):** 1 → 2 → 3 → 4 → 6 → 8.
-
-**Optionale Vertiefung:** 5 (lokale Blockaden), 7 (Stil/Übersetzen), 9 (Lesbarkeitstest als Schluss-Review).
+Die Rollen sind zu **Phasen** gebündelt. Sie können einzelne Schritte überspringen. Der Kernpfad im Abschnitt «Auf einen Blick» führt Sie durch eine vollständige Runde bis zur Revision.
 
 1. **Verständnischecker** (Auftrag klären, blinde Flecken identifizieren)\
 2. **Brainstorming-Partner + Devil’s Advocate** (Ideenraum öffnen + Gegenargumente)\
@@ -511,7 +524,7 @@ Am Ende haben Sie ein kleines Paket an Artefakten, das wissenschaftlich weiterve
 - 1–3 überarbeitete Absätze (mit nachvollziehbaren Revisionen)\
 - Argumentmap (Logikprüfung)\
 - Abstract (und optional Übersetzung + Glossar)\
-- KI-Protokoll
+- KI-Protokoll mit mindestens 6 Einträgen
 
 ## Weiterführende Ressourcen
 
