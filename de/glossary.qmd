@@ -3,7 +3,7 @@ lang: de
 title: 'Glossar'
 description: 'Kurze Arbeitsdefinitionen der Fachbegriffe, die in den Übungen vorkommen.'
 date: '2026-08-14'
-date-modified: '2026-08-14'
+date-modified: '2026-08-16'
 toc-depth: 2
 draft: false
 citation: false
@@ -36,6 +36,34 @@ Beim Few-shot erhält das KI-System zwei bis fünf Musterantworten, damit Format
 ### Strukturierte Denkspur (Chain-of-Thought) {#gl-chain-of-thought}
 
 Eine strukturierte Denkspur ist die Aufforderung an das KI-System, die Zwischenschritte offenzulegen (die Zwischenschritte sind Prüfhilfen, keine Belege).
+
+### Eingebauter Denkmodus (Reasoning Mode) {#gl-denkmodus}
+
+Im Denkmodus erzeugt das KI-System von sich aus Zwischenschritte, bevor es antwortet. Sie haben diesen Ablauf nicht vorgegeben, anders als bei der strukturierten Denkspur [@wei2022chain]. Die sichtbaren Schritte belegen den tatsächlichen Rechenweg nicht [@turpin2023unfaithful].
+
+### Agentischer Ablauf (Agentic Workflow) {#gl-agentischer-ablauf}
+
+In einem agentischen Ablauf plant das KI-System mehrere Schritte, ruft dafür Werkzeuge auf und arbeitet ohne Rückfrage weiter. Ein Fehler aus einem frühen Schritt wandert in alle späteren Schritte [@kapoor2024agents].
+
+### Vertiefte Recherche (Deep Research) {#gl-vertiefte-recherche}
+
+Bei einer vertieften Recherche sucht das KI-System selbständig im Web, liest Seiten und liefert einen Bericht mit Belegstellen. Der Bericht ist eine Trefferliste mit Hypothesen und keine geprüfte Literaturübersicht. Literaturnachweise aus KI-Systemen enthalten erfundene und fehlerhafte Titel in erheblichem Umfang [@walters2023fabrication].
+
+### Abruf aus eigenen Dokumenten (Retrieval-Augmented Generation, RAG) {#gl-eigene-dokumente}
+
+Beim Abruf aus eigenen Dokumenten hinterlegen Sie eine Sammlung von Dateien. Ein Suchschritt wählt daraus Abschnitte aus und legt sie dem KI-System vor [@lewis2020retrieval]. Der Abruf erweitert damit den Kontext. Er stellt aber nicht sicher, dass die Antwort nur aus Ihrer Sammlung stammt. Nutzen Sie den Abruf, um Fundstellen zu finden, und prüfen Sie jede Aussage am Original.
+
+### Multimodales Lesen (Multimodal) {#gl-multimodal}
+
+Multimodal heisst, dass ein KI-System nicht nur Text verarbeitet, sondern auch Bilder, Tonaufnahmen oder Videos. Ein Digitalisat einer Akte ist für das System ein Bild. Allgemeine Bildmodelle lesen historische Handschrift bisher deutlich schlechter als spezialisierte Modelle [@diezgarcia2025evaluating].
+
+### Offenes Modell (Open-Weight Model) {#gl-offenes-modell}
+
+Bei einem offenen Modell sind die Gewichte frei herunterladbar. Offen beschreibt die Lizenz der Gewichte und nicht den Ort der Ausführung. Sie können ein offenes Modell lokal ausführen, aber auch bei einem Anbieter im Netz. Nur ein offenes Modell erlaubt Ihnen, eine feste Version dauerhaft zu behalten [@spirling2023open].
+
+### Lokales Modell {#gl-lokales-modell}
+
+Ein lokales Modell läuft auf Ihrem eigenen Rechner. Nur dann verlässt Ihr Material diesen Rechner nicht. Lokal beschreibt den Ort der Ausführung und nicht die Lizenz. Der Energiebedarf hängt von der Grösse des Modells ab und nicht vom Ort: ein grosses lokales Modell braucht viel Energie, ein kleines Modell für eine enge Aufgabe deutlich weniger [@luccioni2024power].
 
 ### Halluzination {#gl-halluzination}
 
@@ -154,6 +182,10 @@ Ein Permalink ist eine Internetadresse, die dauerhaft auf dasselbe Dokument zeig
 
 Die Texterkennung wandelt das Bild einer Seite in durchsuchbaren Text um und macht dabei Fehler.
 
+### Handschriftenerkennung (Handwritten Text Recognition, HTR) {#gl-htr}
+
+Die Handschriftenerkennung wandelt eine handschriftliche Seite in Text um. Für deutsche Kurrentschrift gibt es allgemeine Modelle mit brauchbaren Fehlerraten [@hodel2021general]. Die Fehlerrate hängt stark von Schrift, Layout, Sprache und Zustand der Vorlage ab [@romein2025assessing]. Solche Fehler verändern jede spätere Auswertung [@vanstrien2020assessing]. Das Ergebnis bleibt deshalb eine Lesehypothese.
+
 ### Markdown {#gl-markdown}
 
 Markdown ist eine einfache Schreibweise, die Überschriften, Listen und Hervorhebungen mit wenigen Zeichen markiert.
@@ -165,3 +197,27 @@ Die FAIR-Prinzipien fordern, dass Forschungsdaten auffindbar, zugänglich, kombi
 ### CARE-Prinzipien {#gl-care}
 
 Die CARE-Prinzipien fordern, dass Daten den betroffenen Gemeinschaften nützen und dass diese Gemeinschaften über ihre Daten mitbestimmen. Der Wortlaut steht bei der [Global Indigenous Data Alliance](https://www.gida-global.org/care) und in @carroll2020care.
+
+## Recht und Datenschutz
+
+Die fünf folgenden Einträge geben eine Orientierung und keine Rechtsberatung. Verbindlich sind der Gesetzestext und die Vorgaben Ihrer Institution.
+
+### Personenbezogene Daten {#gl-personenbezogene-daten}
+
+Personenbezogene Daten sind Angaben über eine bestimmte oder bestimmbare lebende Person. Dazu gehören auch Angaben aus Interviews, aus Nachlässen und aus Beständen mit Schutzfrist.
+
+### Auftragsverarbeiter {#gl-auftragsverarbeiter}
+
+Ein Auftragsverarbeiter verarbeitet personenbezogene Daten nur im Auftrag des Verantwortlichen, also nach Artikel 4 Nummer 8 DSGVO [@eu2016dsgvo]. Artikel 4 Nummer 10 DSGVO zählt ihn ausdrücklich nicht zu den Dritten. Diese Rolle setzt einen Vertrag nach Artikel 28 DSGVO voraus. Ein Upload an einen Auftragsverarbeiter ist deshalb keine Weitergabe an Dritte.
+
+### Datenschutzrecht (DSGVO und revDSG) {#gl-datenschutzrecht}
+
+In der EU regelt die Datenschutz-Grundverordnung die Verarbeitung personenbezogener Daten, in der Schweiz das revidierte Datenschutzgesetz [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. Artikel 6 DSGVO verlangt für jede Verarbeitung eine Rechtsgrundlage. Für die Forschung gelten Auflagen nach Artikel 89 Absatz 1 DSGVO, aber keine Freistellung. Einzelne Pflichten können entfallen, zum Beispiel die Information nach Artikel 14 Absatz 5 Buchstabe b DSGVO. Ein Leitfaden des Europäischen Datenschutzausschusses stand 2026 in der öffentlichen Konsultation und ist noch kein geltendes Recht [@edpb2026forschung].
+
+### Deepfake {#gl-deepfake}
+
+Ein Deepfake ist nach Artikel 3 Nummer 60 der KI-Verordnung ein erzeugter oder veränderter Bild-, Ton- oder Videoinhalt [@eu2024kiverordnung]. Er ähnelt wirklichen Personen, Gegenständen, Orten oder Ereignissen und würde fälschlich als echt erscheinen. Ein erzeugtes Bild ohne diesen Wirklichkeitsbezug ist kein Deepfake.
+
+### KI-Verordnung (EU AI Act) {#gl-kiverordnung}
+
+Die KI-Verordnung der EU regelt das Inverkehrbringen und den Einsatz von KI-Systemen [@eu2024kiverordnung]. Für Sie zählt vor allem Artikel 50, der seit dem 2. August 2026 gilt. Als Betreiber legen Sie nach Artikel 50 Absatz 4 zweierlei offen: einen [Deepfake](#gl-deepfake) sowie erzeugten Text, den Sie zur Information der Öffentlichkeit über eine Angelegenheit von öffentlichem Interesse veröffentlichen. Beim Text entfällt die Pflicht, wenn eine Person ihn geprüft hat und die redaktionelle Verantwortung trägt. Artikel 50 Absatz 2 verpflichtet dagegen den Anbieter, erzeugte Inhalte maschinenlesbar zu kennzeichnen.

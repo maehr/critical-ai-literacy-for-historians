@@ -107,6 +107,8 @@ draft: false
 
 **Never name an AI product.** Do not name an AI product, an AI vendor, or a model. Describe what the tool must be able to do, for example "a KI-System that can read a PDF file". This rule covers exercise text, prerequisites, and links, so cite a neutral source instead of vendor documentation.
 
+Exception: a citation keeps the published title of the work. You must not rename a published work. The rule therefore does not apply to the `title` field of an entry in `bibliography.bib`, and it does not apply to a title that a rendered bibliography shows. The rule still applies to your own prose about that work, so describe the capability instead of the product name.
+
 **Three protocols, one name each.** The course documents three different things. Name each one exactly:
 
 - **KI-Protokoll**: AI use, that is material, prompt, answer, checks and decision.
@@ -222,7 +224,7 @@ Check this list before you finish a change.
 - [ ] The three languages have the same structure.
 - [ ] Each exercise carries one category from section 4, plus `difficulty` and `time_estimate`.
 - [ ] `date-modified` holds a real date in every changed file.
-- [ ] No AI product, vendor, or model is named, and each protocol uses its own name from section 5.
+- [ ] No AI product, vendor, or model is named outside a citation title, and each protocol uses its own name from section 5.
 - [ ] Every callout uses one of the five valid types, and every new term has a glossary entry.
 - [ ] The bibliography entries are complete, and every citation resolves.
 - [ ] Every link works, and every image has alt text.

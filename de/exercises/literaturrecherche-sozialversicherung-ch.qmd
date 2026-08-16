@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Methoden]
 image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
 tags:
@@ -171,6 +171,32 @@ Nach Abschluss dieser Übung können Sie:
 ## Hinweis zur online Recherche
 
 Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollständig online durchführbar. [@milligan2019history] Insbesondere vergriffene Sekundärliteratur und noch nicht erschlossene Primärquellen erfordern häufig physische Recherchen in Bibliotheken und Archiven. Planen Sie Zugänge (Bibliothek, Fernleihe, Archiv) und beachten Sie, dass Plattformen/Kataloge Sichtbarkeit strukturieren (Erschliessungslogik) und keine Vollständigkeit garantieren. [@putnam2016shadows]
+:::
+
+::: callout-caution
+
+## Wenn Ihr System selbständig recherchiert
+
+Manche Konten bieten eine [vertiefte Recherche](../glossary.qmd#gl-vertiefte-recherche) an. Das System sucht dann selbständig im Web, liest Seiten und liefert einen Bericht mit Belegstellen. Sie dürfen diesen Bericht als Startpunkt nutzen, aber nicht als Forschungsstand.
+
+Drei Gründe sprechen für eine vollständige Gegenprobe:
+
+- Ein solcher Ablauf plant und handelt über mehrere Schritte. Ein Fehler aus einem frühen Schritt wandert in alle späteren Schritte, und die Leistungsberichte über solche Systeme sind oft nicht reproduzierbar [@kapoor2024agents].
+- Literaturnachweise aus KI-Systemen enthalten erfundene und fehlerhafte Titel in erheblichem Umfang [@walters2023fabrication].
+- Der Bericht nennt seine Suchstrategie nicht vollständig. Sie können die Abdeckung deshalb nicht beurteilen.
+
+Prüfen Sie jeden Titel im Katalog Ihrer Bibliothek. Halten Sie die Suche im [Rechercheprotokoll](../glossary.qmd#gl-rechercheprotokoll) fest und die KI-Nutzung im [KI-Protokoll](../glossary.qmd#gl-ki-protokoll). Der Abschnitt [Fähigkeiten prüfen und einordnen](prompt-engineering.qmd#sec-faehigkeiten) erklärt diese Abläufe.
+:::
+
+::: callout-tip
+
+## Eigene Dokumente schneller durchsuchen
+
+Manche Konten erlauben den [Abruf aus eigenen Dokumenten](../glossary.qmd#gl-eigene-dokumente). Sie hinterlegen dabei Ihre PDF-Dateien, und ein Suchschritt wählt daraus die passenden Abschnitte aus [@lewis2020retrieval]. Für die Literaturanalyse in Schritt 6 ist das nützlich, denn Sie finden damit schneller die passenden Stellen in Ihrem eigenen Material.
+
+Der Abruf bindet die Antwort aber nicht an Ihre Sammlung. Er erweitert nur den Kontext um die gefundenen Abschnitte. Das System kann weiterhin Wissen aus dem Training einmischen, und der Suchschritt findet nicht jeden relevanten Abschnitt. Eine Stellenangabe belegt zudem nur die Fundstelle und nicht die Aussage. Öffnen Sie deshalb jede genannte Seite und lesen Sie sie selbst.
+
+Eine hinterlegte Sammlung ist ein Upload. Prüfen Sie deshalb die Lizenz Ihrer Bibliothek, bevor Sie lizenzpflichtige Volltexte hinterlegen. Der Abschnitt «Was Sie brauchen» nennt die Regeln.
 :::
 
 ## Struktur der Übung

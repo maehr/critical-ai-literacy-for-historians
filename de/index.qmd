@@ -41,9 +41,9 @@ Diese Materialien zielen darauf ab, Lernenden zu helfen:
 Die Übungen fördern:
 
 - **Reproduzierbarkeit** in Forschungsabläufen
-- **Datenschutz** und ethischen Datenumgang
+- **Datenschutz** und ethischen Datenumgang. Jede Übung nennt im Abschnitt «Was Sie brauchen», welches Material ausserhalb des KI-Systems bleibt und welche Regeln des [Datenschutzrechts](glossary.qmd#gl-datenschutzrecht) gelten.
 - **Urheberrechtsbewusstsein** und korrekte Zuordnung
-- **Nachhaltigkeit** durch [Minimal Computing](glossary.qmd#gl-minimal-computing), also durch Verfahren mit geringem Rechenaufwand
+- **Nachhaltigkeit** durch [Minimal Computing](glossary.qmd#gl-minimal-computing), also durch Verfahren mit geringem Rechenaufwand. Drei Eigenschaften helfen dabei, und jede hat ihre eigene Bedingung. Ein **kleines** Modell für eine enge Aufgabe braucht pro Anfrage deutlich weniger Energie als ein grosses Allzweckmodell [@luccioni2024power]. Ein [**offenes** Modell](glossary.qmd#gl-offenes-modell) erlaubt Ihnen, eine feste Version zu behalten [@spirling2023open]. Ein [**lokales** Modell](glossary.qmd#gl-lokales-modell) lässt Ihr Material auf Ihrem Rechner. Der Abschnitt [Fähigkeiten prüfen und einordnen](exercises/prompt-engineering.qmd#sec-faehigkeiten) zeigt, wann sich dieser Weg lohnt.
 - **Interdisziplinäre Zusammenarbeit** und kritische Reflexion
 
 Durch die Auseinandersetzung mit diesen Materialien werden Historiker:innen besser in der Lage sein, transparente, bedeutungsvolle Projekte zu gestalten, die KI in ihre Forschung integrieren, ohne die disziplinäre Strenge zu beeinträchtigen.

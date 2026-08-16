@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Methoden]
 image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
 tags:
@@ -267,6 +267,22 @@ Prüfen Sie die Regel Ihrer Institution, bevor Sie sich auf eine Faustregel verl
 :::
 
 Legen Sie den KI-Einsatz offen, sobald er **substanziell** ist. Substanziell heisst: Die KI hat Ihr Ergebnis inhaltlich mitgeprägt. Die Living Guidelines der Europäischen Kommission zählen dazu die Literaturübersicht, die Interpretation von Analysen, das Formulieren von Forschungszielen und das Entwickeln von Hypothesen. Eine reine Textkorrektur gilt dort nicht als substanzieller Einsatz [@eucommission2026genai].
+
+### Offenlegung und Kennzeichnung sind zwei Pflichten
+
+Die wissenschaftliche Offenlegung und die rechtliche Kennzeichnung haben unterschiedliche Adressaten. Halten Sie beide auseinander.
+
+| Frage     | Wissenschaftliche Offenlegung                         | Rechtliche Offenlegung                                                                                |
+| --------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Grundlage | Regel Ihrer Institution oder Ihrer Zeitschrift        | [KI-Verordnung der EU](../glossary.qmd#gl-kiverordnung), Artikel 50 Absatz 4 [@eu2024kiverordnung]      |
+| Gilt ab   | jedem substanziellen Einsatz                          | dem 2. August 2026, bei beruflichem Einsatz                                                            |
+| Betrifft  | jede Textsorte, auch eine Seminararbeit               | einen [Deepfake](../glossary.qmd#gl-deepfake) sowie erzeugten Text zur Information der Öffentlichkeit über Angelegenheiten von öffentlichem Interesse |
+| Adressat  | Ihre Fachgemeinschaft                                 | das Publikum                                                                                           |
+| Ausnahme  | keine, wenn die Institution eine Deklaration verlangt | Text, den eine Person geprüft hat und für den sie die redaktionelle Verantwortung trägt                |
+
+Die Verordnung verlangt also keine Kennzeichnung für jedes erzeugte Bild und für jeden erzeugten Text. Eine dritte Pflicht trifft nicht Sie: Artikel 50 Absatz 2 verpflichtet den Anbieter, erzeugte Inhalte maschinenlesbar zu kennzeichnen.
+
+Die Ausnahme der Verordnung entlastet Sie wissenschaftlich nicht. Sie legen Ihren KI-Einsatz auch dann offen, wenn das Gesetz keine Kennzeichnung fordert.
 
 ### Was gehört in eine Offenlegung?
 
