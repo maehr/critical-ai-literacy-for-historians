@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Quellen]
 image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
@@ -392,6 +392,26 @@ Schlage drei Suchpfade vor:
 Je Pfad: 8–12 Suchbegriffe (DE/FR/EN) inkl. Namensvarianten.
 ```
 
+::: callout-caution
+
+## Vor dem Upload: Was ins Archiv gehört, bleibt im Archiv
+
+Diese Übung führt Sie zu Beständen mit Zugangsbeschränkungen. Laden Sie kein Digitalisat hoch, dessen Benutzungsordnung eine Weitergabe untersagt. Laden Sie auch keine Unterlagen mit [personenbezogenen Daten](../glossary.qmd#gl-personenbezogene-daten) lebender Personen hoch. Der Abschnitt «Was Sie brauchen» nennt die vollständige Liste und die rechtliche Grundlage.
+
+Arbeiten Sie im Zweifel mit einem kurzen Auszug oder mit einem [lokalen Modell](../glossary.qmd#gl-lokales-modell). Bei einem lokalen Modell bleibt das Material auf Ihrem Rechner.
+:::
+
+::: callout-warning
+
+## Eine maschinelle Transkription ist eine Lesehypothese
+
+Sie stossen im Archiv auf Maschinenschrift, auf Durchschläge und auf Handschrift. Ein KI-System kann ein Digitalisat lesen und daraus Text erzeugen. Die Fehlerrate der [Handschriftenerkennung](../glossary.qmd#gl-htr) hängt stark von Schrift, Layout und Sprache ab [@hodel2021general; @romein2025assessing].
+
+Der gefährlichste Fehler ist die glatte Lesart. Ein allgemeines KI-System hält an einer unleserlichen Stelle nicht an, sondern setzt ein plausibles Wort ein [@diezgarcia2025evaluating]. Solche Fehler wandern in jede spätere Auswertung [@vanstrien2020assessing].
+
+Notieren Sie im Rechercheprotokoll, welche Texte maschinell erkannt wurden. Vergleichen Sie jedes Zitat mit dem Digitalisat. Der Abschnitt [Fähigkeiten prüfen und einordnen](prompt-engineering.qmd#sec-faehigkeiten) erklärt diesen Punkt ausführlich.
+:::
+
 ## 8. Iteration, Reproduzierbarkeit und KI-Protokoll
 
 ### Rechercheprotokoll, Abschnitt Suche
@@ -400,7 +420,7 @@ Mindestens:
 
 - Datum, Tool/Portal, Query, Filter, Trefferzahl
 - Auswahlkriterien
-- Bias-Notizen (OCR, Erschliessung, Sprache)
+- Bias-Notizen ([Texterkennung](../glossary.qmd#gl-ocr), [Handschriftenerkennung](../glossary.qmd#gl-htr), Erschliessung, Sprache)
 
 ### Reflexionsfragen (250–400 Wörter)
 
