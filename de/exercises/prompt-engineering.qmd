@@ -2,7 +2,7 @@
 lang: de
 title: "Prompt Engineering"
 subtitle: "Historisches Arbeiten mit LLMs: kontrollierte Heuristiken, Reproduzierbarkeit, Evidenzdisziplin"
-description: "Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert und die neueren Fähigkeiten von KI-Systemen einordnet."
+description: "Eine Übung, die zentrale Prompting-Techniken (Basics, Rollen, Zero-/Few-shot, strukturierte Denkspur, iteratives Prompten, Optimierung) anhand geschichtswissenschaftlicher Arbeitsprozesse trainiert."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Universität Bern"
 date: "2025-12-29"
-date-modified: "2026-08-16"
+date-modified: "2026-08-15"
 categories: [KI & Digitale Methoden]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -20,9 +20,8 @@ tags:
   - Digitale Quellenkritik
   - Nachvollziehbarkeit
   - Wissenschaftliche Integrität
-  - Datenschutz
 difficulty: Beginner
-time_estimate: "150 min"
+time_estimate: "120 min"
 draft: false
 nocite: ""
 references: []
@@ -52,13 +51,13 @@ Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, di
 
 | Angabe                   | Wert                                                                   |
 | ------------------------ | ---------------------------------------------------------------------- |
-| **Dauer**                | ca. 150 Minuten                                                        |
+| **Dauer**                | ca. 120 Minuten                                                        |
 | **Niveau**               | Beginner                                                               |
-| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                              |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7                                                  |
 | **Optionale Vertiefung** | 5 (strukturierte Denkspur)                                             |
 | **Abgabe (Minimum)**     | [KI-Protokoll](../glossary.qmd#gl-ki-protokoll) mit mindestens 8 Einträgen |
 
-Der Kernpfad führt Sie in ca. 150 Minuten zu einem vollständigen Ergebnis. Die optionale Vertiefung kostet ca. 30 Minuten zusätzlich.
+Der Kernpfad führt Sie in ca. 120 Minuten zu einem vollständigen Ergebnis. Die optionale Vertiefung kostet ca. 30 Minuten zusätzlich.
 
 Diese Übung ist die Grundlage für alle anderen Übungen. Rechnen Sie beim ersten Durchgang mit mehr Zeit, denn Sie richten hier auch Ihr KI-Protokoll ein.
 
@@ -92,9 +91,7 @@ Nach Abschluss der Übung können Sie:
 - Zero-shot und Few-shot Prompting **situationsgerecht** wählen,
 - eine **strukturierte Denkspur** anfordern (Aufgabendecomposition, Zwischenprodukte, Self-Checks),
 - iteratives Prompting als **kontrollierten Workflow** umsetzen (Generate → Critique → Revise → Verify),
-- Prompts anhand von **Qualitätskriterien** optimieren (Fehlerreduktion, Formatstabilität, Prüfbarkeit, Reproduzierbarkeit),
-- eine angeforderte Denkspur von einem **eingebauten Denkmodus** unterscheiden,
-- fünf neuere **Fähigkeiten** von KI-Systemen benennen und ihre Fehlerquellen einordnen (Denkmodus, agentische Abläufe, Abruf aus eigenen Dokumenten, Handschriftenerkennung, lokale Modelle).
+- Prompts anhand von **Qualitätskriterien** optimieren (Fehlerreduktion, Formatstabilität, Prüfbarkeit, Reproduzierbarkeit).
 
 ## Arbeitsmodus: KI-Protokoll und A/B-Testing
 
@@ -293,8 +290,6 @@ Maximal 4 Sätze. Keine Interpretation.
 
 ## Hochladen der Quelle
 
-Prüfen Sie vor jedem Upload, ob Sie über das Material verfügen dürfen. Der Abschnitt «Was Sie brauchen» nennt die Materialien, die ausserhalb des KI-Systems bleiben. Diese Übung nutzt eine frei zugängliche Quelle, deshalb ist der Upload hier unproblematisch.
-
 Laden Sie das Dokument als PDF-Datei zusammen mit dem Prompt hoch. Das ist der Normalfall. Stellen Sie sicher, dass die KI auch Zugriff auf die Metadaten hat. Rufen Sie die Metadaten online ab oder geben Sie sie selbst an.
 
 Nur im Ausnahmefall, wenn der Upload nicht funktioniert, kopieren Sie den Inhalt des Dokuments an den Anfang des Prompts. Grenzen Sie ihn visuell ab, beispielsweise durch """. Beispiel:
@@ -395,8 +390,6 @@ Zu jeder Frage:
 
 Chain-of-Thought Prompting bezeichnet ein Vorgehen, bei dem das Modell eine **komplexe Aufgabe in explizite Zwischenschritte zerlegt** (z. B. Extraktion → Ordnung → Bewertung → Ergebnis) und diese Schritte **sichtbar ausgibt**.
 
-Sie fordern diese Zwischenschritte im Prompt an. Die [strukturierte Denkspur](../glossary.qmd#gl-chain-of-thought) ist deshalb eine Eigenschaft Ihrer Eingabe und nicht eine Eigenschaft des Systems. [@wei2022chain]
-
 :::
 
 ### Ziel
@@ -408,22 +401,6 @@ Komplexe Aufgaben in **Zwischenprodukte** zerlegen (Decomposition) und einen **S
 ## Hinweis zur «Denkspur»
 
 Formulieren Sie die Denkspur so, dass sie **kurz** und **auditierbar** bleibt (Stichpunkte, Kriterien, Tests). Ziel ist Prüfbarkeit, nicht ein ausführliches «inneres Tagebuch».
-:::
-
-::: callout-caution
-
-## Eine angeforderte Denkspur ist kein Nachweis, und ein eingebauter Denkmodus ist etwas anderes
-
-Trennen Sie zwei Dinge, die gleich aussehen.
-
-1. **Die angeforderte Denkspur.** Sie haben die Schritte im Prompt vorgegeben. Sie kontrollieren Umfang, Reihenfolge und Prüfpunkte, und Sie können den Prompt wörtlich ins KI-Protokoll kopieren.
-2. **Der eingebaute [Denkmodus](../glossary.qmd#gl-denkmodus).** Das System erzeugt vor der Antwort selbst Zwischenschritte. Sie haben diesen Ablauf nicht gestaltet, und viele Systeme zeigen Ihnen nur eine Zusammenfassung davon.
-
-Nur die angeforderte Denkspur ist ein Artefakt, das Sie selbst hergestellt haben. Nur sie ist deshalb reproduzierbar dokumentierbar.
-
-Für beide Formen gilt dieselbe Grenze. Die sichtbaren Schritte belegen den tatsächlichen Rechenweg nicht. Modelle nennen Gründe, die den wirklichen Einfluss auf die Antwort verschweigen. [@turpin2023unfaithful] Behandeln Sie jede Denkspur als Prüfhilfe und nie als Beleg.
-
-Der Abschnitt [Fähigkeiten prüfen und einordnen](#sec-faehigkeiten) vertieft den Denkmodus.
 :::
 
 ### Übung 5A: Argumentmapping mit Zwischenschritten
@@ -554,107 +531,6 @@ Führen Sie 3 Iterationen durch (v1–v3) und protokollieren Sie:
 - welche Prompt-Änderung welches Fehlerfeld reduziert hat,
 - welche Nebenwirkungen entstehen (z. B. Antwort wird zu vage).
 
-## 8. Fähigkeiten prüfen und einordnen {#sec-faehigkeiten}
-
-### Ziel
-
-Fünf neuere Fähigkeiten von KI-Systemen benennen, im eigenen Konto prüfen und methodisch einordnen. Die Abschnitte 1 bis 7 trainieren den Prompt. Dieser Abschnitt betrifft das, was das System zusätzlich zum Prompt tut.
-
-::: callout-important
-
-## Auch diese Fähigkeiten erzeugen keine Evidenz
-
-Keine der fünf Fähigkeiten macht eine Ausgabe zum Beleg. Jede erzeugt Hypothesen, und Sie prüfen jede Hypothese am Original. [@bender2021stochastic] Die Fähigkeiten verschieben nur, **wo** der Fehler entsteht: im Denkmodus, im Suchschritt, im Abruf, in der Transkription oder im Modell selbst.
-:::
-
-### 8.1 Eingebauter Denkmodus
-
-Ein [Denkmodus](../glossary.qmd#gl-denkmodus) ist ein Betriebsmodus, in dem das System vor der Antwort selbst Zwischenschritte erzeugt. Abschnitt 5 erklärt den Unterschied zur angeforderten Denkspur.
-
-- **Was Sie gewinnen:** längere Aufgaben mit mehreren Bedingungen werden häufiger korrekt gelöst.
-- **Was Sie verlieren:** Sie haben den Ablauf nicht gestaltet und können ihn nicht wörtlich protokollieren.
-- **Was Sie tun:** Notieren Sie im [KI-Protokoll](../glossary.qmd#gl-ki-protokoll), ob der Denkmodus aktiv war. Notieren Sie ihn als Einstellung, so wie Sie das Modell und das Datum notieren.
-
-### 8.2 Agentische Abläufe und vertiefte Recherche
-
-Ein [agentischer Ablauf](../glossary.qmd#gl-agentischer-ablauf) heisst: Das System plant mehrere Schritte, ruft Werkzeuge auf und arbeitet ohne Rückfrage weiter. Die [vertiefte Recherche](../glossary.qmd#gl-vertiefte-recherche) ist der häufigste Fall. Das System sucht im Web, liest Seiten und liefert nach einigen Minuten einen Bericht mit Belegstellen.
-
-- **Was Sie gewinnen:** eine breite erste Übersicht in kurzer Zeit.
-- **Was Sie verlieren:** die Kontrolle über jeden Zwischenschritt. Fehler aus einem frühen Schritt wandern in alle späteren Schritte.
-- **Was Sie prüfen:** jede Angabe einzeln. Ein Bericht sieht aus wie eine Literaturübersicht, er ist aber eine Trefferliste mit Hypothesen. Erfundene Titel und falsche Angaben in Literaturnachweisen sind gut belegt. [@walters2023fabrication] Auch die Leistungsberichte über solche Systeme sind oft nicht reproduzierbar. [@kapoor2024agents]
-- **Was Sie tun:** Führen Sie zwei Protokolle getrennt. Das [Rechercheprotokoll](../glossary.qmd#gl-rechercheprotokoll) hält Datum, System, Suchanfrage und Auswahlregeln fest. Das KI-Protokoll hält Ihren Auftrag, die Antwort und Ihre Prüfschritte fest.
-
-### 8.3 Abruf aus eigenen Dokumenten
-
-Beim [Abruf aus eigenen Dokumenten](../glossary.qmd#gl-eigene-dokumente) hinterlegen Sie eine Sammlung von Dateien. Ein Suchschritt wählt daraus Abschnitte aus, und das System antwortet auf dieser Grundlage. [@lewis2020retrieval]
-
-- **Was Sie gewinnen:** Die Antwort ist an Ihr Material gebunden und nennt oft die Fundstelle.
-- **Was Sie verlieren:** nichts an Prüfpflicht. Der Suchschritt findet nicht alles, und das System antwortet trotzdem.
-- **Was Sie prüfen:** Eine Stellenangabe belegt die Fundstelle, nicht die Aussage. Öffnen Sie die genannte Seite und lesen Sie sie selbst.
-- **Was Sie beachten:** Eine hinterlegte Sammlung ist ein Upload. Es gelten die Regeln aus dem Abschnitt «Was Sie brauchen».
-
-### 8.4 Multimodales Lesen und Handschriftenerkennung
-
-Viele Systeme lesen heute auch Bilder. Sie können deshalb ein Digitalisat verarbeiten. Die [Handschriftenerkennung](../glossary.qmd#gl-htr) wandelt eine handschriftliche Seite in Text um. Für deutsche Kurrentschrift gibt es allgemeine Modelle mit brauchbaren Fehlerraten. [@hodel2021general]
-
-Diese Übung ist eine Übung zur Quellenkritik. Deshalb steht hier der Fehler im Vordergrund.
-
-- **Die Fehlerrate schwankt stark.** Schrift, Layout, Sprache und Zustand der Vorlage bestimmen das Ergebnis. Kein Modell transkribiert jede Hand zuverlässig. [@romein2025assessing]
-- **Allgemeine Bildmodelle sind schwächer als spezialisierte.** Schriftstil, historische Orthographie und Sprache verursachen weiterhin erhebliche Fehler. [@diezgarcia2025evaluating]
-- **Der gefährlichste Fehler ist die glatte Lesart.** Ein allgemeines KI-System hält an einer unleserlichen Stelle nicht an. Es setzt ein plausibles Wort ein und markiert nichts. Das ist eine [Halluzination](../glossary.qmd#gl-halluzination) in Form einer Transkription.
-- **Fehler wandern weiter.** Fehler in maschinell erkanntem Text verändern spätere Analyseschritte und damit Ihre Ergebnisse. [@vanstrien2020assessing]
-
-::: callout-caution
-
-## Behandeln Sie eine maschinelle Transkription als Lesehypothese
-
-Vergleichen Sie jedes Zitat mit dem Digitalisat, bevor Sie es übernehmen. Notieren Sie im [Analyseprotokoll](../glossary.qmd#gl-analyseprotokoll), dass der Text maschinell erkannt wurde. Notieren Sie auch das Datum und die Anzeigeform. Eine Transkription ohne diesen Vermerk ist im Text nicht von einer geprüften Lesart zu unterscheiden.
-:::
-
-### 8.5 Lokale und offene Modelle
-
-Bei einem [offenen Modell](../glossary.qmd#gl-offenes-modell) sind die Gewichte frei herunterladbar. Sie können ein solches Modell auf Ihrem eigenen Rechner ausführen. Kleine offene Modelle laufen auf einem aktuellen Notebook mit mindestens 16 Gigabyte Arbeitsspeicher.
-
-- **Datenschutz:** Das Material bleibt auf Ihrem Rechner. Damit entfällt der Upload an einen Dritten.
-- **Reproduzierbarkeit:** Sie behalten eine feste Version. Ein geschlossenes Modell kann sich ohne Ankündigung ändern oder verschwinden. [@spirling2023open]
-- **Energie:** Ein kleines Modell für eine enge Aufgabe braucht pro Anfrage um Grössenordnungen weniger Energie als ein grosses Allzweckmodell. [@luccioni2024power]
-- **Grenze:** Kleine Modelle sind bei langen Texten und bei Faktenfragen deutlich schwächer. Nutzen Sie sie für enge Aufgaben, zum Beispiel für eine Übersetzung oder für eine Zusammenfassung.
-
-Dieser Weg ist der [Minimal-Computing](../glossary.qmd#gl-minimal-computing)-Weg des Kurses. Minimal Computing fragt, wie viel Rechenleistung ein Vorhaben wirklich braucht. [@risam2022minimal]
-
-### Aufgabe 8A: Fähigkeiten des eigenen Kontos prüfen
-
-Prüfen Sie Ihr Konto und füllen Sie die Tabelle aus. Antworten Sie mit Ja, Nein oder Unklar.
-
-| Fähigkeit                       | Vorhanden? | Kostenpflichtig? | Wo eingeschaltet? |
-| ------------------------------- | ---------- | ---------------- | ----------------- |
-| Eingebauter Denkmodus           |            |                  |                   |
-| Agentischer Ablauf oder vertiefte Recherche |  |             |                   |
-| Abruf aus eigenen Dokumenten    |            |                  |                   |
-| Lesen von Bildern und Scans     |            |                  |                   |
-| Lokales oder offenes Modell     |            |                  |                   |
-
-Verlassen Sie sich dabei nicht auf die Auskunft des Systems über sich selbst. Prüfen Sie die Einstellungen und die Preisangaben Ihres Kontos.
-
-### Aufgabe 8B: Denkspur gegen Denkmodus
-
-Nehmen Sie die Aufgabe aus Übung 5A und lassen Sie sie zweimal laufen.
-
-1. Führen Sie den Prompt aus 5A ohne Denkmodus aus.
-2. Führen Sie denselben Prompt mit eingeschaltetem Denkmodus aus.
-3. Notieren Sie beide Antworten im KI-Protokoll.
-
-Hat Ihr Konto keinen Denkmodus, vergleichen Sie stattdessen den Prompt aus 5A mit einer Fassung ohne die vorgegebenen Zwischenschritte.
-
-### Arbeitsauftrag (Reflexion)
-
-Schreiben Sie fünf bis acht Sätze zu diesen Fragen:
-
-- Welchen Teil des Ergebnisses haben Sie in Aufgabe 8B selbst gesteuert?
-- Welchen Teil hat das System gesteuert?
-- Welche der fünf Fähigkeiten würden Sie in einer Seminararbeit einsetzen, und welche nicht?
-- Welche zusätzliche Prüfung verlangt jede eingesetzte Fähigkeit von Ihnen?
-
 ## Kurz-Library: wiederverwendbare Prompt-Bausteine
 
 **1) Kontext + Materialbindung**
@@ -688,8 +564,7 @@ Am Ende verfügen Sie über diese Artefakte:
 
 1. Ein KI-Protokoll mit mindestens 8 Einträgen, verteilt über die Techniken.\
 2. Pro Technik einen kurzen A/B-Vergleich und 5–8 Sätze Reflexion. Beschreiben Sie darin, was sich methodisch verbessert oder verschlechtert hat.\
-3. Eine «beste Praxis»-Vorlage. Das ist Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz.\
-4. Die ausgefüllte Tabelle aus Aufgabe 8A. Sie beschreibt die Fähigkeiten Ihres Kontos und gehört zur Dokumentation Ihrer Arbeitsumgebung.
+3. Eine «beste Praxis»-Vorlage. Das ist Ihr persönlicher Standardprompt für (a) Quellenkritik oder (b) Literaturrecherche oder (c) Schreibassistenz.
 
 ## Weiterführende Ressourcen
 

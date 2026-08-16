@@ -3,7 +3,7 @@ lang: de
 title: 'Glossar'
 description: 'Kurze Arbeitsdefinitionen der Fachbegriffe, die in den Übungen vorkommen.'
 date: '2026-08-14'
-date-modified: '2026-08-16'
+date-modified: '2026-08-14'
 toc-depth: 2
 draft: false
 citation: false
@@ -36,30 +36,6 @@ Beim Few-shot erhält das KI-System zwei bis fünf Musterantworten, damit Format
 ### Strukturierte Denkspur (Chain-of-Thought) {#gl-chain-of-thought}
 
 Eine strukturierte Denkspur ist die Aufforderung an das KI-System, die Zwischenschritte offenzulegen (die Zwischenschritte sind Prüfhilfen, keine Belege).
-
-### Eingebauter Denkmodus (Reasoning Mode) {#gl-denkmodus}
-
-Im Denkmodus erzeugt das KI-System von sich aus Zwischenschritte, bevor es antwortet. Sie haben diesen Ablauf nicht vorgegeben, anders als bei der strukturierten Denkspur.
-
-### Agentischer Ablauf (Agentic Workflow) {#gl-agentischer-ablauf}
-
-In einem agentischen Ablauf plant das KI-System mehrere Schritte, ruft dafür Werkzeuge auf und arbeitet ohne Rückfrage weiter.
-
-### Vertiefte Recherche (Deep Research) {#gl-vertiefte-recherche}
-
-Bei einer vertieften Recherche sucht das KI-System selbständig im Web, liest Seiten und liefert einen Bericht mit Belegstellen. Der Bericht ist eine Trefferliste mit Hypothesen und keine geprüfte Literaturübersicht.
-
-### Abruf aus eigenen Dokumenten (Retrieval-Augmented Generation, RAG) {#gl-eigene-dokumente}
-
-Beim Abruf aus eigenen Dokumenten hinterlegen Sie eine Sammlung von Dateien. Ein Suchschritt wählt daraus Abschnitte aus, und das KI-System antwortet auf dieser Grundlage.
-
-### Multimodales Lesen (Multimodal) {#gl-multimodal}
-
-Multimodal heisst, dass ein KI-System nicht nur Text verarbeitet, sondern auch Bilder, Tonaufnahmen oder Videos. Ein Digitalisat einer Akte ist für das System ein Bild.
-
-### Offenes Modell und lokales Modell (Open-Weight Model) {#gl-offenes-modell}
-
-Bei einem offenen Modell sind die Gewichte frei herunterladbar. Ein lokales Modell läuft auf Ihrem eigenen Rechner, und Ihr Material verlässt diesen Rechner nicht.
 
 ### Halluzination {#gl-halluzination}
 
@@ -178,10 +154,6 @@ Ein Permalink ist eine Internetadresse, die dauerhaft auf dasselbe Dokument zeig
 
 Die Texterkennung wandelt das Bild einer Seite in durchsuchbaren Text um und macht dabei Fehler.
 
-### Handschriftenerkennung (Handwritten Text Recognition, HTR) {#gl-htr}
-
-Die Handschriftenerkennung wandelt eine handschriftliche Seite in Text um. Die Fehlerrate hängt stark von Schrift, Layout, Sprache und Zustand der Vorlage ab, und das Ergebnis bleibt eine Lesehypothese.
-
 ### Markdown {#gl-markdown}
 
 Markdown ist eine einfache Schreibweise, die Überschriften, Listen und Hervorhebungen mit wenigen Zeichen markiert.
@@ -193,19 +165,3 @@ Die FAIR-Prinzipien fordern, dass Forschungsdaten auffindbar, zugänglich, kombi
 ### CARE-Prinzipien {#gl-care}
 
 Die CARE-Prinzipien fordern, dass Daten den betroffenen Gemeinschaften nützen und dass diese Gemeinschaften über ihre Daten mitbestimmen. Der Wortlaut steht bei der [Global Indigenous Data Alliance](https://www.gida-global.org/care) und in @carroll2020care.
-
-## Recht und Datenschutz
-
-Die drei folgenden Einträge geben eine Orientierung und keine Rechtsberatung. Verbindlich sind der Gesetzestext und die Vorgaben Ihrer Institution.
-
-### Personenbezogene Daten {#gl-personenbezogene-daten}
-
-Personenbezogene Daten sind Angaben über eine bestimmte oder bestimmbare lebende Person. Dazu gehören auch Angaben aus Interviews, aus Nachlässen und aus Beständen mit Schutzfrist.
-
-### Datenschutzrecht (DSGVO und revDSG) {#gl-datenschutzrecht}
-
-In der EU regelt die Datenschutz-Grundverordnung die Verarbeitung personenbezogener Daten, in der Schweiz das revidierte Datenschutzgesetz [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. Für die Forschung gelten Erleichterungen, aber keine Freistellung [@edpb2026forschung].
-
-### KI-Verordnung (EU AI Act) {#gl-kiverordnung}
-
-Die KI-Verordnung der EU regelt das Inverkehrbringen und den Einsatz von KI-Systemen [@eu2024kiverordnung]. Für Sie zählt vor allem Artikel 50: Er verlangt seit dem 2. August 2026 eine Kennzeichnung von erzeugten Bildern, Tonaufnahmen und Videos sowie von erzeugten Texten zu Fragen von öffentlichem Interesse.
