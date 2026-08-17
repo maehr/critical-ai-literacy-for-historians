@@ -1,8 +1,8 @@
 ---
 lang: fr
-title: "Citation académique"
-subtitle: "Exercice sur les pratiques de citation en recherche historique"
-description: "Cet exercice enseigne les fondamentaux de la citation académique en recherche historique, avec un accent particulier sur l'utilisation critique de l'IA générative. Vous apprendrez comment les citations fonctionnent comme un outil méthodologique pour rendre les arguments historiques traçables et vérifiables, et comment structurer le travail d'écriture assisté par IA de manière à préserver la chaîne de preuves."
+title: "Citation scientifique"
+subtitle: "Exercice sur la pratique de la citation en sciences historiques"
+description: "Cet exercice transmet les bases de la citation scientifique en sciences historiques, avec un accent particulier sur l'usage critique de l'IA générative. Vous apprenez comment les citations fonctionnent comme outil méthodique pour rendre les arguments historiques traçables et vérifiables, comment organiser le travail de texte assisté par l'IA pour que la chaîne de preuves reste intacte, et comment déclarer correctement votre usage de l'IA dans un travail de séminaire, un travail de qualification et une publication."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,16 +10,19 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: "2026-08-16"
+date-modified: "2026-08-17"
 categories: [Méthodes]
 image: ../../assets/images/citing_Gemini_Generated_Image_331x2e331x2e331x.png
 tags:
-  - Pratiques de citation
+  - Pratique de citation
   - Gestion des références
   - Traçabilité
   - Intégrité académique
   - Critique des sources numériques
+  - Divulgation
   - Assisté par IA
+difficulty: Beginner
+time_estimate: "90 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -55,7 +58,7 @@ references:
   issued:
     year: 2026
   publisher: "Historisches Seminar, Universität Zürich"
-  note: "Offizielle Studienanleitung; aktualisiert am 26. Januar 2026"
+  note: "Guide d'études officiel; mis à jour le 26 janvier 2026"
   URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf"
   abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
 - id: leitfaden_bremen_2025
@@ -65,7 +68,7 @@ references:
   issued:
     year: 2025
   publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
-  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  note: "8e édition revue et augmentée; contient des indications sur l'usage de l'IA générative"
   URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
   abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
 - id: studienleitfaden_hamburg_2021
@@ -81,7 +84,7 @@ references:
   issued:
     year: 2021
   publisher: "Fachbereich Geschichte, Universität Hamburg"
-  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  note: "Édition assurée par Monica Rüthers; achevée le 6 janvier 2021"
   URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
   abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
 - id: werkszeugkasten_basel_2016
@@ -95,7 +98,7 @@ references:
   issued:
     year: 2016
   publisher: "Departement Geschichte, Universität Basel"
-  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  note: "Version en ligne révisée du guide d'études de 2010"
   URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
   abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
 ---
@@ -104,122 +107,349 @@ references:
 
 ## Traduction automatique
 
-Cet exercice a été traduit automatiquement de l'[original allemand](../../de/exercises/zitieren.qmd) et peut contenir des erreurs. Veuillez consulter la version originale en cas de doute.
+Cet exercice a été traduit automatiquement depuis l'[original allemand](../../de/exercises/zitieren.qmd) et peut contenir des erreurs. En cas de doute, consultez la version originale.
 :::
 
-## Vue d'ensemble et objectif didactique
+## Aperçu et objectif didactique
 
-Cet exercice enseigne les **fondamentaux de la citation académique** en recherche historique, avec un accent particulier sur l'**utilisation critique de l'IA générative**. Vous apprendrez comment les citations fonctionnent comme un outil méthodologique pour rendre les arguments historiques traçables et vérifiables, et comment structurer le travail d'écriture assisté par IA de manière à préserver la **chaîne de preuves**.
+Cet exercice transmet les **bases de la citation scientifique** en sciences historiques, avec un accent particulier sur l'**usage critique de l'IA générative**. Vous apprenez comment les citations fonctionnent comme outil méthodique, pour rendre les arguments historiques traçables et vérifiables. Vous apprenez en outre comment organiser le travail de texte assisté par l'IA pour que la **chaîne de preuves** reste intacte.
 
-## Prérequis
+L'exercice a deux parties. La première partie traite de la **citation** des sources et de la littérature. La seconde partie traite de la **déclaration**: l'énoncé par lequel vous exposez votre propre usage de l'IA. Cet exercice clôt les deux parcours d'apprentissage.
+
+## En un coup d'œil
+
+| Indication                      | Valeur                                                                                     |
+| ------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 90 minutes                                                                            |
+| **Niveau**                      | Beginner                                                                                   |
+| **Parcours principal**          | Exercice 1 → exercice 2 → exercice 3                                                       |
+| **Approfondissement optionnel** | La variante avec un article derrière un péage                                              |
+| **Rendu (minimum)**             | Une déclaration de l'usage de l'IA. [Journal IA](../glossary.qmd#gl-ki-protokoll): 4 entrées. |
+
+Les trois exercices font tous partie du parcours principal. L'approfondissement optionnel coûte environ 20 minutes de plus.
+
+::: callout-important
+
+## Apportez votre journal IA
+
+L'exercice 3 travaille avec le journal IA des exercices précédents. Sans ce journal, vous ne pouvez pas écrire de déclaration.
+
+Vous n'avez pas encore de journal? Faites d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd). Vous y créez votre journal.
+:::
+
+## Ce dont vous avez besoin
+
+**Connaissances disciplinaires**
 
 - Compréhension de base des méthodes de recherche historique
-- Connaissances de base du travail avec l'IA générative (en particulier le prompting)
+- Connaissances de base de l'IA générative, en particulier du prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-Si vous n'êtes pas encore familiarisé avec le prompting, nous vous recommandons de compléter d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
+Si vous n'êtes pas encore familier du prompting, nous vous recommandons de suivre d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
 
 :::
 
-::: callout-note
+**Capacités du système d'IA**
 
-## LLM
+Le système doit savoir faire les deux choses suivantes:
 
-Vous pouvez réaliser cet exercice avec des LLM de différents fournisseurs. Pour cet exercice, il est utile que le LLM ait un accès à internet et permette le téléchargement de fichiers.
+- Chercher sur le web et appeler un article par son [DOI](../glossary.qmd#gl-doi). Vous en avez besoin dans l'exercice 1 et dans l'exercice 2.
+- Lire un fichier téléversé. Vous en avez besoin si le système n'appelle pas l'article lui-même.
 
-:::
+**Autres outils et accès**
+
+- Un [logiciel de gestion bibliographique](../glossary.qmd#gl-zotero). Vous comparez avec lui les indications de l'IA et un import vérifié.
+- L'article de test en fichier PDF. L'article est librement accessible, et vous n'avez besoin d'aucun accès institutionnel.
+- Votre journal IA des exercices précédents.
+- La règle contraignante de votre institution sur l'usage de l'IA. Vous trouvez cette règle par la procédure de cet exercice.
+
+{{< include ../_exigences-ia.qmd >}}
 
 ## Objectifs d'apprentissage
 
-Après avoir complété cet exercice, vous serez en mesure de:
+À l'issue de l'exercice, vous savez:
 
-- expliquer les fonctions épistémiques et éthiques des citations académiques en recherche historique
-- distinguer clairement entre **connaissances communes**, **sources primaires** et **littérature secondaire**
-- décider de manière cohérente **quand** une citation est nécessaire (et quand elle ne l'est pas)
-- appliquer les pratiques de citation par notes de bas de page selon des normes établies (par exemple, Chicago Manual of Style)
-- utiliser les citations de manière ciblée pour **soutenir**, **contextualiser** et **qualifier de manière critique** les arguments historiques
-- employer l'IA générative comme **outil heuristique** sans endommager la **chaîne de preuves**
+- expliquer les fonctions épistémiques et éthiques des citations scientifiques dans la recherche historique
+- distinguer proprement le **savoir commun** (savoir de fond largement connu et incontesté, sans obligation de référence), les **sources primaires** et la **littérature secondaire**
+- décider de manière cohérente **quand** une citation est nécessaire, et quand elle ne l'est pas
+- appliquer la pratique de citation en note de bas de page selon des normes établies (par exemple le Chicago Manual of Style)
+- utiliser les citations de manière ciblée, pour **étayer**, **encadrer** et **qualifier de manière critique** les arguments historiques
+- utiliser l'IA générative comme **outil heuristique**, sans endommager la **chaîne de preuves**
+- exposer votre propre usage de l'IA dans une **déclaration**, et dériver cette déclaration de votre **journal IA**
+- trouver vous-même les règles contraignantes de votre institution et de la revue que vous visez
 
-## Que sont les citations académiques ?
+## Que sont les citations scientifiques?
 
-Les citations académiques constituent le système formalisé pour référencer des informations, des idées, des données et des interprétations. En recherche historique, elles fonctionnent comme un **mécanisme de contrôle** méthodologique: elles rendent les arguments **vérifiables**, reconstructibles et critiquables en permettant aux lecteurs d'accéder à la base de preuves.
+Les citations scientifiques sont le système formalisé de référencement des informations, des idées, des données et des interprétations. En sciences historiques, elles fonctionnent comme un **mécanisme de contrôle** méthodique: elles rendent les arguments **vérifiables**, reconstructibles et critiquables, parce qu'elles donnent aux lectrices et aux lecteurs l'accès à la base de preuves.
 
-Les citations relient les arguments à:
+Les citations relient les arguments:
 
-- **Sources primaires** (documents contemporains, dossiers, lettres, protocoles, etc.)
-- **Littérature secondaire** (interprétations savantes ultérieures)
+- aux **sources primaires** (documents contemporains, actes, lettres, procès-verbaux, etc.)
+- à la **littérature secondaire** (interprétations scientifiques ultérieures)
 
-Sans ce lien, les textes historiques perdent leur caractère scientifique et deviennent de simples récits. [@turingway2022handbook]
+Sans ce lien, les textes historiques perdent leur caractère scientifique et deviennent un simple récit. [@turingway2022handbook]
 
-## Objectifs de la citation
+## Buts de la citation
 
-### 1) Intégrité académique et attribution
+### 1) Intégrité scientifique et attribution
 
-- Prévient le plagiat (les dettes intellectuelles deviennent visibles).
-- Documente la paternité et les travaux antérieurs.
-- Stabilise la crédibilité par une pratique responsable.
+- Elle empêche le plagiat (les dettes intellectuelles deviennent visibles).
+- Elle expose la paternité et les travaux antérieurs.
+- Elle stabilise la crédibilité par une pratique responsable.
 
 ### 2) Vérifiabilité et transparence
 
-- Les lecteurs peuvent localiser et évaluer les sources.
+- Les lectrices et les lecteurs peuvent trouver et évaluer les sources.
 - Les citations documentent la **chaîne de preuves** (source → analyse → affirmation).
-- L'effort de recherche (travail d'archives/données) devient également visible.
+- La charge de travail devient visible aussi (travail d'archives, travail de données).
 
-### 3) Positionnement dans le paysage de la recherche
+### 3) Positionnement dans l'état de la recherche
 
-- Les citations situent les déclarations dans le discours.
-- Elles marquent l'accord, la distinction, la controverse et la connectivité.
+- Les citations situent les affirmations dans le discours.
+- Elles marquent l'accord, la démarcation, la controverse et la possibilité de raccordement.
 
-### 4) Argumentation fondée sur des preuves
+### 4) Argumentation fondée sur les preuves
 
-- Sources primaires: fondement empirique.
-- Littérature secondaire: contexte, théorie, méthodologie, état du débat.
+- Sources primaires: le fondement empirique.
+- Littérature secondaire: le contexte, la théorie, la méthode, l'état du débat.
 
 ### 5) Fonctions discursives et techniques des notes de bas de page
 
-- Contextualiser/traduire des citations.
-- Commentaire critique des sources.
-- Références aux contre-preuves / interprétations alternatives.
-- Recommandations de lecture sans surcharger le texte principal.
+- Contextualiser ou traduire des citations.
+- Commenter du point de vue de la critique des sources.
+- Renvoyer à des contre-preuves ou à des interprétations alternatives.
+- Recommander des lectures, sans surcharger le corps du texte.
 
-**Point clé**: Les citations ne garantissent pas la « vérité » mais l'**inspectabilité**.
+**Règle à retenir**: les citations ne garantissent pas la «vérité», mais la **possibilité d'inspection**.
 
-## Quand dois-je citer ?
+## Quand dois-je citer?
 
-**Toute affirmation qui dépasse les connaissances générales de base nécessite une citation.**
+**Chaque affirmation qui dépasse le savoir de fond général a besoin d'une citation.**
 
 **Toujours citer:**
 
-- Citations directes (guillemets + référence)
-- Paraphrases (l'idée reste empruntée, même si la formulation est nouvelle)
-- Arguments/cadres interprétatifs adoptés
-- Données/statistiques et mesures opérationnalisées
-- Emprunts indirects (source primaire via littérature secondaire → double attribution)
+- Les citations directes (guillemets et référence)
+- Les paraphrases (l'idée reste celle d'autrui, même si la formulation est nouvelle)
+- Les arguments et les cadres d'interprétation repris
+- Les données, les statistiques et les mesures opérationnalisées
+- Les reprises indirectes (une source primaire par la littérature secondaire → double attribution)
 
-**Exception: Connaissances communes.** Les faits largement connus, non controversés et triviaux ne nécessitent pas de référence. **Mais**: Dès que vous qualifiez, précisez, quantifiez ou entrez en territoire controversé, une citation est requise.
+**Exception: le savoir commun.** Les faits largement connus, incontestés et triviaux n'ont besoin d'aucune référence. **Mais**: dès que vous qualifiez, que vous accentuez, que vous quantifiez ou que vous entrez sur un terrain controversé, une citation s'impose.
 
-## Comment citer ?
+## Comment citer?
 
-Utilisez un logiciel de gestion des références (par exemple, Zotero) et suivez une norme établie comme le [Chicago Manual of Style](https://www.chicagomanualofstyle.org/) ou les directives d'[infoclio.ch](https://www.infoclio.ch/de/citation-style). Selon votre institution d'enseignement ou le contexte de publication, différentes conventions peuvent s'appliquer. Renseignez-vous à l'avance et assurez la cohérence.
+Utilisez un logiciel de gestion bibliographique (par exemple Zotero) et suivez une norme établie. En sciences historiques, c'est le plus souvent le **Chicago Manual of Style**, dans sa 18e édition de 2024 [@chicago2024manual]. L'ouvrage complet est payant. Le court [Chicago-Style Citation Quick Guide](https://www.chicagomanualofstyle.org/tools_citationguide.html) est librement accessible (ENGLISH only). Une alternative francophone est constituée par les règles d'[infoclio.ch](https://www.infoclio.ch/fr/citation-style).
+
+Selon l'établissement de formation ou le contexte de publication, des conventions différentes peuvent s'appliquer. Renseignez-vous à l'avance et veillez à la cohérence.
+
+## Déclarer l'usage de l'IA
+
+Une citation et une déclaration sont deux choses différentes. Une **citation** référence un passage de texte précis. Une **déclaration** décrit votre processus de travail. Elle dit si et comment vous avez utilisé l'IA générative. Un travail a souvent besoin des deux.
+
+### Du journal IA à la déclaration
+
+Dans les autres exercices, vous tenez un **journal IA**. Le journal est votre preuve de travail privée. Il contient les prompts, les réponses, les étapes de vérification et les décisions. La déclaration est l'énoncé public. Vous y résumez le journal en quelques phrases.
+
+| Caractéristique | Journal IA                                     | Déclaration                                |
+| --------------- | ---------------------------------------------- | ------------------------------------------ |
+| Destinataire    | vous-même et votre encadrement sur demande     | toutes les lectrices et tous les lecteurs  |
+| Étendue         | complet, toutes les entrées                    | court, souvent 5 à 15 phrases              |
+| Emplacement     | fichier propre ou annexe                       | emplacement fixe dans le travail           |
+| But             | reconstruction du processus de travail         | transparence et responsabilité             |
+| Moment          | en continu pendant le travail                  | à la fin, dérivée du journal               |
+
+**Règle à retenir**: sans journal, vous ne pouvez pas écrire de déclaration conforme à la vérité.
+
+### Quand dois-je déclarer?
+
+::: callout-warning
+
+## Vérifiez d'abord la règle de votre institution
+
+Vérifiez la règle de votre institution avant de vous fier à une règle empirique. De nombreuses hautes écoles exigent une déclaration pour **chaque** usage de l'IA, même pour la correction orthographique.
+
+:::
+
+Déclarez l'usage de l'IA dès qu'il est **substantiel**. Substantiel signifie ceci: l'IA a contribué au fond de votre résultat. Les Living Guidelines de la Commission européenne y comptent la revue de littérature, l'interprétation des analyses, la formulation des objectifs de recherche et le développement des hypothèses. Une simple correction de texte n'y compte pas comme un usage substantiel [@eucommission2026genai].
+
+### La déclaration et l'indication sont deux obligations
+
+La déclaration scientifique et l'indication légale ont des destinataires différents. Gardez les deux distinctes.
+
+| Question    | Déclaration scientifique                                | Indication légale                                                                                     |
+| ----------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Fondement   | la règle de votre institution ou de votre revue          | le [règlement sur l'IA de l'Union européenne](../glossary.qmd#gl-kiverordnung), article 50, paragraphe 4 [@eu2024kiverordnung] |
+| S'applique  | à chaque usage substantiel                               | depuis le 2 août 2026, en cas d'usage professionnel                                                     |
+| Concerne    | chaque genre de texte, y compris un travail de séminaire | un [hypertrucage](../glossary.qmd#gl-deepfake), ainsi qu'un texte généré publié pour informer le public sur une question d'intérêt public |
+| Destinataire | votre communauté scientifique                           | le public                                                                                              |
+| Exception   | aucune, si l'institution exige une déclaration           | un texte qu'une personne a examiné et dont elle assume la responsabilité éditoriale                     |
+
+Le règlement n'exige donc pas une indication pour chaque image générée et pour chaque texte généré. Une troisième obligation ne vous concerne pas: l'article 50, paragraphe 2, oblige le fournisseur à marquer les contenus générés dans un format lisible par machine.
+
+L'exception du règlement ne vous décharge pas sur le plan scientifique. Vous déclarez votre usage de l'IA même lorsque la loi n'exige aucune indication.
+
+### Que met-on dans une déclaration?
+
+La Deutsche Forschungsgemeinschaft nomme quatre indications. Les chercheurs doivent déclarer **si** et **quels** modèles génératifs ils ont employés, **à quelle fin** et **dans quelle mesure** [@dfg2023generative]. Complétez par deux indications supplémentaires, pour que la chaîne de preuves reste visible:
+
+1. **Si**: avez-vous employé de l'IA générative? Répondez par oui ou par non.
+2. **Lesquels**: nommez l'outil, la version et le fournisseur. Nommez aussi la période.
+3. **But**: nommez chaque tâche séparément, par exemple le plan, la recherche bibliographique ou la traduction.
+4. **Étendue**: nommez les chapitres ou les sections concernés. Donnez des chiffres là où c'est possible.
+5. **Vérification**: décrivez comment vous avez vérifié les résultats.
+6. **Responsabilité**: déclarez que vous répondez du contenu.
+
+Nommez aussi ce pour quoi vous n'avez **pas** employé d'IA. Cette indication vous protège des malentendus.
+
+### Où se trouve la déclaration?
+
+L'emplacement dépend du type de texte. Le tableau suivant nomme les emplacements usuels. La consigne de votre institution ou de votre revue prime toujours.
+
+| Type de texte                                            | Emplacement de la déclaration                                                                                     |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Travail de séminaire, travail de proséminaire            | déclaration signée au début ou à la fin, souvent sur un formulaire de l'institution; détails en note ou en annexe |
+| Travail de qualification (bachelor, master, doctorat)    | formulaire de la faculté selon le règlement d'examen, plus une courte section dans la partie méthode              |
+| Article, contribution à un ouvrage, monographie           | partie méthode ou remerciements, selon les instructions aux auteurs de l'éditeur                                  |
+| Exposé, affiche, billet de blog                          | courte mention à la fin ou sur la dernière diapositive                                                              |
+
+L'Institut d'histoire de l'Université de Berne exige par exemple une déclaration d'IA signée pour chaque travail de séminaire. Une déclaration omise y vaut tromperie, comme un plagiat [@unibe2026kirichtlinien]. Les revues exigent le plus souvent l'indication au moment de la soumission, dans la partie méthode [@icmje2026recommendations].
+
+### L'IA n'est pas une autrice
+
+Sur ce point, il existe un large consensus. Seules des personnes physiques peuvent apparaître comme autrices et auteurs [@dfg2023generative]. Les Living Guidelines de la Commission européenne le formulent ainsi: les systèmes d'IA ne sont ni auteurs ni coauteurs, parce que la paternité suppose une capacité d'agir et une responsabilité [@eucommission2026genai]. Les recommandations de l'ICMJE fondent la même interdiction sur le fait qu'un agent conversationnel ne peut assumer aucune responsabilité pour l'exactitude et l'intégrité [@icmje2026recommendations].
+
+Il en découle une conséquence forte. Vous répondez de chaque phrase et de chaque référence dans votre travail. La remarque «c'est l'IA qui l'a écrit ainsi» ne vous décharge pas.
+
+### Trouver les règles contraignantes {#sec-regles-contraignantes}
+
+::: callout-important
+
+## Les consignes de votre institution font foi
+
+Cet exercice explique une procédure. Seules les règles de votre institution et de votre revue font foi. Cherchez ces règles avant de rendre un travail.
+
+:::
+
+1. Ouvrez le site web de votre institut. Cherchez «plagiat», «déclaration d'authenticité», «déclaration sur l'honneur» ou «IA».
+2. Téléchargez le modèle de déclaration d'authenticité. Vérifiez s'il contient une déclaration d'IA.
+3. Lisez le guide d'études de votre discipline. Depuis 2023, de nombreux guides contiennent une section sur l'IA générative [@kompass_geschichtsstudium_2025; @leitfaden_bremen_2025].
+4. Vérifiez le règlement d'examen si vous écrivez un travail de qualification.
+5. Pour une publication, ouvrez les instructions aux auteurs de la revue. Cherchez-y «IA», «AI» ou «génératif».
+6. Notez la référence et la date dans votre journal IA.
+7. Demandez à la personne qui vous encadre si une règle reste peu claire. Demandez avant le rendu.
+
+### Citer une sortie d'IA
+
+La déclaration décrit le processus. Une **citation** vous est nécessaire en plus, dès que vous reprenez dans votre travail un texte produit par l'IA, mot pour mot ou dans le sens. Le Chicago Manual of Style règle ce cas depuis la 18e édition, à la section 14.112 [@chicago2024manual].
+
+Trois règles s'y appliquent:
+
+- Référencez le contenu produit par l'IA à l'endroit concerné, dans le texte ou dans une note de bas de page.
+- N'intégrez pas le contenu produit par l'IA à la bibliographie. Une exception vaut s'il existe un lien public vers la sortie.
+- Nommez le fournisseur, le prompt, l'outil avec sa version et la date.
+
+Modèle de note de bas de page:
+
+``` markdown
+1. [Fournisseur], réponse à «[votre prompt, abrégé]», [outil et version],
+   [date de production], [lien public, s'il existe].
+```
+
+Un texte produit par l'IA n'est ni une source ni de la littérature secondaire. Il ne prouve rien. Traitez chaque affirmation de l'IA comme une **hypothèse de recherche** que vous devez vérifier à l'extérieur.
+
+### Exemple type: une déclaration dans un travail de séminaire
+
+L'exemple suivant se place à la fin du travail, avant la bibliographie. Il complète le formulaire de l'institution, il ne le remplace pas. Remplacez toutes les indications entre crochets par les vôtres.
+
+``` markdown
+## Déclaration de l'usage de l'IA
+
+Pour ce travail, j'ai employé de l'IA générative. J'ai utilisé pour cela
+[outil, version, fournisseur] entre le 3 et le 14 mars 2026.
+
+But et étendue:
+
+- Plan: j'ai fait produire trois variantes de plan. J'ai repris la variante 2,
+  fortement remaniée, pour les chapitres 2 à 4.
+- Recherche bibliographique: j'ai demandé de la littérature secondaire sur la
+  politique européenne de la Suisse. Sur 12 titres proposés, 5 n'existaient pas.
+  J'ai vérifié les 7 autres titres dans le catalogue de bibliothèque. Je ne cite
+  que des titres vérifiés.
+- Langue: j'ai fait vérifier la grammaire et l'orthographe des chapitres 1 et 5.
+
+Je n'ai employé aucune IA pour l'interprétation des sources et pour la
+traduction des documents allemands.
+
+Vérification: j'ai vérifié chaque affirmation de fond de l'IA sur la source ou
+sur la littérature secondaire. J'ai confronté toutes les citations littérales
+avec l'original (formulation et numéro de page).
+
+Responsabilité: le contenu de ce travail est ma propre prestation. Je réponds
+de toutes les affirmations et de toutes les références.
+
+Le journal IA complet compte 14 entrées. Il existe et peut être consulté sur
+demande.
+
+[Lieu], [date]
+[Nom]
+```
+
+Pour un article, un court paragraphe dans la partie méthode suffit:
+
+``` markdown
+Pour les travaux préparatoires de cet article, j'ai employé un modèle de langue
+génératif ([outil, version, fournisseur], consulté en mars 2026): pour la
+structuration de l'argumentation, pour le résumé de 40 articles de presse et
+pour la révision linguistique. J'ai vérifié tous les résumés contre les articles
+originaux. Le modèle n'a analysé aucune source et n'a apporté aucune
+interprétation. La paternité et la responsabilité de ce texte m'incombent
+seul. Les prompts et les réponses sont déposés sous [lien].
+```
+
+::: callout-caution
+
+## Cette formulation ne suffit pas
+
+Évitez la phrase «Ce travail a été réalisé avec le soutien de l'IA.» Elle ne nomme ni l'outil, ni le but, ni l'étendue, ni la vérification. Une telle indication n'est pas vérifiable et ne satisfait pas aux exigences.
+
+:::
 
 ## Structure de l'exercice
 
-- Exercice 1: Tester et comparer la citation automatisée.
-- Exercice 2: Vérifier les résumés générés par IA pour la correction des citations et la fidélité aux sources.
+- Exercice 1: tester et comparer la citation automatisée.
+- Exercice 2: vérifier la citation correcte et la fidélité aux preuves dans des résumés produits par l'IA.
+- Exercice 3: écrire votre propre déclaration à partir du journal IA.
 
-## Exercice 1: Citation automatisée
+::: callout-note
+
+## Article de test: librement accessible
+
+Les exercices 1 et 2 travaillent avec un article en libre accès. Vous n'avez besoin pour cela d'aucun accès institutionnel:
+
+Andreas Fickers, «Update für die Hermeneutik. Geschichtswissenschaft auf dem Weg zur digitalen Forensik?», Zeithistorische Forschungen 17 (2020), cahier 1, p. 157–168, <https://doi.org/10.14765/zzf.dok-1765> [@fickers2020hermeneutik]. (GERMAN only)
+
+Le texte intégral et un PDF sont librement disponibles sur <https://zeithistorische-forschungen.de/1-2020/5823>. Téléchargez le PDF avant de commencer. Vous en avez besoin pour vérifier les réponses de l'IA contre l'original.
+
+**Variante avec un accès institutionnel**: refaites les deux exercices avec un article derrière un péage, par exemple <https://doi.org/10.1093/pastj/gtae018>. Comparez la manière dont les réponses de l'IA diffèrent.
+
+:::
+
+## Exercice 1: citation automatisée
 
 ``` markdown
-Citez l'article <https://doi.org/10.1093/pastj/gtae018> selon le Chicago Manual of Style.
-Créez également une entrée dans un format que je peux directement importer dans Zotero.
+Cite l'article <https://doi.org/10.14765/zzf.dok-1765> selon le Chicago Manual of Style (18e édition).
+Produis en plus une entrée dans un format que je peux importer directement dans mon logiciel de gestion bibliographique.
 ```
 
 ::: callout-tip
-Si l'IA n'a pas accès à l'article, vous pouvez télécharger l'article en PDF ou copier le contenu et les métadonnées de l'article au début du prompt et les séparer visuellement, par exemple avec """. Exemple:
+Un système doté d'une recherche sur le web appelle en général l'article lui-même par le DOI. Vérifiez s'il l'a vraiment fait.
 
+Seulement dans le cas exceptionnel où l'IA n'obtient pas l'accès à l'article, téléversez l'article en PDF. Vous pouvez aussi copier le contenu et les métadonnées au début du prompt et les séparer visuellement, par exemple avec """. Exemple:
+
+``` markdown
 """
 CONTENU DU DOCUMENT
 """
@@ -229,29 +459,86 @@ MÉTADONNÉES DU DOCUMENT
 """
 
 VOTRE PROMPT
+```
 :::
 
-Comparez la réponse avec votre citation manuelle, les recommandations officielles de citation sur le site de l'éditeur ou l'importation DOI dans Zotero. Testez d'autres sources de littérature secondaire (autres articles, monographies).
+Comparez la réponse avec votre citation manuelle, avec les recommandations de citation officielles de la page de l'éditeur, ou avec l'import par DOI dans votre logiciel de gestion bibliographique. Testez d'autres sources de littérature secondaire (d'autres articles, des monographies).
 
-- Toutes les informations correspondent-elles ?
-- Y a-t-il des écarts systématiques (par exemple, avec les numéros de page, les éditeurs, les titres de revues) ?
+- Toutes les indications concordent-elles?
+- Y a-t-il des écarts systématiques (par exemple sur les numéros de page, les éditeurs, les titres de revue)?
 
-## Exercice 2: Résumé assisté par IA avec citations originales
+## Exercice 2: résumé assisté par l'IA avec citations originales
 
 ``` markdown
-Résumez l'article <https://doi.org/10.1093/pastj/gtae018>. 
-Utilisez uniquement des citations originales de l'article et citez-les selon le Chicago Manual of Style.
+Résume l'article <https://doi.org/10.14765/zzf.dok-1765>.
+Utilise uniquement des citations originales de l'article et cite-les selon le Chicago Manual of Style (18e édition).
 ```
 
-Vérifiez la réponse par rapport à l'article original:
+Vérifiez la réponse contre l'article original. Le PDF est librement disponible, vous pouvez donc consulter chaque citation directement.
 
-- Les citations correspondent-elles au texte original (formulation, numéro de page) ?
-- Le sens des citations a-t-il été correctement transmis ?
+- Les citations concordent-elles avec le texte original (formulation, numéro de page)?
+- Le contexte de sens des citations a-t-il été restitué correctement?
+
+## Exercice 3: déclarer votre propre usage de l'IA
+
+### Objectif
+
+Vous écrivez une déclaration complète pour un travail à vous. Vous dérivez cette déclaration de votre journal IA.
+
+### Tâche (manuelle)
+
+1. Ouvrez votre journal IA des exercices précédents.
+2. Cherchez la règle contraignante de votre institution, selon la procédure de la section [Trouver les règles contraignantes](#sec-regles-contraignantes).
+3. Rattachez chaque entrée du journal à un but, par exemple la recherche, le plan ou la langue.
+4. Écrivez la déclaration d'après l'exemple type. Utilisez les six indications.
+5. Nommez au moins une tâche pour laquelle vous n'avez employé aucune IA.
+
+### Tâche au moyen de l'IA
+
+``` markdown
+Voici mon journal IA:
+"""
+[INSÉRER LE JOURNAL]
+"""
+
+Voici les consignes de mon institution:
+"""
+[INSÉRER LES CONSIGNES]
+"""
+
+Formule-en un projet de déclaration de l'usage de l'IA.
+Nomme si, quels outils, à quelle fin, dans quelle mesure, comment vérifié
+et qui est responsable. N'invente rien. Marque avec [MANQUE] chaque indication
+absente du journal.
+```
+
+### Consigne de travail (réflexion)
+
+Comparez le projet de l'IA avec votre propre version.
+
+- Quelles indications l'IA a-t-elle inventées ou embellies?
+- Quelles lacunes du journal l'IA a-t-elle rendues visibles?
+- Le projet satisfait-il la consigne de votre institution?
+
+Corrigez à la main chaque indication fausse. C'est vous qui répondez de la déclaration, et non l'IA.
+
+## Résultat d'apprentissage
+
+Vous retirez quatre résultats de cet exercice:
+
+1. une comparaison des citations produites par l'IA avec la citation vérifiée, issue des exercices 1 et 2
+2. une déclaration achevée pour un travail à vous, issue de l'exercice 3
+3. la référence de la règle contraignante de votre institution, notée dans le journal IA
+4. un journal IA avec au moins 4 entrées provenant de cet exercice
 
 ## Ressources complémentaires
 
-- [Stanford HAI: AI-Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers) (ANGLAIS) – Compte rendu d'une étude qui teste les détecteurs d'IA. Les détecteurs classent souvent à tort les textes d'étudiants non anglophones comme produits par une machine.
-- [The Turing Way](https://book.the-turing-way.org/) (ANGLAIS) – Manuel pour une recherche reproductible, éthique et collaborative.
+- [DFG: Stellungnahme zum Einfluss generativer Modelle](https://www.dfg.de/resource/blob/289674/ff57cf46c5ca109cb18533b21fba49bd/230921-stellungnahme-praesidium-ki-ai-data.pdf) – Court texte de fond sur la déclaration et la paternité [@dfg2023generative]. (GERMAN only)
+- [Commission européenne: Living Guidelines on the Responsible Use of Generative AI in Research](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf) – Recommandations pour les chercheurs, troisième version de mai 2026. (ENGLISH only)
+- [ICMJE Recommendations](https://www.icmje.org/recommendations/) – Consignes de nombreuses revues sur la déclaration au moment de la soumission. (ENGLISH only)
+- [Historisches Institut Bern: Plagiate und KI-Gebrauch](https://www.hist.unibe.ch/studium/plagiate__ki_gebrauch/index_ger.html) – Exemple de règle institutionnelle avec un modèle de déclaration d'IA. (GERMAN only)
+- [Stanford HAI: AI-Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers) – Compte rendu d'une étude qui examine les détecteurs d'IA. Ces détecteurs classent souvent à tort comme automatiques les textes d'étudiants dont l'anglais n'est pas la langue maternelle. (ENGLISH only)
+- [The Turing Way](https://book.the-turing-way.org/) – Manuel pour une recherche reproductible, éthique et collaborative. (ENGLISH only)
 
 ## Bibliographie
 

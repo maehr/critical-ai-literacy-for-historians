@@ -1,0 +1,91 @@
+<!-- Texte explicatif commun sur le journal IA. Les exercices intègrent ce fichier avec le shortcode include. -->
+
+:::: {.callout-note collapse="true" title="Journal IA: votre journal de recherche pour l'usage de l'IA (déplier)"}
+
+Un **journal IA** est une documentation courte de votre usage de l'IA. Dans chaque entrée, vous retenez cinq choses: quel matériel vous avez saisi, ce que vous avez demandé, ce que l'IA a répondu, comment vous avez vérifié la réponse et comment vous avez décidé.
+
+Le journal IA fonctionne comme un journal de recherche. Le chemin vers le résultat reste traçable, pour vos lectrices et vos lecteurs, et pour vous-même. Vous avez besoin de ce journal plus tard, pour la partie méthode et pour la déclaration de votre usage de l'IA.
+
+La version allemande de ce cours nomme ce journal **KI-Protokoll**. La littérature anglophone le nomme aussi **audit trail**. Ce terme vient de la vérification comptable. Un vérificateur y suit une piste de pièces justificatives et remonte chaque chiffre jusqu'à son origine. Votre journal fait la même chose pour vos étapes de travail. Dans les exercices, nous utilisons uniquement le terme journal IA.
+
+::: callout-important
+
+## Écrivez chaque entrée immédiatement
+
+Écrivez l'entrée directement après l'étape de travail, et non à la fin de l'exercice. Après une heure, vous ne connaissez plus la formulation exacte de votre prompt.
+:::
+
+### Où tenir le journal
+
+Vous n'avez besoin d'aucun outil particulier. Un fichier texte ou un document dans votre traitement de texte suffit. Une feuille dans un tableur convient aussi.
+
+1. Créez un fichier par exercice.
+2. Donnez au fichier un nom clair, par exemple `journal-ia_critique-sources.md`.
+3. Écrivez chaque entrée sous la précédente, dans le même fichier.
+4. Enregistrez le fichier avec votre rendu.
+
+### Quelle longueur pour une entrée
+
+Une entrée est courte. Elle compte cinq à dix lignes et vous coûte une à deux minutes. Une entrée couvre une étape de travail, c'est-à-dire un prompt et la réponse qui lui correspond.
+
+Des règles différentes valent pour le prompt et pour la réponse:
+
+- **Prompt: mot pour mot.** Copiez le prompt exactement comme vous l'avez saisi. Si le prompt est très long, copiez le passage central et abrégez avec `[…]`.
+- **Réponse: résumée.** Résumez la réponse en deux ou trois phrases. Ne copiez un passage mot pour mot que si vous reprenez ce passage dans votre texte, ou si vous voulez documenter une erreur de l'IA.
+
+Chaque exercice indique ce qu'il exige. Certains exercices nomment un nombre d'entrées, d'autres une longueur en mots. Si un exercice n'indique rien, écrivez une entrée pour chaque étape de travail avec l'IA.
+
+### Modèle pour une entrée
+
+Copiez ce tableau à nouveau pour chaque entrée.
+
+| Champ                     | Contenu |
+| ------------------------- | ------- |
+| Date                      |         |
+| Étape (exercice, numéro)  |         |
+| But (1 phrase)            |         |
+| Matériel (entrée)         |         |
+| Prompt (mot pour mot)     |         |
+| Réponse (version courte)  |         |
+| Étapes de vérification    |         |
+| Décision                  |         |
+| Justification (1 phrase)  |         |
+
+Si vous écrivez en Markdown, copiez ce code source:
+
+```markdown
+| Champ                    | Contenu |
+| ------------------------ | ------- |
+| Date                     |         |
+| Étape (exercice, numéro) |         |
+| But (1 phrase)           |         |
+| Matériel (entrée)        |         |
+| Prompt (mot pour mot)    |         |
+| Réponse (version courte) |         |
+| Étapes de vérification   |         |
+| Décision                 |         |
+| Justification (1 phrase) |         |
+```
+
+Une liste avec les mêmes champs est tout aussi valable. Choisissez la forme que vous remplissez le plus vite.
+
+### Une entrée remplie comme exemple
+
+L'exemple vient de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd). Une étudiante y examine une note de dossier du 7 juillet 1949.
+
+| Champ                    | Contenu                                                                                                                                                                                                                                                                          |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Date                     | 14 mars 2026, 10h15                                                                                                                                                                                                                                                              |
+| Étape (exercice, numéro) | Critique des sources, étape 2 (critique externe)                                                                                                                                                                                                                                 |
+| But (1 phrase)           | Je vérifie si l'IA déduit correctement du texte les indications formelles de la note de dossier.                                                                                                                                                                                  |
+| Matériel (entrée)        | Note de dossier Berne, 7.7.1949, Petitpierre/Hansen (Dodis 5020), texte intégral de l'édition copié dans le prompt.                                                                                                                                                               |
+| Prompt (mot pour mot)    | «Analyse la note de dossier suivante uniquement sous l'angle de la critique externe des sources. Nomme l'auteur, le destinataire, la date, le genre de texte et la forme de transmission. Marque expressément comme supposition chaque indication qui ne figure pas dans le texte. […]» |
+| Réponse (version courte) | L'IA nomme Petitpierre comme auteur, Hansen comme interlocuteur et le 7.7.1949 comme date. Elle qualifie le texte de «procès-verbal d'une séance du Conseil fédéral». Elle ajoute sans le signaler que la note se trouve «aux Archives fédérales sous la cote E 2001».              |
+| Étapes de vérification   | J'ai comparé toutes les indications avec l'édition sur <https://dodis.ch/5020>. L'auteur, la date et l'interlocuteur concordent avec le texte. Le genre de texte ne concorde pas: le texte retient un entretien, il ne consigne pas une séance. La cote ne figure nulle part dans le matériel. |
+| Décision                 | Repris en partie.                                                                                                                                                                                                                                                                |
+| Justification (1 phrase) | Je reprends l'auteur, la date et l'interlocuteur, je corrige le genre de texte en «note de dossier», et je rejette la cote comme non étayée.                                                                                                                                      |
+
+L'entrée montre le cas normal: une partie de la réponse est utilisable, une partie est fausse, et une partie n'est pas étayée.
+
+Notez la troisième catégorie. L'étudiante n'affirme pas que la cote est inventée. Elle retient seulement ce qu'elle peut vérifier: la cote ne figure pas dans le matériel. La question de savoir si le fonds existe est une autre question. Vous ne pouvez qualifier une indication de fausse qu'après l'avoir vérifiée. Jusque-là, elle n'est pas étayée. Cette distinction est le cœur de la critique des sources, et elle vaut aussi face à l'IA.
+::::

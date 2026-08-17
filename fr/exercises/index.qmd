@@ -1,6 +1,7 @@
 ---
 title: "Exercices"
 lang: fr
+date-modified: "2026-08-17"
 listing:
   id: exercises
   # Ordre d'apprentissage, et non alphabétique. « sort: false » conserve cet ordre.
@@ -16,9 +17,51 @@ listing:
   sort: false
   type: table
   categories: true
-  fields: [title, subtitle, description, categories]
+  fields: [title, subtitle, difficulty, time_estimate, categories]
+  field-display-names:
+    difficulty: "Niveau"
+    time_estimate: "Durée"
+  field-links: [title]
 citation: false
 ---
+
+Cette page liste les huit exercices du cours. Chaque exercice entraîne une étape de travail de la recherche historique avec des systèmes d'IA. Vous n'avez besoin d'aucune connaissance en programmation.
+
+## Comment lire un exercice
+
+Chaque exercice commence par la section «En un coup d'œil». Cette section nomme cinq indications:
+
+- **Durée**: le temps de travail honnête pour l'exercice entier.
+- **Niveau**: Beginner, Intermediate ou Advanced.
+- **Parcours principal**: les étapes qui mènent à un résultat complet.
+- **Approfondissement optionnel**: les étapes que vous pouvez omettre.
+- **Rendu (minimum)**: ce que vous présentez à la fin.
+
+Suit ensuite la section «Ce dont vous avez besoin». Elle nomme les connaissances, les capacités nécessaires du système d'IA et les autres outils. Lisez les deux sections avant de commencer l'étape 1.
+
+## Ordre recommandé
+
+Commencez par l'exercice [Prompt Engineering](prompt-engineering.qmd). Il est la base de tous les autres exercices. Ensuite, les exercices suivent le déroulement d'un projet de recherche:
+
+1. [Prompt Engineering](prompt-engineering.qmd) – la base commune. Vous y créez aussi votre [journal IA](../glossary.qmd#gl-ki-protokoll).
+2. [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) – explorer l'état de la recherche de manière systématique.
+3. [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) – faire du sujet une question traitable.
+4. [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd) – trouver des sources primaires et planifier l'accès.
+5. [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) – examiner et situer une source unique.
+6. [Écriture scientifique](ecriture.qmd) – développer un texte à partir du matériel.
+7. [Citation](citer.qmd) – sécuriser les références et déclarer votre usage de l'IA.
+8. [Public History](public-history.qmd) – traduire les résultats pour un public.
+
+Vous pouvez aussi traiter les exercices 2 à 8 séparément. L'exercice [Citation](citer.qmd) fait exception. Il a besoin de votre journal IA d'un exercice antérieur.
+
+::: callout-tip
+
+## Planifiez tôt la recherche de sources
+
+L'exercice [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd) est un projet de recherche de plusieurs jours. Tous les autres exercices durent entre une heure et une journée de travail. Commencez donc tôt la recherche de sources si vous suivez le cours entier en un semestre.
+:::
+
+## Tous les exercices
 
 ::: {#exercises}
 :::

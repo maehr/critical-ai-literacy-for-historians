@@ -1,8 +1,10 @@
 ---
 lang: fr
-title: "Écriture scientifique"
-subtitle: "Ensemble d'exercices basé sur les rôles le long du processus d'écriture"
-description: "Un exercice qui forme à l'utilisation de l'IA générative comme assistant d'écriture dans plusieurs rôles – avec un focus sur la traçabilité, la logique argumentative et la précision linguistique."
+title: Écriture scientifique
+subtitle: Ensemble d'exercices par rôles le long du processus d'écriture
+description: Un exercice qui entraîne l'usage de l'IA générative comme assistante d'écriture
+  dans plusieurs rôles, avec un accent sur la traçabilité, la logique argumentative et
+  la précision de la langue.
 author:
 - name: Moritz Mähr
   orcid: 0000-0002-1367-1618
@@ -10,7 +12,7 @@ author:
   affiliations:
   - Université de Berne
 date: '2025-12-24'
-date-modified: "2026-08-16"
+date-modified: "2026-08-17"
 categories: [Méthodes]
 image: ../../assets/images/writing_Gemini_Generated_Image_ssnsi1ssnsi1ssns.png
 tags:
@@ -18,8 +20,10 @@ tags:
   - Argumentation
   - Structuration
   - Traçabilité
-  - Intégrité scientifique
+  - Intégrité académique
   - Assisté par IA
+difficulty: Beginner
+time_estimate: "60 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -36,251 +40,351 @@ references:
   issued:
     year: 2016
   publisher: Department of History, University of Basel
+  note: English translation of 'Werkzeugkasten Geschichte'; revised online version
+    of the 2010 study guide
   URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
+  abstract: Study guide covering research questions, literature and source work, analytical
+    techniques, academic writing, citation, and digital resources.
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: Kompass Geschichtsstudium
+  subtitle: Version FS 2026
+  author:
+  - family: Luther
+    given: Johannes
+  - family: Meier
+    given: Marietta
+  - family: Kaiser
+    given: Rafael
+  - family: Tinner
+    given: Tamara Ann
+  issued:
+    year: 2026
+  publisher: Historisches Seminar, Universität Zürich
+  note: Guide d'études officiel; mis à jour le 26 janvier 2026
+  URL: https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf
+  abstract: Systematic overview of study requirements and methods in history, including
+    digital competence and citation of AI-based tools.
+- id: leitfaden_bremen_2025
+  type: book
+  title: Leitfaden Geschichtswissenschaft
+  subtitle: Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage
+  issued:
+    year: 2025
+  publisher: Institut für Geschichtswissenschaft, Universität Bremen
+  note: 8e édition revue et augmentée; contient des indications sur l'usage de l'IA
+    générative
+  URL: https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf
+  abstract: Study guide covering historical theory, source criticism, academic writing
+    formats, citation practices, and the use of generative AI.
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: Studienleitfaden Fachbereich Geschichte
+  author:
+  - family: Lösse
+    given: Esther
+  - family: Anders
+    given: Klaas
+  - family: Szadziewski
+    given: Max
+  issued:
+    year: 2021
+  publisher: Fachbereich Geschichte, Universität Hamburg
+  note: Édition assurée par Monica Rüthers; achevée le 6 janvier 2021
+  URL: https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf
+  abstract: Orientation guide for history students covering organization of studies,
+    research, reading, citation, and digital competence.
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: Werkzeugkasten Geschichte
+  author:
+  - family: Stüdli
+    given: Beat
+  - family: Hitz
+    given: Benjamin
+  issued:
+    year: 2016
+  publisher: Departement Geschichte, Universität Basel
+  note: Version en ligne révisée du guide d'études de 2010
+  URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf
+  abstract: Comprehensive guide to historical research practice with emphasis on source
+    criticism and digital resources.
 ---
+
+::: callout-warning
+
+## Traduction automatique
+
+Cet exercice a été traduit automatiquement depuis l'[original allemand](../../de/exercises/schreiben.qmd) et peut contenir des erreurs. En cas de doute, consultez la version originale.
+:::
 
 ## Aperçu et objectif didactique
 
-Cet exercice forme à l'**utilisation critique de l'IA générative comme assistant d'écriture** dans plusieurs rôles clairement délimités. Les rôles sont organisés pour correspondre à un processus typique d'écriture universitaire: **clarifier le problème → développer les idées → structurer → rédiger → réviser → finaliser**.
+Cet exercice entraîne l'**usage critique de l'IA générative comme assistante d'écriture**, dans plusieurs rôles clairement délimités. Les rôles sont ordonnés pour correspondre à un processus d'écriture scientifique typique: **clarifier le problème → développer les idées → structurer → rédiger → réviser → finaliser**.
 
-L'objectif n'est pas d'« automatiser » la production de texte, mais d'augmenter la **qualité des décisions**: meilleures questions de recherche, arguments plus cohérents, langage plus précis – tout en maintenant la **traçabilité** de la paternité et des preuves utilisées.
+Le but n'est pas d'«automatiser» la production de texte, mais d'augmenter la **qualité des décisions**: de meilleures problématiques, des arguments plus cohérents, une langue plus précise, avec en même temps la **traçabilité** de la paternité du texte et des preuves employées.
 
-## Prérequis
+## En un coup d'œil
+
+| Indication                      | Valeur                                                                                             |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 45 à 60 minutes                                                                               |
+| **Niveau**                      | Beginner                                                                                           |
+| **Parcours principal**          | 1 → 2 → 3 → 4 → 6 → 8                                                                              |
+| **Approfondissement optionnel** | 5 (blocages), 7 (style et traduction), 9 (test de lisibilité)                                      |
+| **Rendu (minimum)**             | Un passage de texte révisé. [Journal IA](../glossary.qmd#gl-ki-protokoll): 6 entrées.               |
+
+Le parcours principal vous mène à un texte révisé en 45 à 60 minutes. Chaque approfondissement optionnel coûte environ 15 minutes de plus. Faites une entrée dans le journal IA pour chaque étape du parcours principal.
+
+## Ce dont vous avez besoin
+
+**Connaissances disciplinaires**
 
 - Compréhension de base des méthodes de recherche historique
-- Connaissances de base dans l'utilisation de l'IA générative (en particulier le prompting)
+- Connaissances de base de l'IA générative, en particulier du prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-Si vous n'êtes pas encore familier avec le prompting, nous vous recommandons de suivre d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
+Si vous n'êtes pas encore familier du prompting, nous vous recommandons de suivre d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
 
 :::
 
-::: callout-note
+**Capacités du système d'IA**
 
-## LLM
+Le système doit savoir faire les deux choses suivantes:
 
-Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Pour cet exercice, il est utile que le LLM ait accès à Internet et permette le téléchargement de fichiers.
+- Travailler uniquement avec le matériel que vous lui donnez. Vous vérifiez cette consigne à chaque étape.
+- Livrer une réponse dans un format que vous prescrivez, par exemple un plan.
 
-:::
+Cet exercice n'a besoin ni d'une recherche sur le web ni d'un téléversement de fichier. Un compte gratuit suffit.
+
+**Autres outils et accès**
+
+- Un fragment de sujet à vous, par exemple issu d'un travail de séminaire. Un passage d'une demi-page à une page suffit.
+- Vos propres notes ou mots-clés sur le sujet, au moins 10 points.
+- Un fichier pour votre journal IA.
+
+{{< include ../_exigences-ia.qmd >}}
 
 ## Objectifs d'apprentissage
 
-- Traiter les réponses comme des hypothèses/ébauches et les vérifier systématiquement.
-- Concevoir des prompts pour que l'IA n'« invente » pas mais travaille avec le matériel fourni.
-- Rédiger une structure d'argument (thèse–preuves–conclusion) et tester la cohérence.
-- Générer des paragraphes à partir de ses propres points et les réviser ensuite professionnellement/terminologiquement.
-- Effectuer la révision en deux étapes: logique/compréhensibilité → langue/style.
-- Documenter de manière transparente son utilisation de l'IA (protocole de prompt et de décision).
+- Traiter les réponses comme des hypothèses ou des ébauches, et les vérifier systématiquement.
+- Concevoir les prompts pour que l'IA n'«invente» pas, mais travaille avec le matériel fourni.
+- Concevoir une structure argumentative (thèse – preuves – conclusion) et tester sa cohérence.
+- Faire produire des paragraphes à partir de vos propres notes, puis les réviser sur le fond et sur la terminologie.
+- Mener la révision en deux temps: d'abord la logique et la clarté, ensuite la langue et le style.
+- Documenter votre usage de l'IA de manière transparente (journal IA).
 
-## Cadre méthodologique: L'IA comme infrastructure d'écriture
+## Cadre méthodique: l'IA comme infrastructure d'écriture
 
-Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide aux *formulations, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions interprétatives**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une division claire du travail est méthodologiquement utile:
+Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide à la *formulation, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions d'interprétation**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une répartition claire des tâches est méthodiquement utile:
 
-- **Paternité historique:** Question de recherche, sélection des preuves, interprétation, positions normatives.
-- **Contribution de l'IA (instrumentale):** Générer des variantes, suggestions de structure, tests de lisibilité, diagnostic d'erreurs.
-- **Procédure de vérification (obligatoire):** Chaque déclaration de l'IA doit soit (a) être traçable à votre matériel d'input ou (b) être marquée comme hypothèse et vérifiée extérieurement. [@turingway2022handbook]
+- **Paternité en sciences historiques:** la problématique, le choix des preuves, l'interprétation, les positions normatives.
+- **Apport de l'IA (instrumental):** produire des variantes, proposer des structures, tester la lisibilité, diagnostiquer des erreurs.
+- **Procédure de vérification (obligatoire):** chaque affirmation de l'IA doit être (a) rattachable à votre matériel d'entrée, ou (b) marquée comme hypothèse et vérifiée à l'extérieur. [@turingway2022handbook]
 
-Pour un travail plus fiable, utilisez systématiquement deux principes de prompt: 1. **Délimiter l'espace de travail** (« travaille uniquement avec mes points ; marque les incertitudes »). 2. **Réponses formatées** (listes/cartes d'arguments), pour pouvoir vérifier systématiquement et adopter sélectivement.
+Pour un travail plus fiable, utilisez systématiquement deux principes de prompt: 1. **Délimiter l'espace de travail** («travaille uniquement avec mes notes; marque les incertitudes»). 2. **Réponses formatées** (listes, cartes d'arguments), pour que vous puissiez vérifier systématiquement et reprendre de manière sélective.
 
 ::: callout-important
 
-## Règle de base: l'IA ne doit rien « inventer »
+## Règle de base: l'IA ne doit rien «inventer»
 
-Utilisez l'IA uniquement comme **outil de transformation et de vérification** pour *votre* matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier extérieurement**.
+N'utilisez l'IA que comme **outil de transformation et de vérification** pour *votre* matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier à l'extérieur**.
 :::
 
-::: callout-note
-
-## Mode de travail: Protocole IA (Piste d'audit)
-
-Pendant l'exercice, maintenez un bref **protocole IA**. Cela fait partie de la traçabilité scientifique (et facilite la divulgation ultérieure/section méthodes).
-
-**Modèle minimal** | Champ | Contenu | |---|---| | Rôle / Exercice | | | Objectif (1 phrase) | | | Input (quel matériel ?) | | | Prompt (extrait principal) | | | Réponse (brève) | | | Étapes de vérification (comment vérifié ?) | | | Décision (adopté/adapté/rejeté + justification) | |
-:::
-
-## Prérequis
-
-- Fragment de sujet propre (par ex. travail de séminaire) **ou** une section de texte fournie (env. ½–1 page)\
-- Points/notes propres sur le sujet (au moins 10 points)\
-- Accès à une interface LLM de votre choix
+{{< include ../_journal-ia.qmd >}}
 
 ## Structure de l'exercice
 
-Les rôles sont regroupés en **phases**. Les étapes individuelles peuvent être sautées ; cependant, au moins un tour complet jusqu'à la révision est judicieux. **Parcours principal (env. 45–60 min):** 1 → 2 → 3 → 4 → 6 → 8.
+Les rôles sont regroupés en **phases**. Vous pouvez sauter certaines étapes. Le parcours principal de la section «En un coup d'œil» vous mène par un tour complet jusqu'à la révision.
 
-**Approfondissement optionnel:** 5 (blocages locaux), 7 (style/traduction), 9 (test de lisibilité comme révision finale).
-
-1. **Vérificateur de compréhension** (clarifier la tâche, identifier les angles morts)\
-2. **Partenaire de brainstorming + Avocat du diable** (ouvrir l'espace des idées + contre-arguments)\
-3. **Structureur & Outliner** (architecture de l'argument)\
-4. **Texte à partir des points** (rédaction sous discipline des faits)\
-5. **Résolveur de blocages** (problèmes d'écriture locaux/transitions)\
+1. **Vérificateur de compréhension** (clarifier la consigne, repérer les angles morts)\
+2. **Partenaire de remue-méninges et avocat du diable** (ouvrir l'espace des idées et produire les contre-arguments)\
+3. **Structurateur** (architecture de l'argumentation)\
+4. **Texte à partir de notes** (rédaction sous discipline des faits)\
+5. **Débloqueur** (problèmes d'écriture locaux, transitions)\
 6. **Vérificateur de logique** (cohérence, preuves, règles d'inférence)\
-7. **Relecture + Traducteur** (style/grammaire/registre ; optionnellement multilinguisme)\
-8. **Rédacteur de résumé** (compression, focus, « et alors ? »)\
-9. **Vérificateur de compréhension (Re-Run)** (lisibilité du point de vue du public cible)
+7. **Correcteur et traducteur** (style, grammaire, registre; multilinguisme en option)\
+8. **Rédacteur de résumé** (compression, focus, «et alors?»)\
+9. **Vérificateur de compréhension (deuxième passage)** (lisibilité du point de vue du public cible)
 
 ## 1. Vérificateur de compréhension
 
 ### Objectif
 
-Rendre la tâche d'écriture et votre propre intention argumentative si précises que les étapes IA ultérieures n'« évitent » pas ou ne stabilisent pas de fausses prémisses.
+Rendre la consigne d'écriture et votre propre intention argumentative assez précises pour que les étapes suivantes avec l'IA n'«esquivent» pas et ne stabilisent pas de fausses prémisses.
 
 ### Tâche
 
-1. Donnez à l'IA **seulement** ce qui suit: Sujet en 2–3 phrases, contexte (cours/genre), public cible, portée, format de soumission.\
-2. Faites poser à l'IA des **questions de suivi** et marquer les incertitudes.
+1. Ne donnez à l'IA **que** ceci: le sujet en 2 ou 3 phrases, le contexte (cours, genre), le public cible, l'étendue, le format de rendu.\
+2. Faites poser des **questions de suivi** par l'IA et faites-lui marquer les incertitudes.
 
-**Scaffold de prompt**
+**Ossature de prompt**
 
 ``` markdown
-Tu es un vérificateur de compréhension. Pose-moi 8–12 questions de suivi précises pour clarifier la tâche d'écriture et l'objectif d'argumentation.
+Tu es vérificateur de compréhension. Pose-moi 8–12 questions de suivi précises, pour clarifier la consigne d'écriture et le but argumentatif.
 Marque:
-(1) informations manquantes,
-(2) hypothèses implicites,
-(3) termes qui doivent être définis opérationnellement.
-Pas de suggestions de contenu, seulement des questions et un diagnostic.
+(1) les informations manquantes,
+(2) les présupposés implicites,
+(3) les termes qu'il faut définir de manière opératoire.
+Aucune proposition de contenu, seulement des questions et un diagnostic.
 
 Contexte: …
-Sujet/thèse (préliminaire): …
-Genre/portée: …
+Sujet et thèse (provisoire): …
+Genre et étendue: …
 Public cible: …
 ```
 
-### Comparaison critique
+### Confrontation critique
 
-- Quelles questions de suivi vous obligent à **clarifier des termes** (par ex. « modernisation », « neutralité », « gouvernance ») ?\
-- Quelles questions **prioriseriez-vous différemment** – et pourquoi ?
+- Quelles questions de suivi vous obligent à des **clarifications de termes** (par exemple «modernisation», «neutralité», «gouvernance»)?\
+- Quelles questions classeriez-vous **autrement** par priorité, et pourquoi?
 
-**Résultat** - 1 tâche révisée (3–5 phrases) + 3 termes clés définis
+**Résultat:**
 
-## 2. Partenaire de brainstorming + Avocat du diable
+- 1 consigne révisée (3 à 5 phrases)
+- 3 termes centraux définis
+
+## 2. Partenaire de remue-méninges et avocat du diable
 
 ### Objectif
 
-Générer des idées sans inventer de preuves, et co-penser immédiatement les contre-arguments/interprétations alternatives.
+Produire des idées sans inventer de preuves, et penser tout de suite les contre-arguments et les interprétations alternatives.
 
-### Tâche A: Brainstorming (orienté idées, neutre en preuves)
+### Tâche A: remue-méninges (orienté idées, neutre sur les preuves)
 
 ``` markdown
-Rôle: Partenaire de brainstorming. Génère 12 lignes d'arguments/hypothèses possibles sur mon sujet.
+Rôle: partenaire de remue-méninges. Produis 12 lignes d'argumentation ou hypothèses possibles sur mon sujet.
 Conditions:
 - Formule chaque ligne comme une affirmation vérifiable (pas de faits).
-- Pour chaque ligne: quel type de preuve j'aurais besoin (types de sources/types de littérature).
-- Évite les titres de littérature spécifiques ou les cotes d'archives ; si nécessaire, formule comme heuristique de recherche.
+- Pour chaque ligne, indique quel type de preuve il me faudrait (types de sources, types de littérature).
+- Évite les titres concrets et les cotes d'archives; si nécessaire, formule une heuristique de recherche.
 
 Mon sujet: …
-Mon matériel (seulement les types, pas de contenu sensible): …
+Mon matériel (seulement les types, aucun contenu sensible): …
 ```
 
-### Tâche B: Avocat du diable (confrontationnel, mais productif)
+### Tâche B: avocat du diable (confrontant, mais productif)
 
 ``` markdown
-Rôle: Avocat du diable. Choisis les 3 plus plausibles de mes hypothèses et argumente contre chacune.
+Rôle: avocat du diable. Choisis les 3 hypothèses les plus plausibles parmi les miennes et argumente contre chacune.
 Pour chaque contre-argument:
-- Nomme l'hypothèse vulnérable.
-- Propose un « test de stress » (quel constat renverserait mon argument ?).
+- Nomme la prémisse vulnérable.
+- Propose un «test de résistance» (quel constat ferait basculer mon argument?).
 - Formule une interprétation alternative (max. 2 phrases).
-Pas de faits externes.
+N'utilise aucun fait externe.
 Hypothèses: …
 ```
 
-### Comparaison critique
+### Confrontation critique
 
-- Quelles hypothèses sont **falsifiables** (au sens de conditions de réfutation claires) ?\
-- Où le **présentisme** menace-t-il (projeter les catégories du présent sur le passé) ?
+- Quelles hypothèses sont **falsifiables** (au sens de conditions de réfutation claires)?\
+- Où menace le **présentisme** (projeter des catégories du présent dans le passé)?
 
-**Résultat** - 1 hypothèse/thèse priorisée + 2 contre-arguments centraux + 1 test de stress planifié
+**Résultat:**
 
-## 3. Structureur & Outliner
+- 1 hypothèse ou thèse prioritaire
+- 2 contre-arguments centraux
+- 1 test de résistance planifié
+
+## 3. Structurateur
 
 ### Objectif
 
-Rédiger une **chaîne d'arguments** vérifiable (thèse → sous-thèses → preuves → conclusion) avant que le texte ne soit généré.
+Concevoir une **chaîne argumentative** vérifiable (thèse → sous-thèses → preuves → conclusion), avant de produire du texte.
 
 ### Tâche
 
+Insérez dans le prompt suivant votre propre nombre de mots. L'exemple nomme 3000 mots.
+
 ``` markdown
-Rôle: Structureur & Outliner.
-Crée un plan (max. 8 points principaux) pour un texte d'env. X mots.
+Rôle: structurateur.
+Établis un plan (max. 8 points principaux) pour un texte d'environ 3000 mots.
 Pour chaque point:
-- Objectif de la section (1 phrase)
-- Affirmation centrale (1 phrase)
-- Preuve requise (mots-clés ; « de mes notes/sources »)
-- Transition vers le point suivant (1 phrase)
+- le but de la section (1 phrase)
+- l'affirmation centrale (1 phrase)
+- la preuve nécessaire (en mots-clés; «issue de mes notes ou de mes sources»)
+- la transition vers le point suivant (1 phrase)
 
-Contraintes:
-- Pas de nouveaux faits.
-- Si des preuves manquent: marquer comme [LACUNE DE PREUVE] au lieu de compléter.
+Consignes:
+- Aucun fait nouveau.
+- S'il manque une preuve: marque [LACUNE DE PREUVE] au lieu de compléter.
 
-Matériel (points/notes): …
+Matériel (notes, mots-clés): …
 ```
 
-### Vérification de qualité
+### Contrôle de qualité
 
-- Chaque affirmation a-t-elle une **piste de preuve** (au moins comme espace réservé) ?\
-- Y a-t-il des sections qui ne fournissent que « aperçu » mais n'ont pas de fonction argumentative ?
+- Chaque affirmation contient-elle une **trace de preuve**, au moins comme marqueur?\
+- Y a-t-il des sections qui livrent seulement une «vue d'ensemble», sans fonction argumentative?
 
-**Résultat** - Plan + marquage de 2–3 lacunes de preuves
+**Résultat:**
 
-## 4. Texte à partir des points
+- 1 plan
+- 2 à 3 lacunes de preuve marquées
+
+## 4. Texte à partir de notes
 
 ### Objectif
 
-Faire formuler des paragraphes à partir de votre propre matériel sans abandonner le contrôle du contenu.
+Faire formuler des paragraphes à partir de votre propre matériel, sans céder le contrôle du contenu.
 
 ### Tâche
 
-Sélectionnez **un** point du plan (par ex. « Argument principal 1 ») et fournissez 8–12 points (preuves, observations, citations/paraphrases, termes).
+Choisissez **un** point du plan (par exemple «argument principal 1») et fournissez 8 à 12 puces (preuves, observations, citations ou paraphrases, termes).
 
 ``` markdown
-Rôle: Générateur de texte à partir de points.
-Rédige un paragraphe (120–180 mots) en français académique.
+Rôle: générateur de texte à partir de notes.
+Écris un paragraphe (120–180 mots) en français académique.
 Conditions:
-- Utilise uniquement les informations de mes points.
-- Pas de nouveaux exemples, données, noms, sources.
-- Si une phrase nécessiterait des informations supplémentaires: marquer [INCERTAIN].
-- Garde ma terminologie ; demande si pas clair.
+- Utilise exclusivement les informations de mes notes.
+- Aucun exemple, aucune donnée, aucun nom, aucune source nouvelle.
+- Si une phrase demandait une information supplémentaire: marque [INCERTAIN].
+- Conserve ma terminologie; demande si un point n'est pas clair.
 
-Points: …
+Notes: …
 ```
 
-### Comparaison critique
+### Confrontation critique
 
-- Supprimez toutes les phrases qui ne sont pas directement traçables à vos points.\
-- Vérifiez la terminologie: Où l'IA lisse-t-elle des termes (par ex. « État », « société », « acteur ») de manière inadmissible ?
+- Supprimez toutes les phrases qui ne sont pas directement rattachables à vos notes.\
+- Vérifiez la terminologie: où l'IA lisse-t-elle des termes de manière inadmissible (par exemple «État», «société», «acteur»)?
 
-**Résultat** - 1 paragraphe + une version dans laquelle vous avez affiné indépendamment 3–5 phrases
+**Résultat:**
 
-## 5. Résolveur de blocages
+- 1 paragraphe
+- 1 deuxième version du paragraphe, dans laquelle vous avez précisé vous-même 3 à 5 phrases
+
+## 5. Débloqueur
 
 ### Objectif
 
-Résoudre les problèmes locaux (transitions, phrases d'ouverture, définitions de termes) sans faire « réécrire » le texte.
+Résoudre des problèmes locaux (transitions, phrases d'ouverture, définitions de termes), sans faire «réécrire» le texte.
 
-### Micro-exercices (choisissez 2)
+### Micro-exercices (choisissez-en 2)
 
 **A) Construire une transition**
 
 ``` markdown
-Rôle: Résolveur de blocages.
-Formule 5 variantes pour une phrase de transition entre le paragraphe A et B.
-Variante 1 neutre, 2 plus argumentative, 3 plus explicative, 4 plus courte, 5 avec marqueur de contraste.
+Rôle: débloqueur.
+Formule 5 variantes d'une phrase de transition entre le paragraphe A et le paragraphe B.
+Variante 1 neutre, 2 plus argumentative, 3 plus explicative, 4 plus brève, 5 avec un marqueur de contraste.
 Paragraphe A: …
 Paragraphe B: …
 ```
 
-**B) Opérationnaliser une définition**
+**B) Rendre une définition opératoire**
+
+Remplacez dans le prompt suivant le terme «neutralité» par votre propre terme.
 
 ``` markdown
-Formule 3 définitions de travail possibles pour le terme « X » dans le contexte de mon sujet.
+Formule 3 définitions de travail possibles du terme «neutralité» dans le contexte de mon sujet.
 Pour chaque définition:
-- Délimitation d'1 terme voisin
-- 1 indicateur observable (comment reconnaître X dans les sources ?)
-Pas de faits externes.
+- la démarcation avec 1 terme voisin
+- 1 indice observable (à quoi je reconnais la «neutralité» dans les sources?)
+Aucun fait externe.
 Contexte: …
 ```
 
@@ -289,102 +393,115 @@ Contexte: …
 ``` markdown
 Marque dans mon paragraphe:
 - la phrase centrale (topic sentence),
-- les phrases avec référent peu clair (« cela », « ainsi », « on »),
-- les phrases qui contiennent en fait deux affirmations.
-Propose des réarrangements minimaux (pas de réécriture du contenu).
+- les phrases dont le référent n'est pas clair («cela», «ce faisant», «on»),
+- les phrases qui contiennent en réalité deux affirmations.
+Propose des remaniements minimaux (aucune reformulation du contenu).
 Texte: …
 ```
 
-**Résultat** - 1 transition/définition révisée + brève justification de pourquoi cette variante
+**Résultat:**
+
+- 1 transition révisée ou 1 définition révisée
+- 1 courte justification de votre choix de variante
 
 ## 6. Vérificateur de logique
 
 ### Objectif
 
-Rendre visible la logique d'argumentation: Les preuves soutiennent-elles les affirmations ? Les règles d'inférence sont-elles traçables ? Où manquent les prémisses ?
+Rendre visible la logique argumentative: les preuves étayent-elles les affirmations? Les règles d'inférence sont-elles traçables? Où manque-t-il des prémisses?
 
 ### Tâche
 
 ``` markdown
-Rôle: Vérificateur de logique.
+Rôle: vérificateur de logique.
 Analyse mon texte (max. 300 mots) comme une carte d'arguments:
-1) Thèse principale
-2) Sous-thèses
-3) Preuves explicites (du texte)
-4) Prémisses implicites (que je présuppose apparemment)
-5) Sauts logiques ou contradictions possibles
-Puis donne 5 recommandations de révision concrètes, priorisées par impact.
+1) la thèse principale
+2) les sous-thèses
+3) les preuves explicites (tirées du texte)
+4) les prémisses implicites (que je présuppose visiblement)
+5) les sauts logiques ou les contradictions possibles
+Donne ensuite 5 recommandations de révision concrètes, classées par effet.
 Texte: …
 ```
 
-### Comparaison critique
+### Confrontation critique
 
-- Quelles « prémisses implicites » acceptez-vous – lesquelles doivent être étayées ou reformulées ?\
-- Où les affirmations causales ne sont-elles en fait que **séquence temporelle** ?
+- Quelles «prémisses implicites» acceptez-vous, et lesquelles faut-il étayer ou reformuler?\
+- Où les affirmations causales ne sont-elles en réalité qu'une **succession dans le temps**?
 
-**Résultat** - Carte d'arguments + 2 révisions ciblées dans le texte (avec marquage de ce qui s'est amélioré logiquement)
+**Résultat:**
 
-## 7. Relecture + Traducteur
+- 1 carte d'arguments
+- 2 révisions ciblées dans le texte, avec une marque de ce qui s'améliore sur le plan logique
+
+## 7. Correcteur et traducteur
 
 ### Objectif
 
-Améliorer la langue et le registre sans changer la substance argumentative ; optionnellement transférer la terminologie de manière cohérente dans une seconde langue.
+Améliorer la langue et le registre sans changer la substance argumentative; en option, transposer la terminologie de manière cohérente dans une seconde langue.
 
-### Tâche A: Relecture (minimalement invasive)
+### Tâche A: correction (peu invasive)
 
 ``` markdown
-Rôle: Relecture.
-Améliore la grammaire, le style et la précision, mais ne change aucune déclaration de contenu.
-Travaille de manière minimalement invasive:
-- Remplace les mots vagues (par ex. « important », « montre ») seulement si c'est sans ambiguïté.
-- Préserve les termes techniques ; si incertain: marquer [TERME ?].
-À la fin, donne une liste des 5 erreurs de modèle les plus fréquentes que tu as corrigées.
+Rôle: correcteur.
+Améliore la grammaire, le style et la précision, mais ne change aucune affirmation de contenu.
+Travaille de manière peu invasive:
+- Ne remplace un mot vague (par exemple «important», «montre») que si le sens est clair.
+- Conserve les termes techniques; en cas de doute: marque [TERME?].
+Donne à la fin une liste des 5 erreurs de motif les plus fréquentes que tu as corrigées.
 Texte: …
 ```
 
-### Tâche B: Traduction (optionnelle)
+### Tâche B: traduire (optionnel)
 
 ``` markdown
-Rôle: Traducteur.
-Traduis le texte en anglais (ou allemand/espagnol).
+Rôle: traducteur.
+Traduis le texte en anglais (ou en allemand ou en espagnol).
 Conditions:
-- Préserve le registre (académique) et les marqueurs de prudence (par ex. « pourrait », « suggère »).
-- Garde les noms propres et les citations inchangés.
-- Donne un mini-tableau glossaire (5–10 paires de termes) pour les termes clés.
+- Conserve le registre (académique) et les marqueurs de prudence (par exemple «pourrait», «suggère»).
+- Conserve les noms propres et les citations sans changement.
+- Donne un mini-glossaire en tableau (5 à 10 paires de termes) pour les termes clés.
 Texte: …
 Langue cible: …
 ```
 
-**Résultat** - Version corrigée + (optionnelle) traduction + glossaire
+**Résultat:**
+
+- 1 version corrigée
+- en option: 1 traduction
+- en option: 1 glossaire
 
 ## 8. Rédacteur de résumé
 
 ### Objectif
 
-Distiller le texte jusqu'à sa déclaration porteuse: problème de recherche, approche, constat/argument, pertinence.
+Condenser le texte sur son affirmation porteuse: problème de recherche, démarche, résultat ou argument, pertinence.
 
 ### Tâche
 
 ``` markdown
-Rôle: Rédacteur de résumé.
-Rédige un résumé de 120–160 mots.
-Doit contenir:
-- Problème de recherche (1 phrase)
-- Approche/matériel (1 phrase)
-- Argument/constat central (2–3 phrases)
-- Contribution/pertinence (« et alors ? ») (1 phrase)
-Pas de nouveaux faits ; si pas clair: marquer [PAS CLAIR].
+Rôle: rédacteur de résumé.
+Écris un résumé de 120 à 160 mots.
+Il doit contenir:
+- le problème de recherche (1 phrase)
+- l'approche et le matériel (1 phrase)
+- l'argument ou le résultat central (2 à 3 phrases)
+- l'apport et la pertinence («et alors?») (1 phrase)
+Aucun fait nouveau; en cas de doute: marque [PAS CLAIR].
 Base textuelle: …
 ```
 
-### Vérification de qualité
+### Contrôle de qualité
 
-- Le résumé couvre-t-il le **véritable** point argumentatif ou seulement le domaine thématique ?\
-- La méthode affirmée correspond-elle à ce que vous faites réellement (travail sur les sources vs. discussion de littérature) ?
+- Le résumé couvre-t-il la pointe **réelle** de l'argumentation, ou seulement le champ thématique?\
+- La méthode annoncée correspond-elle à ce que vous faites réellement (travail sur les sources ou discussion de la littérature)?
 
-**Résultat** - Résumé + méta-commentaire de 2 phrases: Qu'est-ce que l'IA a mal souligné/omis ?
+**Résultat:**
 
-## 9. Vérificateur de compréhension (Re-Run)
+- 1 résumé
+- 1 méta-commentaire en 2 phrases: qu'est-ce que l'IA a mis à tort en avant ou omis?
+
+## 9. Vérificateur de compréhension (deuxième passage)
 
 ### Objectif
 
@@ -393,40 +510,35 @@ Tester la lisibilité et les marges d'interprétation du point de vue du public 
 ### Tâche
 
 ``` markdown
-Rôle: Vérificateur de compréhension.
-Lis mon texte comme un lecteur critique dans un séminaire.
-1) Quelle est la thèse en une phrase ?
-2) Quels 3 points sont flous ou ambigus (chacun avec emplacement de citation) ?
-3) Quel passage semble non étayé ?
-4) Quelles deux questions me poserais-tu en feedback ?
+Rôle: vérificateur de compréhension.
+Lis mon texte comme un lecteur critique en séminaire.
+1) Quelle est la thèse, en une phrase?
+2) Quels 3 points sont peu clairs ou ambigus (chacun avec le passage cité)?
+3) Quel passage paraît non étayé?
+4) Quelles deux questions me poserais-tu dans un retour?
 Texte: …
 ```
 
-**Résultat** - 3 passages affinés dans le texte (1–2 phrases révisées chacun)
+**Résultat:**
+
+- 3 passages précisés dans le texte, 1 à 2 phrases révisées chacun
 
 ## Résultat d'apprentissage
 
-À la fin, vous avez un petit paquet d'artefacts scientifiquement réutilisables:
+À la fin, vous avez un petit ensemble d'artefacts réutilisables scientifiquement:
 
-- Plan (avec lacunes de preuves)\
-- 1–3 paragraphes révisés (avec révisions traçables)\
-- Carte d'arguments (vérification logique)\
-- Résumé (et optionnellement traduction + glossaire)\
-- Protocole IA (documentation de prompts et de décisions)
+- le plan (avec les lacunes de preuve)\
+- 1 à 3 paragraphes révisés (avec des révisions traçables)\
+- la carte d'arguments (vérification logique)\
+- le résumé (et en option la traduction et le glossaire)\
+- le journal IA avec au moins 6 entrées
 
 ## Ressources complémentaires
 
-- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et utilisation critique des LLMs.
-- [The Turing Way](https://book.the-turing-way.org/) – Manuel pour une recherche reproductible, éthique et collaborative.
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et usage critique des grands modèles de langue. (ENGLISH only)
+- [The Turing Way](https://book.the-turing-way.org/) – Manuel pour une recherche reproductible, éthique et collaborative. (ENGLISH only)
 
 ## Bibliographie
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Avertissement de traduction automatique
-
-Cet exercice a été traduit automatiquement de l'allemand à l'aide de l'IA et peut contenir des erreurs ou des inexactitudes. Veuillez vous référer à la [version originale allemande](../../de/exercises/schreiben.qmd) pour le texte faisant autorité. Si vous remarquez des problèmes de traduction, veuillez les signaler.
 :::
