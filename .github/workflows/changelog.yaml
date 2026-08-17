@@ -7,6 +7,11 @@ on:
 
 # The ruleset on `main` requires a pull request, so the workflow commits to the
 # pull request branch instead of to `main`.
+#
+# GITHUB_TOKEN pushes the commit. GitHub does not start a new check run for such
+# a push, so the required check "Lint with Prettier" stays open on the new head
+# commit. A maintainer must approve the queued run in the Actions tab. A personal
+# access token in the repository secrets would remove that step.
 permissions:
   contents: write
 
