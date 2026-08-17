@@ -1,8 +1,8 @@
 ---
 lang: fr
 title: "Prompt Engineering"
-subtitle: "Travail historique avec les LLMs: heuristiques contrôlées, reproductibilité, discipline des preuves"
-description: "Un exercice qui entraîne les techniques centrales de prompting (bases, rôles, zero-/few-shot, trace de réflexion structurée, prompting itératif, optimisation) à l'aide de processus de travail en sciences historiques."
+subtitle: "Travail historique avec les LLM: heuristiques contrôlées, reproductibilité, discipline des preuves"
+description: "Un exercice qui entraîne les techniques centrales de prompting (bases, rôles, zero-shot et few-shot, trace de raisonnement structurée, prompting itératif, optimisation) à l'aide de processus de travail en sciences historiques, et qui situe les capacités récentes des systèmes d'IA."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: "2026-08-16"
+date-modified: "2026-08-17"
 categories: [IA & Méthodes numériques]
 image: ../../assets/images/prompting_Gemini_Generated_Image_ez3ygnez3ygnez3y.png
 tags:
@@ -19,90 +19,129 @@ tags:
   - Reproductibilité
   - Critique des sources numériques
   - Traçabilité
-  - Intégrité scientifique
+  - Intégrité académique
+  - Protection des données
+difficulty: Beginner
+time_estimate: "150 min"
 draft: false
 nocite: ""
 references: []
 ---
 
+::: callout-warning
+
+## Traduction automatique
+
+Cet exercice a été traduit automatiquement depuis l'[original allemand](../../de/exercises/prompt-engineering.qmd) et peut contenir des erreurs. En cas de doute, consultez la version originale.
+:::
+
 ## Aperçu et objectif didactique
 
-Cet exercice rend le prompt visible **en tant que méthode**: les prompts ne sont pas ici des « astuces », mais des **opérationalisations** de tâches de recherche historique. [@campbell2025historian; @oberbichler2025implementing]
+Cet exercice rend le prompting visible **comme méthode**: les prompts ne sont pas ici des «astuces», mais des **opérationnalisations** de tâches de recherche historique. [@campbell2025historian; @oberbichler2025implementing]
 
-Vous vous entraînerez à:
+Vous vous entraînez à
 
-- délimiter clairement les tâches,
-- formater les réponses de manière vérifiable,
+- délimiter les tâches avec précision,
+- formater la réponse de manière vérifiable,
 - contrôler les sources d'erreur, et
 - **documenter les résultats de manière reproductible**.
 
-Contrairement aux exercices thématiques ([Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd), [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd), [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd), [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd), [Écriture](ecriture.qmd), [Citation](citer.qmd), [Public History](public-history.qmd)), cette unité se concentre sur l'**infrastructure commune**: conception de prompt, sélection de rôle, itération et optimisation.
+Contrairement aux exercices thématiques ([Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd), [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd), [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd), [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd), [Écriture](ecriture.qmd), [Citation](citer.qmd), [Public History](public-history.qmd)), cette unité se concentre sur l'**infrastructure commune**: conception du prompt, choix du rôle, itération et optimisation.
 
 ::: callout-important
 
-## Règle de base: L'IA comme hypothèse
+## Règle de base: l'IA comme hypothèse
 
-Chaque fois que le modèle fournit des faits, de la littérature, des archives, des signatures ou des citations qui ne proviennent pas de votre input ou de références vérifiables, traitez cela comme une **hypothèse** (pas comme un résultat). [@bender2021stochastic] Votre travail reste: **contre-vérification, vérification, décision**.
+Dès que le modèle fournit des faits, de la littérature, des archives, des cotes ou des citations qui ne viennent pas de votre entrée ou de références vérifiables, traitez cela comme une **hypothèse**, et non comme un résultat. [@bender2021stochastic] Votre travail reste le même: **contre-épreuve, preuve, décision**.
 :::
 
-## Prérequis
+## En un coup d'œil
+
+| Indication                    | Valeur                                                                        |
+| ----------------------------- | ----------------------------------------------------------------------------- |
+| **Durée**                     | env. 150 minutes                                                              |
+| **Niveau**                    | Beginner                                                                      |
+| **Parcours principal**        | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                     |
+| **Approfondissement optionnel** | 5 (trace de raisonnement structurée)                                        |
+| **Rendu (minimum)**           | [Journal IA](../glossary.qmd#gl-ki-protokoll) avec au moins 8 entrées         |
+
+Le parcours principal vous mène à un résultat complet en 150 minutes environ. L'approfondissement optionnel coûte environ 30 minutes de plus.
+
+Cet exercice est la base de tous les autres exercices. Prévoyez plus de temps au premier passage, car vous mettez aussi en place votre journal IA.
+
+## Ce dont vous avez besoin
+
+**Connaissances disciplinaires**
 
 - Compréhension de base des méthodes de recherche historique
 
+**Capacités du système d'IA**
+
+Le système doit savoir faire les trois choses suivantes:
+
+- Lire un fichier téléversé et citer depuis ce fichier. Vous en avez besoin à l'étape 3 et à l'étape 4.
+- Livrer une réponse dans un format que vous prescrivez, par exemple un tableau.
+- Démarrer une nouvelle session. Dans cet exercice, vous vérifiez ce que le système reprend de sessions antérieures.
+
+**Autres outils et accès**
+
+- Un fichier pour votre journal IA. Un fichier texte ou un document dans votre traitement de texte suffit.
+- Le paquet de matériel de la section «Paquet de cas pour tous les exercices». Vous téléchargez pour cela une source librement accessible.
+
+{{< include ../_exigences-ia.qmd >}}
+
 ## Objectifs d'apprentissage
 
-À l'issue de l'exercice, vous serez en mesure de:
+À l'issue de l'exercice, vous savez:
 
-- **structurer** les prompts (contexte structuré, format de réponse, contraintes, mode de vérification),
-- utiliser **à dessein** les rôles (par ex. critique des sources, assistant de recherche, avocat du diable, rédacteur),
-- choisir **selon la situation** entre prompting zero-shot et few-shot,
-- demander une **trace de réflexion structurée** (décomposition de tâche, produits intermédiaires, auto-vérifications),
-- mettre en œuvre le prompting itératif comme un **flux de travail contrôlé** (Générer → Critiquer → Réviser → Vérifier),
-- optimiser les prompts selon des **critères de qualité** (réduction des erreurs, stabilité du format, vérifiabilité, reproductibilité).
+- **structurer** les prompts (contexte structuré, format de réponse, [contraintes](../glossary.qmd#gl-constraints), mode de vérification),
+- utiliser les rôles **de manière ciblée** (par exemple critique des sources, assistant de recherche, avocat du diable, correcteur),
+- choisir le prompting zero-shot et few-shot **selon la situation**,
+- demander une **trace de raisonnement structurée** (décomposition de la tâche, produits intermédiaires, auto-vérifications),
+- mettre en œuvre le prompting itératif comme un **flux de travail contrôlé** (générer → critiquer → réviser → vérifier),
+- optimiser les prompts selon des **critères de qualité** (réduction des erreurs, stabilité du format, vérifiabilité, reproductibilité),
+- distinguer une trace de raisonnement demandée d'un **mode de raisonnement intégré**,
+- nommer cinq **capacités** récentes des systèmes d'IA et situer leurs sources d'erreur (mode de raisonnement, déroulements agentiques, extraction depuis vos propres documents, reconnaissance de l'écriture manuscrite, modèles locaux).
 
-## Mode de travail: Protocole IA et test A/B
+## Mode de travail: journal IA et test A/B
 
-Maintenez un bref protocole de prompt (piste d'audit). Utilisez-le également dans les autres exercices.
+Tenez un journal IA. Utilisez-le aussi dans les autres exercices.
 
-**Modèle minimal:**
+{{< include ../_journal-ia.qmd >}}
 
-- Étape
-- Objectif
-- Input (matériel)
-- Prompt (extrait principal)
-- Réponse (brève)
-- Étapes de vérification
-- Décision
+### Test A/B (minimum)
 
-**Test A/B (Minimum):** Pour chaque technique, exécutez au moins **deux variantes de prompt**, puis comparez:
+Pour chaque technique, exécutez au moins **deux variantes de prompt**. Comparez ensuite:
 
-1. Stabilité du format,
-2. Dépassement (spéculation)
-3. Adéquation pour vos prochaines étapes de travail.
+1. la stabilité du format,
+2. les débordements (spéculations),
+3. l'utilité pour vos prochaines étapes de travail.
 
-## Package de cas pour tous les exercices
+## Paquet de cas pour tous les exercices
 
-Utilisez – comme dans les autres exercices – un **package de matériel concret et vérifiable**:
+Utilisez, comme dans les autres exercices, un **paquet de matériel concret et contrôlable**:
 
-1. **Source primaire** voir exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd)
-2. **Ressource contextuelle** voir exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) ou [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd).
-3. **Source secondaire optionnelle** voir exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) ou [Citation](citer.qmd).
+1. **Source primaire**: voir l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd)
+2. **Ressource de contexte**: voir l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) ou [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd).
+3. **Source secondaire optionnelle**: voir l'exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) ou [Citation](citer.qmd).
 
 ::: callout-tip
 
 ## Structuration reproductible
 
-Si l'outil n'a pas d'accès stable au document: copiez (a) l'extrait de texte et (b) les métadonnées dans le prompt et séparez visuellement les deux, par ex. avec des triples guillemets.
+Transmettez la source comme fichier. C'est le cas normal.
+
+Seulement dans le cas exceptionnel où l'outil n'a pas d'accès stable au document, copiez (a) l'extrait de texte et (b) les métadonnées dans le prompt. Séparez visuellement les deux, par exemple avec trois guillemets.
 
 Exemple de mise en page:
 
 ``` markdown
 """
-TEXTE DU DOCUMENT (extrait/texte complet)
+TEXTE DU DOCUMENT (extrait ou texte entier)
 """
 
 """
-MÉTADONNÉES (titre, date, lieu, auteur, édition/URL, cote d'archives, date d'accès)
+MÉTADONNÉES (titre, date, lieu, auteur, édition/URL, cote d'archives, date de consultation)
 """
 
 TÂCHE
@@ -112,46 +151,57 @@ TÂCHE
 
 ::: callout-tip
 
-## Redémarrage de session comme instrument de contrôle
+## Redémarrage de session: une mesure soumise à vérification
 
-Pour chaque nouvelle tâche, une **nouvelle session** est recommandée.
+Commencez chaque nouvelle tâche dans une **nouvelle session**.
 
-Un redémarrage de session réduit le report implicite de contexte:  
-Le modèle ne **s'appuie alors plus sur les tâches, exemples ou hypothèses de rôle précédents**, mais travaille exclusivement avec le matériel et la tâche actuels.
+Un redémarrage vous oblige à transmettre le matériel une nouvelle fois. Cela augmente la vérifiabilité de vos étapes de travail.
 
-Utilisez un redémarrage notamment quand:
+Un redémarrage ne garantit toutefois **aucun contexte vide**. De nombreux systèmes tiennent une mémoire permanente, un contexte de projet ou d'espace de travail, ou une consigne de l'organisation. De tels systèmes reprennent des indications de sessions antérieures, même dans une nouvelle session.
 
-- Les réponses font à plusieurs reprises de mauvaises références,
-- Les rôles ou exemples précédents « filtrent »,
-- Des hypothèses floues des étapes précédentes sont perpétuées.
+**Vérifiez donc ce que votre système reprend:**
 
-**Aide-mémoire:**  
-Une nouvelle session impose une nouvelle liaison au matériel et augmente la vérifiabilité.
+1. Vérifiez les réglages de la mémoire, des projets et de l'historique des conversations. Ces réglages sont la preuve solide.
+2. Commencez une nouvelle session.
+3. Demandez ce que le système sait de vous et de vos tâches antérieures.
+4. Demandez d'où viennent ces indications.
+5. Comparez les réponses avec les réglages. Notez les écarts dans le journal IA.
+
+La réponse du système sur sa propre mémoire est une déclaration sur soi, et non une preuve. Traitez-la comme toute autre sortie d'IA: comme une affirmation que vous vérifiez.
+
+Utilisez un redémarrage en particulier lorsque:
+
+- les réponses établissent à plusieurs reprises de mauvaises références,
+- des rôles ou des exemples antérieurs «transpirent»,
+- des hypothèses floues des étapes précédentes se perpétuent.
+
+**Règle à retenir:**
+Une nouvelle session est une mesure, et non une garantie. N'affirmez la reproductibilité qu'après avoir vérifié le contexte repris.
 
 :::
 
-## 1. Bases du Prompt
+## 1. Bases du prompt
 
 ### Objectif
 
-Reformuler une demande vague pour que la réponse devienne **vérifiable**, **stable en format** et **liée à la source/input**.
+Reformuler une demande imprécise pour que la réponse devienne **vérifiable**, **stable en format** et **liée à la source et à l'entrée**.
 
-### Exercice: De « vague » à « opérationnalisé »
+### Exercice: de «vague» à «opérationnalisé»
 
-**Demande vague (intentionnellement mauvaise):**
+**Demande vague (mauvaise à dessein):**
 
 ``` markdown
 Résume le document et dis-moi ce qui est important.
 ```
 
-**Tâche:** Créez deux prompts propres à partir de cela:
+**Tâche:** créez-en deux prompts propres:
 
-- **Variante A (minimale):** seulement objectif + format de réponse.
-- **Variante B (robuste):** objectif + contexte structuré + contraintes + format de réponse + auto-vérification.
+- **Variante A (minimale):** seulement le but et le format de réponse.
+- **Variante B (robuste):** but + contexte structuré + contraintes + format de réponse + auto-vérification.
 
-Orientez-vous sur la configuration de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, max. 4 phrases).
+Orientez-vous sur la configuration de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, 4 phrases au plus).
 
-**Scaffold de prompt (robuste, adaptable):**
+**Ossature de prompt (robuste, adaptable):**
 
 ``` markdown
 Tâche: [concrète, 1–2 phrases]
@@ -159,99 +209,102 @@ Contexte: [séminaire/question de recherche/période]
 Matériel: [texte du document + métadonnées, clairement séparés]
 Règles:
 - Travaille uniquement avec le matériel.
-- Pas d'ajouts de connaissances générales.
+- Pas d'ajouts venus des connaissances générales.
 - Marque explicitement les incertitudes.
 Format de sortie:
 1) Paraphrase minimale (max. 4 phrases)
-2) 5 termes clés (du texte)
-3) 3 questions ouvertes (qu'est-ce qui reste flou ?)
+2) 5 termes clés (tirés du texte)
+3) 3 questions ouvertes (qu'est-ce qui reste flou?)
 Auto-vérification:
 - Liste 3 endroits où tu serais tenté de spéculer, et explique brièvement pourquoi tu ne le fais pas.
 ```
 
-## 2. Rôles: Objectif
+## 2. Rôles
 
 ### Objectif
 
-Utiliser les rôles comme **contraintes de méthode**: chaque rôle impose différentes heuristiques, angles morts et modes de vérification.
+Utiliser les rôles comme **consignes méthodiques**: chaque rôle impose d'autres heuristiques, d'autres angles morts et d'autres modes de vérification.
 
-### Exercice 2A: Une tâche, trois rôles
+### Exercice 2A: une tâche, trois rôles
 
-Choisissez **une** tâche parmi les autres exercices (par ex. développer une question de recherche ; critique externe des sources ; termes de recherche pour les catalogues ; briefing de blog).
+Choisissez **une** tâche parmi les autres exercices (par exemple développer une question de recherche, critique externe des sources, termes de recherche pour les catalogues, briefing de blog).
 
 Faites traiter la même tâche dans trois rôles:
 
 1. **Critique des sources** (proche du texte, sépare les niveaux) – voir [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd).
-2. **Avocat du diable** (tests de stress, contre-arguments) – voir [Écriture](ecriture.qmd).
-3. **Structureur/Outliner** (plan de travail, produits intermédiaires) – voir [Public History](public-history.qmd) ou [Écriture](ecriture.qmd).
+2. **Avocat du diable** (tests de résistance, contre-arguments) – voir [Écriture](ecriture.qmd).
+3. **Structurateur** (plan de travail, produits intermédiaires) – voir [Public History](public-history.qmd) ou [Écriture](ecriture.qmd).
 
-**Prompt de rôle (Exemple: Critique des sources, fortement limitant):**
+**Prompt de rôle (exemple: critique des sources, fortement limitant):**
 
 ``` markdown
-Rôle: Critique des sources.
-Tâche: Analyse le matériel exclusivement comme source (critique externe + interne).
+Rôle: critique des sources.
+Tâche: analyse le matériel exclusivement comme source (critique externe + interne).
 Important:
-- Sépare strictement: [Texte du document] / [Édition/Métadonnées] / [Conclusion].
+- Sépare strictement: [texte du document] / [édition/métadonnées] / [conclusion].
 - Pas d'évaluations historiques.
-- Chaque conclusion nécessite un support textuel ou de métadonnées.
+- Chaque conclusion a besoin d'un appui dans le texte ou dans les métadonnées.
 Sortie:
 1) Tableau des niveaux
-2) 5 questions vérifiables d'authenticité/transmission
-3) 5 hypothèses de biais/position de locuteur (marquer comme hypothèses)
+2) 5 questions vérifiables sur l'authenticité et la transmission
+3) 5 hypothèses de biais et de position d'énonciation (à marquer comme hypothèses)
 ```
 
-**Prompt de rôle (Exemple: Avocat du diable, dérivé de l'exercice d'écriture):**
+**Prompt de rôle (exemple: avocat du diable, dérivé de l'exercice d'écriture):**
 
 ``` markdown
-Rôle: Avocat du diable.
-Input: Mes hypothèses de travail (H1–H3) + indications de matériel.
+Rôle: avocat du diable.
+Entrée: mes hypothèses de travail (H1–H3) + indications de matériel.
 Tâche:
-- Nomme l'hypothèse discutable pour chaque hypothèse.
-- Formule un test de stress (quel constat la renverserait ?).
+- Nomme pour chaque hypothèse la prémisse discutable.
+- Formule un test de résistance (quel constat la ferait basculer?).
 - Donne 1 interprétation alternative (max. 2 phrases).
 Pas de faits externes.
-Hypothèses: …
 ```
 
-### Exercice 2B: Changement de rôle comme diagnostic
+### Exercice 2B: le changement de rôle comme diagnostic
 
-Prenez la **meilleure** réponse de 2A et faites-la **examiner** par un second rôle, pas réécrire:
+Prenez la **meilleure** réponse de 2A et faites-la **vérifier** par un second rôle, sans la réécrire:
 
-- Rôle « Vérificateur de logique » (cf. *Écriture*): cohérence, sauts, points de preuve manquants.
-- Rôle « Assistant catalogue » (cf. *Recherche bibliographique*): traduit en chaînes de recherche/indicateurs.
+- Rôle «vérificateur de logique» (cf. l'exercice [Écriture](ecriture.qmd)): cohérence, sauts, points de preuve manquants.
+- Rôle «assistant de catalogue» (cf. l'exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd)): traduit en chaînes de recherche et en indicateurs.
 
-## 3. Prompting Zero-shot: Objectif
+## 3. Prompting zero-shot
 
 ::: callout-note
 
-## Prompting Zero-shot
+## Définition: prompting zero-shot
 
-Le prompting zero-shot signifie que le modèle ne reçoit pas d'exemples, seulement la tâche, le matériel et les contraintes.
+Le prompting zero-shot signifie que le modèle ne reçoit aucun exemple, mais seulement la consigne, le matériel et les contraintes.
 
 :::
 
 ### Objectif
 
-Utiliser le zero-shot comme **référence**: rapide, mais sujet aux erreurs. Vous apprenez *où* le zero-shot suffit et *où* il évite systématiquement.
+Utiliser le zero-shot comme **base de comparaison**: rapide, mais sujet aux erreurs. Vous apprenez *où* le zero-shot suffit et *où* il esquive de façon systématique.
 
-### Exercice 3A: Paraphrase minimale (Zero-shot)
+### Exercice 3A: paraphrase minimale (zero-shot)
 
-Utilisez la tâche de [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, max. 4 phrases) comme zero-shot.
+Utilisez la tâche de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, 4 phrases au plus) en zero-shot.
 
 ``` markdown
-Analyse la note de service ci-jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds:
-- Qui parle/agit ?
-- Quel est l'occasion ?
-- Quelle est la déclaration/décision centrale ?
-- Quelle conséquence est indiquée ?
+Analyse la note de dossier jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds:
+- Qui parle et qui agit?
+- Quelle est l'occasion?
+- Quelle est l'affirmation ou la décision centrale?
+- Quelle conséquence est suggérée?
 Maximum 4 phrases. Pas d'interprétation.
 ```
 
 ::: callout-tip
 
-## Téléchargement de la source
+## Téléverser la source
 
-Téléchargez le document en fichier PDF avec le prompt. Si ce n'est pas possible, copiez le contenu du document au début du prompt et séparez-le visuellement, par exemple avec """. Assurez-vous également que l'IA a accès aux métadonnées (soit par accès en ligne, soit en fournissant les métadonnées). Exemple:
+Avant chaque téléversement, vérifiez si vous avez le droit de disposer du matériel. La section «Ce dont vous avez besoin» nomme les matériels qui restent hors du système d'IA. Le libre accès ne permet pas à lui seul un téléversement: une source librement accessible peut malgré tout interdire une communication. Lisez donc les conditions d'utilisation du fournisseur avant de téléverser un fichier.
+
+Téléversez le document en fichier PDF avec le prompt. C'est le cas normal. Assurez-vous que l'IA a aussi accès aux métadonnées. Appelez les métadonnées en ligne ou indiquez-les vous-même.
+
+Seulement dans le cas exceptionnel où le téléversement ne fonctionne pas, copiez le contenu du document au début du prompt. Séparez-le visuellement, par exemple avec """. Exemple:
 
 ``` markdown
 """
@@ -259,7 +312,7 @@ CONTENU DU DOCUMENT
 """
 
 """
-MÉTADONNÉES DU DOCUMENT (incl. URL)
+MÉTADONNÉES DU DOCUMENT (URL comprise)
 """
 
 VOTRE PROMPT
@@ -271,26 +324,26 @@ VOTRE PROMPT
 
 Marquez dans la réponse:
 
-- Les endroits qui ne découlent pas clairement du texte,
-- Les hypothèses contextuelles implicites (où le modèle « sait-il » plus que votre input ?).
+- les passages qui ne découlent pas clairement du texte,
+- les hypothèses de contexte implicites (où le modèle «sait»-il plus que votre entrée?).
 
-### Exercice 3B: Trois questions de recherche (Zero-shot)
+### Exercice 3B: trois questions de recherche (zero-shot)
 
 Utilisez le modèle de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd).
 
 ``` markdown
-Donne-moi trois questions de recherche historique possibles qui peuvent être dérivées de la note de service.
-Chaque question doit être (a) délimitable temporellement, (b) vérifiable sur la base des sources, et (c) analytique.
-Pour chaque question, nomme quels types de sources supplémentaires j'ai besoin pour la contre-vérification.
+Donne-moi trois questions de recherche historiques possibles que l'on peut dériver de la note de dossier.
+Chaque question doit être (a) délimitable dans le temps, (b) vérifiable sur les sources et (c) analytique.
+Pour chaque question, nomme les genres de sources supplémentaires dont j'ai besoin pour la contre-épreuve.
 ```
 
-**Réflexion:** Quelles questions sont (i) vraiment liées aux sources, lesquelles (ii) sont des questions « génériques » qui s'appliquent à de nombreux cas ?
+**Réflexion:** quelles questions sont (i) vraiment liées aux sources, et lesquelles sont (ii) des questions «génériques» qui conviennent à de nombreux cas?
 
-## 4. Prompting Few-shot: Objectif
+## 4. Prompting few-shot
 
 ::: callout-note
 
-## Prompting Few-shot
+## Définition: prompting few-shot
 
 Le prompting few-shot signifie que le modèle reçoit des exemples explicites, ce qui conduit souvent à de meilleures réponses.
 
@@ -298,248 +351,374 @@ Le prompting few-shot signifie que le modèle reçoit des exemples explicites, c
 
 ### Objectif
 
-Le few-shot utilise des exemples pour stabiliser les **catégories**, les **formats de réponse** et les **normes de qualité**.
+Le few-shot utilise des exemples pour stabiliser les **catégories**, les **formats de réponse** et les **critères de qualité**.
 
-### Exercice 4A: Few-shot pour la séparation des niveaux (Texte du document/Édition/Conclusion)
+### Exercice 4A: few-shot pour la séparation des niveaux (texte du document/édition/conclusion)
 
-Créez 3–5 phrases d'exemple courtes (peuvent être **fictives**, mais historiquement plausibles) et étiquetez-les.
+Créez 3 à 5 phrases d'exemple courtes (elles peuvent être **fictives**, mais historiquement plausibles) et étiquetez-les.
 
 **Exemple:**
 
 ``` markdown
-Exemples (Input → Étiquette):
-1) "Lieu: Berne ; Date: 7.7.1949." → [Édition/Métadonnées]
-2) "Dans le texte, la neutralité est utilisée comme argument contre l'étape X." → [Texte du document]
-3) "Il en découle que la Suisse était fondamentalement anti-européenne." → [Conclusion] (trop fort ; doit être vérifié/atténué)
+Exemples (entrée → étiquette):
+1) "Lieu: Berne; date: 7.7.1949." → [édition/métadonnées]
+2) "Dans le texte, la neutralité sert d'argument contre une étape X." → [texte du document]
+3) "Il en découle que la Suisse était fondamentalement anti-européenne." → [conclusion] (trop forte; à vérifier ou à atténuer)
 
 Tâche:
-Étiquetez les 10 phrases suivantes de mon matériel comme
-[Texte du document] / [Édition/Métadonnées] / [Conclusion].
-Pour chaque étiquette, donnez 1 indice de preuve (fragment de citation/champ de métadonnées) ou 'pas de support'.
+Étiquette maintenant les 10 phrases suivantes de mon matériel comme
+[texte du document] / [édition/métadonnées] / [conclusion].
+Pour chaque étiquette, donne 1 indice de preuve (fragment de citation ou champ de métadonnées) ou «pas d'appui».
 Matériel: ...
 ```
 
-**Consigne de travail:** Ensuite, incorporez le bloc few-shot dans votre prompt de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) et vérifiez si les étiquettes deviennent plus fiables.
+**Consigne de travail:** reprenez ensuite le bloc few-shot dans votre prompt de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) et vérifiez si les étiquettes deviennent plus fiables.
 
-### Exercice 4B: Few-shot pour les questions de recherche (Faible vs. Fort)
+### Exercice 4B: few-shot pour les questions de recherche (faible ou forte)
 
-Prenez 2 questions faibles et 2 questions fortes (de votre exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) ou du séminaire) et entrez-les comme exemples avec un bref commentaire.
+Prenez 2 questions faibles et 2 questions fortes (de votre exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) ou du séminaire) et saisissez-les comme exemples, avec un bref commentaire.
 
-**Scaffold:**
+**Ossature:**
 
 ``` markdown
-Exemples (Faible/Fort):
-Faible: "Pourquoi la Suisse a-t-elle rejoint le Conseil de l'Europe ?" → trop large, téléologique, base de preuves floue.
-Fort: "Comment la 'neutralité' a-t-elle été opérationnalisée dans les notes internes du DFAE 1949–1953 comme argument pour/contre un rapprochement institutionnel avec le Conseil de l'Europe ?" → opérateur clair, période, proximité des sources.
+Exemples (faible/forte):
+Faible: "Pourquoi la Suisse a-t-elle adhéré au Conseil de l'Europe?" → trop large, téléologique, base de preuves floue.
+Forte: "Comment la 'neutralité' a-t-elle été opérationnalisée dans les notes internes du DFAE de 1949 à 1953, comme argument pour ou contre un rapprochement institutionnel avec le Conseil de l'Europe?" → opérateur clair, période, proximité des sources.
 
 Tâche:
 Formule 3 nouvelles questions de recherche dans le style des exemples forts.
 Pour chaque question:
-- Période
-- Termes opérateurs centraux (définir !)
-- Types de sources attendus
-- 1 contre-vérification (quelle source pourrait contredire ?)
+- période
+- termes opératoires centraux (à définir!)
+- genres de sources attendus
+- 1 contre-épreuve (quelle source pourrait contredire?)
 ```
 
-## 5. Trace de réflexion structurée: Objectif
+## 5. Trace de raisonnement structurée (Chain-of-Thought Prompting)
 
 ::: callout-note
 
-## Prompting Chain-of-Thought
+## Définition: Chain-of-Thought Prompting
 
-Le prompting Chain-of-Thought désigne une procédure où le modèle **décompose une tâche complexe en étapes intermédiaires explicites** (par ex. extraction → ordonnancement → évaluation → résultat) et **affiche visiblement** ces étapes.
+Le Chain-of-Thought Prompting désigne un procédé dans lequel le modèle **décompose une tâche complexe en étapes intermédiaires explicites** (par exemple extraction → mise en ordre → évaluation → résultat) et **affiche visiblement** ces étapes.
+
+Vous demandez ces étapes intermédiaires dans le prompt. La [trace de raisonnement structurée](../glossary.qmd#gl-chain-of-thought) est donc une propriété de votre entrée, et non une propriété du système. [@wei2022chain]
 
 :::
 
 ### Objectif
 
-Décomposer les tâches complexes en **produits intermédiaires** (décomposition) et imposer une **auto-vérification**. Ce qui est crucial n'est pas la « longue justification », mais les **étapes intermédiaires vérifiables**.
+Décomposer les tâches complexes en **produits intermédiaires** et imposer une **auto-vérification**. Ce qui compte n'est pas une «longue justification», mais des **étapes intermédiaires vérifiables**.
 
 ::: callout-note
 
-## Note sur la « trace de réflexion »
+## Remarque sur la «trace de raisonnement»
 
-Formulez la trace de réflexion de manière à ce qu'elle reste **brève** et **auditable** (points, critères, tests). L'objectif est la vérifiabilité, pas un « journal interne » détaillé.
+Formulez la trace de raisonnement pour qu'elle reste **courte** et **vérifiable** (points, critères, tests). Le but est la vérifiabilité, et non un «journal intime» détaillé.
 :::
 
-### Exercice 5A: Cartographie d'arguments avec étapes intermédiaires
+::: callout-caution
 
-Utilisez la cartographie d'arguments de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (affirmation/garantie/hypothèse/implication), mais imposez une logique d'étapes:
+## Une trace de raisonnement demandée n'est pas une preuve, et un mode de raisonnement intégré est autre chose
+
+Séparez deux choses qui se ressemblent.
+
+1. **La trace de raisonnement demandée.** Vous avez prescrit les étapes dans le prompt. Vous contrôlez l'étendue, l'ordre et les points de contrôle, et vous pouvez copier le prompt mot pour mot dans le journal IA.
+2. **Le [mode de raisonnement](../glossary.qmd#gl-denkmodus) intégré.** Le système produit lui-même des étapes intermédiaires avant la réponse. Vous n'avez pas conçu ce déroulement, et de nombreux systèmes ne vous en montrent qu'un résumé.
+
+Seule la trace de raisonnement demandée est un artefact que vous avez produit vous-même. Elle seule est donc documentable de manière reproductible.
+
+La même limite vaut pour les deux formes. Les étapes visibles ne prouvent pas le calcul réel. Les modèles nomment des raisons qui taisent l'influence véritable sur la réponse. [@turpin2023unfaithful] Traitez chaque trace de raisonnement comme une aide à la vérification, et jamais comme une preuve.
+
+La section [Vérifier et situer les capacités](#sec-capacites) approfondit le mode de raisonnement.
+:::
+
+### Exercice 5A: cartographie d'arguments avec étapes intermédiaires
+
+Utilisez la cartographie d'arguments de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (affirmation/justification/prémisse/implication), mais imposez une logique d'étapes:
 
 ``` markdown
-Tâche: Génère une cartographie d'arguments pour les passages concernant la neutralité/compatibilité/processus de décision.
+Tâche: produis une cartographie d'arguments pour les passages qui concernent la neutralité, la compatibilité et le processus de décision.
 
-Procédure (afficher visiblement):
-1) Extrais les segments de texte pertinents (max. 5 fragments de citation courts).
-2) Formule par segment une affirmation/garantie/hypothèse/implication (mots-clés).
-3) Auto-vérification: Nomme 3 endroits où le saut du texte → interprétation est délicat, et marque-les comme [Spéculation].
+Procédure (à afficher visiblement):
+1) Extrais les segments de texte pertinents (max. 5 courts fragments de citation).
+2) Formule par segment une affirmation, une justification, une prémisse et une implication (en mots-clés).
+3) Auto-vérification: nomme 3 endroits où le saut du texte vers l'interprétation est délicat, et marque-les comme [spéculation].
 
 Règles:
 - Utilise uniquement le texte du document.
 - Pas de faits supplémentaires.
-Réponse: Liste Markdown.
+Réponse: liste Markdown.
 Matériel: ...
 ```
 
-### Exercice 5B: Plan de recherche comme pipeline
+### Exercice 5B: le plan de recherche comme chaîne de traitement
 
-Transférez la structure de [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd) (sous-questions → types de sources → lieux de recherche → chaînes de recherche) dans un pipeline explicite:
+Transposez la structure de l'exercice [Recherche de sources](recherche-sources-vorort-conseil-europe-1963.qmd) (sous-questions → types de sources → lieux de recherche → chaînes de recherche) en une chaîne de traitement explicite:
+
+Remplacez dans le prompt suivant la question d'exemple par votre propre question.
 
 ``` markdown
-Objectif: Crée un plan de recherche pour la question: [insérer].
+But: établis un plan de recherche pour la question: comment la neutralité a-t-elle servi, entre 1949 et 1963, d'argument contre une adhésion de la Suisse au Conseil de l'Europe?
 
 Étapes:
 1) Décompose en 4–6 sous-questions (vérifiables).
-2) Attribue 2–3 types de sources + arènes par sous-question.
-3) Déduis 2 chaînes de recherche par sous-question (DE/FR/EN ; booléen).
-4) Auto-vérification: Liste 5 erreurs typiques (anachronismes, signatures inventées, termes trop larges...) et comment tu les évites.
+2) Attribue 2–3 types de sources et arènes par sous-question.
+3) Dérive 2 chaînes de recherche par sous-question (DE/FR/EN; booléennes).
+4) Auto-vérification: liste 5 erreurs typiques (anachronismes, cotes inventées, termes trop larges …) et dis comment tu les évites.
 
-Réponse: Tableau (Sous-question | Preuve | Chaîne de recherche | Lieu de recherche | Risque).
+Réponse: tableau (sous-question | preuve | chaîne de recherche | lieu de recherche | risque).
 ```
 
-## 6. Prompting itératif: Objectif
+## 6. Prompting itératif
 
 ::: callout-note
 
-## Prompting itératif
+## Définition: prompting itératif
 
-Le prompting itératif désigne un **cycle de travail contrôlé** dans lequel les réponses de l'IA sont améliorées étape par étape en **critiquant et révisant spécifiquement** chaque sortie.
+Le prompting itératif désigne un **cycle de travail contrôlé**, dans lequel les réponses de l'IA sont améliorées pas à pas, parce que chaque sortie est **critiquée et révisée de manière ciblée**.
 
 :::
 
 ### Objectif
 
-L'itération comme **révision contrôlée**: Vous ne construisez pas « plus de texte », mais améliorez la précision de l'objectif, la discipline des preuves et le format.
+L'itération comme **révision contrôlée**: vous ne produisez pas «plus de texte», vous améliorez la précision du but, la discipline des preuves et le format.
 
-### Exercice 6A: Générer → Critiquer → Réviser (Question de recherche)
+### Exercice 6A: générer → critiquer → réviser (question de recherche)
 
-1) **Générer (v1):** Questions de recherche zero-shot (Exercice 3B).\
-2) **Critiquer:** Utilisez la comparaison critique de l'exercice *Question de recherche* (« Pourquoi X manque-t-il ? » / « Sur quelles sources cela repose-t-il ? »).\
-3) **Réviser (v2):** Faites réviser les questions par l'IA, mais uniquement sur la base de vos points de critique.
+1) **Générer (v1):** questions de recherche en zero-shot (exercice 3B).\
+2) **Critiquer:** utilisez la confrontation critique de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) («Pourquoi l'aspect de la neutralité manque-t-il?» / «Sur quelles sources cela repose-t-il?»).\
+3) **Réviser (v2):** faites réviser les questions par l'IA, mais uniquement à partir de vos points de critique.
 
-**Prompt de critique (Modèle):**
+**Prompt de critique (modèle):**
+
+Insérez après «Voici la réponse v1:» le texte complet de la première réponse.
 
 ``` markdown
-Voici la réponse v1: [insérer].
-Tâche: Critique affirmation par affirmation:
-- Qu'est-ce qui est trop large/téléologique ?
-- Où manquent les termes opérateurs/définitions ?
-- Où la base de preuves est-elle floue ?
-Puis donne une version révisée v2 (max. 3 questions) + une logique de changement (max. 6 points).
-Pas de nouveaux faits.
+Voici la réponse v1: <insérer le texte de la première réponse>.
+Tâche: critique affirmation par affirmation:
+- Qu'est-ce qui est trop large ou téléologique?
+- Où manquent les termes opératoires et les définitions?
+- Où la base de preuves est-elle floue?
+Donne ensuite une version révisée v2 (max. 3 questions) + une logique des changements (max. 6 points).
+Pas de faits nouveaux.
 ```
 
-### Exercice 6B: Itération sur le format de réponse (Citation / Résumé)
+### Exercice 6B: itération sur le format de réponse (citer et résumer)
 
-Prenez l'exercice *Citation* et imposez une sortie en deux étapes:
+Prenez l'exercice [Citation](citer.qmd) et imposez une sortie en deux temps:
 
-1) Extraction de métadonnées structurées (champs),\
-2) seulement ensuite citation Chicago + format d'import Zotero.
+1) extraction de métadonnées structurées (champs),\
+2) seulement ensuite la citation Chicago et le format d'import pour le logiciel de gestion bibliographique.
 
-**Question d'optimisation:** L'approche en deux étapes améliore-t-elle le diagnostic d'erreur (par ex. numéros de page manquants, mauvais éditeurs) ?
+**Question d'optimisation:** l'approche en deux temps améliore-t-elle le diagnostic d'erreur (par exemple des numéros de page manquants ou de mauvais éditeurs)?
 
-## 7. Optimisation de prompt: Objectif
+## 7. Optimisation du prompt
 
 ### Objectif
 
-Améliorer systématiquement les prompts: pas « plus jolis », mais **plus robustes** (moins d'hallucination, meilleure stabilité de format, vérifiabilité plus claire).
+Améliorer les prompts de manière systématique: non pas «plus jolis», mais **plus robustes** (moins d'hallucinations, meilleure stabilité du format, vérifiabilité plus claire).
 
-### Critères de qualité (Grille)
+### Critères de qualité (grille)
 
-Évaluez chaque variante de prompt (0–2 points par critère):
+Évaluez chaque variante de prompt (0 à 2 points par critère):
 
-1. **Liaison à l'input** (travaille vraiment uniquement avec le matériel ?)
-2. **Séparation des niveaux** (texte vs. métadonnées vs. conclusion)
-3. **Stabilité du format** (livre ce qui est demandé, sans évitement)
-4. **Transparence des erreurs** (marque les incertitudes)
-5. **Adéquation** (réponse directement utilisable, par ex. pour extrait/plan/journal de recherche)
+1. **Liaison à l'entrée** (travaille-t-il vraiment uniquement avec le matériel?)
+2. **Séparation des niveaux** (texte / métadonnées / conclusion)
+3. **Stabilité du format** (livre-t-il ce qui est demandé, sans esquive?)
+4. **Transparence des erreurs** (marque-t-il les incertitudes?)
+5. **Utilité pour la suite** (la réponse est-elle directement réutilisable, par exemple pour un extrait, un plan ou un journal de recherche documentaire?)
 
-### Exercice 7A: « Durcir » le prompt (Recherche bibliographique)
+### Exercice 7A: «durcir» un prompt (recherche bibliographique)
 
-Prenez un prompt de littérature naïf (« Nomme la littérature clé sur X ») et optimisez-le pour servir d'**assistant de recherche** (pas de producteur de sources). Orientation: Exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) (« Pas de titres inventés ; pas de connaissance simulée des catalogues ; marquer les incertitudes »).
+Prenez un prompt bibliographique naïf («Nomme la littérature centrale sur X») et optimisez-le pour qu'il serve d'**assistance à la recherche**, et non de producteur de sources. Orientation: l'exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd) («Pas de titres inventés; pas de connaissance simulée des catalogues; marquer les incertitudes»).
 
-**Prompt optimisé (Scaffold):**
+**Prompt optimisé (ossature):**
 
 ``` markdown
-Tu es un assistant de recherche historique.
-Objectif: Corpus de départ pour [sujet/période].
+Tu es assistant de recherche en histoire.
+But: corpus de départ pour [sujet/période].
 Règles:
-- N'invente pas de titres/auteurs.
-- Ne fais pas d'affirmations sur la couverture des catalogues.
-- Livre plutôt: stratégies de recherche, chaînes de recherche, types de littérature attendus, et indices pour les étapes de vérification.
+- N'invente aucun titre ni aucun auteur.
+- Ne fais aucune affirmation sur la couverture des catalogues.
+- Livre plutôt: stratégies de recherche, chaînes de recherche, types de littérature attendus et indications sur les étapes de vérification.
 Réponse:
-1) 8 chaînes de recherche (DE/FR/EN) avec brève justification
-2) 5 types de littérature attendus + où les trouver typiquement
-3) 6 étapes de vérification (comment je vérifie, exporte, documente les résultats)
+1) 8 chaînes de recherche (DE/FR/EN) avec une brève justification
+2) 5 types de littérature attendus + où on les trouve typiquement
+3) 6 étapes de vérification (comment je vérifie, exporte et documente les résultats)
 ```
 
-### Exercice 7B: Optimisation de prompt comme « budget d'erreur »
+### Exercice 7B: l'optimisation du prompt comme «budget d'erreur»
 
-Définissez un budget d'erreur et optimisez pour celui-ci:
+Définissez un budget d'erreur et optimisez sur cette base:
 
-- **Budget A:** « 0 titre inventé » (littérature),
-- **Budget B:** « 0 hypothèse contextuelle non étayée » (critique des sources),
-- **Budget C:** « 0 violation de format » (par ex. max. 4 phrases, tableau, IDs d'affirmation).
+- **Budget A:** «0 titre inventé» (littérature),
+- **Budget B:** «0 hypothèse de contexte non étayée» (critique des sources),
+- **Budget C:** «0 infraction au format» (par exemple 4 phrases au plus, tableau, identifiants d'affirmation).
 
-Exécutez 3 itérations (v1–v3) et documentez:
+Menez 3 itérations (v1 à v3) et consignez:
 
-- quel changement de prompt a réduit quel champ d'erreur,
-- quels effets secondaires apparaissent (par ex. la réponse devient trop vague).
+- quelle modification du prompt a réduit quel champ d'erreur,
+- quels effets secondaires apparaissent (par exemple une réponse qui devient trop vague).
 
-## Bibliothèque courte: Blocs de construction de prompt réutilisables
+## 8. Vérifier et situer les capacités {#sec-capacites}
 
-### 1) Contexte + Liaison au matériel
+### Objectif
+
+Nommer cinq capacités récentes des systèmes d'IA, les vérifier dans votre propre compte et les situer sur le plan méthodique. Les sections 1 à 7 entraînent le prompt. Cette section concerne ce que le système fait en plus du prompt.
+
+::: callout-important
+
+## Ces capacités non plus ne produisent pas de preuve
+
+Aucune des cinq capacités ne transforme une sortie en preuve. Chacune produit des hypothèses, et vous vérifiez chaque hypothèse sur l'original. [@bender2021stochastic] Les capacités déplacent seulement l'endroit **où** l'erreur naît: dans le mode de raisonnement, dans l'étape de recherche, dans l'extraction, dans la transcription ou dans le modèle lui-même.
+:::
+
+### 8.1 Mode de raisonnement intégré
+
+Un [mode de raisonnement](../glossary.qmd#gl-denkmodus) est un mode de fonctionnement dans lequel le système produit lui-même des étapes intermédiaires avant la réponse. La section 5 explique la différence avec la trace de raisonnement demandée.
+
+- **Ce que vous gagnez:** les tâches longues avec plusieurs conditions sont plus souvent résolues correctement.
+- **Ce que vous perdez:** vous n'avez pas conçu le déroulement et vous ne pouvez pas le consigner mot pour mot.
+- **Ce que vous faites:** notez dans le [journal IA](../glossary.qmd#gl-ki-protokoll) si le mode de raisonnement était actif. Notez-le comme un réglage, comme vous notez le modèle et la date.
+
+### 8.2 Déroulements agentiques et recherche approfondie
+
+Un [déroulement agentique](../glossary.qmd#gl-agentischer-ablauf) signifie ceci: le système planifie plusieurs étapes, appelle des outils et continue sans vous consulter. La [recherche approfondie](../glossary.qmd#gl-vertiefte-recherche) en est le cas le plus fréquent. Le système cherche sur le web, lit des pages et livre après quelques minutes un rapport avec des références.
+
+- **Ce que vous gagnez:** une première vue d'ensemble large en peu de temps.
+- **Ce que vous perdez:** le contrôle de chaque étape intermédiaire. Les erreurs d'une étape précoce se propagent dans toutes les étapes suivantes.
+- **Ce que vous vérifiez:** chaque indication, une par une. Un rapport ressemble à un état de la littérature, mais c'est une liste de résultats et d'hypothèses. Les titres inventés et les indications fausses dans les références sont bien documentés. [@walters2023fabrication] Les rapports de performance sur de tels systèmes ne sont eux non plus souvent pas reproductibles. [@kapoor2024agents]
+- **Ce que vous faites:** tenez deux journaux séparés. Le [journal de recherche documentaire](../glossary.qmd#gl-rechercheprotokoll) retient la date, le système, la requête et les règles de sélection. Le journal IA retient votre consigne, la réponse et vos étapes de vérification.
+
+### 8.3 Extraction depuis vos propres documents
+
+Dans l'[extraction depuis vos propres documents](../glossary.qmd#gl-eigene-dokumente), vous déposez une collection de fichiers. Une étape de recherche y choisit des passages et les présente au système. [@lewis2020retrieval]
+
+- **Ce que vous gagnez:** une aide pour trouver des passages. Le système nomme souvent l'emplacement dans votre collection.
+- **Ce que vous ne gagnez pas:** une liaison de la réponse à votre collection. L'extraction élargit le contexte. Elle ne fait pas en sorte que la réponse vienne uniquement des passages trouvés. Le système peut toujours mêler des connaissances issues de l'entraînement.
+- **Ce que vous perdez:** rien de votre obligation de vérifier. L'étape de recherche ne trouve pas tout, et le système répond malgré tout.
+- **Ce que vous vérifiez:** chaque affirmation sur l'original. Une indication de passage prouve l'emplacement, et non l'affirmation. Ouvrez la page nommée et lisez-la vous-même.
+- **Ce à quoi vous faites attention:** une collection déposée est un téléversement. Les règles de la section «Ce dont vous avez besoin» s'appliquent.
+
+### 8.4 Lecture multimodale et reconnaissance de l'écriture manuscrite
+
+Aujourd'hui, de nombreux systèmes lisent aussi des images. Ils peuvent donc traiter une numérisation. La [reconnaissance de l'écriture manuscrite](../glossary.qmd#gl-htr) convertit une page manuscrite en texte. Pour l'écriture cursive allemande, il existe des modèles généraux avec des taux d'erreur utilisables. [@hodel2021general]
+
+Cet exercice est un exercice de critique des sources. L'erreur est donc au premier plan ici.
+
+- **Le taux d'erreur varie fortement.** L'écriture, la mise en page, la langue et l'état du document déterminent le résultat. Aucun modèle ne transcrit chaque main de manière fiable. [@romein2025assessing]
+- **Les modèles d'image généraux sont plus faibles que les modèles spécialisés.** Le style d'écriture, l'orthographe historique et la langue causent toujours des erreurs considérables. [@diezgarcia2025evaluating]
+- **L'erreur la plus dangereuse est la lecture lisse.** Un système d'IA général ne s'arrête pas devant un passage illisible. Il insère un mot plausible et ne marque rien. C'est une [hallucination](../glossary.qmd#gl-halluzination) sous forme de transcription.
+- **Les erreurs se propagent.** Les erreurs d'un texte reconnu par machine modifient les étapes d'analyse ultérieures, et donc vos résultats. [@vanstrien2020assessing]
+
+::: callout-caution
+
+## Traitez une transcription automatique comme une hypothèse de lecture
+
+Comparez chaque citation avec la numérisation avant de la reprendre. Notez dans le [journal d'analyse de source](../glossary.qmd#gl-analyseprotokoll) que le texte a été reconnu par machine. Notez aussi la date et la forme d'affichage. Dans un texte, une transcription sans cette mention ne se distingue pas d'une lecture vérifiée.
+:::
+
+### 8.5 Modèles locaux et modèles ouverts
+
+Trois propriétés comptent ici, et chacune apporte un avantage propre. Gardez-les distinctes, car elles n'apparaissent pas toujours ensemble.
+
+- **Ouvert** décrit la licence. Dans un [modèle ouvert](../glossary.qmd#gl-offenes-modell), les poids sont librement téléchargeables.
+- **Local** décrit le lieu d'exécution. Un [modèle local](../glossary.qmd#gl-lokales-modell) s'exécute sur votre propre ordinateur.
+- **Petit** décrit la taille. Les petits modèles fonctionnent sur un ordinateur portable récent avec au moins 16 gigaoctets de mémoire vive.
+
+Un modèle ouvert ne s'exécute pas forcément en local, car de nombreux fournisseurs exploitent des modèles ouverts en ligne. Un modèle local n'est pas non plus forcément sobre, car un grand modèle local consomme beaucoup d'énergie. Vérifiez donc chaque propriété séparément.
+
+- **Protection des données:** le matériel reste sur votre ordinateur uniquement si le modèle s'exécute en local. La transmission à un fournisseur ne tombe qu'à cette condition.
+- **Reproductibilité:** vous ne conservez une version fixe que si les poids sont ouverts. Un modèle fermé peut changer sans préavis ou disparaître. [@spirling2023open]
+- **Énergie:** le besoin en énergie par requête ne baisse nettement que si le modèle est petit et la tâche étroite. [@luccioni2024power]
+- **Limite:** les petits modèles sont nettement plus faibles sur les textes longs et sur les questions de fait. Utilisez-les pour des tâches étroites, par exemple une traduction ou un résumé.
+
+Cette voie est la voie de l'[informatique minimale](../glossary.qmd#gl-minimal-computing) du cours. L'informatique minimale demande de quelle puissance de calcul un projet a réellement besoin. [@risam2022minimal]
+
+### Tâche 8A: vérifier les capacités de votre compte
+
+Vérifiez votre compte et remplissez le tableau. Répondez par Oui, Non ou Incertain.
+
+| Capacité                                       | Disponible? | Payante? | Où l'activer? |
+| ---------------------------------------------- | ----------- | -------- | ------------- |
+| Mode de raisonnement intégré                   |             |          |               |
+| Déroulement agentique ou recherche approfondie |             |          |               |
+| Extraction depuis vos propres documents        |             |          |               |
+| Lecture d'images et de numérisations           |             |          |               |
+| Modèle local ou modèle ouvert                  |             |          |               |
+
+Ne vous fiez pas pour cela à ce que le système dit de lui-même. Vérifiez les réglages et les indications de prix de votre compte.
+
+### Tâche 8B: trace de raisonnement contre mode de raisonnement
+
+Prenez la tâche de l'exercice 5A et exécutez-la deux fois.
+
+1. Exécutez le prompt de 5A sans le mode de raisonnement.
+2. Exécutez le même prompt avec le mode de raisonnement activé.
+3. Notez les deux réponses dans le journal IA.
+
+Si votre compte n'a pas de mode de raisonnement, comparez plutôt le prompt de 5A avec une version sans les étapes intermédiaires prescrites.
+
+### Consigne de travail (réflexion)
+
+Écrivez cinq à huit phrases sur ces questions:
+
+- Quelle part du résultat avez-vous pilotée vous-même dans la tâche 8B?
+- Quelle part le système a-t-il pilotée?
+- Laquelle des cinq capacités utiliseriez-vous dans un travail de séminaire, et laquelle non?
+- Quelle vérification supplémentaire chaque capacité utilisée exige-t-elle de vous?
+
+## Bibliothèque courte: blocs de prompt réutilisables
+
+**1) Contexte et liaison au matériel**
 
 ``` markdown
 Travaille exclusivement avec le matériel ci-dessous.
-S'il te manque des informations, pose des questions de suivi ou marque [Pas clair].
+S'il te manque des informations, pose des questions ou marque [pas clair].
 ```
 
-### 2) Séparation des niveaux (Source vs. Édition vs. Conclusion)
+**2) Séparation des niveaux (source / édition / conclusion)**
 
 ``` markdown
-Marque chaque déclaration comme [Texte du document] / [Édition/Métadonnées] / [Conclusion].
+Marque chaque affirmation comme [texte du document] / [édition/métadonnées] / [conclusion].
 ```
 
-### 3) Réponse comme produit intermédiaire (pour la suite du travail)
+**3) La réponse comme produit intermédiaire (pour la suite du travail)**
 
 ``` markdown
-Donne la réponse sous forme de tableau avec les champs: Affirmation | Lieu de preuve | Incertitude | Prochaine étape de vérification.
+Donne la réponse en tableau avec les champs: affirmation | lieu de preuve | incertitude | prochaine étape de vérification.
 ```
 
-### 4) Imposer auto-vérification / contre-vérification
+**4) Imposer une auto-vérification et une contre-épreuve**
 
 ``` markdown
-Auto-vérification: Nomme 3 contre-preuves plausibles ou interprétations alternatives et ce dont tu aurais besoin pour elles.
+Auto-vérification: nomme 3 contre-preuves plausibles ou interprétations alternatives, et dis ce dont tu aurais besoin pour elles.
 ```
 
-## Soumission
+## Résultat d'apprentissage
 
-1. Protocole de prompt (au moins 8 entrées, réparties sur les techniques)\
-2. Par technique: 1 brève comparaison (A/B) + 5–8 phrases de réflexion sur ce qui s'est méthodologiquement amélioré/empiré\
-3. Un modèle « meilleure pratique »: votre prompt standard personnel pour (a) critique des sources ou (b) recherche bibliographique ou (c) assistance à l'écriture
+À la fin, vous disposez de ces artefacts:
+
+1. Un journal IA avec au moins 8 entrées, réparties sur les techniques.\
+2. Par technique, une courte comparaison A/B et 5 à 8 phrases de réflexion. Décrivez-y ce qui s'est amélioré ou détérioré sur le plan méthodique.\
+3. Un modèle de «bonne pratique». C'est votre prompt standard personnel pour (a) la critique des sources, (b) la recherche bibliographique ou (c) l'assistance à l'écriture.\
+4. Le tableau rempli de la tâche 8A. Il décrit les capacités de votre compte et fait partie de la documentation de votre environnement de travail.
 
 ## Ressources complémentaires
 
-- [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Explication interactive du fonctionnement des modèles de langage basés sur les transformers.
-- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Prédiction du prochain token et bases de l'IA générative.
-- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et utilisation critique.
-- [Prompt Engineering Guide](https://www.promptingguide.ai) (ANGLAIS) – Vue d'ensemble neutre du prompting et de ses notions de base.
-- [Prompt Engineering Guide: Techniques](https://www.promptingguide.ai/techniques) (ANGLAIS) – Zero-shot, few-shot et chain-of-thought, avec des exemples.
-- [Prompt Engineering Guide: Risks and misuses](https://www.promptingguide.ai/risks) (ANGLAIS) – Injection de prompt, faits inventés et biais.
-- [Learn Prompting](https://learnprompting.org/docs/introduction) (ANGLAIS) – Cours ouvert sur le prompting, des bases aux techniques avancées.
-- [Wikipedia : Ingénierie de prompt](https://fr.wikipedia.org/wiki/Ing%C3%A9nierie_de_prompt) – Vue d'ensemble encyclopédique avec des références à la littérature de recherche.
-- [Playlist YouTube : Littératie critique de l'IA (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Série de vidéos sur l'apprentissage automatique, les modèles de langage, le prompting, les biais, la visualisation de données, les méthodes d'évaluation et la science ouverte. (GERMAN only)
-- @sternfeld2023historian – Explique comment un système d'apprentissage automatique « apprend » à partir d'un jeu de données et pourquoi l'IA fonctionne comme un système sociotechnique et non comme un agent autonome.
+- [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Explication interactive du fonctionnement des modèles de langue fondés sur les transformeurs. (ENGLISH only)
+- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Prédiction du prochain mot et bases de l'IA générative. (ENGLISH only)
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limites, hallucinations, vérification et usage critique. (ENGLISH only)
+- [Prompt Engineering Guide](https://www.promptingguide.ai) – Vue d'ensemble neutre du prompting et de ses notions de base. (ENGLISH only)
+- [Prompt Engineering Guide: Techniques](https://www.promptingguide.ai/techniques) – Zero-shot, few-shot et chain-of-thought, chaque fois avec des exemples. (ENGLISH only)
+- [Prompt Engineering Guide: Risks and misuses](https://www.promptingguide.ai/risks) – Injection de prompt, faits inventés et biais. (ENGLISH only)
+- [Learn Prompting](https://learnprompting.org/docs/introduction) – Cours ouvert sur le prompting, des bases aux techniques avancées. (ENGLISH only)
+- [Wikipédia: Ingénierie de prompt](https://fr.wikipedia.org/wiki/Ing%C3%A9nierie_de_prompt) – Vue d'ensemble encyclopédique avec des références à la littérature de recherche.
+- [Playlist YouTube: Littératie critique de l'IA (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Série de vidéos sur l'apprentissage automatique, les modèles de langue, le prompting, les biais, la visualisation de données, les méthodes d'évaluation et la science ouverte. (GERMAN only)
+- @sternfeld2023historian – Explique comment un système d'apprentissage automatique «apprend» à partir d'un jeu de données, et pourquoi l'IA fonctionne comme un système sociotechnique et non comme une instance autonome.
 
 ## Bibliographie
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Avertissement de traduction automatique
-
-Cet exercice a été traduit automatiquement de l'allemand à l'aide de l'IA et peut contenir des erreurs ou des inexactitudes. Veuillez vous référer à la [version originale allemande](../../de/exercises/prompt-engineering.qmd) pour le texte faisant autorité. Si vous remarquez des problèmes de traduction, veuillez les signaler.
 :::

@@ -40,10 +40,10 @@ Ces ressources visent à aider les apprenant·e·s à:
 
 Les exercices encouragent:
 
-- La **reproductibilité** dans les workflows de recherche
-- Le **respect de la vie privée** et la gestion éthique des données
-- La **sensibilisation au droit d'auteur** et l'attribution appropriée
-- La **durabilité** par des approches de calcul minimal
+- La **reproductibilité** dans les flux de travail de recherche
+- La **protection des données** et la gestion éthique des données. Dans sa section «Ce dont vous avez besoin», chaque exercice nomme le matériel qui reste hors du système d'IA et les règles du [droit de la protection des données](glossary.qmd#gl-datenschutzrecht) qui s'appliquent.
+- La **sensibilisation au droit d'auteur** et l'attribution correcte
+- La **durabilité** par l'[informatique minimale](glossary.qmd#gl-minimal-computing), c'est-à-dire par des procédés à faible besoin de calcul. Trois propriétés y aident, et chacune a sa propre condition. Un **petit** modèle pour une tâche étroite consomme nettement moins d'énergie par requête qu'un grand modèle généraliste [@luccioni2024power]. Un [modèle **ouvert**](glossary.qmd#gl-offenes-modell) vous permet de conserver une version fixe [@spirling2023open]. Un [modèle **local**](glossary.qmd#gl-lokales-modell) laisse votre matériel sur votre ordinateur. La section [Vérifier et situer les capacités](exercises/prompt-engineering.qmd#sec-capacites) montre quand cette voie est payante.
 - La **collaboration interdisciplinaire** et la réflexion critique
 
 En s'engageant avec ces ressources, les historien·ne·s seront mieux équipé·e·s pour concevoir des projets transparents et significatifs qui intègrent l'IA dans leur recherche sans compromettre la rigueur disciplinaire.

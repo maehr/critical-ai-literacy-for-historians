@@ -1,14 +1,229 @@
 ---
 lang: fr
-title: 'TRANSLATION NEEDED: Glossaire'
-description: 'Translation needed'
-date: '2026-08-14'
-date-modified: '2026-08-14'
-draft: true
+title: "Glossaire"
+description: "Définitions de travail courtes des termes techniques que les exercices utilisent."
+date: "2026-08-14"
+date-modified: "2026-08-17"
+toc-depth: 2
+draft: false
 citation: false
 ---
 
-::: {.callout-warning title="Translation Needed"}
+::: callout-warning
 
-This glossary is currently only available in German. See [Glossar](../de/glossary.qmd).
+## Traduction automatique
+
+Ce glossaire a été traduit automatiquement depuis l'[original allemand](../de/glossary.qmd) et peut contenir des erreurs. En cas de doute, consultez la version originale.
 :::
+
+Ce glossaire explique les termes que les exercices utilisent sans autre explication. Chaque entrée est une définition de travail pour ce cours, et non un article d'encyclopédie. Les exercices disent **système d'IA** lorsqu'un programme repose sur un grand modèle de langue. Lorsqu'un terme vient de l'anglais, le terme de travail français vient en premier et le terme anglais suit entre parenthèses.
+
+## Systèmes d'IA et prompts
+
+### Grand modèle de langue (Large Language Model, LLM) {#gl-llm}
+
+Un grand modèle de langue est un programme informatique qui a appris à partir de très nombreux textes. Pour une entrée donnée, il ajoute le mot suivant le plus probable.
+
+### Prompt (consigne de travail) {#gl-prompt}
+
+Un prompt est votre consigne de travail écrite à un système d'IA. Il contient le matériel, le but, les limites et le format de réponse que vous voulez.
+
+### Contraintes (Constraints) {#gl-constraints}
+
+Les contraintes sont les limites que vous fixez dans le prompt, par exemple la longueur du texte, les sources autorisées ou les affirmations interdites.
+
+### Prompt sans exemples (Zero-shot) {#gl-zero-shot}
+
+Dans un prompt sans exemples, le système d'IA reçoit seulement la consigne et le matériel, mais aucun exemple de la réponse voulue.
+
+### Prompt avec quelques exemples (Few-shot) {#gl-few-shot}
+
+Dans un prompt avec quelques exemples, le système d'IA reçoit deux à cinq réponses modèles. Le format et la qualité de la réponse restent ainsi stables.
+
+### Trace de raisonnement structurée (Chain-of-Thought) {#gl-chain-of-thought}
+
+Une trace de raisonnement structurée est la consigne qui demande au système d'IA d'exposer ses étapes intermédiaires. Ces étapes sont des aides à la vérification, et non des preuves.
+
+### Mode de raisonnement intégré (Reasoning Mode) {#gl-denkmodus}
+
+Dans le mode de raisonnement intégré, le système d'IA produit de lui-même des étapes intermédiaires avant de répondre. Vous n'avez pas prescrit ce déroulement, contrairement à la trace de raisonnement structurée [@wei2022chain]. Les étapes visibles ne prouvent pas le calcul réel [@turpin2023unfaithful].
+
+### Déroulement agentique (Agentic Workflow) {#gl-agentischer-ablauf}
+
+Dans un déroulement agentique, le système d'IA planifie plusieurs étapes, appelle des outils et continue sans vous consulter. Une erreur d'une étape précoce se propage dans toutes les étapes suivantes [@kapoor2024agents].
+
+### Recherche approfondie (Deep Research) {#gl-vertiefte-recherche}
+
+Dans une recherche approfondie, le système d'IA cherche seul sur le web, lit des pages et livre un rapport avec des références. Ce rapport est une liste de résultats et d'hypothèses, et non un état de la littérature vérifié. Les références bibliographiques produites par des systèmes d'IA contiennent des titres inventés et des titres erronés en proportion considérable [@walters2023fabrication].
+
+### Extraction depuis vos propres documents (Retrieval-Augmented Generation, RAG) {#gl-eigene-dokumente}
+
+Dans l'extraction depuis vos propres documents, vous déposez une collection de fichiers. Une étape de recherche y choisit des passages et les présente au système d'IA [@lewis2020retrieval]. L'extraction élargit donc le contexte. Elle ne garantit pas que la réponse vienne uniquement de votre collection. Utilisez l'extraction pour trouver des passages, et vérifiez chaque affirmation sur l'original.
+
+### Lecture multimodale (Multimodal) {#gl-multimodal}
+
+Multimodal signifie qu'un système d'IA ne traite pas seulement du texte, mais aussi des images, des enregistrements sonores ou des vidéos. Pour le système, la numérisation d'un dossier est une image. Les modèles d'image généraux lisent l'écriture manuscrite historique nettement moins bien que les modèles spécialisés [@diezgarcia2025evaluating].
+
+### Modèle ouvert (Open-Weight Model) {#gl-offenes-modell}
+
+Dans un modèle ouvert, les poids sont librement téléchargeables. Ouvert décrit la licence des poids, et non le lieu d'exécution. Vous pouvez exécuter un modèle ouvert en local, mais aussi chez un fournisseur en ligne. Seul un modèle ouvert vous permet de conserver durablement une version fixe [@spirling2023open].
+
+### Modèle local {#gl-lokales-modell}
+
+Un modèle local s'exécute sur votre propre ordinateur. Seul ce cas garantit que votre matériel ne quitte pas cet ordinateur. Local décrit le lieu d'exécution, et non la licence. Le besoin en énergie dépend de la taille du modèle, et non du lieu: un grand modèle local consomme beaucoup d'énergie, un petit modèle pour une tâche étroite en consomme nettement moins [@luccioni2024power].
+
+### Hallucination {#gl-halluzination}
+
+Une hallucination est une réponse du système d'IA qui paraît plausible, mais qui est fausse ou non étayée.
+
+### Biais (Bias) {#gl-bias}
+
+Un biais est une sélection ou une évaluation unilatérale dans des sources, des données, des modèles, des systèmes de recherche ou des interprétations.
+
+### Session (Session) {#gl-session}
+
+Une session est une conversation continue avec un système d'IA, dans laquelle le système relit le déroulement antérieur.
+
+### Persona {#gl-persona}
+
+Une persona est un profil court et inventé d'un public cible, avec ses connaissances préalables, ses motifs et ses malentendus possibles.
+
+## Traces et vérification
+
+### Journal IA (KI-Protokoll) {#gl-ki-protokoll}
+
+Le journal IA documente votre usage de l'IA: matériel, prompt, réponse, étapes de vérification et décision. La définition, le modèle et un exemple rempli figurent dans l'exercice [Prompt Engineering](exercises/prompt-engineering.qmd).
+
+### Journal de recherche documentaire (Rechercheprotokoll) {#gl-rechercheprotokoll}
+
+Le journal de recherche documentaire documente votre recherche: date, système, requête, filtres, nombre de résultats et règles de sélection. Il retient comment vous avez cherché, et non comment vous avez utilisé l'IA.
+
+### Journal d'analyse de source (Analyseprotokoll) {#gl-analyseprotokoll}
+
+Le journal d'analyse de source documente une source unique: citation complète, date de consultation, forme d'affichage, critique externe et interne, ainsi que les questions ouvertes. Il décrit la source, et non votre usage de l'IA.
+
+### Veto de la source {#gl-quellen-veto}
+
+Le veto de la source signifie ceci: vous rejetez une affirmation du système d'IA lorsque le matériel fourni ou vérifiable ne la couvre pas.
+
+### Affirmation (Claim) et identifiant d'affirmation {#gl-claim}
+
+Une affirmation est un énoncé unique et vérifiable dans votre texte. L'identifiant d'affirmation est son numéro court, par exemple «C3».
+
+### Triangulation {#gl-triangulation}
+
+La triangulation signifie que vous vérifiez une affirmation avec au moins deux sources indépendantes.
+
+### Heuristique {#gl-heuristik}
+
+Une heuristique est une règle empirique pour la recherche. Elle mène vite à un résultat utilisable, mais non assuré.
+
+## Recherche documentaire
+
+### Méthode boule de neige (Snowballing) {#gl-snowballing}
+
+Dans la méthode boule de neige, vous suivez les références d'un texte vers l'amont, et vous cherchez vers l'aval les textes qui citent ce texte.
+
+### Opérateurs booléens (Boolean) {#gl-boolean}
+
+Les opérateurs booléens sont les mots de recherche AND, OR et NOT. Ils relient ou excluent des termes de recherche dans une base de données.
+
+### Troncature {#gl-trunkierung}
+
+La troncature signifie que vous coupez un mot et que vous cherchez toutes ses formes avec un caractère de remplacement (`social*` trouve social, sociale et socialisation).
+
+### Tri des résultats (Screening) {#gl-screening}
+
+Dans le tri des résultats, vous vérifiez rapidement la pertinence des résultats et vous les classez en «gardé» ou «rejeté».
+
+### Journal des rejets (Reject-Log) {#gl-reject-log}
+
+Un journal des rejets retient quels résultats vous avez rejetés et pour quelle raison.
+
+### Instruments de recherche {#gl-findmittel}
+
+Les instruments de recherche sont les répertoires d'un service d'archives. Ils montrent quels fonds existent et comment ils sont classés.
+
+## Écriture et médiation
+
+### Livrable (Deliverable) {#gl-deliverable}
+
+Un livrable est le produit tangible d'une étape de travail, que vous rendez ou que vous archivez (une liste, un tableau, un texte).
+
+### Base de comparaison (Baseline) {#gl-baseline}
+
+Une base de comparaison est un premier résultat simple. Vous mesurez toutes les versions ultérieures à cette base.
+
+### Carte des messages (Message Map) {#gl-message-map}
+
+Une carte des messages retient le message central d'une contribution, avec trois ou quatre points d'appui et la signification pour le public cible.
+
+### Accroche (Hook) {#gl-hook}
+
+L'accroche est le premier paragraphe d'une contribution. Elle éveille l'intérêt du public cible.
+
+## Technique, données et traces
+
+### Informatique minimale (Minimal Computing) {#gl-minimal-computing}
+
+L'informatique minimale désigne des procédés qui demandent peu de puissance de calcul, peu de logiciels et peu d'énergie. Le but est qu'un projet reste exécutable, vérifiable et réutilisable sur le long terme, et sans infrastructure coûteuse.
+
+### Logiciel de gestion bibliographique (Zotero) {#gl-zotero}
+
+Un logiciel de gestion bibliographique comme Zotero enregistre vos références et en produit des notes de bas de page et des bibliographies.
+
+### BibTeX {#gl-bibtex}
+
+BibTeX est un format de fichier pour les références, que les logiciels de gestion bibliographique et les logiciels de composition savent lire.
+
+### DOI {#gl-doi}
+
+Un DOI (Digital Object Identifier) est un numéro permanent pour une publication, qui mène toujours au même emplacement.
+
+### Permalien {#gl-permalink}
+
+Un permalien est une adresse internet qui pointe durablement vers le même document.
+
+### Reconnaissance de texte (OCR) {#gl-ocr}
+
+La reconnaissance de texte convertit l'image d'une page en texte interrogeable, et elle commet des erreurs.
+
+### Reconnaissance de l'écriture manuscrite (Handwritten Text Recognition, HTR) {#gl-htr}
+
+La reconnaissance de l'écriture manuscrite convertit une page manuscrite en texte. Pour l'écriture cursive allemande, il existe des modèles généraux avec des taux d'erreur utilisables [@hodel2021general]. Le taux d'erreur dépend fortement de l'écriture, de la mise en page, de la langue et de l'état du document [@romein2025assessing]. De telles erreurs modifient toute analyse ultérieure [@vanstrien2020assessing]. Le résultat reste donc une hypothèse de lecture.
+
+### Markdown {#gl-markdown}
+
+Markdown est une notation simple, qui marque les titres, les listes et les mises en évidence avec peu de caractères.
+
+### Principes FAIR {#gl-fair}
+
+Les principes FAIR demandent que les données de recherche soient trouvables, accessibles, interopérables et réutilisables. Le texte figure chez [GO FAIR](https://www.go-fair.org/fair-principles/) et dans @wilkinson2016fair.
+
+### Principes CARE {#gl-care}
+
+Les principes CARE demandent que les données profitent aux communautés concernées et que ces communautés codécident de leurs données. Le texte figure chez la [Global Indigenous Data Alliance](https://www.gida-global.org/care) et dans @carroll2020care.
+
+## Droit et protection des données
+
+Les cinq entrées suivantes donnent une orientation, et non un conseil juridique. Le texte de loi et les règles de votre institution font foi.
+
+### Données à caractère personnel {#gl-personenbezogene-daten}
+
+Les données à caractère personnel sont des informations sur une personne vivante identifiée ou identifiable. Cela comprend aussi les informations issues d'entretiens, de fonds privés et de fonds soumis à un délai de protection.
+
+### Sous-traitant {#gl-auftragsverarbeiter}
+
+Un sous-traitant traite des données à caractère personnel uniquement pour le compte du responsable du traitement, selon l'article 4, point 8, du RGPD [@eu2016dsgvo]. L'article 4, point 10, du RGPD l'exclut expressément des tiers. Ce rôle suppose un contrat au titre de l'article 28 du RGPD. Un téléversement vers un sous-traitant n'est donc pas une communication à des tiers.
+
+### Droit de la protection des données (RGPD et nLPD) {#gl-datenschutzrecht}
+
+Dans l'Union européenne, le règlement général sur la protection des données régit le traitement des données à caractère personnel. En Suisse, la loi révisée sur la protection des données s'applique [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. L'article 6 du RGPD exige une base légale pour chaque traitement. Pour la recherche, l'article 89, paragraphe 1, du RGPD impose des garanties appropriées, mais il n'accorde pas de dispense. Certaines obligations peuvent tomber, par exemple l'information au titre de l'article 14, paragraphe 5, point b), du RGPD. Une ligne directrice du Comité européen de la protection des données était en consultation publique en 2026, et elle n'est pas encore du droit applicable [@edpb2026forschung].
+
+### Hypertrucage (Deepfake) {#gl-deepfake}
+
+Selon l'article 3, point 60, du règlement sur l'IA, un hypertrucage est un contenu d'image, de son ou de vidéo généré ou manipulé par l'IA [@eu2024kiverordnung]. Il présente une ressemblance avec des personnes, des objets, des lieux ou des événements existants, et une personne pourrait le percevoir à tort comme authentique. Une image générée sans ce lien avec la réalité n'est pas un hypertrucage.
+
+### Règlement sur l'IA (EU AI Act) {#gl-kiverordnung}
+
+Le règlement sur l'IA de l'Union européenne régit la mise sur le marché et l'utilisation des systèmes d'IA [@eu2024kiverordnung]. Pour vous, l'article 50 compte avant tout, et il s'applique depuis le 2 août 2026. Comme déployeur, vous indiquez deux choses au titre de l'article 50, paragraphe 4: un [hypertrucage](#gl-deepfake), ainsi qu'un texte généré que vous publiez dans le but d'informer le public sur une question d'intérêt public. Pour le texte, l'obligation tombe lorsqu'une personne l'a examiné et assume la responsabilité éditoriale. L'article 50, paragraphe 2, oblige en revanche le fournisseur à marquer les contenus générés dans un format lisible par machine.

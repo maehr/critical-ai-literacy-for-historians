@@ -1,0 +1,78 @@
+<!-- Texte commun sur le compte, les coûts, la protection des données et le droit. Les exercices intègrent ce fichier avec le shortcode include. -->
+
+:::: {.callout-note collapse="true" title="Compte, coûts, protection des données et droit: à régler avant de commencer (déplier)"}
+
+Vous pouvez faire chaque exercice avec des systèmes d'IA de fabricants différents. Ce qu'un système sait faire dépend du produit et de votre compte. Réglez donc les cinq points suivants avant de commencer.
+
+### Coûts
+
+Un compte gratuit suffit pour des tâches de texte courtes. Pour certaines capacités, vous avez besoin d'un compte payant. Cela concerne surtout la recherche sur le web, la lecture de fichiers longs et le [mode de raisonnement intégré](../glossary.qmd#gl-denkmodus). Vérifiez d'abord si votre haute école fournit un accès.
+
+### Outils
+
+Vérifiez quels outils votre compte débloque. Le système peut-il chercher sur le web? Peut-il lire un fichier que vous téléversez? Peut-il appeler des services externes? Chaque exercice nomme les capacités qu'il suppose.
+
+La section [Vérifier et situer les capacités](prompt-engineering.qmd#sec-capacites) explique cinq capacités récentes. Elle décrit aussi ce que chaque capacité signifie pour votre travail sur les sources.
+
+### Mémoire
+
+Certains systèmes reprennent des indications de sessions antérieures ou d'un contexte de projet. Vérifiez les réglages de la mémoire, des projets et de l'historique des conversations. Une nouvelle session ne garantit donc pas un contexte vide.
+
+### Compte: institutionnel ou privé
+
+Vérifiez avec quel compte vous travaillez. Les règles diffèrent sur trois points.
+
+| Point               | Compte de votre institution                                     | Compte privé                                             |
+| ------------------- | --------------------------------------------------------------- | -------------------------------------------------------- |
+| Contrat             | Votre haute école le conclut et partage la responsabilité.      | Vous le concluez vous-même et vous répondez seul.        |
+| Entraînement        | Un contrat exclut souvent l'usage de vos saisies.               | De nombreux fournisseurs utilisent les saisies pour l'entraînement. |
+| Matériel autorisé   | La haute école règle quelles données vous pouvez saisir.        | Vous n'avez pas de telle règle et vous portez le risque. |
+
+Demandez au service informatique ou à la bibliothèque de votre haute école si vous ne trouvez pas les règles. Notez la réponse dans votre [journal IA](../glossary.qmd#gl-ki-protokoll).
+
+::: callout-caution
+
+## Vérifiez chaque matériel avant de le téléverser
+
+Ne téléversez aucun matériel dont vous n'avez pas le droit de disposer. Un téléversement quitte votre ordinateur et vous ne pouvez pas le reprendre.
+
+Ces matériels restent hors du système d'IA:
+
+- Les [données à caractère personnel](../glossary.qmd#gl-personenbezogene-daten) de personnes vivantes, par exemple issues d'entretiens, de fonds privés ou de fonds soumis à un délai de protection.
+- Les numérisations dont les conditions d'utilisation interdisent une communication.
+- Les textes non publiés d'autres personnes, par exemple des manuscrits ou des expertises.
+- Les textes intégraux sous licence, lorsque la licence de votre bibliothèque interdit une communication.
+
+En cas de doute, travaillez avec un court extrait ou avec une version anonymisée. Vous pouvez aussi utiliser un [modèle local](../glossary.qmd#gl-lokales-modell), car le matériel reste alors sur votre ordinateur.
+:::
+
+### Droit: protection des données et indication
+
+Deux domaines du droit concernent directement votre travail. Cette section donne une orientation, et non un conseil juridique.
+
+**Protection des données.** Dans l'Union européenne, le règlement général sur la protection des données s'applique. En Suisse, la [loi révisée sur la protection des données](../glossary.qmd#gl-datenschutzrecht) s'applique [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. Les deux lois protègent les données à caractère personnel de personnes vivantes. Le texte de loi lui-même fait foi. L'article 6 du RGPD exige une base légale pour chaque traitement, et un téléversement est un traitement.
+
+**Le rôle du fournisseur décide de la qualification.** Un fournisseur peut agir comme [sous-traitant](../glossary.qmd#gl-auftragsverarbeiter) et traiter vos données uniquement pour votre compte. L'article 4, point 10, du RGPD exclut expressément un sous-traitant des tiers. Ce rôle suppose toutefois un contrat au titre de l'article 28 du RGPD. Sans un tel contrat, un fournisseur utilise vos saisies à ses propres fins. Un téléversement n'est donc pas toujours une communication à des tiers, mais sans contrat vous devez le supposer. Vérifiez le contrat qui s'applique à votre compte.
+
+**La recherche est soumise à des garanties, mais elle n'obtient pas de dispense.** L'article 89, paragraphe 1, du RGPD exige des garanties appropriées, par exemple la minimisation des données et la pseudonymisation. L'article 89, paragraphe 2, du RGPD permet au législateur de déroger à certains droits des personnes concernées. L'information des personnes concernées peut aussi tomber, à savoir au titre de l'article 14, paragraphe 5, point b), du RGPD. Cela ne vaut toutefois que si l'information se révèle impossible ou exigerait des efforts disproportionnés. La recherche ne vous libère donc pas de manière générale de l'obligation d'information. Réglez votre cas particulier avec le service de protection des données de votre haute école.
+
+Le Comité européen de la protection des données a présenté en 2026 une ligne directrice sur la recherche [@edpb2026forschung]. Cette ligne directrice était en consultation publique jusqu'en juin 2026. Elle n'est donc pas du droit applicable, mais une aide à l'interprétation. Pour les personnes décédées, les délais de protection et le règlement d'utilisation du service d'archives s'appliquent.
+
+**Indication.** Le [règlement sur l'IA de l'Union européenne](../glossary.qmd#gl-kiverordnung) régit la transparence des contenus générés [@eu2024kiverordnung]. L'article 50 s'applique depuis le 2 août 2026. Il distingue deux destinataires: le fournisseur d'un système d'IA et le déployeur. Vous êtes déployeur dès que vous utilisez un système d'IA à titre professionnel. Pour un usage purement privé, vous n'êtes pas déployeur, selon l'article 3, point 4.
+
+Comme déployeur, deux obligations distinctes vous incombent au titre de l'article 50, paragraphe 4.
+
+1. **Hypertrucage.** Si un système d'IA génère ou manipule une image, un enregistrement sonore ou une vidéo, et si le contenu est un hypertrucage, alors vous l'indiquez. Selon l'article 3, point 60, un [hypertrucage](../glossary.qmd#gl-deepfake) présente une ressemblance avec des personnes, des lieux ou des événements existants, et une personne pourrait le percevoir à tort comme authentique. Une image générée sans ce lien avec la réalité ne relève pas de cette obligation.
+2. **Texte sur des questions publiques.** Si vous publiez un texte généré dans le but d'informer le public sur une question d'intérêt public, alors vous l'indiquez. L'obligation tombe lorsqu'une personne a examiné le texte et assume la responsabilité éditoriale de la publication.
+
+L'article 50, paragraphe 4, n'exige donc pas une indication pour chaque image générée et pour chaque texte généré. L'article 50, paragraphe 2, s'adresse en revanche au fournisseur. Le fournisseur doit marquer les contenus générés dans un format lisible par machine. Cette obligation ne vous incombe pas, et elle ne remplace pas votre propre déclaration.
+
+::: callout-important
+
+## L'indication légale ne remplace pas la déclaration scientifique
+
+L'indication légale et la déclaration scientifique sont deux obligations distinctes. Votre haute école exige une déclaration même lorsque la loi n'exige aucune indication. L'exercice [Citation](citer.qmd) montre comment déclarer votre usage de l'IA.
+:::
+
+Notez vos réponses à ces cinq points. Elles font partie de la description de votre environnement de travail.
+::::

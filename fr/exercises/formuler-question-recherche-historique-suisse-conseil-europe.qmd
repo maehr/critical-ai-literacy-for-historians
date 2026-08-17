@@ -2,7 +2,7 @@
 lang: fr
 title: "Formuler une question de recherche historique"
 subtitle: "La Suisse et le Conseil de l'Europe"
-description: "Un exercice guidé pour le développement systématique d'une question de recherche historique analytique avec utilisation réfléchie de l'IA générative."
+description: "Un exercice guidé pour développer systématiquement une question de recherche historique analytique, avec un usage réfléchi de l'IA générative."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "Université de Berne"
 date: "2025-12-29"
-date-modified: "2026-08-16"
+date-modified: "2026-08-17"
 categories: [Méthodes]
 image: ../../assets/images/research_question_Gemini_Generated_Image_25bend25bend25be.png
 tags:
@@ -21,6 +21,8 @@ tags:
   - Suisse
   - Histoire contemporaine
   - Assisté par IA
+difficulty: Beginner
+time_estimate: "90 min"
 draft: false
 references:
 - id: altermatt-casasus-2013-europarat
@@ -36,124 +38,151 @@ references:
   issued:
     year: 2013
   publisher-place: "Schweiz"
-  note: "Sammelband herausgegeben im Auftrag des Centre d'Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft"
+  note: "Anthologie commandée par le Centre d'Études européennes, Université de Fribourg (UniFR-ZEUS) et Nouvelle Société Helvétique"
 ---
+
+::: callout-warning
+
+## Traduction automatique
+
+Cet exercice a été traduit automatiquement depuis l'[original allemand](../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd) et peut contenir des erreurs. En cas de doute, consultez la version originale.
+:::
 
 ## Aperçu et objectif didactique
 
-Cet exercice transmet des **compétences méthodologiques transférables** pour le développement de questions de recherche historique. L'objectif n'est pas de générer une question « correcte », mais plutôt l'**interaction contrôlée et réfléchie entre la pensée historique autonome et l'exploration assistée par l'IA**.
+Cet exercice transmet des **compétences méthodiques transférables** pour développer des questions de recherche historiques. Le but n'est pas de produire une question «juste», mais le **jeu contrôlé et réfléchi entre la pensée historique autonome et l'exploration assistée par l'IA**.
 
-Au centre se trouve une étude de cas commune: **La Suisse et le Conseil de l'Europe**.
+Au centre se trouve une étude de cas commune: **la Suisse et le Conseil de l'Europe**.
 
-L'exercice suit une **compréhension circulaire de la recherche**: les résultats des étapes individuelles peuvent – et doivent – être révisés.
+L'exercice suit une **conception circulaire de la recherche**: les résultats de chaque étape peuvent, et doivent, être révisés.
 
 ::: callout-note
 
 ## Remarque sur la recherche en ligne
 
-Malgré la numérisation croissante, la recherche historique ne peut pas être entièrement menée en ligne. En particulier, la littérature secondaire épuisée et les sources non encore cataloguées nécessitent souvent des recherches physiques dans les bibliothèques et les archives. Planifiez l'accès (bibliothèque, prêt inter-bibliothèques, archives) et notez que les plateformes/catalogues structurent la visibilité (logique de catalogage) et ne garantissent pas l'exhaustivité. [@putnam2016shadows] La critique des sources numériques nécessite une attention particulière à la création et à la conservation des collections en ligne. [@fickers2022criticism]
+Malgré la numérisation croissante, la recherche historique ne peut pas se mener entièrement en ligne. La littérature secondaire épuisée et les sources primaires non encore cataloguées exigent souvent des recherches physiques en bibliothèque et en archives. Planifiez les accès (bibliothèque, prêt entre bibliothèques, archives) et notez que les plateformes et les catalogues structurent la visibilité (logique de catalogage) et ne garantissent aucune exhaustivité. [@putnam2016shadows] La critique des sources numériques demande une attention particulière à la création et à la curation des collections en ligne. [@fickers2022criticism]
 :::
 
-## Prérequis
+## En un coup d'œil
+
+| Indication                      | Valeur                                                                                       |
+| ------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 90 minutes                                                                              |
+| **Niveau**                      | Beginner                                                                                     |
+| **Parcours principal**          | 1 → 2 → 4 → 5 → 6                                                                            |
+| **Approfondissement optionnel** | 3 (état de la recherche et lacunes)                                                          |
+| **Rendu (minimum)**             | Une question de recherche. [Journal IA](../glossary.qmd#gl-ki-protokoll): 5 entrées.          |
+
+Le parcours principal vous mène à une question de recherche traitable en 90 minutes environ. L'étape 3 coûte environ 60 minutes de plus. Vous entraînez l'état de la recherche en détail dans l'exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd).
+
+## Ce dont vous avez besoin
+
+**Connaissances disciplinaires**
 
 - Compréhension de base des méthodes de recherche historique
-- Connaissances de base dans l'utilisation de l'IA générative (en particulier le prompting)
+- Connaissances de base de l'IA générative, en particulier du prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-Si vous n'êtes pas encore familier avec le prompting, nous vous recommandons de suivre d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
+Si vous n'êtes pas encore familier du prompting, nous vous recommandons de suivre d'abord l'exercice [Prompt Engineering](prompt-engineering.qmd).
 
 :::
 
-::: callout-note
+**Capacités du système d'IA**
 
-## LLM
+Le système doit savoir faire les deux choses suivantes:
 
-Vous pouvez réaliser cet exercice avec des LLMs de différents fournisseurs. Pour cet exercice, il est utile que le LLM ait accès à Internet et permette le téléchargement de fichiers.
+- Chercher sur le web et étayer les passages trouvés par une adresse. Vous en avez besoin à l'étape 2 et à l'étape 4.
+- Livrer une réponse dans un format que vous prescrivez, par exemple une liste de variantes.
 
-:::
+**Autres outils et accès**
+
+- Un fichier pour votre journal IA.
+- Un compte pour le catalogue de bibliothèque de votre haute école. Vous vérifiez avec lui la situation documentaire à l'étape 4.
+
+{{< include ../_exigences-ia.qmd >}}
 
 ## Objectifs d'apprentissage
 
-À l'issue de l'exercice, vous serez en mesure de:
+À l'issue de l'exercice, vous savez:
 
-- distinguer entre **sujet**, **problématique** et **question de recherche historique analytique**,
-- formuler une **question de recherche historique précise et exploitable**,
-- utiliser les systèmes d'IA de manière **critique et méthodologiquement contrôlée** pour l'exploration de la littérature et du contexte,
-- évaluer de manière réfléchie la **situation des sources et la faisabilité** d'un projet de recherche historique.
+- distinguer le **sujet**, la **problématique** et la **question de recherche historique analytique**,
+- formuler une **question de recherche historique précise et traitable**,
+- utiliser les systèmes d'IA de manière **critique et méthodiquement contrôlée** pour explorer la littérature et le contexte,
+- apprécier de manière réfléchie la **situation documentaire et la faisabilité** d'un projet de recherche historique.
 
 ## Structure de l'exercice
 
-L'exercice est conçu de manière modulaire. Chaque étape contient:
+L'exercice est modulaire. Chaque étape contient:
 
 - un **objectif clair**,
 - une ou plusieurs **tâches concrètes (prompts)**,
 - une **consigne de travail et de réflexion**.
 
-1. Clarification conceptuelle: Qu'est-ce qu'une question de recherche historique ?
-2. Détermination du sujet et aperçu historique
-3. État de la recherche et lacunes
-4. Situation des sources et faisabilité
+1. Clarification conceptuelle: qu'est-ce qu'une question de recherche historique?
+2. Choix du sujet et vue d'ensemble historique
+3. État de la recherche et lacunes de recherche
+4. Situation documentaire et faisabilité
 5. Délimitation et formulation de la question de recherche
-6. Révision itérative et réflexion sur l'utilisation de l'IA
+6. Révision itérative et réflexion sur l'usage de l'IA
 
-## 1. Clarification conceptuelle: Question de recherche historique
+## 1. Clarification conceptuelle: la question de recherche historique
 
 ### Objectif
 
-Comprendre les différences entre **sujet**, **problématique** et **question de recherche historique analytique**.
+Comprendre les différences entre le **sujet**, la **problématique** et la **question de recherche historique analytique**.
 
-### Tâche (Exploration IA)
-
-``` markdown
-Qu'est-ce qu'une question de recherche historique ?
-Quels éléments sont contenus dans une question de recherche historique ?
-```
-
-Si aucune description du processus n'est incluse:
+### Tâche (exploration par l'IA)
 
 ``` markdown
-Quelles étapes sont nécessaires pour développer une question de recherche historique ?
+Qu'est-ce qu'une question de recherche historique?
+Quels éléments une question de recherche historique contient-elle?
 ```
 
-### Consigne de travail (Comparaison critique)
+Si aucune description de processus n'est comprise:
+
+``` markdown
+Quelles étapes sont nécessaires pour développer une question de recherche historique?
+```
+
+### Consigne de travail (confrontation critique)
 
 Comparez systématiquement la réponse de l'IA avec:
 
-- [History Toolkit (Université de Bâle)](https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf) (ANGLAIS)
-- [Boussole des études d'histoire (Université de Zurich)](https://www.hist.uzh.ch/de/studium/geschichte-studieren-in-zuerich/studienrelevante-dokumente/kompass.html) (ALLEMAND uniquement)
-- [Guide des sciences historiques (Université de Brême)](https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf) (ALLEMAND uniquement)
-- [Guide d'études Département d'histoire (Université de Hambourg)](https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf) (ALLEMAND uniquement)
+- [History: A Toolkit for Students (Université de Bâle)](https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf) (ENGLISH only)
+- [Kompass Geschichtsstudium (Université de Zurich)](https://www.hist.uzh.ch/de/studium/geschichte-studieren-in-zuerich/studienrelevante-dokumente/kompass.html) (GERMAN only)
+- [Leitfaden Geschichtswissenschaft (Université de Brême)](https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf) (GERMAN only)
+- [Studienleitfaden Fachbereich Geschichte (Université de Hambourg)](https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf) (GERMAN only)
 
 Identifiez:
 
-- Les concordances,
-- Les omissions,
-- Les glissements conceptuels ou simplifications.
+- les concordances,
+- les omissions,
+- les glissements ou les simplifications de termes.
 
-Questions de suivi ciblées à l'IA:
+Posez des questions de suivi ciblées à l'IA. Insérez l'élément qui vous manque dans la réponse. L'exemple nomme l'état de la recherche.
 
 ``` markdown
-Pourquoi l'élément X est-il manquant ?
+Pourquoi l'élément «état de la recherche» manque-t-il?
 ```
 
 ``` markdown
-Sur quelles sources scientifiques ou didactiques repose ta définition ?
+Sur quelles sources scientifiques ou didactiques ta définition repose-t-elle?
 ```
 
-## 2. Détermination du sujet et aperçu historique
+## 2. Choix du sujet et vue d'ensemble historique
 
 ### Objectif
 
-Séparation du **sujet** et de la **question analytique** ainsi que construction de connaissances historiques de base solides.
+Séparer le **sujet** et la **problématique analytique**, et construire un socle solide de connaissances historiques.
 
-### Cadre thématique (Donné)
+### Cadre thématique (donné)
 
 **La Suisse et le Conseil de l'Europe**
 
-(Optionnel: Découverte dialogique du sujet)
+(Optionnel: recherche dialogique d'un sujet)
 
 ``` markdown
 Tu es historien et tu m'aides par le dialogue à trouver un sujet historique pour un travail d'étudiant.
@@ -163,100 +192,107 @@ Tu es historien et tu m'aides par le dialogue à trouver un sujet historique pou
 
 ## Question de réflexion
 
-En quoi ce dialogue avec l'IA diffère-t-il d'une conversation avec un enseignant ou un camarade d'études ?
+En quoi ce dialogue avec l'IA se distingue-t-il d'un entretien avec un enseignant ou avec une camarade d'études?
 :::
 
-### Tâche (Aperçu historique)
+### Tâche (vue d'ensemble historique)
 
 ``` markdown
-Donne-moi un aperçu historique de la relation entre la Suisse et le Conseil de l'Europe.
+Donne-moi une vue d'ensemble historique de la relation entre la Suisse et le Conseil de l'Europe.
 ```
 
-### Comparaison et critique
+### Confrontation et critique
 
-Comparez l'aperçu avec:
+Comparez la vue d'ensemble avec:
 
 - [Dodis: La Suisse et le Conseil de l'Europe](https://www.dodis.ch/fr/la-suisse-et-le-conseil-de-l-europe)
 - [Dodis: Adhésion au Conseil de l'Europe 1963](https://www.dodis.ch/fr/adhesion-au-conseil-de-l-europe-1963)
-- [Wikipédia: Conseil de l'Europe](https://fr.wikipedia.org/wiki/Conseil_de_l%27Europe) (à utiliser avec prudence, consultez la [page de discussion](https://fr.wikipedia.org/wiki/Discussion:Conseil_de_l%27Europe))
+- [Wikipédia: Conseil de l'Europe](https://fr.wikipedia.org/wiki/Conseil_de_l%27Europe) (à utiliser avec prudence; consultez la [page de discussion](https://fr.wikipedia.org/wiki/Discussion:Conseil_de_l%27Europe))
 
-Questions de suivi ciblées:
+Questions de suivi ciblées: insérez l'aspect qui vous manque. D'autres exemples sont la CEDH et la CourEDH.
 
 ``` markdown
-Pourquoi l'aspect X est-il manquant (par ex. neutralité, CEDH, CrEDH) ?
+Pourquoi l'aspect «neutralité» manque-t-il?
 ```
 
 ``` markdown
-Sur quelles sources repose cette présentation ?
+Sur quelles sources cet exposé repose-t-il?
 ```
 
-## 3. État de la recherche et lacunes
+## 3. État de la recherche et lacunes de recherche
 
 ### Objectif
 
-Distinction entre **aperçu descriptif** et **état de la recherche analytique**.
+Distinguer la **vue d'ensemble descriptive** et l'**état analytique de la recherche**.
 
-### Tâche (Littérature secondaire)
+### Tâche (littérature secondaire)
 
 ``` markdown
 Nomme la littérature secondaire historique centrale sur la relation entre la Suisse et le Conseil de l'Europe.
 ```
 
-### Tâche (Lacunes de recherche)
+### Tâche (lacunes de recherche)
 
 ``` markdown
-Quelles questions ouvertes ou lacunes de recherche existent dans la recherche antérieure ?
+Quelles questions ouvertes ou quelles lacunes de recherche subsistent dans la recherche actuelle?
 ```
 
 ### Consigne de travail
 
-1. Vérifiez les titres mentionnés via <https://swisscovery.slsp.ch>.
+1. Vérifiez les titres nommés sur <https://swisscovery.slsp.ch>.
 
-2. Comparez les résultats avec:
+2. Confrontez les résultats avec:
 
 - @altermatt-casasus-2013-europarat
 - [Dictionnaire historique de la Suisse: Conseil de l'Europe](https://hls-dhs-dss.ch/fr/articles/026470/2009-10-29/)
 
-Questions de suivi ciblées:
+Questions de suivi ciblées: insérez le titre qui vous manque dans la réponse. L'exemple nomme l'ouvrage collectif d'Altermatt et Casasus.
 
 ``` markdown
-Pourquoi l'ouvrage X est-il manquant ?
+Pourquoi l'ouvrage «50 Jahre Engagement der Schweiz im Europarat 1963–2013» manque-t-il?
 ```
+
+Insérez dans la deuxième question de suivi votre propre question et votre propre ouvrage.
 
 ``` markdown
-Pourquoi la question Y est-elle décrite comme une lacune de recherche alors qu'elle est traitée dans l'ouvrage Z ?
+Pourquoi la question du rôle de la neutralité est-elle qualifiée de lacune de recherche,
+alors qu'elle est traitée dans «50 Jahre Engagement der Schweiz im Europarat 1963–2013»?
 ```
 
-## 4. Situation des sources et faisabilité
+## 4. Situation documentaire et faisabilité
 
 ### Objectif
 
-Évaluation de la possibilité de traiter une question de recherche **sur la base des sources**.
+Apprécier si une question de recherche est **traitable sur la base des sources**.
 
-### Tâche (Sources primaires)
+### Tâche (sources primaires)
+
+Remplacez dans le prompt suivant la question d'exemple par votre propre question de travail.
 
 ``` markdown
-Quelles sources primaires sont appropriées pour étudier la question de recherche X ?
+Quelles sources primaires conviennent à l'étude de la question de recherche
+«Comment la neutralité a-t-elle servi, entre 1949 et 1963, d'argument contre une adhésion
+de la Suisse au Conseil de l'Europe?»
 ```
 
 Si nécessaire:
 
 ``` markdown
-Nomme des archives, collections et types de documents spécifiques sur la Suisse et le Conseil de l'Europe.
+Nomme des archives, des collections et des types de documents concrets sur la Suisse et le Conseil de l'Europe.
 ```
 
-### Comparaison avec les ressources réelles
+### Confrontation avec les ressources réelles
 
-Comparez la réponse avec, entre autres:
+Comparez la réponse notamment avec:
 
 - [Dodis: La Suisse et le Conseil de l'Europe](https://www.dodis.ch/fr/la-suisse-et-le-conseil-de-l-europe)
 - [Dodis: Adhésion au Conseil de l'Europe 1963](https://www.dodis.ch/fr/adhesion-au-conseil-de-l-europe-1963)
 - [Année Politique Suisse: Conseil de l'Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
 - [Publications officielles de la Suisse (Archives fédérales)](https://www.amtsdruckschriften.bar.admin.ch/)
 - [chgov.bar.admin.ch (Archives fédérales)](https://www.chgov.bar.admin.ch/)
-- [e-newspaperarchives.ch (Bibliothèque ETH Zurich)](https://www.e-newspaperarchives.ch/)
-- [Archives Online (Archives cantonales de Suisse)](https://www.archives-online.org/)
-- [e-periodica.ch (Bibliothèque ETH Zurich)](https://www.e-periodica.ch/)
+- [e-newspaperarchives.ch (Bibliothèque de l'EPF de Zurich)](https://www.e-newspaperarchives.ch/)
+- [Archives Online (archives cantonales de Suisse)](https://www.archives-online.org/)
+- [e-periodica.ch (Bibliothèque de l'EPF de Zurich)](https://www.e-periodica.ch/)
 - [Projet IMPRESSO](https://impresso-project.ch/)
 - [Memobase](https://memobase.ch/)
 - [swisscollections.ch](https://swisscollections.ch/)
@@ -265,70 +301,72 @@ Comparez la réponse avec, entre autres:
 
 ### Objectif
 
-Transformation d'une question ouverte en une **question de recherche historique analytique précise**.
+Transformer une problématique ouverte en une **question de recherche historique analytique et précise**.
 
-### Dimensions possibles de délimitation
+### Dimensions possibles de la délimitation
 
-- **Temporelle:** par ex. 1949–1963, Guerre froide, Post-1971
-- **Spatiale:** La Suisse dans le contexte transnational-européen
-- **Thématique:** Neutralité, Droits de l'homme, Jurisprudence, Politique étrangère, Parlementarisme
+- **Temporelle:** par exemple 1949–1963, la guerre froide, l'après-1971
+- **Spatiale:** la Suisse dans le contexte transnational et européen
+- **Thématique:** neutralité, droits humains, jurisprudence, politique étrangère, parlementarisme
 
-### Tâche (Délimitation)
+### Tâche (délimitation)
+
+Remplacez dans le prompt suivant la question d'exemple par votre propre question de travail.
 
 ``` markdown
-Propose des délimitations temporelles, spatiales et thématiques possibles pour la question de recherche X.
+Propose des délimitations temporelles, spatiales et thématiques possibles pour la question de recherche
+«Comment la neutralité a-t-elle servi, entre 1949 et 1963, d'argument contre une adhésion
+de la Suisse au Conseil de l'Europe?»
 ```
 
-### Tâche (Formulation)
+### Tâche (formulation)
 
 ``` markdown
-Sur cette base, formule une question de recherche historique analytique.
+Formule sur cette base une question de recherche historique analytique.
 ```
 
 ### Contrôle de qualité
 
 La question de recherche devrait:
 
-- être ouverte et analytique (« Comment », « Pourquoi », « Dans quelle mesure »),
-- être historiquement contextualisée,
-- paraître exploitable avec les sources disponibles.
+- être ouverte et analytique («comment», «pourquoi», «dans quelle mesure»),
+- être contextualisée historiquement,
+- paraître traitable avec les sources disponibles.
 
 ## 6. Révision itérative et réflexion
 
 ### Objectif
 
-Séparation consciente entre **l'assistance de l'IA** et **sa propre décision de recherche**.
+Séparer consciemment le **soutien de l'IA** et votre **propre décision de recherche**.
 
 ### Tâche finale
 
 Notez brièvement:
 
-- Qu'est-ce que l'IA a facilité ?
-- Où était-elle trompeuse, imprécise ou réductrice ?
-- Quelles décisions n'avez-vous pu prendre que vous-même ?
+- Qu'est-ce que l'IA a facilité?
+- Où a-t-elle induit en erreur, manqué de précision ou raccourci?
+- Quelles décisions vous seul pouviez prendre?
+
+### Journal IA
+
+Clôturez votre journal IA. Il comprend au moins 5 entrées, c'est-à-dire une entrée par étape de travail avec l'IA.
 
 ## Résultat d'apprentissage
 
-À la fin de l'exercice, vous disposerez de:
+À la fin de l'exercice, vous disposez:
 
-- une **question de recherche historique analytique clairement formulée**,
-- une compréhension réfléchie des **potentiels et limites de l'IA** dans la conception de recherche,
-- une évaluation méthodologiquement fondée de la **faisabilité** de votre projet.
+- d'une **question de recherche historique analytique clairement formulée**,
+- d'un **journal IA** avec au moins 5 entrées,
+- d'une compréhension réfléchie des **potentiels et des limites de l'IA** dans le dispositif de recherche,
+- d'une appréciation méthodiquement fondée de la **faisabilité** de votre projet.
 
 ## Ressources complémentaires
 
-- [Ranke.2: Wikipédia comme source historique](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, historiques de révision et critique des sources numériques.
-- [AI Pedagogy Project: Qu'est-ce que l'IA ?](https://aipedagogy.org/guide/what-is-ai/) – Introduction conceptuelle pour les publics non techniques.
-- @meadows2023practice – Introduit un forum de revue sur ce que l'IA change pour les méthodes et l'épistémologie de l'histoire ; utile pour juger quelles décisions de recherche restent celles du chercheur ou de la chercheuse.
+- [Ranke.2: Wikipedia as a historical source](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, historiques de révision et critique des sources numériques. (ENGLISH only)
+- [AI Pedagogy Project: What is AI?](https://aipedagogy.org/guide/what-is-ai/) – Introduction conceptuelle pour un public non technique. (ENGLISH only)
+- @meadows2023practice – Introduction à un forum de revue sur ce que l'IA change aux méthodes et à l'épistémologie de l'histoire; utile pour la question de savoir quelles décisions de recherche restent chez les chercheurs.
 
 ## Bibliographie
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Avertissement de traduction automatique
-
-Cet exercice a été traduit automatiquement de l'allemand à l'aide de l'IA et peut contenir des erreurs ou des inexactitudes. Veuillez vous référer à la [version originale allemande](../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd) pour le texte faisant autorité. Si vous remarquez des problèmes de traduction, veuillez les signaler.
 :::
