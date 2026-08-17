@@ -65,13 +65,13 @@ Malgré la numérisation croissante, la recherche historique ne peut pas se mene
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                       |
-| ------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Durée**                       | env. 90 minutes                                                                              |
-| **Niveau**                      | Beginner                                                                                     |
-| **Parcours principal**          | 1 → 2 → 4 → 5 → 6                                                                            |
-| **Approfondissement optionnel** | 3 (état de la recherche et lacunes)                                                          |
-| **Rendu (minimum)**             | Une question de recherche. [Journal IA](../glossary.qmd#gl-ki-protokoll): 5 entrées.          |
+| Indication                      | Valeur                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------ |
+| **Durée**                       | env. 90 minutes                                                                      |
+| **Niveau**                      | Beginner                                                                             |
+| **Parcours principal**          | 1 → 2 → 4 → 5 → 6                                                                    |
+| **Approfondissement optionnel** | 3 (état de la recherche et lacunes)                                                  |
+| **Rendu (minimum)**             | Une question de recherche. [Journal IA](../glossary.qmd#gl-ki-protokoll): 5 entrées. |
 
 Le parcours principal vous mène à une question de recherche traitable en 90 minutes environ. L'étape 3 coûte environ 60 minutes de plus. Vous entraînez l'état de la recherche en détail dans l'exercice [Recherche bibliographique](recherche-bibliographique-securite-sociale-ch.qmd).
 
@@ -136,14 +136,14 @@ Comprendre les différences entre le **sujet**, la **problématique** et la **qu
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Qu'est-ce qu'une question de recherche historique?
 Quels éléments une question de recherche historique contient-elle?
 ```
 
 Si aucune description de processus n'est comprise:
 
-``` markdown
+```markdown
 Quelles étapes sont nécessaires pour développer une question de recherche historique?
 ```
 
@@ -164,11 +164,11 @@ Identifiez:
 
 Posez des questions de suivi ciblées à l'IA. Insérez l'élément qui vous manque dans la réponse. L'exemple nomme l'état de la recherche.
 
-``` markdown
+```markdown
 Pourquoi l'élément «état de la recherche» manque-t-il?
 ```
 
-``` markdown
+```markdown
 Sur quelles sources scientifiques ou didactiques ta définition repose-t-elle?
 ```
 
@@ -184,7 +184,7 @@ Séparer le **sujet** et la **problématique analytique**, et construire un socl
 
 (Optionnel: recherche dialogique d'un sujet)
 
-``` markdown
+```markdown
 Tu es historien et tu m'aides par le dialogue à trouver un sujet historique pour un travail d'étudiant.
 ```
 
@@ -197,7 +197,7 @@ En quoi ce dialogue avec l'IA se distingue-t-il d'un entretien avec un enseignan
 
 ### Tâche (vue d'ensemble historique)
 
-``` markdown
+```markdown
 Donne-moi une vue d'ensemble historique de la relation entre la Suisse et le Conseil de l'Europe.
 ```
 
@@ -211,11 +211,11 @@ Comparez la vue d'ensemble avec:
 
 Questions de suivi ciblées: insérez l'aspect qui vous manque. D'autres exemples sont la CEDH et la CourEDH.
 
-``` markdown
+```markdown
 Pourquoi l'aspect «neutralité» manque-t-il?
 ```
 
-``` markdown
+```markdown
 Sur quelles sources cet exposé repose-t-il?
 ```
 
@@ -227,13 +227,13 @@ Distinguer la **vue d'ensemble descriptive** et l'**état analytique de la reche
 
 ### Tâche (littérature secondaire)
 
-``` markdown
+```markdown
 Nomme la littérature secondaire historique centrale sur la relation entre la Suisse et le Conseil de l'Europe.
 ```
 
 ### Tâche (lacunes de recherche)
 
-``` markdown
+```markdown
 Quelles questions ouvertes ou quelles lacunes de recherche subsistent dans la recherche actuelle?
 ```
 
@@ -248,13 +248,13 @@ Quelles questions ouvertes ou quelles lacunes de recherche subsistent dans la re
 
 Questions de suivi ciblées: insérez le titre qui vous manque dans la réponse. L'exemple nomme l'ouvrage collectif d'Altermatt et Casasus.
 
-``` markdown
+```markdown
 Pourquoi l'ouvrage «50 Jahre Engagement der Schweiz im Europarat 1963–2013» manque-t-il?
 ```
 
 Insérez dans la deuxième question de suivi votre propre question et votre propre ouvrage.
 
-``` markdown
+```markdown
 Pourquoi la question du rôle de la neutralité est-elle qualifiée de lacune de recherche,
 alors qu'elle est traitée dans «50 Jahre Engagement der Schweiz im Europarat 1963–2013»?
 ```
@@ -269,7 +269,7 @@ Apprécier si une question de recherche est **traitable sur la base des sources*
 
 Remplacez dans le prompt suivant la question d'exemple par votre propre question de travail.
 
-``` markdown
+```markdown
 Quelles sources primaires conviennent à l'étude de la question de recherche
 «Comment la neutralité a-t-elle servi, entre 1949 et 1963, d'argument contre une adhésion
 de la Suisse au Conseil de l'Europe?»
@@ -277,7 +277,7 @@ de la Suisse au Conseil de l'Europe?»
 
 Si nécessaire:
 
-``` markdown
+```markdown
 Nomme des archives, des collections et des types de documents concrets sur la Suisse et le Conseil de l'Europe.
 ```
 
@@ -313,7 +313,7 @@ Transformer une problématique ouverte en une **question de recherche historique
 
 Remplacez dans le prompt suivant la question d'exemple par votre propre question de travail.
 
-``` markdown
+```markdown
 Propose des délimitations temporelles, spatiales et thématiques possibles pour la question de recherche
 «Comment la neutralité a-t-elle servi, entre 1949 et 1963, d'argument contre une adhésion
 de la Suisse au Conseil de l'Europe?»
@@ -321,7 +321,7 @@ de la Suisse au Conseil de l'Europe?»
 
 ### Tâche (formulation)
 
-``` markdown
+```markdown
 Formule sur cette base une question de recherche historique analytique.
 ```
 

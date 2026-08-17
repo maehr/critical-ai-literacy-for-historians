@@ -66,12 +66,12 @@ Dans le travail en archives, tenez compte des **délais de protection, des condi
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                                                                                |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Durée**                       | plusieurs jours, dont environ 6 à 8 heures devant l'écran                                                                                             |
-| **Niveau**                      | Advanced                                                                                                                                              |
-| **Parcours principal**          | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                                                             |
-| **Approfondissement optionnel** | 5 (littérature secondaire et ouvrages de référence)                                                                                                   |
+| Indication                      | Valeur                                                                                                                                            |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Durée**                       | plusieurs jours, dont environ 6 à 8 heures devant l'écran                                                                                         |
+| **Niveau**                      | Advanced                                                                                                                                          |
+| **Parcours principal**          | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                                                         |
+| **Approfondissement optionnel** | 5 (littérature secondaire et ouvrages de référence)                                                                                               |
 | **Rendu (minimum)**             | [Journal de recherche documentaire](../glossary.qmd#gl-rechercheprotokoll): 15 entrées. [Journal IA](../glossary.qmd#gl-ki-protokoll): 3 entrées. |
 
 ::: callout-important
@@ -156,7 +156,7 @@ La question de recherche est décomposée en **sous-questions**, pour que des **
 
 ### Tâche (sans IA)
 
-Esquissez en 10 minutes un modèle de travail du *processus de décision* (acteurs, arènes, phases, types de documents).
+Esquissez en 10 minutes un modèle de travail du _processus de décision_ (acteurs, arènes, phases, types de documents).
 
 **Questions directrices:**
 
@@ -166,7 +166,7 @@ Esquissez en 10 minutes un modèle de travail du *processus de décision* (acteu
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Décompose la question de recherche en 4–6 sous-questions, chacune vérifiable sur les sources.
 Pour chaque sous-question, indique quels types de documents pourraient servir de preuve.
 ```
@@ -198,11 +198,11 @@ Clarifier **quelle preuve** peut étayer quelles affirmations, et quelles limite
 - **Secondaires**: littérature de recherche sur la politique étrangère, européenne et associative; histoire organisationnelle du Vorort et d'economiesuisse
 - **Tertiaires**: catalogues, bibliographies, dossiers, index, bases de données, instruments de recherche
 
-Pour chaque case: *qu'est-ce qui constituerait une preuve convaincante?* / *quels biais sont probables?*
+Pour chaque case: _qu'est-ce qui constituerait une preuve convaincante?_ / _quels biais sont probables?_
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Nomme des sources primaires, secondaires et tertiaires appropriées pour la question de recherche.
 Attribue chaque source à une arène (Conseil fédéral / département / parlement / association / médias / international).
 ```
@@ -233,7 +233,7 @@ Construire un **cadre de référence d'orientation** avant que la recherche appr
 
 ### Tâche (l'IA comme assistante de recherche, et non comme source)
 
-``` markdown
+```markdown
 Établis une liste de 15 lieux de recherche (portails, catalogues, éditions, archives, bases de données)
 qui pourraient être pertinents pour la question du Vorort et de l'adhésion au Conseil de l'Europe en 1963.
 Pour chaque lieu de recherche, indique 1–2 types de résultats typiques (par exemple message, procès-verbal, dossier, article de journal).
@@ -254,13 +254,13 @@ Développer les termes de recherche comme des **hypothèses testables**, termino
 
 Établissez trois champs conceptuels (DE/FR/EN):
 
-1. **Acteur**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; Union suisse du commerce et de l'industrie; USCI; economiesuisse (*à marquer comme rétroprojection*)
+1. **Acteur**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; Union suisse du commerce et de l'industrie; USCI; economiesuisse (_à marquer comme rétroprojection_)
 2. **Événement et institution**: Conseil de l'Europe; Europarat; Council of Europe; adhésion, membership, accession; 1963; CEDH et CourEDH (comme voies de contexte)
 3. **Processus et mécanismes**: consultation; groupe d'intérêt; requête; prise de position; expertise; intérêts économiques; politique économique extérieure
 
 ### Tâche B (assistée par l'IA): listes de synonymes contrôlées
 
-``` markdown
+```markdown
 Établis pour les trois champs conceptuels (acteur / institution-événement / processus) 12–20 termes de recherche chacun.
 Conditions:
 - Sortir DE/FR/EN séparément
@@ -299,7 +299,7 @@ Documentez:
 
 Remplacez dans le prompt suivant les lignes d'exemple par vos propres termes de recherche et vos propres problèmes de résultats.
 
-``` markdown
+```markdown
 Voici mes termes de recherche actuels et mes problèmes de résultats:
 - «Vorort AND Conseil de l'Europe»: 3 résultats, tous postérieurs à 1990.
 - «USCI AND adhésion»: 0 résultat.
@@ -311,7 +311,6 @@ Donne 6 variantes et explique brièvement quel problème chaque variante traite.
 ### Livrable
 
 - **Bibliographie brièvement annotée** (8 à 12 titres) avec:
-
   - la pertinence pour la question (1 à 2 phrases)
   - la valeur documentaire attendue (quelles sources primaires sont citées?)
 
@@ -339,7 +338,7 @@ Choisissez:
 
 Remplacez dans le prompt suivant les deux indications d'exemple par vos propres huit indications.
 
-``` markdown
+```markdown
 J'ai les 8 références bibliographiques ou de sources suivantes:
 1. Altermatt, Bernhard et Gilbert Casasus (dir.): 50 Jahre Engagement der Schweiz im Europarat 1963–2013. Zurich 2013.
 2. Document Dodis 5020: note de dossier Petitpierre, Berne, 7.7.1949.
@@ -391,7 +390,7 @@ Reconstruisez pour **un** service d'archives:
 
 ### Tâche C (assistée par l'IA): planifier les voies de recherche
 
-``` markdown
+```markdown
 Propose trois voies de recherche:
 1) centrée sur les acteurs
 2) orientée sur le processus

@@ -50,12 +50,12 @@ Sobald das Modell Fakten, Literatur, Archive, Signaturen oder Zitate liefert, di
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                   |
-| ------------------------ | ---------------------------------------------------------------------- |
-| **Dauer**                | ca. 150 Minuten                                                        |
-| **Niveau**               | Beginner                                                               |
-| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                              |
-| **Optionale Vertiefung** | 5 (strukturierte Denkspur)                                             |
+| Angabe                   | Wert                                                                       |
+| ------------------------ | -------------------------------------------------------------------------- |
+| **Dauer**                | ca. 150 Minuten                                                            |
+| **Niveau**               | Beginner                                                                   |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                  |
+| **Optionale Vertiefung** | 5 (strukturierte Denkspur)                                                 |
 | **Abgabe (Minimum)**     | [KI-Protokoll](../glossary.qmd#gl-ki-protokoll) mit mindestens 8 Einträgen |
 
 Der Kernpfad führt Sie in ca. 150 Minuten zu einem vollständigen Ergebnis. Die optionale Vertiefung kostet ca. 30 Minuten zusätzlich.
@@ -128,7 +128,7 @@ Nur im Ausnahmefall, wenn das Tool keinen stabilen Dokumentzugriff hat, kopieren
 
 Beispiel-Layout:
 
-``` markdown
+```markdown
 """
 DOKUMENTTEXT (Auszug/ganzer Text)
 """
@@ -183,7 +183,7 @@ Eine unpräzise Anfrage so zu reformulieren, dass Antwort **prüfbar**, **format
 
 **Vage Anfrage (absichtlich schlecht):**
 
-``` markdown
+```markdown
 Fasse das Dokument zusammen und sag mir, was wichtig ist.
 ```
 
@@ -196,7 +196,7 @@ Orientieren Sie sich am Setup aus der Übung [Quellenkritik](quellenkritik-bunde
 
 **Prompt-Gerüst (robust, adaptierbar):**
 
-``` markdown
+```markdown
 Aufgabe: [konkret, 1–2 Sätze]
 Kontext: [Seminar/Fragestellung/Zeitraum]
 Material: [Dokumenttext + Metadaten, klar abgegrenzt]
@@ -230,7 +230,7 @@ Lassen Sie dieselbe Aufgabe in drei Rollen bearbeiten:
 
 **Rollen-Prompt (Beispiel: Quellenkritiker:in, stark begrenzend):**
 
-``` markdown
+```markdown
 Rolle: Quellenkritiker:in.
 Aufgabe: Analysiere das Material ausschliesslich als Quelle (externe + interne Kritik).
 Wichtig:
@@ -245,7 +245,7 @@ Ausgabe:
 
 **Rollen-Prompt (Beispiel: Devil’s Advocate, aus der Schreibübung abgeleitet):**
 
-``` markdown
+```markdown
 Rolle: Devil’s Advocate.
 Input: Meine Arbeitshypothesen (H1–H3) + Materialhinweise.
 Aufgabe:
@@ -274,13 +274,13 @@ Zero-shot Prompting heisst, dass das Modell keine Beispiele erhält, sondern nur
 
 ### Ziel
 
-Zero-shot als **Baseline** einsetzen: schnell, aber fehleranfällig. Sie lernen, *wo* Zero-shot reicht und *wo* er systematisch ausweicht.
+Zero-shot als **Baseline** einsetzen: schnell, aber fehleranfällig. Sie lernen, _wo_ Zero-shot reicht und _wo_ er systematisch ausweicht.
 
 ### Übung 3A: Minimalparaphrase (Zero-shot)
 
 Nutzen Sie die Aufgabe aus [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Minimalparaphrase, max. 4 Sätze) als Zero-shot.
 
-``` markdown
+```markdown
 Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte:
 - Wer spricht/handelt?
 - Was ist der Anlass?
@@ -299,7 +299,7 @@ Laden Sie das Dokument als PDF-Datei zusammen mit dem Prompt hoch. Das ist der N
 
 Nur im Ausnahmefall, wenn der Upload nicht funktioniert, kopieren Sie den Inhalt des Dokuments an den Anfang des Prompts. Grenzen Sie ihn visuell ab, beispielsweise durch """. Beispiel:
 
-``` markdown
+```markdown
 """
 INHALT DOKUMENT
 """
@@ -324,7 +324,7 @@ Markieren Sie in der Antwort:
 
 Nutzen Sie die Vorlage aus der Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd).
 
-``` markdown
+```markdown
 Gib mir drei mögliche historische Forschungsfragen, die sich aus der Aktennotiz ableiten lassen.
 Jede Frage muss (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch sein.
 Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.
@@ -352,7 +352,7 @@ Erstellen Sie 3–5 kurze Beispielsätze (dürfen **fiktiv**, aber historisch pl
 
 **Beispiel:**
 
-``` markdown
+```markdown
 Beispiele (Input → Label):
 1) "Ort: Bern; Datum: 7.7.1949." → [Edition/Metadaten]
 2) "Im Text wird Neutralität als Argument gegen einen Schritt X verwendet." → [Dokumenttext]
@@ -373,7 +373,7 @@ Nehmen Sie 2 schwache und 2 starke Fragen (aus Ihrer Übung [Forschungsfrage](fo
 
 **Gerüst:**
 
-``` markdown
+```markdown
 Beispiele (Schwach/Stark):
 Schwach: "Warum trat die Schweiz dem Europarat bei?" → zu breit, teleologisch, unklare Evidenzbasis.
 Stark: "Wie wurde 'Neutralität' in internen EDA-Notizen 1949–1953 als Argument für/gegen eine institutionelle Annäherung an den Europarat operationalisiert?" → klarer Operator, Zeitraum, Quellennähe.
@@ -430,7 +430,7 @@ Der Abschnitt [Fähigkeiten prüfen und einordnen](#sec-faehigkeiten) vertieft d
 
 Nutzen Sie das Argumentmapping aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd) (Claim/Begründung/Voraussetzung/Implikation), aber erzwingen Sie Schrittlogik:
 
-``` markdown
+```markdown
 Aufgabe: Erzeuge ein Argumentmapping zu den Passagen, die Neutralität/Vereinbarkeit/Entscheidungsprozess betreffen.
 
 Vorgehen (sichtbar ausgeben):
@@ -451,7 +451,7 @@ Material: ...
 
 Ersetzen Sie im folgenden Prompt die Beispielfrage durch Ihre eigene Frage.
 
-``` markdown
+```markdown
 Ziel: Erstelle einen Rechercheplan zur Frage: Wie wurde Neutralität zwischen 1949 und 1963 als Argument gegen einen Beitritt der Schweiz zum Europarat verwendet?
 
 Schritte:
@@ -479,15 +479,15 @@ Iteration als **kontrollierte Revision**: Sie bauen nicht «mehr Text», sondern
 
 ### Übung 6A: Generate → Critique → Revise (Forschungsfrage)
 
-1) **Generate (v1):** Zero-shot Forschungsfragen (Übung 3B).\
-2) **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd) («Warum fehlt der Aspekt Neutralität?» / «Auf welche Quellen stützt sich das?»).\
-3) **Revise (v2):** Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.
+1. **Generate (v1):** Zero-shot Forschungsfragen (Übung 3B).\
+2. **Critique:** Nutzen Sie den kritischen Abgleich aus der Übung [Forschungsfrage](formulieren-historische-forschungsfrage-schweiz-europarat.qmd) («Warum fehlt der Aspekt Neutralität?» / «Auf welche Quellen stützt sich das?»).\
+3. **Revise (v2):** Lassen Sie die KI die Fragen revidieren, aber nur anhand Ihrer Kritikpunkte.
 
 **Critique-Prompt (Vorlage):**
 
 Fügen Sie hinter «Hier ist Antwort v1:» den vollständigen Text der ersten Antwort ein.
 
-``` markdown
+```markdown
 Hier ist Antwort v1: <Text der ersten Antwort einsetzen>.
 Aufgabe: Kritisiere claim-by-claim:
 - Was ist zu breit/teleologisch?
@@ -501,8 +501,8 @@ Keine neuen Fakten.
 
 Nehmen Sie die Übung [Zitieren](zitieren.qmd) und erzwingen Sie eine zweistufige Ausgabe:
 
-1) Extraktion strukturierter Metadaten (Felder),\
-2) erst dann Chicago-Zitat + Zotero-Importformat.
+1. Extraktion strukturierter Metadaten (Felder),\
+2. erst dann Chicago-Zitat + Zotero-Importformat.
 
 **Optimierungsfrage:** Verbessert die Zweistufigkeit Fehlerdiagnose (z. B. fehlende Seitenzahlen, falsche Herausgeber:innen)?
 
@@ -528,7 +528,7 @@ Nehmen Sie einen naiven Literaturprompt («Nenne zentrale Literatur zu X») und 
 
 **Optimierter Prompt (Gerüst):**
 
-``` markdown
+```markdown
 Du bist historischer Rechercheassistent.
 Ziel: Startkorpus für [Thema/Zeitraum].
 Regeln:
@@ -633,13 +633,13 @@ Dieser Weg ist der [Minimal-Computing](../glossary.qmd#gl-minimal-computing)-Weg
 
 Prüfen Sie Ihr Konto und füllen Sie die Tabelle aus. Antworten Sie mit Ja, Nein oder Unklar.
 
-| Fähigkeit                       | Vorhanden? | Kostenpflichtig? | Wo eingeschaltet? |
-| ------------------------------- | ---------- | ---------------- | ----------------- |
-| Eingebauter Denkmodus           |            |                  |                   |
-| Agentischer Ablauf oder vertiefte Recherche |  |             |                   |
-| Abruf aus eigenen Dokumenten    |            |                  |                   |
-| Lesen von Bildern und Scans     |            |                  |                   |
-| Lokales oder offenes Modell     |            |                  |                   |
+| Fähigkeit                                   | Vorhanden? | Kostenpflichtig? | Wo eingeschaltet? |
+| ------------------------------------------- | ---------- | ---------------- | ----------------- |
+| Eingebauter Denkmodus                       |            |                  |                   |
+| Agentischer Ablauf oder vertiefte Recherche |            |                  |                   |
+| Abruf aus eigenen Dokumenten                |            |                  |                   |
+| Lesen von Bildern und Scans                 |            |                  |                   |
+| Lokales oder offenes Modell                 |            |                  |                   |
 
 Verlassen Sie sich dabei nicht auf die Auskunft des Systems über sich selbst. Prüfen Sie die Einstellungen und die Preisangaben Ihres Kontos.
 
@@ -666,26 +666,26 @@ Schreiben Sie fünf bis acht Sätze zu diesen Fragen:
 
 **1) Kontext + Materialbindung**
 
-``` markdown
+```markdown
 Arbeite ausschliesslich mit dem untenstehenden Material.
 Wenn dir Informationen fehlen, stelle Rückfragen oder markiere [Unklar].
 ```
 
 **2) Ebenen-Trennung (Quelle vs. Edition vs. Schlussfolgerung)**
 
-``` markdown
+```markdown
 Markiere jede Aussage als [Dokumenttext] / [Edition/Metadaten] / [Schlussfolgerung].
 ```
 
 **3) Antwort als Zwischenprodukt (für Weiterarbeit)**
 
-``` markdown
+```markdown
 Gib die Antwort als Tabelle mit Feldern: Claim | Evidenzstelle | Unsicherheit | Nächster Prüfschritt.
 ```
 
 **4) Self-Check / Gegenprobe erzwingen**
 
-``` markdown
+```markdown
 Self-Check: Nenne 3 plausible Gegenbelege oder alternative Deutungen und was du dafür bräuchtest.
 ```
 

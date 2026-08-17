@@ -58,12 +58,12 @@ Trotz fortschreitender Digitalisierung ist historische Forschung nicht vollstän
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                       |
-| ------------------------ | -------------------------------------------------------------------------- |
-| **Dauer**                | ca. 90 Minuten                                                             |
-| **Niveau**               | Beginner                                                                   |
-| **Kernpfad**             | 1 → 2 → 4 → 5 → 6                                                          |
-| **Optionale Vertiefung** | 3 (Forschungsstand und Forschungslücken)                                   |
+| Angabe                   | Wert                                                                               |
+| ------------------------ | ---------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 90 Minuten                                                                     |
+| **Niveau**               | Beginner                                                                           |
+| **Kernpfad**             | 1 → 2 → 4 → 5 → 6                                                                  |
+| **Optionale Vertiefung** | 3 (Forschungsstand und Forschungslücken)                                           |
 | **Abgabe (Minimum)**     | Eine Forschungsfrage. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 5 Einträge. |
 
 Der Kernpfad führt Sie in ca. 90 Minuten zu einer bearbeitbaren Forschungsfrage. Schritt 3 kostet ca. 60 Minuten zusätzlich. Sie üben den Forschungsstand ausführlich in der Übung [Literaturrecherche](literaturrecherche-sozialversicherung-ch.qmd).
@@ -129,14 +129,14 @@ Verständnis der Unterschiede zwischen **Thema**, **Fragestellung** und **analyt
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Was ist eine historische Forschungsfrage?
 Welche Elemente sind in einer historischen Forschungsfrage enthalten?
 ```
 
 Falls keine Prozessbeschreibung enthalten ist:
 
-``` markdown
+```markdown
 Welche Schritte sind notwendig, um eine historische Forschungsfrage zu entwickeln?
 ```
 
@@ -157,11 +157,11 @@ Identifizieren Sie:
 
 Gezielte Rückfragen an die KI: Setzen Sie das Element ein, das Sie in der Antwort vermissen. Das Beispiel nennt den Forschungsstand.
 
-``` markdown
+```markdown
 Warum fehlt das Element «Forschungsstand»?
 ```
 
-``` markdown
+```markdown
 Auf welche wissenschaftlichen oder didaktischen Quellen stützt sich deine Definition?
 ```
 
@@ -177,7 +177,7 @@ Trennung von **Thema** und **analytischer Fragestellung** sowie Aufbau eines sol
 
 (Optional: Dialogische Themenfindung)
 
-``` markdown
+```markdown
 Du bist Historiker und hilfst mir im Dialog, ein historisches Thema für eine studentische Arbeit zu finden.
 ```
 
@@ -190,7 +190,7 @@ Worin unterscheidet sich dieser KI-Dialog von einem Gespräch mit einer Dozieren
 
 ### Aufgabe (historischer Überblick)
 
-``` markdown
+```markdown
 Gib mir einen historischen Überblick über die Beziehung zwischen der Schweiz und dem Europarat.
 ```
 
@@ -204,11 +204,11 @@ Vergleichen Sie den Überblick mit:
 
 Gezielte Nachfragen: Setzen Sie den Aspekt ein, den Sie vermissen. Weitere Beispiele sind EMRK und EGMR.
 
-``` markdown
+```markdown
 Warum fehlt der Aspekt «Neutralität»?
 ```
 
-``` markdown
+```markdown
 Auf welche Quellen stützt sich diese Darstellung?
 ```
 
@@ -220,13 +220,13 @@ Unterscheidung zwischen **deskriptivem Überblick** und **analytischem Forschung
 
 ### Aufgabe (Sekundärliteratur)
 
-``` markdown
+```markdown
 Nenne zentrale historische Sekundärliteratur zur Beziehung zwischen der Schweiz und dem Europarat.
 ```
 
 ### Aufgabe (Forschungslücken)
 
-``` markdown
+```markdown
 Welche offenen Fragen oder Forschungslücken bestehen in der bisherigen Forschung?
 ```
 
@@ -241,13 +241,13 @@ Welche offenen Fragen oder Forschungslücken bestehen in der bisherigen Forschun
 
 Gezielte Rückfragen: Setzen Sie den Titel ein, den Sie in der Antwort vermissen. Das Beispiel nennt den Sammelband von Altermatt und Casasus.
 
-``` markdown
+```markdown
 Warum fehlt das Werk «50 Jahre Engagement der Schweiz im Europarat 1963–2013»?
 ```
 
 Setzen Sie in die zweite Rückfrage Ihre eigene Frage und Ihr eigenes Werk ein.
 
-``` markdown
+```markdown
 Warum wird die Frage nach der Rolle der Neutralität als Forschungslücke bezeichnet,
 obwohl sie in «50 Jahre Engagement der Schweiz im Europarat 1963–2013» behandelt wird?
 ```
@@ -262,7 +262,7 @@ Einschätzung, ob eine Forschungsfrage **quellenbasiert bearbeitbar** ist.
 
 Ersetzen Sie im folgenden Prompt die Beispielfrage durch Ihre eigene Arbeitsfrage.
 
-``` markdown
+```markdown
 Welche Primärquellen eignen sich zur Untersuchung der Forschungsfrage
 «Wie wurde Neutralität zwischen 1949 und 1963 als Argument gegen einen Beitritt
 der Schweiz zum Europarat verwendet?»
@@ -270,7 +270,7 @@ der Schweiz zum Europarat verwendet?»
 
 Falls nötig:
 
-``` markdown
+```markdown
 Nenne konkrete Archive, Sammlungen und Dokumenttypen zur Schweiz und dem Europarat.
 ```
 
@@ -306,7 +306,7 @@ Transformation einer offenen Fragestellung in eine **präzise analytische histor
 
 Ersetzen Sie im folgenden Prompt die Beispielfrage durch Ihre eigene Arbeitsfrage.
 
-``` markdown
+```markdown
 Schlage mögliche zeitliche, räumliche und thematische Eingrenzungen für die Forschungsfrage
 «Wie wurde Neutralität zwischen 1949 und 1963 als Argument gegen einen Beitritt
 der Schweiz zum Europarat verwendet?» vor.
@@ -314,7 +314,7 @@ der Schweiz zum Europarat verwendet?» vor.
 
 ### Aufgabe (Formulierung)
 
-``` markdown
+```markdown
 Formuliere auf dieser Basis eine analytische historische Forschungsfrage.
 ```
 

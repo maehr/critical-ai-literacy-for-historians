@@ -65,13 +65,13 @@ Digitization advances, but historical research is not possible online alone. Sec
 
 ## At a Glance
 
-| Item                      | Value                                                                       |
-| ------------------------- | --------------------------------------------------------------------------- |
-| **Duration**              | about 90 minutes                                                            |
-| **Level**                 | Beginner                                                                    |
-| **Core path**             | 1 → 2 → 4 → 5 → 6                                                           |
-| **Optional deepening**    | 3 (the state of research and the gaps in research)                          |
-| **Hand-in (minimum)**     | One research question. [AI log](../glossary.qmd#gl-ki-protokoll): 5 entries. |
+| Item                   | Value                                                                        |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| **Duration**           | about 90 minutes                                                             |
+| **Level**              | Beginner                                                                     |
+| **Core path**          | 1 → 2 → 4 → 5 → 6                                                            |
+| **Optional deepening** | 3 (the state of research and the gaps in research)                           |
+| **Hand-in (minimum)**  | One research question. [AI log](../glossary.qmd#gl-ki-protokoll): 5 entries. |
 
 The core path leads you to a research question that you can work on in about 90 minutes. Step 3 costs about 60 minutes more. You practise the state of research in detail in the exercise [Literature Research](literature-research-social-security-ch.qmd).
 
@@ -136,14 +136,14 @@ Understand the differences between a **topic**, a **problem statement** and an *
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 What is a historical research question?
 Which elements does a historical research question hold?
 ```
 
 If the answer holds no description of the process:
 
-``` markdown
+```markdown
 Which steps are necessary to develop a historical research question?
 ```
 
@@ -164,11 +164,11 @@ Identify:
 
 Put targeted follow-up questions to the AI. Insert the element that you miss in the answer. The example names the state of research.
 
-``` markdown
+```markdown
 Why is the element "state of research" missing?
 ```
 
-``` markdown
+```markdown
 Which scholarly or didactic sources does your definition rest on?
 ```
 
@@ -184,7 +184,7 @@ Separate the **topic** from the **analytical question**, and build a solid base 
 
 (Optional: find the topic in a dialogue)
 
-``` markdown
+```markdown
 You are a historian and you help me in a dialogue to find a historical topic for a student paper.
 ```
 
@@ -197,7 +197,7 @@ How does this dialogue with an AI differ from a conversation with a teacher or w
 
 ### Task (Historical Overview)
 
-``` markdown
+```markdown
 Give me a historical overview of the relation between Switzerland and the Council of Europe.
 ```
 
@@ -211,11 +211,11 @@ Compare the overview with:
 
 Put targeted follow-up questions. Insert the aspect that you miss. Further examples are the European Convention on Human Rights and its court.
 
-``` markdown
+```markdown
 Why is the aspect "neutrality" missing?
 ```
 
-``` markdown
+```markdown
 Which sources does this account rest on?
 ```
 
@@ -227,13 +227,13 @@ Tell a **descriptive overview** apart from an **analytical state of research**.
 
 ### Task (Secondary Literature)
 
-``` markdown
+```markdown
 Name the central historical secondary literature on the relation between Switzerland and the Council of Europe.
 ```
 
 ### Task (Gaps in Research)
 
-``` markdown
+```markdown
 Which open questions or gaps in research exist in the research so far?
 ```
 
@@ -248,13 +248,13 @@ Which open questions or gaps in research exist in the research so far?
 
 Put targeted follow-up questions. Insert the title that you miss in the answer. The example names the edited volume of Altermatt and Casasus.
 
-``` markdown
+```markdown
 Why is the work "50 Jahre Engagement der Schweiz im Europarat 1963–2013" missing?
 ```
 
 Insert your own question and your own work in the second follow-up question.
 
-``` markdown
+```markdown
 Why do you call the question about the role of neutrality a gap in research,
 although "50 Jahre Engagement der Schweiz im Europarat 1963–2013" treats it?
 ```
@@ -269,7 +269,7 @@ Judge whether you can work on a research question **on the basis of sources**.
 
 Replace the example question in the following prompt with your own working question.
 
-``` markdown
+```markdown
 Which primary sources suit the study of the research question
 "How did neutrality serve between 1949 and 1963 as an argument against an accession
 of Switzerland to the Council of Europe?"
@@ -277,7 +277,7 @@ of Switzerland to the Council of Europe?"
 
 If necessary:
 
-``` markdown
+```markdown
 Name concrete archives, collections and document types on Switzerland and the Council of Europe.
 ```
 
@@ -313,7 +313,7 @@ Turn an open problem statement into a **precise analytical historical research q
 
 Replace the example question in the following prompt with your own working question.
 
-``` markdown
+```markdown
 Suggest possible delimitations in time, space and topic for the research question
 "How did neutrality serve between 1949 and 1963 as an argument against an accession
 of Switzerland to the Council of Europe?"
@@ -321,7 +321,7 @@ of Switzerland to the Council of Europe?"
 
 ### Task (Formulation)
 
-``` markdown
+```markdown
 Formulate an analytical historical research question on this basis.
 ```
 

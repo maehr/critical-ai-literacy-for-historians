@@ -111,17 +111,17 @@ This exercise was translated automatically from the [German original](../../de/e
 
 ## Overview and Didactic Goal
 
-This exercise trains knowledge communication in public history as **translation work in a process**: from a scholarly article (argument, evidence, uncertainties) to formats for an audience. You use generative AI **not** as an authority, but as a *tool for drafting, variation, editing and proofreading*, with a consistent reference to the sources, with traceability and with clear limits.
+This exercise trains knowledge communication in public history as **translation work in a process**: from a scholarly article (argument, evidence, uncertainties) to formats for an audience. You use generative AI **not** as an authority, but as a _tool for drafting, variation, editing and proofreading_, with a consistent reference to the sources, with traceability and with clear limits.
 
 ## At a Glance
 
-| Item                      | Value                                                                                      |
-| ------------------------- | ------------------------------------------------------------------------------------------ |
-| **Duration**              | about 4 hours                                                                               |
-| **Level**                 | Intermediate                                                                                |
-| **Core path**             | 1 → 2 → 3 → 4 → 5A → 6                                                                      |
-| **Optional deepening**    | 5B (podcast script), 5C (poster text blocks)                                                |
-| **Hand-in (minimum)**     | A blog post of 700 to 1000 words. [AI log](../glossary.qmd#gl-ki-protokoll): 8 entries and a note of reflection of 300 to 500 words. |
+| Item                   | Value                                                                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Duration**           | about 4 hours                                                                                                                        |
+| **Level**              | Intermediate                                                                                                                         |
+| **Core path**          | 1 → 2 → 3 → 4 → 5A → 6                                                                                                               |
+| **Optional deepening** | 5B (podcast script), 5C (poster text blocks)                                                                                         |
+| **Hand-in (minimum)**  | A blog post of 700 to 1000 words. [AI log](../glossary.qmd#gl-ki-protokoll): 8 entries and a note of reflection of 300 to 500 words. |
 
 The core path leads you to a blog post and to two short formats in about 4 hours. Split the time over two sessions. Each optional deepening costs about 45 minutes more.
 
@@ -224,7 +224,7 @@ The exception for reviewed text does not lift your academic disclosure. Disclose
 
 ### Goal
 
-Treat communication as a **decision that depends on the context**: for *whom*, *where*, *why*, and *in which medium*?
+Treat communication as a **decision that depends on the context**: for _whom_, _where_, _why_, and _in which medium_?
 
 ### Task
 
@@ -234,11 +234,11 @@ Choose a concrete context of communication, for example a museum blog, a local n
 - the purpose: to inform, to contextualize, to open a debate, to give knowledge for action, and so on
 - the medium and format: length, tone, images or audio, interaction
 - the constraints: languages, accessibility, terminology, legal and ethical limits
-- the criteria of success: what should the audience afterwards *know*, *be able to do*, or *see differently*?
+- the criteria of success: what should the audience afterwards _know_, _be able to do_, or _see differently_?
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 You are an assistant for audience research. Produce 2–3 plausible personas of a target group for the following context (without inventing facts about real people).
 For each persona: prior knowledge, motivations, possible misunderstandings, suitable examples and metaphors, and no-gos.
 Context: ...
@@ -248,7 +248,7 @@ Topic and article in 3 sentences: ...
 ### Critical Comparison
 
 - A [persona](../glossary.qmd#gl-persona) is not reality. Add to your assumptions and check them, for example against real information on the target group, museum concepts or media guidelines.
-- Which simplifications would be risky in epistemic terms? Note the *red lines*.
+- Which simplifications would be risky in epistemic terms? Note the _red lines_.
 
 ## 2. Message Map and Narrative Route
 
@@ -260,7 +260,7 @@ Build a **core architecture of the communication** that stays stable across the 
 
 Build:
 
-1. A **one-liner** (1 sentence): what is the core message, and why does it matter *for this target group*?
+1. A **one-liner** (1 sentence): what is the core message, and why does it matter _for this target group_?
 2. **3 to 4 supporting points** (1 to 2 sentences each) with a reference to the evidence
 3. A **matrix of evidence**: which supporting point rests on which data or passage?
 4. The **context**: what must you explain, so that nothing gets distorted?
@@ -268,7 +268,7 @@ Build:
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: you are a structurer. Work only with the source package and the briefing.
 Produce a message map (a one-liner, 3–4 supporting points and a 'so what' for the target group).
 Mark each point with a claim ID and point to the paragraphs of context that it needs.
@@ -298,7 +298,7 @@ Write a blog post of about 700 to 1000 words. The blog post holds:
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: you are a blog editor. Write a blog post for the following context.
 Constraints: 900 words, clear subheadings, no new facts.
 Use claim IDs in the text in square brackets, for example [C3].
@@ -326,7 +326,7 @@ Turn a plausible draft into a robust product of communication.
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: you are a fact checker.
 1) List all the facts and statements that the draft claims.
 2) Assign them to claim IDs, or mark them as 'not in the source package'.
@@ -345,7 +345,7 @@ The following tasks are deliberately **adaptations**: you reuse the message map 
 
 ### 5A Social Media (Thread and Single Post)
 
-**Goal:** carry the core message into a *medium of attention*, without overclaiming.
+**Goal:** carry the core message into a _medium of attention_, without overclaiming.
 
 **Task:**
 
@@ -357,7 +357,7 @@ The following tasks are deliberately **adaptations**: you reuse the message map 
 
 **AI workflow**
 
-``` markdown
+```markdown
 Produce 3 variants of a thread (conservative / narrative / low in provocation).
 Rules: no new facts, no clickbait exaggeration, and one post on the uncertainties.
 Input: the message map, an excerpt of the blog text, and the context.
@@ -375,7 +375,7 @@ Input: the message map, an excerpt of the blog text, and the context.
 
 **AI workflow**
 
-``` markdown
+```markdown
 Write a podcast script (7 minutes) for [target group and context].
 Structure: hook (15s) – context (60s) – key points (3x90s) – uncertainties (45s) – conclusion (30s).
 Use only claims from the source package, and mark the claim IDs in the margin of the script.
@@ -394,7 +394,7 @@ Use only claims from the source package, and mark the claim IDs in the margin of
 
 **AI workflow**
 
-``` markdown
+```markdown
 Produce poster text blocks with a strict word limit and without new facts.
 Watch for: clear terms, no implicit judgements, and one claim ID per block.
 Input: the message map and the matrix of evidence.
@@ -413,12 +413,12 @@ Build an interview kit of 1 to 2 pages. The kit holds:
 - **3 soundbites** of 12 to 20 seconds each, formulated in substance,
 - **5 core questions** with short answers of 3 to 5 sentences each,
 - **2 critical questions** (for example "Is that not …?") with strategies to bridge them,
-- a **no-go list** with statements that you do *not* make, because the evidence, the complexity or the ethics speak against them,
+- a **no-go list** with statements that you do _not_ make, because the evidence, the complexity or the ethics speak against them,
 - a **sentence of transparency** on the method and on the state of the data (1 to 2 sentences).
 
 ### AI Workflow (Prompt Sketch)
 
-``` markdown
+```markdown
 Role: you are a media coach. Produce an interview kit for radio or a newspaper.
 Rules: no new facts, the soundbites must render the claims correctly, and they must not hide the uncertainties.
 Input: the message map, the source package, and the blog or podcast draft.
@@ -435,7 +435,7 @@ At the end you hold these artifacts:
 
 1. A **communication briefing** (1 page)
 2. A **message map and a matrix of evidence** (as a table or in bullet points)
-3. A **blog post** (about 700 to 1000 words) *or* a **podcast script** (about 6 to 8 minutes)
+3. A **blog post** (about 700 to 1000 words) _or_ a **podcast script** (about 6 to 8 minutes)
 4. **Two short formats** from: social media, poster text blocks, interview kit
 5. An **AI log** with at least 8 entries and a note of reflection (about 300 to 500 words)
 

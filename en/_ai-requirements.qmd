@@ -22,11 +22,11 @@ Some systems carry over statements from earlier sessions or from a project conte
 
 Check which account you work with. The rules differ in three points.
 
-| Point              | Account of your institution                              | Private account                                          |
-| ------------------ | -------------------------------------------------------- | -------------------------------------------------------- |
-| Contract           | Your university concludes it and shares the liability.   | You conclude it yourself and carry the liability alone.  |
-| Training           | A contract often excludes the use of your inputs.        | Many providers use inputs for training.                  |
-| Permitted material | The university rules which data you can enter.           | You have no such rule and carry the risk yourself.       |
+| Point              | Account of your institution                            | Private account                                         |
+| ------------------ | ------------------------------------------------------ | ------------------------------------------------------- |
+| Contract           | Your university concludes it and shares the liability. | You conclude it yourself and carry the liability alone. |
+| Training           | A contract often excludes the use of your inputs.      | Many providers use inputs for training.                 |
+| Permitted material | The university rules which data you can enter.         | You have no such rule and carry the risk yourself.      |
 
 Ask the IT office or the library of your university when you cannot find the rules. Record the answer in your [AI log](../glossary.qmd#gl-ki-protokoll).
 

@@ -59,12 +59,12 @@ Beachten Sie bei der Archivarbeit **Schutzfristen, Nutzungsbedingungen und digit
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                                                             |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| **Dauer**                | mehrere Tage, davon ca. 6 bis 8 Stunden am Bildschirm                                                            |
-| **Niveau**               | Advanced                                                                                                         |
-| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                        |
-| **Optionale Vertiefung** | 5 (Sekundärliteratur und Referenzwerke)                                                                          |
+| Angabe                   | Wert                                                                                                                                   |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dauer**                | mehrere Tage, davon ca. 6 bis 8 Stunden am Bildschirm                                                                                  |
+| **Niveau**               | Advanced                                                                                                                               |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                                              |
+| **Optionale Vertiefung** | 5 (Sekundärliteratur und Referenzwerke)                                                                                                |
 | **Abgabe (Minimum)**     | [Rechercheprotokoll](../glossary.qmd#gl-rechercheprotokoll): 15 Einträge. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 3 Einträge. |
 
 ::: callout-important
@@ -149,7 +149,7 @@ Die Forschungsfrage wird in **Teilfragen** zerlegt, sodass daraus **konkrete Suc
 
 ### Aufgabe (ohne KI)
 
-Skizzieren Sie in 10 Minuten ein Arbeitsmodell des *Entscheidungsprozesses* (Akteure, Arenen, Phasen, Dokumenttypen).
+Skizzieren Sie in 10 Minuten ein Arbeitsmodell des _Entscheidungsprozesses_ (Akteure, Arenen, Phasen, Dokumenttypen).
 
 **Leitfragen:**
 
@@ -159,7 +159,7 @@ Skizzieren Sie in 10 Minuten ein Arbeitsmodell des *Entscheidungsprozesses* (Akt
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Zerlege die Forschungsfrage in 4–6 Teilfragen, die jeweils quellenbasiert überprüfbar sind.
 Gib für jede Teilfrage an, welche Dokumenttypen als Evidenz dienen könnten.
 ```
@@ -191,11 +191,11 @@ Erstellen Sie eine Matrix mit:
 - **Sekundär**: Forschungsliteratur zu Aussen-, Europa- und Verbändepolitik; Organisationsgeschichte Vorort/economiesuisse
 - **Tertiär**: Kataloge, Bibliografien, Dossiers, Register, Datenbanken, Findmittel
 
-Für jede Zelle: *Was wäre ein überzeugender Beleg?* / *Welche Verzerrungen sind wahrscheinlich?*
+Für jede Zelle: _Was wäre ein überzeugender Beleg?_ / _Welche Verzerrungen sind wahrscheinlich?_
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Nenne für die Forschungsfrage geeignete Primär-, Sekundär- und Tertiärquellen.
 Ordne jede Quelle einer Arena zu (Bundesrat / Departement / Parlament / Verband / Medien / international).
 ```
@@ -226,7 +226,7 @@ Ein **orientierendes Referenzgerüst** aufbauen, bevor die Tiefenrecherche begin
 
 ### Aufgabe (KI als Suchassistent, nicht als Quelle)
 
-``` markdown
+```markdown
 Erstelle eine Liste von 15 Suchorten (Portale, Kataloge, Editionen, Archive, Datenbanken),
 die für die Frage nach dem Vorort und dem Europaratsbeitritt 1963 relevant sein könnten.
 Gib pro Suchort 1–2 typische Trefferarten an (z. B. Botschaft, Protokoll, Dossier, Zeitungsartikel).
@@ -247,13 +247,13 @@ Suchbegriffe als **testbare Hypothesen** entwickeln, inkl. historischer Terminol
 
 Erstellen Sie drei Begriffsfelder (DE/FR/EN):
 
-1. **Akteur**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l’industrie; economiesuisse (*rückprojizierend kennzeichnen*)
+1. **Akteur**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l’industrie; economiesuisse (_rückprojizierend kennzeichnen_)
 2. **Ereignis/Institution**: Europarat; Council of Europe; Beitritt/Mitgliedschaft/accession; 1963; EMRK/EGMR (als Kontextpfade)
 3. **Prozess/Mechanismen**: Vernehmlassung; Interessenverband; Eingabe; Stellungnahme; Gutachten; wirtschaftliche Interessen; Aussenwirtschaftspolitik
 
 ### Aufgabe B (KI-gestützt): kontrollierte Synonymlisten
 
-``` markdown
+```markdown
 Erstelle für die drei Begriffsfelder (Akteur / Institution-Ereignis / Prozess) je 12–20 Suchbegriffe.
 Bedingungen:
 - DE/FR/EN getrennt ausgeben
@@ -292,7 +292,7 @@ Dokumentieren Sie:
 
 Ersetzen Sie im folgenden Prompt die Beispielzeilen durch Ihre eigenen Suchbegriffe und Trefferprobleme.
 
-``` markdown
+```markdown
 Hier sind meine bisherigen Suchbegriffe und Trefferprobleme:
 - "Vorort AND Europarat": 3 Treffer, alle nach 1990.
 - "SHIV AND Beitritt": 0 Treffer.
@@ -304,7 +304,6 @@ Gib 6 Varianten an und erkläre kurz, welches Problem jede Variante adressiert.
 ### Deliverable
 
 - **Kurzannotierte Bibliografie** (8–12 Titel) mit:
-
   - Fragerelevanz (1–2 Sätze)
   - erwartetem Quellenwert (welche Primärquellen werden zitiert?)
 
@@ -332,7 +331,7 @@ Wählen Sie:
 
 Ersetzen Sie im folgenden Prompt die beiden Beispielangaben durch Ihre eigenen acht Angaben.
 
-``` markdown
+```markdown
 Ich habe folgende 8 Literatur- oder Quellenangaben:
 1. Altermatt, Bernhard und Gilbert Casasus (Hg.): 50 Jahre Engagement der Schweiz im Europarat 1963–2013. Zürich 2013.
 2. Dodis-Dokument 5020: Aktennotiz Petitpierre, Bern, 7.7.1949.
@@ -384,7 +383,7 @@ Erstellen Sie eine Shortlist von **10 Einheiten** mit:
 
 ### Aufgabe C (KI-gestützt): Suchpfade planen
 
-``` markdown
+```markdown
 Schlage drei Suchpfade vor:
 1) akteurszentriert
 2) prozessorientiert

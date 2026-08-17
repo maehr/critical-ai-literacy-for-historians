@@ -137,7 +137,6 @@ Ein Reject-Log hält fest, welche Treffer Sie verworfen haben und aus welchem Gr
 
 Findmittel sind die Verzeichnisse eines Archivs, die zeigen, welche Bestände vorhanden sind und wie sie geordnet sind.
 
-
 ## Schreiben und Vermittlung
 
 ### Arbeitsergebnis (Deliverable) {#gl-deliverable}

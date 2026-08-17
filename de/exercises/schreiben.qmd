@@ -119,12 +119,12 @@ Ziel ist nicht, Textproduktion zu «automatisieren», sondern **Entscheidungsqua
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                       |
-| ------------------------ | -------------------------------------------------------------------------- |
-| **Dauer**                | ca. 45 bis 60 Minuten                                                      |
-| **Niveau**               | Beginner                                                                   |
-| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 8                                                      |
-| **Optionale Vertiefung** | 5 (Blockaden), 7 (Stil und Übersetzung), 9 (Lesbarkeitstest)               |
+| Angabe                   | Wert                                                                                           |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 45 bis 60 Minuten                                                                          |
+| **Niveau**               | Beginner                                                                                       |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 6 → 8                                                                          |
+| **Optionale Vertiefung** | 5 (Blockaden), 7 (Stil und Übersetzung), 9 (Lesbarkeitstest)                                   |
 | **Abgabe (Minimum)**     | Ein überarbeiteter Textabschnitt. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 6 Einträge. |
 
 Der Kernpfad führt Sie in 45 bis 60 Minuten zu einem überarbeiteten Text. Jede optionale Vertiefung kostet ca. 15 Minuten zusätzlich. Führen Sie pro Schritt des Kernpfads einen Eintrag im KI-Protokoll.
@@ -172,7 +172,7 @@ Diese Übung braucht weder eine Websuche noch einen Datei-Upload. Ein kostenlose
 
 ## Methodischer Rahmen: KI als Schreibinfrastruktur
 
-In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei *Formulierungen, Strukturierung und Prüfung*, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
+In dieser Übung wird KI als **heuristisches Schreibwerkzeug** verstanden: Sie unterstützt bei _Formulierungen, Strukturierung und Prüfung_, ersetzt aber weder **Quellenarbeit** noch **interpretative Entscheidungen**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodisch hilfreich ist eine klare Arbeitsteilung:
 
 - **Geschichtswissenschaftliche Autor:innenschaft:** Fragestellung, Evidenzwahl, Interpretation, normative Setzungen.
 - **KI-Beitrag (instrumentell):** Varianten generieren, Strukturvorschläge, Lesbarkeitstests, Fehlerdiagnose.
@@ -184,7 +184,7 @@ Für verlässlicheres Arbeiten nutzen Sie konsequent zwei Prompt-Prinzipien: 1. 
 
 ## Grundregel: KI darf nichts «erfinden»
 
-Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für *Ihr* Material (Notizen, Quellenexzerpte, Literaturzusammenfassungen, Gliederungsentwürfe). Wenn KI zusätzliche Fakten, Literatur oder Quellen nennt, gilt das als **Recherche-Hypothese**, die Sie **extern verifizieren** müssen.
+Nutzen Sie KI nur als **Transformations- und Prüfwerkzeug** für _Ihr_ Material (Notizen, Quellenexzerpte, Literaturzusammenfassungen, Gliederungsentwürfe). Wenn KI zusätzliche Fakten, Literatur oder Quellen nennt, gilt das als **Recherche-Hypothese**, die Sie **extern verifizieren** müssen.
 :::
 
 {{< include ../_ki-protokoll.qmd >}}
@@ -216,7 +216,7 @@ Den Schreibauftrag und die eigene Argumentationsabsicht so präzise machen, dass
 
 **Prompt-Gerüst**
 
-``` markdown
+```markdown
 Du bist Verständnischecker. Stelle mir 8–12 präzise Rückfragen, um Schreibauftrag und Argumentationsziel zu klären.
 Markiere:
 (1) fehlende Informationen,
@@ -248,7 +248,7 @@ Ideen generieren, ohne Evidenz zu erfinden, und sofort Gegenargumente/Alternativ
 
 ### Aufgabe A: Brainstorming (ideenorientiert, evidenzneutral)
 
-``` markdown
+```markdown
 Rolle: Brainstorming-Partner. Generiere 12 mögliche Argumentlinien/Hypothesen zu meinem Thema.
 Bedingungen:
 - Formuliere jede Linie als überprüfbare Behauptung (keine Facts).
@@ -261,7 +261,7 @@ Mein Material (nur Typen, keine sensiblen Inhalte): …
 
 ### Aufgabe B: Devil’s Advocate (konfrontativ, aber produktiv)
 
-``` markdown
+```markdown
 Rolle: Devil’s Advocate. Wähle die 3 plausibelsten meiner Hypothesen und argumentiere jeweils dagegen.
 Für jedes Gegenargument:
 - Benenne die verletzliche Annahme.
@@ -292,7 +292,7 @@ Eine überprüfbare **Argumentationskette** entwerfen (These → Unterthesen →
 
 Setzen Sie im folgenden Prompt Ihre eigene Wortzahl ein. Das Beispiel nennt 3000 Wörter.
 
-``` markdown
+```markdown
 Rolle: Strukturierer:in.
 Erstelle eine Gliederung (max. 8 Hauptpunkte) für einen Text von ca. 3000 Wörtern.
 Für jeden Punkt:
@@ -328,7 +328,7 @@ Aus eigenem Material Absätze formulieren lassen, ohne inhaltliche Kontrolle abz
 
 Wählen Sie **einen** Gliederungspunkt (z.B. «Hauptargument 1») und liefern Sie 8–12 Bullet Points (Belege, Beobachtungen, Zitate/Paraphrasen, Begriffe).
 
-``` markdown
+```markdown
 Rolle: Textgenerator aus Stichpunkten.
 Schreibe einen Absatz (120–180 Wörter) in akademischem Deutsch.
 Bedingungen:
@@ -360,7 +360,7 @@ Lokale Probleme lösen (Übergänge, Einstiegssätze, Begriffsdefinitionen), ohn
 
 **A) Übergang bauen**
 
-``` markdown
+```markdown
 Rolle: Blockaden-Löser.
 Formuliere 5 Varianten für einen Übergangssatz zwischen Absatz A und B.
 Variante 1 neutral, 2 stärker argumentativ, 3 stärker erklärend, 4 knapper, 5 mit Kontrastmarker.
@@ -372,7 +372,7 @@ Absatz B: …
 
 Ersetzen Sie im folgenden Prompt den Begriff «Neutralität» durch Ihren eigenen Begriff.
 
-``` markdown
+```markdown
 Formuliere 3 mögliche Arbeitsdefinitionen für den Begriff «Neutralität» im Kontext meines Themas.
 Für jede Definition:
 - Abgrenzung zu 1 Nachbarbegriff
@@ -383,7 +383,7 @@ Kontext: …
 
 **C) Satzdiagnose**
 
-``` markdown
+```markdown
 Markiere in meinem Absatz:
 - den zentralen Satz (topic sentence),
 - Sätze mit unklarem Referent («dies», «dabei», «man»),
@@ -405,7 +405,7 @@ Argumentationslogik sichtbar machen: Stützen Belege die Behauptungen? Sind Schl
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Logik-Prüfer.
 Analysiere meinen Text (max. 300 Wörter) als Argumentmap:
 1) Hauptthese
@@ -435,7 +435,7 @@ Sprache und Register verbessern, ohne die argumentative Substanz zu verändern; 
 
 ### Aufgabe A: Korrektorat (minimal-invasiv)
 
-``` markdown
+```markdown
 Rolle: Korrektorat.
 Verbessere Grammatik, Stil und Präzision, aber ändere keine inhaltlichen Aussagen.
 Arbeite minimal-invasiv:
@@ -447,7 +447,7 @@ Text: …
 
 ### Aufgabe B: Übersetzen (optional)
 
-``` markdown
+```markdown
 Rolle: Übersetzer.
 Übersetze den Text ins Englische (oder Französische/Spanische).
 Bedingungen:
@@ -472,7 +472,7 @@ Den Text auf seine tragende Aussage verdichten: Forschungsproblem, Vorgehen, Bef
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Abstract-Schreiber.
 Schreibe ein Abstract mit 120–160 Wörtern.
 Muss enthalten:
@@ -502,7 +502,7 @@ Lesbarkeit und Interpretationsspielräume aus Sicht des Zielpublikums testen.
 
 ### Aufgabe
 
-``` markdown
+```markdown
 Rolle: Verständnischecker.
 Lies meinen Text als kritische:r Leser:in im Seminar.
 1) Was ist die These in einem Satz?

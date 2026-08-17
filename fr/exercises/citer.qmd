@@ -118,12 +118,12 @@ L'exercice a deux parties. La première partie traite de la **citation** des sou
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                     |
-| ------------------------------- | -------------------------------------------------------------------------------------------- |
-| **Durée**                       | env. 90 minutes                                                                            |
-| **Niveau**                      | Beginner                                                                                   |
-| **Parcours principal**          | Exercice 1 → exercice 2 → exercice 3                                                       |
-| **Approfondissement optionnel** | La variante avec un article derrière un péage                                              |
+| Indication                      | Valeur                                                                                        |
+| ------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 90 minutes                                                                               |
+| **Niveau**                      | Beginner                                                                                      |
+| **Parcours principal**          | Exercice 1 → exercice 2 → exercice 3                                                          |
+| **Approfondissement optionnel** | La variante avec un article derrière un péage                                                 |
 | **Rendu (minimum)**             | Une déclaration de l'usage de l'IA. [Journal IA](../glossary.qmd#gl-ki-protokoll): 4 entrées. |
 
 Les trois exercices font tous partie du parcours principal. L'approfondissement optionnel coûte environ 20 minutes de plus.
@@ -253,13 +253,13 @@ Une citation et une déclaration sont deux choses différentes. Une **citation**
 
 Dans les autres exercices, vous tenez un **journal IA**. Le journal est votre preuve de travail privée. Il contient les prompts, les réponses, les étapes de vérification et les décisions. La déclaration est l'énoncé public. Vous y résumez le journal en quelques phrases.
 
-| Caractéristique | Journal IA                                     | Déclaration                                |
-| --------------- | ---------------------------------------------- | ------------------------------------------ |
-| Destinataire    | vous-même et votre encadrement sur demande     | toutes les lectrices et tous les lecteurs  |
-| Étendue         | complet, toutes les entrées                    | court, souvent 5 à 15 phrases              |
-| Emplacement     | fichier propre ou annexe                       | emplacement fixe dans le travail           |
-| But             | reconstruction du processus de travail         | transparence et responsabilité             |
-| Moment          | en continu pendant le travail                  | à la fin, dérivée du journal               |
+| Caractéristique | Journal IA                                 | Déclaration                               |
+| --------------- | ------------------------------------------ | ----------------------------------------- |
+| Destinataire    | vous-même et votre encadrement sur demande | toutes les lectrices et tous les lecteurs |
+| Étendue         | complet, toutes les entrées                | court, souvent 5 à 15 phrases             |
+| Emplacement     | fichier propre ou annexe                   | emplacement fixe dans le travail          |
+| But             | reconstruction du processus de travail     | transparence et responsabilité            |
+| Moment          | en continu pendant le travail              | à la fin, dérivée du journal              |
 
 **Règle à retenir**: sans journal, vous ne pouvez pas écrire de déclaration conforme à la vérité.
 
@@ -279,13 +279,13 @@ Déclarez l'usage de l'IA dès qu'il est **substantiel**. Substantiel signifie c
 
 La déclaration scientifique et l'indication légale ont des destinataires différents. Gardez les deux distinctes.
 
-| Question    | Déclaration scientifique                                | Indication légale                                                                                     |
-| ----------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Fondement   | la règle de votre institution ou de votre revue          | le [règlement sur l'IA de l'Union européenne](../glossary.qmd#gl-kiverordnung), article 50, paragraphe 4 [@eu2024kiverordnung] |
-| S'applique  | à chaque usage substantiel                               | depuis le 2 août 2026, en cas d'usage professionnel                                                     |
-| Concerne    | chaque genre de texte, y compris un travail de séminaire | un [hypertrucage](../glossary.qmd#gl-deepfake), ainsi qu'un texte généré publié pour informer le public sur une question d'intérêt public |
-| Destinataire | votre communauté scientifique                           | le public                                                                                              |
-| Exception   | aucune, si l'institution exige une déclaration           | un texte qu'une personne a examiné et dont elle assume la responsabilité éditoriale                     |
+| Question     | Déclaration scientifique                                 | Indication légale                                                                                                                         |
+| ------------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Fondement    | la règle de votre institution ou de votre revue          | le [règlement sur l'IA de l'Union européenne](../glossary.qmd#gl-kiverordnung), article 50, paragraphe 4 [@eu2024kiverordnung]            |
+| S'applique   | à chaque usage substantiel                               | depuis le 2 août 2026, en cas d'usage professionnel                                                                                       |
+| Concerne     | chaque genre de texte, y compris un travail de séminaire | un [hypertrucage](../glossary.qmd#gl-deepfake), ainsi qu'un texte généré publié pour informer le public sur une question d'intérêt public |
+| Destinataire | votre communauté scientifique                            | le public                                                                                                                                 |
+| Exception    | aucune, si l'institution exige une déclaration           | un texte qu'une personne a examiné et dont elle assume la responsabilité éditoriale                                                       |
 
 Le règlement n'exige donc pas une indication pour chaque image générée et pour chaque texte généré. Une troisième obligation ne vous concerne pas: l'article 50, paragraphe 2, oblige le fournisseur à marquer les contenus générés dans un format lisible par machine.
 
@@ -308,12 +308,12 @@ Nommez aussi ce pour quoi vous n'avez **pas** employé d'IA. Cette indication vo
 
 L'emplacement dépend du type de texte. Le tableau suivant nomme les emplacements usuels. La consigne de votre institution ou de votre revue prime toujours.
 
-| Type de texte                                            | Emplacement de la déclaration                                                                                     |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Travail de séminaire, travail de proséminaire            | déclaration signée au début ou à la fin, souvent sur un formulaire de l'institution; détails en note ou en annexe |
-| Travail de qualification (bachelor, master, doctorat)    | formulaire de la faculté selon le règlement d'examen, plus une courte section dans la partie méthode              |
-| Article, contribution à un ouvrage, monographie           | partie méthode ou remerciements, selon les instructions aux auteurs de l'éditeur                                  |
-| Exposé, affiche, billet de blog                          | courte mention à la fin ou sur la dernière diapositive                                                              |
+| Type de texte                                         | Emplacement de la déclaration                                                                                     |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Travail de séminaire, travail de proséminaire         | déclaration signée au début ou à la fin, souvent sur un formulaire de l'institution; détails en note ou en annexe |
+| Travail de qualification (bachelor, master, doctorat) | formulaire de la faculté selon le règlement d'examen, plus une courte section dans la partie méthode              |
+| Article, contribution à un ouvrage, monographie       | partie méthode ou remerciements, selon les instructions aux auteurs de l'éditeur                                  |
+| Exposé, affiche, billet de blog                       | courte mention à la fin ou sur la dernière diapositive                                                            |
 
 L'Institut d'histoire de l'Université de Berne exige par exemple une déclaration d'IA signée pour chaque travail de séminaire. Une déclaration omise y vaut tromperie, comme un plagiat [@unibe2026kirichtlinien]. Les revues exigent le plus souvent l'indication au moment de la soumission, dans la partie méthode [@icmje2026recommendations].
 
@@ -353,7 +353,7 @@ Trois règles s'y appliquent:
 
 Modèle de note de bas de page:
 
-``` markdown
+```markdown
 1. [Fournisseur], réponse à «[votre prompt, abrégé]», [outil et version],
    [date de production], [lien public, s'il existe].
 ```
@@ -364,7 +364,7 @@ Un texte produit par l'IA n'est ni une source ni de la littérature secondaire. 
 
 L'exemple suivant se place à la fin du travail, avant la bibliographie. Il complète le formulaire de l'institution, il ne le remplace pas. Remplacez toutes les indications entre crochets par les vôtres.
 
-``` markdown
+```markdown
 ## Déclaration de l'usage de l'IA
 
 Pour ce travail, j'ai employé de l'IA générative. J'ai utilisé pour cela
@@ -399,7 +399,7 @@ demande.
 
 Pour un article, un court paragraphe dans la partie méthode suffit:
 
-``` markdown
+```markdown
 Pour les travaux préparatoires de cet article, j'ai employé un modèle de langue
 génératif ([outil, version, fournisseur], consulté en mars 2026): pour la
 structuration de l'argumentation, pour le résumé de 40 articles de presse et
@@ -439,7 +439,7 @@ Le texte intégral et un PDF sont librement disponibles sur <https://zeithistori
 
 ## Exercice 1: citation automatisée
 
-``` markdown
+```markdown
 Cite l'article <https://doi.org/10.14765/zzf.dok-1765> selon le Chicago Manual of Style (18e édition).
 Produis en plus une entrée dans un format que je peux importer directement dans mon logiciel de gestion bibliographique.
 ```
@@ -449,7 +449,7 @@ Un système doté d'une recherche sur le web appelle en général l'article lui-
 
 Seulement dans le cas exceptionnel où l'IA n'obtient pas l'accès à l'article, téléversez l'article en PDF. Vous pouvez aussi copier le contenu et les métadonnées au début du prompt et les séparer visuellement, par exemple avec """. Exemple:
 
-``` markdown
+```markdown
 """
 CONTENU DU DOCUMENT
 """
@@ -460,6 +460,7 @@ MÉTADONNÉES DU DOCUMENT
 
 VOTRE PROMPT
 ```
+
 :::
 
 Comparez la réponse avec votre citation manuelle, avec les recommandations de citation officielles de la page de l'éditeur, ou avec l'import par DOI dans votre logiciel de gestion bibliographique. Testez d'autres sources de littérature secondaire (d'autres articles, des monographies).
@@ -469,7 +470,7 @@ Comparez la réponse avec votre citation manuelle, avec les recommandations de c
 
 ## Exercice 2: résumé assisté par l'IA avec citations originales
 
-``` markdown
+```markdown
 Résume l'article <https://doi.org/10.14765/zzf.dok-1765>.
 Utilise uniquement des citations originales de l'article et cite-les selon le Chicago Manual of Style (18e édition).
 ```
@@ -495,7 +496,7 @@ Vous écrivez une déclaration complète pour un travail à vous. Vous dérivez 
 
 ### Tâche au moyen de l'IA
 
-``` markdown
+```markdown
 Voici mon journal IA:
 """
 [INSÉRER LE JOURNAL]

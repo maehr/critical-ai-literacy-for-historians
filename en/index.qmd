@@ -84,6 +84,7 @@ Utilize the methods and templates for your own research project.
 
 - **Prerequisite**: Complete the [**Prompt Engineering**](exercises/prompt-engineering.qmd) exercise first.
 - **Transfer**: Use the prompts and reflection questions from the other exercises and apply them to your own sources and topics.
+
 :::
 
 ## All Exercises
@@ -102,7 +103,7 @@ Moritz Mähr (Dr. sc. ETH Zurich) is an associate researcher in Digital Humaniti
 
 ## About This Project
 
-**Critical AI Literacy for Historians** is an educational initiative designed to equip historians with the knowledge and skills to critically engage with artificial intelligence technologies in their research practice. The frameworks and approaches presented here are largely based on the working paper *Implementing Generative AI in the Historical Studies*. [@oberbichler2025implementing]
+**Critical AI Literacy for Historians** is an educational initiative designed to equip historians with the knowledge and skills to critically engage with artificial intelligence technologies in their research practice. The frameworks and approaches presented here are largely based on the working paper _Implementing Generative AI in the Historical Studies_. [@oberbichler2025implementing]
 
 ### Pedagogical Framework
 

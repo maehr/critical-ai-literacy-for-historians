@@ -50,7 +50,7 @@ Cet exercice a été traduit automatiquement depuis l'[original allemand](../../
 
 ## Aperçu et objectif didactique
 
-Cet exercice transmet des **compétences transférables de critique des sources** (critique externe et interne), à partir d'une source concrète des *Documents diplomatiques suisses (Dodis)*. La question centrale est de savoir comment une source est traitée **comme objet de preuve historique**: non pas comme un «réservoir de faits», mais comme un **artefact situé**, avec un contexte de création et une histoire de transmission.
+Cet exercice transmet des **compétences transférables de critique des sources** (critique externe et interne), à partir d'une source concrète des _Documents diplomatiques suisses (Dodis)_. La question centrale est de savoir comment une source est traitée **comme objet de preuve historique**: non pas comme un «réservoir de faits», mais comme un **artefact situé**, avec un contexte de création et une histoire de transmission.
 
 **Étude de cas (source primaire): [Dodis: La Suisse et le Conseil de l'Europe](https://dodis.ch/5020)**
 
@@ -63,12 +63,12 @@ La source utilisée ici existe dans une **édition numérique préparée éditor
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                                                                     |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Durée**                       | env. 180 minutes                                                                                                                           |
-| **Niveau**                      | Intermediate                                                                                                                               |
-| **Parcours principal**          | 1 → 2 → 3 → 5 → 6                                                                                                                          |
-| **Approfondissement optionnel** | 4 (contextualisation et contre-épreuve)                                                                                                    |
+| Indication                      | Valeur                                                                                                                                        |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 180 minutes                                                                                                                              |
+| **Niveau**                      | Intermediate                                                                                                                                  |
+| **Parcours principal**          | 1 → 2 → 3 → 5 → 6                                                                                                                             |
+| **Approfondissement optionnel** | 4 (contextualisation et contre-épreuve)                                                                                                       |
 | **Rendu (minimum)**             | [Journal d'analyse de source](../glossary.qmd#gl-analyseprotokoll) pour une source. [Journal IA](../glossary.qmd#gl-ki-protokoll): 6 entrées. |
 
 Le parcours principal vous mène à une critique des sources complète en 180 minutes environ. L'étape 4 coûte environ 90 minutes de plus, car vous y cherchez d'autres sources.
@@ -149,7 +149,7 @@ Formulez en **4 phrases au plus**:
 
 ### Tâche 1b: la même paraphrase minimale au moyen de l'IA
 
-``` markdown
+```markdown
 Analyse la note de dossier jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds aux questions suivantes:
 Qui parle et qui agit?
 Quelle est l'occasion?
@@ -167,7 +167,7 @@ Téléversez le document en fichier PDF avec le prompt. C'est le cas normal. Ass
 
 Seulement dans le cas exceptionnel où le téléversement ne fonctionne pas, copiez le contenu du document au début du prompt. Séparez-le visuellement, par exemple avec """. Exemple:
 
-``` markdown
+```markdown
 """
 CONTENU DU DOCUMENT
 """
@@ -200,7 +200,7 @@ Comparez donc chaque citation avec la numérisation. Notez dans le [journal d'an
 
 ### Tâche 2a: première heuristique de recherche sans IA
 
-Notez trois **questions de recherche potentielles** que l'on pourrait *en principe* traiter avec cette source (sans délimitation pour l'instant). Exemples de types de questions:
+Notez trois **questions de recherche potentielles** que l'on pourrait _en principe_ traiter avec cette source (sans délimitation pour l'instant). Exemples de types de questions:
 
 - histoire des concepts (la neutralité comme argument)
 - histoire des institutions (voies de décision en politique étrangère)
@@ -209,7 +209,7 @@ Notez trois **questions de recherche potentielles** que l'on pourrait *en princi
 
 ### Tâche 2b: la même heuristique de recherche au moyen de l'IA
 
-``` markdown
+```markdown
 Donne-moi trois questions de recherche historiques possibles que l'on peut dériver de la note de dossier jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe).
 Formule chaque question pour qu'elle soit (a) délimitable dans le temps, (b) vérifiable sur les sources et (c) analytique.
 Pour chaque question, nomme les genres de sources supplémentaires dont j'ai besoin pour la contre-épreuve.
@@ -269,7 +269,7 @@ Reconstruisez une chaîne de transmission plausible:
 
 ### Tâche 4: critique externe au moyen de l'IA
 
-``` markdown
+```markdown
 Analyse la note de dossier éditée numériquement (Dodis 5020, Berne 7.7.1949) exclusivement sous l'angle de la critique externe des sources.
 
 1) Identifie sur la base des métadonnées:
@@ -312,7 +312,7 @@ Déterminez la fonction de la note dans le contexte administratif (de manière p
 - Oriente-t-elle la formation d'opinion interne?
 - Marque-t-elle une ligne rouge (la neutralité comme signal d'arrêt)?
 
-**Résultat:** 1 paragraphe (6 à 10 phrases) qui argumente la *fonction* et l'*adressage*, avec des preuves textuelles.
+**Résultat:** 1 paragraphe (6 à 10 phrases) qui argumente la _fonction_ et l'_adressage_, avec des preuves textuelles.
 
 ### Tâche 2: cartographie d'arguments (la neutralité comme opérateur clé)
 
@@ -325,7 +325,7 @@ Extrayez tous les passages qui concernent la neutralité, la compatibilité ou l
 
 **Format proposé (Markdown):**
 
-``` markdown
+```markdown
 - Affirmation:
 - Justification:
 - Prémisse:
@@ -371,7 +371,7 @@ S'il te manque une preuve, marque-la comme hypothèse.
 
 ### Tâche 5: critique interne au moyen de l'IA
 
-``` markdown
+```markdown
 Mène une critique interne des sources de la note de dossier jointe (Berne, 7.7.1949, Petitpierre/Hansen).
 
 Analyse séparément:
@@ -406,7 +406,7 @@ La note renvoie indirectement à d'autres contextes (par exemple des commissions
 Établissez une **matrice de recherche** (6 lignes au moins):
 
 | Trace dans le texte | Que chercher exactement? | Genre de source attendu | Où chercher? | But de la contre-épreuve |
-|---------------|---------------|---------------|---------------|---------------|
+| ------------------- | ------------------------ | ----------------------- | ------------ | ------------------------ |
 
 Exemples pour «Où chercher?» (comme catégories, sans prétention d'exhaustivité):
 
@@ -418,7 +418,7 @@ Exemples pour «Où chercher?» (comme catégories, sans prétention d'exhaustiv
 
 ### Tâche 2: contre-question contrefactuelle (instrument de contrôle)
 
-Formulez deux contre-questions qui *mettent la note à l'épreuve*:
+Formulez deux contre-questions qui _mettent la note à l'épreuve_:
 
 - Que devrais-je trouver pour que la thèse «la neutralité a empêché l'adhésion» devienne **trop grossière**?
 - Que devrais-je trouver pour que l'affirmation sur la votation populaire apparaisse **comme rhétorique stratégique** et non comme pronostic?
@@ -442,7 +442,7 @@ Ne donne aucune affirmation sur le contenu de ces sources, seulement un plan et 
 
 ### Tâche 3: planification de la recherche et de la contre-épreuve au moyen de l'IA
 
-``` markdown
+```markdown
 Dérive de la note de dossier (Berne, 7.7.1949, Petitpierre/Hansen) un plan de recherche systématique.
 
 1) Nomme au moins:
@@ -478,7 +478,7 @@ Déterminer la valeur probante de manière strictement **relationnelle**: source
 
 **A. Bien étayé (haute certitude)** — les affirmations que la note porte directement (avec preuve textuelle).
 
-**B. Non étayé ou ouvert (veto)** — les affirmations que la note *suggère*, mais qu'elle n'étaye pas, voire qu'elle exclut.
+**B. Non étayé ou ouvert (veto)** — les affirmations que la note _suggère_, mais qu'elle n'étaye pas, voire qu'elle exclut.
 
 Questions directrices:
 
@@ -511,7 +511,7 @@ Marque chaque affirmation comme: certaine / probable / spéculative.
 
 ### Tâche 3: profil de preuve au moyen de l'IA
 
-``` markdown
+```markdown
 Établis sur la base de la note de dossier deux listes séparées:
 
 A) Les affirmations que le texte étaye directement et sans ambiguïté.

@@ -105,12 +105,12 @@ L'exercice suit un processus circulaire de recherche et d'analyse: le point de d
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                                                                                                                                       |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Durée**                       | env. 1 journée de travail (6 à 8 heures)                                                                                                                                                                     |
-| **Niveau**                      | Intermediate                                                                                                                                                                                                 |
-| **Parcours principal**          | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                                                    |
-| **Approfondissement optionnel** | 4 (voies spécialisées), 7 (cartographie des débats), Advanced Track                                                                                                                                          |
+| Indication                      | Valeur                                                                                                                                                                                                            |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 1 journée de travail (6 à 8 heures)                                                                                                                                                                          |
+| **Niveau**                      | Intermediate                                                                                                                                                                                                      |
+| **Parcours principal**          | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                                                         |
+| **Approfondissement optionnel** | 4 (voies spécialisées), 7 (cartographie des débats), Advanced Track                                                                                                                                               |
 | **Rendu (minimum)**             | [Journal de recherche documentaire](../glossary.qmd#gl-rechercheprotokoll): 12 entrées. [Journal des rejets](../glossary.qmd#gl-reject-log): 5 entrées. [Journal IA](../glossary.qmd#gl-ki-protokoll): 4 entrées. |
 
 Répartissez la journée de travail sur deux ou trois séances. Le parcours principal vous mène à une question de recherche précisée. L'approfondissement optionnel coûte environ 2 heures de plus.
@@ -171,7 +171,7 @@ Le système doit savoir faire les trois choses suivantes:
 
 **L'analyse bibliographique** est la lecture critique et orientée problème de cette littérature, pour reconstruire les arguments, les références théoriques, les méthodes, les bases de preuves et les controverses, plutôt que pour en extraire des «faits».
 
-**Étude de cas**: *histoire de la sécurité sociale en Suisse* (État social, AVS, AI, AA, AMal, AC, fédéralisme, associations, ordre de genre, transferts transnationaux).
+**Étude de cas**: _histoire de la sécurité sociale en Suisse_ (État social, AVS, AI, AA, AMal, AC, fédéralisme, associations, ordre de genre, transferts transnationaux).
 
 ::: callout-note
 
@@ -241,7 +241,7 @@ Formulez en 5 à 8 phrases:
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Je travaille sur le sujet «Histoire de la sécurité sociale en Suisse».
 Propose 6 variantes de focus orientées problème et traitables historiquement (chacune avec: période, focus sur les acteurs et les arènes, mécanisme).
 Pour chaque variante, donne 8 termes de recherche (DE/FR/EN; termes historiquement plausibles) et 3 types de littérature attendus (monographie, article, chapitre d'ouvrage collectif).
@@ -252,7 +252,7 @@ Aucun titre inventé.
 
 Marquez dans la réponse:
 
-- les catégories anachroniques (à signaler comme *ancres de recherche rétrospectives*),
+- les catégories anachroniques (à signaler comme _ancres de recherche rétrospectives_),
 - les présupposés théoriques implicites (par exemple «régime de protection sociale»),
 - les perspectives manquantes (par exemple le genre, le niveau cantonal, l'OIT et les transferts).
 
@@ -289,7 +289,7 @@ Extrayez-en:
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 À partir des termes et des points fixes suivants: <insérer ici vos 6 points fixes et vos 5 marqueurs de débat>
 1) Construis une carte des débats (4–6 axes de débat) sur l'histoire de la sécurité sociale en Suisse.
 2) Attribue à chaque axe 5–8 types d'auteurs ou de travaux que l'on attendrait typiquement (sans inventer de titres concrets).
@@ -328,7 +328,7 @@ Documentez pour chaque série:
 
 Menez les séries de recherche **de manière heuristique** au moyen de l'IA. Donnez un contexte suffisant.
 
-``` markdown
+```markdown
 Tu es un assistant de recherche en histoire, avec des connaissances de l'histoire sociale,
 économique et politique de la Suisse.
 
@@ -375,7 +375,7 @@ Extrayez-en:
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 À partir de ces 5 résumés et titres: <insérer ici vos 5 résumés ou titres>
 1) Regroupe-les selon la logique de questionnement (institutionnelle, centrée sur les acteurs, histoire des idées, économie politique, genre).
 2) Propose 2 mots-clés de suivi par groupe (DE/FR/EN) et nomme pour chacun 1 «angle mort» typique.
@@ -405,7 +405,7 @@ Documentez:
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Voici 10 références tirées de la bibliographie d'un texte de départ: <insérer ici vos 10 références>
 Classe-les selon:
 (a) l'axe de débat, (b) la méthode, (c) la base documentaire attendue.
@@ -414,9 +414,9 @@ Marque: lesquelles des 3 seraient indispensables pour une section «état de la 
 
 ### Contrôle critique
 
-Tenez dans le journal de recherche documentaire une section *journal des rejets*: au moins 5 résultats rejetés, mais «plausibles et tentants», avec le motif du rejet (mauvaise période, mauvaise arène, seulement de vulgarisation, etc.).
+Tenez dans le journal de recherche documentaire une section _journal des rejets_: au moins 5 résultats rejetés, mais «plausibles et tentants», avec le motif du rejet (mauvaise période, mauvaise arène, seulement de vulgarisation, etc.).
 
-**Livrable**: liste boule de neige (≥ 30 références au total) et section *journal des rejets* (≥ 5).
+**Livrable**: liste boule de neige (≥ 30 références au total) et section _journal des rejets_ (≥ 5).
 
 ## 6. Tri et évaluation de la qualité: pertinence, argument, méthode, preuve
 
@@ -439,7 +439,7 @@ Appliquez-la à 6 titres de votre corpus (extrait court, 150 à 250 mots par tit
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Utilise cette grille: <insérer ici votre grille d'évaluation>
 Établis pour chacun des titres ou résumés suivants une annotation courte et structurée (max. 180 mots),
 avec (1) l'apport supposé, (2) l'approche méthodique, (3) les biais ou limites possibles.
@@ -469,7 +469,7 @@ Faire du corpus une «conversation» reconstruite: qui argumente comment, et pou
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 Voici mon mémo de débat: <insérer ici votre mémo de débat>
 1) Identifie les présupposés implicites (agentivité et structure, public et privé, normativité, diagnostics d'époque).
 2) Propose 2 structurations alternatives (par exemple par arènes plutôt que par thèmes).
@@ -488,12 +488,12 @@ Dériver de l'état de la littérature une question de recherche traitable et an
 
 Formulez:
 
-- 1 énoncé de lacune de recherche (3 phrases au plus): *«La recherche a montré X; Y reste flou, parce que …»*
-- 2 questions de recherche (1 phrase chacune), plausibles *sur la base des sources et de la littérature*.
+- 1 énoncé de lacune de recherche (3 phrases au plus): _«La recherche a montré X; Y reste flou, parce que …»_
+- 2 questions de recherche (1 phrase chacune), plausibles _sur la base des sources et de la littérature_.
 
 ### Tâche (exploration par l'IA)
 
-``` markdown
+```markdown
 À partir de cette lacune de recherche: <insérer ici votre énoncé de lacune de recherche>
 Formule 4 variantes d'une question de recherche historique analytique.
 Pour chaque variante:
@@ -526,6 +526,7 @@ Dans cet exercice, l'IA peut aider à élargir les espaces de recherche et à st
 - la vérification bibliographique (catalogue, DOI),
 - l'examen par la critique des sources de la base de preuves,
 - le jugement historiographique.
+
 :::
 
 ## Résultat d'apprentissage
@@ -533,7 +534,7 @@ Dans cet exercice, l'IA peut aider à élargir les espaces de recherche et à st
 À la fin, vous disposez de ces artefacts:
 
 1. L'énoncé de focus et la carte des débats (1 à 2 pages)
-2. Le journal de recherche documentaire avec sa section recherche (≥ 12 entrées) et sa section *journal des rejets* (≥ 5 entrées)
+2. Le journal de recherche documentaire avec sa section recherche (≥ 12 entrées) et sa section _journal des rejets_ (≥ 5 entrées)
 3. La bibliographie brièvement annotée (10 à 15 titres)
 4. Le mémo de débat (400 à 600 mots)
 5. La lacune de recherche, la question de recherche et le champ de risque (env. 1 page)
@@ -546,7 +547,6 @@ S'y ajoute une connaissance méthodique: vous pouvez justifier quels résultats 
 - Exportez les métadonnées (titre, auteur, année, mots-clés) depuis swisscovery ou depuis votre logiciel de gestion bibliographique.
 
 - Construisez une carte bibliographique simple:
-
   - l'évolution dans le temps (années de publication),
   - les langues et les types de publication,
   - un réseau de co-citations ou de mots-clés (prudence: les mots-clés de catalogue sont curés et porteurs de biais).

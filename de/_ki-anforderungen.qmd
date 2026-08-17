@@ -22,11 +22,11 @@ Manche Systeme übernehmen Angaben aus früheren Sitzungen oder aus einem Projek
 
 Prüfen Sie, mit welchem Konto Sie arbeiten. Die Regeln unterscheiden sich in drei Punkten.
 
-| Punkt              | Konto Ihrer Institution                                          | Privates Konto                                              |
-| ------------------ | ---------------------------------------------------------------- | ----------------------------------------------------------- |
-| Vertrag            | Ihre Hochschule schliesst ihn ab und haftet mit.                 | Sie schliessen ihn selbst ab und haften allein.             |
-| Training           | Ein Vertrag schliesst die Nutzung Ihrer Eingaben oft aus.        | Viele Anbieter nutzen Eingaben für das Training.            |
-| Erlaubtes Material | Die Hochschule regelt, welche Daten Sie eingeben dürfen.         | Sie haben keine solche Regel und tragen das Risiko selbst.  |
+| Punkt              | Konto Ihrer Institution                                   | Privates Konto                                             |
+| ------------------ | --------------------------------------------------------- | ---------------------------------------------------------- |
+| Vertrag            | Ihre Hochschule schliesst ihn ab und haftet mit.          | Sie schliessen ihn selbst ab und haften allein.            |
+| Training           | Ein Vertrag schliesst die Nutzung Ihrer Eingaben oft aus. | Viele Anbieter nutzen Eingaben für das Training.           |
+| Erlaubtes Material | Die Hochschule regelt, welche Daten Sie eingeben dürfen.  | Sie haben keine solche Regel und tragen das Risiko selbst. |
 
 Fragen Sie die IT-Stelle oder die Bibliothek Ihrer Hochschule, wenn Sie die Regeln nicht finden. Halten Sie die Antwort in Ihrem [KI-Protokoll](../glossary.qmd#gl-ki-protokoll) fest.
 

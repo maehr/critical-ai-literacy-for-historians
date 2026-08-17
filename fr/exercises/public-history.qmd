@@ -111,16 +111,16 @@ Cet exercice a été traduit automatiquement depuis l'[original allemand](../../
 
 ## Aperçu et objectif didactique
 
-Cet exercice entraîne la communication des savoirs en Public History comme un **travail de traduction par étapes**: d'un article scientifique (argument, preuves, incertitudes) vers des formats orientés public. L'IA générative n'y est **pas** une autorité, mais un *outil pour l'ébauche, la variation, la révision et la relecture*, avec un lien constant aux sources, la traçabilité et des limites claires.
+Cet exercice entraîne la communication des savoirs en Public History comme un **travail de traduction par étapes**: d'un article scientifique (argument, preuves, incertitudes) vers des formats orientés public. L'IA générative n'y est **pas** une autorité, mais un _outil pour l'ébauche, la variation, la révision et la relecture_, avec un lien constant aux sources, la traçabilité et des limites claires.
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                                                                                        |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Durée**                       | env. 4 heures                                                                                                                                                 |
-| **Niveau**                      | Intermediate                                                                                                                                                  |
-| **Parcours principal**          | 1 → 2 → 3 → 4 → 5A → 6                                                                                                                                        |
-| **Approfondissement optionnel** | 5B (script de podcast), 5C (blocs de texte d'affiche)                                                                                                         |
+| Indication                      | Valeur                                                                                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Durée**                       | env. 4 heures                                                                                                                              |
+| **Niveau**                      | Intermediate                                                                                                                               |
+| **Parcours principal**          | 1 → 2 → 3 → 4 → 5A → 6                                                                                                                     |
+| **Approfondissement optionnel** | 5B (script de podcast), 5C (blocs de texte d'affiche)                                                                                      |
 | **Rendu (minimum)**             | Un billet de blog de 700 à 1000 mots. [Journal IA](../glossary.qmd#gl-ki-protokoll): 8 entrées et une note de réflexion de 300 à 500 mots. |
 
 Le parcours principal vous mène en 4 heures environ à un billet de blog et à deux formats courts. Répartissez le temps sur deux séances. Chaque approfondissement optionnel coûte environ 45 minutes de plus.
@@ -176,7 +176,7 @@ Le texte de base est un article scientifique de votre champ thématique, en libr
 Termes (pour cet exercice):
 
 - **Veto de la source:** toute accentuation narrative est permise, **pour autant** qu'elle ne contredise pas les affirmations étayées dans l'article.
-- **Contrôle affirmation par affirmation:** les énoncés sont décomposés en *affirmations* vérifiables, puis reliés à un lieu de preuve ou marqués comme spéculation.
+- **Contrôle affirmation par affirmation:** les énoncés sont décomposés en _affirmations_ vérifiables, puis reliés à un lieu de preuve ou marqués comme spéculation.
 
 Les moteurs de recherche et les systèmes d'IA structurent la visibilité de manière problématique. [@noble2018oppression] Les contenus produits par l'IA pour des usages de Public History comportent des risques particuliers, car ils atteignent un large public sans expertise disciplinaire. [@bender2021stochastic]
 
@@ -224,7 +224,7 @@ L'exception pour un texte examiné ne supprime pas votre déclaration scientifiq
 
 ### Objectif
 
-Opérationnaliser la médiation comme une **décision dépendante du contexte**: pour *qui*, *où*, *pourquoi*, *dans quel médium*?
+Opérationnaliser la médiation comme une **décision dépendante du contexte**: pour _qui_, _où_, _pourquoi_, _dans quel médium_?
 
 ### Tâche
 
@@ -234,11 +234,11 @@ Choisissez un contexte de médiation concret (par exemple le blog d'un musée, u
 - le but: informer, contextualiser, ouvrir un débat, donner un savoir pour agir, etc.
 - le médium et le format: longueur, ton, visuel ou audio, interaction
 - les contraintes: langue ou langues, accessibilité, terminologie, limites juridiques et éthiques
-- les critères de réussite: qu'est-ce que le public doit ensuite *savoir*, *savoir faire* ou *voir autrement*?
+- les critères de réussite: qu'est-ce que le public doit ensuite _savoir_, _savoir faire_ ou _voir autrement_?
 
 ### Flux de travail avec l'IA (esquisse de prompt)
 
-``` markdown
+```markdown
 Tu es assistant de recherche sur les publics. Produis 2–3 personas plausibles de public cible pour le contexte suivant (sans inventer de faits sur des personnes réelles).
 Pour chaque persona: connaissances préalables, motivations, malentendus possibles, exemples et métaphores appropriés, interdits.
 Contexte: ...
@@ -248,7 +248,7 @@ Sujet ou article en 3 phrases: ...
 ### Confrontation critique
 
 - Une persona n'est pas la réalité: complétez et vérifiez les hypothèses (par exemple avec de vraies indications sur le public, des concepts de musée, des lignes directrices médiatiques).
-- Quelles simplifications seraient risquées sur le plan épistémique? Notez vos *lignes rouges*.
+- Quelles simplifications seraient risquées sur le plan épistémique? Notez vos _lignes rouges_.
 
 ## 2. Carte des messages et route narrative
 
@@ -260,7 +260,7 @@ Construire une **architecture communicative centrale** qui reste stable d'un for
 
 Établissez:
 
-1. **Une phrase-clé** (1 phrase): quel est le message central, et pourquoi compte-t-il *pour ce public cible*?
+1. **Une phrase-clé** (1 phrase): quel est le message central, et pourquoi compte-t-il _pour ce public cible_?
 2. **3 à 4 points d'appui** (1 à 2 phrases chacun), avec un renvoi aux preuves
 3. **Une matrice de preuves**: quels points d'appui reposent sur quelles données ou quels passages de sources?
 4. **Le contexte et la mise en perspective**: qu'est-ce qu'il faut expliquer pour que rien ne soit déformé?
@@ -268,7 +268,7 @@ Construire une **architecture communicative centrale** qui reste stable d'un for
 
 ### Flux de travail avec l'IA (esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: tu es structurateur. Travaille uniquement avec le paquet de sources et le briefing.
 Produis une carte des messages (phrase-clé + 3–4 points d'appui + «et alors» pour le public cible).
 Marque chaque point avec des identifiants d'affirmation et signale les paragraphes de contexte nécessaires.
@@ -298,7 +298,7 @@ Matériel: ...
 
 ### Flux de travail avec l'IA (esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: tu es rédacteur de blog. Écris un billet de blog pour le contexte suivant.
 Consignes: longueur 900 mots, intertitres clairs, aucun fait nouveau.
 Utilise des identifiants d'affirmation dans le texte, entre crochets, par exemple [C3].
@@ -326,7 +326,7 @@ Faire d'une ébauche plausible un produit de médiation robuste.
 
 ### Flux de travail avec l'IA (esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: tu es vérificateur de faits.
 1) Liste tous les faits et énoncés affirmés dans l'ébauche.
 2) Rattache-les à des identifiants d'affirmation ou marque «pas dans le paquet de sources».
@@ -345,7 +345,7 @@ Les tâches suivantes sont conçues à dessein comme des **adaptations**: vous r
 
 ### 5A Médias sociaux (fil et publication unique)
 
-**Objectif:** traduire le message central dans un *médium d'attention*, sans surenchère.
+**Objectif:** traduire le message central dans un _médium d'attention_, sans surenchère.
 
 **Tâche:**
 
@@ -357,7 +357,7 @@ Les tâches suivantes sont conçues à dessein comme des **adaptations**: vous r
 
 **Flux de travail avec l'IA**
 
-``` markdown
+```markdown
 Produis 3 variantes (conservatrice / narrative / peu provocatrice) pour un fil.
 Règles: aucun fait nouveau, aucune exagération racoleuse, intègre une publication d'incertitudes.
 Entrée: carte des messages + extrait du texte du blog + contexte.
@@ -375,7 +375,7 @@ Entrée: carte des messages + extrait du texte du blog + contexte.
 
 **Flux de travail avec l'IA**
 
-``` markdown
+```markdown
 Écris un script de podcast (7 minutes) pour [public cible / contexte].
 Structure: accroche (15 s) – contexte (60 s) – points centraux (3 × 90 s) – incertitudes (45 s) – conclusion (30 s).
 N'utilise que des affirmations du paquet de sources et marque les identifiants d'affirmation en marge du manuscrit.
@@ -394,7 +394,7 @@ N'utilise que des affirmations du paquet de sources et marque les identifiants d
 
 **Flux de travail avec l'IA**
 
-``` markdown
+```markdown
 Produis des blocs de texte d'affiche, avec une limite de mots stricte et sans faits nouveaux.
 Fais attention à: des termes clairs, aucun jugement implicite, des identifiants d'affirmation par bloc.
 Entrée: carte des messages + matrice de preuves.
@@ -413,12 +413,12 @@ Savoir parler de la recherche avec assurance, avec précision et avec peu de ris
 - **3 extraits sonores** de 12 à 20 secondes chacun, formulés dans le sens du propos,
 - **5 questions centrales** avec des réponses courtes de 3 à 5 phrases chacune,
 - **2 questions critiques** (par exemple «N'est-ce pas plutôt…?») avec des stratégies de transition,
-- une **liste d'interdits** avec les affirmations que vous *ne* faites pas, parce que les preuves, la complexité ou l'éthique s'y opposent,
+- une **liste d'interdits** avec les affirmations que vous _ne_ faites pas, parce que les preuves, la complexité ou l'éthique s'y opposent,
 - une **phrase de transparence** sur la méthode et sur l'état des données (1 à 2 phrases).
 
 ### Flux de travail avec l'IA (esquisse de prompt)
 
-``` markdown
+```markdown
 Rôle: tu es coach média. Produis un kit d'entretien pour la radio ou la presse.
 Règles: aucun fait nouveau, les extraits sonores doivent restituer correctement les affirmations, ne masque pas les incertitudes.
 Entrée: carte des messages + paquet de sources + ébauche du blog ou du podcast.
@@ -435,7 +435,7 @@ Entrée: carte des messages + paquet de sources + ébauche du blog ou du podcast
 
 1. Le **briefing de communication** (1 page)
 2. La **carte des messages et la matrice de preuves** (en tableau ou en mots-clés)
-3. Le **billet de blog** (env. 700 à 1000 mots) *ou* le **script de podcast** (env. 6 à 8 minutes)
+3. Le **billet de blog** (env. 700 à 1000 mots) _ou_ le **script de podcast** (env. 6 à 8 minutes)
 4. **Deux formats courts** parmi: médias sociaux, blocs de texte d'affiche, kit d'entretien
 5. Le **journal IA** avec au moins 8 entrées et une note de réflexion (env. 300 à 500 mots)
 

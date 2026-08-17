@@ -104,16 +104,16 @@ references:
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung trainiert Public-History-Wissenskommunikation als **prozessuale Übersetzungsarbeit**: von einem wissenschaftlichen Artikel (Argument, Belege, Unsicherheiten) hin zu publikumsorientierten Formaten. Generative KI wird dabei **nicht** als Autorität, sondern als *Werkzeug für Entwurf, Variation, Redigieren und Gegenlesen* verwendet – mit konsequentem Quellenbezug, Nachvollziehbarkeit und klaren Grenzen.
+Diese Übung trainiert Public-History-Wissenskommunikation als **prozessuale Übersetzungsarbeit**: von einem wissenschaftlichen Artikel (Argument, Belege, Unsicherheiten) hin zu publikumsorientierten Formaten. Generative KI wird dabei **nicht** als Autorität, sondern als _Werkzeug für Entwurf, Variation, Redigieren und Gegenlesen_ verwendet – mit konsequentem Quellenbezug, Nachvollziehbarkeit und klaren Grenzen.
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                                     |
-| ------------------------ | ------------------------------------------------------------------------------------------ |
-| **Dauer**                | ca. 4 Stunden                                                                            |
-| **Niveau**               | Intermediate                                                                             |
-| **Kernpfad**             | 1 → 2 → 3 → 4 → 5A → 6                                                                   |
-| **Optionale Vertiefung** | 5B (Podcast-Skript), 5C (Poster-Textbausteine)                                            |
+| Angabe                   | Wert                                                                                                                                                 |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 4 Stunden                                                                                                                                        |
+| **Niveau**               | Intermediate                                                                                                                                         |
+| **Kernpfad**             | 1 → 2 → 3 → 4 → 5A → 6                                                                                                                               |
+| **Optionale Vertiefung** | 5B (Podcast-Skript), 5C (Poster-Textbausteine)                                                                                                       |
 | **Abgabe (Minimum)**     | Ein Blogpost von 700 bis 1000 Wörtern. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 8 Einträge und eine Reflexionsnotiz von 300 bis 500 Wörtern. |
 
 Der Kernpfad führt Sie in ca. 4 Stunden zu einem Blogpost und zu zwei Kurzformaten. Teilen Sie die Zeit auf zwei Sitzungen auf. Jede optionale Vertiefung kostet ca. 45 Minuten zusätzlich.
@@ -169,7 +169,7 @@ Basistext ist ein (möglichst open-access) wissenschaftlicher Artikel aus Ihrem 
 Begriffe (für diese Übung):
 
 - **Quellen-Veto:** Jede narrative Zuspitzung ist erlaubt, **sofern** sie nicht im Widerspruch zu den im Artikel belegten Aussagen steht.
-- **Claim-by-claim Check:** Aussagen werden als überprüfbare *Behauptungen* zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
+- **Claim-by-claim Check:** Aussagen werden als überprüfbare _Behauptungen_ zerlegt (Claim), mit Belegstelle verknüpft oder als Spekulation markiert.
 
 Suchmaschinen und KI-Systeme strukturieren Sichtbarkeit auf problematische Weise. [@noble2018oppression] KI-generierte Inhalte für Public-History-Anwendungen bergen besondere Risiken, da sie ein breites Publikum ohne Fachexpertise erreichen. [@bender2021stochastic]
 
@@ -217,7 +217,7 @@ Die Ausnahme für geprüften Text hebt Ihre wissenschaftliche Offenlegung nicht 
 
 ### Ziel
 
-Vermittlung als **kontextabhängige Entscheidung** operationalisieren: Für *wen*, *wo*, *warum*, *in welchem Medium*?
+Vermittlung als **kontextabhängige Entscheidung** operationalisieren: Für _wen_, _wo_, _warum_, _in welchem Medium_?
 
 ### Aufgabe
 
@@ -227,11 +227,11 @@ Wählen Sie einen konkreten Vermittlungskontext (z.B. Museumsblog, Lokalzeitung,
 - Zweck: informieren / kontextualisieren / Debatte eröffnen / Handlungswissen etc.
 - Medium/Format: Länge, Ton, Visualität/Audio, Interaktion
 - Vorgaben: Sprache(n), Zugänglichkeit, Terminologie, rechtliche/ethische Grenzen
-- Erfolgskriterien: Was sollen Rezipierende nachher *wissen* / *können* / *anders sehen*?
+- Erfolgskriterien: Was sollen Rezipierende nachher _wissen_ / _können_ / _anders sehen_?
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Du bist Audience-Research-Assistent:in. Erzeuge 2–3 plausible Zielgruppen-Personas für folgenden Kontext (ohne Fakten über reale Personen zu erfinden).
 Für jede Persona: Vorwissen, Motivationen, mögliche Missverständnisse, geeignete Beispiele/Metaphern, No-gos.
 Kontext: ...
@@ -241,7 +241,7 @@ Thema/Artikel in 3 Sätzen: ...
 ### Kritischer Abgleich
 
 - Persona ≠ Realität: Ergänzen/prüfen Sie Annahmen (z.B. mit realen Zielgruppenhinweisen, Museumskonzepten, Medienrichtlinien).
-- Welche Vereinfachungen wären epistemisch riskant? Notieren Sie *rote Linien*.
+- Welche Vereinfachungen wären epistemisch riskant? Notieren Sie _rote Linien_.
 
 ## 2. Message Map und narrative Route
 
@@ -253,7 +253,7 @@ Eine **kommunikative Kernarchitektur** bauen, die formatübergreifend stabil ble
 
 Erstellen Sie:
 
-1. **One-liner** (1 Satz): Was ist die Kernbotschaft – und warum zählt sie *für diese Zielgruppe*?
+1. **One-liner** (1 Satz): Was ist die Kernbotschaft – und warum zählt sie _für diese Zielgruppe_?
 2. **3–4 Stützpunkte** (je 1–2 Sätze) mit Belegbezug
 3. **Evidenzmatrix**: Welche Stützpunkte stützen sich auf welche Daten/Quellenstellen?
 4. **Kontext/Einordnung**: Was muss erklärt werden, damit nichts verzerrt wird?
@@ -261,7 +261,7 @@ Erstellen Sie:
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Strukturierer:in. Arbeite nur mit dem Quellenpaket + Briefing.
 Erzeuge eine Message Map (One-liner + 3–4 Stützpunkte + 'So what' für die Zielgruppe).
 Markiere jeden Punkt mit Claim-IDs und weise auf notwendige Kontextabsätze hin.
@@ -291,7 +291,7 @@ Schreiben Sie einen Blogpost von ca. 700–1'000 Wörtern. Der Blogpost enthält
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Blogredaktor:in. Schreibe einen Blogpost für folgenden Kontext.
 Vorgaben: Länge 900 Wörter, klare Zwischenüberschriften, keine neuen Fakten.
 Nutze Claim-IDs im Text in eckigen Klammern, z.B. [C3].
@@ -319,7 +319,7 @@ Aus einem plausiblen Entwurf ein robustes Vermittlungsprodukt machen.
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Fact-Checker:in.
 1) Liste alle behaupteten Fakten/Aussagen im Entwurf.
 2) Ordne sie Claim-IDs zu oder markiere 'nicht im Quellenpaket'.
@@ -338,7 +338,7 @@ Die folgenden Aufgaben sind bewusst als **Adaptionen** konzipiert: Sie recyclen 
 
 ### 5A Social Media (Thread + Single Post)
 
-**Ziel:** Kernbotschaft in ein *Aufmerksamkeitsmedium* übersetzen, ohne Overclaiming.
+**Ziel:** Kernbotschaft in ein _Aufmerksamkeitsmedium_ übersetzen, ohne Overclaiming.
 
 **Aufgabe:**
 
@@ -350,7 +350,7 @@ Die folgenden Aufgaben sind bewusst als **Adaptionen** konzipiert: Sie recyclen 
 
 **KI-Workflow**
 
-``` markdown
+```markdown
 Erzeuge 3 Varianten (konservativ / erzählerisch / provokationsarm) für einen Thread.
 Regeln: keine neuen Fakten, keine Clickbait-Übertreibung, baue einen Unsicherheiten-Post ein.
 Input: Message Map + Blog-Textauszug + Kontext.
@@ -368,7 +368,7 @@ Input: Message Map + Blog-Textauszug + Kontext.
 
 **KI-Workflow**
 
-``` markdown
+```markdown
 Schreibe ein Podcast-Skript (7 Minuten) für [Zielgruppe/Kontext].
 Struktur: Hook (15s) – Kontext (60s) – Kernpunkte (3x90s) – Unsicherheiten (45s) – Abschluss (30s).
 Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Rand.
@@ -387,7 +387,7 @@ Nutze nur Claims aus dem Quellenpaket und markiere Claim-IDs im Manuskript am Ra
 
 **KI-Workflow**
 
-``` markdown
+```markdown
 Erzeuge Poster-Textbausteine mit strikter Wortlimite und ohne neue Fakten.
 Achte auf: klare Begriffe, keine impliziten Wertungen, Claim-IDs pro Block.
 Input: Message Map + Evidenzmatrix.
@@ -406,12 +406,12 @@ Erstellen Sie ein Interview-Kit von 1–2 Seiten. Das Kit enthält:
 - **3 Soundbites** von je 12–20 Sekunden, sinngemäss formuliert,
 - **5 Kernfragen** mit kurzen Antworten von je 3–5 Sätzen,
 - **2 kritische Fragen** (zum Beispiel «Ist das nicht…?») mit Brückenstrategien,
-- eine **No-go-Liste** mit Aussagen, die Sie *nicht* machen, weil Evidenz, Komplexität oder Ethik dagegen sprechen,
+- eine **No-go-Liste** mit Aussagen, die Sie _nicht_ machen, weil Evidenz, Komplexität oder Ethik dagegen sprechen,
 - einen **Transparenzsatz** zu Methode und Datenlage (1–2 Sätze).
 
 ### KI-Workflow (Prompt-Skizze)
 
-``` markdown
+```markdown
 Rolle: Du bist Mediencoach. Generiere ein Interview-Kit für Radio/Zeitung.
 Regeln: keine neuen Fakten, Soundbites müssen Claims korrekt wiedergeben, Unsicherheiten nicht kaschieren.
 Input: Message Map + Quellenpaket + Blog-/Podcast-Entwurf.
@@ -428,7 +428,7 @@ Am Ende verfügen Sie über diese Artefakte:
 
 1. **Kommunikationsbriefing** (1 Seite)
 2. **Message Map und Evidenzmatrix** (Tabellen- oder Stichpunktform)
-3. **Blogpost** (ca. 700–1'000 Wörter) *oder* **Podcast-Skript** (ca. 6–8 Minuten)
+3. **Blogpost** (ca. 700–1'000 Wörter) _oder_ **Podcast-Skript** (ca. 6–8 Minuten)
 4. **Zwei Kurzformate** aus: Social Media, Poster-Textbausteine, Interview-Kit
 5. **KI-Protokoll** mit mindestens 8 Einträgen und einer Reflexionsnotiz (ca. 300–500 Wörter)
 

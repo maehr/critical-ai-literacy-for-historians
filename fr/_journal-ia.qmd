@@ -39,17 +39,17 @@ Chaque exercice indique ce qu'il exige. Certains exercices nomment un nombre d'e
 
 Copiez ce tableau à nouveau pour chaque entrée.
 
-| Champ                     | Contenu |
-| ------------------------- | ------- |
-| Date                      |         |
-| Étape (exercice, numéro)  |         |
-| But (1 phrase)            |         |
-| Matériel (entrée)         |         |
-| Prompt (mot pour mot)     |         |
-| Réponse (version courte)  |         |
-| Étapes de vérification    |         |
-| Décision                  |         |
-| Justification (1 phrase)  |         |
+| Champ                    | Contenu |
+| ------------------------ | ------- |
+| Date                     |         |
+| Étape (exercice, numéro) |         |
+| But (1 phrase)           |         |
+| Matériel (entrée)        |         |
+| Prompt (mot pour mot)    |         |
+| Réponse (version courte) |         |
+| Étapes de vérification   |         |
+| Décision                 |         |
+| Justification (1 phrase) |         |
 
 Si vous écrivez en Markdown, copiez ce code source:
 
@@ -73,17 +73,17 @@ Une liste avec les mêmes champs est tout aussi valable. Choisissez la forme que
 
 L'exemple vient de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd). Une étudiante y examine une note de dossier du 7 juillet 1949.
 
-| Champ                    | Contenu                                                                                                                                                                                                                                                                          |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Date                     | 14 mars 2026, 10h15                                                                                                                                                                                                                                                              |
-| Étape (exercice, numéro) | Critique des sources, étape 2 (critique externe)                                                                                                                                                                                                                                 |
-| But (1 phrase)           | Je vérifie si l'IA déduit correctement du texte les indications formelles de la note de dossier.                                                                                                                                                                                  |
-| Matériel (entrée)        | Note de dossier Berne, 7.7.1949, Petitpierre/Hansen (Dodis 5020), texte intégral de l'édition copié dans le prompt.                                                                                                                                                               |
-| Prompt (mot pour mot)    | «Analyse la note de dossier suivante uniquement sous l'angle de la critique externe des sources. Nomme l'auteur, le destinataire, la date, le genre de texte et la forme de transmission. Marque expressément comme supposition chaque indication qui ne figure pas dans le texte. […]» |
-| Réponse (version courte) | L'IA nomme Petitpierre comme auteur, Hansen comme interlocuteur et le 7.7.1949 comme date. Elle qualifie le texte de «procès-verbal d'une séance du Conseil fédéral». Elle ajoute sans le signaler que la note se trouve «aux Archives fédérales sous la cote E 2001».              |
+| Champ                    | Contenu                                                                                                                                                                                                                                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Date                     | 14 mars 2026, 10h15                                                                                                                                                                                                                                                                            |
+| Étape (exercice, numéro) | Critique des sources, étape 2 (critique externe)                                                                                                                                                                                                                                               |
+| But (1 phrase)           | Je vérifie si l'IA déduit correctement du texte les indications formelles de la note de dossier.                                                                                                                                                                                               |
+| Matériel (entrée)        | Note de dossier Berne, 7.7.1949, Petitpierre/Hansen (Dodis 5020), texte intégral de l'édition copié dans le prompt.                                                                                                                                                                            |
+| Prompt (mot pour mot)    | «Analyse la note de dossier suivante uniquement sous l'angle de la critique externe des sources. Nomme l'auteur, le destinataire, la date, le genre de texte et la forme de transmission. Marque expressément comme supposition chaque indication qui ne figure pas dans le texte. […]»        |
+| Réponse (version courte) | L'IA nomme Petitpierre comme auteur, Hansen comme interlocuteur et le 7.7.1949 comme date. Elle qualifie le texte de «procès-verbal d'une séance du Conseil fédéral». Elle ajoute sans le signaler que la note se trouve «aux Archives fédérales sous la cote E 2001».                         |
 | Étapes de vérification   | J'ai comparé toutes les indications avec l'édition sur <https://dodis.ch/5020>. L'auteur, la date et l'interlocuteur concordent avec le texte. Le genre de texte ne concorde pas: le texte retient un entretien, il ne consigne pas une séance. La cote ne figure nulle part dans le matériel. |
-| Décision                 | Repris en partie.                                                                                                                                                                                                                                                                |
-| Justification (1 phrase) | Je reprends l'auteur, la date et l'interlocuteur, je corrige le genre de texte en «note de dossier», et je rejette la cote comme non étayée.                                                                                                                                      |
+| Décision                 | Repris en partie.                                                                                                                                                                                                                                                                              |
+| Justification (1 phrase) | Je reprends l'auteur, la date et l'interlocuteur, je corrige le genre de texte en «note de dossier», et je rejette la cote comme non étayée.                                                                                                                                                   |
 
 L'entrée montre le cas normal: une partie de la réponse est utilisable, une partie est fausse, et une partie n'est pas étayée.
 

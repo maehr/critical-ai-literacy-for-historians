@@ -43,7 +43,7 @@ references:
 
 ## Überblick und didaktisches Ziel
 
-Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äussere und innere Kritik) anhand einer konkreten Quelle aus den *Diplomatischen Dokumenten der Schweiz (Dodis)*. Im Zentrum steht die Frage, wie eine Quelle **als historisches Evidenzobjekt** behandelt wird: nicht als „Faktenspeicher“, sondern als **situierter Artefakt** mit Entstehungskontext und Überlieferungsgeschichte.
+Diese Übung vermittelt **übertragbare Kompetenzen der Quellenkritik** (äussere und innere Kritik) anhand einer konkreten Quelle aus den _Diplomatischen Dokumenten der Schweiz (Dodis)_. Im Zentrum steht die Frage, wie eine Quelle **als historisches Evidenzobjekt** behandelt wird: nicht als „Faktenspeicher“, sondern als **situierter Artefakt** mit Entstehungskontext und Überlieferungsgeschichte.
 
 **Fallbeispiel (Primärquelle): [Dodis: Switzerland and the Council of Europe](https://dodis.ch/5020)**
 
@@ -56,12 +56,12 @@ Die hier verwendete Quelle liegt in einer **editorisch aufbereiteten digitalen E
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                                                     |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| **Dauer**                | ca. 180 Minuten                                                                                          |
-| **Niveau**               | Intermediate                                                                                             |
-| **Kernpfad**             | 1 → 2 → 3 → 5 → 6                                                                                        |
-| **Optionale Vertiefung** | 4 (Kontextualisierung und Gegenprobe)                                                                    |
+| Angabe                   | Wert                                                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 180 Minuten                                                                                                                       |
+| **Niveau**               | Intermediate                                                                                                                          |
+| **Kernpfad**             | 1 → 2 → 3 → 5 → 6                                                                                                                     |
+| **Optionale Vertiefung** | 4 (Kontextualisierung und Gegenprobe)                                                                                                 |
 | **Abgabe (Minimum)**     | [Analyseprotokoll](../glossary.qmd#gl-analyseprotokoll) zu einer Quelle. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 6 Einträge. |
 
 Der Kernpfad führt Sie in ca. 180 Minuten zu einer vollständigen Quellenkritik. Schritt 4 kostet ca. 90 Minuten zusätzlich, denn Sie suchen dafür weitere Quellen.
@@ -142,7 +142,7 @@ Formulieren Sie in **max. 4 Sätzen**:
 
 ### Aufgabe 1b: Dieselbe Minimalparaphrase mittels KI
 
-``` markdown
+```markdown
 Analysiere die angehängte Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) und beantworte folgende Fragen:
 Wer spricht/handelt?
 Was ist der Anlass?
@@ -160,7 +160,7 @@ Laden Sie das Dokument als PDF-Datei zusammen mit dem Prompt hoch. Das ist der N
 
 Nur im Ausnahmefall, wenn der Upload nicht funktioniert, kopieren Sie den Inhalt des Dokuments an den Anfang des Prompts. Grenzen Sie ihn visuell ab, beispielsweise durch """. Beispiel:
 
-``` markdown
+```markdown
 """
 INHALT DOKUMENT
 """
@@ -193,7 +193,7 @@ Vergleichen Sie deshalb jedes Zitat mit dem Digitalisat. Notieren Sie im [Analys
 
 ### Aufgabe 2a: Erste Forschungsheuristik ohne KI
 
-Notieren Sie drei **potenzielle Forschungsfragen**, die *prinzipiell* mit dieser Quelle bearbeitbar wären (noch ohne Eingrenzung). Beispiele für Fragetypen:
+Notieren Sie drei **potenzielle Forschungsfragen**, die _prinzipiell_ mit dieser Quelle bearbeitbar wären (noch ohne Eingrenzung). Beispiele für Fragetypen:
 
 - begriffsgeschichtlich (Neutralität als Argument)
 - institutionsgeschichtlich (Aussenpolitische Entscheidungswege)
@@ -202,7 +202,7 @@ Notieren Sie drei **potenzielle Forschungsfragen**, die *prinzipiell* mit dieser
 
 ### Aufgabe 2b: Dieselbe Forschungsheuristik mittels KI
 
-``` markdown
+```markdown
 Gib mir drei mögliche historische Forschungsfragen, die sich aus der angehängten Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen, Europarat) ableiten lassen.
 Formuliere jede Frage so, dass sie (a) zeitlich eingrenzbar, (b) quellenbasiert prüfbar und (c) analytisch ist.
 Nenne zu jeder Frage, welche zusätzlichen Quellengattungen ich zur Gegenprobe brauche.
@@ -262,7 +262,7 @@ Notieren Sie an jeder Station:
 
 ### Aufgabe 4: Externe Kritik mittels KI
 
-``` markdown
+```markdown
 Analysiere die digital edierte Aktennotiz (Dodis 5020, Bern 7.7.1949) ausschliesslich unter dem Gesichtspunkt der externen Quellenkritik.
 
 1) Identifiziere auf Basis der Metadaten:
@@ -305,7 +305,7 @@ Bestimmen Sie die Funktion der Notiz im Verwaltungskontext (plausibilisiert):
 - Steuert sie interne Meinungsbildung?
 - Markiert sie eine rote Linie (Neutralität als Stoppsignal)?
 
-**Ergebnis:** 1 Absatz (6–10 Sätze), der *Funktion* und *Adressierung* argumentiert (mit Textbelegen).
+**Ergebnis:** 1 Absatz (6–10 Sätze), der _Funktion_ und _Adressierung_ argumentiert (mit Textbelegen).
 
 ### Aufgabe 2: Argumentmapping (Neutralität als Schlüsseloperator)
 
@@ -318,7 +318,7 @@ Extrahieren Sie alle Passagen, die Neutralität, Vereinbarkeit oder Entscheidung
 
 **Formatvorschlag (Markdown):**
 
-``` markdown
+```markdown
 - Claim:
 - Begründung:
 - Voraussetzung:
@@ -364,7 +364,7 @@ Wenn dir ein Beleg fehlt, markiere es als Hypothese.
 
 ### Aufgabe 5: Interne Kritik mittels KI
 
-``` markdown
+```markdown
 Führe eine interne Quellenkritik der angehängten Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) durch.
 
 Analysiere getrennt:
@@ -399,7 +399,7 @@ Die Notiz verweist indirekt auf weitere Kontexte (z. B. Kommissionen, private f�
 Erstellen Sie eine **Recherche-Matrix** (mind. 6 Zeilen):
 
 | Spur im Text | Was genau suchen? | Erwartete Quellengattung | Wo suchen? | Zweck der Gegenprobe |
-|---------------|---------------|---------------|---------------|---------------|
+| ------------ | ----------------- | ------------------------ | ---------- | -------------------- |
 
 Beispiele für „Wo suchen?“ (als Kategorien, nicht als Vollständigkeit):
 
@@ -411,7 +411,7 @@ Beispiele für „Wo suchen?“ (als Kategorien, nicht als Vollständigkeit):
 
 ### Aufgabe 2: Kontrafaktische Gegenfrage (Kontrollinstrument)
 
-Formulieren Sie zwei Gegenfragen, die die Notiz *herausfordern*:
+Formulieren Sie zwei Gegenfragen, die die Notiz _herausfordern_:
 
 - Was müsste ich finden, damit die These „Neutralität verhinderte den Beitritt“ **zu grob** wird?
 - Was müsste ich finden, damit die Aussage zur Volksabstimmung **als strategische Rhetorik** statt als Prognose erscheint?
@@ -435,7 +435,7 @@ Gib keine Behauptungen über Inhalte dieser Quellen, sondern nur Plan/Heuristik.
 
 ### Aufgabe 3: Recherche- und Gegenprobe-Planung mittels KI
 
-``` markdown
+```markdown
 Leite aus der Aktennotiz (Bern, 7.7.1949, Petitpierre/Hansen) einen systematischen Rechercheplan ab.
 
 1) Nenne mindestens:
@@ -471,7 +471,7 @@ Erstellen Sie eine zweigeteilte Liste:
 
 **A. Gut gestützt (hohe Sicherheit)** Aussagen, die die Notiz direkt trägt (mit Textbeleg).
 
-**B. Nicht gestützt / offen (Veto)** Aussagen, die die Notiz *nahelegt*, aber nicht belegt – oder sogar ausschliesst.
+**B. Nicht gestützt / offen (Veto)** Aussagen, die die Notiz _nahelegt_, aber nicht belegt – oder sogar ausschliesst.
 
 Leitfragen:
 
@@ -504,7 +504,7 @@ Markiere jede Aussage als: sicher / wahrscheinlich / spekulativ.
 
 ### Aufgabe 3: Evidenzprofil mittels KI
 
-``` markdown
+```markdown
 Erstelle auf Basis der Aktennotiz zwei getrennte Listen:
 
 A) Aussagen, die der Text direkt und eindeutig stützt.

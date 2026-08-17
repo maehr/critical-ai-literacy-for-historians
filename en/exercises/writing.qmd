@@ -125,13 +125,13 @@ The goal is not to "automate" the production of text. The goal is to raise the *
 
 ## At a Glance
 
-| Item                      | Value                                                                          |
-| ------------------------- | ------------------------------------------------------------------------------ |
-| **Duration**              | about 45 to 60 minutes                                                          |
-| **Level**                 | Beginner                                                                        |
-| **Core path**             | 1 → 2 → 3 → 4 → 6 → 8                                                           |
-| **Optional deepening**    | 5 (blockages), 7 (style and translation), 9 (readability test)                  |
-| **Hand-in (minimum)**     | One revised section of text. [AI log](../glossary.qmd#gl-ki-protokoll): 6 entries. |
+| Item                   | Value                                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------- |
+| **Duration**           | about 45 to 60 minutes                                                             |
+| **Level**              | Beginner                                                                           |
+| **Core path**          | 1 → 2 → 3 → 4 → 6 → 8                                                              |
+| **Optional deepening** | 5 (blockages), 7 (style and translation), 9 (readability test)                     |
+| **Hand-in (minimum)**  | One revised section of text. [AI log](../glossary.qmd#gl-ki-protokoll): 6 entries. |
 
 The core path leads you to a revised text in 45 to 60 minutes. Each optional deepening costs about 15 minutes more. Write one entry in the AI log for each step of the core path.
 
@@ -178,7 +178,7 @@ This exercise needs neither a web search nor a file upload. A free account is en
 
 ## Methodological Frame: AI as Writing Infrastructure
 
-This exercise treats AI as a **heuristic writing tool**. It supports *wording, structuring and checking*, but it replaces neither the **work with sources** nor the **decisions of interpretation**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] A clear division of labour helps:
+This exercise treats AI as a **heuristic writing tool**. It supports _wording, structuring and checking_, but it replaces neither the **work with sources** nor the **decisions of interpretation**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] A clear division of labour helps:
 
 - **Historical authorship:** the research question, the choice of evidence, the interpretation, the normative positions.
 - **Contribution of the AI (instrumental):** generate variants, suggest structures, test readability, diagnose errors.
@@ -190,7 +190,7 @@ For more reliable work, use two principles of prompting consistently. 1. **Delim
 
 ## Basic rule: the AI may "invent" nothing
 
-Use AI only as a **tool of transformation and verification** for *your* material (notes, excerpts from sources, summaries of literature, drafts of an outline). If the AI names additional facts, literature or sources, that counts as a **hypothesis for a search** that you must **verify externally**.
+Use AI only as a **tool of transformation and verification** for _your_ material (notes, excerpts from sources, summaries of literature, drafts of an outline). If the AI names additional facts, literature or sources, that counts as a **hypothesis for a search** that you must **verify externally**.
 :::
 
 {{< include ../_ai-log.qmd >}}
@@ -222,7 +222,7 @@ Make the writing task and your own intent so precise that the later AI steps do 
 
 **Prompt scaffold**
 
-``` markdown
+```markdown
 You are a comprehension checker. Ask me 8–12 precise questions to clarify my writing task and my goal of argument.
 Mark:
 (1) the missing information,
@@ -254,7 +254,7 @@ Generate ideas without inventing evidence, and think about counter-arguments and
 
 ### Task A: Brainstorming (oriented on ideas, neutral on evidence)
 
-``` markdown
+```markdown
 Role: brainstorming partner. Generate 12 possible lines of argument or hypotheses on my topic.
 Conditions:
 - Formulate each line as a claim that I can check (no facts).
@@ -267,7 +267,7 @@ My material (types only, no sensitive content): …
 
 ### Task B: Devil's Advocate (Confrontational, But Productive)
 
-``` markdown
+```markdown
 Role: devil's advocate. Choose the 3 most plausible of my hypotheses and argue against each one.
 For each counter-argument:
 - Name the vulnerable assumption.
@@ -298,7 +298,7 @@ Draft a **chain of argument** that you can check (thesis → sub-theses → evid
 
 Insert your own word count in the following prompt. The example names 3000 words.
 
-``` markdown
+```markdown
 Role: structurer.
 Build an outline (max. 8 main points) for a text of about 3000 words.
 For each point:
@@ -334,7 +334,7 @@ Have paragraphs written from your own material, without giving up control over t
 
 Choose **one** point of the outline (for example "main argument 1") and supply 8 to 12 bullet points (evidence, observations, quotations or paraphrases, terms).
 
-``` markdown
+```markdown
 Role: text generator from bullet points.
 Write a paragraph (120–180 words) in academic English.
 Conditions:
@@ -366,7 +366,7 @@ Solve local problems (transitions, opening sentences, definitions of terms), wit
 
 **A) Build a transition**
 
-``` markdown
+```markdown
 Role: blockage solver.
 Formulate 5 variants of a transition sentence between paragraph A and paragraph B.
 Variant 1 neutral, 2 stronger in argument, 3 stronger in explanation, 4 shorter, 5 with a marker of contrast.
@@ -378,7 +378,7 @@ Paragraph B: …
 
 Replace the term "neutrality" in the following prompt with your own term.
 
-``` markdown
+```markdown
 Formulate 3 possible working definitions of the term "neutrality" in the context of my topic.
 For each definition:
 - the delimitation from 1 neighbouring term
@@ -389,7 +389,7 @@ Context: …
 
 **C) Sentence diagnosis**
 
-``` markdown
+```markdown
 Mark in my paragraph:
 - the central sentence (the topic sentence),
 - the sentences with an unclear referent ("this", "thereby", "one"),
@@ -411,7 +411,7 @@ Make the logic of the argument visible: does the evidence support the claims? Ar
 
 ### Task
 
-``` markdown
+```markdown
 Role: logic checker.
 Analyse my text (max. 300 words) as an argument map:
 1) the main thesis
@@ -441,7 +441,7 @@ Improve the language and the register without a change to the substance of the a
 
 ### Task A: Copy Editing (Minimally Invasive)
 
-``` markdown
+```markdown
 Role: copy editor.
 Improve the grammar, the style and the precision, but change no statement of content.
 Work in a minimally invasive way:
@@ -453,7 +453,7 @@ Text: …
 
 ### Task B: Translation (Optional)
 
-``` markdown
+```markdown
 Role: translator.
 Translate the text into another language (for example French, German or Spanish).
 Conditions:
@@ -478,7 +478,7 @@ Condense the text to its load-bearing statement: the research problem, the appro
 
 ### Task
 
-``` markdown
+```markdown
 Role: abstract writer.
 Write an abstract of 120–160 words.
 It must hold:
@@ -508,7 +508,7 @@ Test the readability and the room for interpretation from the view of the target
 
 ### Task
 
-``` markdown
+```markdown
 Role: comprehension checker.
 Read my text as a critical reader in a seminar.
 1) What is the thesis in one sentence?

@@ -57,13 +57,13 @@ Dès que le modèle fournit des faits, de la littérature, des archives, des cot
 
 ## En un coup d'œil
 
-| Indication                    | Valeur                                                                        |
-| ----------------------------- | ----------------------------------------------------------------------------- |
-| **Durée**                     | env. 150 minutes                                                              |
-| **Niveau**                    | Beginner                                                                      |
-| **Parcours principal**        | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                     |
-| **Approfondissement optionnel** | 5 (trace de raisonnement structurée)                                        |
-| **Rendu (minimum)**           | [Journal IA](../glossary.qmd#gl-ki-protokoll) avec au moins 8 entrées         |
+| Indication                      | Valeur                                                                |
+| ------------------------------- | --------------------------------------------------------------------- |
+| **Durée**                       | env. 150 minutes                                                      |
+| **Niveau**                      | Beginner                                                              |
+| **Parcours principal**          | 1 → 2 → 3 → 4 → 6 → 7 → 8                                             |
+| **Approfondissement optionnel** | 5 (trace de raisonnement structurée)                                  |
+| **Rendu (minimum)**             | [Journal IA](../glossary.qmd#gl-ki-protokoll) avec au moins 8 entrées |
 
 Le parcours principal vous mène à un résultat complet en 150 minutes environ. L'approfondissement optionnel coûte environ 30 minutes de plus.
 
@@ -135,7 +135,7 @@ Seulement dans le cas exceptionnel où l'outil n'a pas d'accès stable au docume
 
 Exemple de mise en page:
 
-``` markdown
+```markdown
 """
 TEXTE DU DOCUMENT (extrait ou texte entier)
 """
@@ -190,7 +190,7 @@ Reformuler une demande imprécise pour que la réponse devienne **vérifiable**,
 
 **Demande vague (mauvaise à dessein):**
 
-``` markdown
+```markdown
 Résume le document et dis-moi ce qui est important.
 ```
 
@@ -203,7 +203,7 @@ Orientez-vous sur la configuration de l'exercice [Critique des sources](critique
 
 **Ossature de prompt (robuste, adaptable):**
 
-``` markdown
+```markdown
 Tâche: [concrète, 1–2 phrases]
 Contexte: [séminaire/question de recherche/période]
 Matériel: [texte du document + métadonnées, clairement séparés]
@@ -237,7 +237,7 @@ Faites traiter la même tâche dans trois rôles:
 
 **Prompt de rôle (exemple: critique des sources, fortement limitant):**
 
-``` markdown
+```markdown
 Rôle: critique des sources.
 Tâche: analyse le matériel exclusivement comme source (critique externe + interne).
 Important:
@@ -252,7 +252,7 @@ Sortie:
 
 **Prompt de rôle (exemple: avocat du diable, dérivé de l'exercice d'écriture):**
 
-``` markdown
+```markdown
 Rôle: avocat du diable.
 Entrée: mes hypothèses de travail (H1–H3) + indications de matériel.
 Tâche:
@@ -281,13 +281,13 @@ Le prompting zero-shot signifie que le modèle ne reçoit aucun exemple, mais se
 
 ### Objectif
 
-Utiliser le zero-shot comme **base de comparaison**: rapide, mais sujet aux erreurs. Vous apprenez *où* le zero-shot suffit et *où* il esquive de façon systématique.
+Utiliser le zero-shot comme **base de comparaison**: rapide, mais sujet aux erreurs. Vous apprenez _où_ le zero-shot suffit et _où_ il esquive de façon systématique.
 
 ### Exercice 3A: paraphrase minimale (zero-shot)
 
 Utilisez la tâche de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (paraphrase minimale, 4 phrases au plus) en zero-shot.
 
-``` markdown
+```markdown
 Analyse la note de dossier jointe (Berne, 7.7.1949, Petitpierre/Hansen, Conseil de l'Europe) et réponds:
 - Qui parle et qui agit?
 - Quelle est l'occasion?
@@ -306,7 +306,7 @@ Téléversez le document en fichier PDF avec le prompt. C'est le cas normal. Ass
 
 Seulement dans le cas exceptionnel où le téléversement ne fonctionne pas, copiez le contenu du document au début du prompt. Séparez-le visuellement, par exemple avec """. Exemple:
 
-``` markdown
+```markdown
 """
 CONTENU DU DOCUMENT
 """
@@ -331,7 +331,7 @@ Marquez dans la réponse:
 
 Utilisez le modèle de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd).
 
-``` markdown
+```markdown
 Donne-moi trois questions de recherche historiques possibles que l'on peut dériver de la note de dossier.
 Chaque question doit être (a) délimitable dans le temps, (b) vérifiable sur les sources et (c) analytique.
 Pour chaque question, nomme les genres de sources supplémentaires dont j'ai besoin pour la contre-épreuve.
@@ -359,7 +359,7 @@ Créez 3 à 5 phrases d'exemple courtes (elles peuvent être **fictives**, mais 
 
 **Exemple:**
 
-``` markdown
+```markdown
 Exemples (entrée → étiquette):
 1) "Lieu: Berne; date: 7.7.1949." → [édition/métadonnées]
 2) "Dans le texte, la neutralité sert d'argument contre une étape X." → [texte du document]
@@ -380,7 +380,7 @@ Prenez 2 questions faibles et 2 questions fortes (de votre exercice [Question de
 
 **Ossature:**
 
-``` markdown
+```markdown
 Exemples (faible/forte):
 Faible: "Pourquoi la Suisse a-t-elle adhéré au Conseil de l'Europe?" → trop large, téléologique, base de preuves floue.
 Forte: "Comment la 'neutralité' a-t-elle été opérationnalisée dans les notes internes du DFAE de 1949 à 1953, comme argument pour ou contre un rapprochement institutionnel avec le Conseil de l'Europe?" → opérateur clair, période, proximité des sources.
@@ -437,7 +437,7 @@ La section [Vérifier et situer les capacités](#sec-capacites) approfondit le m
 
 Utilisez la cartographie d'arguments de l'exercice [Critique des sources](critique-sources-conseil-federal-conseil-europe-1949.qmd) (affirmation/justification/prémisse/implication), mais imposez une logique d'étapes:
 
-``` markdown
+```markdown
 Tâche: produis une cartographie d'arguments pour les passages qui concernent la neutralité, la compatibilité et le processus de décision.
 
 Procédure (à afficher visiblement):
@@ -458,7 +458,7 @@ Transposez la structure de l'exercice [Recherche de sources](recherche-sources-v
 
 Remplacez dans le prompt suivant la question d'exemple par votre propre question.
 
-``` markdown
+```markdown
 But: établis un plan de recherche pour la question: comment la neutralité a-t-elle servi, entre 1949 et 1963, d'argument contre une adhésion de la Suisse au Conseil de l'Europe?
 
 Étapes:
@@ -486,15 +486,15 @@ L'itération comme **révision contrôlée**: vous ne produisez pas «plus de te
 
 ### Exercice 6A: générer → critiquer → réviser (question de recherche)
 
-1) **Générer (v1):** questions de recherche en zero-shot (exercice 3B).\
-2) **Critiquer:** utilisez la confrontation critique de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) («Pourquoi l'aspect de la neutralité manque-t-il?» / «Sur quelles sources cela repose-t-il?»).\
-3) **Réviser (v2):** faites réviser les questions par l'IA, mais uniquement à partir de vos points de critique.
+1. **Générer (v1):** questions de recherche en zero-shot (exercice 3B).\
+2. **Critiquer:** utilisez la confrontation critique de l'exercice [Question de recherche](formuler-question-recherche-historique-suisse-conseil-europe.qmd) («Pourquoi l'aspect de la neutralité manque-t-il?» / «Sur quelles sources cela repose-t-il?»).\
+3. **Réviser (v2):** faites réviser les questions par l'IA, mais uniquement à partir de vos points de critique.
 
 **Prompt de critique (modèle):**
 
 Insérez après «Voici la réponse v1:» le texte complet de la première réponse.
 
-``` markdown
+```markdown
 Voici la réponse v1: <insérer le texte de la première réponse>.
 Tâche: critique affirmation par affirmation:
 - Qu'est-ce qui est trop large ou téléologique?
@@ -508,8 +508,8 @@ Pas de faits nouveaux.
 
 Prenez l'exercice [Citation](citer.qmd) et imposez une sortie en deux temps:
 
-1) extraction de métadonnées structurées (champs),\
-2) seulement ensuite la citation Chicago et le format d'import pour le logiciel de gestion bibliographique.
+1. extraction de métadonnées structurées (champs),\
+2. seulement ensuite la citation Chicago et le format d'import pour le logiciel de gestion bibliographique.
 
 **Question d'optimisation:** l'approche en deux temps améliore-t-elle le diagnostic d'erreur (par exemple des numéros de page manquants ou de mauvais éditeurs)?
 
@@ -535,7 +535,7 @@ Prenez un prompt bibliographique naïf («Nomme la littérature centrale sur X»
 
 **Prompt optimisé (ossature):**
 
-``` markdown
+```markdown
 Tu es assistant de recherche en histoire.
 But: corpus de départ pour [sujet/période].
 Règles:
@@ -673,26 +673,26 @@ Si votre compte n'a pas de mode de raisonnement, comparez plutôt le prompt de 5
 
 **1) Contexte et liaison au matériel**
 
-``` markdown
+```markdown
 Travaille exclusivement avec le matériel ci-dessous.
 S'il te manque des informations, pose des questions ou marque [pas clair].
 ```
 
 **2) Séparation des niveaux (source / édition / conclusion)**
 
-``` markdown
+```markdown
 Marque chaque affirmation comme [texte du document] / [édition/métadonnées] / [conclusion].
 ```
 
 **3) La réponse comme produit intermédiaire (pour la suite du travail)**
 
-``` markdown
+```markdown
 Donne la réponse en tableau avec les champs: affirmation | lieu de preuve | incertitude | prochaine étape de vérification.
 ```
 
 **4) Imposer une auto-vérification et une contre-épreuve**
 
-``` markdown
+```markdown
 Auto-vérification: nomme 3 contre-preuves plausibles ou interprétations alternatives, et dis ce dont tu aurais besoin pour elles.
 ```
 
