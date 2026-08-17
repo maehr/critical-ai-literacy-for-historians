@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace vendor prompting links and repair dead links (#40)
 - Make the Prettier gate read every .qmd file
 - Let the lint job block the build and the deploy
+- Commit the generated changelog, and generate a real one
 
 ### Documentation
 
@@ -29,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Port the German course to English (#41)
 - Port the German course to French (#42)
 - Record GitHub Actions as the single Pages source
+- Rewrite CONTRIBUTING.md and TODO.md for this project
 
 ### Features
 
