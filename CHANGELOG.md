@@ -32,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Port the German course to French (#42)
 - Record GitHub Actions as the single Pages source
 - Rewrite CONTRIBUTING.md and TODO.md for this project
+- Note the approval step after the changelog bot commits
 
 ### Features
 
