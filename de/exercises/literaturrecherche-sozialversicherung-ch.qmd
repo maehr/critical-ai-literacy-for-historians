@@ -98,12 +98,12 @@ Die Übung folgt einem zirkulären Such- und Analyseprozess: Ausgangspunkt ist e
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                                                                                                                            |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dauer**                | ca. 1 Arbeitstag (6 bis 8 Stunden)                                                                                                                                              |
-| **Niveau**               | Intermediate                                                                                                                                                                    |
-| **Kernpfad**             | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                       |
-| **Optionale Vertiefung** | 4 (Spezialpfade), 7 (Debattenkartierung), Advanced Track                                                                                                                        |
+| Angabe                   | Wert                                                                                                                                                                                            |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 1 Arbeitstag (6 bis 8 Stunden)                                                                                                                                                              |
+| **Niveau**               | Intermediate                                                                                                                                                                                    |
+| **Kernpfad**             | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                                       |
+| **Optionale Vertiefung** | 4 (Spezialpfade), 7 (Debattenkartierung), Advanced Track                                                                                                                                        |
 | **Abgabe (Minimum)**     | [Rechercheprotokoll](../glossary.qmd#gl-rechercheprotokoll): 12 Einträge. [Reject-Log](../glossary.qmd#gl-reject-log): 5 Einträge. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 4 Einträge. |
 
 Teilen Sie den Arbeitstag auf zwei oder drei Sitzungen auf. Der Kernpfad führt Sie zu einer präzisierten Forschungsfrage. Die optionale Vertiefung kostet ca. 2 Stunden zusätzlich.
@@ -164,7 +164,7 @@ Nach Abschluss dieser Übung können Sie:
 
 **Literaturanalyse** ist die problemorientierte, kritische Lektüre dieser Literatur, um Argumente, Theoriebezüge, Methoden, Evidenzbasen und Kontroversen zu rekonstruieren (statt „Fakten“ zu extrahieren).
 
-**Fallbeispiel**: *Geschichte der Sozialversicherung in der Schweiz* (Sozialstaat, AHV/IV/UV/KV/ALV, Föderalismus, Verbände, Geschlechterordnung, transnationale Transfers).
+**Fallbeispiel**: _Geschichte der Sozialversicherung in der Schweiz_ (Sozialstaat, AHV/IV/UV/KV/ALV, Föderalismus, Verbände, Geschlechterordnung, transnationale Transfers).
 
 ::: callout-note
 
@@ -234,7 +234,7 @@ Formulieren Sie in 5–8 Sätzen:
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Ich arbeite zum Thema „Geschichte der Sozialversicherung in der Schweiz“.
 Schlage 6 problemorientierte, historisch bearbeitbare Fokusvarianten vor (je: Zeitraum, Akteurs-/Arenenfokus, Mechanismus).
 Gib pro Variante 8 Suchbegriffe (DE/FR/EN; historisch plausible Termini) und 3 erwartete Literaturtypen (Monografie, Aufsatz, Sammelbandkapitel).
@@ -245,7 +245,7 @@ Keine erfundenen Titel.
 
 Markieren Sie in der Antwort:
 
-- anachronistische Kategorien (als *rückblickende Suchanker* kennzeichnen),
+- anachronistische Kategorien (als _rückblickende Suchanker_ kennzeichnen),
 - implizite Theorieannahmen (z. B. „Wohlfahrtsregime“),
 - fehlende Perspektiven (z. B. Geschlecht, kantonale Ebene, ILO/Transfer).
 
@@ -282,7 +282,7 @@ Extrahieren Sie:
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Ausgehend von folgenden Begriffen und Fixpunkten: <hier Ihre 6 Fixpunkte und 5 Debattenmarker einfügen>
 1) Baue eine Debattenkarte (4–6 Debattenachsen) zur Geschichte der Sozialversicherung in der Schweiz.
 2) Ordne jeder Achse 5–8 Autoren-/Werktypen zu, die man typischerweise erwarten würde (ohne konkrete Titel zu erfinden).
@@ -321,7 +321,7 @@ Dokumentieren Sie pro Lauf:
 
 Führen Sie die Suchläufe **heuristisch** mittels KI durch. Geben Sie ausreichend Kontext.
 
-``` markdown
+```markdown
 Du bist ein historischer Rechercheassistent mit Kenntnissen der Schweizer Sozial-,
 Wirtschafts- und Politikgeschichte.
 
@@ -368,7 +368,7 @@ Extrahieren Sie:
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Aus diesen 5 Abstracts und Titeln: <hier Ihre 5 Abstracts oder Titel einfügen>
 1) Clustere sie nach Fragelogik (institutionell, akteurszentriert, ideengeschichtlich, politökonomisch, gender).
 2) Schlage 2 Anschluss-Keywords pro Cluster vor (DE/FR/EN) und nenne je 1 typischen „blinden Fleck“.
@@ -398,7 +398,7 @@ Dokumentieren Sie:
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Hier sind 10 Referenzen aus der Bibliografie eines Seed-Texts: <hier Ihre 10 Referenzen einfügen>
 Ordne sie nach:
 (a) Debattenachse, (b) Methode, (c) erwarteter Quellenbasis.
@@ -407,9 +407,9 @@ Markiere: welche 3 wären für einen „State of Research“-Abschnitt unverzich
 
 ### Kritischer Check
 
-Führen Sie im Rechercheprotokoll einen Abschnitt *Reject-Log*: mind. 5 abgelehnte, aber „verführerisch plausible“ Treffer inkl. Ablehnungsgrund (falscher Zeitraum, falsche Arena, nur populärwissenschaftlich, etc.).
+Führen Sie im Rechercheprotokoll einen Abschnitt _Reject-Log_: mind. 5 abgelehnte, aber „verführerisch plausible“ Treffer inkl. Ablehnungsgrund (falscher Zeitraum, falsche Arena, nur populärwissenschaftlich, etc.).
 
-**Deliverable**: Snowball-Liste (≥ 30 Referenzen insgesamt) + Abschnitt *Reject-Log* (≥ 5).
+**Deliverable**: Snowball-Liste (≥ 30 Referenzen insgesamt) + Abschnitt _Reject-Log_ (≥ 5).
 
 ## 6. Screening und Qualitätsbewertung: Relevanz, Argument, Methode, Evidenz
 
@@ -432,7 +432,7 @@ Wenden Sie es auf 6 Titel aus Ihrem Korpus an (Kurz-Exzerpt, 150–250 Wörter j
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Nutze dieses Raster: <hier Ihr Bewertungsraster einfügen>
 Erstelle für jeden der folgenden Titel/Abstracts eine strukturierte Kurzannotation (max. 180 Wörter),
 inkl. (1) vermuteter Beitrag, (2) methodischer Zugriff, (3) potenzielle Bias/Limitation.
@@ -462,7 +462,7 @@ Schreiben Sie ein 400–600 Wörter Debattenmemo:
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Hier ist mein Debattenmemo: <hier Ihr Debattenmemo einfügen>
 1) Identifiziere implizite Annahmen (Agency/Struktur, Staat/Privat, Normativität, Zeitdiagnosen).
 2) Schlage 2 alternative Strukturierungen vor (z. B. nach Arenen statt nach Themen).
@@ -481,12 +481,12 @@ Eine bearbeitbare, analytische Forschungsfrage aus dem Literaturstand ableiten (
 
 Formulieren Sie:
 
-- 1 Forschungslückensatz (max. 3 Sätze): *„Die Forschung hat X gezeigt; Y bleibt unklar, weil …“*
-- 2 Forschungsfragen (je 1 Satz), die *quellen- und literaturbasiert* plausibel sind.
+- 1 Forschungslückensatz (max. 3 Sätze): _„Die Forschung hat X gezeigt; Y bleibt unklar, weil …“_
+- 2 Forschungsfragen (je 1 Satz), die _quellen- und literaturbasiert_ plausibel sind.
 
 ### Aufgabe (KI-Exploration)
 
-``` markdown
+```markdown
 Ausgehend von dieser Forschungslücke: <hier Ihren Forschungslückensatz einfügen>
 Formuliere 4 Varianten einer analytischen historischen Forschungsfrage.
 Für jede Variante:
@@ -519,6 +519,7 @@ KI darf in dieser Übung helfen, Suchräume zu erweitern und Texte zu strukturie
 - bibliografische Verifikation (Katalog/DOI),
 - quellenkritische Prüfung der Evidenzbasis,
 - historiografische Urteilsbildung.
+
 :::
 
 ## Lernergebnis
@@ -526,7 +527,7 @@ KI darf in dieser Übung helfen, Suchräume zu erweitern und Texte zu strukturie
 Am Ende verfügen Sie über diese Artefakte:
 
 1. Fokus-Statement und Debattenkarte (1–2 Seiten)
-2. Rechercheprotokoll mit Abschnitt Suche (≥ 12 Einträge) und Abschnitt *Reject-Log* (≥ 5 Einträge)
+2. Rechercheprotokoll mit Abschnitt Suche (≥ 12 Einträge) und Abschnitt _Reject-Log_ (≥ 5 Einträge)
 3. Kurzannotierte Bibliografie (10–15 Titel)
 4. Debattenmemo (400–600 Wörter)
 5. Forschungslücke, Forschungsfrage und Risikofeld (ca. 1 Seite)
@@ -539,7 +540,6 @@ Dazu kommt eine methodische Einsicht: Sie können begründen, welche Treffer ein
 - Exportieren Sie Metadaten (Titel/Autor/Jahr/Keywords) aus swisscovery/Zotero.
 
 - Bauen Sie eine einfache Bibliografie-Map:
-
   - Zeitverlauf (Publikationsjahre),
   - Sprachen/Publikationstypen,
   - Co-Zitations- oder Schlagwortnetz (vorsichtig: Katalog-Schlagworte sind kuratiert und biasbehaftet).

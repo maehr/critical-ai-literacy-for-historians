@@ -39,17 +39,17 @@ Each exercise states how much it requires. Some exercises name a number of entri
 
 Copy this table again for each entry.
 
-| Field                    | Content |
-| ------------------------ | ------- |
-| Date                     |         |
-| Step (exercise, number)  |         |
-| Goal (1 sentence)        |         |
-| Material (input)         |         |
-| Prompt (verbatim)        |         |
-| Answer (short version)   |         |
-| Verification steps       |         |
-| Decision                 |         |
-| Reason (1 sentence)      |         |
+| Field                   | Content |
+| ----------------------- | ------- |
+| Date                    |         |
+| Step (exercise, number) |         |
+| Goal (1 sentence)       |         |
+| Material (input)        |         |
+| Prompt (verbatim)       |         |
+| Answer (short version)  |         |
+| Verification steps      |         |
+| Decision                |         |
+| Reason (1 sentence)     |         |
 
 If you write in Markdown, copy this source text:
 
@@ -73,17 +73,17 @@ A list with the same fields is equally valid. Choose the form that you fill in f
 
 The example comes from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd). A student there checks a memorandum of 7 July 1949.
 
-| Field                   | Content                                                                                                                                                                                                                                                                      |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Date                    | 14 March 2026, 10:15                                                                                                                                                                                                                                                          |
-| Step (exercise, number) | Source Criticism, step 2 (external source criticism)                                                                                                                                                                                                                          |
-| Goal (1 sentence)       | I check whether the AI derives the formal data of the memorandum correctly from the text.                                                                                                                                                                                     |
-| Material (input)        | Memorandum Bern, 7.7.1949, Petitpierre/Hansen (Dodis 5020), full text from the edition copied into the prompt.                                                                                                                                                                |
-| Prompt (verbatim)       | "Analyse the following memorandum only from the viewpoint of external source criticism. Name the author, the addressee, the date, the text type and the form of transmission. Mark every statement that is not in the text expressly as an assumption. […]"                     |
-| Answer (short version)  | The AI names Petitpierre as the author, Hansen as the interlocutor and 7.7.1949 as the date. It calls the text a "minute of a Federal Council meeting". It adds without marking that the memorandum lies "in the Federal Archives under the reference E 2001".                  |
-| Verification steps      | I compared all statements with the edition at <https://dodis.ch/5020>. Author, date and interlocutor agree with the text. The text type does not agree: the text records a conversation, and it does not minute a meeting. The reference appears nowhere in the material.       |
-| Decision                | Partly adopted.                                                                                                                                                                                                                                                               |
-| Reason (1 sentence)     | I adopt the author, the date and the interlocutor, I correct the text type to "memorandum", and I reject the reference as unsupported.                                                                                                                                        |
+| Field                   | Content                                                                                                                                                                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Date                    | 14 March 2026, 10:15                                                                                                                                                                                                                                                      |
+| Step (exercise, number) | Source Criticism, step 2 (external source criticism)                                                                                                                                                                                                                      |
+| Goal (1 sentence)       | I check whether the AI derives the formal data of the memorandum correctly from the text.                                                                                                                                                                                 |
+| Material (input)        | Memorandum Bern, 7.7.1949, Petitpierre/Hansen (Dodis 5020), full text from the edition copied into the prompt.                                                                                                                                                            |
+| Prompt (verbatim)       | "Analyse the following memorandum only from the viewpoint of external source criticism. Name the author, the addressee, the date, the text type and the form of transmission. Mark every statement that is not in the text expressly as an assumption. […]"               |
+| Answer (short version)  | The AI names Petitpierre as the author, Hansen as the interlocutor and 7.7.1949 as the date. It calls the text a "minute of a Federal Council meeting". It adds without marking that the memorandum lies "in the Federal Archives under the reference E 2001".            |
+| Verification steps      | I compared all statements with the edition at <https://dodis.ch/5020>. Author, date and interlocutor agree with the text. The text type does not agree: the text records a conversation, and it does not minute a meeting. The reference appears nowhere in the material. |
+| Decision                | Partly adopted.                                                                                                                                                                                                                                                           |
+| Reason (1 sentence)     | I adopt the author, the date and the interlocutor, I correct the text type to "memorandum", and I reject the reference as unsupported.                                                                                                                                    |
 
 The entry shows the normal case: one part of the answer is usable, one part is wrong, and one part has no support.
 

@@ -37,6 +37,7 @@ jobs:
   build-optimize:
     name: Build, Optimize, and Upload Artifacts
     runs-on: ubuntu-latest
+    needs: lint
 
     steps:
       - name: Check out repository
@@ -120,7 +121,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: [build-optimize, deadlinkcheck]
+    needs: [lint, build-optimize, deadlinkcheck]
     if: github.event_name != 'pull_request'
 
     steps:

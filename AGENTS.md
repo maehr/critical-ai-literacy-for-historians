@@ -5,8 +5,9 @@ This repository holds multilingual educational exercises for critical AI literac
 ## 1) Use Preview Mode During Interactive Sessions
 
 - Run `quarto preview` while you edit content. Live reload works for `.qmd`, `.md`, and asset files.
-- Keep the preview server active, because the preview is the only check of the content.
-- Do not run `quarto render` or `quarto publish gh-pages` in an agent session. The maintainer must ask first.
+- Keep the preview server active, because the preview shows the rendered page.
+- Do not run `quarto render` in an agent session. The maintainer must ask first.
+- Run `npm run check` as well. Prettier reads the `.qmd` files. See section 8.
 
 ## 2) Available Skills
 
@@ -101,7 +102,7 @@ draft: false
 - `author` takes a list. Each author takes an `affiliations` list. Do not write a scalar `affiliation`.
 - `subtitle` and `image` are required, because every exercise carries them.
 - `date-modified` takes a real date. Replace `today` with a real date in every file that you change.
-- Use double quotes in the front matter of a `.qmd` file, as all 24 exercises do. Prettier never reads `.qmd` files, so no tool changes this style.
+- Use double quotes in the front matter of a `.qmd` file, as all exercises do. Prettier reads `.qmd` files, but the override turns off the formatting of embedded languages, so no tool changes this style. See section 8.
 
 ## 5) Terminology and Content Rules
 
@@ -149,7 +150,13 @@ critical-ai-literacy-for-historians/
 
 Run `npm run format` before you commit. Run `npm run check` to verify the formatting without a change.
 
-Caution: `npm run check` verifies none of the course content. Prettier has no parser for `.qmd`, so it skips all 30 content files. The `.husky/pre-commit` hook and the CI `lint` job run the same command and skip the same files. Verify content with `quarto preview`. Issue #26 tracks a fix.
+`npm run check` covers the course content. `.prettierrc` holds an override that maps `*.qmd` to the Markdown parser, so Prettier reads every content file. The `.husky/pre-commit` hook and the CI `lint` job run the same command. The `lint` job blocks the build and the deploy, because `build-optimize` names it in `needs`.
+
+Caution: run `npm run format` after you edit a `.qmd` file. The commit fails if the file is not formatted.
+
+The override also sets `embeddedLanguageFormatting: 'off'` for `*.qmd`. Prettier therefore leaves two things alone: the YAML front matter, and the text inside a fenced code block. The prompts stay verbatim, and the front matter keeps the double quotes that section 4 requires.
+
+Caution: put a blank line before a closing `:::` fence. Without the blank line, Prettier indents the fence into the list above it.
 
 Prettier formats `.md`, `.yml`, and `.json` files, and also a YAML code block inside a Markdown file. `.prettierrc` sets `singleQuote: true`, so every YAML example in this file and in the skills is single-quoted. Do not "correct" these examples to double quotes, because `npm run format` reverts the change. The rule for `.qmd` front matter is different. See section 4.
 
@@ -199,27 +206,29 @@ An exercise must promote:
 
 ## 13) Website Publishing
 
-- In repository Settings, open Pages. Set Source to "Deploy from a branch", Branch to `gh-pages`, and the folder to `/ (root)`.
-- Run `quarto render` and `quarto publish gh-pages` outside an agent session, unless the maintainer authorizes them.
+GitHub Actions publishes the website. The workflow `.github/workflows/quarto-publish.yml` runs on every push to `main`. It lints the files, renders the site, checks the links, and then deploys with `actions/deploy-pages`.
+
+- In repository Settings, open Pages. Keep Source set to "GitHub Actions".
+- Caution: do not run `quarto publish gh-pages`. The command writes to the `gh-pages` branch, and the site no longer serves that branch.
+- Run `quarto render` outside an agent session, unless the maintainer authorizes it.
 
 ## 14) Commands Recap
 
-| Command                   | Purpose                                                          |
-| ------------------------- | ---------------------------------------------------------------- |
-| `quarto preview`          | Live preview with reload. This is the only check of the content. |
-| `npm run check`           | Verify formatting. This skips all `.qmd` files.                  |
-| `npm run format`          | Apply Prettier formatting and tidy the bibliography              |
-| `npm run commit`          | Conventional Commits wizard                                      |
-| `npm run changelog`       | Generate the changelog from the commits                          |
-| `npm run prepare`         | Set up the Husky git hooks                                       |
-| `quarto render`           | Production render. Avoid in an agent session.                    |
-| `quarto publish gh-pages` | Production publish. Avoid in an agent session.                   |
+| Command             | Purpose                                                   |
+| ------------------- | --------------------------------------------------------- |
+| `quarto preview`    | Live preview with reload. This checks the rendered page.  |
+| `npm run check`     | Verify the formatting of every file, `.qmd` files include |
+| `npm run format`    | Apply Prettier formatting and tidy the bibliography       |
+| `npm run commit`    | Conventional Commits wizard                               |
+| `npm run changelog` | Generate the changelog from the commits                   |
+| `npm run prepare`   | Set up the Husky git hooks                                |
+| `quarto render`     | Production render. Avoid in an agent session.             |
 
 ## 15) Verification Checklist
 
 Check this list before you finish a change.
 
-- [ ] `npm run format` ran without an error.
+- [ ] `npm run format` ran without an error, and `npm run check` reports no issue.
 - [ ] `quarto preview` renders the changed pages without an error.
 - [ ] The three languages have the same structure.
 - [ ] Each exercise carries one category from section 4, plus `difficulty` and `time_estimate`.

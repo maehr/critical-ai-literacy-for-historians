@@ -126,13 +126,13 @@ Le but n'est pas d'«automatiser» la production de texte, mais d'augmenter la *
 
 ## En un coup d'œil
 
-| Indication                      | Valeur                                                                                             |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Durée**                       | env. 45 à 60 minutes                                                                               |
-| **Niveau**                      | Beginner                                                                                           |
-| **Parcours principal**          | 1 → 2 → 3 → 4 → 6 → 8                                                                              |
-| **Approfondissement optionnel** | 5 (blocages), 7 (style et traduction), 9 (test de lisibilité)                                      |
-| **Rendu (minimum)**             | Un passage de texte révisé. [Journal IA](../glossary.qmd#gl-ki-protokoll): 6 entrées.               |
+| Indication                      | Valeur                                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------------- |
+| **Durée**                       | env. 45 à 60 minutes                                                                  |
+| **Niveau**                      | Beginner                                                                              |
+| **Parcours principal**          | 1 → 2 → 3 → 4 → 6 → 8                                                                 |
+| **Approfondissement optionnel** | 5 (blocages), 7 (style et traduction), 9 (test de lisibilité)                         |
+| **Rendu (minimum)**             | Un passage de texte révisé. [Journal IA](../glossary.qmd#gl-ki-protokoll): 6 entrées. |
 
 Le parcours principal vous mène à un texte révisé en 45 à 60 minutes. Chaque approfondissement optionnel coûte environ 15 minutes de plus. Faites une entrée dans le journal IA pour chaque étape du parcours principal.
 
@@ -179,7 +179,7 @@ Cet exercice n'a besoin ni d'une recherche sur le web ni d'un téléversement de
 
 ## Cadre méthodique: l'IA comme infrastructure d'écriture
 
-Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide à la *formulation, à la structuration et à la vérification*, mais elle ne remplace ni le **travail sur les sources** ni les **décisions d'interprétation**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une répartition claire des tâches est méthodiquement utile:
+Dans cet exercice, l'IA est comprise comme un **outil d'écriture heuristique**: elle aide à la _formulation, à la structuration et à la vérification_, mais elle ne remplace ni le **travail sur les sources** ni les **décisions d'interprétation**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Une répartition claire des tâches est méthodiquement utile:
 
 - **Paternité en sciences historiques:** la problématique, le choix des preuves, l'interprétation, les positions normatives.
 - **Apport de l'IA (instrumental):** produire des variantes, proposer des structures, tester la lisibilité, diagnostiquer des erreurs.
@@ -191,7 +191,7 @@ Pour un travail plus fiable, utilisez systématiquement deux principes de prompt
 
 ## Règle de base: l'IA ne doit rien «inventer»
 
-N'utilisez l'IA que comme **outil de transformation et de vérification** pour *votre* matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier à l'extérieur**.
+N'utilisez l'IA que comme **outil de transformation et de vérification** pour _votre_ matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier à l'extérieur**.
 :::
 
 {{< include ../_journal-ia.qmd >}}
@@ -223,7 +223,7 @@ Rendre la consigne d'écriture et votre propre intention argumentative assez pr�
 
 **Ossature de prompt**
 
-``` markdown
+```markdown
 Tu es vérificateur de compréhension. Pose-moi 8–12 questions de suivi précises, pour clarifier la consigne d'écriture et le but argumentatif.
 Marque:
 (1) les informations manquantes,
@@ -255,7 +255,7 @@ Produire des idées sans inventer de preuves, et penser tout de suite les contre
 
 ### Tâche A: remue-méninges (orienté idées, neutre sur les preuves)
 
-``` markdown
+```markdown
 Rôle: partenaire de remue-méninges. Produis 12 lignes d'argumentation ou hypothèses possibles sur mon sujet.
 Conditions:
 - Formule chaque ligne comme une affirmation vérifiable (pas de faits).
@@ -268,7 +268,7 @@ Mon matériel (seulement les types, aucun contenu sensible): …
 
 ### Tâche B: avocat du diable (confrontant, mais productif)
 
-``` markdown
+```markdown
 Rôle: avocat du diable. Choisis les 3 hypothèses les plus plausibles parmi les miennes et argumente contre chacune.
 Pour chaque contre-argument:
 - Nomme la prémisse vulnérable.
@@ -299,7 +299,7 @@ Concevoir une **chaîne argumentative** vérifiable (thèse → sous-thèses →
 
 Insérez dans le prompt suivant votre propre nombre de mots. L'exemple nomme 3000 mots.
 
-``` markdown
+```markdown
 Rôle: structurateur.
 Établis un plan (max. 8 points principaux) pour un texte d'environ 3000 mots.
 Pour chaque point:
@@ -335,7 +335,7 @@ Faire formuler des paragraphes à partir de votre propre matériel, sans céder 
 
 Choisissez **un** point du plan (par exemple «argument principal 1») et fournissez 8 à 12 puces (preuves, observations, citations ou paraphrases, termes).
 
-``` markdown
+```markdown
 Rôle: générateur de texte à partir de notes.
 Écris un paragraphe (120–180 mots) en français académique.
 Conditions:
@@ -367,7 +367,7 @@ Résoudre des problèmes locaux (transitions, phrases d'ouverture, définitions 
 
 **A) Construire une transition**
 
-``` markdown
+```markdown
 Rôle: débloqueur.
 Formule 5 variantes d'une phrase de transition entre le paragraphe A et le paragraphe B.
 Variante 1 neutre, 2 plus argumentative, 3 plus explicative, 4 plus brève, 5 avec un marqueur de contraste.
@@ -379,7 +379,7 @@ Paragraphe B: …
 
 Remplacez dans le prompt suivant le terme «neutralité» par votre propre terme.
 
-``` markdown
+```markdown
 Formule 3 définitions de travail possibles du terme «neutralité» dans le contexte de mon sujet.
 Pour chaque définition:
 - la démarcation avec 1 terme voisin
@@ -390,7 +390,7 @@ Contexte: …
 
 **C) Diagnostic de phrase**
 
-``` markdown
+```markdown
 Marque dans mon paragraphe:
 - la phrase centrale (topic sentence),
 - les phrases dont le référent n'est pas clair («cela», «ce faisant», «on»),
@@ -412,7 +412,7 @@ Rendre visible la logique argumentative: les preuves étayent-elles les affirmat
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: vérificateur de logique.
 Analyse mon texte (max. 300 mots) comme une carte d'arguments:
 1) la thèse principale
@@ -442,7 +442,7 @@ Améliorer la langue et le registre sans changer la substance argumentative; en 
 
 ### Tâche A: correction (peu invasive)
 
-``` markdown
+```markdown
 Rôle: correcteur.
 Améliore la grammaire, le style et la précision, mais ne change aucune affirmation de contenu.
 Travaille de manière peu invasive:
@@ -454,7 +454,7 @@ Texte: …
 
 ### Tâche B: traduire (optionnel)
 
-``` markdown
+```markdown
 Rôle: traducteur.
 Traduis le texte en anglais (ou en allemand ou en espagnol).
 Conditions:
@@ -479,7 +479,7 @@ Condenser le texte sur son affirmation porteuse: problème de recherche, démarc
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: rédacteur de résumé.
 Écris un résumé de 120 à 160 mots.
 Il doit contenir:
@@ -509,7 +509,7 @@ Tester la lisibilité et les marges d'interprétation du point de vue du public 
 
 ### Tâche
 
-``` markdown
+```markdown
 Rôle: vérificateur de compréhension.
 Lis mon texte comme un lecteur critique en séminaire.
 1) Quelle est la thèse, en une phrase?

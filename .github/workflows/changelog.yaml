@@ -1,25 +1,55 @@
 name: Create changelog
 
-on: [push]
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+# The changelog is a release artefact, so this workflow runs on a tag or on
+# demand, not on every pull request.
+#
+# It does not commit. Committing from CI needed a GITHUB_TOKEN push, and GitHub
+# starts no check run for such a push, so the required Lint check stayed queued
+# on the bot's own head commit. That blocked the pull request and added an
+# unsigned commit to it.
+#
+# Gating pull requests on the changelog does not work either: every new commit
+# makes the committed file stale, so the check would fail on its own commits.
+# Run `npm run changelog` when you cut a release and commit the result.
+permissions:
+  contents: read
 
 jobs:
   changelog:
     name: Generate changelog
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Check out the repository
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: Generate a changelog
-        uses: orhun/git-cliff-action@v4
-        id: git-cliff
+      - name: Set up Node
+        uses: actions/setup-node@v5
         with:
-          config: cliff.toml
-          args: --verbose
-        env:
-          OUTPUT: CHANGELOG.md
+          node-version: 24
 
-      - name: Print the changelog
-        run: cat "${{ steps.git-cliff.outputs.changelog }}"
+      - name: Install dependencies
+        run: npm install
+
+      - name: Regenerate the changelog
+        run: npm exec git-cliff -- --config cliff.toml --output CHANGELOG.md
+
+      - name: Format the changelog
+        run: npx prettier --write CHANGELOG.md
+
+      - name: Fail if the changelog is out of date
+        run: |
+          if ! git diff --quiet -- CHANGELOG.md; then
+            echo "CHANGELOG.md is out of date. Run 'npm run changelog' and commit the result."
+            git --no-pager diff -- CHANGELOG.md
+            exit 1
+          fi
+          echo "CHANGELOG.md is current."

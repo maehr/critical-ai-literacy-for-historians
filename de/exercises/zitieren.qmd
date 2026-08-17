@@ -111,12 +111,12 @@ Die Übung hat zwei Teile. Der erste Teil behandelt das **Zitieren** von Quellen
 
 ## Auf einen Blick
 
-| Angabe                   | Wert                                                                       |
-| ------------------------ | -------------------------------------------------------------------------- |
-| **Dauer**                | ca. 90 Minuten                                                             |
-| **Niveau**               | Beginner                                                                   |
-| **Kernpfad**             | Übung 1 → Übung 2 → Übung 3                                                |
-| **Optionale Vertiefung** | Die Variante mit einem Artikel hinter einer Bezahlschranke                 |
+| Angabe                   | Wert                                                                                            |
+| ------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Dauer**                | ca. 90 Minuten                                                                                  |
+| **Niveau**               | Beginner                                                                                        |
+| **Kernpfad**             | Übung 1 → Übung 2 → Übung 3                                                                     |
+| **Optionale Vertiefung** | Die Variante mit einem Artikel hinter einer Bezahlschranke                                      |
 | **Abgabe (Minimum)**     | Eine Offenlegung des KI-Einsatzes. [KI-Protokoll](../glossary.qmd#gl-ki-protokoll): 4 Einträge. |
 
 Alle drei Übungen gehören zum Kernpfad. Die optionale Vertiefung kostet ca. 20 Minuten zusätzlich.
@@ -246,13 +246,13 @@ Ein Zitat und eine Offenlegung sind zwei verschiedene Dinge. Ein **Zitat** weist
 
 In den anderen Übungen führen Sie ein **KI-Protokoll** (Audit Trail). Das Protokoll ist Ihr privater Arbeitsnachweis. Es enthält Prompts, Antworten, Prüfschritte und Entscheidungen. Die Offenlegung ist die öffentliche Aussage. Sie fassen das Protokoll auf wenige Sätze zusammen.
 
-| Merkmal   | KI-Protokoll                                        | Offenlegung                                       |
-| --------- | --------------------------------------------------- | ------------------------------------------------- |
-| Adressat  | Sie selbst und Ihre Betreuung auf Anfrage           | alle Leser:innen                                   |
-| Umfang    | vollständig, alle Einträge                          | kurz, meist 5 bis 15 Sätze                        |
-| Ort       | eigene Datei oder Anhang                            | fester Ort in der Arbeit                           |
-| Zweck     | Rekonstruktion des Arbeitsprozesses                 | Transparenz und Verantwortung                      |
-| Zeitpunkt | laufend während der Arbeit                          | am Schluss, aus dem Protokoll abgeleitet           |
+| Merkmal   | KI-Protokoll                              | Offenlegung                              |
+| --------- | ----------------------------------------- | ---------------------------------------- |
+| Adressat  | Sie selbst und Ihre Betreuung auf Anfrage | alle Leser:innen                         |
+| Umfang    | vollständig, alle Einträge                | kurz, meist 5 bis 15 Sätze               |
+| Ort       | eigene Datei oder Anhang                  | fester Ort in der Arbeit                 |
+| Zweck     | Rekonstruktion des Arbeitsprozesses       | Transparenz und Verantwortung            |
+| Zeitpunkt | laufend während der Arbeit                | am Schluss, aus dem Protokoll abgeleitet |
 
 **Merksatz**: Ohne Protokoll können Sie keine wahrheitsgemässe Offenlegung schreiben.
 
@@ -272,13 +272,13 @@ Legen Sie den KI-Einsatz offen, sobald er **substanziell** ist. Substanziell hei
 
 Die wissenschaftliche Offenlegung und die rechtliche Kennzeichnung haben unterschiedliche Adressaten. Halten Sie beide auseinander.
 
-| Frage     | Wissenschaftliche Offenlegung                         | Rechtliche Offenlegung                                                                                |
-| --------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Grundlage | Regel Ihrer Institution oder Ihrer Zeitschrift        | [KI-Verordnung der EU](../glossary.qmd#gl-kiverordnung), Artikel 50 Absatz 4 [@eu2024kiverordnung]      |
-| Gilt ab   | jedem substanziellen Einsatz                          | dem 2. August 2026, bei beruflichem Einsatz                                                            |
+| Frage     | Wissenschaftliche Offenlegung                         | Rechtliche Offenlegung                                                                                                                                |
+| --------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Grundlage | Regel Ihrer Institution oder Ihrer Zeitschrift        | [KI-Verordnung der EU](../glossary.qmd#gl-kiverordnung), Artikel 50 Absatz 4 [@eu2024kiverordnung]                                                    |
+| Gilt ab   | jedem substanziellen Einsatz                          | dem 2. August 2026, bei beruflichem Einsatz                                                                                                           |
 | Betrifft  | jede Textsorte, auch eine Seminararbeit               | einen [Deepfake](../glossary.qmd#gl-deepfake) sowie erzeugten Text zur Information der Öffentlichkeit über Angelegenheiten von öffentlichem Interesse |
-| Adressat  | Ihre Fachgemeinschaft                                 | das Publikum                                                                                           |
-| Ausnahme  | keine, wenn die Institution eine Deklaration verlangt | Text, den eine Person geprüft hat und für den sie die redaktionelle Verantwortung trägt                |
+| Adressat  | Ihre Fachgemeinschaft                                 | das Publikum                                                                                                                                          |
+| Ausnahme  | keine, wenn die Institution eine Deklaration verlangt | Text, den eine Person geprüft hat und für den sie die redaktionelle Verantwortung trägt                                                               |
 
 Die Verordnung verlangt also keine Kennzeichnung für jedes erzeugte Bild und für jeden erzeugten Text. Eine dritte Pflicht trifft nicht Sie: Artikel 50 Absatz 2 verpflichtet den Anbieter, erzeugte Inhalte maschinenlesbar zu kennzeichnen.
 
@@ -301,12 +301,12 @@ Nennen Sie auch, wofür Sie **keine** KI eingesetzt haben. Diese Angabe schützt
 
 Der Ort hängt vom Texttyp ab. Die folgende Tabelle nennt die üblichen Orte. Die Vorgabe Ihrer Institution oder Ihrer Zeitschrift geht immer vor.
 
-| Texttyp                                     | Ort der Offenlegung                                                                                             |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Seminararbeit, Proseminararbeit             | unterschriebene Erklärung am Anfang oder am Schluss, oft als Formular der Institution; Details in Fussnote oder Anhang |
-| Qualifikationsarbeit (Bachelor, Master, Dissertation) | Formular der Fakultät nach dem Prüfungsreglement, plus ein kurzer Abschnitt im Methodenteil                |
-| Aufsatz, Buchbeitrag, Monographie           | Methodenteil oder Danksagung, nach den Autorenhinweisen des Verlags                                              |
-| Vortrag, Poster, Blogbeitrag                | kurzer Hinweis am Schluss oder auf der letzten Folie                                                              |
+| Texttyp                                               | Ort der Offenlegung                                                                                                    |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Seminararbeit, Proseminararbeit                       | unterschriebene Erklärung am Anfang oder am Schluss, oft als Formular der Institution; Details in Fussnote oder Anhang |
+| Qualifikationsarbeit (Bachelor, Master, Dissertation) | Formular der Fakultät nach dem Prüfungsreglement, plus ein kurzer Abschnitt im Methodenteil                            |
+| Aufsatz, Buchbeitrag, Monographie                     | Methodenteil oder Danksagung, nach den Autorenhinweisen des Verlags                                                    |
+| Vortrag, Poster, Blogbeitrag                          | kurzer Hinweis am Schluss oder auf der letzten Folie                                                                   |
 
 Das Historische Institut der Universität Bern verlangt zum Beispiel eine unterschriebene KI-Deklaration zu jeder Seminararbeit. Eine unterlassene Deklaration gilt dort wie ein Plagiat als Täuschung [@unibe2026kirichtlinien]. Zeitschriften verlangen die Angabe meist bei der Einreichung im Methodenteil [@icmje2026recommendations].
 
@@ -346,7 +346,7 @@ Drei Regeln gelten dort:
 
 Muster für eine Fussnote:
 
-``` markdown
+```markdown
 1. [Anbieter], Antwort auf «[Ihr Prompt, gekürzt]», [Werkzeug und Version],
    [Datum der Erzeugung], [öffentlicher Link, falls vorhanden].
 ```
@@ -357,7 +357,7 @@ Ein KI-Text ist keine Quelle und keine Sekundärliteratur. Er belegt nichts. Beh
 
 Das folgende Beispiel steht am Schluss der Arbeit, vor dem Literaturverzeichnis. Es ergänzt das Formular der Institution, es ersetzt es nicht. Ersetzen Sie alle Angaben in eckigen Klammern durch Ihre eigenen.
 
-``` markdown
+```markdown
 ## Offenlegung des KI-Einsatzes
 
 Für diese Arbeit habe ich generative KI eingesetzt. Ich habe dafür
@@ -392,7 +392,7 @@ Anfrage eingesehen werden.
 
 Für einen Aufsatz genügt ein kurzer Absatz im Methodenteil:
 
-``` markdown
+```markdown
 Für die Vorarbeiten zu diesem Aufsatz habe ich ein generatives Sprachmodell
 eingesetzt ([Werkzeug, Version, Anbieter], Zugriff im März 2026): zur
 Strukturierung der Argumentation, zur Zusammenfassung von 40 Zeitungsartikeln
@@ -432,7 +432,7 @@ Der Volltext und ein PDF stehen frei unter <https://zeithistorische-forschungen.
 
 ## Übung 1: Automatisiertes Zitieren
 
-``` markdown
+```markdown
 Zitiere den Artikel <https://doi.org/10.14765/zzf.dok-1765> nach Chicago Manual of Style (18. Auflage).
 Erstelle zusätzlich einen Eintrag in einem Format, das ich direkt in Zotero importieren kann.
 ```
@@ -442,7 +442,7 @@ Ein System mit Websuche ruft den Artikel in der Regel selbst über den DOI ab. P
 
 Nur im Ausnahmefall, wenn die KI keinen Zugriff auf den Artikel erhält, laden Sie den Artikel als PDF hoch. Sie können auch Inhalt und Metadaten an den Anfang des Prompts kopieren und visuell abgrenzen, beispielsweise durch """. Beispiel:
 
-``` markdown
+```markdown
 """
 INHALT DOKUMENT
 """
@@ -453,6 +453,7 @@ METADATEN DOKUMENT
 
 IHR PROMPT
 ```
+
 :::
 
 Vergleichen Sie die Antwort mit Ihrer manuellen Zitation, den offiziellen Zitierempfehlungen auf der Verlagsseite bzw. dem DOI-Import in Zotero. Testen Sie weitere Sekundärliteraturquellen (andere Artikel, Monographien).
@@ -462,7 +463,7 @@ Vergleichen Sie die Antwort mit Ihrer manuellen Zitation, den offiziellen Zitier
 
 ## Übung 2: KI-gestützte Zusammenfassung mit Originalzitaten
 
-``` markdown
+```markdown
 Fasse den Artikel <https://doi.org/10.14765/zzf.dok-1765> zusammen.
 Verwende nur Originalzitate aus dem Artikel und zitiere diese nach Chicago Manual of Style (18. Auflage).
 ```
@@ -488,7 +489,7 @@ Sie schreiben eine vollständige Offenlegung für eine eigene Arbeit. Sie leiten
 
 ### Aufgabe mittels KI
 
-``` markdown
+```markdown
 Hier ist mein KI-Protokoll:
 """
 [PROTOKOLL EINFÜGEN]

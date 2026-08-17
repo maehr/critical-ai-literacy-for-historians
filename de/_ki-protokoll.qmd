@@ -39,17 +39,17 @@ Wie viel eine Übung verlangt, steht in der jeweiligen Übung. Manche Übungen n
 
 Kopieren Sie diese Tabelle für jeden Eintrag neu.
 
-| Feld                     | Inhalt |
-| ------------------------ | ------ |
-| Datum                    |        |
-| Schritt (Übung, Nummer)  |        |
-| Ziel (1 Satz)            |        |
-| Material (Input)         |        |
-| Prompt (wörtlich)        |        |
-| Antwort (Kurzfassung)    |        |
-| Prüfschritte             |        |
-| Entscheidung             |        |
-| Begründung (1 Satz)      |        |
+| Feld                    | Inhalt |
+| ----------------------- | ------ |
+| Datum                   |        |
+| Schritt (Übung, Nummer) |        |
+| Ziel (1 Satz)           |        |
+| Material (Input)        |        |
+| Prompt (wörtlich)       |        |
+| Antwort (Kurzfassung)   |        |
+| Prüfschritte            |        |
+| Entscheidung            |        |
+| Begründung (1 Satz)     |        |
 
 Wenn Sie in Markdown schreiben, kopieren Sie diesen Quelltext:
 
@@ -73,17 +73,17 @@ Eine Liste mit denselben Feldern ist ebenso gültig. Wählen Sie die Form, die S
 
 Das Beispiel stammt aus der Übung [Quellenkritik](quellenkritik-bundesrat-europarat-1949.qmd). Eine Studentin prüft dort eine Aktennotiz vom 7. Juli 1949.
 
-| Feld                    | Inhalt                                                                                                                                                                                                                                                                       |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Datum                   | 14. März 2026, 10:15                                                                                                                                                                                                                                                          |
-| Schritt (Übung, Nummer) | Quellenkritik, Schritt 2 (externe Quellenkritik)                                                                                                                                                                                                                              |
-| Ziel (1 Satz)           | Ich prüfe, ob die KI die formalen Angaben zur Aktennotiz korrekt aus dem Text ableitet.                                                                                                                                                                                        |
-| Material (Input)        | Aktennotiz Bern, 7.7.1949, Petitpierre/Hansen (Dodis 5020), Volltext aus der Edition in den Prompt kopiert.                                                                                                                                                                    |
-| Prompt (wörtlich)       | «Analysiere die folgende Aktennotiz ausschliesslich unter dem Gesichtspunkt der externen Quellenkritik. Nenne Verfasser, Adressat, Datum, Textsorte und Überlieferungsform. Markiere jede Angabe, die nicht im Text steht, ausdrücklich als Vermutung. […]»                     |
-| Antwort (Kurzfassung)   | Die KI nennt Petitpierre als Verfasser, Hansen als Gesprächspartner und den 7.7.1949 als Datum. Sie bezeichnet den Text als «Protokoll einer Bundesratssitzung». Sie ergänzt ohne Kennzeichnung, die Notiz liege «im Bundesarchiv unter der Signatur E 2001».                   |
+| Feld                    | Inhalt                                                                                                                                                                                                                                                                                  |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Datum                   | 14. März 2026, 10:15                                                                                                                                                                                                                                                                    |
+| Schritt (Übung, Nummer) | Quellenkritik, Schritt 2 (externe Quellenkritik)                                                                                                                                                                                                                                        |
+| Ziel (1 Satz)           | Ich prüfe, ob die KI die formalen Angaben zur Aktennotiz korrekt aus dem Text ableitet.                                                                                                                                                                                                 |
+| Material (Input)        | Aktennotiz Bern, 7.7.1949, Petitpierre/Hansen (Dodis 5020), Volltext aus der Edition in den Prompt kopiert.                                                                                                                                                                             |
+| Prompt (wörtlich)       | «Analysiere die folgende Aktennotiz ausschliesslich unter dem Gesichtspunkt der externen Quellenkritik. Nenne Verfasser, Adressat, Datum, Textsorte und Überlieferungsform. Markiere jede Angabe, die nicht im Text steht, ausdrücklich als Vermutung. […]»                             |
+| Antwort (Kurzfassung)   | Die KI nennt Petitpierre als Verfasser, Hansen als Gesprächspartner und den 7.7.1949 als Datum. Sie bezeichnet den Text als «Protokoll einer Bundesratssitzung». Sie ergänzt ohne Kennzeichnung, die Notiz liege «im Bundesarchiv unter der Signatur E 2001».                           |
 | Prüfschritte            | Ich habe alle Angaben mit der Edition auf <https://dodis.ch/5020> verglichen. Verfasser, Datum und Gesprächspartner stimmen mit dem Text überein. Die Textsorte stimmt nicht: Der Text hält ein Gespräch fest, er protokolliert keine Sitzung. Die Signatur steht nirgends im Material. |
-| Entscheidung            | Teilweise übernommen.                                                                                                                                                                                                                                                         |
-| Begründung (1 Satz)     | Ich übernehme Verfasser, Datum und Gesprächspartner, ich korrigiere die Textsorte zu «Aktennotiz», und ich verwerfe die Signatur als unbelegt.                                                                                                                                  |
+| Entscheidung            | Teilweise übernommen.                                                                                                                                                                                                                                                                   |
+| Begründung (1 Satz)     | Ich übernehme Verfasser, Datum und Gesprächspartner, ich korrigiere die Textsorte zu «Aktennotiz», und ich verwerfe die Signatur als unbelegt.                                                                                                                                          |
 
 Der Eintrag zeigt den Normalfall: Ein Teil der Antwort ist brauchbar, ein Teil ist falsch, und ein Teil ist unbelegt.
 

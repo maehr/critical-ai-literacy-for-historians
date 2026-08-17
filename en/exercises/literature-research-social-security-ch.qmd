@@ -105,13 +105,13 @@ The exercise follows a circular process of search and analysis. It starts from a
 
 ## At a Glance
 
-| Item                      | Value                                                                                                                                                                              |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Duration**              | about 1 working day (6 to 8 hours)                                                                                                                                                 |
-| **Level**                 | Intermediate                                                                                                                                                                       |
-| **Core path**             | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                          |
-| **Optional deepening**    | 4 (special paths), 7 (mapping the debate), the advanced track                                                                                                                      |
-| **Hand-in (minimum)**     | [Search log](../glossary.qmd#gl-rechercheprotokoll): 12 entries. [Reject log](../glossary.qmd#gl-reject-log): 5 entries. [AI log](../glossary.qmd#gl-ki-protokoll): 4 entries.     |
+| Item                   | Value                                                                                                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Duration**           | about 1 working day (6 to 8 hours)                                                                                                                                             |
+| **Level**              | Intermediate                                                                                                                                                                   |
+| **Core path**          | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                      |
+| **Optional deepening** | 4 (special paths), 7 (mapping the debate), the advanced track                                                                                                                  |
+| **Hand-in (minimum)**  | [Search log](../glossary.qmd#gl-rechercheprotokoll): 12 entries. [Reject log](../glossary.qmd#gl-reject-log): 5 entries. [AI log](../glossary.qmd#gl-ki-protokoll): 4 entries. |
 
 Split the working day over two or three sessions. The core path leads you to a precise research question. The optional deepening costs about 2 hours more.
 
@@ -171,7 +171,7 @@ After this exercise you can:
 
 **Literature analysis** is the problem-oriented, critical reading of this literature. It reconstructs arguments, references to theory, methods, bases of evidence and controversies, instead of extracting "facts".
 
-**Case study**: *the history of social security in Switzerland* (the welfare state, the branches of social insurance, federalism, associations, the gender order, transnational transfers).
+**Case study**: _the history of social security in Switzerland_ (the welfare state, the branches of social insurance, federalism, associations, the gender order, transnational transfers).
 
 ::: callout-note
 
@@ -241,7 +241,7 @@ Formulate in 5 to 8 sentences:
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 I work on the topic "the history of social security in Switzerland".
 Suggest 6 problem-oriented variants of a focus that a historian can work on (each with a period, a focus on actors or arenas, and a mechanism).
 Give 8 search terms per variant (DE/FR/EN, historically plausible terms) and 3 expected literature types (monograph, article, chapter in an edited volume).
@@ -252,7 +252,7 @@ No invented titles.
 
 Mark in the answer:
 
-- the anachronistic categories (mark them as *search anchors in hindsight*),
+- the anachronistic categories (mark them as _search anchors in hindsight_),
 - the implicit assumptions of theory (for example "welfare regime"),
 - the missing perspectives (for example gender, the cantonal level, international organizations and transfer).
 
@@ -289,7 +289,7 @@ Extract:
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Start from the following terms and fixed points: <insert your 6 fixed points and 5 markers of debate here>
 1) Build a map of the debate (4–6 axes) on the history of social security in Switzerland.
 2) Assign 5–8 types of author and work to each axis that one would typically expect (without inventing concrete titles).
@@ -328,7 +328,7 @@ Document for each run:
 
 Run the searches **heuristically** with AI. Give enough context.
 
-``` markdown
+```markdown
 You are a historical research assistant with knowledge of Swiss social, economic
 and political history.
 
@@ -375,7 +375,7 @@ Extract:
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 From these 5 abstracts and titles: <insert your 5 abstracts or titles here>
 1) Cluster them by the logic of the question (institutional, centred on actors, history of ideas, political economy, gender).
 2) Suggest 2 follow-up keywords per cluster (DE/FR/EN) and name 1 typical "blind spot" for each.
@@ -405,7 +405,7 @@ Document:
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Here are 10 references from the bibliography of a seed text: <insert your 10 references here>
 Order them by:
 (a) the axis of debate, (b) the method, (c) the expected base of sources.
@@ -414,9 +414,9 @@ Mark which 3 would be indispensable for a section on the state of research, and 
 
 ### Critical Check
 
-Keep a section *reject log* in your search log: at least 5 hits that you rejected although they looked plausible, with the reason for the rejection (wrong period, wrong arena, popular science only, and so on).
+Keep a section _reject log_ in your search log: at least 5 hits that you rejected although they looked plausible, with the reason for the rejection (wrong period, wrong arena, popular science only, and so on).
 
-**Deliverable**: a snowball list of at least 30 references and a section *reject log* with at least 5 entries.
+**Deliverable**: a snowball list of at least 30 references and a section _reject log_ with at least 5 entries.
 
 ## 6. Screening and Quality Assessment: Relevance, Argument, Method, Evidence
 
@@ -439,7 +439,7 @@ Apply it to 6 titles from your corpus, with a short excerpt of 150 to 250 words 
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Use this rubric: <insert your rubric here>
 Build a structured short annotation (max. 180 words) for each of the following titles and abstracts.
 Include (1) the assumed contribution, (2) the methodological approach, (3) a possible bias or limitation.
@@ -469,7 +469,7 @@ Write a memo on the debate of 400 to 600 words:
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Here is my memo on the debate: <insert your memo here>
 1) Identify the implicit assumptions (agency against structure, state against private, normativity, diagnoses of the present).
 2) Suggest 2 alternative ways to structure it (for example by arenas instead of by topics).
@@ -488,12 +488,12 @@ Derive a research question that you can work on and that is analytical from the 
 
 Formulate:
 
-- 1 statement of the gap in research (at most 3 sentences): *"Research has shown X; Y stays unclear, because …"*
+- 1 statement of the gap in research (at most 3 sentences): _"Research has shown X; Y stays unclear, because …"_
 - 2 research questions of one sentence each that are plausible on the basis of the sources and the literature.
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Start from this gap in research: <insert your statement of the gap here>
 Formulate 4 variants of an analytical historical research question.
 For each variant:
@@ -526,6 +526,7 @@ In this exercise, AI can help you to widen the search space and to structure tex
 - the bibliographic verification (catalogue, DOI),
 - the check of the base of evidence with source criticism,
 - your historiographic judgement.
+
 :::
 
 ## Learning Outcome
@@ -533,7 +534,7 @@ In this exercise, AI can help you to widen the search space and to structure tex
 At the end you hold these artifacts:
 
 1. A statement of focus and a map of the debate (1 to 2 pages)
-2. A search log with a section on the search (12 entries or more) and a section *reject log* (5 entries or more)
+2. A search log with a section on the search (12 entries or more) and a section _reject log_ (5 entries or more)
 3. A short annotated bibliography (10 to 15 titles)
 4. A memo on the debate (400 to 600 words)
 5. The gap in research, the research question and the field of risk (about 1 page)
@@ -546,7 +547,6 @@ One methodological insight comes on top: you can give reasons for which hits a c
 - Export the metadata (title, author, year, keywords) from the catalogue or from your reference manager.
 
 - Build a simple map of the bibliography:
-
   - the distribution over time (years of publication),
   - the languages and publication types,
   - a network of co-citations or of subject headings (with care: subject headings in a catalogue are curated and carry bias).

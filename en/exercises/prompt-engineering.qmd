@@ -57,13 +57,13 @@ As soon as the model delivers facts, literature, archives, references or citatio
 
 ## At a Glance
 
-| Item                      | Value                                                                  |
-| ------------------------- | ---------------------------------------------------------------------- |
-| **Duration**              | about 150 minutes                                                      |
-| **Level**                 | Beginner                                                               |
-| **Core path**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                              |
-| **Optional deepening**    | 5 (structured reasoning trace)                                         |
-| **Hand-in (minimum)**     | [AI log](../glossary.qmd#gl-ki-protokoll) with at least 8 entries      |
+| Item                   | Value                                                             |
+| ---------------------- | ----------------------------------------------------------------- |
+| **Duration**           | about 150 minutes                                                 |
+| **Level**              | Beginner                                                          |
+| **Core path**          | 1 → 2 → 3 → 4 → 6 → 7 → 8                                         |
+| **Optional deepening** | 5 (structured reasoning trace)                                    |
+| **Hand-in (minimum)**  | [AI log](../glossary.qmd#gl-ki-protokoll) with at least 8 entries |
 
 The core path leads you to a complete result in about 150 minutes. The optional deepening costs about 30 minutes more.
 
@@ -135,7 +135,7 @@ Only in the exceptional case, when the tool has no stable document access, copy 
 
 Example layout:
 
-``` markdown
+```markdown
 """
 DOCUMENT TEXT (excerpt or full text)
 """
@@ -190,7 +190,7 @@ Reformulate an imprecise request so that the answer becomes **verifiable**, **fo
 
 **Vague request (intentionally bad):**
 
-``` markdown
+```markdown
 Summarize the document and tell me what is important.
 ```
 
@@ -203,7 +203,7 @@ Take the setup from the exercise [Source Criticism](source-criticism-federal-cou
 
 **Prompt scaffold (robust, adaptable):**
 
-``` markdown
+```markdown
 Task: [concrete, 1–2 sentences]
 Context: [seminar / research question / period]
 Material: [document text + metadata, clearly separated]
@@ -237,7 +237,7 @@ Have the same task worked on in three roles:
 
 **Role prompt (example: source critic, strongly limiting):**
 
-``` markdown
+```markdown
 Role: source critic.
 Task: Analyse the material only as a source (external + internal criticism).
 Important:
@@ -252,7 +252,7 @@ Output:
 
 **Role prompt (example: devil's advocate, derived from the writing exercise):**
 
-``` markdown
+```markdown
 Role: devil's advocate.
 Input: My working hypotheses (H1–H3) + notes on the material.
 Task:
@@ -281,13 +281,13 @@ Take the **best** answer from 2A and have a second role **check** it, not rewrit
 
 ### Goal
 
-Use zero-shot as a **baseline**: fast, but prone to error. You learn *where* zero-shot is enough and *where* it evades systematically.
+Use zero-shot as a **baseline**: fast, but prone to error. You learn _where_ zero-shot is enough and _where_ it evades systematically.
 
 ### Exercise 3A: Minimal Paraphrase (Zero-shot)
 
 Use the task from [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (minimal paraphrase, at most 4 sentences) as a zero-shot prompt.
 
-``` markdown
+```markdown
 Analyse the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe) and answer:
 - Who speaks or acts?
 - What is the occasion?
@@ -306,7 +306,7 @@ Upload the document as a PDF file together with the prompt. That is the normal c
 
 Only in the exceptional case, when the upload does not work, copy the content of the document to the start of the prompt. Separate it visually, for example with """. Example:
 
-``` markdown
+```markdown
 """
 DOCUMENT CONTENT
 """
@@ -331,7 +331,7 @@ Mark in the answer:
 
 Use the template from the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd).
 
-``` markdown
+```markdown
 Give me three possible historical research questions that follow from the memorandum.
 Each question must be (a) limited in time, (b) verifiable against sources and (c) analytical.
 For each question, name the additional source types that I need for the counter-check.
@@ -359,7 +359,7 @@ Write 3 to 5 short example sentences and label them. The sentences can be **fict
 
 **Example:**
 
-``` markdown
+```markdown
 Examples (input → label):
 1) "Place: Bern; date: 7.7.1949." → [edition or metadata]
 2) "In the text, neutrality serves as an argument against a step X." → [document text]
@@ -380,7 +380,7 @@ Take 2 weak and 2 strong questions from your exercise [Research Question](formul
 
 **Scaffold:**
 
-``` markdown
+```markdown
 Examples (weak/strong):
 Weak: "Why did Switzerland join the Council of Europe?" → too broad, teleological, unclear evidence base.
 Strong: "How was 'neutrality' operationalized in internal FDFA notes of 1949–1953 as an argument for or against an institutional rapprochement with the Council of Europe?" → clear operator, period, closeness to the sources.
@@ -437,7 +437,7 @@ The section [Check and classify capabilities](#sec-capabilities) goes deeper int
 
 Use the argument mapping from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (claim, warrant, assumption, implication), but enforce the step logic:
 
-``` markdown
+```markdown
 Task: Produce an argument mapping for the passages on neutrality, compatibility and the decision process.
 
 Procedure (show it):
@@ -458,7 +458,7 @@ Transfer the structure from [Source Search](source-search-vorort-council-of-euro
 
 Replace the example question in the following prompt with your own question.
 
-``` markdown
+```markdown
 Goal: Build a research plan for the question: How did neutrality serve between 1949 and 1963 as an argument against an accession of Switzerland to the Council of Europe?
 
 Steps:
@@ -486,15 +486,15 @@ Iteration as a **controlled revision**: you do not build "more text", but improv
 
 ### Exercise 6A: Generate → Critique → Revise (Research Question)
 
-1) **Generate (v1):** zero-shot research questions (exercise 3B).\
-2) **Critique:** use the critical comparison from the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) ("Why is the aspect of neutrality missing?" and "Which sources support this?").\
-3) **Revise (v2):** have the AI revise the questions, but only along your points of criticism.
+1. **Generate (v1):** zero-shot research questions (exercise 3B).\
+2. **Critique:** use the critical comparison from the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) ("Why is the aspect of neutrality missing?" and "Which sources support this?").\
+3. **Revise (v2):** have the AI revise the questions, but only along your points of criticism.
 
 **Critique prompt (template):**
 
 Insert the full text of the first answer after "Here is answer v1:".
 
-``` markdown
+```markdown
 Here is answer v1: <insert the text of the first answer>.
 Task: Critique it claim by claim:
 - What is too broad or teleological?
@@ -508,8 +508,8 @@ No new facts.
 
 Take the exercise [Citing](citing.qmd) and enforce a two-stage output:
 
-1) extraction of structured metadata (fields),\
-2) only then the Chicago citation and the Zotero import format.
+1. extraction of structured metadata (fields),\
+2. only then the Chicago citation and the Zotero import format.
 
 **Optimization question:** Does the two-stage form improve the diagnosis of errors, for example missing page numbers or wrong editors?
 
@@ -535,7 +535,7 @@ Take a naive literature prompt ("Name the central literature on X") and optimize
 
 **Optimized prompt (scaffold):**
 
-``` markdown
+```markdown
 You are a historical research assistant.
 Goal: a starting corpus for [topic / period].
 Rules:
@@ -640,13 +640,13 @@ This way is the [minimal computing](../glossary.qmd#gl-minimal-computing) way of
 
 Check your account and fill in the table. Answer with yes, no or unclear.
 
-| Capability                            | Available? | Paid? | Where switched on? |
-| ------------------------------------- | ---------- | ----- | ------------------ |
-| Built-in reasoning mode               |            |       |                    |
-| Agentic workflow or deep research     |            |       |                    |
-| Retrieval from your own documents     |            |       |                    |
-| Reading of images and scans           |            |       |                    |
-| Local or open-weight model            |            |       |                    |
+| Capability                        | Available? | Paid? | Where switched on? |
+| --------------------------------- | ---------- | ----- | ------------------ |
+| Built-in reasoning mode           |            |       |                    |
+| Agentic workflow or deep research |            |       |                    |
+| Retrieval from your own documents |            |       |                    |
+| Reading of images and scans       |            |       |                    |
+| Local or open-weight model        |            |       |                    |
 
 Do not rely on the statement of the system about itself. Check the settings and the price information of your account.
 
@@ -673,26 +673,26 @@ Write five to eight sentences on these questions:
 
 **1) Context and material binding**
 
-``` markdown
+```markdown
 Work only with the material below.
 If information is missing, ask me or mark the place as [unclear].
 ```
 
 **2) Separation of levels (source against edition against conclusion)**
 
-``` markdown
+```markdown
 Mark each statement as [document text] / [edition or metadata] / [conclusion].
 ```
 
 **3) Answer as an intermediate product (for further work)**
 
-``` markdown
+```markdown
 Give the answer as a table with the fields: claim | evidence | uncertainty | next verification step.
 ```
 
 **4) Enforce a self-check or a counter-check**
 
-``` markdown
+```markdown
 Self-check: Name 3 plausible counter-records or alternative readings, and what you would need for them.
 ```
 

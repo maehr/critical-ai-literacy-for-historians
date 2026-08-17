@@ -66,13 +66,13 @@ For work in an archive, note the **protection periods, the terms of use and the 
 
 ## At a Glance
 
-| Item                      | Value                                                                                                                                |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Duration**              | several days, of which about 6 to 8 hours at the screen                                                                               |
-| **Level**                 | Advanced                                                                                                                              |
-| **Core path**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                                             |
-| **Optional deepening**    | 5 (secondary literature and reference works)                                                                                          |
-| **Hand-in (minimum)**     | [Search log](../glossary.qmd#gl-rechercheprotokoll): 15 entries. [AI log](../glossary.qmd#gl-ki-protokoll): 3 entries.                |
+| Item                   | Value                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Duration**           | several days, of which about 6 to 8 hours at the screen                                                                |
+| **Level**              | Advanced                                                                                                               |
+| **Core path**          | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                              |
+| **Optional deepening** | 5 (secondary literature and reference works)                                                                           |
+| **Hand-in (minimum)**  | [Search log](../glossary.qmd#gl-rechercheprotokoll): 15 entries. [AI log](../glossary.qmd#gl-ki-protokoll): 3 entries. |
 
 ::: callout-important
 
@@ -156,7 +156,7 @@ You break the research question into **sub-questions**. From them come **concret
 
 ### Task (Without AI)
 
-Sketch a working model of the *decision process* in 10 minutes (actors, arenas, phases, document types).
+Sketch a working model of the _decision process_ in 10 minutes (actors, arenas, phases, document types).
 
 **Guiding questions:**
 
@@ -166,7 +166,7 @@ Sketch a working model of the *decision process* in 10 minutes (actors, arenas, 
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Break the research question into 4–6 sub-questions that I can check against sources.
 For each sub-question, state which document types could serve as evidence.
 ```
@@ -198,11 +198,11 @@ Build a matrix with:
 - **Secondary**: research literature on foreign policy, European policy and the policy of associations; organizational history of the Vorort and economiesuisse
 - **Tertiary**: catalogues, bibliographies, dossiers, registers, databases, finding aids
 
-For each cell: *What would count as convincing evidence?* and *Which biases are likely?*
+For each cell: _What would count as convincing evidence?_ and _Which biases are likely?_
 
 ### Task (AI Exploration)
 
-``` markdown
+```markdown
 Name suitable primary, secondary and tertiary sources for the research question.
 Assign each source to an arena (Federal Council / department / parliament / association / media / international).
 ```
@@ -233,7 +233,7 @@ Build an **orienting frame of reference** before the deep search starts.
 
 ### Task (AI as a Search Assistant, Not as a Source)
 
-``` markdown
+```markdown
 Build a list of 15 search locations (portals, catalogues, editions, archives, databases)
 that could matter for the question about the Vorort and the accession to the Council of Europe in 1963.
 For each search location, state 1–2 typical types of hit (for example a message, a minute, a dossier, a newspaper article).
@@ -254,13 +254,13 @@ Develop search terms as **hypotheses that you can test**, including historical t
 
 Build three fields of terms (DE/FR/EN):
 
-1. **Actor**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l'industrie; economiesuisse (*mark this as a projection backwards*)
+1. **Actor**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l'industrie; economiesuisse (_mark this as a projection backwards_)
 2. **Event and institution**: Europarat; Council of Europe; accession and membership; 1963; the European Convention on Human Rights and its court (as context paths)
 3. **Process and mechanisms**: consultation procedure; interest association; submission; statement; expert opinion; economic interests; foreign economic policy
 
 ### Task B (with AI): Controlled Lists of Synonyms
 
-``` markdown
+```markdown
 Build 12–20 search terms for each of the three fields of terms (actor / institution and event / process).
 Conditions:
 - Give DE, FR and EN separately.
@@ -299,7 +299,7 @@ Document:
 
 Replace the example lines in the following prompt with your own search terms and hit problems.
 
-``` markdown
+```markdown
 Here are my search terms so far and my hit problems:
 - "Vorort AND Europarat": 3 hits, all after 1990.
 - "SHIV AND Beitritt": 0 hits.
@@ -311,7 +311,6 @@ Give 6 variants and explain briefly which problem each variant addresses.
 ### Deliverable
 
 - A **short annotated bibliography** of 8 to 12 titles with:
-
   - the relevance to the question (1 to 2 sentences)
   - the expected source value (which primary sources does the title cite?)
 
@@ -339,7 +338,7 @@ Choose:
 
 Replace the two example entries in the following prompt with your own eight entries.
 
-``` markdown
+```markdown
 I have the following 8 literature or source references:
 1. Altermatt, Bernhard and Gilbert Casasus (eds.): 50 Jahre Engagement der Schweiz im Europarat 1963–2013. Zurich 2013.
 2. Dodis document 5020: memorandum Petitpierre, Bern, 7.7.1949.
@@ -391,7 +390,7 @@ Build a shortlist of **10 units** with:
 
 ### Task C (with AI): Plan the Search Paths
 
-``` markdown
+```markdown
 Suggest three search paths:
 1) centred on the actor
 2) centred on the process

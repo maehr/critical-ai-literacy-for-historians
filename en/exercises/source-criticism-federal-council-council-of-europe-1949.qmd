@@ -50,7 +50,7 @@ This exercise was translated automatically from the [German original](../../de/e
 
 ## Overview and Didactic Goal
 
-This exercise teaches **transferable competencies in source criticism** (external and internal criticism) along one concrete source from the *Diplomatic Documents of Switzerland (Dodis)*. The central question is how you treat a source **as an object of historical evidence**: not as a "store of facts", but as a **situated artifact** with a context of creation and a history of transmission.
+This exercise teaches **transferable competencies in source criticism** (external and internal criticism) along one concrete source from the _Diplomatic Documents of Switzerland (Dodis)_. The central question is how you treat a source **as an object of historical evidence**: not as a "store of facts", but as a **situated artifact** with a context of creation and a history of transmission.
 
 **Case study (primary source): [Dodis: Switzerland and the Council of Europe](https://dodis.ch/5020)**
 
@@ -63,13 +63,13 @@ The source that we use here exists in an **edited digital edition**. For source 
 
 ## At a Glance
 
-| Item                      | Value                                                                                                                                     |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Duration**              | about 180 minutes                                                                                                                          |
-| **Level**                 | Intermediate                                                                                                                               |
-| **Core path**             | 1 → 2 → 3 → 5 → 6                                                                                                                          |
-| **Optional deepening**    | 4 (contextualization and counter-check)                                                                                                    |
-| **Hand-in (minimum)**     | [Source analysis log](../glossary.qmd#gl-analyseprotokoll) on one source. [AI log](../glossary.qmd#gl-ki-protokoll): 6 entries.            |
+| Item                   | Value                                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Duration**           | about 180 minutes                                                                                                               |
+| **Level**              | Intermediate                                                                                                                    |
+| **Core path**          | 1 → 2 → 3 → 5 → 6                                                                                                               |
+| **Optional deepening** | 4 (contextualization and counter-check)                                                                                         |
+| **Hand-in (minimum)**  | [Source analysis log](../glossary.qmd#gl-analyseprotokoll) on one source. [AI log](../glossary.qmd#gl-ki-protokoll): 6 entries. |
 
 The core path leads you to a complete source criticism in about 180 minutes. Step 4 costs about 90 minutes more, because you search for further sources.
 
@@ -149,7 +149,7 @@ Formulate in **at most 4 sentences**:
 
 ### Task 1b: The Same Minimal Paraphrase with AI
 
-``` markdown
+```markdown
 Analyse the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe) and answer the following questions:
 Who speaks or acts?
 What is the occasion?
@@ -167,7 +167,7 @@ Upload the document as a PDF file together with the prompt. That is the normal c
 
 Only in the exceptional case, when the upload does not work, copy the content of the document to the start of the prompt. Separate it visually, for example with """. Example:
 
-``` markdown
+```markdown
 """
 DOCUMENT CONTENT
 """
@@ -200,7 +200,7 @@ Compare therefore every citation with the digitized item. Note in the [source an
 
 ### Task 2a: First Research Heuristic Without AI
 
-Note three **possible research questions** that you could *in principle* work on with this source, still without a delimitation. Examples of question types:
+Note three **possible research questions** that you could _in principle_ work on with this source, still without a delimitation. Examples of question types:
 
 - conceptual history (neutrality as an argument)
 - institutional history (decision paths in foreign policy)
@@ -209,7 +209,7 @@ Note three **possible research questions** that you could *in principle* work on
 
 ### Task 2b: The Same Research Heuristic with AI
 
-``` markdown
+```markdown
 Give me three possible historical research questions that follow from the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe).
 Formulate each question so that it is (a) limited in time, (b) verifiable against sources and (c) analytical.
 For each question, name the additional source types that I need for the counter-check.
@@ -269,7 +269,7 @@ Note at each station:
 
 ### Task 4: External Criticism with AI
 
-``` markdown
+```markdown
 Analyse the digitally edited memorandum (Dodis 5020, Bern 7.7.1949) only from the viewpoint of external source criticism.
 
 1) Identify on the basis of the metadata:
@@ -312,7 +312,7 @@ Determine the function of the memorandum in the administrative context, with a p
 - Does it steer the internal formation of opinion?
 - Does it mark a red line (neutrality as a stop signal)?
 
-**Result:** 1 paragraph (6 to 10 sentences) that argues the *function* and the *addressing*, with evidence from the text.
+**Result:** 1 paragraph (6 to 10 sentences) that argues the _function_ and the _addressing_, with evidence from the text.
 
 ### Task 2: Argument Mapping (Neutrality as the Key Operator)
 
@@ -325,7 +325,7 @@ Extract all passages on neutrality, compatibility or decision processes, and bre
 
 **Format suggestion (Markdown):**
 
-``` markdown
+```markdown
 - Claim:
 - Warrant:
 - Assumption:
@@ -371,7 +371,7 @@ If evidence is missing, mark the statement as a hypothesis.
 
 ### Task 5: Internal Criticism with AI
 
-``` markdown
+```markdown
 Carry out an internal source criticism of the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen).
 
 Analyse separately:
@@ -406,7 +406,7 @@ The memorandum points indirectly to further contexts, for example commissions, p
 Build a **research matrix** with at least 6 rows:
 
 | Trace in the text | What exactly to search? | Expected source type | Where to search? | Purpose of the counter-check |
-|---------------|---------------|---------------|---------------|---------------|
+| ----------------- | ----------------------- | -------------------- | ---------------- | ---------------------------- |
 
 Examples for "Where to search?", as categories and not as a complete list:
 
@@ -418,7 +418,7 @@ Examples for "Where to search?", as categories and not as a complete list:
 
 ### Task 2: Counterfactual Counter-Question (Control Instrument)
 
-Formulate two counter-questions that *challenge* the memorandum:
+Formulate two counter-questions that _challenge_ the memorandum:
 
 - What would I have to find so that the thesis "neutrality prevented the accession" becomes **too crude**?
 - What would I have to find so that the statement on the referendum looks like **strategic rhetoric** and not like a forecast?
@@ -442,7 +442,7 @@ Make no claims about the content of these sources. Give only the plan and the he
 
 ### Task 3: Planning the Search and the Counter-Check with AI
 
-``` markdown
+```markdown
 Derive a systematic research plan from the memorandum (Bern, 7.7.1949, Petitpierre/Hansen).
 
 1) Name at least:
@@ -478,7 +478,7 @@ Build a list in two parts:
 
 **A. Well supported (high certainty)**: statements that the memorandum carries directly, with evidence in the text.
 
-**B. Not supported or open (veto)**: statements that the memorandum *suggests*, but does not support, or even excludes.
+**B. Not supported or open (veto)**: statements that the memorandum _suggests_, but does not support, or even excludes.
 
 Guiding questions:
 
@@ -511,7 +511,7 @@ Mark each statement as: certain / probable / speculative.
 
 ### Task 3: Evidence Profile with AI
 
-``` markdown
+```markdown
 Build two separate lists on the basis of the memorandum:
 
 A) statements that the text supports directly and unambiguously.

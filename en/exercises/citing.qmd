@@ -118,13 +118,13 @@ The exercise has two parts. The first part covers the **citation** of sources an
 
 ## At a Glance
 
-| Item                      | Value                                                                        |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| **Duration**              | about 90 minutes                                                             |
-| **Level**                 | Beginner                                                                     |
-| **Core path**             | exercise 1 → exercise 2 → exercise 3                                         |
-| **Optional deepening**    | the variant with an article behind a paywall                                 |
-| **Hand-in (minimum)**     | One disclosure of the AI use. [AI log](../glossary.qmd#gl-ki-protokoll): 4 entries. |
+| Item                   | Value                                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| **Duration**           | about 90 minutes                                                                    |
+| **Level**              | Beginner                                                                            |
+| **Core path**          | exercise 1 → exercise 2 → exercise 3                                                |
+| **Optional deepening** | the variant with an article behind a paywall                                        |
+| **Hand-in (minimum)**  | One disclosure of the AI use. [AI log](../glossary.qmd#gl-ki-protokoll): 4 entries. |
 
 All three exercises belong to the core path. The optional deepening costs about 20 minutes more.
 
@@ -253,13 +253,13 @@ A citation and a disclosure are two different things. A **citation** gives the r
 
 In the other exercises you keep an **AI log**. The log is your private record of work. It holds prompts, answers, verification steps and decisions. The disclosure is the public statement. You condense the log into a few sentences.
 
-| Feature   | AI log                                              | Disclosure                                        |
-| --------- | --------------------------------------------------- | ------------------------------------------------- |
-| Addressee | you, and your supervisor on request                 | all readers                                        |
-| Extent    | complete, all entries                               | short, mostly 5 to 15 sentences                    |
-| Place     | your own file or an appendix                        | a fixed place in the work                          |
-| Purpose   | reconstruction of the work process                  | transparency and responsibility                    |
-| Time      | continuous during the work                          | at the end, derived from the log                   |
+| Feature   | AI log                              | Disclosure                       |
+| --------- | ----------------------------------- | -------------------------------- |
+| Addressee | you, and your supervisor on request | all readers                      |
+| Extent    | complete, all entries               | short, mostly 5 to 15 sentences  |
+| Place     | your own file or an appendix        | a fixed place in the work        |
+| Purpose   | reconstruction of the work process  | transparency and responsibility  |
+| Time      | continuous during the work          | at the end, derived from the log |
 
 **Rule to remember**: without a log you cannot write a truthful disclosure.
 
@@ -279,13 +279,13 @@ Disclose the AI use as soon as it is **substantial**. Substantial means that the
 
 The academic disclosure and the legal marking have different addressees. Keep the two apart.
 
-| Question  | Academic disclosure                                    | Legal disclosure                                                                                        |
-| --------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Basis     | the rule of your institution or of your journal        | the [AI Act of the EU](../glossary.qmd#gl-kiverordnung), Article 50(4) [@eu2024kiverordnung]              |
-| Applies   | from every substantial use                             | from 2 August 2026, for a professional use                                                                |
-| Covers    | every text type, a seminar paper included              | a [deep fake](../glossary.qmd#gl-deepfake), and generated text published to inform the public on matters of public interest |
-| Addressee | your scholarly community                               | the public                                                                                                |
-| Exception | none, when the institution requires a declaration      | text that a person reviewed and for which that person holds the editorial responsibility                  |
+| Question  | Academic disclosure                               | Legal disclosure                                                                                                            |
+| --------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Basis     | the rule of your institution or of your journal   | the [AI Act of the EU](../glossary.qmd#gl-kiverordnung), Article 50(4) [@eu2024kiverordnung]                                |
+| Applies   | from every substantial use                        | from 2 August 2026, for a professional use                                                                                  |
+| Covers    | every text type, a seminar paper included         | a [deep fake](../glossary.qmd#gl-deepfake), and generated text published to inform the public on matters of public interest |
+| Addressee | your scholarly community                          | the public                                                                                                                  |
+| Exception | none, when the institution requires a declaration | text that a person reviewed and for which that person holds the editorial responsibility                                    |
 
 The regulation therefore requires no marking for every generated image and for every generated text. A third duty does not concern you: Article 50(2) obliges the provider to mark generated content in a machine-readable format.
 
@@ -308,12 +308,12 @@ Name also what you did **not** use AI for. This item protects you from a misunde
 
 The place depends on the type of text. The following table names the usual places. The rule of your institution or of your journal always takes precedence.
 
-| Type of text                                      | Place of the disclosure                                                                                          |
-| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Seminar paper, proseminar paper                   | a signed declaration at the start or at the end, often on a form of the institution; the details in a footnote or in an appendix |
-| Thesis (bachelor, master, dissertation)           | the form of the faculty under the examination rules, plus a short section in the method part                       |
-| Article, book chapter, monograph                  | the method part or the acknowledgements, following the author guidelines of the publisher                          |
-| Talk, poster, blog post                           | a short note at the end or on the last slide                                                                       |
+| Type of text                            | Place of the disclosure                                                                                                          |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Seminar paper, proseminar paper         | a signed declaration at the start or at the end, often on a form of the institution; the details in a footnote or in an appendix |
+| Thesis (bachelor, master, dissertation) | the form of the faculty under the examination rules, plus a short section in the method part                                     |
+| Article, book chapter, monograph        | the method part or the acknowledgements, following the author guidelines of the publisher                                        |
+| Talk, poster, blog post                 | a short note at the end or on the last slide                                                                                     |
 
 The Institute of History of the University of Bern, for example, requires a signed AI declaration with every seminar paper. A missing declaration counts there as deception, like a plagiarism [@unibe2026kirichtlinien]. Journals mostly ask for the item in the method part at submission [@icmje2026recommendations].
 
@@ -353,7 +353,7 @@ Three rules apply there:
 
 Model for a footnote:
 
-``` markdown
+```markdown
 1. [Provider], answer to "[your prompt, shortened]", [tool and version],
    [date of generation], [public link, if one exists].
 ```
@@ -364,7 +364,7 @@ An AI text is neither a source nor secondary literature. It supports nothing. Tr
 
 The following example stands at the end of the work, before the bibliography. It supplements the form of the institution, and it does not replace it. Replace every item in square brackets with your own.
 
-``` markdown
+```markdown
 ## Disclosure of the AI use
 
 I used generative AI for this work. I used [tool, version, provider] for it
@@ -397,7 +397,7 @@ The complete AI log holds 14 entries. It exists and can be inspected on request.
 
 For an article, a short paragraph in the method part is enough:
 
-``` markdown
+```markdown
 For the preparatory work on this article I used a generative language model
 ([tool, version, provider], accessed in March 2026): to structure the argument,
 to summarize 40 newspaper articles and to revise the language. I checked all
@@ -436,7 +436,7 @@ The full text and a PDF are freely available at <https://zeithistorische-forschu
 
 ## Exercise 1: Automated Citation
 
-``` markdown
+```markdown
 Cite the article <https://doi.org/10.14765/zzf.dok-1765> according to the Chicago Manual of Style (18th edition).
 Build in addition an entry in a format that I can import into Zotero directly.
 ```
@@ -446,7 +446,7 @@ A system with a web search normally retrieves the article itself through the DOI
 
 Only in the exceptional case, when the AI gets no access to the article, upload the article as a PDF file. You can also copy the content and the metadata to the start of the prompt and separate them visually, for example with """. Example:
 
-``` markdown
+```markdown
 """
 DOCUMENT CONTENT
 """
@@ -457,6 +457,7 @@ DOCUMENT METADATA
 
 YOUR PROMPT
 ```
+
 :::
 
 Compare the answer with your manual citation, with the official citation recommendations on the publisher page, and with the DOI import in Zotero. Test further sources of secondary literature (other articles, monographs).
@@ -466,7 +467,7 @@ Compare the answer with your manual citation, with the official citation recomme
 
 ## Exercise 2: AI-Assisted Summary with Original Quotations
 
-``` markdown
+```markdown
 Summarize the article <https://doi.org/10.14765/zzf.dok-1765>.
 Use only original quotations from the article, and cite them according to the Chicago Manual of Style (18th edition).
 ```
@@ -492,7 +493,7 @@ You write a complete disclosure for a piece of your own work. You derive this di
 
 ### Task with AI
 
-``` markdown
+```markdown
 Here is my AI log:
 """
 [INSERT LOG]

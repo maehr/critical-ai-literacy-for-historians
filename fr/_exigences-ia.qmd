@@ -22,11 +22,11 @@ Certains systèmes reprennent des indications de sessions antérieures ou d'un c
 
 Vérifiez avec quel compte vous travaillez. Les règles diffèrent sur trois points.
 
-| Point               | Compte de votre institution                                     | Compte privé                                             |
-| ------------------- | --------------------------------------------------------------- | -------------------------------------------------------- |
-| Contrat             | Votre haute école le conclut et partage la responsabilité.      | Vous le concluez vous-même et vous répondez seul.        |
-| Entraînement        | Un contrat exclut souvent l'usage de vos saisies.               | De nombreux fournisseurs utilisent les saisies pour l'entraînement. |
-| Matériel autorisé   | La haute école règle quelles données vous pouvez saisir.        | Vous n'avez pas de telle règle et vous portez le risque. |
+| Point             | Compte de votre institution                                | Compte privé                                                        |
+| ----------------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
+| Contrat           | Votre haute école le conclut et partage la responsabilité. | Vous le concluez vous-même et vous répondez seul.                   |
+| Entraînement      | Un contrat exclut souvent l'usage de vos saisies.          | De nombreux fournisseurs utilisent les saisies pour l'entraînement. |
+| Matériel autorisé | La haute école règle quelles données vous pouvez saisir.   | Vous n'avez pas de telle règle et vous portez le risque.            |
 
 Demandez au service informatique ou à la bibliothèque de votre haute école si vous ne trouvez pas les règles. Notez la réponse dans votre [journal IA](../glossary.qmd#gl-ki-protokoll).
 
