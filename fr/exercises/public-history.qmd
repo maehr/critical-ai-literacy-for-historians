@@ -97,7 +97,7 @@ Les moteurs de recherche et les systèmes d'IA structurent la visibilité de man
 
 ::: callout-important
 
-## Règle de base: L'IA ne peut pas « inventer »
+## Règle de base: l'IA ne doit rien « inventer »
 
 Travaillez avec un **package de sources**: titre/DOI, résumé, résultats centraux dans vos propres notes, quelques points clés/emplacements de preuves (pages/sections), éventuellement figures/tableaux.
 Ne donnez à l'IA que du matériel que vous pouvez contrôler vous-même, et faites travailler l'IA explicitement **uniquement à partir de cela**.

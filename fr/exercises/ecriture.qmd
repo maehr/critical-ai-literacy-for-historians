@@ -87,7 +87,7 @@ Pour un travail plus fiable, utilisez systématiquement deux principes de prompt
 
 ::: callout-important
 
-## Règle de base: L'IA ne peut pas « inventer »
+## Règle de base: l'IA ne doit rien « inventer »
 
 Utilisez l'IA uniquement comme **outil de transformation et de vérification** pour *votre* matériel (notes, extraits de sources, résumés de littérature, ébauches de plan). Lorsque l'IA nomme des faits, de la littérature ou des sources supplémentaires, cela compte comme une **hypothèse de recherche** que vous devez **vérifier extérieurement**.
 :::
