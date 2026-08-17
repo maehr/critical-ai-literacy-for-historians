@@ -1,18 +1,22 @@
 name: Create changelog
 
 on:
-  pull_request:
-    branches:
-      - main
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
 
-# This workflow checks the changelog; it does not commit one.
+# The changelog is a release artefact, so this workflow runs on a tag or on
+# demand, not on every pull request.
 #
-# Committing from CI needed a GITHUB_TOKEN push, and GitHub starts no check run
-# for such a push. The required "Lint with Prettier" check therefore stayed
-# queued on the bot's own head commit, which blocked the pull request and added
-# an unsigned commit. A check keeps `CHANGELOG.md` current without either
-# problem. Run `npm run changelog` locally and commit the result.
+# It does not commit. Committing from CI needed a GITHUB_TOKEN push, and GitHub
+# starts no check run for such a push, so the required Lint check stayed queued
+# on the bot's own head commit. That blocked the pull request and added an
+# unsigned commit to it.
+#
+# Gating pull requests on the changelog does not work either: every new commit
+# makes the committed file stale, so the check would fail on its own commits.
+# Run `npm run changelog` when you cut a release and commit the result.
 permissions:
   contents: read
 
