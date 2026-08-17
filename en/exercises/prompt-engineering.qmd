@@ -1,8 +1,8 @@
 ---
 lang: en
 title: "Prompt Engineering"
-subtitle: "Historical Work with LLMs: Controlled Heuristics, Reproducibility, Evidence Discipline"
-description: "An exercise that trains central prompting techniques (basics, roles, zero-/few-shot, structured thinking trace, iterative prompting, optimization) using historical science work processes."
+subtitle: "Historical work with LLMs: controlled heuristics, reproducibility, evidence discipline"
+description: "An exercise that trains central prompting techniques (basics, roles, zero-shot and few-shot, structured reasoning trace, iterative prompting, optimization) along historical work processes, and that classifies the newer capabilities of AI systems."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -19,90 +19,129 @@ tags:
   - Reproducibility
   - Digital Source Criticism
   - Traceability
-  - Scientific Integrity
+  - Academic Integrity
+  - Data Protection
+difficulty: Beginner
+time_estimate: "150 min"
 draft: false
 nocite: ""
 references: []
 ---
 
+::: callout-warning
+
+## Automated Translation
+
+This exercise was translated automatically from the [German original](../../de/exercises/prompt-engineering.qmd) and can contain errors. Consult the original version in case of doubt.
+:::
+
 ## Overview and Didactic Goal
 
-This exercise makes prompting visible **as a method**: prompts here are not "tricks," but rather **operationalizations** of historical work tasks. [@campbell2025historian; @oberbichler2025implementing]
+This exercise makes prompting visible **as a method**: prompts here are not "tricks", but **operationalizations** of historical work tasks. [@campbell2025historian; @oberbichler2025implementing]
 
-You will train how to:
+You train how you
 
-- delimit tasks clearly,
-- format responses verifiably,
-- control error sources, and
+- delimit tasks cleanly,
+- format an answer so that you can check it,
+- control the sources of error, and
 - **document results reproducibly**.
 
-Unlike the thematic exercises ([Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd), [Literature Research](literature-research-social-security-ch.qmd), [Source Search](source-search-vorort-council-of-europe-1963.qmd), [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd), [Writing](writing.qmd), [Citing](citing.qmd), [Public History](public-history.qmd)), this unit focuses on the **common infrastructure**: prompt design, role selection, iteration, and optimization.
+Unlike the thematic exercises ([Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd), [Literature Research](literature-research-social-security-ch.qmd), [Source Search](source-search-vorort-council-of-europe-1963.qmd), [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd), [Writing](writing.qmd), [Citing](citing.qmd), [Public History](public-history.qmd)), this unit focuses on the **common infrastructure**: prompt design, choice of role, iteration and optimization.
 
 ::: callout-important
 
-## Basic Rule: AI as Hypothesis
+## Basic rule: AI as hypothesis
 
-Whenever the model provides facts, literature, archives, signatures, or quotes that do not come from your input or verifiable references, treat that as a **hypothesis** (not as a result). [@bender2021stochastic] Your work remains: **counter-check, verification, decision**.
+As soon as the model delivers facts, literature, archives, references or citations that do not come from your input or from verifiable records, treat that as a **hypothesis** and not as a result. [@bender2021stochastic] Your work stays the same: **counter-check, record, decide**.
 :::
 
-## Prerequisites
+## At a Glance
 
-- Basic understanding of historical research methods
+| Item                      | Value                                                                  |
+| ------------------------- | ---------------------------------------------------------------------- |
+| **Duration**              | about 150 minutes                                                      |
+| **Level**                 | Beginner                                                               |
+| **Core path**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                              |
+| **Optional deepening**    | 5 (structured reasoning trace)                                         |
+| **Hand-in (minimum)**     | [AI log](../glossary.qmd#gl-ki-protokoll) with at least 8 entries      |
+
+The core path leads you to a complete result in about 150 minutes. The optional deepening costs about 30 minutes more.
+
+This exercise is the basis for all other exercises. Plan more time for the first run, because you also set up your AI log here.
+
+## What You Need
+
+**Subject knowledge**
+
+- A basic understanding of historical research methods
+
+**Capabilities of the AI system**
+
+The system must be able to do the three following things:
+
+- Read a file that you upload, and quote from this file. You need this in step 3 and in step 4.
+- Deliver an answer in a format that you prescribe, for example as a table.
+- Start a new session. In this exercise you check what the system carries over from earlier sessions.
+
+**Other tools and access**
+
+- A file for your AI log. A text file or a document in your word processor is enough.
+- The material package from the section "Case package for all exercises". For it you download a freely accessible source.
+
+{{< include ../_ai-requirements.qmd >}}
 
 ## Learning Objectives
 
-Upon completion of the exercise, you will be able to:
+After the exercise you can:
 
-- **structure** prompts (structured context, response format, constraints, verification mode),
-- **purposefully** use roles (e.g., source critic, research assistant, devil's advocate, editor),
-- **situationally** choose between zero-shot and few-shot prompting,
-- request a **structured thinking trace** (task decomposition, intermediate products, self-checks),
-- implement iterative prompting as a **controlled workflow** (Generate → Critique → Revise → Verify),
-- optimize prompts based on **quality criteria** (error reduction, format stability, verifiability, reproducibility).
+- **structure** prompts (structured context, answer format, [constraints](../glossary.qmd#gl-constraints), verification mode),
+- use roles **deliberately**, for example source critic, research assistant, devil's advocate or copy editor,
+- choose zero-shot and few-shot prompting **to fit the situation**,
+- request a **structured reasoning trace** (task decomposition, intermediate products, self-checks),
+- run iterative prompting as a **controlled workflow** (generate → critique → revise → verify),
+- optimize prompts against **quality criteria** (error reduction, format stability, verifiability, reproducibility),
+- tell a requested reasoning trace apart from a **built-in reasoning mode**,
+- name five newer **capabilities** of AI systems and classify their sources of error (reasoning mode, agentic workflows, retrieval from your own documents, handwritten text recognition, local models).
 
-## Working Mode: AI Protocol and A/B Testing
+## Working Mode: AI Log and A/B Testing
 
-Maintain a brief prompt protocol (audit trail). Also use it in the other exercises.
+Keep an AI log. Use it in the other exercises as well.
 
-**Minimal Template:**
+{{< include ../_ai-log.qmd >}}
 
-- Step
-- Goal
-- Input (material)
-- Prompt (core excerpt)
-- Response (brief)
-- Verification steps
-- Decision
+### A/B Testing (Minimum)
 
-**A/B Testing (Minimum):** For each technique, run at least **two prompt variants**, then compare:
+Run at least **two prompt variants** for each technique. Then compare:
 
-1. Format stability,
-2. Overreach (speculation)
-3. Suitability for your next work steps.
+1. format stability,
+2. overreach (speculation),
+3. fit with your next work steps.
 
 ## Case Package for All Exercises
 
-Use – as in the other exercises – a **concrete, verifiable material package**:
+Use a **concrete, controllable material package**, as in the other exercises:
 
-1. **Primary source** see exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd)
-2. **Context resource** see exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) or [Source Search](source-search-vorort-council-of-europe-1963.qmd).
-3. **Optional secondary source** see exercise [Literature Research](literature-research-social-security-ch.qmd) or [Citing](citing.qmd).
+1. **Primary source**: see the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd).
+2. **Context resource**: see the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) or [Source Search](source-search-vorort-council-of-europe-1963.qmd).
+3. **Optional secondary source**: see the exercise [Literature Research](literature-research-social-security-ch.qmd) or [Citing](citing.qmd).
 
 ::: callout-tip
 
-## Reproducible Structuring
+## Reproducible structuring
 
-If the tool does not have stable document access: copy (a) text excerpt and (b) metadata into the prompt and visually separate both, e.g., with triple quotes.
+Hand the source over as a file. That is the normal case.
+
+Only in the exceptional case, when the tool has no stable document access, copy (a) a text excerpt and (b) the metadata into the prompt. Separate the two visually, for example with three quotation marks.
 
 Example layout:
 
 ``` markdown
 """
-DOCUMENT TEXT (excerpt/full text)
+DOCUMENT TEXT (excerpt or full text)
 """
 
 """
-METADATA (title, date, location, author, edition/URL, archive signature, access date)
+METADATA (title, date, place, author, edition or URL, archive reference, access date)
 """
 
 TASK
@@ -112,21 +151,32 @@ TASK
 
 ::: callout-tip
 
-## Session Restart as Control Instrument
+## Session restart: a measure with a duty to check
 
-For each new task, a **new session** is recommended.
+Start each new task in a **new session**.
 
-A session restart reduces implicit context carryover:  
-The model then **no longer draws on previous tasks, examples, or role assumptions**, but works exclusively with the current material and task.
+A restart forces you to hand the material over again. That raises the verifiability of your work steps.
 
-Use a restart especially when:
+A restart guarantees **no empty context**. Many systems keep a permanent memory, a project or workspace context, or a rule of the organization. Such systems carry statements from earlier sessions into a new session too.
 
-- Responses repeatedly make wrong references,
-- Previous roles or examples "leak through",
-- Unclear assumptions from previous steps are perpetuated.
+**Check therefore what your system carries over:**
 
-**Mnemonic:**  
-A new session enforces renewed material binding and increases verifiability.
+1. Check the settings for memory, projects and chat history. These settings are the reliable record.
+2. Start a new session.
+3. Ask what the system knows about you and about your earlier tasks.
+4. Ask where these statements come from.
+5. Compare the answers with the settings. Note the differences in the AI log.
+
+The answer of the system about its own memory is a self-report and not a record. Treat it like every other AI output: as a claim that you check.
+
+Use a restart above all when:
+
+- answers repeatedly make wrong connections,
+- earlier roles or examples "leak through",
+- unclear assumptions from earlier steps carry on.
+
+**Rule to remember:**
+A new session is a measure and not a guarantee. Claim reproducibility only after you checked the context that the system carried over.
 
 :::
 
@@ -134,28 +184,28 @@ A new session enforces renewed material binding and increases verifiability.
 
 ### Goal
 
-To reformulate a vague request so that the response becomes **verifiable**, **format-stable**, and **source/input-bound**.
+Reformulate an imprecise request so that the answer becomes **verifiable**, **format-stable** and **bound to the source or the input**.
 
 ### Exercise: From "vague" to "operationalized"
 
 **Vague request (intentionally bad):**
 
 ``` markdown
-Summarize the document and tell me what's important.
+Summarize the document and tell me what is important.
 ```
 
-**Task:** Create two clean prompts from this:
+**Task:** Build two clean prompts from it:
 
-- **Variant A (minimal):** only goal + response format.
-- **Variant B (robust):** goal + structured context + constraints + response format + self-check.
+- **Variant A (minimal):** only goal and answer format.
+- **Variant B (robust):** goal, structured context, constraints, answer format and self-check.
 
-Orient yourself on the setup from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (minimal paraphrase, max. 4 sentences).
+Take the setup from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) as your model (minimal paraphrase, at most 4 sentences).
 
-**Prompt Scaffold (robust, adaptable):**
+**Prompt scaffold (robust, adaptable):**
 
 ``` markdown
 Task: [concrete, 1–2 sentences]
-Context: [seminar/research question/time period]
+Context: [seminar / research question / period]
 Material: [document text + metadata, clearly separated]
 Rules:
 - Work only with the material.
@@ -164,94 +214,97 @@ Rules:
 Output format:
 1) Minimal paraphrase (max. 4 sentences)
 2) 5 key terms (from the text)
-3) 3 open questions (what remains unclear?)
+3) 3 open questions (what stays unclear?)
 Self-check:
-- List 3 places where you'd be tempted to speculate, and briefly explain why you don't.
+- List 3 places where you would be tempted to speculate, and explain briefly why you do not.
 ```
 
-## 2. Roles: Goal
+## 2. Roles
 
 ### Goal
 
-To use roles as **method constraints**: each role enforces different heuristics, blind spots, and verification modes.
+Use roles as **methodological constraints**: each role enforces different heuristics, blind spots and verification modes.
 
 ### Exercise 2A: One Task, Three Roles
 
-Choose **one** task from the other exercises (e.g., develop research question; external source criticism; search terms for catalogs; blog briefing).
+Choose **one** task from the other exercises, for example develop a research question, do external source criticism, build search terms for catalogues, or write a blog briefing.
 
-Have the same task processed in three roles:
+Have the same task worked on in three roles:
 
-1. **Source Critic** (text-close, separate levels) – see [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd).
-2. **Devil's Advocate** (stress tests, counter-arguments) – see [Writing](writing.qmd).
-3. **Structurer/Outliner** (work plan, intermediate products) – see [Public History](public-history.qmd) or [Writing](writing.qmd).
+1. **Source critic** (close to the text, separate the levels) – see [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd).
+2. **Devil's advocate** (stress tests, counter-arguments) – see [Writing](writing.qmd).
+3. **Structurer** (work plan, intermediate products) – see [Public History](public-history.qmd) or [Writing](writing.qmd).
 
-**Role Prompt (Example: Source Critic, strongly limiting):**
+**Role prompt (example: source critic, strongly limiting):**
 
 ``` markdown
-Role: Source Critic.
-Task: Analyze the material exclusively as a source (external + internal criticism).
+Role: source critic.
+Task: Analyse the material only as a source (external + internal criticism).
 Important:
-- Strictly separate: [Document text] / [Edition/Metadata] / [Conclusion].
+- Separate strictly: [document text] / [edition or metadata] / [conclusion].
 - No historical evaluations.
-- Every conclusion needs text or metadata support.
+- Every conclusion needs support in the text or in the metadata.
 Output:
 1) Level table
-2) 5 verifiable authenticity/transmission questions
-3) 5 bias/speaker position hypotheses (mark as hypotheses)
+2) 5 verifiable questions on authenticity and transmission
+3) 5 hypotheses on bias and speaker position (mark them as hypotheses)
 ```
 
-**Role Prompt (Example: Devil's Advocate, derived from the writing exercise):**
+**Role prompt (example: devil's advocate, derived from the writing exercise):**
 
 ``` markdown
-Role: Devil's Advocate.
-Input: My working hypotheses (H1–H3) + material hints.
+Role: devil's advocate.
+Input: My working hypotheses (H1–H3) + notes on the material.
 Task:
 - Name the debatable assumption for each hypothesis.
-- Formulate a stress test (what finding would overturn it?).
-- Give 1 alternative interpretation (max. 2 sentences).
+- Formulate a stress test (which finding would overturn it?).
+- Give 1 alternative reading (max. 2 sentences).
 No external facts.
-Hypotheses: …
 ```
 
 ### Exercise 2B: Role Switch as Diagnosis
 
-Take the **best** response from 2A and have it **reviewed** by a second role, not rewritten:
+Take the **best** answer from 2A and have a second role **check** it, not rewrite it:
 
-- Role "Logic Checker" (cf. *Writing*): consistency, jumps, missing evidence points.
-- Role "Catalog Assistant" (cf. *Literature Research*): translates into search strings/indicators.
+- Role "logic checker" (see the exercise [Writing](writing.qmd)): consistency, jumps, missing evidence.
+- Role "catalogue assistant" (see the exercise [Literature Research](literature-research-social-security-ch.qmd)): translates into search strings and indicators.
 
-## 3. Zero-shot Prompting: Goal
+## 3. Zero-shot Prompting
 
 ::: callout-note
 
-## Zero-shot Prompting
+## Definition: zero-shot prompting
 
-Zero-shot prompting means that the model receives no examples, only task, material, and constraints.
+[Zero-shot prompting](../glossary.qmd#gl-zero-shot) means that the model receives no examples, but only the task, the material and the constraints.
 
 :::
 
 ### Goal
 
-To use zero-shot as a **baseline**: fast, but error-prone. You learn *where* zero-shot suffices and *where* it systematically evades.
+Use zero-shot as a **baseline**: fast, but prone to error. You learn *where* zero-shot is enough and *where* it evades systematically.
 
 ### Exercise 3A: Minimal Paraphrase (Zero-shot)
 
-Use the task from [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (minimal paraphrase, max. 4 sentences) as zero-shot.
+Use the task from [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (minimal paraphrase, at most 4 sentences) as a zero-shot prompt.
 
 ``` markdown
-Analyze the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe) and answer:
-- Who speaks/acts?
+Analyse the attached memorandum (Bern, 7.7.1949, Petitpierre/Hansen, Council of Europe) and answer:
+- Who speaks or acts?
 - What is the occasion?
-- What is the central statement/decision?
-- What consequence is indicated?
-Maximum 4 sentences. No interpretation.
+- What is the central statement or decision?
+- Which consequence is indicated?
+At most 4 sentences. No interpretation.
 ```
 
 ::: callout-tip
 
-## Uploading the Source
+## Uploading the source
 
-Upload the document as a PDF file together with the prompt. If that's not possible, copy the document content to the beginning of the prompt and visually separate it, for example with """. Also ensure the AI has access to metadata (either through online access or by providing the metadata). Example:
+Check before every upload whether you have the right to pass the material on. The section "What you need" names the materials that stay outside the AI system. Free access alone permits no upload: a freely accessible source can still forbid a disclosure. Read the terms of use of the provider before you upload a file.
+
+Upload the document as a PDF file together with the prompt. That is the normal case. Make sure that the AI also has access to the metadata. Retrieve the metadata online, or state it yourself.
+
+Only in the exceptional case, when the upload does not work, copy the content of the document to the start of the prompt. Separate it visually, for example with """. Example:
 
 ``` markdown
 """
@@ -269,277 +322,403 @@ YOUR PROMPT
 
 **Diagnosis:**
 
-Mark in the response:
+Mark in the answer:
 
-- Places that do not clearly follow from the text,
-- Implicit context assumptions (where does the model "know" more than your input?).
+- the passages that do not follow clearly from the text,
+- the implicit context assumptions (where does the model "know" more than your input?).
 
 ### Exercise 3B: Three Research Questions (Zero-shot)
 
 Use the template from the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd).
 
 ``` markdown
-Give me three possible historical research questions that can be derived from the memorandum.
-Each question must be (a) temporally delimitable, (b) source-based verifiable, and (c) analytical.
-For each question, name which additional source types I need for counter-verification.
+Give me three possible historical research questions that follow from the memorandum.
+Each question must be (a) limited in time, (b) verifiable against sources and (c) analytical.
+For each question, name the additional source types that I need for the counter-check.
 ```
 
-**Reflection:** Which questions are (i) truly source-bound, which (ii) "generic" questions that fit many cases?
+**Reflection:** Which questions are (i) truly bound to the source, and which are (ii) "generic" questions that fit many cases?
 
-## 4. Few-shot Prompting: Goal
+## 4. Few-shot Prompting
 
 ::: callout-note
 
-## Few-shot Prompting
+## Definition: few-shot prompting
 
-Few-shot prompting means that the model receives explicit examples, which often leads to better responses.
+[Few-shot prompting](../glossary.qmd#gl-few-shot) means that the model receives explicit examples, which often leads to better answers.
 
 :::
 
 ### Goal
 
-Few-shot uses examples to stabilize **categories**, **response formats**, and **quality standards**.
+Few-shot uses examples to stabilize **categories**, **answer formats** and **quality standards**.
 
-### Exercise 4A: Few-shot for Level Separation (Document Text/Edition/Conclusion)
+### Exercise 4A: Few-shot for the Separation of Levels (Document Text, Edition, Conclusion)
 
-Create 3–5 short example sentences (may be **fictional**, but historically plausible) and label them.
+Write 3 to 5 short example sentences and label them. The sentences can be **fictional**, but they must be historically plausible.
 
 **Example:**
 
 ``` markdown
-Examples (Input → Label):
-1) "Location: Bern; Date: 7.7.1949." → [Edition/Metadata]
-2) "In the text, neutrality is used as an argument against step X." → [Document text]
-3) "From this it follows that Switzerland was fundamentally anti-European." → [Conclusion] (too strong; needs to be verified/softened)
+Examples (input → label):
+1) "Place: Bern; date: 7.7.1949." → [edition or metadata]
+2) "In the text, neutrality serves as an argument against a step X." → [document text]
+3) "It follows that Switzerland was fundamentally anti-European." → [conclusion] (too strong; needs a check or a weaker wording)
 
 Task:
-Label the following 10 sentences from my material as
-[Document text] / [Edition/Metadata] / [Conclusion].
-For each label, give 1 evidence hint (quote fragment/metadata field) or 'no support'.
+Now label the following 10 sentences from my material as
+[document text] / [edition or metadata] / [conclusion].
+For each label, give 1 piece of evidence (a quotation fragment or a metadata field) or "no support".
 Material: ...
 ```
 
-**Work Assignment:** Then incorporate the few-shot block into your prompt from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) and check if the labels become more reliable.
+**Work assignment:** Then take the few-shot block into your prompt from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd), and check whether the labels become more reliable.
 
-### Exercise 4B: Few-shot for Research Questions (Weak vs. Strong)
+### Exercise 4B: Few-shot for Research Questions (Weak Against Strong)
 
-Take 2 weak and 2 strong questions (from your exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) or from the seminar) and enter them as examples with a brief comment.
+Take 2 weak and 2 strong questions from your exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) or from the seminar. Enter them as examples with a short comment.
 
 **Scaffold:**
 
 ``` markdown
-Examples (Weak/Strong):
+Examples (weak/strong):
 Weak: "Why did Switzerland join the Council of Europe?" → too broad, teleological, unclear evidence base.
-Strong: "How was 'neutrality' operationalized in internal FDFA notes 1949–1953 as an argument for/against institutional rapprochement with the Council of Europe?" → clear operator, time period, source proximity.
+Strong: "How was 'neutrality' operationalized in internal FDFA notes of 1949–1953 as an argument for or against an institutional rapprochement with the Council of Europe?" → clear operator, period, closeness to the sources.
 
 Task:
 Formulate 3 new research questions in the style of the strong examples.
 For each question:
-- Time period
-- Central operator terms (define!)
+- Period
+- Central operator terms (define them!)
 - Expected source types
 - 1 counter-check (which source could contradict?)
 ```
 
-## 5. Structured Thinking Trace: Goal
+## 5. Structured Reasoning Trace (Chain-of-Thought Prompting)
 
 ::: callout-note
 
-## Chain-of-Thought Prompting
+## Definition: chain-of-thought prompting
 
-Chain-of-Thought Prompting refers to a procedure where the model **decomposes a complex task into explicit intermediate steps** (e.g., extraction → ordering → evaluation → result) and **visibly outputs** these steps.
+Chain-of-thought prompting names a procedure in which the model **breaks a complex task into explicit intermediate steps** (for example extraction → ordering → evaluation → result) and **shows these steps**.
+
+You request these intermediate steps in the prompt. The [structured reasoning trace](../glossary.qmd#gl-chain-of-thought) is therefore a property of your input and not a property of the system. [@wei2022chain]
 
 :::
 
 ### Goal
 
-To decompose complex tasks into **intermediate products** (decomposition) and to enforce a **self-check**. Crucial is not "long justification," but **verifiable intermediate steps**.
+Break complex tasks into **intermediate products** (decomposition) and enforce a **self-check**. What counts is not a "long justification", but **intermediate steps that you can check**.
 
 ::: callout-note
 
-## Note on "Thinking Trace"
+## Note on the reasoning trace
 
-Formulate the thinking trace so that it remains **brief** and **auditable** (bullet points, criteria, tests). The goal is verifiability, not an extensive "internal diary."
+Formulate the reasoning trace so that it stays **short** and **auditable** (bullet points, criteria, tests). The goal is verifiability and not a detailed "inner diary".
+:::
+
+::: callout-caution
+
+## A requested reasoning trace is no proof, and a built-in reasoning mode is a different thing
+
+Separate two things that look the same.
+
+1. **The requested reasoning trace.** You prescribed the steps in the prompt. You control the scope, the order and the checkpoints, and you can copy the prompt verbatim into the AI log.
+2. **The built-in [reasoning mode](../glossary.qmd#gl-denkmodus).** The system produces intermediate steps on its own before the answer. You did not design this procedure, and many systems show you only a summary of it.
+
+Only the requested reasoning trace is an artifact that you made yourself. Only it is therefore reproducible in your documentation.
+
+The same limit applies to both forms. The visible steps do not prove the actual computation. Models name reasons that hide the real influence on the answer. [@turpin2023unfaithful] Treat every reasoning trace as an aid to your check and never as evidence.
+
+The section [Check and classify capabilities](#sec-capabilities) goes deeper into the reasoning mode.
 :::
 
 ### Exercise 5A: Argument Mapping with Intermediate Steps
 
-Use the argument mapping from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (claim/warrant/assumption/implication), but enforce step logic:
+Use the argument mapping from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) (claim, warrant, assumption, implication), but enforce the step logic:
 
 ``` markdown
-Task: Generate an argument mapping for passages concerning neutrality/compatibility/decision processes.
+Task: Produce an argument mapping for the passages on neutrality, compatibility and the decision process.
 
-Procedure (output visibly):
-1) Extract relevant text segments (max. 5 short quote fragments).
-2) Formulate per segment a claim/warrant/assumption/implication (keywords).
-3) Self-check: Name 3 places where the jump from text → interpretation is tricky, and mark them as [Speculation].
+Procedure (show it):
+1) Extract the relevant text segments (max. 5 short quotation fragments).
+2) Formulate one claim/warrant/assumption/implication per segment (in keywords).
+3) Self-check: Name 3 places where the jump from text to interpretation is delicate, and mark them as [speculation].
 
 Rules:
-- Use only document text.
+- Use only the document text.
 - No additional facts.
-Response: Markdown list.
+Answer: Markdown list.
 Material: ...
 ```
 
-### Exercise 5B: Research Plan as Pipeline
+### Exercise 5B: Research Plan as a Pipeline
 
 Transfer the structure from [Source Search](source-search-vorort-council-of-europe-1963.qmd) (sub-questions → source types → search locations → search strings) into an explicit pipeline:
 
+Replace the example question in the following prompt with your own question.
+
 ``` markdown
-Goal: Create a research plan for the question: [insert].
+Goal: Build a research plan for the question: How did neutrality serve between 1949 and 1963 as an argument against an accession of Switzerland to the Council of Europe?
 
 Steps:
-1) Decompose into 4–6 sub-questions (verifiable).
-2) Assign 2–3 source types + arenas per sub-question.
+1) Break the question into 4–6 sub-questions that I can check.
+2) Assign 2–3 source types and arenas per sub-question.
 3) Derive 2 search strings per sub-question (DE/FR/EN; Boolean).
-4) Self-check: List 5 typical errors (anachronisms, invented signatures, overly broad terms...) and how you avoid them.
+4) Self-check: List 5 typical errors (anachronisms, invented references, terms that are too broad) and how you avoid them.
 
-Response: Table (Sub-question | Evidence | Search string | Search location | Risk).
+Answer: table (sub-question | evidence | search string | search location | risk).
 ```
 
-## 6. Iterative Prompting: Goal
+## 6. Iterative Prompting
 
 ::: callout-note
 
-## Iterative Prompting
+## Definition: iterative prompting
 
-Iterative prompting refers to a **controlled work cycle** in which AI responses are improved step by step by **specifically critiquing and revising** each output.
+Iterative prompting names a **controlled work cycle** in which you improve AI answers step by step, because you **critique and revise each output deliberately**.
 
 :::
 
 ### Goal
 
-Iteration as **controlled revision**: You're not building "more text," but improving target precision, evidence discipline, and format.
+Iteration as a **controlled revision**: you do not build "more text", but improve the precision of the goal, the evidence discipline and the format.
 
 ### Exercise 6A: Generate → Critique → Revise (Research Question)
 
-1) **Generate (v1):** Zero-shot research questions (Exercise 3B).\
-2) **Critique:** Use the critical comparison from the *Research Question* exercise ("Why is X missing?" / "What sources does this rely on?").\
-3) **Revise (v2):** Have the AI revise the questions, but only based on your critique points.
+1) **Generate (v1):** zero-shot research questions (exercise 3B).\
+2) **Critique:** use the critical comparison from the exercise [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) ("Why is the aspect of neutrality missing?" and "Which sources support this?").\
+3) **Revise (v2):** have the AI revise the questions, but only along your points of criticism.
 
-**Critique Prompt (Template):**
+**Critique prompt (template):**
+
+Insert the full text of the first answer after "Here is answer v1:".
 
 ``` markdown
-Here is response v1: [insert].
-Task: Critique claim-by-claim:
-- What is too broad/teleological?
-- Where are operator terms/definitions missing?
+Here is answer v1: <insert the text of the first answer>.
+Task: Critique it claim by claim:
+- What is too broad or teleological?
+- Where are operator terms or definitions missing?
 - Where is the evidence base unclear?
-Then give a revised version v2 (max. 3 questions) + a change logic (max. 6 bullet points).
+Then give a revised version v2 (max. 3 questions) and a change log (max. 6 bullet points).
 No new facts.
 ```
 
-### Exercise 6B: Iteration on Response Format (Citing / Summarizing)
+### Exercise 6B: Iteration on the Answer Format (Citing and Summarizing)
 
-Take the exercise *Citing* and enforce a two-stage output:
+Take the exercise [Citing](citing.qmd) and enforce a two-stage output:
 
-1) Extraction of structured metadata (fields),\
-2) only then Chicago citation + Zotero import format.
+1) extraction of structured metadata (fields),\
+2) only then the Chicago citation and the Zotero import format.
 
-**Optimization question:** Does the two-stage approach improve error diagnosis (e.g., missing page numbers, wrong editors)?
+**Optimization question:** Does the two-stage form improve the diagnosis of errors, for example missing page numbers or wrong editors?
 
-## 7. Prompt Optimization: Goal
+## 7. Prompt Optimization
 
 ### Goal
 
-To systematically improve prompts: not "prettier," but **more robust** (less hallucination, better format stability, clearer verifiability).
+Improve prompts systematically: not "prettier", but **more robust** (less hallucination, better format stability, clearer verifiability).
 
 ### Quality Criteria (Rubric)
 
-Evaluate each prompt variant (0–2 points per criterion):
+Rate each prompt variant with 0 to 2 points per criterion:
 
-1. **Input binding** (really works only with material?)
-2. **Level separation** (text vs. metadata vs. conclusion)
-3. **Format stability** (delivers what's requested, without evading)
-4. **Error transparency** (marks uncertainties)
-5. **Suitability** (response directly usable, e.g., for excerpt/outline/research log)
+1. **Input binding** (does it really work only with the material?)
+2. **Separation of levels** (text against metadata against conclusion)
+3. **Format stability** (does it deliver what you asked for, without evading?)
+4. **Error transparency** (does it mark uncertainties?)
+5. **Fit** (can you use the answer directly, for example for an excerpt, an outline or a search log?)
 
-### Exercise 7A: "Harden" Prompt (Literature Research)
+### Exercise 7A: "Harden" a Prompt (Literature Research)
 
-Take a naive literature prompt ("Name key literature on X") and optimize it to serve as a **research assistant** (not as source producer). Orientation: Exercise [Literature Research](literature-research-social-security-ch.qmd) ("No invented titles; no pretended catalog knowledge; mark uncertainties").
+Take a naive literature prompt ("Name the central literature on X") and optimize it so that it works as a **research assistant** and not as a producer of sources. For guidance, see the exercise [Literature Research](literature-research-social-security-ch.qmd) ("no invented titles; no pretended knowledge of the catalogue; mark uncertainties").
 
-**Optimized Prompt (Scaffold):**
+**Optimized prompt (scaffold):**
 
 ``` markdown
 You are a historical research assistant.
-Goal: Starting corpus for [topic/time period].
+Goal: a starting corpus for [topic / period].
 Rules:
-- Don't invent titles/authors.
-- Make no claims about catalog coverage.
-- Instead deliver: search strategies, search strings, expected literature types, and hints for verification steps.
-Response:
-1) 8 search strings (DE/FR/EN) with brief justification
-2) 5 expected literature types + where to typically find them
-3) 6 verification steps (how I verify, export, document hits)
+- Do not invent titles or authors.
+- Make no claims about the coverage of a catalogue.
+- Deliver instead: search strategies, search strings, expected literature types, and notes on verification steps.
+Answer:
+1) 8 search strings (DE/FR/EN) with a short justification
+2) 5 expected literature types + where one typically finds them
+3) 6 verification steps (how I verify, export and document hits)
 ```
 
-### Exercise 7B: Prompt Optimization as "Error Budget"
+### Exercise 7B: Prompt Optimization as an "Error Budget"
 
-Define an error budget and optimize for it:
+Define an error budget and optimize against it:
 
 - **Budget A:** "0 invented titles" (literature),
 - **Budget B:** "0 unsupported context assumptions" (source criticism),
-- **Budget C:** "0 format violations" (e.g., max. 4 sentences, table, claim IDs).
+- **Budget C:** "0 format violations" (for example at most 4 sentences, a table, claim IDs).
 
-Run 3 iterations (v1–v3) and document:
+Run 3 iterations (v1 to v3) and record:
 
 - which prompt change reduced which error field,
-- what side effects arise (e.g., response becomes too vague).
+- which side effects appear (for example an answer that becomes too vague).
+
+## 8. Check and Classify Capabilities {#sec-capabilities}
+
+### Goal
+
+Name five newer capabilities of AI systems, check them in your own account, and classify them methodologically. Sections 1 to 7 train the prompt. This section concerns what the system does in addition to the prompt.
+
+::: callout-important
+
+## These capabilities produce no evidence either
+
+None of the five capabilities turns an output into evidence. Each one produces hypotheses, and you check each hypothesis against the original. [@bender2021stochastic] The capabilities only move **where** the error appears: in the reasoning mode, in the search step, in the retrieval, in the transcription or in the model itself.
+:::
+
+### 8.1 Built-in Reasoning Mode
+
+A [reasoning mode](../glossary.qmd#gl-denkmodus) is an operating mode in which the system produces intermediate steps on its own before the answer. Section 5 explains the difference from the requested reasoning trace.
+
+- **What you gain:** long tasks with several conditions come out correct more often.
+- **What you lose:** you did not design the procedure and you cannot record it verbatim.
+- **What you do:** note in the [AI log](../glossary.qmd#gl-ki-protokoll) whether the reasoning mode was active. Note it as a setting, in the same way as you note the model and the date.
+
+### 8.2 Agentic Workflows and Deep Research
+
+An [agentic workflow](../glossary.qmd#gl-agentischer-ablauf) means this: the system plans several steps, calls tools and continues without a question to you. [Deep research](../glossary.qmd#gl-vertiefte-recherche) is the most frequent case. The system searches the web, reads pages and delivers a report with references after some minutes.
+
+- **What you gain:** a broad first overview in a short time.
+- **What you lose:** the control over each intermediate step. Errors from an early step travel into all later steps.
+- **What you check:** each statement one by one. A report looks like a literature review, but it is a list of hits with hypotheses. Fabricated titles and wrong data in literature references are well documented. [@walters2023fabrication] The performance reports about such systems are often not reproducible either. [@kapoor2024agents]
+- **What you do:** keep two logs separately. The [search log](../glossary.qmd#gl-rechercheprotokoll) records the date, the system, the query and the selection rules. The AI log records your task, the answer and your verification steps.
+
+### 8.3 Retrieval from Your Own Documents
+
+For [retrieval from your own documents](../glossary.qmd#gl-eigene-dokumente) you deposit a collection of files. A search step selects passages from it and puts them before the system. [@lewis2020retrieval]
+
+- **What you gain:** help to find passages. The system often names the location in your collection.
+- **What you do not gain:** a binding of the answer to your collection. The retrieval widens the context. It does not make sure that the answer comes only from the passages that the search found. The system can still mix in knowledge from the training.
+- **What you lose:** nothing of your duty to check. The search step does not find everything, and the system answers all the same.
+- **What you check:** each statement against the original. A location reference supports the location and not the statement. Open the page that the system names and read it yourself.
+- **What you note:** a deposited collection is an upload. The rules from the section "What you need" apply.
+
+### 8.4 Multimodal Reading and Handwritten Text Recognition
+
+Many systems today also read images. They can therefore process a digitized item. [Handwritten text recognition](../glossary.qmd#gl-htr) turns a handwritten page into text. For German Kurrent script, general models with usable error rates exist. [@hodel2021general]
+
+This exercise is an exercise on source criticism. The error therefore stands in the foreground here.
+
+- **The error rate varies strongly.** The script, the layout, the language and the condition of the original decide the result. No model transcribes every hand reliably. [@romein2025assessing]
+- **General image models are weaker than specialized ones.** The style of the script, the historical orthography and the language still cause considerable errors. [@diezgarcia2025evaluating]
+- **The most dangerous error is the smooth reading.** A general AI system does not stop at an illegible passage. It inserts a plausible word and marks nothing. That is a [hallucination](../glossary.qmd#gl-halluzination) in the form of a transcription.
+- **Errors travel on.** Errors in machine-recognized text change later analysis steps and therefore your results. [@vanstrien2020assessing]
+
+::: callout-caution
+
+## Treat a machine transcription as a reading hypothesis
+
+Compare every citation with the digitized item before you adopt it. Note in the [source analysis log](../glossary.qmd#gl-analyseprotokoll) that a machine recognized the text. Note the date and the display form as well. In your text, a transcription without this note is indistinguishable from a reading that you checked.
+:::
+
+### 8.5 Local and Open-Weight Models
+
+Three properties count here, and each one brings its own advantage. Keep the three apart, because they do not always appear together.
+
+- **Open** describes the license. For an [open-weight model](../glossary.qmd#gl-offenes-modell), you can download the weights freely.
+- **Local** describes the place of execution. A [local model](../glossary.qmd#gl-lokales-modell) runs on your own computer.
+- **Small** describes the size. Small models run on a current notebook with at least 16 gigabytes of memory.
+
+An open-weight model does not necessarily run locally, because many providers run open-weight models on the network. A local model is also not necessarily economical, because a large local model needs much energy. Check therefore each property on its own.
+
+- **Data protection:** only when the model runs locally does the material stay on your computer. Only then does the transfer to a provider fall away.
+- **Reproducibility:** only when the weights are open do you keep one fixed version. A closed model can change without notice or disappear. [@spirling2023open]
+- **Energy:** only when the model is small and the task is narrow does the energy demand per request drop clearly. [@luccioni2024power]
+- **Limit:** small models are clearly weaker on long texts and on questions of fact. Use them for narrow tasks, for example for a translation or for a summary.
+
+This way is the [minimal computing](../glossary.qmd#gl-minimal-computing) way of the course. Minimal computing asks how much computing power a project really needs. [@risam2022minimal]
+
+### Task 8A: Check the Capabilities of Your Own Account
+
+Check your account and fill in the table. Answer with yes, no or unclear.
+
+| Capability                            | Available? | Paid? | Where switched on? |
+| ------------------------------------- | ---------- | ----- | ------------------ |
+| Built-in reasoning mode               |            |       |                    |
+| Agentic workflow or deep research     |            |       |                    |
+| Retrieval from your own documents     |            |       |                    |
+| Reading of images and scans           |            |       |                    |
+| Local or open-weight model            |            |       |                    |
+
+Do not rely on the statement of the system about itself. Check the settings and the price information of your account.
+
+### Task 8B: Reasoning Trace Against Reasoning Mode
+
+Take the task from exercise 5A and run it twice.
+
+1. Run the prompt from 5A without the reasoning mode.
+2. Run the same prompt with the reasoning mode switched on.
+3. Note both answers in the AI log.
+
+If your account has no reasoning mode, compare the prompt from 5A with a version without the prescribed intermediate steps instead.
+
+### Work Assignment (Reflection)
+
+Write five to eight sentences on these questions:
+
+- Which part of the result did you steer yourself in task 8B?
+- Which part did the system steer?
+- Which of the five capabilities would you use in a seminar paper, and which not?
+- Which additional check does each capability that you use demand from you?
 
 ## Short Library: Reusable Prompt Building Blocks
 
-### 1) Context + Material Binding
+**1) Context and material binding**
 
 ``` markdown
-Work exclusively with the material below.
-If you're missing information, ask follow-up questions or mark [Unclear].
+Work only with the material below.
+If information is missing, ask me or mark the place as [unclear].
 ```
 
-### 2) Level Separation (Source vs. Edition vs. Conclusion)
+**2) Separation of levels (source against edition against conclusion)**
 
 ``` markdown
-Mark each statement as [Document text] / [Edition/Metadata] / [Conclusion].
+Mark each statement as [document text] / [edition or metadata] / [conclusion].
 ```
 
-### 3) Response as Intermediate Product (for Further Work)
+**3) Answer as an intermediate product (for further work)**
 
 ``` markdown
-Give the response as a table with fields: Claim | Evidence location | Uncertainty | Next verification step.
+Give the answer as a table with the fields: claim | evidence | uncertainty | next verification step.
 ```
 
-### 4) Enforce Self-Check / Counter-Check
+**4) Enforce a self-check or a counter-check**
 
 ``` markdown
-Self-check: Name 3 plausible counter-evidence or alternative interpretations and what you'd need for them.
+Self-check: Name 3 plausible counter-records or alternative readings, and what you would need for them.
 ```
 
-## Submission
+## Learning Outcome
 
-1. Prompt protocol (at least 8 entries, distributed across techniques)\
-2. Per technique: 1 brief comparison (A/B) + 5–8 sentences reflection on what methodologically improved/worsened\
-3. One "best practice" template: your personal standard prompt for (a) source criticism or (b) literature research or (c) writing assistance
+At the end you hold these artifacts:
+
+1. An AI log with at least 8 entries, spread over the techniques.\
+2. One short A/B comparison per technique, and 5 to 8 sentences of reflection. Describe there what improved or worsened in method terms.\
+3. A "best practice" template. That is your personal standard prompt for (a) source criticism or (b) literature research or (c) writing support.\
+4. The filled-in table from task 8A. It describes the capabilities of your account and belongs to the documentation of your work environment.
 
 ## Further Resources
 
 - [Polo Club: Transformer Explainer](https://poloclub.github.io/transformer-explainer/) – Interactive explanation of how transformer-based language models work.
-- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Next-token prediction and basics of generative AI.
-- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limits, hallucinations, verification, and critical use.
+- [AI Pedagogy Project: Foundations of Generative AI](https://aipedagogy.org/guide/foundations-of-generative-ai/) – Next-token prediction and the basics of generative AI.
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limits, hallucinations, verification and critical use.
 - [Prompt Engineering Guide](https://www.promptingguide.ai) – Vendor-neutral overview of prompting and its basic concepts.
-- [Prompt Engineering Guide: Techniques](https://www.promptingguide.ai/techniques) – Zero-shot, few-shot, and chain-of-thought, each with examples.
-- [Prompt Engineering Guide: Risks and misuses](https://www.promptingguide.ai/risks) – Prompt injection, invented facts, and biases.
+- [Prompt Engineering Guide: Techniques](https://www.promptingguide.ai/techniques) – Zero-shot, few-shot and chain-of-thought, each with examples.
+- [Prompt Engineering Guide: Risks and misuses](https://www.promptingguide.ai/risks) – Prompt injection, invented facts and biases.
 - [Learn Prompting](https://learnprompting.org/docs/introduction) – Open course on prompting, from the basics to advanced techniques.
 - [Wikipedia: Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering) – Encyclopedic overview with references to the research literature.
-- [YouTube Playlist: Critical AI Literacy (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Video series on machine learning, language models, prompting, bias, data visualization, evaluation methods, and open science. (GERMAN only)
-- @sternfeld2023historian – Explains how a machine learning system "learns" from a dataset, and why AI works as a socio-technical system rather than an autonomous agent.
+- [YouTube playlist: Critical AI Literacy (Zentralbibliothek Zürich)](https://www.youtube.com/playlist?list=PLxDekeBVQtVJoizqbYM0ghqolcN3jUPsy) – Video series on machine learning, language models, prompting, bias, data visualization, evaluation methods and open science. (GERMAN only)
+- @sternfeld2023historian – Explains how a machine learning system "learns" from a dataset, and why AI works as a socio-technical system and not as an autonomous agent.
 
 ## Bibliography
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Automated Translation Disclaimer
-
-This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/prompt-engineering.qmd) for the authoritative text. If you notice any translation issues, please report them.
 :::

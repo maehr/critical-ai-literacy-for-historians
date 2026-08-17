@@ -1,8 +1,8 @@
 ---
 lang: en
 title: "Literature Research and Analysis"
-subtitle: "History of Social Security in Switzerland"
-description: "A guided exercise for systematic literature research and problem-oriented literature analysis with critically controlled use of generative AI."
+subtitle: "The History of Social Security in Switzerland"
+description: "A guided exercise on systematic literature research and problem-oriented literature analysis, with a critically controlled use of generative AI."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Methods]
 image: ../../assets/images/literature_research_Gemini_Generated_Image_77nsl877nsl877ns.png
 tags:
@@ -21,6 +21,8 @@ tags:
   - Switzerland
   - Social Policy
   - AI-Assisted
+difficulty: Intermediate
+time_estimate: "1 d"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -69,7 +71,7 @@ references:
     year: 2008
   publisher: "Cambridge University Press"
   DOI: "10.1017/CBO9780511497094"
-  note: "Publication date: 06.03.2008 (online); DOI according to publisher"
+  note: "Publication date of the edition: 06.03.2008 (online); DOI according to the publisher"
 
 - id: obinger-1998
   type: article-journal
@@ -86,117 +88,179 @@ references:
   DOI: "10.1017/S0143814X98000129"
 ---
 
+::: callout-warning
+
+## Automated Translation
+
+This exercise was translated automatically from the [German original](../../de/exercises/literaturrecherche-sozialversicherung-ch.qmd) and can contain errors. Consult the original version in case of doubt.
+:::
+
 ## Overview and Didactic Goal
 
-This exercise introduces systematic literature research and problem-oriented literature analysis – with the goal of being able to reconstruct the state of research on a historical topic. A focus lies on the critically controlled use of generative AI as a heuristic tool for expanding search spaces and structuring texts.
+This exercise introduces systematic literature research and problem-oriented literature analysis. The goal is that you can reconstruct the state of research on a historical topic. One focus lies on the critically controlled use of generative AI as a heuristic tool, which widens the search space and structures texts.
 
-**Case Study: History of Social Security in Switzerland**
+**Case study: the history of social security in Switzerland**
 
-The exercise follows a circular search and analysis process: the starting point is a broad topic area (social security), from which a clear problem focus, a refined research question, and a reproducible corpus of relevant secondary literature are successively developed. Manual research and analysis phases alternate with AI-assisted explorations, which are each critically validated.
+The exercise follows a circular process of search and analysis. It starts from a broad field (social security). From it you develop step by step a clear problem focus, a precise research question and a reproducible corpus of relevant secondary literature. Manual phases of search and analysis alternate with AI explorations, and you validate each exploration critically.
 
-## Prerequisites
+## At a Glance
 
-- Basic understanding of historical research methods
-- Basic knowledge of working with generative AI (especially prompting)
+| Item                      | Value                                                                                                                                                                              |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Duration**              | about 1 working day (6 to 8 hours)                                                                                                                                                 |
+| **Level**                 | Intermediate                                                                                                                                                                       |
+| **Core path**             | 1 → 2 → 3 → 5 → 6 → 8 → 9                                                                                                                                                          |
+| **Optional deepening**    | 4 (special paths), 7 (mapping the debate), the advanced track                                                                                                                      |
+| **Hand-in (minimum)**     | [Search log](../glossary.qmd#gl-rechercheprotokoll): 12 entries. [Reject log](../glossary.qmd#gl-reject-log): 5 entries. [AI log](../glossary.qmd#gl-ki-protokoll): 4 entries.     |
+
+Split the working day over two or three sessions. The core path leads you to a precise research question. The optional deepening costs about 2 hours more.
+
+::: callout-caution
+
+## Plan time for the access to the literature
+
+Order the titles that you lack early. An interlibrary loan often takes several days. The duration above does not include this waiting time.
+:::
+
+## What You Need
+
+**Subject knowledge**
+
+- A basic understanding of historical research methods
+- Basic knowledge of work with generative AI, above all prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+If prompting is new to you, we recommend that you work through the exercise [Prompt Engineering](prompt-engineering.qmd) first.
 
 :::
 
-::: callout-note
+**Capabilities of the AI system**
 
-## LLM
+The system must be able to do the three following things:
 
-You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+- Search the web and support each finding with an address. You need this in step 2 and in step 4.
+- Read a file that you upload, for example a list of hits or an article.
+- Deliver an answer in a format that you prescribe, for example as a table.
 
-:::
+**Other tools and access**
+
+- A [reference manager](../glossary.qmd#gl-zotero). You export your list of titles from it.
+- An account for the library catalogue of your university. You need it for step 3 and for the interlibrary loan.
+- One file for your search log and one file for your AI log.
+
+{{< include ../_ai-requirements.qmd >}}
 
 ## Learning Objectives
 
-Upon completion of this exercise, you will be able to:
+After this exercise you can:
 
-- justify the function of literature research and analysis in historical research,
-- translate a topic on Swiss social security into a researchable search strategy,
-- conduct and document systematic (catalogs/databases) and unsystematic (snowballing) research,
-- use AI as a **heuristic search aid** (keyword expansion, query design, screening),
-- systematically assess relevance, argumentation, theory, and methods of secondary literature,
-- identify central lines of debate and research gaps and derive a refined research question from them,
-- implement literature management in a reproducible and citation-secure manner (Zotero/BibTeX, search protocol, decision log).
+- give reasons for the function of literature research and literature analysis in historical research,
+- translate a topic on Swiss social security into a search strategy,
+- search systematically (catalogues and databases) and unsystematically (snowballing), and document both,
+- use AI as a **heuristic aid for the search** (expansion of keywords, design of queries, screening),
+- judge the relevance, the argument, the theory and the methods of secondary literature in a structured way,
+- identify the central lines of debate and the gaps in research, and derive a precise research question from them,
+- run your reference management reproducibly and with correct citations (reference manager, BibTeX, search log, AI log).
 
-## What is Literature Research and Literature Analysis?
+## What Are Literature Research and Literature Analysis?
 
-**Literature research** is the systematic identification of relevant secondary literature (and relevant tertiary resources) to map the state of research.
+**Literature research** is the systematic identification of the relevant secondary literature, and of the relevant tertiary resources, to map the state of research.
 
-**Literature analysis** is the problem-oriented, critical reading of this literature to reconstruct arguments, theoretical references, methods, evidence bases, and controversies (rather than extracting "facts").
+**Literature analysis** is the problem-oriented, critical reading of this literature. It reconstructs arguments, references to theory, methods, bases of evidence and controversies, instead of extracting "facts".
 
-**Case Study**: *History of Social Security in Switzerland* (welfare state, AHV/IV/UV/KV/ALV, federalism, associations, gender order, transnational transfers).
+**Case study**: *the history of social security in Switzerland* (the welfare state, the branches of social insurance, federalism, associations, the gender order, transnational transfers).
 
 ::: callout-note
 
-## Note on Online Research
+## Note on the search online
 
-Despite advancing digitization, historical research cannot be conducted entirely online. [@milligan2019history] In particular, out-of-print secondary literature and sources not yet catalogued often require physical research in libraries and archives. Plan for access (library, interlibrary loan, archive) and note that platforms/catalogs structure visibility (cataloging logic) and do not guarantee completeness. [@putnam2016shadows]
+Digitization advances, but historical research is not possible online alone. [@milligan2019history] Secondary literature that is out of print, and primary sources that no one has catalogued yet, often demand a physical search in libraries and archives. Plan your access (library, interlibrary loan, archive). Note that platforms and catalogues structure visibility through their logic of cataloguing, and that they guarantee no completeness. [@putnam2016shadows]
+:::
+
+::: callout-caution
+
+## When your system searches on its own
+
+Some accounts offer [deep research](../glossary.qmd#gl-vertiefte-recherche). The system then searches the web on its own, reads pages and delivers a report with references. You can use this report as a starting point, but not as the state of research.
+
+Three reasons speak for a complete counter-check:
+
+- Such a workflow plans and acts over several steps. An error from an early step travels into all later steps, and the performance reports about such systems are often not reproducible [@kapoor2024agents].
+- Literature references from AI systems hold fabricated and faulty titles to a considerable degree [@walters2023fabrication].
+- The report does not name its search strategy in full. You therefore cannot judge its coverage.
+
+Check every title in the catalogue of your library. Record the search in the [search log](../glossary.qmd#gl-rechercheprotokoll) and the AI use in the [AI log](../glossary.qmd#gl-ki-protokoll). The section [Check and classify capabilities](prompt-engineering.qmd#sec-capabilities) explains these workflows.
+:::
+
+::: callout-tip
+
+## Search your own documents faster
+
+Some accounts permit [retrieval from your own documents](../glossary.qmd#gl-eigene-dokumente). You deposit your PDF files, and a search step selects the fitting passages from them [@lewis2020retrieval]. That helps in the literature analysis in step 6, because you find the fitting passages in your own material faster.
+
+The retrieval does not bind the answer to your collection. It only widens the context by the passages that the search found. The system can still mix in knowledge from the training, and the search step does not find every relevant passage. A location reference also supports only the location, and not the statement. Open therefore every page that the system names and read it yourself.
+
+A deposited collection is an upload. Check therefore the license of your library before you deposit licensed full texts. The section "What you need" names the rules.
 :::
 
 ## Structure of the Exercise
 
-Each step contains:
+Each step holds:
 
 - an **objective**,
-- **concrete tasks** (incl. optional AI prompts),
-- a **work and reflection assignment**.
+- **concrete tasks**, including optional AI prompts,
+- a **work assignment and a reflection assignment**.
 
-1. Problem Formulation and Search Horizon
-2. Orientation Knowledge via Tertiary Resources (Debate and Conceptual Framework)
-3. Systematic Search I: Catalogs (Coverage and Retrieval Logic)
-4. Systematic Search II: Journals/Media and Special Paths (Context, Reviews, Concepts)
-5. Snowballing: Backward/Forward Citation (Control Canons and Blind Spots)
-6. Screening and Quality Assessment: Relevance, Argument, Method, Evidence
-7. Historiographic Debate Mapping and State of Research Text (Condensed, Evidence-Sensitive)
-8. Research Gap and Delimitation: From State of Research to Research Question
-9. Reproducibility and Documentation
+1. Formulate the problem and the search horizon
+2. Orientation knowledge from tertiary resources (a frame of debates and terms)
+3. Systematic search I: catalogues (coverage and the logic of retrieval)
+4. Systematic search II: journals, media and special paths (context, reviews, terms)
+5. Snowballing: cite backwards and forwards (control the canons and the blind spots)
+6. Screening and quality assessment: relevance, argument, method, evidence
+7. Map the historiographic debate and write the state of research (condensed, sensitive to evidence)
+8. Gap in research and delimitation: from the state of research to the research question
+9. Reproducibility and records
 
-## 1. Problem Formulation and Search Horizon
+## 1. Formulate the Problem and the Search Horizon
 
 ### Goal
 
-From the broad topic area (social security) to a clear **problem focus** and an initial search hypothesis.
+Move from the broad field (social security) to a clear **problem focus** and to a first hypothesis for the search.
 
 ### Task (Without AI)
 
-Formulate in 5–8 sentences:
+Formulate in 5 to 8 sentences:
 
-- Investigation period (e.g., 1880–1950 / 1938–1948 / 1970–2005)
-- Subarea (e.g., old-age provision, health insurance, disability, unemployment)
-- Presumed conflict or mechanism logic (e.g., federalism/referendum, associations, expertise, gender, transfer)
-- Expected literature spaces (history / political science / legal history / social policy)
+- the period of study (for example 1880–1950, 1938–1948 or 1970–2005)
+- the branch (for example old-age provision, health insurance, disability, unemployment)
+- the assumed logic of conflict or mechanism (for example federalism and the referendum, associations, expertise, gender, transfer)
+- the expected fields (history, political science, legal history, social policy)
 
 ### Task (AI Exploration)
 
 ``` markdown
-I am working on the topic "History of Social Security in Switzerland."
-Suggest 6 problem-oriented, historically workable focus variants (each with: time period, actor/arena focus, mechanism).
-For each variant, provide 8 search terms (DE/FR/EN; historically plausible terms) and 3 expected literature types (monograph, article, anthology chapter).
+I work on the topic "the history of social security in Switzerland".
+Suggest 6 problem-oriented variants of a focus that a historian can work on (each with a period, a focus on actors or arenas, and a mechanism).
+Give 8 search terms per variant (DE/FR/EN, historically plausible terms) and 3 expected literature types (monograph, article, chapter in an edited volume).
 No invented titles.
 ```
 
 ### Critical Check
 
-Mark in the response:
+Mark in the answer:
 
-- anachronistic categories (mark as *retrospective search anchors*),
-- implicit theoretical assumptions (e.g., "welfare regime"),
-- missing perspectives (e.g., gender, cantonal level, ILO/transfer).
+- the anachronistic categories (mark them as *search anchors in hindsight*),
+- the implicit assumptions of theory (for example "welfare regime"),
+- the missing perspectives (for example gender, the cantonal level, international organizations and transfer).
 
-## 2. Orientation Knowledge via Tertiary Resources (Debate and Conceptual Framework)
+## 2. Orientation Knowledge from Tertiary Resources (A Frame of Debates and Terms)
 
 ### Goal
 
-A robust contextual framework (chronology, concepts, institutions) as a basis for targeted literature research.
+Build a robust frame of context (chronology, terms, institutions) as the basis for a targeted literature search.
 
 ### Core Resources
 
@@ -204,7 +268,7 @@ A robust contextual framework (chronology, concepts, institutions) as a basis fo
   - [History of Social Security (Switzerland) — Home](https://www.historyofsocialsecurity.ch/home)
   - [History of Social Security — Synthesis](https://www.historyofsocialsecurity.ch/synthesis)
   - [History of Social Security — Bibliography](https://www.historyofsocialsecurity.ch/bibliography)
-- HLS Entry Points:
+- Entry points in the Historical Dictionary of Switzerland:
   - [Historical Dictionary of Switzerland: Social Insurance](https://hls-dhs-dss.ch/en/articles/016607/)
   - [Historical Dictionary of Switzerland: Social Policy](https://hls-dhs-dss.ch/articles/016577)
   - [Historical Dictionary of Switzerland: Old Age and Survivors' Insurance (AHV)](https://hls-dhs-dss.ch/en/articles/016611/)
@@ -212,35 +276,35 @@ A robust contextual framework (chronology, concepts, institutions) as a basis fo
 
 ### Task (Without AI)
 
-Read (skimming):
+Read, in skimming mode:
 
-- one synthesis stage on the platform,
-- one HLS article (or several briefly).
+- one stage of the synthesis on the platform,
+- one article of the dictionary, or several ones briefly.
 
 Extract:
 
-- 8–12 key terms (incl. historical terminology),
-- 6 "fixed points" (events/laws/institutions),
-- 5 "debate markers" (e.g., federalism as veto point, state/private relationship, gender, transfer, expert knowledge).
+- 8 to 12 key terms, including historical terms,
+- 6 "fixed points" (events, laws, institutions),
+- 5 "markers of debate" (for example federalism as a veto point, the relation between state and private, gender, transfer, expert knowledge).
 
 ### Task (AI Exploration)
 
 ``` markdown
-Based on the following terms/fixed points: [insert]
-1) Build a debate map (4–6 debate axes) on the history of social security in Switzerland.
-2) Assign 5–8 typical author/work types to each axis that one would typically expect (without inventing specific titles).
-3) Derive 10 search strings for catalogs (Boolean, phrases).
+Start from the following terms and fixed points: <insert your 6 fixed points and 5 markers of debate here>
+1) Build a map of the debate (4–6 axes) on the history of social security in Switzerland.
+2) Assign 5–8 types of author and work to each axis that one would typically expect (without inventing concrete titles).
+3) Derive 10 search strings for catalogues from it (Boolean, phrases).
 ```
 
 ### Critical Check
 
-Validate "debate axes" with at least 2 independent entry sources (HLS/platform/anthology TOCs).
+Validate the "axes of debate" with at least 2 independent entry sources (the dictionary, the platform, the tables of contents of edited volumes).
 
-## 3. Systematic Search I: Catalogs (Coverage and Retrieval Logic)
+## 3. Systematic Search I: Catalogues (Coverage and the Logic of Retrieval)
 
 ### Goal
 
-Reproducible, documented search in major catalogs; building a starting corpus.
+A reproducible, documented search in large catalogues, and the build-up of a starting corpus.
 
 ### Primary Search Location
 
@@ -248,255 +312,253 @@ Reproducible, documented search in major catalogs; building a starting corpus.
 
 ### Task (Without AI)
 
-Conduct 6 search runs in swisscovery:
+Run 6 searches in swisscovery:
 
-- 2 each with broad terms,
-- 2 each with precise phrases/filters,
-- 2 each with multilingualism (DE/FR/EN) and name variants.
+- 2 with broad terms,
+- 2 with precise phrases and filters,
+- 2 with several languages (DE/FR/EN) and variants of names.
 
-Document per run:
+Document for each run:
 
-- Search query (exact), filters, number of hits, export date,
-- 3 selection criteria (relevance, time period, publication type),
-- 3 exclusion criteria.
+- the query (exact), the filters, the number of hits, the export date,
+- 3 criteria of selection (relevance, period, publication type),
+- 3 criteria of exclusion.
 
 ### Task (AI Exploration)
 
-Conduct the search runs **heuristically** using AI. Provide sufficient context.
+Run the searches **heuristically** with AI. Give enough context.
 
 ``` markdown
-You are a historical research assistant with knowledge of Swiss social, economic, and political history.
+You are a historical research assistant with knowledge of Swiss social, economic
+and political history.
 
 Context:
-- Research topic: History of Social Security in Switzerland
-- Time period: [e.g., 1880–1950]
-- Goal: Building an initial, broad starting corpus of secondary literature
+- Research topic: the history of social security in Switzerland
+- Period: [for example 1880–1950]
+- Goal: build a first and broad starting corpus of secondary literature
 
-Task: Search for relevant secondary literature.
+Task: search for relevant secondary literature.
 
 Conditions:
-- No invention of specific titles or authors.
-- No pretended catalog knowledge.
+- Invent no concrete titles or authors.
+- Pretend no knowledge of a catalogue.
 - Mark uncertainties explicitly.
 ```
 
 ### Critical Check
 
-- No title from AI suggestions is adopted without being found in the catalog.
-- For each adopted title: note the "adoption rationale" in 1 sentence.
+- Adopt no title from an AI suggestion before you find it in the catalogue.
+- For each title that you adopt, note in one sentence why you adopted it.
 
-## 4. Systematic Search II: Journals/Media and Special Paths (Context, Reviews, Concepts)
+## 4. Systematic Search II: Journals, Media and Special Paths (Context, Reviews, Terms)
 
 ### Goal
 
-Make debates and state of research visible through journal literature, reviews, periodicals.
+Make the debates and the state of research visible through articles, reviews and periodicals.
 
 ### Search Locations (Examples)
 
 - Journal platforms: [E-Periodica — Swiss Journals Online](https://www.e-periodica.ch/)
-- Newspapers (for discourse and reception paths): [e-newspaperarchives.ch — Digital Newspaper Archives](https://www.e-newspaperarchives.ch/)
+- Newspapers (for paths of discourse and reception): [e-newspaperarchives.ch — Digital Newspaper Archives](https://www.e-newspaperarchives.ch/)
 
 ### Task (Without AI)
 
-Select 2 journal titles or periodical corpora and search for:
+Choose 2 journal titles or corpora of periodicals and search for:
 
-- "social insurance," "AHV," "disability insurance," "health insurance,"
-- plus your focus term.
+- "Sozialversicherung", "AHV", "Invalidenversicherung", "Krankenversicherung",
+- plus your term of focus.
 
 Extract:
 
 - 5 relevant articles or reviews,
-- recurring terms/frames (e.g., "burdens," "solidarity," "abuse," "three pillars").
+- the terms and frames that appear again and again (for example "Lasten", "Solidarität", "Missbrauch", "Drei-Säulen").
 
 ### Task (AI Exploration)
 
 ``` markdown
-From these 5 abstracts/titles: [insert]
-1) Cluster them by question logic (institutional, actor-centered, intellectual history, political economy, gender).
-2) Suggest 2 follow-up keywords per cluster (DE/FR/EN) and name 1 typical "blind spot" each.
+From these 5 abstracts and titles: <insert your 5 abstracts or titles here>
+1) Cluster them by the logic of the question (institutional, centred on actors, history of ideas, political economy, gender).
+2) Suggest 2 follow-up keywords per cluster (DE/FR/EN) and name 1 typical "blind spot" for each.
 ```
 
-**Deliverable**: Mini-cluster (5 items) + keyword update list.
+**Deliverable**: a mini cluster of 5 items and an updated list of keywords.
 
-## 5. Snowballing: Backward/Forward Citation (Control Canons and Blind Spots)
+## 5. Snowballing: Cite Backwards and Forwards (Control the Canons and the Blind Spots)
 
 ### Goal
 
-From a small core corpus, reconstruct footnotes/bibliographies in depth; simultaneously make canon bias visible.
+Go into depth from a small core corpus through footnotes and bibliographies. Make the bias of the canon visible at the same time.
 
 ### Task (Without AI)
 
-Select 3 "seed" texts (preferably different types: overview, monograph, article).
+Choose 3 "seed" texts, of types as different as possible: an overview, a monograph and an article.
 
 For each seed:
 
-- 10 relevant references from bibliography/footnotes (backward),
-- 5 newer works via citation search (forward; e.g., Google Scholar/publisher pages).
+- 10 relevant references from the bibliography or the footnotes (backwards),
+- 5 newer works through a citation search (forwards, for example in a scholarly search engine or on publisher pages).
 
 Document:
 
-- why each reference was included (1 sentence),
-- whether you expanded or narrowed a debate axis.
+- why you adopted each reference (1 sentence),
+- whether you widened or narrowed an axis of the debate.
 
 ### Task (AI Exploration)
 
 ``` markdown
-Here are 10 references from the bibliography of a seed text: [insert]
-Organize them by:
-(a) debate axis, (b) method, (c) expected source base.
-Mark: which 3 would be indispensable for a "State of Research" section – and justify.
+Here are 10 references from the bibliography of a seed text: <insert your 10 references here>
+Order them by:
+(a) the axis of debate, (b) the method, (c) the expected base of sources.
+Mark which 3 would be indispensable for a section on the state of research, and give reasons.
 ```
 
 ### Critical Check
 
-Maintain a *Reject Log*: at least 5 rejected but "temptingly plausible" hits incl. rejection reason (wrong time period, wrong arena, only popular science, etc.).
+Keep a section *reject log* in your search log: at least 5 hits that you rejected although they looked plausible, with the reason for the rejection (wrong period, wrong arena, popular science only, and so on).
 
-**Deliverable**: Snowball list (≥ 30 references total) + Reject Log (≥ 5).
+**Deliverable**: a snowball list of at least 30 references and a section *reject log* with at least 5 entries.
 
 ## 6. Screening and Quality Assessment: Relevance, Argument, Method, Evidence
 
 ### Goal
 
-Not just collect literature, but analytically select.
+Do not only collect literature, but select it analytically.
 
 ### Task (Without AI)
 
-Create an assessment rubric (1 page), e.g.:
+Build a rubric of assessment on one page, for example:
 
-- Research question/thesis
-- Theory/concepts (explicit/implicit)
-- Method (archive-based, discourse-analytical, comparative, quantitative)
-- Source base (which primary sources? which gaps?)
-- Contribution (what is new? what is contested?)
-- Connection to your focus
+- the research question or thesis
+- the theory and the terms (explicit or implicit)
+- the method (based on archives, discourse analysis, comparative, quantitative)
+- the base of sources (which primary sources? which gaps?)
+- the contribution (what is new? what does the text dispute?)
+- the fit with your focus
 
-Apply it to 6 titles from your corpus (short excerpt, 150–250 words per title).
+Apply it to 6 titles from your corpus, with a short excerpt of 150 to 250 words per title.
 
 ### Task (AI Exploration)
 
 ``` markdown
-Use this rubric: [insert]
-Create for each of the following titles/abstracts a structured brief annotation (max. 180 words),
-incl. (1) presumed contribution, (2) methodological approach, (3) potential bias/limitation.
-If information is missing: explicitly mark as "unclear," do not supplement.
+Use this rubric: <insert your rubric here>
+Build a structured short annotation (max. 180 words) for each of the following titles and abstracts.
+Include (1) the assumed contribution, (2) the methodological approach, (3) a possible bias or limitation.
+If information is missing, mark it expressly as "unclear" and do not add anything.
 ```
 
 ### Critical Check
 
-Sample: check for 2 titles based on introduction/conclusion whether AI structure and your reading are consistent.
+Take a sample: for 2 titles, check against the introduction and the conclusion whether the AI structure and your own reading agree.
 
-**Deliverable**: 6 annotated entries + rubric.
+**Deliverable**: 6 annotated entries and the rubric.
 
-## 7. Historiographic Debate Mapping and State of Research Text (Condensed, Evidence-Sensitive)
+## 7. Map the Historiographic Debate and Write the State of Research (Condensed, Sensitive to Evidence)
 
 ### Goal
 
-Make the corpus a reconstructed "conversation": Who argues how – and why?
+Turn the corpus into a reconstructed "conversation": who argues how, and why?
 
 ### Task (Without AI)
 
-Write a 400–600 word debate memo:
+Write a memo on the debate of 400 to 600 words:
 
-- 2–3 main controversies,
-- central positions,
-- typical evidence or method disputes,
-- open flanks (unaddressed, underexposed, contested).
+- 2 to 3 main controversies,
+- the central positions,
+- the typical disputes over evidence or method,
+- the open flanks (untouched, underexposed, contested).
 
 ### Task (AI Exploration)
 
 ``` markdown
-Here is my debate memo: [insert]
-1) Identify implicit assumptions (agency/structure, state/private, normativity, contemporary diagnoses).
-2) Suggest 2 alternative structurings (e.g., by arenas instead of topics).
-3) Name 5 targeted follow-up questions I should ask the literature to formulate research gaps precisely.
+Here is my memo on the debate: <insert your memo here>
+1) Identify the implicit assumptions (agency against structure, state against private, normativity, diagnoses of the present).
+2) Suggest 2 alternative ways to structure it (for example by arenas instead of by topics).
+3) Name 5 targeted questions that I should put to the literature, so that I can formulate the gaps in research precisely.
 ```
 
-**Deliverable**: Debate memo + 5 follow-up questions.
+**Deliverable**: the memo on the debate and the 5 questions.
 
-## 8. Research Gap and Delimitation: From State of Research to Research Question
+## 8. Gap in Research and Delimitation: From the State of Research to the Research Question
 
 ### Goal
 
-Derive a workable, analytical research question from the literature review (not from "interest" alone).
+Derive a research question that you can work on and that is analytical from the state of the literature, and not from your interest alone.
 
 ### Task (Without AI)
 
 Formulate:
 
-- 1 research gap statement (max. 3 sentences): *"Research has shown X; Y remains unclear because…"*
-- 2 research questions (1 sentence each), which are *plausible based on sources and literature*.
+- 1 statement of the gap in research (at most 3 sentences): *"Research has shown X; Y stays unclear, because …"*
+- 2 research questions of one sentence each that are plausible on the basis of the sources and the literature.
 
 ### Task (AI Exploration)
 
 ``` markdown
-Based on this research gap: [insert]
+Start from this gap in research: <insert your statement of the gap here>
 Formulate 4 variants of an analytical historical research question.
 For each variant:
-- possible case delimitation (time/space/arena),
-- expected contribution (which debate is addressed?),
-- risk field (e.g., source access, anachronism, too broad causality).
+- a possible delimitation of the case (time, space, arena),
+- the expected contribution (which debate does it address?),
+- a field of risk (for example access to sources, anachronism, causality that is too broad).
 ```
 
-**Deliverable**: 1 research gap + 1 prioritized research question + 1 risk section (150–200 words).
+**Deliverable**: 1 gap in research, 1 research question with priority, and 1 section on risk of 150 to 200 words.
 
-## 9. Reproducibility and Documentation
+## 9. Reproducibility and Records
 
 ### Goal
 
-Literature work as a **documented method**: traceable, verifiable, reusable.
+Work with literature as a traceable research process, oriented on the FAIR principles and safe for citation.
 
 ### Minimum Requirements
 
-- **Search protocol**: Date, system, query, filter, hits, selection rules (≥ 12 entries)
-- **Zotero/BibTeX export**: Versioned state (date), duplicate strategy
-- **Decision log**: Why title included/rejected (keywords)
-- **AI protocol (Appendix)**: 2–4 prompts, shortened responses, your corrections/rejects, purpose of use
+- **Search log, section on the search**: date, system, query, filters, hits, selection rules (12 entries or more)
+- **Export from the reference manager or in BibTeX**: a versioned state with a date, and a strategy for duplicates
+- **Search log, section on decisions**: why you adopted or rejected a title (in keywords)
+- **AI log (appendix)**: 4 entries or more, each with the prompt, the shortened answer, your corrections or rejections, and the purpose of use
 
 ::: callout-warning
 
-## AI as Tool, Not as Source
+## AI as a tool, not as a source
 
-AI may help in this exercise to expand search spaces and structure texts. It does not replace:
+In this exercise, AI can help you to widen the search space and to structure texts. It does not replace:
 
-- bibliographic verification (catalog/DOI),
-- source-critical examination of the evidence base,
-- historiographic judgment formation.
+- the bibliographic verification (catalogue, DOI),
+- the check of the base of evidence with source criticism,
+- your historiographic judgement.
 :::
 
-# Submission (Compact)
+## Learning Outcome
 
-1. Focus statement + debate map (1–2 pages)
-2. Search protocol (≥ 12 entries) + Reject Log (≥ 5)
-3. Briefly annotated bibliography (10–15 titles)
-4. Debate memo (400–600 words)
-5. Research gap + research question + risk field (approx. 1 page)
-6. AI protocol (Appendix)
+At the end you hold these artifacts:
 
-# Optional: Advanced Track (Digital Methods)
+1. A statement of focus and a map of the debate (1 to 2 pages)
+2. A search log with a section on the search (12 entries or more) and a section *reject log* (5 entries or more)
+3. A short annotated bibliography (10 to 15 titles)
+4. A memo on the debate (400 to 600 words)
+5. The gap in research, the research question and the field of risk (about 1 page)
+6. An AI log (appendix, 4 entries or more)
 
-- Export metadata (title/author/year/keywords) from swisscovery/Zotero.
+One methodological insight comes on top: you can give reasons for which hits a catalogue shows, and which ones it hides systematically.
 
-- Build a simple bibliography map:
+## Optional: Advanced Track (Digital Methods)
 
-  - Time course (publication years),
-  - Languages/publication types,
-  - Co-citation or keyword network (caution: catalog keywords are curated and biased).
+- Export the metadata (title, author, year, keywords) from the catalogue or from your reference manager.
 
-- Document workflow and data (README + license/reuse notes).
+- Build a simple map of the bibliography:
+
+  - the distribution over time (years of publication),
+  - the languages and publication types,
+  - a network of co-citations or of subject headings (with care: subject headings in a catalogue are curated and carry bias).
+
+- Document the workflow and the data (a README file and notes on the license and on reuse).
 
 ## Further Resources
 
-- [Ranke.2: Lessons Overview](https://ranke2.uni.lu/lessons/) – Learning modules on web, social media, and digital change.
+- [Ranke.2: Lessons Overview](https://ranke2.uni.lu/lessons/) – Learning modules on the web, social media and digital change.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique of training data and its parallels to source criticism.
 
 ## Bibliography
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Automated Translation Disclaimer
-
-This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/literaturrecherche-sozialversicherung-ch.qmd) for the authoritative text. If you notice any translation issues, please report them.
 :::

@@ -1,8 +1,8 @@
 ---
 lang: en
 title: "Source Search for a Historical Research Question"
-subtitle: "The Vorort and Council of Europe Accession 1963"
-description: "A guided exercise for systematic source searching (primary/secondary/tertiary) with reflective use of generative AI."
+subtitle: "The Vorort and the Accession to the Council of Europe in 1963"
+description: "A guided exercise on systematic source search (primary, secondary, tertiary) with a considered use of generative AI."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -10,7 +10,7 @@ author:
     affiliations:
       - "University of Bern"
 date: "2025-12-29"
-date-modified: "2026-08-15"
+date-modified: "2026-08-16"
 categories: [Sources]
 image: ../../assets/images/source_research_Gemini_Generated_Image_u5ngfyu5ngfyu5ng.png
 tags:
@@ -21,6 +21,8 @@ tags:
   - Contemporary History
   - Traceability
   - AI-Assisted
+difficulty: Advanced
+time_estimate: "3 d"
 draft: false
 references:
 - id: altermatt-casasus-2013-europarat
@@ -36,143 +38,190 @@ references:
   issued:
     year: 2013
   publisher-place: "Schweiz"
-  note: "Anthology commissioned by Centre d'Études européennes, University of Freiburg and Neue Helvetische Gesellschaft"
+  note: "Anthology commissioned by Centre d'Études européennes, University of Freiburg (UniFR-ZEUS) and Neue Helvetische Gesellschaft"
 ---
+
+::: callout-warning
+
+## Automated Translation
+
+This exercise was translated automatically from the [German original](../../de/exercises/quellensuche-vorort-europarat-1963.qmd) and can contain errors. Consult the original version in case of doubt.
+:::
 
 ## Overview and Didactic Goal
 
-This exercise trains **transferable research competencies**: from precise operationalization of a research question through **systematic** and **unsystematic (snowball) search strategies** to **critical evaluation** of sources (provenance, context, bias, relevance). [@putnam2016shadows] Generative AI is used here as a **heuristic aid** (conceptual clarification, keyword expansion, search paths). [@milligan2019history]
+This exercise trains **transferable research competencies**: from the precise operationalization of a research question, through **systematic** and **unsystematic (snowball) search strategies**, to the **critical evaluation** of sources (provenance, context, bias, relevance). [@putnam2016shadows] You use generative AI here as a **heuristic aid** (clarification of terms, expansion of keywords, search paths). [@milligan2019history]
 
-The case study is the research question:\
-**What role did the Swiss Trade and Industry Association (Vorort) play in the decision-making process for Council of Europe accession in 1963?**
+The case study is this research question:\
+**What role did the Swiss Trade and Industry Association (Vorort) play in the decision process on the accession to the Council of Europe in 1963?**
 
-The exercise follows a **circular understanding of research**: search results change keywords, hypotheses, and the delimitation of the research design.
+The exercise follows a **circular understanding of research**: search results change the keywords, the hypotheses and the delimitation of the research design.
 
 ::: callout-note
 
-## Note on Materiality of Source Situation
+## Note on the materiality of the sources
 
-When working with archives, note **protection periods, usage conditions, and digital availability** of individual holdings. Plan the workload for access requests, on-site consultation, and reproduction rights.
+For work in an archive, note the **protection periods, the terms of use and the digital availability** of each holding. Plan the workload for requests for access, for consultation on site and for reproduction rights.
 :::
 
-## Prerequisites
+## At a Glance
 
-- Basic understanding of historical research methods
-- Basic knowledge of working with generative AI (especially prompting)
+| Item                      | Value                                                                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Duration**              | several days, of which about 6 to 8 hours at the screen                                                                               |
+| **Level**                 | Advanced                                                                                                                              |
+| **Core path**             | 1 → 2 → 3 → 4 → 6 → 7 → 8                                                                                                             |
+| **Optional deepening**    | 5 (secondary literature and reference works)                                                                                          |
+| **Hand-in (minimum)**     | [Search log](../glossary.qmd#gl-rechercheprotokoll): 15 entries. [AI log](../glossary.qmd#gl-ki-protokoll): 3 entries.                |
+
+::: callout-important
+
+## This exercise is a research project over several days
+
+This exercise is not an exercise for one afternoon. You open five portals, you run at least ten documented searches, and you build a shortlist of ten archive units.
+
+Plan the work in three stages:
+
+1. Screen work (steps 1 to 6): about 4 to 5 hours, which you can split over two sessions.
+2. Finding aids and shortlist (step 7): about 2 to 3 hours.
+3. Documentation (step 8): about 1 hour.
+
+You need no visit to an archive for the hand-in. The shortlist comes from the finding aids.
+
+If you really want to consult the dossiers, plan for additional weeks. A request for access, a shortening of a protection period and an appointment in the reading room all have long lead times. This calendar time belongs to the exercise, but not to the hand-in.
+:::
+
+## What You Need
+
+**Subject knowledge**
+
+- A basic understanding of historical research methods
+- Basic knowledge of work with generative AI, above all prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+If prompting is new to you, we recommend that you work through the exercise [Prompt Engineering](prompt-engineering.qmd) first.
 
 :::
 
-::: callout-note
+**Capabilities of the AI system**
 
-## LLM
+The system must be able to do the three following things:
 
-You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+- Search the web and support each finding with an address. You need this in step 3 and in step 5.
+- Read a file that you upload, for example a finding aid as a PDF file.
+- Deliver an answer in a format that you prescribe, for example as a table with search terms.
 
-:::
+**Other tools and access**
+
+- An account for the library catalogue of your university.
+- An account for the archive portals that you use in step 7. The registration is mostly free, but it takes one day.
+- A [reference manager](../glossary.qmd#gl-zotero) for the short annotated bibliography.
+- One file for your search log and one file for your AI log.
+
+{{< include ../_ai-requirements.qmd >}}
 
 ## Learning Objectives
 
-Upon completion of the exercise, you will be able to:
+After the exercise you can:
 
-- **typologically** distinguish sources (primary/secondary/tertiary) and justify their **epistemic function**,
-- translate a research question into **researchable sub-questions** and **search indicators**,
-- use systematic and snowball search **in combination** and document them,
-- develop **multilingual search strategies** (DE/FR/EN; incl. historical terminology),
-- use library catalogs, bibliographic databases, finding aids, and portals **purposefully**,
-- **reproducibly** document findings and critically evaluate sources,
-- treat responses as **heuristic suggestions**, systematically verify, and reflect.
+- tell source types apart (primary, secondary, tertiary) and give reasons for their **epistemic function**,
+- translate a research question into **sub-questions that you can search** and into **search indicators**,
+- use the systematic search and the snowball search **in combination**, and document both,
+- develop **multilingual search strategies** (DE/FR/EN, including historical terminology),
+- use library catalogues, bibliographic databases, finding aids and portals **for a purpose**,
+- document findings **reproducibly** and evaluate them with source criticism,
+- treat answers as **heuristic suggestions**, check them systematically, and reflect on them.
 
 ## Structure of the Exercise
 
-1. Operationalize Research Question
-2. Source Types and Evidence Logic
-3. Systematic Search I: Tertiary Sources and Context Framework
-4. Systematic Search II: Catalogs, Databases, Official Publications
-5. Unsystematic Search: Snowballing from Core Literature and Dossiers
-6. Archives and Finding Aids: Provenance Logic and Fonds Formation
-7. Source Criticism: Assessment Rubric and Minimal Documentation
-8. AI Reflection: Controlled Use, Documentation, Error Culture
+1. Operationalize the research question\
+2. Source types and the logic of evidence\
+3. Systematic search I: a context frame from tertiary sources\
+4. Systematic search II: catalogues, databases, official publications\
+5. Systematic search: secondary literature and reference works\
+6. Unsystematic search: snowballing\
+7. Archive search: finding aids, holdings, access\
+8. Iteration, reproducibility and the AI log
 
-## 1. Operationalize Research Question
+The evaluation of the documents with source criticism is not part of this exercise. You practise that step in the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd).
+
+## 1. Operationalize the Research Question
 
 ### Goal
 
-The research question is decomposed into **sub-questions** so that **concrete search paths** and **verifiable sub-hypotheses** emerge.
+You break the research question into **sub-questions**. From them come **concrete search paths** and **sub-hypotheses that you can check**.
 
 ### Task (Without AI)
 
-Sketch in 10 minutes a working model of the *decision-making process* (actors, arenas, phases, document types).
+Sketch a working model of the *decision process* in 10 minutes (actors, arenas, phases, document types).
 
 **Guiding questions:**
 
-- Which state arenas are relevant (Federal Council, departments, parliament, consultation, diplomacy)?
+- Which state arenas matter (Federal Council, departments, parliament, consultation procedure, diplomacy)?
 - Where could the Vorort have intervened (position papers, contacts, media, expert commissions)?
-- What analytical significance do agenda-setting, expertise, lobbying, coalition-building, legitimation, gatekeeping have?
+- Which analytical meaning do agenda setting, expertise, lobbying, coalition building, legitimation and gatekeeping carry?
 
 ### Task (AI Exploration)
 
 ``` markdown
-Decompose the research question into 4–6 sub-questions, each of which can be verified source-based.
-For each sub-question, indicate which document types could serve as evidence.
+Break the research question into 4–6 sub-questions that I can check against sources.
+For each sub-question, state which document types could serve as evidence.
 ```
 
 ### Critical Comparison
 
-Mark in the response:
+Mark in the answer:
 
-- **verifiable** vs. **vague** statements,
-- missing arenas (e.g., consultation, FDFA/FDEA),
-- implicit conceptual assumptions (e.g., "lobbying" as potentially anachronistic category).
+- the statements that you can **check** against the **vague** statements,
+- the missing arenas (for example the consultation procedure, or the federal departments),
+- the implicit assumptions in the terms (for example "lobbying" as a potentially anachronistic category).
 
-## 2. Source Types and Evidence Logic
+## 2. Source Types and the Logic of Evidence
 
 ### Goal
 
-Clarify **which evidence** can support which claims – and which systematic limits exist.
+Clarify **which evidence** can support which claims, and which systematic limits exist.
 
-### Task: Source Type Matrix (Without AI)
+### Task: Matrix of Source Types (Without AI)
 
-Create a matrix with:
+Build a matrix with:
 
-- **Rows**: Sub-questions / sub-hypotheses
-- **Columns**: Source types
+- **rows**: the sub-questions and sub-hypotheses
+- **columns**: the source types
 
-**Source Types:**
+**Source types:**
 
-- **Primary**: Association protocols, correspondence, internal reports, submissions, memoranda; government records; parliamentary protocols; media reports
-- **Secondary**: Research literature on foreign, European, and association policy; organizational history Vorort/economiesuisse
-- **Tertiary**: Catalogs, bibliographies, dossiers, registers, databases, finding aids
+- **Primary**: association minutes, correspondence, internal reports, submissions, memoranda; government records; parliamentary minutes; media reports
+- **Secondary**: research literature on foreign policy, European policy and the policy of associations; organizational history of the Vorort and economiesuisse
+- **Tertiary**: catalogues, bibliographies, dossiers, registers, databases, finding aids
 
-For each cell: *What would be compelling evidence?* / *Which biases are likely?*
+For each cell: *What would count as convincing evidence?* and *Which biases are likely?*
 
 ### Task (AI Exploration)
 
 ``` markdown
-Name suitable primary, secondary, and tertiary sources for the research question.
-Assign each source to an arena (Federal Council / Department / Parliament / Association / Media / International).
+Name suitable primary, secondary and tertiary sources for the research question.
+Assign each source to an arena (Federal Council / department / parliament / association / media / international).
 ```
 
 ### Reflection
 
-Where does AI typically "invent" sources (e.g., seemingly specific protocols or letters without reference)? Note three risk areas.
+Where does an AI typically "invent" sources, for example minutes or letters that look concrete but carry no record? Note three fields of risk.
 
-## 3. Systematic Search I: Context Framework via Tertiary Sources
+## 3. Systematic Search I: A Context Frame from Tertiary Sources
 
 ### Goal
 
-Build an **orienting reference framework** before deep research begins.
+Build an **orienting frame of reference** before the deep search starts.
 
 ### Core Resources
 
 - [Dodis: Switzerland and the Council of Europe](https://www.dodis.ch/en/switzerland-and-the-council-of-europe)
 - [Dodis: Accession to the Council of Europe 1963](https://www.dodis.ch/en/accession-to-the-council-of-europe-1963)
-- [Swiss Political Yearbook: Council of Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
+- [Année Politique Suisse: Council of Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
 - [Official Publications of Switzerland (Federal Archives)](https://www.amtsdruckschriften.bar.admin.ch/)
 - [chgov.bar.admin.ch (Federal Archives)](https://www.chgov.bar.admin.ch/)
 - [e-newspaperarchives.ch (ETH Library Zurich)](https://www.e-newspaperarchives.ch/)
@@ -182,211 +231,237 @@ Build an **orienting reference framework** before deep research begins.
 - [Memobase](https://memobase.ch/)
 - [swisscollections.ch](https://swisscollections.ch/)
 
-### Task (AI as Search Assistant, Not as Source)
+### Task (AI as a Search Assistant, Not as a Source)
 
 ``` markdown
-Create a list of 15 search locations (portals, catalogs, editions, archives, databases)
-that could be relevant for the question about the Vorort and Council of Europe accession 1963.
-For each search location, provide 1–2 typical hit types (e.g., message, protocol, dossier, newspaper article).
+Build a list of 15 search locations (portals, catalogues, editions, archives, databases)
+that could matter for the question about the Vorort and the accession to the Council of Europe in 1963.
+For each search location, state 1–2 typical types of hit (for example a message, a minute, a dossier, a newspaper article).
 ```
 
 ### Validation
 
-- Open at least **5** mentioned search locations and test **2** search queries each.
-- Document **null results** (wrong arena, wrong term, wrong time period, missing digitization).
+- Open at least **5** of the named search locations and test **2** queries in each.
+- Document the **null results** (wrong arena, wrong term, wrong period, missing digitization).
 
-## 4. Systematic Search II: Catalogs, Databases, Official Publications
+## 4. Systematic Search II: Catalogues, Databases, Official Publications
 
 ### Goal
 
-Develop search terms as **testable hypotheses**, incl. historical terminology and name variants.
+Develop search terms as **hypotheses that you can test**, including historical terminology and variants of names.
 
-### Task A: Concept Fields
+### Task A: Fields of Terms
 
-Create three concept fields (DE/FR/EN):
+Build three fields of terms (DE/FR/EN):
 
-1. **Actor**: Vorort; Swiss Trade and Industry Association; STIA; (FR) Union suisse du commerce et de l'industrie; economiesuisse (*mark as retroactive*)
-2. **Event/Institution**: Council of Europe; Conseil de l'Europe; accession/membership; 1963; ECHR/ECtHR (as context paths)
-3. **Process/Mechanisms**: Consultation; interest group; submission; statement; expert opinion; economic interests; foreign economic policy
+1. **Actor**: Vorort; Schweizerischer Handels- und Industrie-Verein; SHIV; (FR) Union suisse du commerce et de l'industrie; economiesuisse (*mark this as a projection backwards*)
+2. **Event and institution**: Europarat; Council of Europe; accession and membership; 1963; the European Convention on Human Rights and its court (as context paths)
+3. **Process and mechanisms**: consultation procedure; interest association; submission; statement; expert opinion; economic interests; foreign economic policy
 
-### Task B (AI-Assisted): Controlled Synonym Lists
+### Task B (with AI): Controlled Lists of Synonyms
 
 ``` markdown
-Create for the three concept fields (Actor / Institution-Event / Process) 12–20 search terms each.
+Build 12–20 search terms for each of the three fields of terms (actor / institution and event / process).
 Conditions:
-- Output DE/FR/EN separately
-- Consider historical spellings and abbreviations
-- For each term, indicate where it is more likely to appear (parliamentary protocol / internal records / press)
-- No invented proper names or signatures
+- Give DE, FR and EN separately.
+- Take historical spellings and abbreviations into account.
+- For each term, state where it appears more often (parliamentary minute / internal records / press).
+- No invented proper names or archive references.
 ```
 
 ### Quality Check
 
-- Remove or mark anachronistic terms as **retrospective search anchors**.
-- Supplement **person and place anchors** (e.g., Vorort presidium, delegates; Bern/Zurich; relevant departments).
+- Remove the anachronistic terms, or mark them as **search anchors in hindsight**.
+- Add **anchors for persons and places** (for example the Vorort presidency, delegates; Bern and Zurich; the relevant departments).
 
-## 5. Systematic Research: Secondary Literature and Reference Works
+## 5. Systematic Search: Secondary Literature and Reference Works
 
 ### Goal
 
-Create a reliable starting base of secondary literature (incl. bibliographies).
+Build a reliable starting base of secondary literature, including bibliographies.
 
-### Task A: Catalog Strategy
+### Task A: Catalogue Strategy
 
-Research with combinations like:
+Search with combinations such as:
 
-- (Vorort OR STIA) AND (Council of Europe OR Conseil de l'Europe) AND 196*
-- (Associations OR Interest politics) AND (Foreign policy OR European policy) AND Switzerland AND 1950*–1960*
-- Switzerland AND Council of Europe AND (accession OR membership)
+- (Vorort OR SHIV) AND (Europarat OR Council of Europe) AND 196\*
+- (Verbände OR Interessenpolitik) AND (Aussenpolitik OR Europapolitik) AND Schweiz AND 1950*–1960*
+- Schweiz AND Europarat AND (Beitritt OR membership OR accession)
 
 Document:
 
-- Search terms
-- Filters (year, language, material type)
-- Hit counts
-- Selection criteria
+- the search terms
+- the filters (year, language, material type)
+- the numbers of hits
+- the selection criteria
 
-### Task B (AI-Assisted): Optimize Search Terms
+### Task B (with AI): Optimize the Search Terms
+
+Replace the example lines in the following prompt with your own search terms and hit problems.
 
 ``` markdown
-Here are my previous search terms and hit problems: [insert].
-Optimize the search terms for catalogs (Boolean, phrases, truncation).
-Provide 6 variants and briefly explain which problem each variant addresses.
+Here are my search terms so far and my hit problems:
+- "Vorort AND Europarat": 3 hits, all after 1990.
+- "SHIV AND Beitritt": 0 hits.
+- "Interessenverband AND Europapolitik": over 800 hits, hardly any relevant.
+Optimize the search terms for catalogues (Boolean, phrases, truncation).
+Give 6 variants and explain briefly which problem each variant addresses.
 ```
 
 ### Deliverable
 
-- **Briefly annotated bibliography** (8–12 titles) with:
+- A **short annotated bibliography** of 8 to 12 titles with:
 
-  - Question relevance (1–2 sentences)
-  - Expected source value (which primary sources are cited?)
+  - the relevance to the question (1 to 2 sentences)
+  - the expected source value (which primary sources does the title cite?)
 
 ## 6. Unsystematic Search: Snowballing
 
 ### Goal
 
-From a **small starting corpus**, reconstruct debates and source references.
+Start from a **small corpus** and reconstruct debates and references to sources.
 
-### Task: Define Starting Set
+### Task: Define the Starting Set
 
-Select:
+Choose:
 
-- 1 dossier or edition (navigator),
-- 1 overview presentation,
-- 1 in-depth study (actor- or institution-related).
+- 1 dossier or edition (as a navigator),
+- 1 overview account,
+- 1 in-depth study (close to an actor or to an institution).
 
-### Snowball Protocol
+### Search Log, Section on Snowballing
 
-- central references (10–20),
-- cited primary sources (archives, signatures, document types),
-- recurring actors and commissions.
+- the central references (10 to 20),
+- the primary sources that the texts cite (archives, references, document types),
+- the actors and commissions that appear again and again.
 
 ### Task (AI Exploration)
 
+Replace the two example entries in the following prompt with your own eight entries.
+
 ``` markdown
 I have the following 8 literature or source references:
-1. ___
-2. ___
-…
-Organize them by (a) primary/secondary, (b) arena, (c) potential insight value
-for the role of the Vorort.
-Suggest a follow-up research for each.
+1. Altermatt, Bernhard and Gilbert Casasus (eds.): 50 Jahre Engagement der Schweiz im Europarat 1963–2013. Zurich 2013.
+2. Dodis document 5020: memorandum Petitpierre, Bern, 7.7.1949.
+3. …
+Order them by (a) primary or secondary, (b) arena, (c) potential value for
+the question about the role of the Vorort.
+Suggest one follow-up search for each.
 ```
 
 ### Reflection
 
-Snowballing reproduces canons and blind spots. Note missing perspectives (e.g., unions, parties, international actors) and possible counter-strategies.
+Snowballing reproduces canons and blind spots. Note the missing perspectives (for example trade unions, parties, international actors) and possible counter-strategies.
 
-## 7. Archive Research: Finding Aids, Holdings, Access
+## 7. Archive Search: Finding Aids, Holdings, Access
 
 ### Goal
 
-Identify primary sources so that they are **orderable and analyzable**.
+Identify primary sources so that you can **order and analyse** them.
 
 ### Starting Points (Orientation)
 
-- Vorort/economiesuisse holdings at Archives for Contemporary History (ETH Zurich)
-- References in catalogs (e.g., SWA/UB Wirtschaft Basel)
-- Vorort-related documents in diplomatic history contexts (e.g., Dodis)
+- The holdings of the Vorort and economiesuisse at the Archives of Contemporary History (ETH Zurich)
+- Records in catalogues (for example SWA/UB Wirtschaft Basel)
+- Documents on the Vorort in contexts of diplomatic history (for example Dodis)
 
 ::: callout-warning
 
-## Methodological Note
+## Methodological note
 
-"Dossier found" is not the same as "evidence secured." Finding aids are tertiary access instruments: they structure visibility, not truth.
+"Dossier found" is not the same as "evidence secured". Finding aids are tertiary instruments of access: they structure visibility, and not truth.
 :::
 
-### Task A: Finding Aid Analysis
+### Task A: Analysis of the Finding Aids
 
 Reconstruct for **one** archive:
 
-- Series and dossier types,
-- Cataloging logic,
-- Access restrictions.
+- the types of series and dossiers,
+- the logic of cataloguing,
+- the restrictions on access.
 
-### Task B: Dossier Shortlist (1960–1963)
+### Task B: Shortlist of Dossiers (1960–1963)
 
-Create a shortlist of **10 units** with:
+Build a shortlist of **10 units** with:
 
-- Signature or permalink,
-- Title and time span,
-- Expected relation to sub-hypothesis,
-- Access (online / reading room / request).
+- the reference or permalink,
+- the title and the time span,
+- the expected relation to a sub-hypothesis,
+- the access (online / reading room / request).
 
-### Task C (AI-Assisted): Plan Search Paths
+### Task C (with AI): Plan the Search Paths
 
 ``` markdown
 Suggest three search paths:
-1) Actor-centered
-2) Process-oriented
-3) Event-centered
-Per path: 8–12 search terms (DE/FR/EN) incl. name variants.
+1) centred on the actor
+2) centred on the process
+3) centred on the event
+Per path: 8–12 search terms (DE/FR/EN), including variants of names.
 ```
 
-## 8. Iteration, Reproducibility, and AI Reflection
+::: callout-caution
 
-### Research Protocol
+## Before the upload: what belongs to the archive stays in the archive
 
-At minimum:
+This exercise leads you to holdings with restrictions on access. Do not upload a digitized item whose rules of use forbid a disclosure. Do not upload records with [personal data](../glossary.qmd#gl-personenbezogene-daten) of living persons either. The section "What you need" names the complete list and the legal basis.
 
-- Date, tool/portal, query, filter, hit count
-- Selection criteria
-- Bias notes (OCR, cataloging, language)
+In case of doubt, work with a short excerpt or with a [local model](../glossary.qmd#gl-lokales-modell). With a local model, the material stays on your computer.
+:::
 
-### Reflection Questions (250–400 words)
+::: callout-warning
 
-- What did AI specifically **accelerate**?
-- Where did it **mislead** (pseudo-specificity, anachronisms)?
-- What validation steps did you introduce?
-- Which decisions remained necessarily human?
+## A machine transcription is a reading hypothesis
 
-### AI Protocol (Appendix)
+In the archive you meet typescript, carbon copies and handwriting. An AI system can read a digitized item and produce text from it. The error rate of [handwritten text recognition](../glossary.qmd#gl-htr) depends strongly on the script, the layout and the language [@hodel2021general; @romein2025assessing].
 
-- 2–3 prompts,
-- shortened responses,
-- justified corrections or rejects.
+The most dangerous error is the smooth reading. A general AI system does not stop at an illegible passage. It inserts a plausible word instead [@diezgarcia2025evaluating]. Such errors travel into every later analysis [@vanstrien2020assessing].
 
-## Submission
+Note in the search log which texts a machine recognized. Compare every citation with the digitized item. The section [Check and classify capabilities](prompt-engineering.qmd#sec-capabilities) explains this point in detail.
+:::
 
-1. Source matrix (sub-questions × source types)
-2. Research protocol (≥ 15 entries)
-3. Shortlist: 10 primary source units
-4. Briefly annotated bibliography (8–12 titles)
-5. Reflection on AI use incl. AI protocol
+## 8. Iteration, Reproducibility and the AI Log
+
+### Search Log, Section on the Search
+
+At a minimum:
+
+- the date, the tool or portal, the query, the filters, the number of hits
+- the selection criteria
+- notes on bias ([optical character recognition](../glossary.qmd#gl-ocr), [handwritten text recognition](../glossary.qmd#gl-htr), cataloguing, language)
+
+### Questions for Reflection (250 to 400 Words)
+
+- What did the AI concretely **accelerate**?
+- Where did it **mislead** you (false specificity, anachronisms)?
+- Which validation steps did you introduce?
+- Which decisions stayed necessarily human?
+
+### AI Log (Appendix)
+
+At least 3 entries. Each entry holds:
+
+- the prompt in its exact wording,
+- the shortened answer,
+- your reasoned correction or your rejection.
+
+## Learning Outcome
+
+At the end you hold these artifacts:
+
+1. A matrix of sources (sub-questions × source types)
+2. A search log (15 entries or more)
+3. A shortlist of 10 units of primary sources
+4. A short annotated bibliography (8 to 12 titles)
+5. A reflection on the AI use, with an AI log (3 entries or more)
+
+One methodological insight comes on top: you can give reasons for which search paths deliver reliable hits, and where an AI answer only sounds plausible.
 
 ## Further Resources
 
-- [Ranke.2: Lessons Overview](https://ranke2.uni.lu/lessons/) – Learning modules on web, social media, and digital change.
+- [Ranke.2: Lessons Overview](https://ranke2.uni.lu/lessons/) – Learning modules on the web, social media and digital change.
 - [Knowing Machines: Models All the Way Down](https://knowingmachines.org/models-all-the-way) – Critique of training data and its parallels to source criticism.
 
 ## Bibliography
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Automated Translation Disclaimer
-
-This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/quellensuche-vorort-europarat-1963.qmd) for the authoritative text. If you notice any translation issues, please report them.
 :::

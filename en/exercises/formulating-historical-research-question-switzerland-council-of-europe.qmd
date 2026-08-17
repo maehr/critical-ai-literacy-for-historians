@@ -2,7 +2,7 @@
 lang: en
 title: "Formulating a Historical Research Question"
 subtitle: "Switzerland and the Council of Europe"
-description: "A guided exercise for the systematic development of an analytical historical research question with reflective use of generative AI."
+description: "A guided exercise on the systematic development of an analytical historical research question, with a considered use of generative AI."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -21,6 +21,8 @@ tags:
   - Switzerland
   - Contemporary History
   - AI-Assisted
+difficulty: Beginner
+time_estimate: "90 min"
 draft: false
 references:
 - id: altermatt-casasus-2013-europarat
@@ -36,140 +38,167 @@ references:
   issued:
     year: 2013
   publisher-place: "Schweiz"
-  note: "Sammelband herausgegeben im Auftrag des Centre d'Études européennes, Universität Freiburg (UniFR-ZEUS) und der Neuen Helvetischen Gesellschaft"
+  note: "Anthology commissioned by Centre d'Études européennes, University of Freiburg (UniFR-ZEUS) and Neue Helvetische Gesellschaft"
 ---
+
+::: callout-warning
+
+## Automated Translation
+
+This exercise was translated automatically from the [German original](../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd) and can contain errors. Consult the original version in case of doubt.
+:::
 
 ## Overview and Didactic Goal
 
-This exercise teaches **transferable methodological competencies** for developing historical research questions. The goal is not to generate a "correct" question, but rather the **controlled, reflective interplay between independent historical thinking and AI-assisted exploration**.
+This exercise teaches **transferable methodological competencies** for the development of historical research questions. The goal is not to generate the "right" question. The goal is the **controlled and considered interplay between your own historical thinking and an exploration with AI**.
 
-At the center is a shared case study: **Switzerland and the Council of Europe**.
+One shared case study stands at the centre: **Switzerland and the Council of Europe**.
 
-The exercise follows a **circular understanding of research**: results from individual steps can – and should – be revised.
+The exercise follows a **circular understanding of research**: you can revise the result of a single step, and you should.
 
 ::: callout-note
 
-## Note on Online Research
+## Note on the search online
 
-Despite advancing digitization, historical research cannot be conducted entirely online. In particular, out-of-print secondary literature and sources not yet catalogued often require physical research in libraries and archives. Plan for access (library, interlibrary loan, archive) and note that platforms/catalogs structure visibility (cataloging logic) and do not guarantee completeness. [@putnam2016shadows] Digital source criticism requires special attention to the creation and curation of online collections. [@fickers2022criticism]
+Digitization advances, but historical research is not possible online alone. Secondary literature that is out of print, and primary sources that no one has catalogued yet, often demand a physical search in libraries and archives. Plan your access (library, interlibrary loan, archive). Note that platforms and catalogues structure visibility through their logic of cataloguing, and that they guarantee no completeness. [@putnam2016shadows] Digital source criticism demands particular attention to the creation and the curation of online collections. [@fickers2022criticism]
 :::
 
-## Prerequisites
+## At a Glance
 
-- Basic understanding of historical research methods
-- Basic knowledge of working with generative AI (especially prompting)
+| Item                      | Value                                                                       |
+| ------------------------- | --------------------------------------------------------------------------- |
+| **Duration**              | about 90 minutes                                                            |
+| **Level**                 | Beginner                                                                    |
+| **Core path**             | 1 → 2 → 4 → 5 → 6                                                           |
+| **Optional deepening**    | 3 (the state of research and the gaps in research)                          |
+| **Hand-in (minimum)**     | One research question. [AI log](../glossary.qmd#gl-ki-protokoll): 5 entries. |
+
+The core path leads you to a research question that you can work on in about 90 minutes. Step 3 costs about 60 minutes more. You practise the state of research in detail in the exercise [Literature Research](literature-research-social-security-ch.qmd).
+
+## What You Need
+
+**Subject knowledge**
+
+- A basic understanding of historical research methods
+- Basic knowledge of work with generative AI, above all prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+If prompting is new to you, we recommend that you work through the exercise [Prompt Engineering](prompt-engineering.qmd) first.
 
 :::
 
-::: callout-note
+**Capabilities of the AI system**
 
-## LLM
+The system must be able to do the two following things:
 
-You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+- Search the web and support each finding with an address. You need this in step 2 and in step 4.
+- Deliver an answer in a format that you prescribe, for example as a list of variants.
 
-:::
+**Other tools and access**
+
+- A file for your AI log.
+- An account for the library catalogue of your university. You use it in step 4 to check which sources exist.
+
+{{< include ../_ai-requirements.qmd >}}
 
 ## Learning Objectives
 
-Upon completion of the exercise, you will be able to:
+After the exercise you can:
 
-- distinguish between **topic**, **problem statement**, and **analytical historical research question**,
-- formulate a **precise and workable historical research question**,
-- use AI systems **critically and methodologically controlled** for literature and context exploration,
-- reflectively assess the **source situation and feasibility** of a historical research project.
+- tell a **topic**, a **problem statement** and an **analytical historical research question** apart,
+- formulate a **precise historical research question that you can work on**,
+- use AI systems **critically and under methodological control** for literature and context work,
+- judge **which sources exist and whether a project is feasible** in a considered way.
 
 ## Structure of the Exercise
 
-The exercise is modular in design. Each step contains:
+The exercise is modular. Each step holds:
 
 - a **clear objective**,
-- one or more **concrete tasks (prompts)**,
-- a **work and reflection assignment**.
+- one or several **concrete tasks (prompts)**,
+- a **work assignment and a reflection assignment**.
 
-1. Conceptual Clarification: What is a historical research question?
-2. Topic Determination and Historical Overview
-3. State of Research and Research Gaps
-4. Source Situation and Feasibility
-5. Narrowing Down and Formulating the Research Question
-6. Iterative Revision and Reflection on AI Use
+1. Clarify the terms: what is a historical research question?
+2. Set the topic and build a historical overview
+3. The state of research and the gaps in research
+4. Which sources exist, and is the project feasible?
+5. Delimit and formulate the research question
+6. Iterative revision and reflection on the AI use
 
-## 1. Conceptual Clarification: Historical Research Question
+## 1. Clarify the Terms: Historical Research Question
 
 ### Goal
 
-Understanding the differences between **topic**, **problem statement**, and **analytical historical research question**.
+Understand the differences between a **topic**, a **problem statement** and an **analytical historical research question**.
 
 ### Task (AI Exploration)
 
 ``` markdown
 What is a historical research question?
-What elements are contained in a historical research question?
+Which elements does a historical research question hold?
 ```
 
-If no process description is included:
+If the answer holds no description of the process:
 
 ``` markdown
-What steps are necessary to develop a historical research question?
+Which steps are necessary to develop a historical research question?
 ```
 
 ### Work Assignment (Critical Comparison)
 
-Compare the AI response systematically with:
+Compare the AI answer systematically with:
 
-- [History Toolkit (University of Basel)](https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf)
-- [Compass for History Studies (University of Zurich)](https://www.hist.uzh.ch/de/studium/geschichte-studieren-in-zuerich/studienrelevante-dokumente/kompass.html) (GERMAN only)
-- [Guide to Historical Studies (University of Bremen)](https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf) (GERMAN only)
-- [Study Guide History Department (University of Hamburg)](https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf) (GERMAN only)
+- [History: A Toolkit for Students (University of Basel)](https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf)
+- [Kompass Geschichtsstudium (University of Zurich)](https://www.hist.uzh.ch/de/studium/geschichte-studieren-in-zuerich/studienrelevante-dokumente/kompass.html) (GERMAN only)
+- [Leitfaden Geschichtswissenschaft (University of Bremen)](https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf) (GERMAN only)
+- [Studienleitfaden Fachbereich Geschichte (University of Hamburg)](https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf) (GERMAN only)
 
 Identify:
 
-- Agreements,
-- Omissions,
-- Conceptual shifts or simplifications.
+- the agreements,
+- the omissions,
+- the shifts or simplifications of terms.
 
-Targeted follow-up questions to the AI:
+Put targeted follow-up questions to the AI. Insert the element that you miss in the answer. The example names the state of research.
 
 ``` markdown
-Why is element X missing?
+Why is the element "state of research" missing?
 ```
 
 ``` markdown
-What scientific or didactic sources does your definition rely on?
+Which scholarly or didactic sources does your definition rest on?
 ```
 
-## 2. Topic Determination and Historical Overview
+## 2. Set the Topic and Build a Historical Overview
 
 ### Goal
 
-Separation of **topic** and **analytical question** as well as building solid historical background knowledge.
+Separate the **topic** from the **analytical question**, and build a solid base of historical knowledge.
 
-### Topic Framework (Given)
+### Topic Frame (Given)
 
 **Switzerland and the Council of Europe**
 
-(Optional: Dialogic Topic Finding)
+(Optional: find the topic in a dialogue)
 
 ``` markdown
-You are a historian and help me in dialogue to find a historical topic for a student paper.
+You are a historian and you help me in a dialogue to find a historical topic for a student paper.
 ```
 
 ::: callout-tip
 
-## Reflection Question
+## Question for reflection
 
-How does this AI dialogue differ from a conversation with an instructor or a fellow student?
+How does this dialogue with an AI differ from a conversation with a teacher or with a fellow student?
 :::
 
 ### Task (Historical Overview)
 
 ``` markdown
-Give me a historical overview of the relationship between Switzerland and the Council of Europe.
+Give me a historical overview of the relation between Switzerland and the Council of Europe.
 ```
 
 ### Comparison and Critique
@@ -178,80 +207,87 @@ Compare the overview with:
 
 - [Dodis: Switzerland and the Council of Europe](https://www.dodis.ch/en/switzerland-and-the-council-of-europe)
 - [Dodis: Accession to the Council of Europe 1963](https://www.dodis.ch/en/accession-to-the-council-of-europe-1963)
-- [Wikipedia: Council of Europe](https://en.wikipedia.org/wiki/Council_of_Europe) (use with caution, check the [discussion page](https://en.wikipedia.org/wiki/Talk:Council_of_Europe))
+- [Wikipedia: Council of Europe](https://en.wikipedia.org/wiki/Council_of_Europe) (use it with care, and look at the [talk page](https://en.wikipedia.org/wiki/Talk:Council_of_Europe))
 
-Targeted follow-up questions:
+Put targeted follow-up questions. Insert the aspect that you miss. Further examples are the European Convention on Human Rights and its court.
 
 ``` markdown
-Why is aspect X missing (e.g., neutrality, ECHR, ECtHR)?
+Why is the aspect "neutrality" missing?
 ```
 
 ``` markdown
-What sources does this presentation rely on?
+Which sources does this account rest on?
 ```
 
-## 3. State of Research and Research Gaps
+## 3. The State of Research and the Gaps in Research
 
 ### Goal
 
-Distinguishing between **descriptive overview** and **analytical state of research**.
+Tell a **descriptive overview** apart from an **analytical state of research**.
 
 ### Task (Secondary Literature)
 
 ``` markdown
-Name key historical secondary literature on the relationship between Switzerland and the Council of Europe.
+Name the central historical secondary literature on the relation between Switzerland and the Council of Europe.
 ```
 
-### Task (Research Gaps)
+### Task (Gaps in Research)
 
 ``` markdown
-What open questions or research gaps exist in previous research?
+Which open questions or gaps in research exist in the research so far?
 ```
 
 ### Work Assignment
 
-1. Verify the titles mentioned via <https://swisscovery.slsp.ch>.
+1. Check the titles that the AI names at <https://swisscovery.slsp.ch>.
 
 2. Compare the results with:
 
 - @altermatt-casasus-2013-europarat
 - [Historical Dictionary of Switzerland: Council of Europe](https://hls-dhs-dss.ch/en/articles/026470/2009-10-29/)
 
-Targeted follow-up questions:
+Put targeted follow-up questions. Insert the title that you miss in the answer. The example names the edited volume of Altermatt and Casasus.
 
 ``` markdown
-Why is work X missing?
+Why is the work "50 Jahre Engagement der Schweiz im Europarat 1963–2013" missing?
 ```
+
+Insert your own question and your own work in the second follow-up question.
 
 ``` markdown
-Why is question Y described as a research gap when it is addressed in work Z?
+Why do you call the question about the role of neutrality a gap in research,
+although "50 Jahre Engagement der Schweiz im Europarat 1963–2013" treats it?
 ```
 
-## 4. Source Situation and Feasibility
+## 4. Which Sources Exist, and Is the Project Feasible?
 
 ### Goal
 
-Assessment of whether a research question is **workable based on sources**.
+Judge whether you can work on a research question **on the basis of sources**.
 
 ### Task (Primary Sources)
 
+Replace the example question in the following prompt with your own working question.
+
 ``` markdown
-What primary sources are suitable for investigating research question X?
+Which primary sources suit the study of the research question
+"How did neutrality serve between 1949 and 1963 as an argument against an accession
+of Switzerland to the Council of Europe?"
 ```
 
 If necessary:
 
 ``` markdown
-Name specific archives, collections, and document types on Switzerland and the Council of Europe.
+Name concrete archives, collections and document types on Switzerland and the Council of Europe.
 ```
 
-### Comparison with Actual Resources
+### Comparison with Real Resources
 
-Compare the response with, among others:
+Compare the answer with these resources, among others:
 
 - [Dodis: Switzerland and the Council of Europe](https://www.dodis.ch/en/switzerland-and-the-council-of-europe)
 - [Dodis: Accession to the Council of Europe 1963](https://www.dodis.ch/en/accession-to-the-council-of-europe-1963)
-- [Swiss Political Yearbook: Council of Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
+- [Année Politique Suisse: Council of Europe](https://anneepolitique.swiss/articles?keywords%5B%5D=99)
 - [Official Publications of Switzerland (Federal Archives)](https://www.amtsdruckschriften.bar.admin.ch/)
 - [chgov.bar.admin.ch (Federal Archives)](https://www.chgov.bar.admin.ch/)
 - [e-newspaperarchives.ch (ETH Library Zurich)](https://www.e-newspaperarchives.ch/)
@@ -261,74 +297,76 @@ Compare the response with, among others:
 - [Memobase](https://memobase.ch/)
 - [swisscollections.ch](https://swisscollections.ch/)
 
-## 5. Narrowing Down and Formulating the Research Question
+## 5. Delimit and Formulate the Research Question
 
 ### Goal
 
-Transformation of an open question into a **precise analytical historical research question**.
+Turn an open problem statement into a **precise analytical historical research question**.
 
-### Possible Dimensions of Narrowing
+### Possible Dimensions of the Delimitation
 
-- **Temporal:** e.g., 1949–1963, Cold War, Post-1971
-- **Spatial:** Switzerland in transnational-European context
-- **Thematic:** Neutrality, Human Rights, Jurisprudence, Foreign Policy, Parliamentarism
+- **Time:** for example 1949–1963, the Cold War, after 1971
+- **Space:** Switzerland in a transnational European context
+- **Topic:** neutrality, human rights, case law, foreign policy, parliamentarism
 
-### Task (Narrowing)
+### Task (Delimitation)
+
+Replace the example question in the following prompt with your own working question.
 
 ``` markdown
-Suggest possible temporal, spatial, and thematic delimitations for research question X.
+Suggest possible delimitations in time, space and topic for the research question
+"How did neutrality serve between 1949 and 1963 as an argument against an accession
+of Switzerland to the Council of Europe?"
 ```
 
 ### Task (Formulation)
 
 ``` markdown
-Based on this, formulate an analytical historical research question.
+Formulate an analytical historical research question on this basis.
 ```
 
 ### Quality Check
 
 The research question should:
 
-- be open and analytical ("How", "Why", "To what extent"),
-- be historically contextualized,
-- appear workable with available sources.
+- be open and analytical ("how", "why", "to what extent"),
+- carry a historical context,
+- look workable with the sources that you can reach.
 
 ## 6. Iterative Revision and Reflection
 
 ### Goal
 
-Conscious separation between **AI assistance** and **one's own research decision**.
+Separate the **support from the AI** from **your own research decision** deliberately.
 
 ### Final Task
 
-Briefly note:
+Note briefly:
 
-- What did AI facilitate?
-- Where was it misleading, imprecise, or reductive?
-- Which decisions could only you make yourself?
+- What did the AI make easier?
+- Where was it misleading, imprecise or too short?
+- Which decisions could only you make?
+
+### AI Log
+
+Close your AI log. It holds at least 5 entries, that is one entry per work step with AI.
 
 ## Learning Outcome
 
-At the end of the exercise, you will have:
+At the end of the exercise you hold:
 
 - a **clearly formulated analytical historical research question**,
-- a reflected understanding of the **potentials and limits of AI** in research design,
-- a methodologically grounded assessment of the **feasibility** of your project.
+- an **AI log** with at least 5 entries,
+- a considered understanding of the **potential and the limits of AI** in a research design,
+- a methodologically reasoned judgement on the **feasibility** of your project.
 
 ## Further Resources
 
-- [Ranke.2: Wikipedia as Historical Source](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, revision histories, and digital source criticism.
+- [Ranke.2: Wikipedia as Historical Source](https://ranke2.uni.lu/u/wikipedia-historical-source/) – Provenance, revision histories and digital source criticism.
 - [AI Pedagogy Project: What is AI?](https://aipedagogy.org/guide/what-is-ai/) – Conceptual introduction for non-technical audiences.
 - @meadows2023practice – Introduces a journal forum on what AI changes for the methods and the epistemology of history; useful for judging which research decisions stay with the researcher.
 
 ## Bibliography
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Automated Translation Disclaimer
-
-This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/formulieren-historische-forschungsfrage-schweiz-europarat.qmd) for the authoritative text. If you notice any translation issues, please report them.
 :::

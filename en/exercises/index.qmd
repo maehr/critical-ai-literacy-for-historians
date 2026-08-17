@@ -1,6 +1,7 @@
 ---
 title: Exercises
 lang: en
+date-modified: "2026-08-16"
 listing:
   id: exercises
   # Learning order, not alphabetical order. "sort: false" keeps this order.
@@ -16,9 +17,51 @@ listing:
   sort: false
   type: table
   categories: true
-  fields: [title, subtitle, description, categories]
+  fields: [title, subtitle, difficulty, time_estimate, categories]
+  field-display-names:
+    difficulty: "Level"
+    time_estimate: "Duration"
+  field-links: [title]
 citation: false
 ---
+
+This page lists the eight exercises of the course. Each exercise trains one work step of historical research with AI systems. You need no knowledge of programming.
+
+## How to Read an Exercise
+
+Each exercise starts with the section "At a glance". This section names five items:
+
+- **Duration**: the honest working time for the whole exercise.
+- **Level**: Beginner, Intermediate or Advanced.
+- **Core path**: the steps that lead to a complete result.
+- **Optional deepening**: the steps that you can leave out.
+- **Hand-in (minimum)**: what you present at the end.
+
+The section "What you need" follows. It names the knowledge, the necessary capabilities of the AI system and the other tools. Read both sections before you start with step 1.
+
+## Recommended Order
+
+Start with the exercise [Prompt Engineering](prompt-engineering.qmd). It is the basis for all other exercises. After it, the exercises follow the course of a research project:
+
+1. [Prompt Engineering](prompt-engineering.qmd) – the shared basis. You also set up your [AI log](../glossary.qmd#gl-ki-protokoll) here.
+2. [Literature Research](literature-research-social-security-ch.qmd) – open up the state of research systematically.
+3. [Research Question](formulating-historical-research-question-switzerland-council-of-europe.qmd) – turn the topic into a question that you can work on.
+4. [Source Search](source-search-vorort-council-of-europe-1963.qmd) – find primary sources and plan the access.
+5. [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd) – check and classify one single source.
+6. [Academic Writing](writing.qmd) – develop a text from your material.
+7. [Citing](citing.qmd) – secure your references and disclose your own AI use.
+8. [Public History](public-history.qmd) – translate the results for an audience.
+
+You can also work on the exercises 2 to 8 one by one. The exercise [Citing](citing.qmd) is the exception. It needs your AI log from an earlier exercise.
+
+::: callout-tip
+
+## Plan the source search early
+
+The exercise [Source Search](source-search-vorort-council-of-europe-1963.qmd) is a research project over several days. All other exercises take between one hour and one working day. Start the source search early when you work through the whole course in one semester.
+:::
+
+## All Exercises
 
 ::: {#exercises}
 :::

@@ -1,0 +1,91 @@
+<!-- Shared explanation of the AI log. The exercises pull this file in with the include shortcode. -->
+
+:::: {.callout-note collapse="true" title="AI log: your research journal for AI use (expand)"}
+
+An **AI log** is a short record of your AI use. In each entry you record five things: which material you entered, what you asked, what the AI answered, how you checked the answer, and how you decided.
+
+The AI log works like a research journal. The way to the result stays traceable, for your readers and for you. You need the log later for the method section and for the disclosure of your AI use.
+
+The German version of this course calls this record the **KI-Protokoll**. The English literature also calls it an **audit trail**. That term comes from accounting. There, an auditor follows a trail of records and traces each figure back to its origin. Your log does the same for your work steps. In these exercises we use only the term AI log.
+
+::: callout-important
+
+## Write each entry immediately
+
+Write the entry directly after the work step, and not at the end of the exercise. After one hour you no longer know the exact wording of your prompt.
+:::
+
+### Where you keep the log
+
+You need no special tool. A text file or a document in your word processor is enough. A sheet in a spreadsheet program also works.
+
+1. Create one file per exercise.
+2. Give the file a clear name, for example `ai-log_source-criticism.md`.
+3. Write each entry below the previous one in the same file.
+4. Save the file together with your hand-in.
+
+### How long an entry is
+
+An entry is short. It runs to five or ten lines and costs you one or two minutes. One entry covers one work step, that is one prompt and the answer that belongs to it.
+
+Different rules apply to the prompt and to the answer:
+
+- **Prompt: verbatim.** Copy the prompt exactly as you entered it. If the prompt is very long, copy the core passage and shorten with `[…]`.
+- **Answer: summarized.** Summarize the answer in two or three sentences. Copy a passage verbatim only when you take that passage into your text, or when you want to document an error of the AI.
+
+Each exercise states how much it requires. Some exercises name a number of entries, and others name a length in words. If an exercise names nothing, write one entry for each work step with AI.
+
+### Template for an entry
+
+Copy this table again for each entry.
+
+| Field                    | Content |
+| ------------------------ | ------- |
+| Date                     |         |
+| Step (exercise, number)  |         |
+| Goal (1 sentence)        |         |
+| Material (input)         |         |
+| Prompt (verbatim)        |         |
+| Answer (short version)   |         |
+| Verification steps       |         |
+| Decision                 |         |
+| Reason (1 sentence)      |         |
+
+If you write in Markdown, copy this source text:
+
+```markdown
+| Field                   | Content |
+| ----------------------- | ------- |
+| Date                    |         |
+| Step (exercise, number) |         |
+| Goal (1 sentence)       |         |
+| Material (input)        |         |
+| Prompt (verbatim)       |         |
+| Answer (short version)  |         |
+| Verification steps      |         |
+| Decision                |         |
+| Reason (1 sentence)     |         |
+```
+
+A list with the same fields is equally valid. Choose the form that you fill in faster.
+
+### A filled-in entry as an example
+
+The example comes from the exercise [Source Criticism](source-criticism-federal-council-council-of-europe-1949.qmd). A student there checks a memorandum of 7 July 1949.
+
+| Field                   | Content                                                                                                                                                                                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Date                    | 14 March 2026, 10:15                                                                                                                                                                                                                                                          |
+| Step (exercise, number) | Source Criticism, step 2 (external source criticism)                                                                                                                                                                                                                          |
+| Goal (1 sentence)       | I check whether the AI derives the formal data of the memorandum correctly from the text.                                                                                                                                                                                     |
+| Material (input)        | Memorandum Bern, 7.7.1949, Petitpierre/Hansen (Dodis 5020), full text from the edition copied into the prompt.                                                                                                                                                                |
+| Prompt (verbatim)       | "Analyse the following memorandum only from the viewpoint of external source criticism. Name the author, the addressee, the date, the text type and the form of transmission. Mark every statement that is not in the text expressly as an assumption. […]"                     |
+| Answer (short version)  | The AI names Petitpierre as the author, Hansen as the interlocutor and 7.7.1949 as the date. It calls the text a "minute of a Federal Council meeting". It adds without marking that the memorandum lies "in the Federal Archives under the reference E 2001".                  |
+| Verification steps      | I compared all statements with the edition at <https://dodis.ch/5020>. Author, date and interlocutor agree with the text. The text type does not agree: the text records a conversation, and it does not minute a meeting. The reference appears nowhere in the material.       |
+| Decision                | Partly adopted.                                                                                                                                                                                                                                                               |
+| Reason (1 sentence)     | I adopt the author, the date and the interlocutor, I correct the text type to "memorandum", and I reject the reference as unsupported.                                                                                                                                        |
+
+The entry shows the normal case: one part of the answer is usable, one part is wrong, and one part has no support.
+
+Note the third category. The student does not claim that the reference is invented. She records only what she can check: the reference is not in the material. Whether the holding exists is a different question. You can call a statement wrong only after you checked it. Until then it has no support. This distinction is the core of source criticism, and it also applies towards the AI.
+::::

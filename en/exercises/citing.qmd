@@ -1,8 +1,8 @@
 ---
 lang: en
 title: "Academic Citation"
-subtitle: "Exercise on Citation Practice in Historical Research"
-description: "This exercise teaches the fundamentals of academic citation in historical research, with a particular focus on the critical use of generative AI. You will learn how citations function as a methodological tool to make historical arguments traceable and verifiable, and how to structure AI-assisted writing so that the chain of evidence remains intact."
+subtitle: "Exercise on citation practice in historical research"
+description: "This exercise teaches the fundamentals of academic citation in historical research, with a particular focus on the critical use of generative AI. You learn how citations work as a methodological tool that makes historical arguments traceable and verifiable, how you shape AI-assisted work on text so that the chain of evidence stays intact, and how you declare your AI use correctly in a seminar paper, in a thesis and in a publication."
 author:
   - name: "Moritz Mähr"
     orcid: 0000-0002-1367-1618
@@ -19,7 +19,10 @@ tags:
   - Traceability
   - Academic Integrity
   - Digital Source Criticism
-  - AI-assisted
+  - Disclosure
+  - AI-Assisted
+difficulty: Beginner
+time_estimate: "90 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -55,7 +58,7 @@ references:
   issued:
     year: 2026
   publisher: "Historisches Seminar, Universität Zürich"
-  note: "Offizielle Studienanleitung; aktualisiert am 26. Januar 2026"
+  note: "Official study guide; updated on 26 January 2026"
   URL: "https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf"
   abstract: "Systematic overview of study requirements and methods in history, including digital competence and citation of AI-based tools."
 - id: leitfaden_bremen_2025
@@ -65,7 +68,7 @@ references:
   issued:
     year: 2025
   publisher: "Institut für Geschichtswissenschaft, Universität Bremen"
-  note: "Überarbeitete und erweiterte 8. Auflage; enthält Hinweise zum Einsatz generativer KI"
+  note: "Revised and expanded 8th edition; holds guidance on the use of generative AI"
   URL: "https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf"
   abstract: "Study guide covering historical theory, source criticism, academic writing formats, citation practices, and the use of generative AI."
 - id: studienleitfaden_hamburg_2021
@@ -81,7 +84,7 @@ references:
   issued:
     year: 2021
   publisher: "Fachbereich Geschichte, Universität Hamburg"
-  note: "Redaktionell betreut von Monica Rüthers; abgeschlossen am 6. Januar 2021"
+  note: "Edited by Monica Rüthers; completed on 6 January 2021"
   URL: "https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf"
   abstract: "Orientation guide for history students covering organization of studies, research, reading, citation, and digital competence."
 - id: werkszeugkasten_basel_2016
@@ -95,7 +98,7 @@ references:
   issued:
     year: 2016
   publisher: "Departement Geschichte, Universität Basel"
-  note: "Revidierte Online-Version des Studienleitfadens von 2010"
+  note: "Revised online version of the 2010 study guide"
   URL: "https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf"
   abstract: "Comprehensive guide to historical research practice with emphasis on source criticism and digital resources."
 ---
@@ -104,122 +107,346 @@ references:
 
 ## Automated Translation
 
-This exercise was automatically translated from the [German original](../../de/exercises/zitieren.qmd) and may contain errors. Please consult the original version when in doubt.
+This exercise was translated automatically from the [German original](../../de/exercises/zitieren.qmd) and can contain errors. Consult the original version in case of doubt.
 :::
 
-## Overview and Didactic Objective
+## Overview and Didactic Goal
 
-This exercise teaches the **fundamentals of academic citation** in historical research, with a particular focus on the **critical use of generative AI**. You will learn how citations function as a methodological tool to make historical arguments traceable and verifiable, and how to structure AI-assisted writing so that the **chain of evidence** remains intact.
+This exercise teaches the **fundamentals of academic citation** in historical research, with a particular focus on the **critical use of generative AI**. You learn how citations work as a methodological tool that makes historical arguments traceable and verifiable. You also learn how you shape AI-assisted work on text so that the **chain of evidence** stays intact.
 
-## Prerequisites
+The exercise has two parts. The first part covers the **citation** of sources and literature. The second part covers the **disclosure**: the declaration in which you state your own AI use. This exercise closes both learning paths.
 
-- Basic understanding of historical research methods
-- Basic knowledge of working with generative AI (especially prompting)
+## At a Glance
+
+| Item                      | Value                                                                        |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| **Duration**              | about 90 minutes                                                             |
+| **Level**                 | Beginner                                                                     |
+| **Core path**             | exercise 1 → exercise 2 → exercise 3                                         |
+| **Optional deepening**    | the variant with an article behind a paywall                                 |
+| **Hand-in (minimum)**     | One disclosure of the AI use. [AI log](../glossary.qmd#gl-ki-protokoll): 4 entries. |
+
+All three exercises belong to the core path. The optional deepening costs about 20 minutes more.
+
+::: callout-important
+
+## Bring your AI log
+
+Exercise 3 works with the AI log from the earlier exercises. Without this log you cannot write a disclosure.
+
+Do you have no log yet? Work through the exercise [Prompt Engineering](prompt-engineering.qmd) first. You set up your log there.
+:::
+
+## What You Need
+
+**Subject knowledge**
+
+- A basic understanding of historical research methods
+- Basic knowledge of work with generative AI, above all prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+If prompting is new to you, we recommend that you work through the exercise [Prompt Engineering](prompt-engineering.qmd) first.
 
 :::
 
-::: callout-note
+**Capabilities of the AI system**
 
-## LLM
+The system must be able to do the two following things:
 
-You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+- Search the web and retrieve an article through its [DOI](../glossary.qmd#gl-doi). You need this in exercise 1 and in exercise 2.
+- Read a file that you upload. You need this when the system does not retrieve the article itself.
 
-:::
+**Other tools and access**
+
+- A [reference manager](../glossary.qmd#gl-zotero). You use it to compare the data of the AI with a checked import.
+- The test article as a PDF file. The article is freely accessible, and you need no institutional access for it.
+- Your AI log from the earlier exercises.
+- The binding rule of your institution on AI use. You find this rule with the procedure in this exercise.
+
+{{< include ../_ai-requirements.qmd >}}
 
 ## Learning Objectives
 
-After completing this exercise, you will be able to:
+After the exercise you can:
 
 - explain the epistemic and ethical functions of academic citations in historical research
-- clearly distinguish between **common knowledge**, **primary sources**, and **secondary literature**
-- consistently decide **when** a citation is necessary (and when not)
-- apply footnote citation practice according to established standards (e.g., Chicago Manual of Style)
-- use citations purposefully to **support**, **contextualize**, and **critically qualify** historical arguments
-- employ generative AI as a **heuristic tool** without damaging the **chain of evidence**
+- tell **common knowledge** (widely known, uncontested background knowledge that needs no reference), **primary sources** and **secondary literature** cleanly apart
+- decide consistently **when** a citation is necessary, and when it is not
+- apply footnote citation practice to an established standard, for example the Chicago Manual of Style
+- use citations deliberately to **support**, to **embed** and to **qualify** historical arguments
+- use generative AI as a **heuristic tool**, without damage to the **chain of evidence**
+- state your own AI use in a **disclosure**, and derive this disclosure from your **AI log**
+- find the binding rules of your institution and of your target journal yourself
 
 ## What Are Academic Citations?
 
-Academic citations are the formalized system for referencing information, ideas, data, and interpretations. In historical research, they function as a methodological **control mechanism**: They make arguments **verifiable**, reconstructable, and criticizable by enabling readers to access the evidentiary basis.
+Academic citations are the formalized system that references information, ideas, data and interpretations. In historical research they work as a methodological **control mechanism**: they make arguments **verifiable**, reconstructable and open to critique, because they give readers access to the base of evidence.
 
 Citations tie arguments to:
 
-- **Primary sources** (contemporary documents, files, letters, protocols, etc.)
-- **Secondary literature** (later scholarly interpretations)
+- **primary sources** (contemporary documents, files, letters, minutes and so on)
+- **secondary literature** (later scholarly interpretations)
 
-Without this linkage, historical texts lose their scholarly character and become mere narrative. [@turingway2022handbook]
+Without this link, historical texts lose their scholarly character and become mere narrative. [@turingway2022handbook]
 
 ## Purposes of Citation
 
 ### 1) Academic Integrity and Attribution
 
-- Prevents plagiarism (intellectual debts become visible).
-- Documents authorship and prior work.
-- Stabilizes credibility through responsible practice.
+- It prevents plagiarism, because intellectual debts become visible.
+- It states the authorship and the prior work.
+- It stabilizes credibility through responsible practice.
 
 ### 2) Verifiability and Transparency
 
-- Readers can locate and evaluate sources.
-- Citations document the **chain of evidence** (source → analysis → claim).
-- The research effort (archival/data work) also becomes visible.
+- Readers can find and evaluate the sources.
+- Citations record the **chain of evidence** (source → analysis → claim).
+- The work effort also becomes visible (work in archives and with data).
 
-### 3) Positioning Within the Research Landscape
+### 3) Position in the State of Research
 
-- Citations locate statements within discourse.
-- They mark agreement, distinction, controversy, and connectivity.
+- Citations locate statements in the discourse.
+- They mark agreement, delimitation, controversy and connection.
 
-### 4) Evidence-Based Argumentation
+### 4) Argument Based on Evidence
 
-- Primary sources: empirical foundation.
-- Secondary literature: context, theory, methodology, state of debate.
+- Primary sources: the empirical foundation.
+- Secondary literature: context, theory, method, state of the debate.
 
 ### 5) Discursive and Technical Functions of Footnotes
 
-- Contextualize/translate quotations.
-- Source-critical commentary.
-- References to counter-evidence / alternative interpretations.
-- Reading recommendations without overloading the main text.
+- They contextualize or translate a quotation.
+- They carry comments from source criticism.
+- They point to counter-evidence and to alternative readings.
+- They give reading recommendations without an overload of the main text.
 
-**Key takeaway**: Citations do not guarantee "truth" but rather **inspectability**.
+**Rule to remember**: citations do not guarantee "truth", but **inspectability**.
 
 ## When Must I Cite?
 
-**Every statement that goes beyond general background knowledge requires a citation.**
+**Every statement that goes beyond general background knowledge needs a citation.**
 
 **Always cite:**
 
-- Direct quotations (quotation marks + reference)
-- Paraphrases (the idea remains borrowed, even if the wording is new)
-- Adopted arguments/interpretive frameworks
-- Data/statistics and operationalized measurements
-- Indirect borrowings (primary source via secondary literature → double attribution)
+- direct quotations (quotation marks and a reference)
+- paraphrases (the idea stays borrowed, even when the wording is new)
+- arguments and frames of interpretation that you adopt
+- data, statistics and operationalized measurements
+- indirect adoptions (a primary source through secondary literature → a double attribution)
 
-**Exception: Common Knowledge.** Widely known, uncontroversial, trivial facts do not require a reference. **But**: As soon as you qualify, sharpen, quantify, or enter controversial territory, a citation is required.
+**Exception: common knowledge.** Widely known, uncontested, trivial facts need no reference. **But**: as soon as you qualify, sharpen, quantify or enter contested ground, a citation is due.
 
 ## How Do I Cite?
 
-Use a reference management program (e.g., Zotero) and follow an established standard like the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/) or the guidelines from [infoclio.ch](https://www.infoclio.ch/de/citation-style). Depending on your educational institution or publication context, different conventions may apply. Inform yourself in advance and ensure consistency.
+Use a reference manager, for example Zotero, and follow an established standard. In historical research this is mostly the **Chicago Manual of Style** in its 18th edition of 2024 [@chicago2024manual]. The complete work costs money. The short [Chicago-Style Citation Quick Guide](https://www.chicagomanualofstyle.org/tools_citationguide.html) is freely accessible (ENGLISH only). A German-language alternative are the guidelines of [infoclio.ch](https://www.infoclio.ch/de/citation-style) (GERMAN and FRENCH only).
 
-## Exercise Structure
+Different conventions can apply, depending on your institution or on the context of publication. Inform yourself in advance and stay consistent.
 
-- Exercise 1: Test and compare automated citation.
-- Exercise 2: Check AI summaries for correct citation and source fidelity.
+## Declare Your AI Use
+
+A citation and a disclosure are two different things. A **citation** gives the reference for a single passage. A **disclosure**, also called a **declaration**, describes your work process. It says whether and how you used generative AI. A piece of work often needs both.
+
+### From the AI Log to the Disclosure
+
+In the other exercises you keep an **AI log**. The log is your private record of work. It holds prompts, answers, verification steps and decisions. The disclosure is the public statement. You condense the log into a few sentences.
+
+| Feature   | AI log                                              | Disclosure                                        |
+| --------- | --------------------------------------------------- | ------------------------------------------------- |
+| Addressee | you, and your supervisor on request                 | all readers                                        |
+| Extent    | complete, all entries                               | short, mostly 5 to 15 sentences                    |
+| Place     | your own file or an appendix                        | a fixed place in the work                          |
+| Purpose   | reconstruction of the work process                  | transparency and responsibility                    |
+| Time      | continuous during the work                          | at the end, derived from the log                   |
+
+**Rule to remember**: without a log you cannot write a truthful disclosure.
+
+### When Must I Disclose?
+
+::: callout-warning
+
+## Check the rule of your institution first
+
+Check the rule of your institution before you rely on a rule of thumb. Many universities require a declaration for **every** use of AI, even for a spelling check.
+
+:::
+
+Disclose the AI use as soon as it is **substantial**. Substantial means that the AI shaped your result in its content. The Living Guidelines of the European Commission count the literature review, the interpretation of analyses, the formulation of research goals and the development of hypotheses among these uses. A pure correction of text does not count there as a substantial use [@eucommission2026genai].
+
+### Disclosure and Legal Marking Are Two Duties
+
+The academic disclosure and the legal marking have different addressees. Keep the two apart.
+
+| Question  | Academic disclosure                                    | Legal disclosure                                                                                        |
+| --------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Basis     | the rule of your institution or of your journal        | the [AI Act of the EU](../glossary.qmd#gl-kiverordnung), Article 50(4) [@eu2024kiverordnung]              |
+| Applies   | from every substantial use                             | from 2 August 2026, for a professional use                                                                |
+| Covers    | every text type, a seminar paper included              | a [deep fake](../glossary.qmd#gl-deepfake), and generated text published to inform the public on matters of public interest |
+| Addressee | your scholarly community                               | the public                                                                                                |
+| Exception | none, when the institution requires a declaration      | text that a person reviewed and for which that person holds the editorial responsibility                  |
+
+The regulation therefore requires no marking for every generated image and for every generated text. A third duty does not concern you: Article 50(2) obliges the provider to mark generated content in a machine-readable format.
+
+The exception in the regulation does not release you academically. You disclose your AI use even when the law requires no marking.
+
+### What Belongs in a Disclosure?
+
+The German Research Foundation names four items. Researchers should disclose **whether** and **which** generative models they used, **for which purpose** and **to which extent** [@dfg2023generative]. Add two more items, so that the chain of evidence stays visible:
+
+1. **Whether**: did you use generative AI? Answer with yes or no.
+2. **Which**: name the tool, the version and the provider. Name the period as well.
+3. **Purpose**: name each task on its own, for example the outline, the literature search or a translation.
+4. **Extent**: name the chapters or sections concerned. Give numbers where that is possible.
+5. **Verification**: describe how you verified the results.
+6. **Responsibility**: declare that you answer for the content.
+
+Name also what you did **not** use AI for. This item protects you from a misunderstanding.
+
+### Where Does the Disclosure Stand?
+
+The place depends on the type of text. The following table names the usual places. The rule of your institution or of your journal always takes precedence.
+
+| Type of text                                      | Place of the disclosure                                                                                          |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Seminar paper, proseminar paper                   | a signed declaration at the start or at the end, often on a form of the institution; the details in a footnote or in an appendix |
+| Thesis (bachelor, master, dissertation)           | the form of the faculty under the examination rules, plus a short section in the method part                       |
+| Article, book chapter, monograph                  | the method part or the acknowledgements, following the author guidelines of the publisher                          |
+| Talk, poster, blog post                           | a short note at the end or on the last slide                                                                       |
+
+The Institute of History of the University of Bern, for example, requires a signed AI declaration with every seminar paper. A missing declaration counts there as deception, like a plagiarism [@unibe2026kirichtlinien]. Journals mostly ask for the item in the method part at submission [@icmje2026recommendations].
+
+### AI Is Not an Author
+
+A broad consensus exists on this point. Only natural persons can appear as authors [@dfg2023generative]. The Living Guidelines of the European Commission put it this way: AI systems are neither authors nor co-authors, because authorship presupposes agency and responsibility [@eucommission2026genai]. The ICMJE recommendations give the same reason for the same prohibition: a chatbot cannot carry the responsibility for accuracy and integrity [@icmje2026recommendations].
+
+A hard consequence follows. You are liable for every sentence and for every reference in your work. The remark "the AI wrote it that way" does not release you.
+
+### Find the Binding Rules
+
+::: callout-important
+
+## The rules of your institution are the binding ones
+
+This exercise explains a procedure. Only the rules of your institution and of your journal are binding. Search for these rules before you hand in a piece of work.
+
+:::
+
+1. Open the website of your institute. Search for "plagiarism", "declaration of authorship" or "AI".
+2. Download the template for the declaration of authorship. Check whether it holds an AI declaration.
+3. Read the study guide of your subject. Many guides hold a section on generative AI since 2023 [@kompass_geschichtsstudium_2025; @leitfaden_bremen_2025].
+4. Check the examination rules when you write a thesis.
+5. For a publication, open the author guidelines of the journal. Search there for "AI" or "generative".
+6. Note the place where you found the rule, and the date, in your AI log.
+7. Ask your supervisor when a rule stays unclear. Ask before you hand in.
+
+### Cite AI Output
+
+The disclosure describes the process. You need a **citation** in addition, as soon as you take AI-generated text into your work, verbatim or in substance. The Chicago Manual of Style covers this case in section 14.112 since its 18th edition [@chicago2024manual].
+
+Three rules apply there:
+
+- Give the reference for the AI content at the place, in the text or in a footnote.
+- Do not put the AI content in the bibliography. One exception applies when a public link to the output exists.
+- Name the provider, the prompt, the tool with its version, and the date.
+
+Model for a footnote:
+
+``` markdown
+1. [Provider], answer to "[your prompt, shortened]", [tool and version],
+   [date of generation], [public link, if one exists].
+```
+
+An AI text is neither a source nor secondary literature. It supports nothing. Treat every statement of the AI as a **hypothesis for a search** that you must verify externally.
+
+### Model Example: A Disclosure in a Seminar Paper
+
+The following example stands at the end of the work, before the bibliography. It supplements the form of the institution, and it does not replace it. Replace every item in square brackets with your own.
+
+``` markdown
+## Disclosure of the AI use
+
+I used generative AI for this work. I used [tool, version, provider] for it
+between 3 and 14 March 2026.
+
+Purpose and extent:
+
+- Outline: I had three variants of an outline generated. I adopted variant 2
+  for chapters 2 to 4, after a heavy revision.
+- Literature search: I asked for secondary literature on Swiss European policy.
+  Of 12 suggested titles, 5 did not exist. I checked the other 7 titles in the
+  library catalogue. I cite only titles that I checked.
+- Language: I had chapters 1 and 5 checked for grammar and spelling.
+
+I used no AI for the interpretation of the sources and for the translation of
+the French documents.
+
+Verification: I checked every statement of content from the AI against the
+source or against the secondary literature. I compared all verbatim quotations
+with the original (wording and page number).
+
+Responsibility: the content of this work is my own achievement. I answer for
+all statements and for all references.
+
+The complete AI log holds 14 entries. It exists and can be inspected on request.
+
+[Place], [date]
+[Name]
+```
+
+For an article, a short paragraph in the method part is enough:
+
+``` markdown
+For the preparatory work on this article I used a generative language model
+([tool, version, provider], accessed in March 2026): to structure the argument,
+to summarize 40 newspaper articles and to revise the language. I checked all
+summaries against the original articles. The model analysed no sources and
+contributed no interpretation. The authorship and the responsibility for this
+text lie with me alone. Prompts and answers are deposited at [link].
+```
+
+::: callout-caution
+
+## This wording is not enough
+
+Avoid the sentence "This work was produced with the support of AI." It names neither the tool nor the purpose nor the extent nor the verification. Such an item is not verifiable and does not meet the requirements.
+
+:::
+
+## Structure of the Exercise
+
+- Exercise 1: test and compare automated citation.
+- Exercise 2: check AI summaries for correct citation and fidelity to the source.
+- Exercise 3: write your own disclosure from your AI log.
+
+::: callout-note
+
+## Test article: freely accessible
+
+Exercises 1 and 2 work with an open access article. You need no institutional access for it:
+
+Andreas Fickers, "Update für die Hermeneutik. Geschichtswissenschaft auf dem Weg zur digitalen Forensik?", Zeithistorische Forschungen 17 (2020), issue 1, pp. 157–168, <https://doi.org/10.14765/zzf.dok-1765> [@fickers2020hermeneutik] (GERMAN only).
+
+The full text and a PDF are freely available at <https://zeithistorische-forschungen.de/1-2020/5823>. Download the PDF before you start. You need it to check the AI answers against the original.
+
+**Variant with institutional access**: repeat both exercises with an article behind a paywall, for example <https://doi.org/10.1093/pastj/gtae018>. Compare how the answers of the AI differ.
+
+:::
 
 ## Exercise 1: Automated Citation
 
 ``` markdown
-Cite the article <https://doi.org/10.1093/pastj/gtae018> according to the Chicago Manual of Style.
-Also create an entry in a format that I can directly import into Zotero.
+Cite the article <https://doi.org/10.14765/zzf.dok-1765> according to the Chicago Manual of Style (18th edition).
+Build in addition an entry in a format that I can import into Zotero directly.
 ```
 
 ::: callout-tip
-If the AI does not have access to the article, you can upload the article as a PDF or copy the content and metadata of the article to the beginning of the prompt and visually separate it, for example with """. Example:
+A system with a web search normally retrieves the article itself through the DOI. Check whether it really did so.
 
+Only in the exceptional case, when the AI gets no access to the article, upload the article as a PDF file. You can also copy the content and the metadata to the start of the prompt and separate them visually, for example with """. Example:
+
+``` markdown
 """
 DOCUMENT CONTENT
 """
@@ -229,29 +456,86 @@ DOCUMENT METADATA
 """
 
 YOUR PROMPT
+```
 :::
 
-Compare the response with your manual citation, the official citation recommendations on the publisher's page, or the DOI import into Zotero. Test additional secondary literature sources (other articles, monographs).
+Compare the answer with your manual citation, with the official citation recommendations on the publisher page, and with the DOI import in Zotero. Test further sources of secondary literature (other articles, monographs).
 
-- Do all details match?
-- Are there systematic deviations (e.g., with page numbers, editors, journal titles)?
+- Do all items agree?
+- Do you find systematic deviations, for example in page numbers, editors or journal titles?
 
 ## Exercise 2: AI-Assisted Summary with Original Quotations
 
 ``` markdown
-Summarize the article <https://doi.org/10.1093/pastj/gtae018>. 
-Use only original quotations from the article and cite them according to the Chicago Manual of Style.
+Summarize the article <https://doi.org/10.14765/zzf.dok-1765>.
+Use only original quotations from the article, and cite them according to the Chicago Manual of Style (18th edition).
 ```
 
-Check the response against the original article:
+Check the answer against the original article. The PDF is freely available, so you can look up every quotation directly.
 
-- Do the quotations match the original text (wording, page number)?
-- Was the meaning of the quotations correctly conveyed?
+- Do the quotations agree with the original text (wording, page number)?
+- Did the answer render the context of the quotations correctly?
+
+## Exercise 3: Declare Your Own AI Use
+
+### Goal
+
+You write a complete disclosure for a piece of your own work. You derive this disclosure from your AI log.
+
+### Task (Manual)
+
+1. Open your AI log from the earlier exercises.
+2. Search for the binding rule of your institution with the procedure in the section [Find the binding rules](#find-the-binding-rules).
+3. Assign each entry of the log to a purpose, for example search, outline or language.
+4. Write the disclosure after the model example. Use all six items.
+5. Name at least one task for which you used no AI.
+
+### Task with AI
+
+``` markdown
+Here is my AI log:
+"""
+[INSERT LOG]
+"""
+
+Here are the rules of my institution:
+"""
+[INSERT RULES]
+"""
+
+Formulate a draft of a disclosure of the AI use from this material.
+Name whether, which tools, for which purpose, to which extent, how verified
+and who is responsible. Invent nothing. Mark every item that the log lacks
+with [MISSING].
+```
+
+### Work Assignment (Reflection)
+
+Compare the draft of the AI with your own version.
+
+- Which items did the AI invent or embellish?
+- Which gaps in the log did the AI make visible?
+- Does the draft meet the rule of your institution?
+
+Correct every wrong item by hand. You answer for the disclosure, and not the AI.
+
+## Learning Outcome
+
+You take four results away from this exercise:
+
+1. a comparison of AI citations with the checked citation, from exercise 1 and exercise 2
+2. a finished **disclosure** for a piece of your own work, from exercise 3
+3. the place where you found the binding rule of your institution, noted in the AI log
+4. an AI log with at least 4 entries from this exercise
 
 ## Further Resources
 
-- [Stanford HAI: AI-Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers) – Report on a study that tests AI detectors. The detectors often misclassify texts by non-native English writers as machine-written.
-- [The Turing Way](https://book.the-turing-way.org/) – Handbook for reproducible, ethical, and collaborative research.
+- [DFG: Statement on the influence of generative models](https://www.dfg.de/resource/blob/289674/ff57cf46c5ca109cb18533b21fba49bd/230921-stellungnahme-praesidium-ki-ai-data.pdf) – Short foundational text on disclosure and authorship [@dfg2023generative] (GERMAN only).
+- [European Commission: Living Guidelines on the Responsible Use of Generative AI in Research](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf) – Recommendations for researchers, third version of May 2026.
+- [ICMJE Recommendations](https://www.icmje.org/recommendations/) – Rules of many journals on the disclosure at submission.
+- [Historisches Institut Bern: Plagiate und KI-Gebrauch](https://www.hist.unibe.ch/studium/plagiate__ki_gebrauch/index_ger.html) – Example of an institutional rule with a template for an AI declaration (GERMAN only).
+- [Stanford HAI: AI-Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers) – Report on a study that tests AI detectors. The detectors often misclassify texts of students who are not native speakers of English as machine-written.
+- [The Turing Way](https://book.the-turing-way.org/) – Handbook for reproducible, ethical and collaborative research.
 
 ## Bibliography
 

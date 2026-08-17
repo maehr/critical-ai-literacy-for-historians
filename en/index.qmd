@@ -43,9 +43,9 @@ These materials aim to help learners:
 The exercises promote:
 
 - **Reproducibility** in research workflows
-- **Privacy** and ethical data handling
+- **Data protection** and ethical data handling. In its section "What you need", each exercise names the material that stays outside the AI system, and the rules of [data protection law](glossary.qmd#gl-datenschutzrecht) that apply.
 - **Copyright awareness** and proper attribution
-- **Sustainability** through minimal computing approaches
+- **Sustainability** through [minimal computing](glossary.qmd#gl-minimal-computing), that is through procedures with a low demand for computing power. Three properties help here, and each one carries its own condition. A **small** model for a narrow task needs clearly less energy per request than a large general model [@luccioni2024power]. An [**open-weight** model](glossary.qmd#gl-offenes-modell) lets you keep one fixed version [@spirling2023open]. A [**local** model](glossary.qmd#gl-lokales-modell) leaves your material on your computer. The section [Check and classify capabilities](exercises/prompt-engineering.qmd#sec-capabilities) shows when this way pays off.
 - **Interdisciplinary collaboration** and critical reflection
 
 By engaging with these materials, historians will be better equipped to design transparent, meaningful projects that integrate AI into their research without compromising disciplinary rigor.

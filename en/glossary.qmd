@@ -1,14 +1,229 @@
 ---
 lang: en
-title: 'TRANSLATION NEEDED: Glossary'
-description: 'Translation needed'
-date: '2026-08-14'
-date-modified: '2026-08-14'
-draft: true
+title: "Glossary"
+description: "Short working definitions of the technical terms that the exercises use."
+date: "2026-08-14"
+date-modified: "2026-08-16"
+toc-depth: 2
+draft: false
 citation: false
 ---
 
-::: {.callout-warning title="Translation Needed"}
+::: callout-warning
 
-This glossary is currently only available in German. See [Glossar](../de/glossary.qmd).
+## Automated Translation
+
+This glossary was translated automatically from the [German original](../de/glossary.qmd) and can contain errors. Consult the original version in case of doubt.
 :::
+
+This glossary explains the terms that the exercises use without further explanation. Each entry is a working definition for this course and not an encyclopedia article. The exercises say **AI system** when a program builds on a large language model.
+
+## AI Systems and Prompts
+
+### Large Language Model (LLM) {#gl-llm}
+
+A large language model is a computer program that learned from very many texts. For a given input, it adds the most probable next word.
+
+### Prompt {#gl-prompt}
+
+A prompt is your written work instruction to an AI system. It holds the material, the goal, the limits and the answer format that you want.
+
+### Constraints {#gl-constraints}
+
+Constraints are the limits that you set in the prompt, for example the text length, the permitted sources or the forbidden statements.
+
+### Zero-shot Prompt {#gl-zero-shot}
+
+In a zero-shot prompt, the AI system gets only the task and the material. It gets no example of the answer that you want.
+
+### Few-shot Prompt {#gl-few-shot}
+
+In a few-shot prompt, the AI system gets two to five model answers. The format and the quality of the answer then stay stable.
+
+### Structured Reasoning Trace (Chain-of-Thought) {#gl-chain-of-thought}
+
+A structured reasoning trace is your request to the AI system to show its intermediate steps. The intermediate steps are aids for your check, and not evidence.
+
+### Built-in Reasoning Mode {#gl-denkmodus}
+
+In reasoning mode, the AI system produces intermediate steps on its own before it answers. You did not prescribe this procedure, unlike the structured reasoning trace [@wei2022chain]. The visible steps do not prove the actual computation [@turpin2023unfaithful].
+
+### Agentic Workflow {#gl-agentischer-ablauf}
+
+In an agentic workflow, the AI system plans several steps, calls tools for them, and continues without a question to you. An error from an early step travels into all later steps [@kapoor2024agents].
+
+### Deep Research {#gl-vertiefte-recherche}
+
+In deep research, the AI system searches the web on its own, reads pages and delivers a report with references. The report is a list of hits with hypotheses, and not a checked literature review. Literature references from AI systems hold fabricated and faulty titles to a considerable degree [@walters2023fabrication].
+
+### Retrieval from Your Own Documents (Retrieval-Augmented Generation, RAG) {#gl-eigene-dokumente}
+
+For retrieval from your own documents, you deposit a collection of files. A search step selects passages from the collection and puts them before the AI system [@lewis2020retrieval]. The retrieval therefore widens the context. It does not make sure that the answer comes only from your collection. Use the retrieval to find passages, and check each statement against the original.
+
+### Multimodal Reading {#gl-multimodal}
+
+Multimodal means that an AI system processes not only text, but also images, audio recordings or videos. A digitized file is an image for the system. General image models read historical handwriting clearly worse than specialized models [@diezgarcia2025evaluating].
+
+### Open-Weight Model {#gl-offenes-modell}
+
+For an open-weight model, you can download the weights freely. Open describes the license of the weights and not the place of execution. You can run an open-weight model locally, but also at a provider on the network. Only an open-weight model lets you keep one fixed version permanently [@spirling2023open].
+
+### Local Model {#gl-lokales-modell}
+
+A local model runs on your own computer. Only then does your material stay on this computer. Local describes the place of execution and not the license. The energy demand depends on the size of the model and not on the place: a large local model needs much energy, and a small model for a narrow task needs clearly less [@luccioni2024power].
+
+### Hallucination {#gl-halluzination}
+
+A hallucination is an answer of the AI system that sounds plausible, but is wrong or has no support.
+
+### Bias {#gl-bias}
+
+A bias is a one-sided selection or evaluation in sources, data, models, search systems or interpretations.
+
+### Session {#gl-session}
+
+A session is one connected conversation with an AI system, in which the system reads the course of the conversation.
+
+### Persona {#gl-persona}
+
+A persona is an invented short profile of a target group, with prior knowledge, motives and possible misunderstandings.
+
+## Records and Verification
+
+### AI Log (KI-Protokoll) {#gl-ki-protokoll}
+
+The AI log records your AI use: material, prompt, answer, verification steps and decision. The definition, the template and a filled-in example are in the exercise [Prompt Engineering](exercises/prompt-engineering.qmd).
+
+### Search Log (Rechercheprotokoll) {#gl-rechercheprotokoll}
+
+The search log records your search: date, system, query, filters, number of hits and selection rules. It records how you searched, and not how you used AI.
+
+### Source Analysis Log (Analyseprotokoll) {#gl-analyseprotokoll}
+
+The source analysis log records one single source: full citation, access date, display form, external and internal criticism, and open questions. It describes the source, and not your AI use.
+
+### Source Veto {#gl-quellen-veto}
+
+A source veto means this: you reject a statement of the AI system when the material that you supplied, or that you can check, does not support it.
+
+### Claim and Claim ID {#gl-claim}
+
+A claim is one single verifiable statement in your text. The claim ID is its short number, for example "C3".
+
+### Triangulation {#gl-triangulation}
+
+Triangulation means that you check a statement with at least two independent sources.
+
+### Heuristic {#gl-heuristik}
+
+A heuristic is a rule of thumb for the search. It leads quickly to a usable result, but not to a secured result.
+
+## Searching
+
+### Snowballing {#gl-snowballing}
+
+In snowballing, you follow the references of a text backwards. You also search forwards for texts that cite this text.
+
+### Boolean Operators {#gl-boolean}
+
+Boolean operators are the search words AND, OR and NOT. They connect search terms in a database or exclude them.
+
+### Truncation {#gl-trunkierung}
+
+Truncation means that you cut a word and search for all word forms with a placeholder (`social*` finds social security and social policy).
+
+### Screening {#gl-screening}
+
+In screening, you check the hits quickly for relevance and sort them into "keep" or "reject".
+
+### Reject Log {#gl-reject-log}
+
+A reject log records which hits you rejected, and for which reason.
+
+### Finding Aids {#gl-findmittel}
+
+Finding aids are the inventories of an archive. They show which holdings exist and how they are ordered.
+
+## Writing and Communication
+
+### Deliverable {#gl-deliverable}
+
+A deliverable is the tangible product of a work step that you hand in or file (a list, a table, a text).
+
+### Baseline {#gl-baseline}
+
+A baseline is a first, simple result. You measure all later versions against it.
+
+### Message Map {#gl-message-map}
+
+A message map records the core message of a contribution, plus three to four supporting points and the meaning for the target group.
+
+### Hook {#gl-hook}
+
+The hook is the first section of a contribution. It raises the interest of the target group.
+
+## Technology, Data and Records
+
+### Minimal Computing {#gl-minimal-computing}
+
+Minimal computing names procedures that manage with little computing power, little software and little energy. The goal is that a project stays runnable, verifiable and reusable in the long term, and without expensive infrastructure.
+
+### Reference Manager (Zotero) {#gl-zotero}
+
+A reference manager such as Zotero stores your bibliographic data and produces footnotes and bibliographies from it.
+
+### BibTeX {#gl-bibtex}
+
+BibTeX is a file format for bibliographic data that reference managers and typesetting programs can read.
+
+### DOI {#gl-doi}
+
+A DOI (Digital Object Identifier) is a permanent number for a publication. It always leads to the same location.
+
+### Permalink {#gl-permalink}
+
+A permalink is an internet address that points permanently to the same document.
+
+### Optical Character Recognition (OCR) {#gl-ocr}
+
+Optical character recognition turns the image of a page into searchable text, and it makes errors.
+
+### Handwritten Text Recognition (HTR) {#gl-htr}
+
+Handwritten text recognition turns a handwritten page into text. For German Kurrent script, general models with usable error rates exist [@hodel2021general]. The error rate depends strongly on the script, the layout, the language and the condition of the original [@romein2025assessing]. Such errors change every later analysis [@vanstrien2020assessing]. The result therefore stays a reading hypothesis.
+
+### Markdown {#gl-markdown}
+
+Markdown is a simple notation that marks headings, lists and emphasis with few characters.
+
+### FAIR Principles {#gl-fair}
+
+The FAIR principles require that research data are findable, accessible, interoperable and reusable. The wording is at [GO FAIR](https://www.go-fair.org/fair-principles/) and in @wilkinson2016fair.
+
+### CARE Principles {#gl-care}
+
+The CARE principles require that data benefit the communities concerned, and that these communities have a say over their data. The wording is at the [Global Indigenous Data Alliance](https://www.gida-global.org/care) and in @carroll2020care.
+
+## Law and Data Protection
+
+The five following entries give an orientation and no legal advice. The text of the law and the rules of your institution are binding.
+
+### Personal Data {#gl-personenbezogene-daten}
+
+Personal data are statements about an identified or identifiable living person. They also include statements from interviews, from private papers and from holdings under a protection period.
+
+### Processor {#gl-auftragsverarbeiter}
+
+A processor processes personal data only on behalf of the controller, that is under Article 4 point 8 GDPR [@eu2016dsgvo]. Article 4 point 10 GDPR expressly excludes a processor from the third parties. This role needs a contract under Article 28 GDPR. An upload to a processor is therefore not a disclosure to a third party.
+
+### Data Protection Law (GDPR and revDSG) {#gl-datenschutzrecht}
+
+In the EU, the General Data Protection Regulation governs the processing of personal data. In Switzerland, the revised Data Protection Act governs it [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. Article 6 GDPR requires a legal basis for every processing operation. Research is subject to the safeguards under Article 89(1) GDPR, but it gets no exemption. Single duties can fall away, for example the information duty under Article 14(5)(b) GDPR. A guideline of the European Data Protection Board was in public consultation in 2026 and is not yet applicable law [@edpb2026forschung].
+
+### Deep Fake {#gl-deepfake}
+
+Under Article 3 point 60 of the AI Act, a deep fake is AI-generated or manipulated image, audio or video content [@eu2024kiverordnung]. It resembles existing persons, objects, places, entities or events and would falsely appear to a person to be authentic. A generated image without this resemblance to reality is not a deep fake.
+
+### AI Act {#gl-kiverordnung}
+
+The AI Act of the EU governs the placing on the market and the use of AI systems [@eu2024kiverordnung]. Article 50 matters most for you, and it applies from 2 August 2026. As a deployer, you disclose two things under Article 50(4): a [deep fake](#gl-deepfake), and generated text that you publish to inform the public on a matter of public interest. For the text, the duty falls away when a person reviewed it and holds the editorial responsibility. Article 50(2) obliges the provider instead, who must mark generated content in a machine-readable format.

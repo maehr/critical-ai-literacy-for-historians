@@ -1,0 +1,78 @@
+<!-- Shared text on account, cost, data protection and law. The exercises pull this file in with the include shortcode. -->
+
+:::: {.callout-note collapse="true" title="Account, cost, data protection and law: settle this before you start (expand)"}
+
+You can do every exercise with AI systems from different makers. What a system can do depends on the product and on your account. Settle the five following points before you start.
+
+### Cost
+
+A free account is enough for short text tasks. For some capabilities you need a paid account. This mostly concerns the search on the web, the reading of long files and the [built-in reasoning mode](../glossary.qmd#gl-denkmodus). Check first whether your university provides access.
+
+### Tools
+
+Check which tools your account unlocks. Can the system search the web? Can it read a file that you upload? Can it call external services? Each exercise names the capabilities that it requires.
+
+The section [Check and classify capabilities](prompt-engineering.qmd#sec-capabilities) explains five newer capabilities. It also describes what each capability means for your work with sources.
+
+### Memory
+
+Some systems carry over statements from earlier sessions or from a project context. Check the settings for memory, projects and chat history. A new session therefore guarantees no empty context.
+
+### Account: institutional or private
+
+Check which account you work with. The rules differ in three points.
+
+| Point              | Account of your institution                              | Private account                                          |
+| ------------------ | -------------------------------------------------------- | -------------------------------------------------------- |
+| Contract           | Your university concludes it and shares the liability.   | You conclude it yourself and carry the liability alone.  |
+| Training           | A contract often excludes the use of your inputs.        | Many providers use inputs for training.                  |
+| Permitted material | The university rules which data you can enter.           | You have no such rule and carry the risk yourself.       |
+
+Ask the IT office or the library of your university when you cannot find the rules. Record the answer in your [AI log](../glossary.qmd#gl-ki-protokoll).
+
+::: callout-caution
+
+## Check every piece of material before you upload it
+
+Do not upload material that you have no right to pass on. An upload leaves your computer and you cannot take it back.
+
+These materials stay outside the AI system:
+
+- [Personal data](../glossary.qmd#gl-personenbezogene-daten) of living persons, for example from interviews, from private papers or from holdings under a protection period.
+- Digitized items whose terms of use forbid a disclosure.
+- Unpublished texts of other persons, for example manuscripts or reviews.
+- Licensed full texts, when the license of your library forbids a disclosure.
+
+In case of doubt, work with a short excerpt or with an anonymized version. You can also use a [local model](../glossary.qmd#gl-lokales-modell), because the material then stays on your computer.
+:::
+
+### Law: data protection and disclosure
+
+Two areas of law concern your work directly. This section gives an orientation and no legal advice.
+
+**Data protection.** In the EU the General Data Protection Regulation applies. In Switzerland the revised [Data Protection Act](../glossary.qmd#gl-datenschutzrecht) applies [@eu2016dsgvo; @schweiz2020datenschutzgesetz]. Both laws protect personal data of living persons. The text of the law itself is binding. Article 6 GDPR requires a legal basis for every processing operation, and an upload is a processing operation.
+
+**The role of the provider decides the classification.** A provider can act as a [processor](../glossary.qmd#gl-auftragsverarbeiter) and process your data only on your behalf. Article 4 point 10 GDPR expressly excludes a processor from the third parties. This role needs a contract under Article 28 GDPR. Without such a contract, a provider uses your inputs for its own purposes. An upload is therefore not always a disclosure to a third party, but without a contract you must assume that it is. Check the contract that applies to your account.
+
+**Research is subject to safeguards, but it gets no exemption.** Article 89(1) GDPR requires appropriate safeguards, for example data minimisation and pseudonymisation. Article 89(2) GDPR permits the legislator to derogate from single rights of the data subject. The information of the data subjects can also fall away, namely under Article 14(5)(b) GDPR. That applies only when the information proves impossible or would involve a disproportionate effort. Research therefore does not release you from the information duty in general. Settle your individual case with the data protection office of your university.
+
+The European Data Protection Board presented a guideline on research in 2026 [@edpb2026forschung]. This guideline was in public consultation until June 2026. It is therefore not applicable law, but an aid to interpretation. For deceased persons, the protection periods and the rules of use of the archive apply.
+
+**Disclosure.** The [AI Act of the EU](../glossary.qmd#gl-kiverordnung) governs the transparency of generated content [@eu2024kiverordnung]. Article 50 applies from 2 August 2026. It separates two addressees: the provider of an AI system and the deployer. You are a deployer as soon as you use an AI system professionally. For purely private use you are not a deployer, under Article 3 point 4.
+
+As a deployer you carry two separate duties from Article 50(4).
+
+1. **Deep fake.** If an AI system generates or manipulates an image, an audio recording or a video, and the content is a deep fake, then you disclose that. Under Article 3 point 60, a [deep fake](../glossary.qmd#gl-deepfake) resembles existing persons, places or events and falsely appears authentic. A generated image without this resemblance to reality does not fall under this duty.
+2. **Text on public matters.** If you publish generated text to inform the public on a matter of public interest, then you disclose that. The duty falls away when a person reviewed the text and holds the editorial responsibility for the publication.
+
+Article 50(4) therefore requires no disclosure for every generated image and for every generated text. Article 50(2) addresses the provider instead. The provider must mark generated content in a machine-readable format. This duty does not lie with you, and it does not replace your own disclosure.
+
+::: callout-important
+
+## The legal disclosure does not replace the academic one
+
+The legal disclosure and the academic disclosure are two separate duties. Your university requires a declaration even when the law requires no disclosure. The exercise [Citing](citing.qmd) shows how you declare your AI use.
+:::
+
+Record your answers to these five points. They belong to the description of your work environment.
+::::

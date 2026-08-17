@@ -1,8 +1,10 @@
 ---
 lang: en
-title: "Academic Writing"
-subtitle: "Role-Based Exercise Set along the Writing Process"
-description: "An exercise that trains the use of generative AI as a writing assistant in multiple roles – with focus on traceability, argument logic, and linguistic precision."
+title: Academic Writing
+subtitle: Role-based exercise set along the writing process
+description: An exercise that trains the use of generative AI as a writing assistant
+  in several roles, with a focus on traceability, argument logic and linguistic
+  precision.
 author:
 - name: Moritz Mähr
   orcid: 0000-0002-1367-1618
@@ -18,8 +20,10 @@ tags:
   - Argumentation
   - Structuring
   - Traceability
-  - Scientific Integrity
+  - Academic Integrity
   - AI-Assisted
+difficulty: Beginner
+time_estimate: "60 min"
 draft: false
 references:
 - id: history_toolkit_en_2016
@@ -36,397 +40,504 @@ references:
   issued:
     year: 2016
   publisher: Department of History, University of Basel
+  note: English translation of 'Werkzeugkasten Geschichte'; revised online version
+    of the 2010 study guide
   URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/History_a_Toolkit_en.pdf
+  abstract: Study guide covering research questions, literature and source work, analytical
+    techniques, academic writing, citation, and digital resources.
+- id: kompass_geschichtsstudium_2025
+  type: book
+  title: Kompass Geschichtsstudium
+  subtitle: Version FS 2026
+  author:
+  - family: Luther
+    given: Johannes
+  - family: Meier
+    given: Marietta
+  - family: Kaiser
+    given: Rafael
+  - family: Tinner
+    given: Tamara Ann
+  issued:
+    year: 2026
+  publisher: Historisches Seminar, Universität Zürich
+  note: Official study guide; updated on 26 January 2026
+  URL: https://www.hist.uzh.ch/dam/jcr:363b3b70-63f1-40aa-9020-ca92e3f017ed/20251218_Kompass_V12-FS2026.pdf
+  abstract: Systematic overview of study requirements and methods in history, including
+    digital competence and citation of AI-based tools.
+- id: leitfaden_bremen_2025
+  type: book
+  title: Leitfaden Geschichtswissenschaft
+  subtitle: Studienleitfaden des Instituts für Geschichtswissenschaft, 8. Auflage
+  issued:
+    year: 2025
+  publisher: Institut für Geschichtswissenschaft, Universität Bremen
+  note: Revised and expanded 8th edition; holds guidance on the use of generative AI
+  URL: https://www.uni-bremen.de/fileadmin/user_upload/fachbereiche/fb8/ifges/Geschaeftsfuehrung/Sonstiges/Leitfaden_8._Auflage_IS.pdf
+  abstract: Study guide covering historical theory, source criticism, academic writing
+    formats, citation practices, and the use of generative AI.
+- id: studienleitfaden_hamburg_2021
+  type: book
+  title: Studienleitfaden Fachbereich Geschichte
+  author:
+  - family: Lösse
+    given: Esther
+  - family: Anders
+    given: Klaas
+  - family: Szadziewski
+    given: Max
+  issued:
+    year: 2021
+  publisher: Fachbereich Geschichte, Universität Hamburg
+  note: Edited by Monica Rüthers; completed on 6 January 2021
+  URL: https://www.geschichte.uni-hamburg.de/1ressourcen/studienleitfaden.pdf
+  abstract: Orientation guide for history students covering organization of studies,
+    research, reading, citation, and digital competence.
+- id: werkszeugkasten_basel_2016
+  type: book
+  title: Werkzeugkasten Geschichte
+  author:
+  - family: Stüdli
+    given: Beat
+  - family: Hitz
+    given: Benjamin
+  issued:
+    year: 2016
+  publisher: Departement Geschichte, Universität Basel
+  note: Revised online version of the 2010 study guide
+  URL: https://dg.philhist.unibas.ch/fileadmin/user_upload/dg/Studium/Fuer_Studierende/Werkzeugkasten/Dokumente/Texte_des_Werkzeugkastens/Werkzeugkasten_Geschichte.pdf
+  abstract: Comprehensive guide to historical research practice with emphasis on source
+    criticism and digital resources.
 ---
+
+::: callout-warning
+
+## Automated Translation
+
+This exercise was translated automatically from the [German original](../../de/exercises/schreiben.qmd) and can contain errors. Consult the original version in case of doubt.
+:::
 
 ## Overview and Didactic Goal
 
-This exercise trains the **critical use of generative AI as a writing assistant** in several clearly delimited roles. The roles are arranged to correspond to a typical academic writing process: **clarify problem → develop ideas → structure → draft → revise → finalize**.
+This exercise trains the **critical use of generative AI as a writing assistant** in several clearly delimited roles. The roles follow a typical academic writing process: **clarify the problem → develop ideas → structure → draft → revise → finalize**.
 
-The goal is not to "automate" text production, but to increase **decision quality**: better research questions, more consistent arguments, more precise language – while maintaining **traceability** of authorship and the evidence used.
+The goal is not to "automate" the production of text. The goal is to raise the **quality of your decisions**: better research questions, more consistent arguments, more precise language. At the same time the **authorship** and the evidence stay traceable.
 
-## Prerequisites
+## At a Glance
 
-- Basic understanding of historical research methods
-- Basic knowledge of working with generative AI (especially prompting)
+| Item                      | Value                                                                          |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| **Duration**              | about 45 to 60 minutes                                                          |
+| **Level**                 | Beginner                                                                        |
+| **Core path**             | 1 → 2 → 3 → 4 → 6 → 8                                                           |
+| **Optional deepening**    | 5 (blockages), 7 (style and translation), 9 (readability test)                  |
+| **Hand-in (minimum)**     | One revised section of text. [AI log](../glossary.qmd#gl-ki-protokoll): 6 entries. |
+
+The core path leads you to a revised text in 45 to 60 minutes. Each optional deepening costs about 15 minutes more. Write one entry in the AI log for each step of the core path.
+
+## What You Need
+
+**Subject knowledge**
+
+- A basic understanding of historical research methods
+- Basic knowledge of work with generative AI, above all prompting
 
 ::: callout-note
 
 ## Prompt Engineering
 
-If you are not yet familiar with prompting, we recommend completing the [Prompt Engineering](prompt-engineering.qmd) exercise first.
+If prompting is new to you, we recommend that you work through the exercise [Prompt Engineering](prompt-engineering.qmd) first.
 
 :::
 
-::: callout-note
+**Capabilities of the AI system**
 
-## LLM
+The system must be able to do the two following things:
 
-You can complete this exercise with LLMs from different providers. For this exercise, it is helpful if the LLM has internet access and allows file uploads.
+- Work only with the material that you give it. You check this constraint in every step.
+- Deliver an answer in a format that you prescribe, for example as an outline.
 
-:::
+This exercise needs neither a web search nor a file upload. A free account is enough.
+
+**Other tools and access**
+
+- A fragment of your own topic, for example from a seminar paper. A section of half a page to one page is enough.
+- Your own bullet points or notes on the topic, at least 10 points.
+- A file for your AI log.
+
+{{< include ../_ai-requirements.qmd >}}
 
 ## Learning Objectives
 
-- Treat responses as hypotheses/drafts and systematically verify them.
-- Design prompts so that AI doesn't "invent" but works with provided material.
-- Draft an argument structure (thesis–evidence–conclusion) and test for consistency.
-- Generate paragraphs from own bullet points and then revise them professionally/terminologically.
-- Conduct revision in two steps: logic/comprehensibility → language/style.
-- Transparently document your AI use (prompt and decision protocol).
+- Treat answers as hypotheses or drafts, and check them systematically.
+- Design prompts so that the AI does not "invent", but works with the material that you supply.
+- Draft an argument structure (thesis, evidence, conclusion) and test it for consistency.
+- Have paragraphs written from your own bullet points, and then revise them in subject and terminology.
+- Run the revision in two steps: first the logic and the clarity, then the language and the style.
+- Document your own AI use transparently in the AI log.
 
-## Methodological Framework: AI as Writing Infrastructure
+## Methodological Frame: AI as Writing Infrastructure
 
-In this exercise, AI is understood as a **heuristic writing tool**: it assists with *formulations, structuring, and verification*, but it replaces neither **source work** nor **interpretative decisions**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] Methodologically helpful is a clear division of labor:
+This exercise treats AI as a **heuristic writing tool**. It supports *wording, structuring and checking*, but it replaces neither the **work with sources** nor the **decisions of interpretation**. [@bender2021stochastic; @campbell2025historian; @oberbichler2025implementing] A clear division of labour helps:
 
-- **Historical authorship:** Research question, evidence selection, interpretation, normative positions.
-- **AI contribution (instrumental):** Generate variants, structure suggestions, readability tests, error diagnosis.
-- **Verification procedure (mandatory):** Every AI statement must either (a) be traceable to your input material or (b) be marked as a hypothesis and externally verified. [@turingway2022handbook]
+- **Historical authorship:** the research question, the choice of evidence, the interpretation, the normative positions.
+- **Contribution of the AI (instrumental):** generate variants, suggest structures, test readability, diagnose errors.
+- **Verification procedure (mandatory):** every AI statement must be (a) traceable to your input material, or (b) marked as a hypothesis and verified externally. [@turingway2022handbook]
 
-For more reliable work, consistently use two prompt principles: 1. **Delimiting the workspace** ("work only with my bullet points; mark uncertainties"). 2. **Formatted responses** (lists/argument maps), so you can systematically verify and selectively adopt.
+For more reliable work, use two principles of prompting consistently. 1. **Delimit the workspace** ("work only with my bullet points; mark uncertainties"). 2. **Ask for a format** (lists, argument maps), so that you can check systematically and adopt selectively.
 
 ::: callout-important
 
-## Basic Rule: AI May Not "Invent"
+## Basic rule: the AI may "invent" nothing
 
-Use AI only as a **transformation and verification tool** for *your* material (notes, source excerpts, literature summaries, outline drafts). When AI names additional facts, literature, or sources, that counts as a **research hypothesis** that you must **externally verify**.
+Use AI only as a **tool of transformation and verification** for *your* material (notes, excerpts from sources, summaries of literature, drafts of an outline). If the AI names additional facts, literature or sources, that counts as a **hypothesis for a search** that you must **verify externally**.
 :::
 
-::: callout-note
-
-## Working Mode: AI Protocol (Audit Trail)
-
-During the exercise, maintain a brief **AI protocol**. This is part of scientific traceability (and facilitates later disclosure/methods section).
-
-**Minimal Template** | Field | Content | |---|---| | Role / Exercise | | | Goal (1 sentence) | | | Input (which material?) | | | Prompt (core excerpt) | | | Response (brief) | | | Verification steps (how verified?) | | | Decision (adopted/adapted/rejected + justification) | |
-:::
-
-## Prerequisites
-
-- Own topic fragment (e.g., seminar paper) **or** a provided text section (approx. ½–1 page)\
-- Own bullet points/notes on the topic (at least 10 bullet points)\
-- Access to an LLM interface of your choice
+{{< include ../_ai-log.qmd >}}
 
 ## Structure of the Exercise
 
-The roles are bundled into **phases**. Individual steps can be skipped; however, at least one complete round through revision is sensible. **Core path (approx. 45–60 min):** 1 → 2 → 3 → 4 → 6 → 8.
+The roles form **phases**. You can skip single steps. The core path in the section "At a glance" leads you through one complete round up to the revision.
 
-**Optional deepening:** 5 (local blockages), 7 (style/translating), 9 (readability test as final review).
-
-1. **Comprehension Checker** (clarify task, identify blind spots)\
-2. **Brainstorming Partner + Devil's Advocate** (open idea space + counter-arguments)\
-3. **Structurer & Outliner** (argument architecture)\
-4. **Text from Bullet Points** (drafting under fact discipline)\
-5. **Blockage Solver** (local writing problems/transitions)\
-6. **Logic Checker** (coherence, evidence, inference rules)\
-7. **Proofreading + Translator** (style/grammar/register; optionally multilingualism)\
-8. **Abstract Writer** (compression, focus, "so what?")\
-9. **Comprehension Checker (Re-Run)** (readability from target audience perspective)
+1. **Comprehension checker** (clarify the task, identify blind spots)\
+2. **Brainstorming partner and devil's advocate** (open the space of ideas and find counter-arguments)\
+3. **Structurer** (the architecture of the argument)\
+4. **Text from bullet points** (drafting under fact discipline)\
+5. **Blockage solver** (local writing problems, transitions)\
+6. **Logic checker** (coherence, evidence, rules of inference)\
+7. **Copy editor and translator** (style, grammar, register; several languages as an option)\
+8. **Abstract writer** (compression, focus, "so what?")\
+9. **Comprehension checker (second run)** (readability from the view of the target group)
 
 ## 1. Comprehension Checker
 
 ### Goal
 
-Make the writing task and your own argumentation intent so precise that later AI steps don't "evade" or stabilize false premises.
+Make the writing task and your own intent so precise that the later AI steps do not "evade" and do not stabilize a false premise.
 
 ### Task
 
-1. Give AI **only** the following: Topic in 2–3 sentences, context (course/genre), target audience, scope, submission format.\
-2. Have AI **ask follow-up questions** and mark uncertainties.
+1. Give the AI **only** this: the topic in 2 to 3 sentences, the context (course, genre), the target group, the length and the format of the hand-in.\
+2. Have the AI **ask questions** and mark uncertainties.
 
-**Prompt Scaffold**
+**Prompt scaffold**
 
 ``` markdown
-You are a comprehension checker. Ask me 8–12 precise follow-up questions to clarify the writing task and argumentation goal.
+You are a comprehension checker. Ask me 8–12 precise questions to clarify my writing task and my goal of argument.
 Mark:
-(1) missing information,
-(2) implicit assumptions,
-(3) terms that need to be operationally defined.
-No content suggestions, only questions and diagnosis.
+(1) the missing information,
+(2) the implicit assumptions,
+(3) the terms that need an operational definition.
+No suggestions for content, only questions and diagnosis.
 
 Context: …
-Topic/thesis (preliminary): …
-Genre/scope: …
-Target audience: …
+Topic and thesis (preliminary): …
+Genre and length: …
+Target group: …
 ```
 
 ### Critical Comparison
 
-- Which follow-up questions force you to **clarify terms** (e.g., "modernization," "neutrality," "governance")?\
-- Which questions would you **prioritize differently** – and why?
+- Which questions force you to **clarify terms** (for example "modernization", "neutrality", "governance")?\
+- Which questions would you **prioritize differently**, and why?
 
-**Result** - 1 revised task (3–5 sentences) + 3 defined key terms
+**Result:**
 
-## 2. Brainstorming Partner + Devil's Advocate
+- 1 revised task (3 to 5 sentences)
+- 3 defined key terms
+
+## 2. Brainstorming Partner and Devil's Advocate
 
 ### Goal
 
-Generate ideas without inventing evidence, and immediately co-think counter-arguments/alternative interpretations.
+Generate ideas without inventing evidence, and think about counter-arguments and alternative readings at once.
 
-### Task A: Brainstorming (idea-oriented, evidence-neutral)
+### Task A: Brainstorming (oriented on ideas, neutral on evidence)
 
 ``` markdown
-Role: Brainstorming partner. Generate 12 possible argument lines/hypotheses on my topic.
+Role: brainstorming partner. Generate 12 possible lines of argument or hypotheses on my topic.
 Conditions:
-- Formulate each line as a verifiable claim (no facts).
-- For each line: which kind of evidence I would need (source types/literature types).
-- Avoid specific literature titles or archive signatures; if necessary, formulate as search heuristic.
+- Formulate each line as a claim that I can check (no facts).
+- For each line, state which kind of evidence I would need (source types, literature types).
+- Avoid concrete literature titles or archive references; if necessary, formulate a search heuristic.
 
 My topic: …
-My material (only types, no sensitive content): …
+My material (types only, no sensitive content): …
 ```
 
-### Task B: Devil's Advocate (confrontational, but productive)
+### Task B: Devil's Advocate (Confrontational, But Productive)
 
 ``` markdown
-Role: Devil's Advocate. Choose the 3 most plausible of my hypotheses and argue against each.
+Role: devil's advocate. Choose the 3 most plausible of my hypotheses and argue against each one.
 For each counter-argument:
 - Name the vulnerable assumption.
-- Suggest a "stress test" (what finding would overturn my argument?).
-- Formulate an alternative interpretation (max. 2 sentences).
-No external facts.
+- Suggest a "stress test" (which finding would overturn my argument?).
+- Formulate an alternative reading (max. 2 sentences).
+Use no external facts.
 Hypotheses: …
 ```
 
 ### Critical Comparison
 
-- Which hypotheses are **falsifiable** (in the sense of clear refutation conditions)?\
-- Where does **presentism** threaten (projecting present categories onto the past)?
+- Which hypotheses are **falsifiable**, in the sense of clear conditions of refutation?\
+- Where does **presentism** threaten (a category of the present projected onto the past)?
 
-**Result** - 1 prioritized hypothesis/thesis + 2 central counter-arguments + 1 planned stress test
+**Result:**
 
-## 3. Structurer & Outliner
+- 1 hypothesis or thesis with priority
+- 2 central counter-arguments
+- 1 planned stress test
+
+## 3. Structurer
 
 ### Goal
 
-Draft a verifiable **argument chain** (thesis → sub-theses → evidence → conclusion) before text is generated.
+Draft a **chain of argument** that you can check (thesis → sub-theses → evidence → conclusion), before you generate any text.
 
 ### Task
 
+Insert your own word count in the following prompt. The example names 3000 words.
+
 ``` markdown
-Role: Structurer & Outliner.
-Create an outline (max. 8 main points) for a text of approx. X words.
+Role: structurer.
+Build an outline (max. 8 main points) for a text of about 3000 words.
 For each point:
-- Goal of the section (1 sentence)
-- Central claim (1 sentence)
-- Required evidence (keywords; "from my notes/sources")
-- Transition to next point (1 sentence)
+- the goal of the section (1 sentence)
+- the central claim (1 sentence)
+- the evidence that it needs (in keywords; "from my notes or sources")
+- the transition to the next point (1 sentence)
 
 Constraints:
 - No new facts.
-- If evidence is missing: mark as [EVIDENCE GAP] instead of supplementing.
+- If evidence is missing, mark it as [EVIDENCE GAP] instead of adding something.
 
-Material (bullet points/notes): …
+Material (bullet points, notes): …
 ```
 
 ### Quality Check
 
-- Does each claim have an **evidence trail** (at least as placeholder)?\
-- Are there sections that only provide "overview" but have no argumentative function?
+- Does each claim carry a **trail of evidence**, at least as a placeholder?\
+- Are there sections that only give an "overview" but carry no function in the argument?
 
-**Result** - Outline + marking of 2–3 evidence gaps
+**Result:**
+
+- 1 outline
+- 2 to 3 marked gaps in the evidence
 
 ## 4. Text from Bullet Points
 
 ### Goal
 
-Have paragraphs formulated from your own material without giving up content control.
+Have paragraphs written from your own material, without giving up control over the content.
 
 ### Task
 
-Select **one** outline point (e.g., "Main argument 1") and provide 8–12 bullet points (evidence, observations, quotes/paraphrases, terms).
+Choose **one** point of the outline (for example "main argument 1") and supply 8 to 12 bullet points (evidence, observations, quotations or paraphrases, terms).
 
 ``` markdown
-Role: Text generator from bullet points.
+Role: text generator from bullet points.
 Write a paragraph (120–180 words) in academic English.
 Conditions:
 - Use only information from my bullet points.
-- No new examples, data, names, sources.
-- If a sentence would need additional information: mark [UNCERTAIN].
-- Keep my terminology; ask if unclear.
+- No new examples, data, names or sources.
+- If a sentence would need additional information, mark it as [UNCERTAIN].
+- Keep my terminology; ask me when something is unclear.
 
 Bullet points: …
 ```
 
 ### Critical Comparison
 
-- Delete all sentences that are not directly traceable to your bullet points.\
-- Check terminology: Where does AI smooth terms (e.g., "state," "society," "actor") impermissibly?
+- Delete every sentence that you cannot trace directly to your bullet points.\
+- Check the terminology: where does the AI smooth a term impermissibly (for example "state", "society", "actor")?
 
-**Result** - 1 paragraph + a version in which you independently refined 3–5 sentences
+**Result:**
+
+- 1 paragraph
+- 1 second version of the paragraph, in which you sharpened 3 to 5 sentences yourself
 
 ## 5. Blockage Solver
 
 ### Goal
 
-Solve local problems (transitions, opening sentences, term definitions) without having the text "rewritten."
+Solve local problems (transitions, opening sentences, definitions of terms), without a rewrite of the text.
 
-### Micro-Exercises (choose 2)
+### Micro-Exercises (Choose 2)
 
-**A) Build Transition**
+**A) Build a transition**
 
 ``` markdown
-Role: Blockage solver.
-Formulate 5 variants for a transition sentence between paragraph A and B.
-Variant 1 neutral, 2 more argumentative, 3 more explanatory, 4 shorter, 5 with contrast marker.
+Role: blockage solver.
+Formulate 5 variants of a transition sentence between paragraph A and paragraph B.
+Variant 1 neutral, 2 stronger in argument, 3 stronger in explanation, 4 shorter, 5 with a marker of contrast.
 Paragraph A: …
 Paragraph B: …
 ```
 
-**B) Operationalize Definition**
+**B) Operationalize a definition**
+
+Replace the term "neutrality" in the following prompt with your own term.
 
 ``` markdown
-Formulate 3 possible working definitions for the term "X" in the context of my topic.
+Formulate 3 possible working definitions of the term "neutrality" in the context of my topic.
 For each definition:
-- Delimitation from 1 neighboring term
-- 1 observable indicator (how do I recognize X in sources?)
+- the delimitation from 1 neighbouring term
+- 1 observable indicator (how do I recognize "neutrality" in sources?)
 No external facts.
 Context: …
 ```
 
-**C) Sentence Diagnosis**
+**C) Sentence diagnosis**
 
 ``` markdown
 Mark in my paragraph:
-- the central sentence (topic sentence),
-- sentences with unclear referent ("this," "thereby," "one"),
-- sentences that actually contain two claims.
-Suggest minimal rearrangements (no content rewriting).
+- the central sentence (the topic sentence),
+- the sentences with an unclear referent ("this", "thereby", "one"),
+- the sentences that in fact hold two claims.
+Suggest minimal rearrangements (no rewriting of the content).
 Text: …
 ```
 
-**Result** - 1 revised transition/definition + brief justification of why this variant
+**Result:**
+
+- 1 revised transition or 1 revised definition
+- 1 short reason why you chose this variant
 
 ## 6. Logic Checker
 
 ### Goal
 
-Make argumentation logic visible: Do evidence support claims? Are inference rules traceable? Where are premises missing?
+Make the logic of the argument visible: does the evidence support the claims? Are the rules of inference traceable? Where is a premise missing?
 
 ### Task
 
 ``` markdown
-Role: Logic checker.
-Analyze my text (max. 300 words) as an argument map:
-1) Main thesis
-2) Sub-theses
-3) Explicit evidence (from the text)
-4) Implicit premises (that I apparently presuppose)
-5) Possible logical jumps or contradictions
-Then give 5 concrete revision recommendations, prioritized by impact.
+Role: logic checker.
+Analyse my text (max. 300 words) as an argument map:
+1) the main thesis
+2) the sub-theses
+3) the explicit evidence (from the text)
+4) the implicit premises (that I apparently presuppose)
+5) the possible jumps in logic or contradictions
+Then give 5 concrete recommendations for a revision, ordered by effect.
 Text: …
 ```
 
 ### Critical Comparison
 
-- Which "implicit premises" do you accept – which need to be evidenced or reformulated?\
-- Where are causal claims actually only **temporal sequence**?
+- Which "implicit premises" do you accept, and which ones need evidence or a new wording?\
+- Where is a claim of cause in fact only a **sequence in time**?
 
-**Result** - Argument map + 2 targeted revisions in the text (with marking of what logically improved)
+**Result:**
 
-## 7. Proofreading + Translator
+- 1 argument map
+- 2 targeted revisions in the text, with a note on what improved logically
+
+## 7. Copy Editor and Translator
 
 ### Goal
 
-Improve language and register without changing argumentative substance; optionally transfer terminology consistently into a second language.
+Improve the language and the register without a change to the substance of the argument. As an option, carry the terminology consistently into a second language.
 
-### Task A: Proofreading (minimally invasive)
+### Task A: Copy Editing (Minimally Invasive)
 
 ``` markdown
-Role: Proofreading.
-Improve grammar, style, and precision, but change no content statements.
-Work minimally invasive:
-- Replace vague words (e.g., "important," "shows") only if unambiguous.
-- Preserve technical terms; if uncertain: mark [TERM?].
-At the end, give a list of the 5 most frequent pattern errors you corrected.
+Role: copy editor.
+Improve the grammar, the style and the precision, but change no statement of content.
+Work in a minimally invasive way:
+- Replace a vague word (for example "important", "shows") only when the replacement is unambiguous.
+- Keep the technical terms; when you are unsure, mark [TERM?].
+At the end, give a list of the 5 most frequent patterns of error that you corrected.
 Text: …
 ```
 
-### Task B: Translating (optional)
+### Task B: Translation (Optional)
 
 ``` markdown
-Role: Translator.
-Translate the text into English (or French/Spanish).
+Role: translator.
+Translate the text into another language (for example French, German or Spanish).
 Conditions:
-- Preserve register (academic) and hedge markers (e.g., "could," "suggests").
-- Keep proper names and quotes unchanged.
-- Give a mini-glossary table (5–10 term pairs) for key terms.
+- Keep the register (academic) and the hedges (for example "could", "suggests").
+- Keep the proper names and the quotations unchanged.
+- Give a small glossary table (5–10 pairs of terms) for the key terms.
 Text: …
 Target language: …
 ```
 
-**Result** - Corrected version + (optional) translation + glossary
+**Result:**
+
+- 1 corrected version
+- optional: 1 translation
+- optional: 1 glossary
 
 ## 8. Abstract Writer
 
 ### Goal
 
-Distill the text to its supporting statement: research problem, approach, finding/argument, relevance.
+Condense the text to its load-bearing statement: the research problem, the approach, the finding or argument, and the relevance.
 
 ### Task
 
 ``` markdown
-Role: Abstract writer.
+Role: abstract writer.
 Write an abstract of 120–160 words.
-Must contain:
-- Research problem (1 sentence)
-- Approach/material (1 sentence)
-- Core argument/finding (2–3 sentences)
-- Contribution/relevance ("so what?") (1 sentence)
-No new facts; if unclear: mark [UNCLEAR].
+It must hold:
+- the research problem (1 sentence)
+- the approach and the material (1 sentence)
+- the core argument or finding (2–3 sentences)
+- the contribution and the relevance ("so what?") (1 sentence)
+No new facts; when something is unclear, mark it as [UNCLEAR].
 Text base: …
 ```
 
 ### Quality Check
 
-- Does the abstract cover the **actual** argumentative point or only the topic area?\
-- Does the claimed method match what you actually do (source work vs. literature discussion)?
+- Does the abstract cover the **actual** point of the argument, or only the topic area?\
+- Does the method that you claim match what you really do (work with sources against a discussion of literature)?
 
-**Result** - Abstract + 2-sentence meta-comment: What did AI wrongly emphasize/omit?
+**Result:**
 
-## 9. Comprehension Checker (Re-Run)
+- 1 abstract
+- 1 meta comment in 2 sentences: what did the AI emphasize wrongly, and what did it leave out?
+
+## 9. Comprehension Checker (Second Run)
 
 ### Goal
 
-Test readability and interpretation margins from the target audience's perspective.
+Test the readability and the room for interpretation from the view of the target group.
 
 ### Task
 
 ``` markdown
-Role: Comprehension checker.
+Role: comprehension checker.
 Read my text as a critical reader in a seminar.
 1) What is the thesis in one sentence?
-2) Which 3 points are unclear or ambiguous (each with quote location)?
-3) Which passage seems unsupported?
-4) Which two questions would you ask me in feedback?
+2) Which 3 points are unclear or ambiguous (each with the passage quoted)?
+3) Which passage looks unsupported?
+4) Which two questions would you put to me in your feedback?
 Text: …
 ```
 
-**Result** - 3 refined passages in the text (1–2 sentences revised each)
+**Result:**
+
+- 3 sharpened passages in the text, each revised in 1 to 2 sentences
 
 ## Learning Outcome
 
-At the end, you have a small package of artifacts that is scientifically reusable:
+At the end you hold a small package of artifacts that you can reuse in your academic work:
 
-- Outline (with evidence gaps)\
-- 1–3 revised paragraphs (with traceable revisions)\
-- Argument map (logic check)\
-- Abstract (and optionally translation + glossary)\
-- AI protocol (prompt and decision documentation)
+- an outline (with the gaps in evidence)\
+- 1 to 3 revised paragraphs (with traceable revisions)\
+- an argument map (from the logic check)\
+- an abstract (and, as an option, a translation and a glossary)\
+- an AI log with at least 6 entries
 
 ## Further Resources
 
-- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limits, hallucinations, verification, and critical use of LLMs.
-- [The Turing Way](https://book.the-turing-way.org/) – Handbook for reproducible, ethical, and collaborative research.
+- [AI Pedagogy Project: LLM Tutorial](https://aipedagogy.org/guide/llm-tutorial/) – Limits, hallucinations, verification and critical use of LLMs.
+- [The Turing Way](https://book.the-turing-way.org/) – Handbook for reproducible, ethical and collaborative research.
 
 ## Bibliography
 
 ::: {#refs}
-:::
-
-::: callout-warning
-
-## Automated Translation Disclaimer
-
-This exercise was automatically translated from German using AI and may contain errors or inaccuracies. Please refer to the [original German version](../../de/exercises/schreiben.qmd) for the authoritative text. If you notice any translation issues, please report them.
 :::
