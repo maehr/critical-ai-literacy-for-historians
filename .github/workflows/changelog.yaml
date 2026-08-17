@@ -1,25 +1,51 @@
 name: Create changelog
 
-on: [push]
+on:
+  pull_request:
+    branches:
+      - main
+
+# The ruleset on `main` requires a pull request, so the workflow commits to the
+# pull request branch instead of to `main`.
+permissions:
+  contents: write
 
 jobs:
   changelog:
     name: Generate changelog
     runs-on: ubuntu-latest
+    # A pull request from a fork gets a read-only token, so skip the commit.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Check out the pull request branch
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
+          ref: ${{ github.head_ref }}
 
-      - name: Generate a changelog
+      - name: Generate the changelog
         uses: orhun/git-cliff-action@v4
-        id: git-cliff
         with:
           config: cliff.toml
           args: --verbose
         env:
           OUTPUT: CHANGELOG.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Print the changelog
-        run: cat "${{ steps.git-cliff.outputs.changelog }}"
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Format the changelog
+        run: npx prettier --write CHANGELOG.md
+
+      - name: Commit the changelog
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: 'docs(changelog): update CHANGELOG.md'
+          file_pattern: CHANGELOG.md
