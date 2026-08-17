@@ -6,7 +6,7 @@ This repository holds multilingual educational exercises for critical AI literac
 
 - Run `quarto preview` while you edit content. Live reload works for `.qmd`, `.md`, and asset files.
 - Keep the preview server active, because the preview shows the rendered page.
-- Do not run `quarto render` or `quarto publish gh-pages` in an agent session. The maintainer must ask first.
+- Do not run `quarto render` in an agent session. The maintainer must ask first.
 - Run `npm run check` as well. Prettier reads the `.qmd` files. See section 8.
 
 ## 2) Available Skills
@@ -206,21 +206,23 @@ An exercise must promote:
 
 ## 13) Website Publishing
 
-- In repository Settings, open Pages. Set Source to "Deploy from a branch", Branch to `gh-pages`, and the folder to `/ (root)`.
-- Run `quarto render` and `quarto publish gh-pages` outside an agent session, unless the maintainer authorizes them.
+GitHub Actions publishes the website. The workflow `.github/workflows/quarto-publish.yml` runs on every push to `main`. It lints the files, renders the site, checks the links, and then deploys with `actions/deploy-pages`.
+
+- In repository Settings, open Pages. Keep Source set to "GitHub Actions".
+- Caution: do not run `quarto publish gh-pages`. The command writes to the `gh-pages` branch, and the site no longer serves that branch.
+- Run `quarto render` outside an agent session, unless the maintainer authorizes it.
 
 ## 14) Commands Recap
 
-| Command                   | Purpose                                                   |
-| ------------------------- | --------------------------------------------------------- |
-| `quarto preview`          | Live preview with reload. This checks the rendered page.  |
-| `npm run check`           | Verify the formatting of every file, `.qmd` files include |
-| `npm run format`          | Apply Prettier formatting and tidy the bibliography       |
-| `npm run commit`          | Conventional Commits wizard                               |
-| `npm run changelog`       | Generate the changelog from the commits                   |
-| `npm run prepare`         | Set up the Husky git hooks                                |
-| `quarto render`           | Production render. Avoid in an agent session.             |
-| `quarto publish gh-pages` | Production publish. Avoid in an agent session.            |
+| Command             | Purpose                                                   |
+| ------------------- | --------------------------------------------------------- |
+| `quarto preview`    | Live preview with reload. This checks the rendered page.  |
+| `npm run check`     | Verify the formatting of every file, `.qmd` files include |
+| `npm run format`    | Apply Prettier formatting and tidy the bibliography       |
+| `npm run commit`    | Conventional Commits wizard                               |
+| `npm run changelog` | Generate the changelog from the commits                   |
+| `npm run prepare`   | Set up the Husky git hooks                                |
+| `quarto render`     | Production render. Avoid in an agent session.             |
 
 ## 15) Verification Checklist
 
