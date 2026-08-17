@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Make the Prettier gate read every .qmd file
 - Let the lint job block the build and the deploy
 - Commit the generated changelog, and generate a real one
+- Put the skip rules above the group rules in cliff.toml
 
 ### Documentation
 
