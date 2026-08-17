@@ -4,53 +4,48 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
-# The ruleset on `main` requires a pull request, so the workflow commits to the
-# pull request branch instead of to `main`.
+# This workflow checks the changelog; it does not commit one.
 #
-# GITHUB_TOKEN pushes the commit. GitHub does not start a new check run for such
-# a push, so the required check "Lint with Prettier" stays open on the new head
-# commit. A maintainer must approve the queued run in the Actions tab. A personal
-# access token in the repository secrets would remove that step.
+# Committing from CI needed a GITHUB_TOKEN push, and GitHub starts no check run
+# for such a push. The required "Lint with Prettier" check therefore stayed
+# queued on the bot's own head commit, which blocked the pull request and added
+# an unsigned commit. A check keeps `CHANGELOG.md` current without either
+# problem. Run `npm run changelog` locally and commit the result.
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   changelog:
     name: Generate changelog
     runs-on: ubuntu-latest
-    # A pull request from a fork gets a read-only token, so skip the commit.
-    if: github.event.pull_request.head.repo.full_name == github.repository
 
     steps:
-      - name: Check out the pull request branch
+      - name: Check out the repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: ${{ github.head_ref }}
 
-      - name: Generate the changelog
-        uses: orhun/git-cliff-action@v4
-        with:
-          config: cliff.toml
-          args: --verbose
-        env:
-          OUTPUT: CHANGELOG.md
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Node.js
+      - name: Set up Node
         uses: actions/setup-node@v5
         with:
-          node-version: '24'
+          node-version: 24
 
       - name: Install dependencies
         run: npm install
 
+      - name: Regenerate the changelog
+        run: npm exec git-cliff -- --config cliff.toml --output CHANGELOG.md
+
       - name: Format the changelog
         run: npx prettier --write CHANGELOG.md
 
-      - name: Commit the changelog
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: 'docs(changelog): update CHANGELOG.md'
-          file_pattern: CHANGELOG.md
+      - name: Fail if the changelog is out of date
+        run: |
+          if ! git diff --quiet -- CHANGELOG.md; then
+            echo "CHANGELOG.md is out of date. Run 'npm run changelog' and commit the result."
+            git --no-pager diff -- CHANGELOG.md
+            exit 1
+          fi
+          echo "CHANGELOG.md is current."
